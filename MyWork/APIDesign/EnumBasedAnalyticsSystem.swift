@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Использование перечилсений для аналитики
 enum LoginFailureReason { }
 enum AnaliticsEvent {
     case loginScreenViewed
