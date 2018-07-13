@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */; };
+		3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */; };
+		3C2FA85220F88C3400F54E76 /* Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85120F88C3400F54E76 /* Delegation.swift */; };
+		3C2FA85420F88FAE00F54E76 /* Observers+NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85320F88FAE00F54E76 /* Observers+NotificationCenter.swift */; };
+		3C2FA85620F8918A00F54E76 /* Observers+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85520F8918A00F54E76 /* Observers+Protocols.swift */; };
+		3C2FA85820F892CA00F54E76 /* Observers+ClosureTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85720F892CA00F54E76 /* Observers+ClosureTokens.swift */; };
 		3CD85A1E20EF482A008D994C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD85A1D20EF482A008D994C /* AppDelegate.swift */; };
 		3CD85A2020EF482A008D994C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD85A1F20EF482A008D994C /* ViewController.swift */; };
 		3CD85A2320EF482A008D994C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2120EF482A008D994C /* Main.storyboard */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactoryMethods.swift; sourceTree = "<group>"; };
+		3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewControllers.swift; sourceTree = "<group>"; };
+		3C2FA85120F88C3400F54E76 /* Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation.swift; sourceTree = "<group>"; };
+		3C2FA85320F88FAE00F54E76 /* Observers+NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observers+NotificationCenter.swift"; sourceTree = "<group>"; };
+		3C2FA85520F8918A00F54E76 /* Observers+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observers+Protocols.swift"; sourceTree = "<group>"; };
+		3C2FA85720F892CA00F54E76 /* Observers+ClosureTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observers+ClosureTokens.swift"; sourceTree = "<group>"; };
 		3CD85A1A20EF482A008D994C /* MyWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD85A1D20EF482A008D994C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD85A1F20EF482A008D994C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +47,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2FA84B20F885CD00F54E76 /* View controllers & Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */,
+			);
+			path = "View controllers & Navigation";
+			sourceTree = "<group>";
+		};
+		3C2FA84C20F885D500F54E76 /* APIDesign */ = {
+			isa = PBXGroup;
+			children = (
+				3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */,
+				3C2FA85120F88C3400F54E76 /* Delegation.swift */,
+				3C2FA85320F88FAE00F54E76 /* Observers+NotificationCenter.swift */,
+				3C2FA85520F8918A00F54E76 /* Observers+Protocols.swift */,
+				3C2FA85720F892CA00F54E76 /* Observers+ClosureTokens.swift */,
+			);
+			path = APIDesign;
+			sourceTree = "<group>";
+		};
 		3CD85A1120EF482A008D994C = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +86,8 @@
 		3CD85A1C20EF482A008D994C /* MyWork */ = {
 			isa = PBXGroup;
 			children = (
+				3C2FA84C20F885D500F54E76 /* APIDesign */,
+				3C2FA84B20F885CD00F54E76 /* View controllers & Navigation */,
 				3CD85A1D20EF482A008D994C /* AppDelegate.swift */,
 				3CD85A1F20EF482A008D994C /* ViewController.swift */,
 				3CD85A2120EF482A008D994C /* Main.storyboard */,
@@ -136,7 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD85A2020EF482A008D994C /* ViewController.swift in Sources */,
+				3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */,
+				3C2FA85220F88C3400F54E76 /* Delegation.swift in Sources */,
+				3C2FA85420F88FAE00F54E76 /* Observers+NotificationCenter.swift in Sources */,
+				3C2FA85620F8918A00F54E76 /* Observers+Protocols.swift in Sources */,
 				3CD85A1E20EF482A008D994C /* AppDelegate.swift in Sources */,
+				3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */,
+				3C2FA85820F892CA00F54E76 /* Observers+ClosureTokens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
