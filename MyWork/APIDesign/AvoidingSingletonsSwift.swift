@@ -45,14 +45,18 @@ protocol INavigationService {
     func showProfile(for user: UserManager.User)
 }
 
-class NetworkService { }
+class NetworkService {
+    func loadData(from: URL, result: (Data) -> Void) {
+
+    }
+}
 class NavigationService { }
 
 class LogOutService {
     private let user: UserManager.User
     private let networkService: INetworkService
     private let navigationService: INavigationService
-    
+
     init(user: UserManager.User,
          networkService: INetworkService,
          navigationService: INavigationService) {

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Unbox
 extension String {
     func formatted(withOptions options: Set<String>) -> String {
         return self
@@ -22,7 +23,13 @@ fileprivate enum PostTextFormatterOption {
     case highlightLinks
 }
 
-class User { }
+class User : Unboxable{
+    required init(unboxer: Unboxer) throws {
+        
+    }
+    
+    init(){}
+}
 
 fileprivate struct Post {
     var id: Int
