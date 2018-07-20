@@ -30,6 +30,8 @@
 		3CD85A2820EF482D008D994C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2620EF482D008D994C /* LaunchScreen.storyboard */; };
 		3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */; };
 		3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */; };
+		3CFC9E352101AEE8008F64D7 /* DeepGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC9E342101AEE8008F64D7 /* DeepGCD.swift */; };
+		3CFC9E372101B144008F64D7 /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC9E362101B144008F64D7 /* SynchronizedArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		3CD85A2920EF482D008D994C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionWithFunctions.swift; sourceTree = "<group>"; };
 		3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeErasureUsingClosures.swift; sourceTree = "<group>"; };
+		3CFC9E342101AEE8008F64D7 /* DeepGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepGCD.swift; sourceTree = "<group>"; };
+		3CFC9E362101B144008F64D7 /* SynchronizedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
 		44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63A3AC3C3088AF515DBB31C /* Pods-MyWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,9 +124,11 @@
 		3C36D8AF20FF18300095F9A4 /* ConcurrencyProgramming */ = {
 			isa = PBXGroup;
 			children = (
+				3CFC9E342101AEE8008F64D7 /* DeepGCD.swift */,
 				3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */,
 				3C4AA54C2100585C003F484C /* FuturesPromises.swift */,
 				3C4AA54E21006423003F484C /* PromiseKit.swift */,
+				3CFC9E362101B144008F64D7 /* SynchronizedArray.swift */,
 			);
 			path = ConcurrencyProgramming;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */,
+				3CFC9E372101B144008F64D7 /* SynchronizedArray.swift in Sources */,
 				3C36D8B120FF185F0095F9A4 /* UsingTokensToHandleAsync.swift in Sources */,
 				3CD85A2020EF482A008D994C /* ViewController.swift in Sources */,
 				3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */,
@@ -301,6 +308,7 @@
 				3C2FA85620F8918A00F54E76 /* Observers+Protocols.swift in Sources */,
 				3C40AB9820FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift in Sources */,
 				3C2FA85D20F8BAB100F54E76 /* Result.swift in Sources */,
+				3CFC9E352101AEE8008F64D7 /* DeepGCD.swift in Sources */,
 				3CD85A1E20EF482A008D994C /* AppDelegate.swift in Sources */,
 				3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */,
 				3C2FA85820F892CA00F54E76 /* Observers+ClosureTokens.swift in Sources */,
@@ -451,7 +459,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = MyWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -467,7 +478,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = MyWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

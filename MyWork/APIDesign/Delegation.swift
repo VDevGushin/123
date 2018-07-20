@@ -7,7 +7,12 @@
 //
 
 import Foundation
-class File { }
+class File {
+    let path: String
+    init() {
+        self.path = ""
+    }
+}
 
 //PROTOCOLS
 protocol FileImporterDelegate: AnyObject {
