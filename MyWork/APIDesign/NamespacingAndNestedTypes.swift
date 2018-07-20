@@ -23,12 +23,12 @@ fileprivate enum PostTextFormatterOption {
     case highlightLinks
 }
 
-class User : Unboxable{
+class User: Unboxable, Savable {
     required init(unboxer: Unboxer) throws {
-        
+
     }
-    
-    init(){}
+
+    init() { }
 }
 
 fileprivate struct Post {

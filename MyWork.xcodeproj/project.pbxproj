@@ -21,6 +21,8 @@
 		3C36D8B120FF185F0095F9A4 /* UsingTokensToHandleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */; };
 		3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */; };
 		3C40AB9820FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40AB9720FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift */; };
+		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
+		3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54E21006423003F484C /* PromiseKit.swift */; };
 		3CD85A1E20EF482A008D994C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD85A1D20EF482A008D994C /* AppDelegate.swift */; };
 		3CD85A2020EF482A008D994C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD85A1F20EF482A008D994C /* ViewController.swift */; };
 		3CD85A2320EF482A008D994C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2120EF482A008D994C /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingTokensToHandleAsync.swift; sourceTree = "<group>"; };
 		3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingAutoclosure .swift"; sourceTree = "<group>"; };
 		3C40AB9720FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespacingAndNestedTypes.swift; sourceTree = "<group>"; };
+		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
+		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
 		3CD85A1A20EF482A008D994C /* MyWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD85A1D20EF482A008D994C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD85A1F20EF482A008D994C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */,
+				3C4AA54C2100585C003F484C /* FuturesPromises.swift */,
+				3C4AA54E21006423003F484C /* PromiseKit.swift */,
 			);
 			path = ConcurrencyProgramming;
 			sourceTree = "<group>";
@@ -241,10 +247,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +295,8 @@
 				3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */,
 				3C2FA85220F88C3400F54E76 /* Delegation.swift in Sources */,
 				3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */,
+				3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */,
+				3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */,
 				3C2FA85420F88FAE00F54E76 /* Observers+NotificationCenter.swift in Sources */,
 				3C2FA85620F8918A00F54E76 /* Observers+Protocols.swift in Sources */,
 				3C40AB9820FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift in Sources */,
@@ -441,10 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = MyWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -460,10 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = MyWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
