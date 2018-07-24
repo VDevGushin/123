@@ -184,6 +184,16 @@ fileprivate extension RoundPercentagesControl {
         legend.yEntrySpace = 10
         legend.yOffset = 0
         chartView.noDataText = "О%"
+
+
+        let values: [RoundPercentagesSource.RoundPercentagesType] =
+            [.rightAnswer(0),
+                    .needCheck(0),
+                    .incorrectAnswer(0),
+                    .skipped(0),
+                    .notViewed(1)]
+        self.dataSource.setValue(with: values)
+        refresh(pieChartView: self.pieChartView)
     }
 
     func refresh(pieChartView chartView: PieChartView) {
@@ -207,6 +217,7 @@ fileprivate extension RoundPercentagesControl {
         for set in pieChartView.data!.dataSets {
             set.drawValuesEnabled = !set.drawValuesEnabled
         }
+
     }
 
     @IBAction func changeMode(_ sender: Any) {
