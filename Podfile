@@ -6,6 +6,7 @@ target 'MyWork' do
   use_frameworks!
   pod "Unbox"
   pod "PromiseKit", "~> 6.0"
+  pod 'Charts'
   # Pods for MyWork
 
 end

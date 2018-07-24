@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
   - PromiseKit (6.3.4):
     - PromiseKit/CorePromise (= 6.3.4)
     - PromiseKit/Foundation (= 6.3.4)
@@ -11,18 +14,21 @@ PODS:
   - Unbox (3.0.0)
 
 DEPENDENCIES:
+  - Charts
   - PromiseKit (~> 6.0)
   - Unbox
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Charts
     - PromiseKit
     - Unbox
 
 SPEC CHECKSUMS:
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   PromiseKit: e1425568123ec844a944c93f2bcb29d511d39cf5
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: 99c7a36b007c307fd2bea2e551fb28ffdd9a5658
+PODFILE CHECKSUM: e8fdd443aa6ddf0eb06db6b6203684dd425fe941
 
 COCOAPODS: 1.5.0
