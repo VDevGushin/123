@@ -72,22 +72,33 @@
                                     <constraint firstAttribute="height" constant="200" id="BB0-7h-sGb"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dr0-xC-fBJ" customClass="LinePercentagesControl" customModule="MyWork" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="408" width="414" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0cP-Eh-DsV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OIl-oa-gyP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="2aX-b9-quD"/>
                             <constraint firstItem="L5u-NL-geE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="4Ih-Xh-scP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OIl-oa-gyP" secondAttribute="trailing" constant="12" id="AL1-7H-swy"/>
+                            <constraint firstItem="Dr0-xC-fBJ" firstAttribute="top" secondItem="L5u-NL-geE" secondAttribute="bottom" constant="6" id="DJh-Us-Agz"/>
                             <constraint firstItem="L5u-NL-geE" firstAttribute="top" secondItem="OIl-oa-gyP" secondAttribute="bottom" constant="6" id="PQf-CY-Bsc"/>
                             <constraint firstItem="OIl-oa-gyP" firstAttribute="top" secondItem="n7T-CA-H59" secondAttribute="bottom" constant="8" id="Pz7-9E-DVw"/>
                             <constraint firstItem="n7T-CA-H59" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bks-0J-Bkd"/>
+                            <constraint firstItem="Dr0-xC-fBJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="enc-1o-6Na"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n7T-CA-H59" secondAttribute="trailing" id="kJL-bz-Aik"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dr0-xC-fBJ" secondAttribute="trailing" id="men-fi-5D5"/>
                             <constraint firstItem="n7T-CA-H59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="npv-e9-4ZW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L5u-NL-geE" secondAttribute="trailing" constant="12" id="yVU-QE-xGn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="lineTes" destination="Dr0-xC-fBJ" id="kxK-ao-aaj"/>
                         <outlet property="rpC" destination="L5u-NL-geE" id="auE-Pz-l2A"/>
                         <outlet property="vcContaiter" destination="n7T-CA-H59" id="Yg1-ft-wR7"/>
                     </connections>
@@ -116,6 +127,7 @@
                             <constraint firstItem="hOV-L5-xou" firstAttribute="top" secondItem="i10-rB-gM4" secondAttribute="topMargin" id="VIA-LU-ZPR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hOV-L5-xou" secondAttribute="trailing" id="kht-IK-3br"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="0U9-AO-6Kd"/>
                     </view>
                     <connections>
                         <outlet property="pieChartView" destination="hOV-L5-xou" id="xDG-3K-cFU"/>

@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var vcContaiter: UIView!
     @IBOutlet weak var rpC: RoundPercentagesControl!
     
+    @IBOutlet weak var lineTes: LinePercentagesControl!
+    
     private var roundStatistic: RoundPercentageViewController? {
         guard let vc = childViewControllers.first as? RoundPercentageViewController else {
             return nil
@@ -34,6 +36,7 @@ class ViewController: UIViewController {
         rpC.changeMode()
     }
     @IBAction func updateStatistic(_ sender: Any) {
+        lineTes.setSource()
         let values: Set<RoundPercentagesSource.RoundPercentagesType> =
             [.rightAnswer(Double(arc4random_uniform(100) + 100 / 5)),
                     .needCheck(Double(arc4random_uniform(100) + 100 / 5)),
