@@ -79,6 +79,13 @@
                                     <constraint firstAttribute="height" constant="128" id="0cP-Eh-DsV"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUz-7Q-eMx" customClass="LinePercentagesControl" customModule="MyWork" customModuleProvider="target">
+                                <rect key="frame" x="12" y="541" width="390" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8wy-Vv-icX"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -88,17 +95,21 @@
                             <constraint firstItem="Dr0-xC-fBJ" firstAttribute="top" secondItem="L5u-NL-geE" secondAttribute="bottom" constant="6" id="DJh-Us-Agz"/>
                             <constraint firstItem="L5u-NL-geE" firstAttribute="top" secondItem="OIl-oa-gyP" secondAttribute="bottom" constant="6" id="PQf-CY-Bsc"/>
                             <constraint firstItem="OIl-oa-gyP" firstAttribute="top" secondItem="n7T-CA-H59" secondAttribute="bottom" constant="8" id="Pz7-9E-DVw"/>
+                            <constraint firstItem="hUz-7Q-eMx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="YT7-ml-qGa"/>
                             <constraint firstItem="n7T-CA-H59" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bks-0J-Bkd"/>
                             <constraint firstItem="Dr0-xC-fBJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="enc-1o-6Na"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n7T-CA-H59" secondAttribute="trailing" id="kJL-bz-Aik"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dr0-xC-fBJ" secondAttribute="trailing" id="men-fi-5D5"/>
                             <constraint firstItem="n7T-CA-H59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="npv-e9-4ZW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hUz-7Q-eMx" secondAttribute="trailing" constant="12" id="tGj-va-heD"/>
+                            <constraint firstItem="hUz-7Q-eMx" firstAttribute="top" secondItem="Dr0-xC-fBJ" secondAttribute="bottom" constant="5" id="w9N-re-kMl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L5u-NL-geE" secondAttribute="trailing" constant="12" id="yVU-QE-xGn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="lineTes" destination="Dr0-xC-fBJ" id="kxK-ao-aaj"/>
+                        <outlet property="lineTes2" destination="hUz-7Q-eMx" id="jXF-yF-9YJ"/>
                         <outlet property="rpC" destination="L5u-NL-geE" id="auE-Pz-l2A"/>
                         <outlet property="vcContaiter" destination="n7T-CA-H59" id="Yg1-ft-wR7"/>
                     </connections>

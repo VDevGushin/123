@@ -16,7 +16,7 @@ class RoundPercentagesControl: UIView {
     private let dataSource = RoundPercentagesSource()
     var pieChartView: PieChartView!
 
-    var mode = RoundPercentagesControlMode.multiple {
+    fileprivate var mode = RoundPercentagesControlMode.multiple {
         didSet {
             self.refresh(pieChartView: self.pieChartView)
         }
@@ -31,7 +31,7 @@ class RoundPercentagesControl: UIView {
         super.init(coder: aDecoder)
         setup()
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
         pieChartView.layoutSubviews()

@@ -13,21 +13,20 @@ enum RoundPercentagesControlMode {
     case single
     case multiple
 }
-
-
-class RoundPercentagesSource {
-    private let rightAnswer: RoundPercentagesData
-    private let needCheck: RoundPercentagesData
-    private let incorrectAnswer: RoundPercentagesData
-    private let skipped: RoundPercentagesData
-    private let notViewed: RoundPercentagesData
+//MARK: - Base
+class PercentagesSource {
+    fileprivate var rightAnswer: PercentagesData
+    fileprivate var needCheck: PercentagesData
+    fileprivate var incorrectAnswer: PercentagesData
+    fileprivate var skipped: PercentagesData
+    fileprivate var notViewed: PercentagesData
 
     init() {
-        self.rightAnswer = RoundPercentagesData(index: 0, color: UIColor(.rightAnswer), title: "Правильный ответ")
-        self.needCheck = RoundPercentagesData(index: 1, color: UIColor(.needCheck), title: "Требует проверки")
-        self.incorrectAnswer = RoundPercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: "Неправельный ответ")
-        self.skipped = RoundPercentagesData(index: 3, color: UIColor(.skipped), title: "Пропущено")
-        self.notViewed = RoundPercentagesData(index: 4, color: UIColor(.notViewed), title: "Не просмотренно")
+        self.rightAnswer = PercentagesData(index: 0, color: UIColor(.rightAnswer), title: "Правильный ответ")
+        self.needCheck = PercentagesData(index: 1, color: UIColor(.needCheck), title: "Требует проверки")
+        self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: "Неправельный ответ")
+        self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: "Пропущено")
+        self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: "Не просмотренно")
     }
 
     func setValue(with types: Set<RoundPercentagesSource.RoundPercentagesType>) {
@@ -46,34 +45,30 @@ class RoundPercentagesSource {
             }
         }
     }
-
-    func getData(mode: RoundPercentagesControlMode) -> PieChartData {
-        let set = PieChartDataSet(values: self.source(mode: mode), label: "")
-        set.colors = self.colors(mode: mode)
-        set.drawIconsEnabled = false
-        set.sliceSpace = 0
-        return PieChartData(dataSet: set)
-    }
-
+    
     func getPercent(mode: RoundPercentagesControlMode) -> String {
-        let total: Double = self.source(mode: mode).reduce(0) {
-            $0 + $1.value
-        }
+        let total = getTotal(mode: mode)
         if total == 0 {
             return "\(total)%"
         }
-        let result = Int(100.0 - ((100.0 * self.notViewed.value) / total))
+        let result = 100 - (100 * self.notViewed.value / total)
         return "\(result)%"
+    }
+    
+    func getTotal(mode: RoundPercentagesControlMode) -> Int {
+        return self.getSource(mode: mode).reduce(0) {
+            $0 + $1.value
+        }
     }
 }
 
-extension RoundPercentagesSource {
+extension PercentagesSource {
     enum RoundPercentagesType: Hashable {
-        case rightAnswer(Double)
-        case needCheck(Double)
-        case incorrectAnswer(Double)
-        case skipped(Double)
-        case notViewed(Double)
+        case rightAnswer(Int)
+        case needCheck(Int)
+        case incorrectAnswer(Int)
+        case skipped(Int)
+        case notViewed(Int)
 
         private var hashValueStr: String {
             switch self {
@@ -94,39 +89,28 @@ extension RoundPercentagesSource {
         }
     }
 
-    class RoundPercentagesData {
+    class PercentagesData {
         let index: Int
         let color: UIColor
         let title: String
-        var value: Double
-        init(index: Int, color: UIColor, title: String, value: Double = 0.0) {
-            self.index = index
-            self.color = color
-            self.title = title
-            self.value = value
+        var value: Int
+        init(index: Int, color: UIColor, title: String, value: Int = 0) {
+            switch value {
+            case 0 ... 100:
+                self.index = index
+                self.color = color
+                self.title = title
+                self.value = value
+            default:
+                fatalError("out of range")
+            }
         }
     }
 }
 
-fileprivate extension RoundPercentagesSource {
-    func colors(mode: RoundPercentagesControlMode) -> [UIColor] {
-        let source = getSource(mode: mode)
-        return source.map {
-            $0.color
-        }
-    }
-
-    func source(mode: RoundPercentagesControlMode) -> [PieChartDataEntry] {
-        let source = getSource(mode: mode)
-        var result = [PieChartDataEntry]()
-        for i in 0..<source.count {
-            result.append(PieChartDataEntry(value: source[i].value, label: source[i].title))
-        }
-        return result
-    }
-
-    func getSource(mode: RoundPercentagesControlMode) -> [RoundPercentagesData] {
-        var source = [RoundPercentagesData]()
+fileprivate extension PercentagesSource {
+    func getSource(mode: RoundPercentagesControlMode) -> [PercentagesData] {
+        var source = [PercentagesData]()
         switch mode {
         case .multiple:
             source = [self.rightAnswer, self.needCheck, self.incorrectAnswer, self.skipped, self.notViewed]
@@ -134,5 +118,54 @@ fileprivate extension RoundPercentagesSource {
             source = [self.rightAnswer, self.notViewed]
         }
         return source
+    }
+
+    func colors(mode: RoundPercentagesControlMode) -> [UIColor] {
+        let source = getSource(mode: mode)
+        return source.map {
+            $0.color
+        }
+    }
+}
+
+//MARK: - Round control
+class RoundPercentagesSource: PercentagesSource {
+    func getData(mode: RoundPercentagesControlMode) -> PieChartData {
+        let set = PieChartDataSet(values: self.source(mode: mode), label: "")
+        set.colors = self.colors(mode: mode)
+        set.drawIconsEnabled = false
+        set.sliceSpace = 0
+        return PieChartData(dataSet: set)
+    }
+}
+
+fileprivate extension RoundPercentagesSource {
+    func source(mode: RoundPercentagesControlMode) -> [PieChartDataEntry] {
+        let source = getSource(mode: mode)
+        var result = [PieChartDataEntry]()
+        for i in 0..<source.count {
+            result.append(PieChartDataEntry(value: Double(source[i].value), label: source[i].title))
+        }
+        return result
+    }
+}
+
+//MARK: - Line control
+class LinePercentagesSource: PercentagesSource {
+    override init() {
+        super.init()
+        self.rightAnswer = PercentagesData(index: 0, color: UIColor(.rightAnswer), title: "Правильный ответ", value: 0)
+        self.needCheck = PercentagesData(index: 1, color: UIColor(.needCheck), title: "Требует проверки", value: 0)
+        self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: "Неправельный ответ", value: 0)
+        self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: "Пропущено", value: 0)
+        self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: "Не просмотренно", value: 1)
+    }
+
+    func count(mode: RoundPercentagesControlMode) -> Int {
+        return getSource(mode: mode).count
+    }
+
+    func getData(mode: RoundPercentagesControlMode) -> [PercentagesData] {
+        return getSource(mode: mode)
     }
 }

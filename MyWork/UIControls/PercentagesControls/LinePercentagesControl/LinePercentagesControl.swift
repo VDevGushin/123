@@ -24,18 +24,18 @@ fileprivate struct Constants {
 
 @IBDesignable
 class LinePercentagesControl: UIView {
-    var source = [TestClass]() {
+    fileprivate var mode = RoundPercentagesControlMode.multiple {
         didSet {
-            setNeedsDisplay()
+            refresh()
         }
     }
+
+    private let dataSource = LinePercentagesSource()
 
     override func draw(_ rect: CGRect) {
         UIColor.white.setFill()
         UIRectFill(bounds)
-
         super.draw(rect)
-
         let context = UIGraphicsGetCurrentContext()
         drawBarGraphInContext(context: context)
     }
@@ -48,6 +48,33 @@ class LinePercentagesControl: UIView {
 }
 
 extension LinePercentagesControl {
+    func update(with source: Set<RoundPercentagesSource.RoundPercentagesType>) {
+        self.dataSource.setValue(with: source)
+        refresh()
+    }
+
+    func clear() {
+        let values: Set<RoundPercentagesSource.RoundPercentagesType> = [.rightAnswer(0), .needCheck(0), .incorrectAnswer(0), .skipped(0), .notViewed(1)]
+        self.dataSource.setValue(with: values)
+        refresh()
+    }
+
+    func changeMode() {
+        switch mode {
+        case .multiple:
+            mode = .single
+        case .single:
+            mode = .multiple
+        }
+    }
+}
+
+fileprivate extension LinePercentagesControl {
+    func refresh() {
+        setNeedsDisplay()
+        print(self.dataSource.getPercent(mode: self.mode))
+    }
+
     func drawRoundedRect(rect: CGRect, inContext context: CGContext?,
                          radius: CGFloat, borderColor: CGColor, fillColor: CGColor) {
         let path = CGMutablePath()
@@ -68,16 +95,6 @@ extension LinePercentagesControl {
         context?.drawPath(using: .fillStroke)
     }
 
-    func pieChartRectangle() -> CGRect {
-        let width = bounds.size.width * Constants.pieChartWidthPercentage - 2 * Constants.marginSize
-        let height = bounds.size.height - 2 * Constants.marginSize
-        let diameter = max(min(width, height), Constants.pieChartMinRadius)
-        let rect = CGRect(x: Constants.marginSize,
-                          y: bounds.midY - diameter / 2.0,
-                          width: diameter, height: diameter)
-        return rect
-    }
-
     func barChartRectangle() -> CGRect {
         let width = bounds.size.width - Constants.marginSize * 2
         let rect = CGRect(x: Constants.marginSize,
@@ -86,30 +103,11 @@ extension LinePercentagesControl {
         return rect
     }
 
-    // 3
     func barChartLegendRectangle() -> CGRect {
         let barchartRect = barChartRectangle()
         let rect = barchartRect.offsetBy(dx: 0.0, dy: -(barchartRect.size.height + Constants.marginSize))
         return rect
     }
-
-    class TestClass {
-        var percent: Double
-        var color: UIColor
-        init(value: Double, _ color: UIColor) {
-            self.percent = value
-            self.color = color
-        }
-    }
-
-    func setSource() {
-        let data1 = TestClass(value: Double(arc4random_uniform(10)) / 10.0, UIColor(UIColor.ColorType.incorrectAnswer))
-        let data2 = TestClass(value: Double(arc4random_uniform(10)) / 10.0, UIColor(UIColor.ColorType.needCheck))
-        let data4 = TestClass(value: Double(arc4random_uniform(10)) / 10.0, UIColor(UIColor.ColorType.rightAnswer))
-        let data5 = TestClass(value: Double(arc4random_uniform(10)) / 10.0, UIColor(UIColor.ColorType.skipped))
-        source = [data1, data2, data4, data5]
-    }
-
 
     func drawBarGraphInContext(context: CGContext?) {
         let barChartRect = barChartRectangle()
@@ -117,22 +115,21 @@ extension LinePercentagesControl {
                         radius: Constants.barChartCornerRadius,
                         borderColor: UIColor(UIColor.ColorType.notViewed).cgColor,
                         fillColor: UIColor(UIColor.ColorType.notViewed).cgColor)
-
-
-        if source.count > 0 {
-            var clipRect = barChartRect
-            for data in source {
-                let clipWidth = floor(barChartRect.width * CGFloat(data.percent))
-                clipRect.size.width = clipWidth
-                context?.saveGState()
-                context?.clip(to: clipRect)
-                drawRoundedRect(rect: barChartRect, inContext: context,
-                                radius: Constants.barChartCornerRadius,
-                                borderColor: data.color.cgColor,
-                                fillColor: data.color.cgColor)
-                context?.restoreGState()
-                clipRect.origin.x = clipRect.maxX
-            }
+        let source = dataSource.getData(mode: self.mode)
+        var clipRect = barChartRect
+        let total = self.dataSource.getTotal(mode: mode)
+        for data in source {
+            let value = CGFloat(data.value) * barChartRect.width / CGFloat(total)
+            let clipWidth = value < barChartRect.width ? value : barChartRect.width
+            clipRect.size.width = clipWidth
+            context?.saveGState()
+            context?.clip(to: clipRect)
+            drawRoundedRect(rect: barChartRect, inContext: context,
+                            radius: Constants.barChartCornerRadius,
+                            borderColor: data.color.cgColor,
+                            fillColor: data.color.cgColor)
+            context?.restoreGState()
+            clipRect.origin.x = clipRect.maxX
         }
     }
 }

@@ -11,9 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var vcContaiter: UIView!
     @IBOutlet weak var rpC: RoundPercentagesControl!
-    
+
     @IBOutlet weak var lineTes: LinePercentagesControl!
-    
+    @IBOutlet weak var lineTes2: LinePercentagesControl!
     private var roundStatistic: RoundPercentageViewController? {
         guard let vc = childViewControllers.first as? RoundPercentageViewController else {
             return nil
@@ -22,29 +22,35 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        lineTes2.changeMode()
     }
 
 
     @IBAction func clear(_ sender: Any) {
         roundStatistic?.clear(with: true)
         rpC.clear(with: true)
+        lineTes.clear()
+        lineTes2.clear()
     }
 
     @IBAction func changeMode(_ sender: Any) {
         roundStatistic?.changeMode()
         rpC.changeMode()
+        lineTes.changeMode()
+        lineTes2.changeMode()
     }
     @IBAction func updateStatistic(_ sender: Any) {
-        lineTes.setSource()
         let values: Set<RoundPercentagesSource.RoundPercentagesType> =
-            [.rightAnswer(Double(arc4random_uniform(100) + 100 / 5)),
-                    .needCheck(Double(arc4random_uniform(100) + 100 / 5)),
-                    .incorrectAnswer(Double(arc4random_uniform(100) + 100 / 5)),
-                    .skipped(Double(arc4random_uniform(100) + 100 / 5)),
-                    .notViewed(Double(arc4random_uniform(100) + 100 / 5))]
+            [.rightAnswer(Int(arc4random_uniform(100))),
+                    .needCheck(Int(arc4random_uniform(100))),
+                    .incorrectAnswer(Int(arc4random_uniform(100))),
+                    .skipped(Int(arc4random_uniform(100))),
+                    .notViewed(Int(arc4random_uniform(100)))]
+
         roundStatistic?.update(with: values)
         rpC.update(with: values)
+        lineTes.update(with: values)
+        lineTes2.update(with: values)
     }
 }
 
