@@ -27,7 +27,6 @@ extension String {
         )
     }
     
-    
     subscript(value: PartialRangeUpTo<Int>) -> Substring {
         get {
             return self[..<index(startIndex, offsetBy: value.upperBound)]

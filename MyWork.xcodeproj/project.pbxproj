@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0ED8786B7DB985A3964893C8 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */; };
+		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
+		3C1D9C6F210891B0006DF537 /* RoundPercentageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D9C6D210891B0006DF537 /* RoundPercentageViewController.swift */; };
+		3C1D9C7321089F71006DF537 /* LinePercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D9C7221089F71006DF537 /* LinePercentagesControl.swift */; };
+		3C1D9C7521089F7D006DF537 /* LinePercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1D9C7421089F7D006DF537 /* LinePercentagesControl.xib */; };
 		3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */; };
 		3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */; };
 		3C2FA85220F88C3400F54E76 /* Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85120F88C3400F54E76 /* Delegation.swift */; };
@@ -44,6 +48,10 @@
 
 /* Begin PBXFileReference section */
 		20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
+		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
+		3C1D9C6D210891B0006DF537 /* RoundPercentageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPercentageViewController.swift; sourceTree = "<group>"; };
+		3C1D9C7221089F71006DF537 /* LinePercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentagesControl.swift; sourceTree = "<group>"; };
+		3C1D9C7421089F7D006DF537 /* LinePercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentagesControl.xib; sourceTree = "<group>"; };
 		3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactoryMethods.swift; sourceTree = "<group>"; };
 		3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewControllers.swift; sourceTree = "<group>"; };
 		3C2FA85120F88C3400F54E76 /* Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation.swift; sourceTree = "<group>"; };
@@ -102,6 +110,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3C12E33821086A610026F1D5 /* PercentagesControls */ = {
+			isa = PBXGroup;
+			children = (
+				3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */,
+				3C1D9C7121089F43006DF537 /* LinePercentagesControl */,
+				3C12E33921086A750026F1D5 /* RoundPercentagesControl */,
+			);
+			path = PercentagesControls;
+			sourceTree = "<group>";
+		};
+		3C12E33921086A750026F1D5 /* RoundPercentagesControl */ = {
+			isa = PBXGroup;
+			children = (
+				3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */,
+				3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */,
+				3C1D9C6D210891B0006DF537 /* RoundPercentageViewController.swift */,
+			);
+			path = RoundPercentagesControl;
+			sourceTree = "<group>";
+		};
+		3C1D9C7121089F43006DF537 /* LinePercentagesControl */ = {
+			isa = PBXGroup;
+			children = (
+				3C1D9C7221089F71006DF537 /* LinePercentagesControl.swift */,
+				3C1D9C7421089F7D006DF537 /* LinePercentagesControl.xib */,
+			);
+			path = LinePercentagesControl;
+			sourceTree = "<group>";
+		};
 		3C2FA84B20F885CD00F54E76 /* View controllers & Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +191,7 @@
 		3C38E172210772DD005CBDE9 /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
-				3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */,
-				3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */,
+				3C12E33821086A610026F1D5 /* PercentagesControls */,
 			);
 			path = UIControls;
 			sourceTree = "<group>";
@@ -289,6 +325,7 @@
 				3CD85A2520EF482D008D994C /* Assets.xcassets in Resources */,
 				3C38E17621077353005CBDE9 /* RoundPercentagesControl.xib in Resources */,
 				3CD85A2320EF482A008D994C /* Main.storyboard in Resources */,
+				3C1D9C7521089F7D006DF537 /* LinePercentagesControl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +385,12 @@
 				3CFC9E372101B144008F64D7 /* SynchronizedArray.swift in Sources */,
 				3C36D8B120FF185F0095F9A4 /* UsingTokensToHandleAsync.swift in Sources */,
 				3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */,
+				3C1D9C7321089F71006DF537 /* LinePercentagesControl.swift in Sources */,
 				3CD85A2020EF482A008D994C /* ViewController.swift in Sources */,
 				3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */,
 				3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */,
 				3CEE42572107911E00671D1D /* String+Ex.swift in Sources */,
+				3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */,
 				3C2FA85A20F8BA3900F54E76 /* CodeEncapsulation.swift in Sources */,
 				3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */,
 				3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */,
@@ -368,6 +407,7 @@
 				3C2FA85D20F8BAB100F54E76 /* Result.swift in Sources */,
 				3CFC9E352101AEE8008F64D7 /* DeepGCD.swift in Sources */,
 				3CD85A1E20EF482A008D994C /* AppDelegate.swift in Sources */,
+				3C1D9C6F210891B0006DF537 /* RoundPercentageViewController.swift in Sources */,
 				3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */,
 				3C2FA85820F892CA00F54E76 /* Observers+ClosureTokens.swift in Sources */,
 			);
