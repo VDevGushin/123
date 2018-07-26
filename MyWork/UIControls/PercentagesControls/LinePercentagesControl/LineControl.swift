@@ -69,13 +69,8 @@ extension LineControl {
         refresh()
     }
 
-    func changeMode() {
-        switch mode {
-        case .multiple:
-            mode = .single
-        case .single:
-            mode = .multiple
-        }
+    func changeMode(with new: RoundPercentagesControlMode) {
+        mode = new
     }
 }
 

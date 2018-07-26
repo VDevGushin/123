@@ -125,12 +125,7 @@ extension PercentagesSource {
 fileprivate extension PercentagesSource {
     func getSource(mode: RoundPercentagesControlMode) -> [PercentagesData] {
         var source = [PercentagesData]()
-        switch mode {
-        case .multiple:
-            self.setStandartColors()
-        case .single:
-            self.setColorsForSingle()
-        }
+        self.setColors(mode: mode)
         source = [self.rightAnswer, self.needCheck, self.incorrectAnswer, self.skipped, self.notViewed]
         return source
     }
@@ -142,19 +137,19 @@ fileprivate extension PercentagesSource {
         }
     }
 
-    func setStandartColors() {
-        self.rightAnswer.color = self.baseColor
-        self.needCheck.color = UIColor(.needCheck)
-        self.incorrectAnswer.color = UIColor(.incorrectAnswer)
-        self.skipped.color = UIColor(.skipped)
-        self.notViewed.color = UIColor(.notViewed)
-    }
-
-    func setColorsForSingle() {
-        self.rightAnswer.color = self.baseColor
-        self.needCheck.color = self.rightAnswer.color
-        self.incorrectAnswer.color = self.rightAnswer.color
-        self.skipped.color = self.rightAnswer.color
+    func setColors(mode: RoundPercentagesControlMode) {
+        switch mode {
+        case .multiple:
+            self.rightAnswer.color = UIColor(.rightAnswer)
+            self.needCheck.color = UIColor(.needCheck)
+            self.incorrectAnswer.color = UIColor(.incorrectAnswer)
+            self.skipped.color = UIColor(.skipped)
+            self.notViewed.color = UIColor(.notViewed)
+        case .single:
+            self.rightAnswer.color = self.baseColor
+            self.needCheck.color = self.rightAnswer.color
+            self.incorrectAnswer.color = self.rightAnswer.color
+            self.skipped.color = self.rightAnswer.color }
     }
 }
 
@@ -184,16 +179,22 @@ class RoundPercentagesSource: PercentagesSource {
 class LinePercentagesSource: PercentagesSource {
     override init(baseColor: UIColor = UIColor(.rightAnswer)) {
         super.init(baseColor: baseColor)
+        self.clearAll()
+    }
+
+
+    convenience init(with source: Set<PercentagesSource.PercentagesType>,
+                     baseColor: UIColor = UIColor(.rightAnswer)) {
+        self.init(baseColor: baseColor)
+        self.setValue(with: source)
+    }
+
+    func clearAll() {
         self.rightAnswer = PercentagesData(index: 0, color: baseColor, title: PercentagesTypeTitle.rightAnswer.value, value: 0)
         self.needCheck = PercentagesData(index: 1, color: UIColor(.needCheck), title: PercentagesTypeTitle.needCheck.value, value: 0)
         self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: PercentagesTypeTitle.incorrectAnswer.value, value: 0)
         self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: PercentagesTypeTitle.skipped.value, value: 0)
         self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: PercentagesTypeTitle.notViewed.value, value: 1)
-    }
-
-    init(with source: Set<PercentagesSource.PercentagesType>, baseColor: UIColor = UIColor(.rightAnswer)) {
-        super.init(baseColor: baseColor)
-        self.setValue(with: source)
     }
 
     func getSet() -> Set<PercentagesSource.PercentagesType> {
@@ -214,5 +215,17 @@ class LinePercentagesSource: PercentagesSource {
 
     func getData(mode: RoundPercentagesControlMode) -> [PercentagesData] {
         return getSource(mode: mode)
+    }
+}
+
+extension LinePercentagesSource {
+    enum Variant {
+        case value(Int)
+        var value: String {
+            switch self {
+            case .value(let number):
+                return "Вариант \(number)"
+            }
+        }
     }
 }

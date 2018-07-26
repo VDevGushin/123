@@ -26,11 +26,23 @@ extension UIColor {
         case skipped = "#f5bd89"
         case notViewed = "#eaeaea"
     }
-    
+
     static func random() -> UIColor {
         return UIColor(red: .random(),
                        green: .random(),
                        blue: .random(),
                        alpha: 1.0)
+    }
+
+    static var linePercentCollectionHexSource: [String] {
+        return ["#00AABB", "#26C6DA", "#82E9F6", "#26C6DA", "#4DD8D3"]
+    }
+
+    static var linePercentCollectionColorSource: [UIColor] {
+        var source = [UIColor]()
+        for colorHex in UIColor.linePercentCollectionHexSource {
+            source.append(UIColor(hex: colorHex))
+        }
+        return source
     }
 }

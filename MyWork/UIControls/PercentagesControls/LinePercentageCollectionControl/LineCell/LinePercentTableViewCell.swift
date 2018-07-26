@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 class LinePercentTableViewCell: UITableViewCell {
     @IBOutlet weak var lineControl: LinePercentagesControl!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,5 +22,4 @@ class LinePercentTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

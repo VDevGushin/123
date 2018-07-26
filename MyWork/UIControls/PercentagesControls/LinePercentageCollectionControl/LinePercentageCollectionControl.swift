@@ -10,6 +10,13 @@ import UIKit
 
 @IBDesignable
 class LinePercentageCollectionControl: UIView {
+    fileprivate var mode = RoundPercentagesControlMode.multiple {
+        didSet {
+            self.collection.reloadData()
+        }
+    }
+
+    private let colorSource = UIColor.linePercentCollectionColorSource
     @IBOutlet weak var collection: UITableView!
     private let xibName = String(describing: LinePercentageCollectionControl.self)
     private var view: UIView!
@@ -28,12 +35,15 @@ class LinePercentageCollectionControl: UIView {
         self.collection.reloadData()
     }
 
-    func changeMode() {
-        for cell in self.collection.visibleCells {
-            if let needCell = cell as? LinePercentTableViewCell {
-                needCell.lineControl.changeMode()
-            }
+    func changeMode(with new: RoundPercentagesControlMode) {
+        self.mode = new
+    }
+
+    func clear() {
+        for item in self.source {
+            item.clearAll()
         }
+        self.collection.reloadData()
     }
 }
 
@@ -68,6 +78,9 @@ extension LinePercentageCollectionControl: UITableViewDelegate, UITableViewDataS
         let res = self.source[indexPath.item]
         let cell = tableView.dequeueReusableCell(type: LinePercentTableViewCell.self, indexPath: indexPath)
         cell?.lineControl.update(with: res.getSet())
+        cell?.lineControl.setColor(colorSource[indexPath.item % 5])
+        cell?.lineControl.changeMode(with: self.mode)
+        cell?.lineControl.setVariant(value: .value(indexPath.item))
         return cell!
     }
 
