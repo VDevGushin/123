@@ -16,7 +16,7 @@ class RoundPercentagesControl: UIView {
     private let dataSource = RoundPercentagesSource()
     var pieChartView: PieChartView!
 
-    fileprivate var mode = RoundPercentagesControlMode.multiple {
+    fileprivate var mode = RoundPercentagesControlMode.single {
         didSet {
             self.refresh(pieChartView: self.pieChartView)
         }
@@ -40,14 +40,14 @@ class RoundPercentagesControl: UIView {
 }
 
 extension RoundPercentagesControl {
-    func update(with source: Set<RoundPercentagesSource.RoundPercentagesType>) {
+    func update(with source: Set<RoundPercentagesSource.PercentagesType>) {
         self.dataSource.setValue(with: source)
         refresh(pieChartView: self.pieChartView)
     }
 
     func clear(with animation: Bool = false) {
         defer { if animation { self.pieChartView.animate(yAxisDuration: 1.4, easingOption: .easeOutBack) } }
-        let values: Set<RoundPercentagesSource.RoundPercentagesType> = [.rightAnswer(0), .needCheck(0), .incorrectAnswer(0), .skipped(0), .notViewed(1)]
+        let values: Set<RoundPercentagesSource.PercentagesType> = [.rightAnswer(0), .needCheck(0), .incorrectAnswer(0), .skipped(0), .notViewed(1)]
         self.dataSource.setValue(with: values)
         refresh(pieChartView: self.pieChartView)
     }

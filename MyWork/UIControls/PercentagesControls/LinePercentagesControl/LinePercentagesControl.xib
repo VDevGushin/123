@@ -6,17 +6,61 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LinePercentagesControl" customModule="MyWork" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LinePercentagesControl" customModule="MyWork" customModuleProvider="target">
+            <connections>
+                <outlet property="lineControl" destination="PTF-rT-b5o" id="qeC-Nt-hsA"/>
+                <outlet property="percent" destination="KrL-ot-OMz" id="I0Y-lS-f4Q"/>
+                <outlet property="title" destination="ZcZ-z6-01h" id="jtw-Vz-eFn"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="934" height="445"/>
+            <rect key="frame" x="0.0" y="0.0" width="696" height="385"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вариант 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcZ-z6-01h">
+                    <rect key="frame" x="0.0" y="182" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="sa4-AP-gtG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTF-rT-b5o" customClass="LineControl" customModule="MyWork" customModuleProvider="target">
+                    <rect key="frame" x="112" y="177" width="527" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="15J-1N-l0E"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrL-ot-OMz">
+                    <rect key="frame" x="651" y="182" width="45" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="QY0-J4-Rwu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZcZ-z6-01h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5F4-0O-LAx"/>
+                <constraint firstItem="ZcZ-z6-01h" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Ooy-b2-bag"/>
+                <constraint firstItem="PTF-rT-b5o" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="RnN-BB-FSL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KrL-ot-OMz" secondAttribute="trailing" id="cOs-yX-llF"/>
+                <constraint firstItem="PTF-rT-b5o" firstAttribute="leading" secondItem="ZcZ-z6-01h" secondAttribute="trailing" constant="12" id="eBe-4R-Dx8"/>
+                <constraint firstItem="KrL-ot-OMz" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="for-5v-WLM"/>
+                <constraint firstItem="KrL-ot-OMz" firstAttribute="leading" secondItem="PTF-rT-b5o" secondAttribute="trailing" constant="12" id="gxB-BX-l6N"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="69" y="-36.5"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="194" y="-66.5"/>
         </view>
     </objects>
 </document>

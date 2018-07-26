@@ -13,23 +13,26 @@ enum RoundPercentagesControlMode {
     case single
     case multiple
 }
+
 //MARK: - Base
+//Статические типы данных
 class PercentagesSource {
     fileprivate var rightAnswer: PercentagesData
     fileprivate var needCheck: PercentagesData
     fileprivate var incorrectAnswer: PercentagesData
     fileprivate var skipped: PercentagesData
     fileprivate var notViewed: PercentagesData
-
-    init() {
-        self.rightAnswer = PercentagesData(index: 0, color: UIColor(.rightAnswer), title: "Правильный ответ")
-        self.needCheck = PercentagesData(index: 1, color: UIColor(.needCheck), title: "Требует проверки")
-        self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: "Неправельный ответ")
-        self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: "Пропущено")
-        self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: "Не просмотренно")
+    fileprivate var baseColor: UIColor
+    init(baseColor: UIColor = UIColor(.rightAnswer)) {
+        self.baseColor = baseColor
+        self.rightAnswer = PercentagesData(index: 0, color: baseColor, title: PercentagesTypeTitle.rightAnswer.value)
+        self.needCheck = PercentagesData(index: 1, color: UIColor(.needCheck), title: PercentagesTypeTitle.needCheck.value)
+        self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: PercentagesTypeTitle.incorrectAnswer.value)
+        self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: PercentagesTypeTitle.skipped.value)
+        self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: PercentagesTypeTitle.notViewed.value)
     }
 
-    func setValue(with types: Set<RoundPercentagesSource.RoundPercentagesType>) {
+    func setValue(with types: Set<PercentagesSource.PercentagesType>) {
         for type in types {
             switch type {
             case .rightAnswer(let value):
@@ -45,7 +48,7 @@ class PercentagesSource {
             }
         }
     }
-    
+
     func getPercent(mode: RoundPercentagesControlMode) -> String {
         let total = getTotal(mode: mode)
         if total == 0 {
@@ -54,7 +57,7 @@ class PercentagesSource {
         let result = 100 - (100 * self.notViewed.value / total)
         return "\(result)%"
     }
-    
+
     func getTotal(mode: RoundPercentagesControlMode) -> Int {
         return self.getSource(mode: mode).reduce(0) {
             $0 + $1.value
@@ -63,7 +66,18 @@ class PercentagesSource {
 }
 
 extension PercentagesSource {
-    enum RoundPercentagesType: Hashable {
+    enum PercentagesTypeTitle: String {
+        case rightAnswer = "Правильный ответ"
+        case needCheck = "Требует проверки"
+        case incorrectAnswer = "Неправельный ответ"
+        case skipped = "Пропущено"
+        case notViewed = "Не просмотренно"
+        var value: String {
+            return self.rawValue
+        }
+    }
+
+    enum PercentagesType: Hashable {
         case rightAnswer(Int)
         case needCheck(Int)
         case incorrectAnswer(Int)
@@ -84,14 +98,14 @@ extension PercentagesSource {
             return self.hashValueStr.hash
         }
 
-        static func == (lhs: RoundPercentagesSource.RoundPercentagesType, rhs: RoundPercentagesSource.RoundPercentagesType) -> Bool {
+        static func == (lhs: PercentagesSource.PercentagesType, rhs: PercentagesSource.PercentagesType) -> Bool {
             return lhs.hashValue == rhs.hashValue
         }
     }
 
     class PercentagesData {
         let index: Int
-        let color: UIColor
+        var color: UIColor
         let title: String
         var value: Int
         init(index: Int, color: UIColor, title: String, value: Int = 0) {
@@ -113,10 +127,11 @@ fileprivate extension PercentagesSource {
         var source = [PercentagesData]()
         switch mode {
         case .multiple:
-            source = [self.rightAnswer, self.needCheck, self.incorrectAnswer, self.skipped, self.notViewed]
+            self.setStandartColors()
         case .single:
-            source = [self.rightAnswer, self.notViewed]
+            self.setColorsForSingle()
         }
+        source = [self.rightAnswer, self.needCheck, self.incorrectAnswer, self.skipped, self.notViewed]
         return source
     }
 
@@ -126,9 +141,25 @@ fileprivate extension PercentagesSource {
             $0.color
         }
     }
+
+    func setStandartColors() {
+        self.rightAnswer.color = self.baseColor
+        self.needCheck.color = UIColor(.needCheck)
+        self.incorrectAnswer.color = UIColor(.incorrectAnswer)
+        self.skipped.color = UIColor(.skipped)
+        self.notViewed.color = UIColor(.notViewed)
+    }
+
+    func setColorsForSingle() {
+        self.rightAnswer.color = self.baseColor
+        self.needCheck.color = self.rightAnswer.color
+        self.incorrectAnswer.color = self.rightAnswer.color
+        self.skipped.color = self.rightAnswer.color
+    }
 }
 
 //MARK: - Round control
+//Класс для работы с контролом - круглый пай
 class RoundPercentagesSource: PercentagesSource {
     func getData(mode: RoundPercentagesControlMode) -> PieChartData {
         let set = PieChartDataSet(values: self.source(mode: mode), label: "")
@@ -137,10 +168,8 @@ class RoundPercentagesSource: PercentagesSource {
         set.sliceSpace = 0
         return PieChartData(dataSet: set)
     }
-}
 
-fileprivate extension RoundPercentagesSource {
-    func source(mode: RoundPercentagesControlMode) -> [PieChartDataEntry] {
+    private func source(mode: RoundPercentagesControlMode) -> [PieChartDataEntry] {
         let source = getSource(mode: mode)
         var result = [PieChartDataEntry]()
         for i in 0..<source.count {
@@ -151,14 +180,32 @@ fileprivate extension RoundPercentagesSource {
 }
 
 //MARK: - Line control
+//Класс для работы с контролом - цветная прямая линия
 class LinePercentagesSource: PercentagesSource {
-    override init() {
-        super.init()
-        self.rightAnswer = PercentagesData(index: 0, color: UIColor(.rightAnswer), title: "Правильный ответ", value: 0)
-        self.needCheck = PercentagesData(index: 1, color: UIColor(.needCheck), title: "Требует проверки", value: 0)
-        self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: "Неправельный ответ", value: 0)
-        self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: "Пропущено", value: 0)
-        self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: "Не просмотренно", value: 1)
+    override init(baseColor: UIColor = UIColor(.rightAnswer)) {
+        super.init(baseColor: baseColor)
+        self.rightAnswer = PercentagesData(index: 0, color: baseColor, title: PercentagesTypeTitle.rightAnswer.value, value: 0)
+        self.needCheck = PercentagesData(index: 1, color: UIColor(.needCheck), title: PercentagesTypeTitle.needCheck.value, value: 0)
+        self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: PercentagesTypeTitle.incorrectAnswer.value, value: 0)
+        self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: PercentagesTypeTitle.skipped.value, value: 0)
+        self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: PercentagesTypeTitle.notViewed.value, value: 1)
+    }
+
+    init(with source: Set<PercentagesSource.PercentagesType>, baseColor: UIColor = UIColor(.rightAnswer)) {
+        super.init(baseColor: baseColor)
+        self.setValue(with: source)
+    }
+
+    func getSet() -> Set<PercentagesSource.PercentagesType> {
+        return [PercentagesSource.PercentagesType.rightAnswer(self.rightAnswer.value),
+            PercentagesSource.PercentagesType.needCheck(self.needCheck.value),
+            PercentagesSource.PercentagesType.incorrectAnswer(self.incorrectAnswer.value),
+            PercentagesSource.PercentagesType.skipped(self.skipped.value),
+            PercentagesSource.PercentagesType.notViewed(self.notViewed.value)]
+    }
+
+    func setStyle(with color: UIColor) {
+        self.baseColor = color
     }
 
     func count(mode: RoundPercentagesControlMode) -> Int {
