@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     var isMultiMode = true
-    @IBOutlet weak var rpC: RoundPercentagesControl!
     @IBOutlet weak var collectionPercent: LinePercentageCollectionControl!
 
     override func viewDidLoad() {
@@ -20,13 +19,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func clear(_ sender: Any) {
-        rpC.clear(with: true)
         collectionPercent?.clear()
     }
 
     @IBAction func changeMode(_ sender: Any) {
-        rpC.changeMode()
-
         if !isMultiMode {
             collectionPercent.changeMode(with: .multiple)
         } else {
@@ -42,7 +38,7 @@ class ViewController: UIViewController {
                     .incorrectAnswer(Int(arc4random_uniform(100))),
                     .skipped(Int(arc4random_uniform(100))),
                     .notViewed(Int(arc4random_uniform(100)))]
-        rpC.update(with: values)
+        self.collectionPercent.updateGlobal(source: RoundPercentagesSource(with: values))
         generateDataForCollectionLine()
     }
 }
@@ -50,15 +46,15 @@ class ViewController: UIViewController {
 fileprivate extension ViewController {
     func initCollectionUpdate() {
         var source = [LinePercentagesSource]()
-        for _ in 1...999 {
+        for _ in 1...100 {
             source.append(LinePercentagesSource())
         }
-        self.collectionPercent.update(source: source)
+        self.collectionPercent.updateVariants(source: source)
     }
 
     func generateDataForCollectionLine() {
         var source = [LinePercentagesSource]()
-        for _ in 1...999 {
+        for _ in 1...100 {
             let values: Set<RoundPercentagesSource.PercentagesType> =
                 [.rightAnswer(Int(arc4random_uniform(100))),
                         .needCheck(Int(arc4random_uniform(100))),
@@ -67,6 +63,6 @@ fileprivate extension ViewController {
                         .notViewed(Int(arc4random_uniform(100)))]
             source.append(LinePercentagesSource(with: values))
         }
-        self.collectionPercent.update(source: source)
+        self.collectionPercent.updateVariants(source: source)
     }
 }

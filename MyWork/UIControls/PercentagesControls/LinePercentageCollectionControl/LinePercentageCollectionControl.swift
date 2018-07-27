@@ -10,31 +10,36 @@ import UIKit
 
 @IBDesignable
 class LinePercentageCollectionControl: UIView {
+    @IBOutlet weak var collection: UITableView!
+    private let colorSource = UIColor.linePercentCollectionColorSource
+    private var gloabalSource = RoundPercentagesSource()
+    private let xibName = String(describing: LinePercentageCollectionControl.self)
+    private var view: UIView!
+    fileprivate var source = [LinePercentagesSource]()
     fileprivate var mode = RoundPercentagesControlMode.multiple {
         didSet {
             self.collection.reloadData()
         }
     }
+    fileprivate var needToClear = false
 
-    private let colorSource = UIColor.linePercentCollectionColorSource
-    @IBOutlet weak var collection: UITableView!
-    private let xibName = String(describing: LinePercentageCollectionControl.self)
-    private var view: UIView!
-    fileprivate var source = [LinePercentagesSource]()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
 
-    func update(source: [LinePercentagesSource]) {
+    func updateVariants(source: [LinePercentagesSource]) {
         self.source = source
         self.collection.reloadData()
+    }
+
+    func updateGlobal(source: RoundPercentagesSource) {
+        self.gloabalSource = source
     }
 
     func changeMode(with new: RoundPercentagesControlMode) {
@@ -45,6 +50,7 @@ class LinePercentageCollectionControl: UIView {
         for item in self.source {
             item.clearAll()
         }
+        self.needToClear = true
         self.collection.reloadData()
     }
 }
@@ -56,6 +62,7 @@ fileprivate extension LinePercentageCollectionControl {
         self.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
         self.setupCollection()
+        self.clear()
     }
 
     func loadFromNib() -> UIView? {
@@ -67,8 +74,10 @@ fileprivate extension LinePercentageCollectionControl {
 
     func setupCollection() {
         self.collection.delegate = self
+        self.collection.backgroundColor = UIColor.clear
         self.collection.dataSource = self
         self.collection.register(LinePercentTableViewCell.self)
+        self.collection.registerFooterHeader(PercentHeaderView.self)
         self.collection.separatorStyle = .none
         self.collection.estimatedRowHeight = 30
         self.collection.rowHeight = UITableViewAutomaticDimension
@@ -82,12 +91,29 @@ extension LinePercentageCollectionControl: UITableViewDelegate, UITableViewDataS
         cell?.lineControl.update(with: res.getSet())
         cell?.lineControl.setColor(colorSource[indexPath.item % 5])
         cell?.lineControl.changeMode(with: self.mode)
-        cell?.lineControl.setVariant(value: .value(indexPath.item))
+        cell?.lineControl.setVariant(value: .value(indexPath.item + 1))
         cell?.selectionStyle = .none
         return cell!
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.source.count
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        if let headerView = tableView.dequeueReusableHeaderFooter(type: PercentHeaderView.self) {
+            headerView.setMode(new: self.mode)
+            if self.needToClear {
+                self.gloabalSource.clearAll()
+                self.needToClear = !self.needToClear
+            }
+            headerView.update(source: self.gloabalSource)
+            return headerView
+        }
+        return nil
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 250
     }
 }

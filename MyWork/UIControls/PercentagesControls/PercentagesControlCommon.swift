@@ -32,6 +32,7 @@ class PercentagesSource {
         self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: PercentagesTypeTitle.notViewed.value)
     }
 
+
     func setValue(with types: Set<PercentagesSource.PercentagesType>) {
         for type in types {
             switch type {
@@ -62,6 +63,14 @@ class PercentagesSource {
         return self.getSource(mode: mode).reduce(0) {
             $0 + $1.value
         }
+    }
+
+    func getSet() -> Set<PercentagesSource.PercentagesType> {
+        return [PercentagesSource.PercentagesType.rightAnswer(self.rightAnswer.value),
+            PercentagesSource.PercentagesType.needCheck(self.needCheck.value),
+            PercentagesSource.PercentagesType.incorrectAnswer(self.incorrectAnswer.value),
+            PercentagesSource.PercentagesType.skipped(self.skipped.value),
+            PercentagesSource.PercentagesType.notViewed(self.notViewed.value)]
     }
 }
 
@@ -164,6 +173,21 @@ class RoundPercentagesSource: PercentagesSource {
         return PieChartData(dataSet: set)
     }
 
+    func clearAll() {
+        self.rightAnswer = PercentagesData(index: 0, color: baseColor, title: PercentagesTypeTitle.rightAnswer.value)
+        self.needCheck = PercentagesData(index: 1, color: UIColor(.needCheck), title: PercentagesTypeTitle.needCheck.value)
+        self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: PercentagesTypeTitle.incorrectAnswer.value)
+        self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: PercentagesTypeTitle.skipped.value)
+        self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: PercentagesTypeTitle.notViewed.value, value: 1)
+    }
+
+    convenience init(with source: Set<PercentagesSource.PercentagesType>,
+                     baseColor: UIColor = UIColor(.rightAnswer)) {
+        self.init(baseColor: baseColor)
+        self.setValue(with: source)
+    }
+
+
     private func source(mode: RoundPercentagesControlMode) -> [PieChartDataEntry] {
         let source = getSource(mode: mode)
         var result = [PieChartDataEntry]()
@@ -195,14 +219,6 @@ class LinePercentagesSource: PercentagesSource {
         self.incorrectAnswer = PercentagesData(index: 2, color: UIColor(.incorrectAnswer), title: PercentagesTypeTitle.incorrectAnswer.value, value: 0)
         self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: PercentagesTypeTitle.skipped.value, value: 0)
         self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: PercentagesTypeTitle.notViewed.value, value: 1)
-    }
-
-    func getSet() -> Set<PercentagesSource.PercentagesType> {
-        return [PercentagesSource.PercentagesType.rightAnswer(self.rightAnswer.value),
-            PercentagesSource.PercentagesType.needCheck(self.needCheck.value),
-            PercentagesSource.PercentagesType.incorrectAnswer(self.incorrectAnswer.value),
-            PercentagesSource.PercentagesType.skipped(self.skipped.value),
-            PercentagesSource.PercentagesType.notViewed(self.notViewed.value)]
     }
 
     func setStyle(with color: UIColor) {

@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5u-NL-geE" customClass="RoundPercentagesControl" customModule="MyWork" customModuleProvider="target">
-                                <rect key="frame" x="12" y="26" width="390" height="250"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="BB0-7h-sGb"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIl-oa-gyP">
                                 <rect key="frame" x="12" y="690" width="390" height="40"/>
                                 <subviews>
@@ -63,28 +56,24 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Itr-bS-Iyw" customClass="LinePercentageCollectionControl" customModule="MyWork" customModuleProvider="target">
-                                <rect key="frame" x="12" y="282" width="390" height="402"/>
+                                <rect key="frame" x="12" y="20" width="390" height="664"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OIl-oa-gyP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="2aX-b9-quD"/>
-                            <constraint firstItem="L5u-NL-geE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="4Ih-Xh-scP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OIl-oa-gyP" secondAttribute="bottom" constant="6" id="8oj-SL-Y5f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OIl-oa-gyP" secondAttribute="trailing" constant="12" id="AL1-7H-swy"/>
-                            <constraint firstItem="L5u-NL-geE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="F0o-yP-e0b"/>
                             <constraint firstItem="Itr-bS-Iyw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="aa4-QI-vJ0"/>
-                            <constraint firstItem="Itr-bS-Iyw" firstAttribute="top" secondItem="L5u-NL-geE" secondAttribute="bottom" constant="6" id="pY9-Ew-Xue"/>
+                            <constraint firstItem="Itr-bS-Iyw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bpC-1U-CZK"/>
                             <constraint firstItem="OIl-oa-gyP" firstAttribute="top" secondItem="Itr-bS-Iyw" secondAttribute="bottom" constant="6" id="tGb-hX-O7F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Itr-bS-Iyw" secondAttribute="trailing" constant="12" id="vpV-A7-PVt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L5u-NL-geE" secondAttribute="trailing" constant="12" id="yVU-QE-xGn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="collectionPercent" destination="Itr-bS-Iyw" id="Czz-HO-Iwi"/>
-                        <outlet property="rpC" destination="L5u-NL-geE" id="auE-Pz-l2A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

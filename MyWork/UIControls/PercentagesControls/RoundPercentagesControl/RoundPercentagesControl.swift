@@ -40,8 +40,8 @@ class RoundPercentagesControl: UIView {
 }
 
 extension RoundPercentagesControl {
-    func update(with source: Set<RoundPercentagesSource.PercentagesType>) {
-        self.dataSource.setValue(with: source)
+    func update(with source: RoundPercentagesSource) {
+        self.dataSource.setValue(with: source.getSet())
         refresh(pieChartView: self.pieChartView)
     }
 
@@ -51,14 +51,9 @@ extension RoundPercentagesControl {
         self.dataSource.setValue(with: values)
         refresh(pieChartView: self.pieChartView)
     }
-
-    func changeMode() {
-        switch mode {
-        case .multiple:
-            mode = .single
-        case .single:
-            mode = .multiple
-        }
+    
+    func changeMode(with new: RoundPercentagesControlMode) {
+        self.mode = new
     }
 }
 
