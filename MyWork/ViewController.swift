@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 fileprivate extension ViewController {
     func initCollectionUpdate() {
         var source = [LinePercentagesSource]()
-        for _ in 1...100 {
+        for _ in 1...10 {
             source.append(LinePercentagesSource())
         }
         self.collectionPercent.updateVariants(source: source)
@@ -54,7 +54,7 @@ fileprivate extension ViewController {
 
     func generateDataForCollectionLine() {
         var source = [LinePercentagesSource]()
-        for _ in 1...100 {
+        for _ in 1...10 {
             let values: Set<RoundPercentagesSource.PercentagesType> =
                 [.rightAnswer(Int(arc4random_uniform(100))),
                         .needCheck(Int(arc4random_uniform(100))),
