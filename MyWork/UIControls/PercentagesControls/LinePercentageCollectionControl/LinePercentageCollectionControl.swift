@@ -21,10 +21,12 @@ class LinePercentageCollectionControl: UIView {
     private let xibName = String(describing: LinePercentageCollectionControl.self)
     private var view: UIView!
     fileprivate var source = [LinePercentagesSource]()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
@@ -81,6 +83,7 @@ extension LinePercentageCollectionControl: UITableViewDelegate, UITableViewDataS
         cell?.lineControl.setColor(colorSource[indexPath.item % 5])
         cell?.lineControl.changeMode(with: self.mode)
         cell?.lineControl.setVariant(value: .value(indexPath.item))
+        cell?.selectionStyle = .none
         return cell!
     }
 
