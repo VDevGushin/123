@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class LinePercentTableViewCell: UITableViewCell {
     @IBOutlet weak var lineControl: LinePercentagesControl!
 

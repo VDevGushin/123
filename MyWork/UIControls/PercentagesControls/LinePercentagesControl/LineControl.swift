@@ -26,7 +26,6 @@ fileprivate struct Constants {
     static let legendTextMargin: CGFloat = 5.0
 }
 
-@IBDesignable
 class LineControl: UIView {
     fileprivate var mode = RoundPercentagesControlMode.multiple {
         didSet {
@@ -125,7 +124,7 @@ fileprivate extension LineControl {
         for data in source {
             let value = CGFloat(data.value) * barChartRect.width / CGFloat(total)
             let clipWidth = value < barChartRect.width ? value : barChartRect.width
-            clipRect.size.width = clipWidth
+            clipRect.size.width = clipWidth + 1
             context?.saveGState()
             context?.clip(to: clipRect)
             drawRoundedRect(rect: barChartRect, inContext: context,
@@ -133,7 +132,7 @@ fileprivate extension LineControl {
                             borderColor: data.color.cgColor,
                             fillColor: data.color.cgColor)
             context?.restoreGState()
-            clipRect.origin.x = clipRect.maxX
+            clipRect.origin.x = clipRect.maxX - 1
         }
     }
 }

@@ -8,8 +8,32 @@
 
 import UIKit
 
-@IBDesignable
 class LinePercentageCollectionControl: UIView {
+    enum HeaderText {
+        case globalTitle
+        case globalSubTitle
+        case title
+        case subTitle
+        func getValue(mode: RoundPercentagesControlMode) -> String {
+            switch mode {
+            case .multiple:
+                switch self {
+                case .globalSubTitle: return "Процентное соотношение по ответам на задания теста"
+                case .globalTitle: return "Динамика ответов по классу"
+                case .subTitle: return "Процентное соотношение по ответам на задания теста по вариантам"
+                case .title: return "Динамика ответов по вариантам"
+                }
+            case .single:
+                switch self {
+                case .globalSubTitle: return "Процент учащихся, которые завершили выполнение теста"
+                case .globalTitle: return "Динамика выполнения по классу"
+                case .subTitle: return "Процент учащихся по вариантам, которые завершили выполнение теста"
+                case .title: return "Динамика выполнения по вариантов"
+                }
+            }
+        }
+    }
+
     @IBOutlet weak var collection: UITableView!
     private let colorSource = UIColor.linePercentCollectionColorSource
     private var gloabalSource = RoundPercentagesSource()
@@ -62,7 +86,6 @@ fileprivate extension LinePercentageCollectionControl {
         self.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
         self.setupCollection()
-        self.clear()
     }
 
     func loadFromNib() -> UIView? {
@@ -78,9 +101,17 @@ fileprivate extension LinePercentageCollectionControl {
         self.collection.dataSource = self
         self.collection.register(LinePercentTableViewCell.self)
         self.collection.registerFooterHeader(PercentHeaderView.self)
+        self.collection.registerFooterHeader(PercentFooterView.self)
         self.collection.separatorStyle = .none
         self.collection.estimatedRowHeight = 30
         self.collection.rowHeight = UITableViewAutomaticDimension
+        self.collection.sectionHeaderHeight = UITableViewAutomaticDimension
+        self.collection.estimatedSectionHeaderHeight = 250
+        self.collection.sectionFooterHeight = UITableViewAutomaticDimension
+        self.collection.estimatedSectionFooterHeight = 250
+        self.collection.showsHorizontalScrollIndicator = false
+        self.collection.showsVerticalScrollIndicator = false
+        self.clear()
     }
 }
 
@@ -100,6 +131,14 @@ extension LinePercentageCollectionControl: UITableViewDelegate, UITableViewDataS
         return self.source.count
     }
 
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        if case .multiple = self.mode, let footerView = tableView.dequeueReusableHeaderFooter(type: PercentFooterView.self) {
+            footerView.setup()
+            return footerView
+        }
+        return nil
+    }
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let headerView = tableView.dequeueReusableHeaderFooter(type: PercentHeaderView.self) {
             headerView.setMode(new: self.mode)
@@ -108,12 +147,12 @@ extension LinePercentageCollectionControl: UITableViewDelegate, UITableViewDataS
                 self.needToClear = !self.needToClear
             }
             headerView.update(source: self.gloabalSource)
+            headerView.globalTitle.text = HeaderText.globalTitle.getValue(mode: self.mode)
+            headerView.globalSubTitle.text = HeaderText.globalSubTitle.getValue(mode: self.mode)
+            headerView.title.text = HeaderText.title.getValue(mode: self.mode)
+            headerView.subTitle.text = HeaderText.subTitle.getValue(mode: self.mode)
             return headerView
         }
         return nil
-    }
-
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 250
     }
 }

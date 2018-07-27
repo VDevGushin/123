@@ -32,10 +32,10 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTF-rT-b5o" customClass="LineControl" customModule="MyWork" customModuleProvider="target">
-                    <rect key="frame" x="132" y="177" width="507" height="30"/>
+                    <rect key="frame" x="120" y="184.5" width="525" height="15"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="15J-1N-l0E"/>
+                        <constraint firstAttribute="height" constant="15" id="15J-1N-l0E"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrL-ot-OMz">
@@ -54,9 +54,9 @@
                 <constraint firstItem="ZcZ-z6-01h" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Ooy-b2-bag"/>
                 <constraint firstItem="PTF-rT-b5o" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="RnN-BB-FSL"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KrL-ot-OMz" secondAttribute="trailing" id="cOs-yX-llF"/>
-                <constraint firstItem="PTF-rT-b5o" firstAttribute="leading" secondItem="ZcZ-z6-01h" secondAttribute="trailing" constant="12" id="eBe-4R-Dx8"/>
+                <constraint firstItem="PTF-rT-b5o" firstAttribute="leading" secondItem="ZcZ-z6-01h" secondAttribute="trailing" id="eBe-4R-Dx8"/>
                 <constraint firstItem="KrL-ot-OMz" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="for-5v-WLM"/>
-                <constraint firstItem="KrL-ot-OMz" firstAttribute="leading" secondItem="PTF-rT-b5o" secondAttribute="trailing" constant="12" id="gxB-BX-l6N"/>
+                <constraint firstItem="KrL-ot-OMz" firstAttribute="leading" secondItem="PTF-rT-b5o" secondAttribute="trailing" constant="6" id="gxB-BX-l6N"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

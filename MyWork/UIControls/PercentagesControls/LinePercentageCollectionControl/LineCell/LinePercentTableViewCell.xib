@@ -6,8 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,18 +19,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7O-95-5BL" customClass="LinePercentagesControl" customModule="MyWork" customModuleProvider="target">
-                        <rect key="frame" x="16" y="19" width="288" height="64"/>
+                        <rect key="frame" x="0.0" y="0.5" width="320" height="101.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="a7O-95-5BL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5qV-VE-npg"/>
-                    <constraint firstItem="a7O-95-5BL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="C9I-z4-TXP"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="a7O-95-5BL" secondAttribute="bottom" constant="8" id="RTb-nn-5fd"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="a7O-95-5BL" secondAttribute="trailing" id="seO-F3-GWy"/>
+                    <constraint firstItem="a7O-95-5BL" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="TLI-Vk-heA"/>
+                    <constraint firstItem="a7O-95-5BL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jQm-uD-dTs"/>
+                    <constraint firstItem="a7O-95-5BL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="s8Q-gh-kh3"/>
+                    <constraint firstItem="a7O-95-5BL" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="zO5-j5-SBp"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="lineControl" destination="a7O-95-5BL" id="HeK-DY-zeb"/>
             </connections>

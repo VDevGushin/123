@@ -38,6 +38,8 @@
 		3C6D8F682109C87F000190F3 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */; };
 		3C6D8F6C2109C9A5000190F3 /* LinePercentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6A2109C9A5000190F3 /* LinePercentTableViewCell.swift */; };
 		3C6D8F6D2109C9A5000190F3 /* LinePercentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6B2109C9A5000190F3 /* LinePercentTableViewCell.xib */; };
+		3CA420A5210B280200C303FC /* PercentFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* PercentFooterView.swift */; };
+		3CA420A7210B281000C303FC /* PercentFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* PercentFooterView.xib */; };
 		3CC633FB2105BCB9002F3B8B /* NaturalLanguageFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FA2105BCB9002F3B8B /* NaturalLanguageFramework.swift */; };
 		3CC633FE2105BD7C002F3B8B /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FD2105BD7C002F3B8B /* Assertions.swift */; };
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
@@ -87,6 +89,8 @@
 		3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
 		3C6D8F6A2109C9A5000190F3 /* LinePercentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentTableViewCell.swift; sourceTree = "<group>"; };
 		3C6D8F6B2109C9A5000190F3 /* LinePercentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentTableViewCell.xib; sourceTree = "<group>"; };
+		3CA420A4210B280200C303FC /* PercentFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentFooterView.swift; sourceTree = "<group>"; };
+		3CA420A6210B281000C303FC /* PercentFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PercentFooterView.xib; sourceTree = "<group>"; };
 		3CC633FA2105BCB9002F3B8B /* NaturalLanguageFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalLanguageFramework.swift; sourceTree = "<group>"; };
 		3CC633FD2105BD7C002F3B8B /* Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 		3C6D8F622109C1FC000190F3 /* LinePercentageCollectionControl */ = {
 			isa = PBXGroup;
 			children = (
+				3CA420A3210B27EB00C303FC /* Footer */,
 				3C0E081D210AF3FD00211B0B /* Header */,
 				3C6D8F692109C966000190F3 /* LineCell */,
 				3C6D8F632109C227000190F3 /* LinePercentageCollectionControl.swift */,
@@ -245,6 +250,15 @@
 				3C6D8F6B2109C9A5000190F3 /* LinePercentTableViewCell.xib */,
 			);
 			path = LineCell;
+			sourceTree = "<group>";
+		};
+		3CA420A3210B27EB00C303FC /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				3CA420A4210B280200C303FC /* PercentFooterView.swift */,
+				3CA420A6210B281000C303FC /* PercentFooterView.xib */,
+			);
+			path = Footer;
 			sourceTree = "<group>";
 		};
 		3CC633F92105BCA1002F3B8B /* Frameworks */ = {
@@ -379,6 +393,7 @@
 				3C6D8F6D2109C9A5000190F3 /* LinePercentTableViewCell.xib in Resources */,
 				3C6D8F662109C261000190F3 /* LinePercentageCollectionControl.xib in Resources */,
 				3CD85A2320EF482A008D994C /* Main.storyboard in Resources */,
+				3CA420A7210B281000C303FC /* PercentFooterView.xib in Resources */,
 				3C6D8F5F21099D3C000190F3 /* LinePercentagesControl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +481,7 @@
 				3C2FA85D20F8BAB100F54E76 /* Result.swift in Sources */,
 				3C0E0829210AFD9700211B0B /* PercentHeaderView.swift in Sources */,
 				3CFC9E352101AEE8008F64D7 /* DeepGCD.swift in Sources */,
+				3CA420A5210B280200C303FC /* PercentFooterView.swift in Sources */,
 				3CD85A1E20EF482A008D994C /* AppDelegate.swift in Sources */,
 				3C1D9C6F210891B0006DF537 /* RoundPercentageViewController.swift in Sources */,
 				3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable
+
 class LinePercentagesControl: UIView {
     private let xibName = String(describing: LinePercentagesControl.self)
     private var view: UIView!

@@ -8,8 +8,15 @@
 
 import UIKit
 
+@IBDesignable
 class PercentHeaderView: UITableViewHeaderFooterView {
     @IBOutlet weak var roundControl: RoundPercentagesControl!
+
+    @IBOutlet weak var globalTitle: UILabel!
+    @IBOutlet weak var globalSubTitle: UILabel!
+
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subTitle: UILabel!
 
     func update(source: RoundPercentagesSource) {
         self.roundControl.update(with: source)
