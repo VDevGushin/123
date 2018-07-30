@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class PercentHeaderView: UITableViewHeaderFooterView {
+class StatisticHeader: UITableViewHeaderFooterView {
     @IBOutlet weak var roundControl: RoundPercentagesControl!
 
     @IBOutlet weak var globalTitle: UILabel!
@@ -23,7 +23,7 @@ class PercentHeaderView: UITableViewHeaderFooterView {
         self.reloadInputViews()
     }
 
-    func setMode(new: RoundPercentagesControlMode) {
+    func setMode(new: PercentagesControlMode) {
         self.roundControl.changeMode(with: new)
     }
 }

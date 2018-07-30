@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var isMultiMode = true
-    @IBOutlet weak var collectionPercent: LinePercentageCollectionControl!
+    @IBOutlet weak var collectionPercent: StatisticControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()

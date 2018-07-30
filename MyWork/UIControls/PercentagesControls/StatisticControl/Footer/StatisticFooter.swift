@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PercentFooterView: UITableViewHeaderFooterView {
+class StatisticFooter: UITableViewHeaderFooterView {
     @IBOutlet weak var l1: UILabel!
     @IBOutlet weak var l2: UILabel!
     @IBOutlet weak var l3: UILabel!

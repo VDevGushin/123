@@ -27,7 +27,7 @@ fileprivate struct Constants {
 }
 
 class LineControl: UIView {
-    fileprivate var mode = RoundPercentagesControlMode.multiple {
+    fileprivate var mode = PercentagesControlMode.multiple {
         didSet {
             refresh()
         }
@@ -68,7 +68,7 @@ extension LineControl {
         refresh()
     }
 
-    func changeMode(with new: RoundPercentagesControlMode) {
+    func changeMode(with new: PercentagesControlMode) {
         mode = new
     }
 }

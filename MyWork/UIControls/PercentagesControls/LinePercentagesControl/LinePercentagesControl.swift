@@ -40,7 +40,7 @@ extension LinePercentagesControl: LineControlDelegate {
         self.lineControl.clear()
     }
 
-    func changeMode(with new: RoundPercentagesControlMode) {
+    func changeMode(with new: PercentagesControlMode) {
         self.lineControl.changeMode(with: new)
     }
 
@@ -48,7 +48,7 @@ extension LinePercentagesControl: LineControlDelegate {
         self.lineControl.setColor(color)
     }
 
-    func setVariant(value: LinePercentagesSource.Variant) {
+    func setVariant(value: PercentagesSource.Variant) {
         self.title.text = value.value
     }
 }
@@ -60,7 +60,7 @@ fileprivate extension LinePercentagesControl {
         self.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
         self.lineControl.delegate = self
-        self.title.text = LinePercentagesSource.Variant.value(0).value
+        self.title.text = PercentagesSource.Variant.value(0).value
     }
 
     func loadFromNib() -> UIView? {

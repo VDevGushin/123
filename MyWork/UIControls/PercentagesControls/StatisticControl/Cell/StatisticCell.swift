@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LinePercentTableViewCell: UITableViewCell {
+class StatisticCell: UITableViewCell {
     @IBOutlet weak var lineControl: LinePercentagesControl!
 
     override func awakeFromNib() {

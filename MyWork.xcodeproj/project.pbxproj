@@ -10,8 +10,8 @@
 		0ED8786B7DB985A3964893C8 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */; };
 		3C0B1760210EDCA5003D9314 /* StructuringSwiftСode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B175F210EDCA5003D9314 /* StructuringSwiftСode.swift */; };
 		3C0B1764210EDF34003D9314 /* ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */; };
-		3C0E0829210AFD9700211B0B /* PercentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0828210AFD9700211B0B /* PercentHeaderView.swift */; };
-		3C0E082B210AFDA200211B0B /* PercentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E082A210AFDA200211B0B /* PercentHeaderView.xib */; };
+		3C0E0829210AFD9700211B0B /* StatisticHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0828210AFD9700211B0B /* StatisticHeader.swift */; };
+		3C0E082B210AFDA200211B0B /* StatisticHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E082A210AFDA200211B0B /* StatisticHeader.xib */; };
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
 		3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */; };
 		3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */; };
@@ -34,14 +34,18 @@
 		3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */; };
 		3C6D8F5F21099D3C000190F3 /* LinePercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */; };
 		3C6D8F612109BB9C000190F3 /* CGFloat+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F602109BB9C000190F3 /* CGFloat+Ex.swift */; };
-		3C6D8F642109C227000190F3 /* LinePercentageCollectionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F632109C227000190F3 /* LinePercentageCollectionControl.swift */; };
-		3C6D8F662109C261000190F3 /* LinePercentageCollectionControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F652109C261000190F3 /* LinePercentageCollectionControl.xib */; };
+		3C6D8F642109C227000190F3 /* StatisticControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F632109C227000190F3 /* StatisticControl.swift */; };
+		3C6D8F662109C261000190F3 /* StatisticControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F652109C261000190F3 /* StatisticControl.xib */; };
 		3C6D8F682109C87F000190F3 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */; };
-		3C6D8F6C2109C9A5000190F3 /* LinePercentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6A2109C9A5000190F3 /* LinePercentTableViewCell.swift */; };
-		3C6D8F6D2109C9A5000190F3 /* LinePercentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6B2109C9A5000190F3 /* LinePercentTableViewCell.xib */; };
+		3C6D8F6C2109C9A5000190F3 /* StatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */; };
+		3C6D8F6D2109C9A5000190F3 /* StatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */; };
+		3C934C8A210EEFA400E35A4D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C89210EEFA400E35A4D /* Person.swift */; };
+		3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */; };
+		3C934C90210EF1B700E35A4D /* PersonStatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */; };
+		3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C91210EF50F00E35A4D /* SecondViewController.swift */; };
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
-		3CA420A5210B280200C303FC /* PercentFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* PercentFooterView.swift */; };
-		3CA420A7210B281000C303FC /* PercentFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* PercentFooterView.xib */; };
+		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
+		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
 		3CC633FB2105BCB9002F3B8B /* NaturalLanguageFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FA2105BCB9002F3B8B /* NaturalLanguageFramework.swift */; };
 		3CC633FE2105BD7C002F3B8B /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FD2105BD7C002F3B8B /* Assertions.swift */; };
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
@@ -55,6 +59,8 @@
 		3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */; };
 		3CEE4255210790FA00671D1D /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE4254210790FA00671D1D /* UIColor+Ex.swift */; };
 		3CEE42572107911E00671D1D /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE42562107911E00671D1D /* String+Ex.swift */; };
+		3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */; };
+		3CF444E9210EECCC005392CF /* PersonStatisticControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */; };
 		3CFC9E352101AEE8008F64D7 /* DeepGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC9E342101AEE8008F64D7 /* DeepGCD.swift */; };
 		3CFC9E372101B144008F64D7 /* SynchronizedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC9E362101B144008F64D7 /* SynchronizedArray.swift */; };
 /* End PBXBuildFile section */
@@ -63,8 +69,8 @@
 		20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 		3C0B175F210EDCA5003D9314 /* StructuringSwiftСode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StructuringSwiftСode.swift"; sourceTree = "<group>"; };
 		3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalConformances.swift; sourceTree = "<group>"; };
-		3C0E0828210AFD9700211B0B /* PercentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentHeaderView.swift; sourceTree = "<group>"; };
-		3C0E082A210AFDA200211B0B /* PercentHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PercentHeaderView.xib; sourceTree = "<group>"; };
+		3C0E0828210AFD9700211B0B /* StatisticHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticHeader.swift; sourceTree = "<group>"; };
+		3C0E082A210AFDA200211B0B /* StatisticHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticHeader.xib; sourceTree = "<group>"; };
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
 		3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactoryMethods.swift; sourceTree = "<group>"; };
 		3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewControllers.swift; sourceTree = "<group>"; };
@@ -87,14 +93,18 @@
 		3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentagesControl.swift; sourceTree = "<group>"; };
 		3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentagesControl.xib; sourceTree = "<group>"; };
 		3C6D8F602109BB9C000190F3 /* CGFloat+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ex.swift"; sourceTree = "<group>"; };
-		3C6D8F632109C227000190F3 /* LinePercentageCollectionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentageCollectionControl.swift; sourceTree = "<group>"; };
-		3C6D8F652109C261000190F3 /* LinePercentageCollectionControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentageCollectionControl.xib; sourceTree = "<group>"; };
+		3C6D8F632109C227000190F3 /* StatisticControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticControl.swift; sourceTree = "<group>"; };
+		3C6D8F652109C261000190F3 /* StatisticControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticControl.xib; sourceTree = "<group>"; };
 		3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
-		3C6D8F6A2109C9A5000190F3 /* LinePercentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentTableViewCell.swift; sourceTree = "<group>"; };
-		3C6D8F6B2109C9A5000190F3 /* LinePercentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentTableViewCell.xib; sourceTree = "<group>"; };
+		3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCell.swift; sourceTree = "<group>"; };
+		3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCell.xib; sourceTree = "<group>"; };
+		3C934C89210EEFA400E35A4D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticCell.swift; sourceTree = "<group>"; };
+		3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticCell.xib; sourceTree = "<group>"; };
+		3C934C91210EF50F00E35A4D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
-		3CA420A4210B280200C303FC /* PercentFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentFooterView.swift; sourceTree = "<group>"; };
-		3CA420A6210B281000C303FC /* PercentFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PercentFooterView.xib; sourceTree = "<group>"; };
+		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
+		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
 		3CC633FA2105BCB9002F3B8B /* NaturalLanguageFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalLanguageFramework.swift; sourceTree = "<group>"; };
 		3CC633FD2105BD7C002F3B8B /* Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
@@ -110,6 +120,8 @@
 		3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeErasureUsingClosures.swift; sourceTree = "<group>"; };
 		3CEE4254210790FA00671D1D /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
 		3CEE42562107911E00671D1D /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticControl.swift; sourceTree = "<group>"; };
+		3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticControl.xib; sourceTree = "<group>"; };
 		3CFC9E342101AEE8008F64D7 /* DeepGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepGCD.swift; sourceTree = "<group>"; };
 		3CFC9E362101B144008F64D7 /* SynchronizedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedArray.swift; sourceTree = "<group>"; };
 		44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */,
+				3C934C89210EEFA400E35A4D /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,8 +168,8 @@
 		3C0E081D210AF3FD00211B0B /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				3C0E0828210AFD9700211B0B /* PercentHeaderView.swift */,
-				3C0E082A210AFDA200211B0B /* PercentHeaderView.xib */,
+				3C0E0828210AFD9700211B0B /* StatisticHeader.swift */,
+				3C0E082A210AFDA200211B0B /* StatisticHeader.xib */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -165,7 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				3C0B1761210EDD85003D9314 /* Models */,
-				3C6D8F622109C1FC000190F3 /* LinePercentageCollectionControl */,
+				3CF444E3210EEC91005392CF /* PersonStatisticControl */,
+				3C6D8F622109C1FC000190F3 /* StatisticControl */,
 				3C1D9C7121089F43006DF537 /* LinePercentagesControl */,
 				3C12E33921086A750026F1D5 /* RoundPercentagesControl */,
 			);
@@ -252,32 +266,41 @@
 			path = UIControls;
 			sourceTree = "<group>";
 		};
-		3C6D8F622109C1FC000190F3 /* LinePercentageCollectionControl */ = {
+		3C6D8F622109C1FC000190F3 /* StatisticControl */ = {
 			isa = PBXGroup;
 			children = (
 				3CA420A3210B27EB00C303FC /* Footer */,
 				3C0E081D210AF3FD00211B0B /* Header */,
-				3C6D8F692109C966000190F3 /* LineCell */,
-				3C6D8F632109C227000190F3 /* LinePercentageCollectionControl.swift */,
-				3C6D8F652109C261000190F3 /* LinePercentageCollectionControl.xib */,
+				3C6D8F692109C966000190F3 /* Cell */,
+				3C6D8F632109C227000190F3 /* StatisticControl.swift */,
+				3C6D8F652109C261000190F3 /* StatisticControl.xib */,
 			);
-			path = LinePercentageCollectionControl;
+			path = StatisticControl;
 			sourceTree = "<group>";
 		};
-		3C6D8F692109C966000190F3 /* LineCell */ = {
+		3C6D8F692109C966000190F3 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				3C6D8F6A2109C9A5000190F3 /* LinePercentTableViewCell.swift */,
-				3C6D8F6B2109C9A5000190F3 /* LinePercentTableViewCell.xib */,
+				3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */,
+				3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */,
 			);
-			path = LineCell;
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3C934C88210EEF7700E35A4D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */,
+				3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		3CA420A3210B27EB00C303FC /* Footer */ = {
 			isa = PBXGroup;
 			children = (
-				3CA420A4210B280200C303FC /* PercentFooterView.swift */,
-				3CA420A6210B281000C303FC /* PercentFooterView.xib */,
+				3CA420A4210B280200C303FC /* StatisticFooter.swift */,
+				3CA420A6210B281000C303FC /* StatisticFooter.xib */,
 			);
 			path = Footer;
 			sourceTree = "<group>";
@@ -321,8 +344,8 @@
 		3CD85A1C20EF482A008D994C /* MyWork */ = {
 			isa = PBXGroup;
 			children = (
-				3C0B1762210EDF0C003D9314 /* LanguageFeatures */,
 				3C38E172210772DD005CBDE9 /* UIControls */,
+				3C0B1762210EDF0C003D9314 /* LanguageFeatures */,
 				3CC633FC2105BD63002F3B8B /* ErrorHandling */,
 				3CC633F92105BCA1002F3B8B /* Frameworks */,
 				3C36D8AF20FF18300095F9A4 /* ConcurrencyProgramming */,
@@ -331,12 +354,23 @@
 				3C2FA84B20F885CD00F54E76 /* View controllers & Navigation */,
 				3CD85A1D20EF482A008D994C /* AppDelegate.swift */,
 				3CD85A1F20EF482A008D994C /* ViewController.swift */,
+				3C934C91210EF50F00E35A4D /* SecondViewController.swift */,
 				3CD85A2120EF482A008D994C /* Main.storyboard */,
 				3CD85A2420EF482D008D994C /* Assets.xcassets */,
 				3CD85A2620EF482D008D994C /* LaunchScreen.storyboard */,
 				3CD85A2920EF482D008D994C /* Info.plist */,
 			);
 			path = MyWork;
+			sourceTree = "<group>";
+		};
+		3CF444E3210EEC91005392CF /* PersonStatisticControl */ = {
+			isa = PBXGroup;
+			children = (
+				3C934C88210EEF7700E35A4D /* Cell */,
+				3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */,
+				3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */,
+			);
+			path = PersonStatisticControl;
 			sourceTree = "<group>";
 		};
 		CE930C0AC3A3715B8BA78B66 /* Pods */ = {
@@ -409,13 +443,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD85A2820EF482D008D994C /* LaunchScreen.storyboard in Resources */,
+				3C934C90210EF1B700E35A4D /* PersonStatisticCell.xib in Resources */,
 				3CD85A2520EF482D008D994C /* Assets.xcassets in Resources */,
 				3C38E17621077353005CBDE9 /* RoundPercentagesControl.xib in Resources */,
-				3C0E082B210AFDA200211B0B /* PercentHeaderView.xib in Resources */,
-				3C6D8F6D2109C9A5000190F3 /* LinePercentTableViewCell.xib in Resources */,
-				3C6D8F662109C261000190F3 /* LinePercentageCollectionControl.xib in Resources */,
+				3C0E082B210AFDA200211B0B /* StatisticHeader.xib in Resources */,
+				3C6D8F6D2109C9A5000190F3 /* StatisticCell.xib in Resources */,
+				3C6D8F662109C261000190F3 /* StatisticControl.xib in Resources */,
+				3CF444E9210EECCC005392CF /* PersonStatisticControl.xib in Resources */,
 				3CD85A2320EF482A008D994C /* Main.storyboard in Resources */,
-				3CA420A7210B281000C303FC /* PercentFooterView.xib in Resources */,
+				3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */,
 				3C6D8F5F21099D3C000190F3 /* LinePercentagesControl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +506,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */,
+				3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */,
 				3CC633FE2105BD7C002F3B8B /* Assertions.swift in Sources */,
 				3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */,
 				3C6D8F682109C87F000190F3 /* UITableView+Ex.swift in Sources */,
@@ -483,16 +521,18 @@
 				3CEE42572107911E00671D1D /* String+Ex.swift in Sources */,
 				3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */,
 				3C2FA85A20F8BA3900F54E76 /* CodeEncapsulation.swift in Sources */,
-				3C6D8F6C2109C9A5000190F3 /* LinePercentTableViewCell.swift in Sources */,
+				3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */,
+				3C6D8F6C2109C9A5000190F3 /* StatisticCell.swift in Sources */,
 				3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */,
 				3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */,
 				3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */,
+				3C934C8A210EEFA400E35A4D /* Person.swift in Sources */,
 				3C2FA85220F88C3400F54E76 /* Delegation.swift in Sources */,
 				3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */,
 				3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */,
 				3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */,
 				3CEE4255210790FA00671D1D /* UIColor+Ex.swift in Sources */,
-				3C6D8F642109C227000190F3 /* LinePercentageCollectionControl.swift in Sources */,
+				3C6D8F642109C227000190F3 /* StatisticControl.swift in Sources */,
 				3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */,
 				3C2FA85420F88FAE00F54E76 /* Observers+NotificationCenter.swift in Sources */,
 				3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */,
@@ -503,10 +543,10 @@
 				3C40AB9820FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift in Sources */,
 				3CC633FB2105BCB9002F3B8B /* NaturalLanguageFramework.swift in Sources */,
 				3C2FA85D20F8BAB100F54E76 /* Result.swift in Sources */,
-				3C0E0829210AFD9700211B0B /* PercentHeaderView.swift in Sources */,
+				3C0E0829210AFD9700211B0B /* StatisticHeader.swift in Sources */,
 				3C0B1764210EDF34003D9314 /* ConditionalConformances.swift in Sources */,
 				3CFC9E352101AEE8008F64D7 /* DeepGCD.swift in Sources */,
-				3CA420A5210B280200C303FC /* PercentFooterView.swift in Sources */,
+				3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */,
 				3CD85A1E20EF482A008D994C /* AppDelegate.swift in Sources */,
 				3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */,
 				3C2FA85820F892CA00F54E76 /* Observers+ClosureTokens.swift in Sources */,

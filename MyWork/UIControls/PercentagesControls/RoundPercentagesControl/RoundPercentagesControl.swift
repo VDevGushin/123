@@ -16,7 +16,7 @@ class RoundPercentagesControl: UIView {
     private let dataSource = RoundPercentagesSource()
     var pieChartView: PieChartView!
 
-    fileprivate var mode = RoundPercentagesControlMode.multiple {
+    fileprivate var mode = PercentagesControlMode.multiple {
         didSet {
             self.refresh(pieChartView: self.pieChartView)
         }
@@ -52,7 +52,7 @@ extension RoundPercentagesControl {
         refresh(pieChartView: self.pieChartView)
     }
     
-    func changeMode(with new: RoundPercentagesControlMode) {
+    func changeMode(with new: PercentagesControlMode) {
         self.mode = new
     }
 }

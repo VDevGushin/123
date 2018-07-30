@@ -9,7 +9,7 @@
 import Foundation
 import Charts
 
-enum RoundPercentagesControlMode {
+enum PercentagesControlMode {
     case single
     case multiple
 }
@@ -50,7 +50,7 @@ class PercentagesSource {
         }
     }
 
-    func getPercent(mode: RoundPercentagesControlMode) -> String {
+    func getPercent(mode: PercentagesControlMode) -> String {
         let total = getTotal(mode: mode)
         if total == 0 {
             return "\(total)%"
@@ -59,7 +59,7 @@ class PercentagesSource {
         return "\(result)%"
     }
 
-    func getTotal(mode: RoundPercentagesControlMode) -> Int {
+    func getTotal(mode: PercentagesControlMode) -> Int {
         return self.getSource(mode: mode).reduce(0) {
             $0 + $1.value
         }
@@ -75,6 +75,16 @@ class PercentagesSource {
 }
 
 extension PercentagesSource {
+    enum Variant {
+        case value(Int)
+        var value: String {
+            switch self {
+            case .value(let number):
+                return "Вариант \(number)"
+            }
+        }
+    }
+    
     enum PercentagesTypeTitle: String {
         case rightAnswer = "Правильный ответ"
         case needCheck = "Требует проверки"
@@ -132,21 +142,21 @@ extension PercentagesSource {
 }
 
 fileprivate extension PercentagesSource {
-    func getSource(mode: RoundPercentagesControlMode) -> [PercentagesData] {
+    func getSource(mode: PercentagesControlMode) -> [PercentagesData] {
         var source = [PercentagesData]()
         self.setColors(mode: mode)
         source = [self.rightAnswer, self.needCheck, self.incorrectAnswer, self.skipped, self.notViewed]
         return source
     }
 
-    func colors(mode: RoundPercentagesControlMode) -> [UIColor] {
+    func colors(mode: PercentagesControlMode) -> [UIColor] {
         let source = getSource(mode: mode)
         return source.map {
             $0.color
         }
     }
 
-    func setColors(mode: RoundPercentagesControlMode) {
+    func setColors(mode: PercentagesControlMode) {
         switch mode {
         case .multiple:
             self.rightAnswer.color = UIColor(.rightAnswer)
@@ -165,7 +175,7 @@ fileprivate extension PercentagesSource {
 //MARK: - Round control
 //Класс для работы с контролом - круглый пай
 class RoundPercentagesSource: PercentagesSource {
-    func getData(mode: RoundPercentagesControlMode) -> PieChartData {
+    func getData(mode: PercentagesControlMode) -> PieChartData {
         let set = PieChartDataSet(values: self.source(mode: mode), label: "")
         set.colors = self.colors(mode: mode)
         set.drawIconsEnabled = false
@@ -188,7 +198,7 @@ class RoundPercentagesSource: PercentagesSource {
     }
 
 
-    private func source(mode: RoundPercentagesControlMode) -> [PieChartDataEntry] {
+    private func source(mode: PercentagesControlMode) -> [PieChartDataEntry] {
         let source = getSource(mode: mode)
         var result = [PieChartDataEntry]()
         for i in 0..<source.count {
@@ -225,23 +235,11 @@ class LinePercentagesSource: PercentagesSource {
         self.baseColor = color
     }
 
-    func count(mode: RoundPercentagesControlMode) -> Int {
+    func count(mode: PercentagesControlMode) -> Int {
         return getSource(mode: mode).count
     }
 
-    func getData(mode: RoundPercentagesControlMode) -> [PercentagesData] {
+    func getData(mode: PercentagesControlMode) -> [PercentagesData] {
         return getSource(mode: mode)
-    }
-}
-
-extension LinePercentagesSource {
-    enum Variant {
-        case value(Int)
-        var value: String {
-            switch self {
-            case .value(let number):
-                return "Вариант \(number)"
-            }
-        }
     }
 }

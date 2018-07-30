@@ -8,13 +8,21 @@
 
 import UIKit
 
-class LinePercentageCollectionControl: UIView {
+fileprivate extension Array where Element == LinePercentagesSource {
+    func clearAll() {
+        self.forEach {
+            $0.clearAll()
+        }
+    }
+}
+
+class StatisticControl: UIView {
     enum HeaderText {
         case globalTitle
         case globalSubTitle
         case title
         case subTitle
-        func getValue(mode: RoundPercentagesControlMode) -> String {
+        func getValue(mode: PercentagesControlMode) -> String {
             switch mode {
             case .multiple:
                 switch self {
@@ -37,10 +45,10 @@ class LinePercentageCollectionControl: UIView {
     @IBOutlet weak var collection: UITableView!
     private let colorSource = UIColor.linePercentCollectionColorSource
     private var gloabalSource = RoundPercentagesSource()
-    private let xibName = String(describing: LinePercentageCollectionControl.self)
+    private let xibName = String(describing: StatisticControl.self)
     private var view: UIView!
     fileprivate var source = [LinePercentagesSource]()
-    fileprivate var mode = RoundPercentagesControlMode.multiple {
+    fileprivate var mode = PercentagesControlMode.multiple {
         didSet {
             self.collection.reloadData()
         }
@@ -66,20 +74,18 @@ class LinePercentageCollectionControl: UIView {
         self.gloabalSource = source
     }
 
-    func changeMode(with new: RoundPercentagesControlMode) {
+    func changeMode(with new: PercentagesControlMode) {
         self.mode = new
     }
 
     func clear() {
-        for item in self.source {
-            item.clearAll()
-        }
+        self.source.clearAll()
         self.needToClear = true
         self.collection.reloadData()
     }
 }
 
-fileprivate extension LinePercentageCollectionControl {
+fileprivate extension StatisticControl {
     func setup() {
         self.view = loadFromNib()
         self.view.frame = bounds
@@ -99,9 +105,9 @@ fileprivate extension LinePercentageCollectionControl {
         self.collection.delegate = self
         self.collection.backgroundColor = UIColor.clear
         self.collection.dataSource = self
-        self.collection.register(LinePercentTableViewCell.self)
-        self.collection.registerFooterHeader(PercentHeaderView.self)
-        self.collection.registerFooterHeader(PercentFooterView.self)
+        self.collection.register(StatisticCell.self)
+        self.collection.registerFooterHeader(StatisticHeader.self)
+        self.collection.registerFooterHeader(StatisticFooter.self)
         self.collection.separatorStyle = .none
         self.collection.estimatedRowHeight = 30
         self.collection.rowHeight = UITableViewAutomaticDimension
@@ -115,10 +121,10 @@ fileprivate extension LinePercentageCollectionControl {
     }
 }
 
-extension LinePercentageCollectionControl: UITableViewDelegate, UITableViewDataSource {
+extension StatisticControl: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let res = self.source[indexPath.item]
-        let cell = tableView.dequeueReusableCell(type: LinePercentTableViewCell.self, indexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(type: StatisticCell.self, indexPath: indexPath)
         cell?.lineControl.update(with: res.getSet())
         cell?.lineControl.setColor(colorSource[indexPath.item % 5])
         cell?.lineControl.changeMode(with: self.mode)
@@ -132,7 +138,7 @@ extension LinePercentageCollectionControl: UITableViewDelegate, UITableViewDataS
     }
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        if case .multiple = self.mode, let footerView = tableView.dequeueReusableHeaderFooter(type: PercentFooterView.self) {
+        if case .multiple = self.mode, let footerView = tableView.dequeueReusableHeaderFooter(type: StatisticFooter.self) {
             footerView.setup()
             return footerView
         }
@@ -140,7 +146,7 @@ extension LinePercentageCollectionControl: UITableViewDelegate, UITableViewDataS
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if let headerView = tableView.dequeueReusableHeaderFooter(type: PercentHeaderView.self) {
+        if let headerView = tableView.dequeueReusableHeaderFooter(type: StatisticHeader.self) {
             headerView.setMode(new: self.mode)
             if self.needToClear {
                 self.gloabalSource.clearAll()
