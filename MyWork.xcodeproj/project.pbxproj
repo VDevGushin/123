@@ -39,6 +39,7 @@
 		3C6D8F682109C87F000190F3 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */; };
 		3C6D8F6C2109C9A5000190F3 /* StatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */; };
 		3C6D8F6D2109C9A5000190F3 /* StatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */; };
+		3C7CD75221103951009871B1 /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CD75121103951009871B1 /* Tuples.swift */; };
 		3C934C8A210EEFA400E35A4D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C89210EEFA400E35A4D /* Person.swift */; };
 		3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */; };
 		3C934C90210EF1B700E35A4D /* PersonStatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */; };
@@ -98,6 +99,7 @@
 		3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
 		3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCell.swift; sourceTree = "<group>"; };
 		3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCell.xib; sourceTree = "<group>"; };
+		3C7CD75121103951009871B1 /* Tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuples.swift; sourceTree = "<group>"; };
 		3C934C89210EEFA400E35A4D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticCell.swift; sourceTree = "<group>"; };
 		3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticCell.xib; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */,
+				3C7CD75121103951009871B1 /* Tuples.swift */,
 			);
 			path = LanguageFeatures;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */,
 				3C2FA85A20F8BA3900F54E76 /* CodeEncapsulation.swift in Sources */,
 				3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */,
+				3C7CD75221103951009871B1 /* Tuples.swift in Sources */,
 				3C6D8F6C2109C9A5000190F3 /* StatisticCell.swift in Sources */,
 				3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */,
 				3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */,
