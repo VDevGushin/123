@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTimeViewControl" customModule="MyWork" customModuleProvider="target">
+            <connections>
+                <outlet property="timerPicker" destination="ba7-Ix-d6n" id="VJL-Cw-pFR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="192"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWM-WX-oTp">
+                    <rect key="frame" x="0.0" y="0.0" width="371" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4q-tP-8Ka">
+                            <rect key="frame" x="8" y="9" width="71" height="30"/>
+                            <state key="normal" title="Отменить"/>
+                            <connections>
+                                <action selector="cancel:" destination="-1" eventType="touchUpInside" id="Y6N-wI-Rhi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2B-f2-ENs">
+                            <rect key="frame" x="294" y="9" width="69" height="30"/>
+                            <state key="normal" title="Добавить"/>
+                            <connections>
+                                <action selector="addAction:" destination="-1" eventType="touchUpInside" id="PvN-N9-D7R"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дополнительное время" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-8w-vXk">
+                            <rect key="frame" x="91.5" y="14.5" width="188.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="T4q-tP-8Ka" firstAttribute="centerY" secondItem="hWM-WX-oTp" secondAttribute="centerY" id="9cF-ys-KmC"/>
+                        <constraint firstItem="lPy-8w-vXk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T4q-tP-8Ka" secondAttribute="trailing" constant="3" id="Bea-Tc-LcT"/>
+                        <constraint firstAttribute="trailing" secondItem="I2B-f2-ENs" secondAttribute="trailing" constant="8" id="EOo-ws-xgZ"/>
+                        <constraint firstItem="T4q-tP-8Ka" firstAttribute="leading" secondItem="hWM-WX-oTp" secondAttribute="leading" constant="8" id="MjD-f5-iiB"/>
+                        <constraint firstItem="lPy-8w-vXk" firstAttribute="centerY" secondItem="hWM-WX-oTp" secondAttribute="centerY" id="Nt8-FG-CwX"/>
+                        <constraint firstItem="I2B-f2-ENs" firstAttribute="centerY" secondItem="hWM-WX-oTp" secondAttribute="centerY" id="ePZ-0o-vYM"/>
+                        <constraint firstItem="I2B-f2-ENs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lPy-8w-vXk" secondAttribute="trailing" constant="3" id="yvT-nB-pix"/>
+                        <constraint firstItem="lPy-8w-vXk" firstAttribute="centerX" secondItem="hWM-WX-oTp" secondAttribute="centerX" id="zji-Zq-v5b"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0y-I6-HG9">
+                    <rect key="frame" x="0.0" y="48" width="371" height="144"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-Ix-d6n" customClass="ETBTimePickerView" customModule="MyWork" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="371" height="144"/>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ba7-Ix-d6n" secondAttribute="bottom" id="51Z-8Y-o21"/>
+                        <constraint firstItem="ba7-Ix-d6n" firstAttribute="leading" secondItem="s0y-I6-HG9" secondAttribute="leading" id="Svq-Ge-krS"/>
+                        <constraint firstAttribute="trailing" secondItem="ba7-Ix-d6n" secondAttribute="trailing" id="jUG-s3-LhK"/>
+                        <constraint firstItem="ba7-Ix-d6n" firstAttribute="top" secondItem="s0y-I6-HG9" secondAttribute="top" id="zgd-pv-O8P"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hWM-WX-oTp" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:4" id="Blg-DZ-EhG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="s0y-I6-HG9" secondAttribute="trailing" id="FMA-LA-CfF"/>
+                <constraint firstItem="hWM-WX-oTp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Pq7-dq-LBp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="s0y-I6-HG9" secondAttribute="bottom" id="ZCk-fp-3b3"/>
+                <constraint firstItem="s0y-I6-HG9" firstAttribute="top" secondItem="hWM-WX-oTp" secondAttribute="bottom" id="ZYz-mW-ov9"/>
+                <constraint firstItem="s0y-I6-HG9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="c9T-2e-HaD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hWM-WX-oTp" secondAttribute="trailing" id="e2l-hm-yu0"/>
+                <constraint firstItem="hWM-WX-oTp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="viQ-NY-WLQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-138.5" y="-184"/>
+        </view>
+    </objects>
+</document>
