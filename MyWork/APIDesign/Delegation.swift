@@ -12,6 +12,9 @@ class File {
     init() {
         self.path = ""
     }
+    func read()throws -> Data {
+        return Data(base64Encoded: "123")!
+    }
 }
 
 //PROTOCOLS
