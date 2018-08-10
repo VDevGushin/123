@@ -65,6 +65,7 @@
 		3CEE42572107911E00671D1D /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE42562107911E00671D1D /* String+Ex.swift */; };
 		3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */; };
 		3CF444E9210EECCC005392CF /* PersonStatisticControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */; };
+		3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */; };
 		3CFBCC0B21145A7B00A8A458 /* ETBVariantsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */; };
 		3CFBCC0D21145A8300A8A458 /* ETBVariantsControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0C21145A8300A8A458 /* ETBVariantsControl.xib */; };
 		3CFBCC1221145CC000A8A458 /* ETBVariantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCC1021145CC000A8A458 /* ETBVariantTableViewCell.swift */; };
@@ -143,6 +144,7 @@
 		3CEE42562107911E00671D1D /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticControl.swift; sourceTree = "<group>"; };
 		3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticControl.xib; sourceTree = "<group>"; };
+		3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstClassFunctions .swift"; sourceTree = "<group>"; };
 		3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBVariantsControl.swift; sourceTree = "<group>"; };
 		3CFBCC0C21145A8300A8A458 /* ETBVariantsControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBVariantsControl.xib; sourceTree = "<group>"; };
 		3CFBCC1021145CC000A8A458 /* ETBVariantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBVariantTableViewCell.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				3C7CD75121103951009871B1 /* Tuples.swift */,
 				3C1DD66E2118135D00383851 /* PowerOfSet.swift */,
 				3C4763D7211AC567006D0C1B /* CustomOperators.swift */,
+				3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */,
 			);
 			path = LanguageFeatures;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				3CFD253C2112F95400128554 /* UIView+Ex.swift in Sources */,
 				3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */,
 				3CEE42572107911E00671D1D /* String+Ex.swift in Sources */,
+				3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */,
 				3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */,
 				3CFBCC1221145CC000A8A458 /* ETBVariantTableViewCell.swift in Sources */,
 				3CFD25512113453F00128554 /* ETBAddTimeViewController.swift in Sources */,
