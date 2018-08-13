@@ -15,6 +15,8 @@
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
 		3C1DD66F2118135D00383851 /* PowerOfSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DD66E2118135D00383851 /* PowerOfSet.swift */; };
 		3C1DD6722118183700383851 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DD6712118183700383851 /* Serialization.swift */; };
+		3C1EC266212150BC00E929E5 /* TrimmingLongArgumentLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */; };
+		3C1EC2682121526500E929E5 /* UsingGenericTypeConstraints .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */; };
 		3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */; };
 		3C2FA85020F8875400F54E76 /* ChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */; };
 		3C2FA85220F88C3400F54E76 /* Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85120F88C3400F54E76 /* Delegation.swift */; };
@@ -93,6 +95,8 @@
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
 		3C1DD66E2118135D00383851 /* PowerOfSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSet.swift; sourceTree = "<group>"; };
 		3C1DD6712118183700383851 /* Serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
+		3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmingLongArgumentLists.swift; sourceTree = "<group>"; };
+		3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingGenericTypeConstraints .swift"; sourceTree = "<group>"; };
 		3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactoryMethods.swift; sourceTree = "<group>"; };
 		3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewControllers.swift; sourceTree = "<group>"; };
 		3C2FA85120F88C3400F54E76 /* Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 				3C1DD66E2118135D00383851 /* PowerOfSet.swift */,
 				3C4763D7211AC567006D0C1B /* CustomOperators.swift */,
 				3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */,
+				3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */,
 			);
 			path = LanguageFeatures;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			children = (
 				3C1DD6712118183700383851 /* Serialization.swift */,
 				3CBDAD35211D8133007ED110 /* TestProperty.swift */,
+				3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */,
 			);
 			path = NONE;
 			sourceTree = "<group>";
@@ -616,6 +622,7 @@
 				3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */,
 				3CEE42572107911E00671D1D /* String+Ex.swift in Sources */,
 				3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */,
+				3C1EC266212150BC00E929E5 /* TrimmingLongArgumentLists.swift in Sources */,
 				3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */,
 				3CFBCC1221145CC000A8A458 /* ETBVariantTableViewCell.swift in Sources */,
 				3CFD25512113453F00128554 /* ETBAddTimeViewController.swift in Sources */,
@@ -645,6 +652,7 @@
 				3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */,
 				3C0B1760210EDCA5003D9314 /* StructuringSwiftСode.swift in Sources */,
 				3C40AB9820FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift in Sources */,
+				3C1EC2682121526500E929E5 /* UsingGenericTypeConstraints .swift in Sources */,
 				3CC633FB2105BCB9002F3B8B /* NaturalLanguageFramework.swift in Sources */,
 				3C2FA85D20F8BAB100F54E76 /* Result.swift in Sources */,
 				3C0E0829210AFD9700211B0B /* StatisticHeader.swift in Sources */,
