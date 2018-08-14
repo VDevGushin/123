@@ -92,6 +92,6 @@ fileprivate class TestPostWithNested {
     func test() {
         let post = PostWithNested(id: 1, author: User(), title: "g", text: "g")
         let formatter = PostWithNested.TextFormatter(options: [.highlightLinks])
-        let text = formatter.formatText(for: post)
+        let _ = formatter.formatText(for: post)
     }
 }

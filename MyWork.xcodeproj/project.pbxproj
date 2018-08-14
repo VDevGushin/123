@@ -52,6 +52,7 @@
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
 		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
+		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CBDAD36211D8133007ED110 /* TestProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDAD35211D8133007ED110 /* TestProperty.swift */; };
 		3CC633FB2105BCB9002F3B8B /* NaturalLanguageFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FA2105BCB9002F3B8B /* NaturalLanguageFramework.swift */; };
 		3CC633FE2105BD7C002F3B8B /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FD2105BD7C002F3B8B /* Assertions.swift */; };
@@ -132,6 +133,7 @@
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
+		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CBDAD35211D8133007ED110 /* TestProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProperty.swift; sourceTree = "<group>"; };
 		3CC633FA2105BCB9002F3B8B /* NaturalLanguageFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalLanguageFramework.swift; sourceTree = "<group>"; };
 		3CC633FD2105BD7C002F3B8B /* Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				3C4763D7211AC567006D0C1B /* CustomOperators.swift */,
 				3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */,
 				3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */,
+				3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */,
 			);
 			path = LanguageFeatures;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 				3C4763D8211AC567006D0C1B /* CustomOperators.swift in Sources */,
 				3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */,
 				3C2FA85620F8918A00F54E76 /* Observers+Protocols.swift in Sources */,
+				3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */,
 				3C6D8F612109BB9C000190F3 /* CGFloat+Ex.swift in Sources */,
 				3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */,
 				3C0B1760210EDCA5003D9314 /* StructuringSwiftСode.swift in Sources */,
