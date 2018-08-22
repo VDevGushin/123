@@ -23,9 +23,18 @@ fileprivate enum PostTextFormatterOption {
     case highlightLinks
 }
 
-class User: Unboxable, Savable {
-    required init(unboxer: Unboxer) throws {
+struct Group: Hashable { }
+enum Permission: Hashable {
+    enum Status{}
+    case comments
+}
 
+class User: Unboxable, Savable {
+    var firstName: String?
+    var lastName: String?
+    var groups: Set<Group>?
+    var permissions: Set<Permission>?
+    required init(unboxer: Unboxer) throws {
     }
 
     init() { }
