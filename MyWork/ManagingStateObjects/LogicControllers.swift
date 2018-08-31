@@ -98,7 +98,6 @@ extension ProfileViewControler: UITextFieldDelegate {
 
         logicController.changeDisplayName(to: newDisplayName) { [weak self] state in
             self?.render(state)
-
         }
     }
 }

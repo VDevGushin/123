@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0ED8786B7DB985A3964893C8 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */; };
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
-		3C0B1760210EDCA5003D9314 /* StructuringSwiftСode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B175F210EDCA5003D9314 /* StructuringSwiftСode.swift */; };
 		3C0B1764210EDF34003D9314 /* ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */; };
 		3C0E0829210AFD9700211B0B /* StatisticHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0828210AFD9700211B0B /* StatisticHeader.swift */; };
 		3C0E082B210AFDA200211B0B /* StatisticHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E082A210AFDA200211B0B /* StatisticHeader.xib */; };
@@ -58,6 +57,7 @@
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CBDAD36211D8133007ED110 /* TestProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDAD35211D8133007ED110 /* TestProperty.swift */; };
+		3CC3911C21395741001B42DA /* UsingBuilder .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3911B21395741001B42DA /* UsingBuilder .swift */; };
 		3CC633FB2105BCB9002F3B8B /* NaturalLanguageFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FA2105BCB9002F3B8B /* NaturalLanguageFramework.swift */; };
 		3CC633FE2105BD7C002F3B8B /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FD2105BD7C002F3B8B /* Assertions.swift */; };
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
@@ -97,7 +97,6 @@
 /* Begin PBXFileReference section */
 		20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 		3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
-		3C0B175F210EDCA5003D9314 /* StructuringSwiftСode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StructuringSwiftСode.swift"; sourceTree = "<group>"; };
 		3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalConformances.swift; sourceTree = "<group>"; };
 		3C0E0828210AFD9700211B0B /* StatisticHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticHeader.swift; sourceTree = "<group>"; };
 		3C0E082A210AFDA200211B0B /* StatisticHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticHeader.xib; sourceTree = "<group>"; };
@@ -146,6 +145,7 @@
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CBDAD35211D8133007ED110 /* TestProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProperty.swift; sourceTree = "<group>"; };
+		3CC3911B21395741001B42DA /* UsingBuilder .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingBuilder .swift"; sourceTree = "<group>"; };
 		3CC633FA2105BCB9002F3B8B /* NaturalLanguageFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalLanguageFramework.swift; sourceTree = "<group>"; };
 		3CC633FD2105BD7C002F3B8B /* Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
@@ -304,7 +304,6 @@
 				3C40AB9720FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift */,
 				3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */,
 				3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */,
-				3C0B175F210EDCA5003D9314 /* StructuringSwiftСode.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -463,6 +462,7 @@
 				3CD3DB1D213521EB004F0FE7 /* PowerOfResult .swift */,
 				3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */,
 				3CE8CAF52136AB49003752DC /* LogicControllers.swift */,
+				3CC3911B21395741001B42DA /* UsingBuilder .swift */,
 			);
 			path = ManagingStateObjects;
 			sourceTree = "<group>";
@@ -669,6 +669,7 @@
 				3CFBCC152114602E00A8A458 /* TreeViewController.swift in Sources */,
 				3C934C8A210EEFA400E35A4D /* Person.swift in Sources */,
 				3C2FA85220F88C3400F54E76 /* Delegation.swift in Sources */,
+				3CC3911C21395741001B42DA /* UsingBuilder .swift in Sources */,
 				3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */,
 				3C9A83C62133C9C4008A1F17 /* HandlingMutableModels.swift in Sources */,
 				3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */,
@@ -688,7 +689,6 @@
 				3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */,
 				3C6D8F612109BB9C000190F3 /* CGFloat+Ex.swift in Sources */,
 				3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */,
-				3C0B1760210EDCA5003D9314 /* StructuringSwiftСode.swift in Sources */,
 				3C40AB9820FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift in Sources */,
 				3C1EC2682121526500E929E5 /* UsingGenericTypeConstraints .swift in Sources */,
 				3CC633FB2105BCB9002F3B8B /* NaturalLanguageFramework.swift in Sources */,
