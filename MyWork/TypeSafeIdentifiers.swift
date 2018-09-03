@@ -47,6 +47,7 @@ struct TypeSafeUser {
 struct TypeIdentifiersTest {
     func test() {
         let id = Identifier(string: "new-user")
+        let d : Identifier = "2"
         let id2: Identifier = "new-user" // ExpressibleByStringLiteral
         let user = TypeSafeUser(id: "new-user", name: "John")
     }
