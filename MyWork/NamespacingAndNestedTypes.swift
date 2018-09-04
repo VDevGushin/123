@@ -25,12 +25,14 @@ fileprivate enum PostTextFormatterOption {
 
 struct Group: Hashable { }
 enum Permission: Hashable {
-    enum Status{}
+    enum Status { }
     case comments
 }
 
 class User: Unboxable, Savable {
+    var isFriend = false
     var firstName: String?
+    var profileImage: UIImage?
     var lastName: String?
     var groups: Set<Group>?
     var permissions: Set<Permission>?
