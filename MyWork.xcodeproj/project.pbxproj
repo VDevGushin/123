@@ -38,6 +38,13 @@
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
 		3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54E21006423003F484C /* PromiseKit.swift */; };
 		3C4C676921254370005D05D5 /* LazyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C676821254370005D05D5 /* LazyProperties.swift */; };
+		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
+		3C55FE09213FE41F00ABA745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE08213FE41F00ABA745 /* AppDelegate.swift */; };
+		3C55FE0B213FE41F00ABA745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE0A213FE41F00ABA745 /* ViewController.swift */; };
+		3C55FE0E213FE41F00ABA745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55FE0C213FE41F00ABA745 /* Main.storyboard */; };
+		3C55FE10213FE42400ABA745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C55FE0F213FE42400ABA745 /* Assets.xcassets */; };
+		3C55FE13213FE42400ABA745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55FE11213FE42400ABA745 /* LaunchScreen.storyboard */; };
+		3C55FE19213FE57700ABA745 /* DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE18213FE57700ABA745 /* DateFormater.swift */; };
 		3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5A21099BAC000190F3 /* LineControl.swift */; };
 		3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */; };
 		3C6D8F5F21099D3C000190F3 /* LinePercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */; };
@@ -129,6 +136,15 @@
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
 		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
 		3C4C676821254370005D05D5 /* LazyProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyProperties.swift; sourceTree = "<group>"; };
+		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		3C55FE06213FE41F00ABA745 /* MyWorkV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWorkV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C55FE08213FE41F00ABA745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C55FE0A213FE41F00ABA745 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C55FE0D213FE41F00ABA745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C55FE0F213FE42400ABA745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C55FE12213FE42400ABA745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C55FE14213FE42400ABA745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C55FE18213FE57700ABA745 /* DateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormater.swift; sourceTree = "<group>"; };
 		3C6D8F5A21099BAC000190F3 /* LineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineControl.swift; sourceTree = "<group>"; };
 		3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentagesControl.swift; sourceTree = "<group>"; };
 		3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentagesControl.xib; sourceTree = "<group>"; };
@@ -193,6 +209,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3C55FE03213FE41F00ABA745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CD85A1720EF482A008D994C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,6 +329,28 @@
 			path = UIControls;
 			sourceTree = "<group>";
 		};
+		3C55FDFF213FC4AC00ABA745 /* Habr */ = {
+			isa = PBXGroup;
+			children = (
+				3C55FE00213FC4C000ABA745 /* Codable.swift */,
+			);
+			path = Habr;
+			sourceTree = "<group>";
+		};
+		3C55FE07213FE41F00ABA745 /* MyWorkV2 */ = {
+			isa = PBXGroup;
+			children = (
+				3C55FE18213FE57700ABA745 /* DateFormater.swift */,
+				3C55FE08213FE41F00ABA745 /* AppDelegate.swift */,
+				3C55FE0A213FE41F00ABA745 /* ViewController.swift */,
+				3C55FE0C213FE41F00ABA745 /* Main.storyboard */,
+				3C55FE0F213FE42400ABA745 /* Assets.xcassets */,
+				3C55FE11213FE42400ABA745 /* LaunchScreen.storyboard */,
+				3C55FE14213FE42400ABA745 /* Info.plist */,
+			);
+			path = MyWorkV2;
+			sourceTree = "<group>";
+		};
 		3C6D8F622109C1FC000190F3 /* StatisticControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				3CD85A1C20EF482A008D994C /* MyWork */,
+				3C55FE07213FE41F00ABA745 /* MyWorkV2 */,
 				3CD85A1B20EF482A008D994C /* Products */,
 				CE930C0AC3A3715B8BA78B66 /* Pods */,
 				0A62CB7B25171A6FCD0001F5 /* Frameworks */,
@@ -369,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				3CD85A1A20EF482A008D994C /* MyWork.app */,
+				3C55FE06213FE41F00ABA745 /* MyWorkV2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -376,6 +423,7 @@
 		3CD85A1C20EF482A008D994C /* MyWork */ = {
 			isa = PBXGroup;
 			children = (
+				3C55FDFF213FC4AC00ABA745 /* Habr */,
 				3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */,
 				3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */,
 				3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */,
@@ -481,6 +529,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3C55FE05213FE41F00ABA745 /* MyWorkV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C55FE15213FE42400ABA745 /* Build configuration list for PBXNativeTarget "MyWorkV2" */;
+			buildPhases = (
+				3C55FE02213FE41F00ABA745 /* Sources */,
+				3C55FE03213FE41F00ABA745 /* Frameworks */,
+				3C55FE04213FE41F00ABA745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWorkV2;
+			productName = MyWorkV2;
+			productReference = 3C55FE06213FE41F00ABA745 /* MyWorkV2.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3CD85A1920EF482A008D994C /* MyWork */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CD85A2C20EF482D008D994C /* Build configuration list for PBXNativeTarget "MyWork" */;
@@ -510,6 +575,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Vladislav Gushin";
 				TargetAttributes = {
+					3C55FE05213FE41F00ABA745 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					3CD85A1920EF482A008D994C = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -529,11 +597,22 @@
 			projectRoot = "";
 			targets = (
 				3CD85A1920EF482A008D994C /* MyWork */,
+				3C55FE05213FE41F00ABA745 /* MyWorkV2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3C55FE04213FE41F00ABA745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C55FE13213FE42400ABA745 /* LaunchScreen.storyboard in Resources */,
+				3C55FE10213FE42400ABA745 /* Assets.xcassets in Resources */,
+				3C55FE0E213FE41F00ABA745 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CD85A1820EF482A008D994C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -603,6 +682,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3C55FE02213FE41F00ABA745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C55FE0B213FE41F00ABA745 /* ViewController.swift in Sources */,
+				3C55FE19213FE57700ABA745 /* DateFormater.swift in Sources */,
+				3C55FE09213FE41F00ABA745 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CD85A1620EF482A008D994C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -657,6 +746,7 @@
 				3C2FA85420F88FAE00F54E76 /* Observers+NotificationCenter.swift in Sources */,
 				3C4763D8211AC567006D0C1B /* CustomOperators.swift in Sources */,
 				3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */,
+				3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */,
 				3C2FA85620F8918A00F54E76 /* Observers+Protocols.swift in Sources */,
 				3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */,
 				3C6D8F612109BB9C000190F3 /* CGFloat+Ex.swift in Sources */,
@@ -684,6 +774,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3C55FE0C213FE41F00ABA745 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C55FE0D213FE41F00ABA745 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C55FE11213FE42400ABA745 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C55FE12213FE42400ABA745 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		3CD85A2120EF482A008D994C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -703,6 +809,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3C55FE16213FE42400ABA745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED5577XBKG;
+				INFOPLIST_FILE = MyWorkV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWorkV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C55FE17213FE42400ABA745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED5577XBKG;
+				INFOPLIST_FILE = MyWorkV2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWorkV2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3CD85A2A20EF482D008D994C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -858,6 +1000,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3C55FE15213FE42400ABA745 /* Build configuration list for PBXNativeTarget "MyWorkV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C55FE16213FE42400ABA745 /* Debug */,
+				3C55FE17213FE42400ABA745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3CD85A1520EF482A008D994C /* Build configuration list for PBXProject "MyWork" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
