@@ -45,6 +45,7 @@
 		3C55FE10213FE42400ABA745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C55FE0F213FE42400ABA745 /* Assets.xcassets */; };
 		3C55FE13213FE42400ABA745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55FE11213FE42400ABA745 /* LaunchScreen.storyboard */; };
 		3C55FE19213FE57700ABA745 /* DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE18213FE57700ABA745 /* DateFormater.swift */; };
+		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
 		3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5A21099BAC000190F3 /* LineControl.swift */; };
 		3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */; };
 		3C6D8F5F21099D3C000190F3 /* LinePercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */; };
@@ -85,6 +86,7 @@
 		3CEE4255210790FA00671D1D /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE4254210790FA00671D1D /* UIColor+Ex.swift */; };
 		3CEE42572107911E00671D1D /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE42562107911E00671D1D /* String+Ex.swift */; };
 		3CF3D1A22140EFDA00CB004A /* CapturingObjectsInClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */; };
+		3CF3D1A42140F9C200CB004A /* 2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3D1A32140F9C200CB004A /* 2ViewController.swift */; };
 		3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */; };
 		3CF444E9210EECCC005392CF /* PersonStatisticControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */; };
 		3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */; };
@@ -146,6 +148,7 @@
 		3C55FE12213FE42400ABA745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C55FE14213FE42400ABA745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C55FE18213FE57700ABA745 /* DateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormater.swift; sourceTree = "<group>"; };
+		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
 		3C6D8F5A21099BAC000190F3 /* LineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineControl.swift; sourceTree = "<group>"; };
 		3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentagesControl.swift; sourceTree = "<group>"; };
 		3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentagesControl.xib; sourceTree = "<group>"; };
@@ -188,6 +191,7 @@
 		3CEE4254210790FA00671D1D /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
 		3CEE42562107911E00671D1D /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturingObjectsInClosures.swift; sourceTree = "<group>"; };
+		3CF3D1A32140F9C200CB004A /* 2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2ViewController.swift; sourceTree = "<group>"; };
 		3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticControl.swift; sourceTree = "<group>"; };
 		3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticControl.xib; sourceTree = "<group>"; };
 		3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstClassFunctions .swift"; sourceTree = "<group>"; };
@@ -349,6 +353,7 @@
 				3C55FE0F213FE42400ABA745 /* Assets.xcassets */,
 				3C55FE11213FE42400ABA745 /* LaunchScreen.storyboard */,
 				3C55FE14213FE42400ABA745 /* Info.plist */,
+				3CF3D1A32140F9C200CB004A /* 2ViewController.swift */,
 			);
 			path = MyWorkV2;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 			children = (
 				3C55FDFF213FC4AC00ABA745 /* Habr */,
 				3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */,
+				3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */,
 				3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */,
 				3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */,
 				3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */,
@@ -690,6 +696,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C55FE0B213FE41F00ABA745 /* ViewController.swift in Sources */,
+				3CF3D1A42140F9C200CB004A /* 2ViewController.swift in Sources */,
 				3C55FE19213FE57700ABA745 /* DateFormater.swift in Sources */,
 				3C55FE09213FE41F00ABA745 /* AppDelegate.swift in Sources */,
 			);
@@ -740,6 +747,7 @@
 				3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */,
 				3CD3DB202135258A004F0FE7 /* TypeSafeIdentifiers.swift in Sources */,
 				3CEE4255210790FA00671D1D /* UIColor+Ex.swift in Sources */,
+				3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */,
 				3C6D8F642109C227000190F3 /* StatisticControl.swift in Sources */,
 				3CE8CAF62136AB49003752DC /* LogicControllers.swift in Sources */,
 				3C4C676921254370005D05D5 /* LazyProperties.swift in Sources */,

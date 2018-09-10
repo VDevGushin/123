@@ -9,22 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var ttt: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let s1 = "23.10.1989"
-        let d1 = Date.getDate(s1)
-        dump(d1)
-        let s2 = "1989.10.23"
-        let d2 = Date.getDate(s2)
-        dump(d2)
-        let s3 = "1989-10-23"
-        let d3 = Date.getDate(s3)
-        dump(d3)
-        let s4 = "23-10-1989"
-        let d4 = Date.getDate(s4)
-        dump(d4)
     }
 
     override func didReceiveMemoryWarning() {
