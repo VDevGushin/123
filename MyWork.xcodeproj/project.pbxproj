@@ -61,6 +61,7 @@
 		3C934C90210EF1B700E35A4D /* PersonStatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */; };
 		3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C91210EF50F00E35A4D /* SecondViewController.swift */; };
 		3C9A83C62133C9C4008A1F17 /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */; };
+		3C9AA1252147A3AE00085EEC /* СustomСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AA1242147A3AE00085EEC /* СustomСollections.swift */; };
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
 		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
@@ -164,6 +165,7 @@
 		3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticCell.xib; sourceTree = "<group>"; };
 		3C934C91210EF50F00E35A4D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
+		3C9AA1242147A3AE00085EEC /* СustomСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СustomСollections.swift"; sourceTree = "<group>"; };
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 			children = (
 				3C55FDFF213FC4AC00ABA745 /* Habr */,
 				3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */,
+				3C9AA1242147A3AE00085EEC /* СustomСollections.swift */,
 				3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */,
 				3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */,
 				3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */,
@@ -716,6 +719,7 @@
 				3CBDAD36211D8133007ED110 /* TestProperty.swift in Sources */,
 				3CFC9E372101B144008F64D7 /* SynchronizedArray.swift in Sources */,
 				3CF3D1A22140EFDA00CB004A /* CapturingObjectsInClosures.swift in Sources */,
+				3C9AA1252147A3AE00085EEC /* СustomСollections.swift in Sources */,
 				3C36D8B120FF185F0095F9A4 /* UsingTokensToHandleAsync.swift in Sources */,
 				3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */,
 				3CD85A2020EF482A008D994C /* ViewController.swift in Sources */,

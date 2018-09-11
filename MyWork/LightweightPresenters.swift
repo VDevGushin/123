@@ -50,7 +50,7 @@ class NoteViewController: UIViewController {
     func handleDeleteButtonTap() {
         let presenter = ConfirmationPresenter(question: "Are you sure you want to delelete this note?", acceptTitlte: "Yes, delete it!", rejectTitle: "Cancel", handler: { [weak self] outcome in
             switch outcome {
-            case .accepted:
+            case .accepted: break
                 //delete
             case .rejected:
                 break
@@ -60,8 +60,8 @@ class NoteViewController: UIViewController {
 }
 
 //TODO: - Wrapping things up
-fileprivate struct FavoritesManager { }
-fileprivate struct FavoriteDataSource {
+ struct FavoritesManager { }
+ struct FavoriteDataSource {
     let manager: FavoritesManager
 }
 final class MovieListViewController: UIViewController {
@@ -69,6 +69,10 @@ final class MovieListViewController: UIViewController {
     init(dataSource: FavoriteDataSource) {
         self.dataSource = dataSource
         super.init(nibName: "nibname", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
@@ -79,13 +83,13 @@ fileprivate struct FavoritesPresenter {
         let dataSource = FavoriteDataSource(manager: manager)
         let list = MovieListViewController(dataSource: dataSource)
         let navigationController = UINavigationController(rootViewController: list)
-        list.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: navigationController, action: #selector(UIViewController.dismissWithAnimation))
+        list.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: navigationController, action: #selector(UIViewController.dismiss(animated:completion:)))
         viewController.present(navigationController, animated: true)
     }
 }
 
 //Using
-fileprivate struct TutorialItem { }
+struct TutorialItem { }
 
 fileprivate class HomveViewController: UIViewController {
     func presentFavirites() {
@@ -96,9 +100,14 @@ fileprivate class HomveViewController: UIViewController {
 
 final class TutorialViewController: UIViewController {
     private let item: TutorialItem
-    let completionHandler: (() -> Void)?
+    var completionHandler: (() -> Void)?
     init(item: TutorialItem) {
         self.item = item
+        super.init(nibName: "n", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 
