@@ -28,6 +28,7 @@
 		3C2FA85D20F8BAB100F54E76 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85C20F8BAB100F54E76 /* Result.swift */; };
 		3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */; };
 		3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */; };
+		3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C3D0214B78DF008BBC12 /* ModellingState .swift */; };
 		3C36D8B120FF185F0095F9A4 /* UsingTokensToHandleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */; };
 		3C37B767213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */; };
 		3C38E1742107732A005CBDE9 /* RoundPercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */; };
@@ -92,6 +93,7 @@
 		3CF3D1A42140F9C200CB004A /* 2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3D1A32140F9C200CB004A /* 2ViewController.swift */; };
 		3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */; };
 		3CF444E9210EECCC005392CF /* PersonStatisticControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */; };
+		3CF62BA3214F718A00BD1579 /* ReusableDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */; };
 		3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */; };
 		3CFBCC0B21145A7B00A8A458 /* ETBVariantsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */; };
 		3CFBCC0D21145A8300A8A458 /* ETBVariantsControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0C21145A8300A8A458 /* ETBVariantsControl.xib */; };
@@ -132,6 +134,7 @@
 		3C2FA85C20F8BAB100F54E76 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedAnalyticsSystem.swift; sourceTree = "<group>"; };
 		3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingSingletonsSwift.swift; sourceTree = "<group>"; };
+		3C30C3D0214B78DF008BBC12 /* ModellingState .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModellingState .swift"; sourceTree = "<group>"; };
 		3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingTokensToHandleAsync.swift; sourceTree = "<group>"; };
 		3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
 		3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPercentagesControl.swift; sourceTree = "<group>"; };
@@ -200,6 +203,7 @@
 		3CF3D1A32140F9C200CB004A /* 2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2ViewController.swift; sourceTree = "<group>"; };
 		3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticControl.swift; sourceTree = "<group>"; };
 		3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticControl.xib; sourceTree = "<group>"; };
+		3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableDataSources.swift; sourceTree = "<group>"; };
 		3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstClassFunctions .swift"; sourceTree = "<group>"; };
 		3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBVariantsControl.swift; sourceTree = "<group>"; };
 		3CFBCC0C21145A8300A8A458 /* ETBVariantsControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBVariantsControl.xib; sourceTree = "<group>"; };
@@ -438,6 +442,8 @@
 			children = (
 				3C55FDFF213FC4AC00ABA745 /* Habr */,
 				3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */,
+				3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */,
+				3C30C3D0214B78DF008BBC12 /* ModellingState .swift */,
 				3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */,
 				3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */,
 				3C9AA1242147A3AE00085EEC /* СustomСollections.swift */,
@@ -715,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF62BA3214F718A00BD1579 /* ReusableDataSources.swift in Sources */,
 				3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */,
 				3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */,
 				3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */,
@@ -729,6 +736,7 @@
 				3C9AA1252147A3AE00085EEC /* СustomСollections.swift in Sources */,
 				3C36D8B120FF185F0095F9A4 /* UsingTokensToHandleAsync.swift in Sources */,
 				3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */,
+				3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */,
 				3CD85A2020EF482A008D994C /* ViewController.swift in Sources */,
 				3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */,
 				3CFD253C2112F95400128554 /* UIView+Ex.swift in Sources */,
