@@ -36,7 +36,7 @@ extension UIViewController {
     static var loading: UIViewController {
         let viewController = UIViewController()
 
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let indicator = UIActivityIndicatorView(style: .gray)
         indicator.translatesAutoresizingMaskIntoConstraints = false
         indicator.startAnimating()
         viewController.view.addSubview(indicator)

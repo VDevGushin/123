@@ -48,7 +48,7 @@ fileprivate extension ETBVariantsControl {
         self.variantsTable.backgroundColor = UIColor.clear
         self.variantsTable.register(ETBVariantTableViewCell.self)
         self.variantsTable.estimatedRowHeight = 40
-        self.variantsTable.rowHeight = UITableViewAutomaticDimension
+        self.variantsTable.rowHeight = UITableView.automaticDimension
         self.variantsTable.showsHorizontalScrollIndicator = false
         self.variantsTable.showsVerticalScrollIndicator = false
         self.variantsTable.delegate = self

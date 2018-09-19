@@ -91,7 +91,7 @@ final class ProfileViewControler: UIViewController {
 }
 
 extension ProfileViewControler: UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
         guard let newDisplayName = textField.text else {
             return
         }

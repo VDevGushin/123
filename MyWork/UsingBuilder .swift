@@ -66,7 +66,7 @@ fileprivate struct TestBuilder {
 
 //MARK: - Simple
 class AttributedStringBuilder {
-    typealias Attributes = [NSAttributedStringKey: Any]
+    typealias Attributes = [NSAttributedString.Key: Any]
 
     private let string = NSMutableAttributedString(string: "")
 

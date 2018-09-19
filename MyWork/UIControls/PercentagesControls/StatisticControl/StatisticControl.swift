@@ -110,10 +110,10 @@ fileprivate extension StatisticControl {
         self.collection.registerFooterHeader(StatisticFooter.self)
         self.collection.separatorStyle = .none
         self.collection.estimatedRowHeight = 30
-        self.collection.rowHeight = UITableViewAutomaticDimension
-        self.collection.sectionHeaderHeight = UITableViewAutomaticDimension
+        self.collection.rowHeight = UITableView.automaticDimension
+        self.collection.sectionHeaderHeight = UITableView.automaticDimension
         self.collection.estimatedSectionHeaderHeight = 250
-        self.collection.sectionFooterHeight = UITableViewAutomaticDimension
+        self.collection.sectionFooterHeight = UITableView.automaticDimension
         self.collection.estimatedSectionFooterHeight = 250
         self.collection.showsHorizontalScrollIndicator = false
         self.collection.showsVerticalScrollIndicator = false

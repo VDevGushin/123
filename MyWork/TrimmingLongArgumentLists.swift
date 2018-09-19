@@ -10,7 +10,7 @@ import UIKit
 
 fileprivate struct Animation {
     var duration: TimeInterval = 0.3
-    var curve = UIViewAnimationCurve.easeInOut
+    var curve = UIView.AnimationCurve.easeInOut
     var completionHandler: (() -> Void)? = nil
 }
 
@@ -25,7 +25,7 @@ fileprivate class TestTrim {
 
     func presentProfile(animated: Bool,
                         duration: TimeInterval = 0.3,
-                        curve: UIViewAnimationCurve = .easeInOut,
+                        curve: UIView.AnimationCurve = .easeInOut,
                         completionHandler: (() -> Void)? = nil) {
     }
 
