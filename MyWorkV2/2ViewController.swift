@@ -9,9 +9,7 @@
 import UIKit
 
 class Loader {
-    deinit {
-        print("deinit loader")
-    }
+    deinit { print("deinit loader") }
     func load(complete: @escaping () -> Void) {
         DispatchQueue.global().async {
             sleep(5)
@@ -28,22 +26,23 @@ class _ViewController: UIViewController {
     let loader = Loader()
 
     @IBOutlet weak var asdfasdfasdf: UILabel!
+    
     @IBAction func dsafsdf(_ sender: Any) {
         self.dismiss(animated: false, completion: nil)
     }
 
     deinit {
-        print("deinit")
+        print("deinit view conroller")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let context = (text: self.test, label: asdfasdfasdf)
-        loader.load {
-            let d = self.asdfasdfasdf.text
-            print(d)
+        loader.load { 
+            let d = context.text
+            print("Complerte closure \(d)")
         }
-        print("finish")
+        print("finish view did load")
     }
 
     override func didReceiveMemoryWarning() {

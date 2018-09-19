@@ -8,7 +8,7 @@
 
 import UIKit
 
-fileprivate class ArticleView: UIView {
+private class ArticleView: UIView {
     let titleLabel: String?
     let subtitleLabel: String?
     let image: UIImage?
@@ -24,7 +24,7 @@ fileprivate class ArticleView: UIView {
     }
 }
 
-fileprivate class ArticleViewBuilder {
+private class ArticleViewBuilder {
     var titleLabel: String?
     var subtitleLabel: String?
     var image: UIImage?
@@ -52,7 +52,7 @@ fileprivate class ArticleViewBuilder {
     }
 }
 
-fileprivate struct TestBuilder {
+private struct TestBuilder {
     func test() {
         _ = ArticleView(title: "test", subtitle: "test", image: UIImage())
         //We wont to use
@@ -64,7 +64,7 @@ fileprivate struct TestBuilder {
     }
 }
 
-//MARK: - Simple
+// MARK: - Simple
 class AttributedStringBuilder {
     typealias Attributes = [NSAttributedString.Key: Any]
 
@@ -92,25 +92,25 @@ class AttributedStringBuilder {
     }
 }
 
-//MARK: - Hiding complexity
-fileprivate class Record { }
+// MARK: - Hiding complexity
+private class Record { }
 
-fileprivate class Query<T> {
+private class Query<T> {
     private var operations: [QueryOperation<T>]
     init(operations: [QueryOperation<T>]) {
         self.operations = operations
     }
 }
-fileprivate class QueryOperation<Record> {
+private class QueryOperation<Record> {
     init(_ c: @autoclosure () -> QueryOperationType) {}
 }
 
-fileprivate enum QueryOperationType {
+private enum QueryOperationType {
     case match(String)
     case addLimit(Int)
 }
 
-fileprivate class QueryBuilder<Record> {
+private class QueryBuilder<Record> {
     private var operations = [QueryOperation<Record>]()
 
     @discardableResult

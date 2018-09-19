@@ -30,7 +30,6 @@ class Card { }
 //    }
 //}
 
-
 class CardGame {
     typealias Randomizer = (UInt32) -> UInt32
     private let deck: Deck

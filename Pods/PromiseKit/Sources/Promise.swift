@@ -139,7 +139,6 @@ extension Promise where T == Void {
 }
 #endif
 
-
 public extension DispatchQueue {
     /**
      Asynchronously executes the provided closure on a dispatch queue.
@@ -167,7 +166,6 @@ public extension DispatchQueue {
         return promise
     }
 }
-
 
 /// used by our extensions to provide unambiguous functions with the same name as the original function
 public enum PMKNamespacer {

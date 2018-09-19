@@ -17,7 +17,7 @@ struct UserSample {
     var email: String?
 }
 
-fileprivate struct TestUser {
+private struct TestUser {
     var user: UserSample?
     func test() {
         guard let region = user?.region else {
@@ -117,5 +117,3 @@ class Observable<Value> {
         closure(observer, value)
     }
 }
-
-

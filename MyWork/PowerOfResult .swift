@@ -8,19 +8,19 @@
 
 import UIKit
 
-//MARK: - Simple result
+// MARK: - Simple result
 enum PowerOfResult<Value> {
     case success(Value)
     case failure(Error)
 }
 
-//MARK: - Typed errors
+// MARK: - Typed errors
 enum TypedPowerOfResult<Value, Error: Swift.Error> {
     case success(Value)
     case failure(Error)
 }
 
-//MARK: Throwing
+// MARK: Throwing
 extension TypedPowerOfResult {
     func resolve() throws -> Value {
         switch self {
@@ -30,7 +30,7 @@ extension TypedPowerOfResult {
             throw error
         }
     }
-    
+
     /*
      var result: Result<[SearchResult], SearchResultsLoader.Error>?
      loader.loadResults(matching: "query") {
@@ -40,14 +40,14 @@ extension TypedPowerOfResult {
     */
 }
 
-//MARK: - Decoding
+// MARK: - Decoding
 extension TypedPowerOfResult where Value == Data {
     func decoded<T: Decodable>() throws -> T {
         let decoder = JSONDecoder()
         let data = try resolve()
         return try decoder.decode(T.self, from: data)
     }
-    
+
     /*
      load { [weak self] result in
      do {
@@ -60,7 +60,7 @@ extension TypedPowerOfResult where Value == Data {
      */
 }
 
-//MARK: - Using
+// MARK: - Using
 struct TestErrors {
     enum LoadingError: Error { }
     typealias Handler = (TypedPowerOfResult<Data, LoadingError>) -> Void

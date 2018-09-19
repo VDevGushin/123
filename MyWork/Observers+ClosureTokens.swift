@@ -33,7 +33,7 @@ class AudioPlayerClosuteTokens {
         paused: [UUID: (AudioPlayerClosuteTokens, Item) -> Void](),
         stopped: [UUID: (AudioPlayerClosuteTokens) -> Void]()
     )
-    
+
     @discardableResult
     func addPlaybackStartedObserver<T: AnyObject>(_ observer: T,
         closure: @escaping (T, AudioPlayerClosuteTokens, Item) -> Void) -> ObservationToken {
@@ -47,7 +47,7 @@ class AudioPlayerClosuteTokens {
             }
             closure(observer, player, item)
         }
-        
+
         return ObservationToken { [weak self] in
             self?.observations.started.removeValue(forKey: id)
         }
@@ -133,7 +133,7 @@ class AudioPlayerClosuteTokens {
 }
 
 //How to use
-fileprivate class TestClosureTokensVC: UIViewController {
+private class TestClosureTokensVC: UIViewController {
     var player: AudioPlayerClosuteTokens?
     deinit {
         observationToken?.cancel()

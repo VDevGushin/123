@@ -31,7 +31,7 @@ class ETBVariantsControl: UIView {
         setup()
     }
 
-    func update(source: [VariantModel]){
+    func update(source: [VariantModel]) {
         self.source = source
         self.variantsTable.reloadData()
     }
@@ -68,11 +68,11 @@ extension ETBVariantsControl: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.source[section].questions.count
     }
-    
-    func numberOfSections(in tableView: UITableView) -> Int{
+
+    func numberOfSections(in tableView: UITableView) -> Int {
          return self.source.count
     }
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return self.source[section].variantNumber
     }

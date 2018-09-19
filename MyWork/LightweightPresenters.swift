@@ -18,7 +18,7 @@ final class TestPresenterVC: UINavigationController {
 }
 
 //TODO:  - Presenters
-fileprivate struct ConfirmationPresenter {
+private struct ConfirmationPresenter {
     enum Outcome {
         case accepted, rejected
     }
@@ -70,13 +70,13 @@ final class MovieListViewController: UIViewController {
         self.dataSource = dataSource
         super.init(nibName: "nibname", bundle: nil)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-fileprivate struct FavoritesPresenter {
+private struct FavoritesPresenter {
     let manager: FavoritesManager
 
     func present(in viewController: UIViewController) {
@@ -91,7 +91,7 @@ fileprivate struct FavoritesPresenter {
 //Using
 struct TutorialItem { }
 
-fileprivate class HomveViewController: UIViewController {
+private class HomveViewController: UIViewController {
     func presentFavirites() {
         let presenter = FavoritesPresenter(manager: FavoritesManager())
         presenter.present(in: self)
@@ -105,7 +105,7 @@ final class TutorialViewController: UIViewController {
         self.item = item
         super.init(nibName: "n", bundle: nil)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

@@ -43,23 +43,23 @@ struct TypeSafeUser {
     let name: String
 }
 
-//MARK: Using
+// MARK: Using
 struct TypeIdentifiersTest {
     func test() {
         let id = Identifier(string: "new-user")
-        let d : Identifier = "2"
+        let d: Identifier = "2"
         let id2: Identifier = "new-user" // ExpressibleByStringLiteral
         let user = TypeSafeUser(id: "new-user", name: "John")
     }
 }
 
-//MARK: - Generalizing our generic
+// MARK: - Generalizing our generic
 protocol Identifiable {
     associatedtype RawIdentifier: Codable
     var id: Identifier2<Self> { get }
 }
 
-struct Identifier2<Value : Identifiable> {
+struct Identifier2<Value: Identifiable> {
     let rawValue: Value.RawIdentifier
     init(rawValue: Value.RawIdentifier) {
         self.rawValue = rawValue

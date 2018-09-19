@@ -8,8 +8,8 @@
 
 import UIKit
 
-//MARK: - using compiler flags
-fileprivate class AppDataBase { }
+// MARK: - using compiler flags
+private class AppDataBase { }
 fileprivate final class RealmDatabase: AppDataBase { }
 fileprivate final class CoreDataDatabase: AppDataBase { }
 
@@ -23,15 +23,15 @@ fileprivate final class DataBaseFactory {
     }
 }
 
-//MARK: - Static flags
-fileprivate struct FeatureFlags {
+// MARK: - Static flags
+private struct FeatureFlags {
     static let searchEnabled = false
     static let maximumNumberOfFavorites = 10
     static let allowLandscapeMode = true
 }
 
 //using
-fileprivate class SearchResultsViewContoller: UIViewController { }
+private class SearchResultsViewContoller: UIViewController { }
 extension ListViewController {
     func addSearchIfNeeded() {
         guard FeatureFlags.searchEnabled else {
@@ -44,8 +44,8 @@ extension ListViewController {
     }
 }
 
-//MARK: - Runtime flags
-fileprivate struct RuntimeFeatureFlags {
+// MARK: - Runtime flags
+private struct RuntimeFeatureFlags {
     let searchEnabled: Bool
     let maximumNumberOfFavorites: Int
     let allowLandscapeMode: Bool
@@ -60,7 +60,7 @@ extension RuntimeFeatureFlags {
 }
 
 //using
-fileprivate class FavoriteManager {
+private class FavoriteManager {
     private let featuresFlags: RuntimeFeatureFlags
     init(featuresFlags: RuntimeFeatureFlags) {
         self.featuresFlags = featuresFlags

@@ -8,7 +8,7 @@
 
 import UIKit
 
-fileprivate class UserTableViewCell: UITableViewCell {
+private class UserTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         let image = self.imageView!
@@ -17,14 +17,14 @@ fileprivate class UserTableViewCell: UITableViewCell {
     }
 }
 
-fileprivate extension UserTableViewCell {
+extension UserTableViewCell {
     func configure(with user: User) {
         textLabel?.text = user.firstName
         imageView?.image = user.profileImage
     }
 }
 
-//MARK: - more clear code
+// MARK: - more clear code
 
 extension UserTableViewCell {
     func configureV2(with user: User) {
@@ -43,12 +43,12 @@ extension UserTableViewCell {
     }
 }
 
-fileprivate class AddFriendButton: UIButton {
+private class AddFriendButton: UIButton {
     var closure: (() -> Void)?
 }
 
-//MARK: - new logic
-fileprivate class RoundedImageTableViewCell: UITableViewCell {
+// MARK: - new logic
+private class RoundedImageTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
 
@@ -58,9 +58,9 @@ fileprivate class RoundedImageTableViewCell: UITableViewCell {
     }
 }
 
-fileprivate class FriendManager { }
+private class FriendManager { }
 
-fileprivate class UserTableViewCellConfigurator {
+private class UserTableViewCellConfigurator {
     private let friendManager: FriendManager
 
     init(friendManager: FriendManager) {
@@ -89,7 +89,7 @@ fileprivate class UserTableViewCellConfigurator {
 
 // using UserTableViewCellConfigurator
 
-fileprivate class UserListViewController: UITableViewController {
+private class UserListViewController: UITableViewController {
     fileprivate let configurator = UserTableViewCellConfigurator(friendManager: FriendManager())
     let users = [User]()
     override func tableView(_ tableView: UITableView,
@@ -101,21 +101,20 @@ fileprivate class UserListViewController: UITableViewController {
     }
 }
 
-
-//MARK: - View factories
-fileprivate struct Message {
+// MARK: - View factories
+private struct Message {
     let title: String
     let text: String
     let icon: UIImage
 }
 
 fileprivate final class SampleTextView: UIView {
-    weak var titleLabel : UILabel?
-    weak var textLabel : UILabel?
-    weak var imageView : UIImageView?
+    weak var titleLabel: UILabel?
+    weak var textLabel: UILabel?
+    weak var imageView: UIImageView?
 }
 
-fileprivate class MessageViewFactory {
+private class MessageViewFactory {
     func makeView(for message: Message) -> UIView {
         let view = SampleTextView()
 
@@ -126,5 +125,3 @@ fileprivate class MessageViewFactory {
         return view
     }
 }
-
-

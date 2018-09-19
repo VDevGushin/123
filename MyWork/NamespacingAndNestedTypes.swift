@@ -18,7 +18,7 @@ extension String {
 }
 
 //Вот обычная несвязанная структура
-fileprivate enum PostTextFormatterOption {
+private enum PostTextFormatterOption {
     case highlightNames
     case highlightLinks
 }
@@ -42,14 +42,14 @@ class User: Unboxable, Savable {
     init() { }
 }
 
-fileprivate struct Post {
+private struct Post {
     var id: Int
     var author: User
     var title: String
     var text: String
 }
 
-fileprivate class PostTextFormatter {
+private class PostTextFormatter {
     private let options: Set<String>
     var post = Post(id: 2, author: User(), title: "", text: "I")
     init(options: Set<String>) {
@@ -64,7 +64,6 @@ fileprivate class PostTextFormatter {
         return post.text.formatted(withOptions: options)
     }
 }
-
 
 //Свяжем эти данные
 struct PostWithNested {
@@ -99,10 +98,10 @@ extension PostWithNested.TextFormatter {
     }
 }
 
-fileprivate class TestPostWithNested {
+private class TestPostWithNested {
     func test() {
         let post = PostWithNested(id: 1, author: User(), title: "g", text: "g")
         let formatter = PostWithNested.TextFormatter(options: [.highlightLinks])
-        let _ = formatter.formatText(for: post)
+        _ = formatter.formatText(for: post)
     }
 }

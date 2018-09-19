@@ -8,8 +8,8 @@
 
 import UIKit
 
-//MARK: - Moving out of view controllers
-fileprivate struct Message {
+// MARK: - Moving out of view controllers
+private struct Message {
     let title: String
     let preview: String
 }
@@ -29,8 +29,7 @@ private final class TestDataSourceViewController: UIViewController, UITableViewD
     }
 }
 
-
-//MARK: - Using data source
+// MARK: - Using data source
 fileprivate final class MessageListDataSource: NSObject, UITableViewDataSource {
     typealias DataSource = [Message]
     var messages: DataSource
@@ -52,8 +51,8 @@ fileprivate final class MessageListDataSource: NSObject, UITableViewDataSource {
     }
 }
 
-//MARK: - Generalizing
-fileprivate enum ReuseIdentifierName: String {
+// MARK: - Generalizing
+private enum ReuseIdentifierName: String {
     case test
 }
 
@@ -93,8 +92,6 @@ extension TableViewDataSource where Model == Message {
         }
     }
 }
-
-
 
 //Using
 private final class TestDataSourceViewControllerWithDataSource: UIViewController {
@@ -143,7 +140,7 @@ class SectionedTableViewDataSource: NSObject, UITableViewDataSource {
 private final class TestDataSourceViewControllerWithDataSourceSection: UIViewController {
     var dataSource: SectionedTableViewDataSource?
     @IBOutlet weak var table: UITableView?
-    func messagesDidLoad(_ topMessages: [Message] , _ recentContacts: [Message]) {
+    func messagesDidLoad(_ topMessages: [Message], _ recentContacts: [Message]) {
         self.dataSource = SectionedTableViewDataSource(dataSources: [
             TableViewDataSource<Message>.make(for: recentContacts),
             TableViewDataSource<Message>.make(for: topMessages)
@@ -151,4 +148,3 @@ private final class TestDataSourceViewControllerWithDataSourceSection: UIViewCon
         self.table?.dataSource = dataSource
     }
 }
-

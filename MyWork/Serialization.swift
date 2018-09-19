@@ -7,8 +7,8 @@
 //
 
 import UIKit
-//MARK: - Using
-fileprivate class TestUser: Decodable, Encodable {
+// MARK: - Using
+private class TestUser: Decodable, Encodable {
     let id: Int
     let name: String
     init(id: Int, name: String) {
@@ -17,7 +17,7 @@ fileprivate class TestUser: Decodable, Encodable {
     }
 }
 
-fileprivate class TestSerialization {
+private class TestSerialization {
     private func test() {
         //Старое без extension Data
         //let decoder = JSONDecoder()
@@ -33,7 +33,7 @@ fileprivate class TestSerialization {
     }
     private func userDidLogin(new: TestUser) { }
 }
-//MARK: - Decoding
+// MARK: - Decoding
 /////////////////////////////////////////////// ////////////////////Decoding
 fileprivate extension Data {
     func decode<T: Decodable>() throws -> T {
@@ -41,26 +41,26 @@ fileprivate extension Data {
     }
 
     //более расширенная функция декодирования
-    func decode<T:Decodable>(using decoder: JSONDecoder = .init()) throws -> T {
+    func decode<T: Decodable>(using decoder: JSONDecoder = .init()) throws -> T {
         return try decoder.decode(T.self, from: self)
     }
 
     //Еще больше расширяем возможности декодирования и использования разных декодеров
-    func decode<T:Decodable>(using decoder: AnyDecoder = JSONDecoder()) throws -> T {
+    func decode<T: Decodable>(using decoder: AnyDecoder = JSONDecoder()) throws -> T {
         return try decoder.decode(T.self, from: self)
     }
 }
 
 protocol AnyDecoder {
-    func decode<T:Decodable>(_ type: T.Type, from data: Data) throws -> T
+    func decode<T: Decodable>(_ type: T.Type, from data: Data) throws -> T
 }
 
 extension JSONDecoder: AnyDecoder { }
 extension PropertyListDecoder: AnyDecoder { }
 
-//MARK: - Encoding
+// MARK: - Encoding
 protocol AnyEncoder {
-    func encode<T:Encodable>(_ value: T) throws -> Data
+    func encode<T: Encodable>(_ value: T) throws -> Data
 }
 
 extension JSONEncoder: AnyEncoder { }
@@ -72,12 +72,12 @@ extension Encodable {
     }
 }
 
-//MARK: - Decoding containers
-fileprivate struct Comment: Decodable {
+// MARK: - Decoding containers
+private struct Comment: Decodable {
     let text: String
 }
 
-fileprivate struct Video {
+private struct Video {
     let url: URL
     let containsAds: Bool
     var comments: [Comment]
@@ -105,7 +105,6 @@ extension Video: Decodable {
         comments = try container.decode(forKey: .comment, default: [])
     }
 }
-
 
 extension KeyedDecodingContainerProtocol {
     func decode<T: Decodable>(forKey key: Key) throws -> T {

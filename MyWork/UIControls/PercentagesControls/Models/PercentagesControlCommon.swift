@@ -14,7 +14,7 @@ enum PercentagesControlMode {
     case multiple
 }
 
-//MARK: - Base
+// MARK: - Base
 //Статические типы данных
 class PercentagesSource {
     fileprivate var rightAnswer: PercentagesData
@@ -31,7 +31,6 @@ class PercentagesSource {
         self.skipped = PercentagesData(index: 3, color: UIColor(.skipped), title: PercentagesTypeTitle.skipped.value)
         self.notViewed = PercentagesData(index: 4, color: UIColor(.notViewed), title: PercentagesTypeTitle.notViewed.value)
     }
-
 
     func setValue(with types: Set<PercentagesSource.PercentagesType>) {
         for type in types {
@@ -84,7 +83,7 @@ extension PercentagesSource {
             }
         }
     }
-    
+
     enum PercentagesTypeTitle: String {
         case rightAnswer = "Правильный ответ"
         case needCheck = "Требует проверки"
@@ -172,7 +171,7 @@ fileprivate extension PercentagesSource {
     }
 }
 
-//MARK: - Round control
+// MARK: - Round control
 //Класс для работы с контролом - круглый пай
 class RoundPercentagesSource: PercentagesSource {
     func getData(mode: PercentagesControlMode) -> PieChartData {
@@ -197,7 +196,6 @@ class RoundPercentagesSource: PercentagesSource {
         self.setValue(with: source)
     }
 
-
     private func source(mode: PercentagesControlMode) -> [PieChartDataEntry] {
         let source = getSource(mode: mode)
         var result = [PieChartDataEntry]()
@@ -208,14 +206,13 @@ class RoundPercentagesSource: PercentagesSource {
     }
 }
 
-//MARK: - Line control
+// MARK: - Line control
 //Класс для работы с контролом - цветная прямая линия
 class LinePercentagesSource: PercentagesSource {
     override init(baseColor: UIColor = UIColor(.rightAnswer)) {
         super.init(baseColor: baseColor)
         self.clearAll()
     }
-
 
     convenience init(with source: Set<PercentagesSource.PercentagesType>,
                      baseColor: UIColor = UIColor(.rightAnswer)) {

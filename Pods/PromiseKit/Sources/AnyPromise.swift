@@ -177,7 +177,6 @@ extension AnyPromise: Thenable, CatchMixin {
     public typealias T = Any?
 }
 
-
 #if swift(>=3.1)
 public extension Promise where T == Any? {
     convenience init(_ anyPromise: AnyPromise) {

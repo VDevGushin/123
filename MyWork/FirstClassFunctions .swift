@@ -38,10 +38,10 @@ private class FirstClassFuntion {
 // TODO: - IMPLEMENTING TARGET/ACTION WITHOUT OBJECTIVE-C
 typealias Action<Type, Input> = (Type) -> (Input) -> Void
 
-fileprivate class ColorPicker: UIView {
+private class ColorPicker: UIView {
     private(set) var selectedColor = UIColor.black
     private var observations = [(ColorPicker) -> Void]()
-    func addTarget<T:AnyObject>(_ target: T, action: @escaping Action<T, ColorPicker>) {
+    func addTarget<T: AnyObject>(_ target: T, action: @escaping Action<T, ColorPicker>) {
         observations.append { [weak target] view in
 //            guard let target = target else { return }
 //            action(target)(view)
@@ -57,7 +57,7 @@ fileprivate class ColorPicker: UIView {
     }
 }
 
-fileprivate class CanvasViewController: UIViewController {
+private class CanvasViewController: UIViewController {
     private var drawingColor = UIColor.black
     func presentColorPicker() {
         let picker = ColorPicker()

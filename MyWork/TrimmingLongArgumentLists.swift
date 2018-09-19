@@ -8,17 +8,17 @@
 
 import UIKit
 
-fileprivate struct Animation {
+private struct Animation {
     var duration: TimeInterval = 0.3
     var curve = UIView.AnimationCurve.easeInOut
-    var completionHandler: (() -> Void)? = nil
+    var completionHandler: (() -> Void)?
 }
 
-fileprivate struct Friend {
+private struct Friend {
     enum Group { case a }
 }
 
-fileprivate class TestTrim {
+private class TestTrim {
     func presentProfile(animated: Bool) {
 
     }
@@ -70,13 +70,13 @@ extension UIViewController {
 
 struct DialogPresenter {
     typealias Handler = (DialogOutcome) -> Void
-    
+
     let title: String
     let message: String
     let acceptTitle: String
     let rejectTitle: String
     let handler: Handler
-    
+
     func present(in viewController: UIViewController) {
     }
 }

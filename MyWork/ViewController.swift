@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         timerControl.setupTime(min: 5, format: .short)
     }
 
-
     @IBAction func clear(_ sender: Any) {
         collectionPercent?.clear()
         timerControl.stop()

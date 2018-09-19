@@ -1,34 +1,38 @@
 PODS:
-  - Charts (3.1.1):
-    - Charts/Core (= 3.1.1)
-  - Charts/Core (3.1.1)
-  - PromiseKit (6.3.4):
-    - PromiseKit/CorePromise (= 6.3.4)
-    - PromiseKit/Foundation (= 6.3.4)
-    - PromiseKit/UIKit (= 6.3.4)
-  - PromiseKit/CorePromise (6.3.4)
-  - PromiseKit/Foundation (6.3.4):
+  - Charts (3.2.0):
+    - Charts/Core (= 3.2.0)
+  - Charts/Core (3.2.0)
+  - PromiseKit (6.4.0):
+    - PromiseKit/CorePromise (= 6.4.0)
+    - PromiseKit/Foundation (= 6.4.0)
+    - PromiseKit/UIKit (= 6.4.0)
+  - PromiseKit/CorePromise (6.4.0)
+  - PromiseKit/Foundation (6.4.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.3.4):
+  - PromiseKit/UIKit (6.4.0):
     - PromiseKit/CorePromise
+  - SwiftLint (0.27.0)
   - Unbox (3.0.0)
 
 DEPENDENCIES:
   - Charts
   - PromiseKit (~> 6.0)
+  - SwiftLint
   - Unbox
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Charts
     - PromiseKit
+    - SwiftLint
     - Unbox
 
 SPEC CHECKSUMS:
-  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
-  PromiseKit: e1425568123ec844a944c93f2bcb29d511d39cf5
+  Charts: 680c8328bd5e90cb14f67e00d2176f3113d19141
+  PromiseKit: ae3616f45d7bb9bf4ff1e91abc9b7a8c48a340e0
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: e8fdd443aa6ddf0eb06db6b6203684dd425fe941
+PODFILE CHECKSUM: c1d0b73a327126dda748874064007bcdfa0e901e
 
 COCOAPODS: 1.5.0

@@ -12,7 +12,7 @@ protocol LineControlDelegate: class {
     func updatePercents(value: String)
 }
 
-fileprivate struct Constants {
+private struct Constants {
     static let barHeight: CGFloat = 30.0
     static let barMinHeight: CGFloat = 20.0
     static let barMaxHeight: CGFloat = 40.0
@@ -136,4 +136,3 @@ fileprivate extension LineControl {
         }
     }
 }
-

@@ -42,7 +42,6 @@ class FileImporterProtocols {
     func process(_ file: File) { }
 }
 
-
 //Closures
 
 class FileImporterClosure {
@@ -109,4 +108,4 @@ extension FileImporterConfiguration {
     }
 }
 
-fileprivate let importer = FileImporterWithConfiguration(configuration: .importAll)
+private let importer = FileImporterWithConfiguration(configuration: .importAll)

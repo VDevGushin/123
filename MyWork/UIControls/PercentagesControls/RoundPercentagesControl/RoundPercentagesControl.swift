@@ -1,4 +1,3 @@
-
 //
 //  RoundPercentagesControl.swift
 //  MyWork
@@ -51,7 +50,7 @@ extension RoundPercentagesControl {
         self.dataSource.setValue(with: values)
         refresh(pieChartView: self.pieChartView)
     }
-    
+
     func changeMode(with new: PercentagesControlMode) {
         self.mode = new
     }

@@ -67,7 +67,7 @@ private func _when<U: Thenable>(_ thenables: [U]) -> Promise<Void> {
  - SeeAlso: `when(resolved:)`
 */
 public func when<U: Thenable>(fulfilled thenables: [U]) -> Promise<[U.T]> {
-    return _when(thenables).map(on: nil) { thenables.map{ $0.value! } }
+    return _when(thenables).map(on: nil) { thenables.map { $0.value! } }
 }
 
 /// Wait for all promises in a set to fulfill.
@@ -171,9 +171,9 @@ public func when<It: IteratorProtocol>(fulfilled promiseIterator: It, concurrent
             barrier.sync {
                 if pendingPromises == 0 {
                   #if !swift(>=3.3) || (swift(>=4) && !swift(>=4.1))
-                    root.resolver.fulfill(promises.flatMap{ $0.value })
+                    root.resolver.fulfill(promises.flatMap { $0.value })
                   #else
-                    root.resolver.fulfill(promises.compactMap{ $0.value })
+                    root.resolver.fulfill(promises.compactMap { $0.value })
                   #endif
                 }
             }
@@ -199,7 +199,7 @@ public func when<It: IteratorProtocol>(fulfilled promiseIterator: It, concurrent
 
         dequeue()
     }
-        
+
     dequeue()
 
     return root.promise
@@ -244,7 +244,7 @@ public func when<T>(resolved promises: [Promise<T>]) -> Guarantee<[Result<T>]> {
             }
             barrier.sync {
                 if countdown == 0 {
-                    rg.box.seal(promises.map{ $0.result! })
+                    rg.box.seal(promises.map { $0.result! })
                 }
             }
         }
@@ -259,5 +259,5 @@ public func when(_ guarantees: Guarantee<Void>...) -> Guarantee<Void> {
 
 // Waits on all provided Guarantees.
 public func when(guarantees: [Guarantee<Void>]) -> Guarantee<Void> {
-    return when(fulfilled: guarantees).recover{ _ in }.asVoid()
+    return when(fulfilled: guarantees).recover { _ in }.asVoid()
 }

@@ -83,11 +83,11 @@ private extension AudioPlayerNotificationCenter {
 }
 
 //How to use
-fileprivate class TestNotificationCenterVC: UIViewController {
+private class TestNotificationCenterVC: UIViewController {
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self,
@@ -96,7 +96,7 @@ fileprivate class TestNotificationCenterVC: UIViewController {
                                        object: nil
         )
     }
-    
+
     @objc private func playbackDidStart(_ notification: Notification) {
         guard let item = notification.object as? AudioPlayerNotificationCenter.Item else {
             let object = notification.object as Any

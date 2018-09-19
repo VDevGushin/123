@@ -8,10 +8,8 @@
 
 import UIKit
 
-
-
 // MARK: - Numeric containers
-fileprivate struct Resources {
+private struct Resources {
     private(set) var gold: Int
     private(set) var wood: Int
 }
@@ -29,11 +27,11 @@ extension Resources {
     }
 }
 
-fileprivate struct Player {
+private struct Player {
     var resources: Resources
 }
 
-fileprivate struct Unit {
+private struct Unit {
     enum Kind {
         var cost: Resources {
             return Resources(gold: 1, wood: 1)
@@ -45,8 +43,7 @@ fileprivate struct Unit {
     }
 }
 
-
-fileprivate class TrainignCamp {
+private class TrainignCamp {
     var currentPlayer: Player
     var board: [Unit]
 
@@ -102,18 +99,18 @@ fileprivate extension CGSize {
 }
 
 // MARK: - A custom operator for error handling
-fileprivate class Note {
+private class Note {
     init(data: Data)throws {
 
     }
 }
-fileprivate class Fileloader {
+private class Fileloader {
     func loadFile(named: String)throws -> File {
         return File.init()
     }
 }
 
-fileprivate class NoteManager {
+private class NoteManager {
     let fileloader = Fileloader()
 
     //Код не несет на себе отвественность
@@ -123,7 +120,6 @@ fileprivate class NoteManager {
         let note = try Note(data: data)
         return note
     }
-
 
     //Сложный код с обработками (трудно читать)
     func loadNoteWithError(fromFileNamed fileName: String) throws -> Note {
@@ -159,7 +155,7 @@ fileprivate class NoteManager {
 
         return note
     }
-    
+
     //Работа с новым оператором
     func loadNoteOperator(fromFileNamed fileName: String) throws -> Note {
         let file = try fileloader.loadFile(named: fileName) ~> LoadingError.invalidFile
@@ -169,7 +165,7 @@ fileprivate class NoteManager {
     }
 }
 
-fileprivate extension NoteManager {
+extension NoteManager {
     enum LoadingError: Error {
         case invalidFile(Error)
         case invalidData(Error)
@@ -195,4 +191,3 @@ func ~><T>(expression: @autoclosure () throws -> T,
         throw errorTransform(error)
     }
 }
-

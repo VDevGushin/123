@@ -103,9 +103,9 @@ class AudioPlayerProtocol {
 }
 
 //How to use
-fileprivate class TestProtocolsVC: UIViewController, AudioPlayerObserver {
+private class TestProtocolsVC: UIViewController, AudioPlayerObserver {
     var player: AudioPlayerProtocol?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         player?.addObserver(self)

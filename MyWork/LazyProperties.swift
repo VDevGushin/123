@@ -8,7 +8,7 @@
 
 import Foundation
 
-fileprivate class Cache<T> {
+private class Cache<T> {
     var source = [String: T]()
     subscript(index: String) -> T? {
         get {
@@ -20,7 +20,7 @@ fileprivate class Cache<T> {
     }
 }
 
-fileprivate class FileLoader {
+private class FileLoader {
     private lazy var cache = Cache<File>()
 
     func loadFile(named name: String) throws -> File {

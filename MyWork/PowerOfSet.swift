@@ -8,7 +8,7 @@
 
 import UIKit
 
-fileprivate struct UserWithSet {
+private struct UserWithSet {
     var friendIDs = Set<UUID>()
 
     //variant 1
@@ -37,14 +37,14 @@ fileprivate struct UserWithSet {
     }
 }
 
-fileprivate class Movie {
+private class Movie {
     let id: UUID
     init(with id: UUID) {
         self.id = id
     }
 }
 
-fileprivate class RatingsManager {
+private class RatingsManager {
     private typealias Rating = (score: Int, movieID: UUID)
     private var ratings = [Rating]()
     private var movieIDs = Set<UUID>()
@@ -70,13 +70,13 @@ fileprivate class RatingsManager {
 }
 
 //////////////////////////////////////////////////////////////////////Guarding using set
-fileprivate protocol ContentLoader { }
-fileprivate protocol ContentOperation: AnyObject {
+private protocol ContentLoader { }
+private protocol ContentOperation: AnyObject {
     func prepare()
     func perform(using loader: ContentLoader, then handler: @escaping () -> Void)
 }
 
-fileprivate class ContentManager {
+private class ContentManager {
     private var prepareOperationIDs = Set<ObjectIdentifier>()
 
     func perform(_ operation: ContentOperation, with lodader: ContentLoader, then handler: @escaping () -> Void) {
@@ -91,6 +91,3 @@ fileprivate class ContentManager {
         operation.prepare()
     }
 }
-
-
-

@@ -33,11 +33,11 @@ private extension ImageLoaderFactory {
         init(session: URLSession) {
             self.session = session
         }
-        
+
         deinit {
             //cancelAllRequests()
         }
-        
+
         func loadImage(from url: URL,
                        then handler: (Result<UIImage>) -> Void) {
             //let request = Request(url: url, handler: handler)

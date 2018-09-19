@@ -8,11 +8,11 @@
 
 import UIKit
 
-fileprivate func animate(_ animation: @escaping () -> Void, duration: TimeInterval = 0.25) {
+private func animate(_ animation: @escaping () -> Void, duration: TimeInterval = 0.25) {
     UIView.animate(withDuration: duration, animations: animation)
 }
 
-fileprivate class Autoclosure {
+private class Autoclosure {
     var view: UIView?
     func testAutoclosure() {
         if let view = view {
@@ -31,7 +31,7 @@ fileprivate extension Optional {
     }
 }
 
-fileprivate class TestOptional {
+private class TestOptional {
     struct ArgumetError {
         enum Er: Error {
             case test
@@ -52,17 +52,16 @@ fileprivate class TestOptional {
 }
 
 //Работа с нетипизированным словарем
-fileprivate class WorkWithDictAny {
+private class WorkWithDictAny {
     let dic = [String: Any]()
     func test() {
         //обычное использование
-        let _ = (dic["numberOfCoins"] as? Int) ?? 100
+        _ = (dic["numberOfCoins"] as? Int) ?? 100
 
         //Новое использование с автозамыканием
-        let _ = dic.value(forKey: "numberOfCoins", defaultValue: 4)
+        _ = dic.value(forKey: "numberOfCoins", defaultValue: 4)
     }
 }
-
 
 extension Dictionary where Value: Any {
     func value<T>(forKey key: Key, defaultValue: @autoclosure () -> T) -> T {
@@ -72,4 +71,3 @@ extension Dictionary where Value: Any {
         return value
     }
 }
-

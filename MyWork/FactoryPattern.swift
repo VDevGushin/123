@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//MARK: - problem place
+// MARK: - problem place
 
 fileprivate final class Request {
     enum State {
@@ -57,9 +57,9 @@ final class TodoListVC: UIViewController {
     }
 }
 
-//MARK: - Factory methods (for multi request)
+// MARK: - Factory methods (for multi request)
 
-fileprivate class RequestV2 {
+private class RequestV2 {
     let url: URL
     let parameters: [String: String]
 
@@ -78,7 +78,7 @@ fileprivate final class StatefulRequst: RequestV2 {
     var state = State.pending
 }
 
-fileprivate extension RequestV2 {
+extension RequestV2 {
     func makeStateful() -> StatefulRequst {
         return StatefulRequst(url: self.url, parameters: self.parameters)
     }

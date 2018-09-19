@@ -8,7 +8,7 @@
 
 import UIKit
 
-fileprivate class Enemy {
+private class Enemy {
     var health = 10 {
         didSet { self.putOutOfPlayIfNeeded() }
     }
@@ -23,7 +23,7 @@ fileprivate class Enemy {
     }
 }
 
-fileprivate struct Video {
+private struct Video {
     struct PlaybackState {
         let file: File
         var progress: Double
@@ -41,7 +41,6 @@ fileprivate struct Video {
     var isPlaying = false
     var progress: Double = 0
 }
-
 
 /*
  if let downloadTask = video.downloadTask {

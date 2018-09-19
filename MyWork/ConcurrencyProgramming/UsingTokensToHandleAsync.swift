@@ -28,7 +28,7 @@ class RequestToken {
     }
 }
 
-fileprivate class UserLoader {
+private class UserLoader {
     private let urlSession: URLSession
     init(urlSession: URLSession = .shared) {
         self.urlSession = urlSession

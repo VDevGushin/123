@@ -45,8 +45,7 @@ class ModelLoader < T: Unboxable & Requestable >: ModelLoading {
 }
 
 //Используем через DI
-fileprivate class TestViewController: UIViewController {
-    
+private class TestViewController: UIViewController {
 
     init<T: ModelLoading>(modelLoader: T) where T.Model == MyModel {
         super.init(nibName: nil, bundle: nil)
@@ -59,47 +58,47 @@ fileprivate class TestViewController: UIViewController {
 
 class AnyModelLoader<T>: ModelLoading {
     typealias CompletionHandler = (Result<T>) -> Void
-    
+
     private let loadingClosure: (CompletionHandler) -> Void
-    
+
     init<L: ModelLoading>(loader: L) where L.Model == T {
         loadingClosure = loader.load
     }
-    
+
     func load(completionHandler: CompletionHandler) {
         loadingClosure(completionHandler)
     }
 }
 //using view controller with any model loader
-fileprivate class Test2ViewController: UIViewController {
+private class Test2ViewController: UIViewController {
     private let modelLoader: AnyModelLoader<MyModel>
-    
+
     init<T: ModelLoading>(modelLoader: T) where T.Model == MyModel {
         self.modelLoader = AnyModelLoader(loader: modelLoader)
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
 //Еще меньше кода
-fileprivate class Test3ViewController: UIViewController {
+private class Test3ViewController: UIViewController {
     private let loadModel: ((Result<MyModel>) -> Void) -> Void
-    
+
     init<T: ModelLoading>(modelLoader: T) where T.Model == MyModel {
         loadModel = modelLoader.load
         super.init(nibName: nil, bundle: nil)
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         loadModel { result in
             switch result {
             case .result( _): break
@@ -110,7 +109,3 @@ fileprivate class Test3ViewController: UIViewController {
         }
     }
 }
-
-
-
-

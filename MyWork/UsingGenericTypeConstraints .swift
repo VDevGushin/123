@@ -31,7 +31,7 @@ extension Sequence where Element == () -> Void {
 }
 //observers.callAll()
 
-fileprivate protocol ModelManager {
+private protocol ModelManager {
     associatedtype Model
     associatedtype Collection: Swift.Collection where Collection.Element == Model
     associatedtype Query
@@ -39,8 +39,8 @@ fileprivate protocol ModelManager {
     func models(matching query: Query) -> Collection
 }
 
-fileprivate class USer { }
-fileprivate class UManager: ModelManager {
+private class USer { }
+private class UManager: ModelManager {
     enum Query {
         case name(String)
         case ageRange(Range<Int>)
@@ -52,7 +52,7 @@ fileprivate class UManager: ModelManager {
     }
 }
 
-fileprivate class MManager: ModelManager {
+private class MManager: ModelManager {
     typealias Model = (key: String, value: Int)
 
     enum Query {

@@ -7,6 +7,7 @@ target 'MyWork' do
   pod "Unbox"
   pod "PromiseKit", "~> 6.0"
   pod 'Charts'
+  pod 'SwiftLint'
   # Pods for MyWork
 
 end

@@ -33,7 +33,7 @@ struct MapTest {
 class TestMap {
     func testMap() {
         let map = MapTest(width: 23, tites: [Tile()])
-        let _ = map[(2, 1)]
+        _ = map[(2, 1)]
     }
 }
 
@@ -105,4 +105,3 @@ class TestAllViewsWithTuples {
         dump(profileView)
     }
 }
-

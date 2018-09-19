@@ -35,12 +35,12 @@ class StringFormatter {
     enum Error: Swift.Error {
         case emptyString
     }
-    
+
     func format(_ string: String) throws -> String {
         guard !string.isEmpty else {
             throw Error.emptyString
         }
-        
+
         return string.replacingOccurrences(of: "\n", with: " ")
     }
 }

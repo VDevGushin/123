@@ -7,17 +7,16 @@
 //
 
 import Foundation
-fileprivate enum ScenarionTesttest {
+private enum ScenarionTesttest {
     case spec(id: Int, title: Int)
     case datf(baseId: Int, description: Int)
 }
 
-fileprivate class VariantClass1 {
+private class VariantClass1 {
     var type: ScenarionTesttest?
 }
 
-
-fileprivate class TestWorker {
+private class TestWorker {
     enum Scen {
         case one
         case two

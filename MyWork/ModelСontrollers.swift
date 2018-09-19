@@ -8,11 +8,11 @@
 
 import UIKit
 
-fileprivate struct Post {
+private struct Post {
     var group: Group = Group()
 }
 
-fileprivate class UserModelController {
+private class UserModelController {
     private var user: User
     init(user: User) {
         self.user = user
@@ -28,7 +28,6 @@ fileprivate class UserModelController {
         return false
     }
 }
-
 
 extension UserModelController {
     typealias PermissionsClosure = (Permission, Permission.Status) -> Void

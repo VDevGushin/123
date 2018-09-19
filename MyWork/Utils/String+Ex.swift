@@ -26,19 +26,19 @@ extension String {
             alpha: CGFloat(1.0)
         )
     }
-    
+
     subscript(value: PartialRangeUpTo<Int>) -> Substring {
         get {
             return self[..<index(startIndex, offsetBy: value.upperBound)]
         }
     }
-    
+
     subscript(value: PartialRangeThrough<Int>) -> Substring {
         get {
             return self[...index(startIndex, offsetBy: value.upperBound)]
         }
     }
-    
+
     subscript(value: PartialRangeFrom<Int>) -> Substring {
         get {
             return self[index(startIndex, offsetBy: value.lowerBound)...]

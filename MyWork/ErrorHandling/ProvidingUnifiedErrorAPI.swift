@@ -40,21 +40,31 @@ func loadSearchData2(matching query: String) throws -> Data {
 
 //Make perform
 func perform<T>(_ expression: @autoclosure () throws -> T,
-             orThrow error: Error) throws -> T {
+                orThrow err: Error?) throws -> T {
     do {
         return try expression()
     } catch {
-        throw error
+        throw err ?? error
     }
 }
 
 func loadSearchData(matching query: String) throws -> Data {
     let urlString = "https://my.api.com/search?q=\(query)"
-    
+
     guard let url = URL(string: urlString) else {
         throw SearchError.invalidQuery(query)
     }
+
+    try perform(testTTT(1), orThrow: nil)
     
     return try perform(Data(contentsOf: url),
                        orThrow: SearchError.dataLoadingFailed(url))
+    
+}
+
+enum T: Error {
+    case t
+}
+func testTTT(_ a: Int) throws {
+    throw T.t
 }

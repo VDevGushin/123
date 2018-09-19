@@ -8,21 +8,21 @@
 
 import UIKit
 
-fileprivate protocol UserModelFunctional: Hashable, Codable { }
+private protocol UserModelFunctional: Hashable, Codable { }
 
-fileprivate struct UserModelGroup: UserModelFunctional { }
+private struct UserModelGroup: UserModelFunctional { }
 
-fileprivate struct UserModelPermission: UserModelFunctional {
+private struct UserModelPermission: UserModelFunctional {
     struct Status: UserModelFunctional { }
     var allowComments = true
 }
 
-fileprivate struct UserModelPost: UserModelFunctional {
+private struct UserModelPost: UserModelFunctional {
     let group: UserModelGroup
 }
 
 // Very common example
-fileprivate class UserModel: Decodable, Encodable {
+private class UserModel: Decodable, Encodable {
     let firstName: String
     let lastName: String
     let age: Int
@@ -48,10 +48,9 @@ extension UserModel {
     }
 }
 
-
 //Using model controler
 
-fileprivate class UserModelController {
+private class UserModelController {
     private var user: UserModel
     init(user: UserModel) {
         self.user = user
@@ -71,19 +70,17 @@ fileprivate class UserModelController {
 extension UserModelController {
     typealias PermissionsClosure = (UserModelPermission, UserModelPermission.Status) -> Void
 
-
     var displayName: String {
         return "\(self.user.firstName) \(self.user.lastName)"
     }
-    
-    func enumeratePermissions(using closure : PermissionsClosure){
+
+    func enumeratePermissions(using closure: PermissionsClosure) {
 //        for permission in Permission.allCases {
 //            let isGranted = user.permissions.contains(permission)
 //            closure(permission, isGranted ? .granted : .denied)
 //        }
     }
 }
-
 
 ////With actions
 //
@@ -152,4 +149,3 @@ extension UserModelController {
 //        render()
 //    }
 //}
-

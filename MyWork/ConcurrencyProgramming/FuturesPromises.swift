@@ -23,7 +23,7 @@ class DataBase<T> {
     }
 }
 
-fileprivate class UserLoader {
+private class UserLoader {
     typealias Handler = (Result<User>) -> Void
     let dataBase = DataBase<User>()
 
@@ -63,7 +63,7 @@ fileprivate class UserLoader {
 //}
 
 //В будущем мы делаем выбор сдерживать обещание или нет
-fileprivate class Future<Value> {
+private class Future<Value> {
     private lazy var callbacks = [(Result<Value>) -> Void]()
     fileprivate var result: Result<Value>? {
         didSet {
@@ -81,7 +81,6 @@ fileprivate class Future<Value> {
             callback(result)
         }
     }
-
 
     func chained<NextValue>(with closure: @escaping (Value) throws -> Future<NextValue>) -> Future<NextValue> {
         let promise = Promise<NextValue>()
@@ -124,7 +123,7 @@ extension Future where Value: Savable {
 }
 
 //Обещание, которое мы даем кому то (МЫ это будем делать точно, но вот результат может быть любой. В нашем случан succes/error)
-fileprivate class Promise<Value>: Future<Value> {
+private class Promise<Value>: Future<Value> {
     init(value: Value? = nil) {
         super.init()
         result = value.map(Result.result)
@@ -155,7 +154,7 @@ fileprivate extension URLSession {
 }
 
 //пример использования
-fileprivate  class TestFuturePromise {
+private  class TestFuturePromise {
     func test() {
         URLSession.shared.request(url: URL(string: "TestStringURL")!).observe { result in
 

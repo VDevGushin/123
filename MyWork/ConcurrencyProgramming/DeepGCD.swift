@@ -9,11 +9,11 @@
 import UIKit
 
 //Delaying a cancellable task with DispatchWorkItem====================================================================================================>
-fileprivate class RequestLoader {
+private class RequestLoader {
     func loadResults(forQ: String) { }
 }
 
-fileprivate class GCDSearchViewController: UIViewController, UISearchBarDelegate {
+private class GCDSearchViewController: UIViewController, UISearchBarDelegate {
     private var pendingRequestWorkItem: DispatchWorkItem?
     private let loader: RequestLoader = RequestLoader()
 
@@ -28,23 +28,23 @@ fileprivate class GCDSearchViewController: UIViewController, UISearchBarDelegate
 }
 
 //Grouping and chaining tasks with DispatchGroup====================================================================================================>
-fileprivate class LocalDataSource { }
+private class LocalDataSource { }
 
 //thread-safe collection
-fileprivate class Note { }
-fileprivate class NoteCollection: SynchronizedArray<Note> { }
-fileprivate protocol ILoader { }
+private class Note { }
+private class NoteCollection: SynchronizedArray<Note> { }
+private protocol ILoader { }
 extension ILoader {
     func load(completion: (Note) -> Void) {
         completion(Note())
     }
 }
 
-fileprivate class DataSourceLoader: ILoader { }
-fileprivate class ICloudDataSource: ILoader { }
-fileprivate class BackendDataSource: ILoader { }
+private class DataSourceLoader: ILoader { }
+private class ICloudDataSource: ILoader { }
+private class BackendDataSource: ILoader { }
 
-fileprivate class GroupingChaining {
+private class GroupingChaining {
     let sourceLoader = DataSourceLoader()
     let iCloudDataSource = ICloudDataSource()
     let backendDataSource = BackendDataSource()
@@ -106,7 +106,7 @@ extension Array where Element == ILoader {
 //Waiting for asynchronous tasks with DispatchSemaphore====================================================================================================>
 //Будем использовать семафор , чтобы все асинхронные задачи стали синхронными
 extension GroupingChaining {
-    func test2() -> Void {
+    func test2() {
         let dataSources: [ILoader] = [sourceLoader, iCloudDataSource, backendDataSource]
         do {
             let collection = try dataSources.load()
@@ -149,7 +149,7 @@ extension Array where Element == ILoader {
 }
 
 //Observing changes in a file with DispatchSource====================================================================================================>
-fileprivate class FileObserver {
+private class FileObserver {
     private let file: File
     private let queue: DispatchQueue
     private var source: DispatchSourceFileSystemObject?
@@ -179,7 +179,7 @@ fileprivate class FileObserver {
     }
 }
 
-fileprivate class TestFileObserver {
+private class TestFileObserver {
     func test() {
         let observer = FileObserver(file: File())
         observer.start {

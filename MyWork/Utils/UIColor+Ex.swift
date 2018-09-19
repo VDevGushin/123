@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 extension UIColor {
     convenience init(hex: String) {
         let color = hex.fromHex()

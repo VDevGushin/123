@@ -58,7 +58,6 @@ extension Process {
             return Promise(error: error)
         }
 
-
         var q: DispatchQueue {
             if #available(macOS 10.10, iOS 8.0, tvOS 9.0, watchOS 2.0, *) {
                 return DispatchQueue.global(qos: .default)
@@ -88,7 +87,6 @@ extension Process {
         case execution(Process)
     }
 }
-
 
 extension Process.PMKError: LocalizedError {
     public var errorDescription: String? {
@@ -124,7 +122,7 @@ extension Process {
     open override var description: String {
         let launchPath = self.launchPath ?? "$0"
         var args = [launchPath]
-        arguments.flatMap{ args += $0 }
+        arguments.flatMap { args += $0 }
         return args.map { arg in
             let contains: Bool
           #if swift(>=3.2)

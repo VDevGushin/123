@@ -14,8 +14,8 @@ import UIKit
  Instead of requiring implementors to conform to Equatable, or exposing some form of unique identifier (like a UUID), you can use techniques like the === operator and the ObjectIdentifier type to quickly and uniquely identify objects without much extra code.
  */
 
-//MARK: - Equatable
-fileprivate struct Book {
+// MARK: - Equatable
+private struct Book {
     let title: String
     let author: String
 }
@@ -28,15 +28,15 @@ extension Book: Equatable {
     }
 }
 
-//MARK: - Check for same instance
-fileprivate struct Item { }
+// MARK: - Check for same instance
+private struct Item { }
 
-fileprivate protocol InventoryDataSource: class {
+private protocol InventoryDataSource: class {
     var numberOfItems: Int { get }
     func item(at index: Int) -> Item
 }
 
-fileprivate class InventoryManager {
+private class InventoryManager {
     var dataSource: InventoryDataSource? {
         didSet {
             dataSourceDidChange(from: oldValue)
@@ -51,7 +51,7 @@ fileprivate class InventoryManager {
     func reload() { }
 }
 
-//MARK: - Hashable
+// MARK: - Hashable
 extension Book: Hashable {
     var hashValue: Int {
         return title.appending(author).hashValue
@@ -59,7 +59,7 @@ extension Book: Hashable {
 }
 //Using
 
-fileprivate class BookStore {
+private class BookStore {
     var inventory = [Book]()
     var uniqueBooks = Set<Book>()
 
@@ -69,9 +69,9 @@ fileprivate class BookStore {
     }
 }
 
-//MARK: - Hashable for protocol types
-fileprivate class Renderer {
-    
+// MARK: - Hashable for protocol types
+private class Renderer {
+
     func enqueue(_ circle: Circle) { }
 }
 
@@ -79,7 +79,7 @@ protocol Renderable: class {
     func render(in context: CGContext)
 }
 
-fileprivate class Circle {
+private class Circle {
     weak var renderer: Renderer?
     var radius: CGFloat {
         didSet { renderer?.enqueue(self) }
@@ -99,7 +99,7 @@ extension Circle: Renderable {
     }
 }
 
-//MARK: - ObjectIdentifier
+// MARK: - ObjectIdentifier
 
 class RenderableWrapper {
     fileprivate let renderable: Renderable
@@ -125,17 +125,17 @@ extension RenderableWrapper: Equatable, Hashable {
 
 class RendererV1 {
     private var objectsNeedingRendering = Set<RenderableWrapper>()
-    
+
     func enqueue(_ renderable: Renderable) {
         let wrapper = RenderableWrapper(renderable: renderable)
         objectsNeedingRendering.insert(wrapper)
     }
-    
+
     func screenDidDraw() {
         // Start by emptying the queue
         let objects = objectsNeedingRendering
         objectsNeedingRendering = []
-        
+
         // Render each object
         for object in objects {
           //  let context = makeContext()

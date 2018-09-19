@@ -9,10 +9,10 @@
 import Foundation
 
 ///пример работы с массивом (условное соответсвие)
-fileprivate protocol ScoreConvertible {
+private protocol ScoreConvertible {
     func computeScore() -> Int
 }
-fileprivate class Level: ScoreConvertible {
+private class Level: ScoreConvertible {
     func computeScore() -> Int {
         return id.count
     }
@@ -23,7 +23,7 @@ fileprivate class Level: ScoreConvertible {
     }
 }
 
-fileprivate class Test1 {
+private class Test1 {
     func test () {
         let levels = [Level(id: "water-0"), Level(id: "water-1")]
         let score = levels.computeScore()
@@ -49,7 +49,7 @@ extension Array: ScoreConvertible where Element: ScoreConvertible {
 //============================================================Пример2 - Multipart requests==============================
 class Article { }
 
-fileprivate protocol Request {
+private protocol Request {
     associatedtype Response
     typealias Handler = (Result<Response>) -> Void
     func perform(then handler: @escaping Handler)
@@ -115,4 +115,3 @@ struct TestTTT {
         }
     }
 }
-

@@ -8,11 +8,11 @@
 
 import Foundation
 //TODO: - bad impl
-fileprivate enum Category {
+private enum Category {
     case dairy, vegetables
 }
 
-fileprivate struct Product {
+private struct Product {
     let category: Category
     let name: String
 }
@@ -30,7 +30,7 @@ fileprivate final class ShopingCard {
 }
 
 //TODO: - to be collected
-fileprivate struct ProductCollection: Collection , ExpressibleByDictionaryLiteral {
+private struct ProductCollection: Collection, ExpressibleByDictionaryLiteral {
     typealias DictionaryType = [Category: [Product]]
     typealias Index = DictionaryType.Index
     typealias Element = DictionaryType.Element
@@ -53,7 +53,7 @@ fileprivate struct ProductCollection: Collection , ExpressibleByDictionaryLitera
     func index(after i: Index) -> Index {
         return products.index(after: i)
     }
-    
+
     init(dictionaryLiteral elements: (Category, [Product])...) {
         for (category, productsInCategory) in elements {
             products[category] = productsInCategory
@@ -77,10 +77,9 @@ fileprivate struct ProductCollection: Collection , ExpressibleByDictionaryLitera
 }
 
 //Using
-fileprivate class ShoppingCart {
+private class ShoppingCart {
     private(set) var products = ProductCollection()
     func add(product: Product) {
         products.insert(product)
     }
 }
-

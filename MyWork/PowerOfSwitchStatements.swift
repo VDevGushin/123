@@ -8,15 +8,14 @@
 
 import Foundation
 
-fileprivate enum HTTPError: Error {
+private enum HTTPError: Error {
     case unauthorized
 }
 
-fileprivate enum CheckResult<T:Equatable> {
+private enum CheckResult<T: Equatable> {
     case result(T)
     case error(Error)
 }
-
 
 extension CheckResult: Equatable {
     static func == (lhs: CheckResult<T>, rhs: CheckResult<T>) -> Bool {
@@ -50,7 +49,7 @@ extension CheckResult: Equatable {
 }
 
 //Switching on a set
-fileprivate class RoadTile {
+private class RoadTile {
     enum ConnectedDirections {
         case up
         case down
@@ -82,7 +81,7 @@ fileprivate class RoadTile {
 }
 
 //Switching on a comparison
-fileprivate class SwitchingComparison {
+private class SwitchingComparison {
     let score1 = 1
     let score2 = 2
     var text = ""
@@ -128,4 +127,3 @@ extension Int {
         return .equal
     }
 }
-

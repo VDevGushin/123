@@ -14,7 +14,7 @@ fileprivate final class ThisDataBase {
     }
 }
 
-//MARK: - Return early, return often
+// MARK: - Return early, return often
 fileprivate final class NoteListViewController: UIViewController {
     let dataBase = ThisDataBase()
 
@@ -111,5 +111,3 @@ extension Notification {
  }
  
  */
-
-
