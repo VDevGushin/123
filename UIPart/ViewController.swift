@@ -8,10 +8,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, IImageShowController {
+    var imagePicker = UIImagePickerController()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
+    @IBAction func openImage(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        self.showImage(with: image)
     }
 }
-

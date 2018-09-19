@@ -77,6 +77,7 @@
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
 		3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */; };
 		3CC7A3ED2148E56C0057BFEA /* FactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */; };
+		3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEA34921528AD00081A7DB /* RoundButton.swift */; };
 		3CD3DB1E213521EB004F0FE7 /* PowerOfResult .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3DB1D213521EB004F0FE7 /* PowerOfResult .swift */; };
 		3CD3DB202135258A004F0FE7 /* TypeSafeIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */; };
 		3CD85A1E20EF482A008D994C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD85A1D20EF482A008D994C /* AppDelegate.swift */; };
@@ -91,6 +92,9 @@
 		3CE41F7A21523AB8002A6600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7821523AB8002A6600 /* LaunchScreen.storyboard */; };
 		3CE41F812152410B002A6600 /* HandlingNonOptionalOptionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F802152410B002A6600 /* HandlingNonOptionalOptionals.swift */; };
 		3CE41F832152452D002A6600 /* UserTableViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F822152452D002A6600 /* UserTableViewCell+Ex.swift */; };
+		3CE41F872152645B002A6600 /* ETBImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F852152645B002A6600 /* ETBImageViewerViewController.swift */; };
+		3CE41F882152645B002A6600 /* ETBImageViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */; };
+		3CE41F8D21526B69002A6600 /* ETBImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */; };
 		3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */; };
 		3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */; };
 		3CE8CAF62136AB49003752DC /* LogicControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8CAF52136AB49003752DC /* LogicControllers.swift */; };
@@ -192,6 +196,7 @@
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
 		3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidingUnifiedErrorAPI.swift; sourceTree = "<group>"; };
 		3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPattern.swift; sourceTree = "<group>"; };
+		3CCEA34921528AD00081A7DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3CD3DB1D213521EB004F0FE7 /* PowerOfResult .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PowerOfResult .swift"; sourceTree = "<group>"; };
 		3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSafeIdentifiers.swift; sourceTree = "<group>"; };
 		3CD85A1A20EF482A008D994C /* MyWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +215,9 @@
 		3CE41F7B21523AB8002A6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CE41F802152410B002A6600 /* HandlingNonOptionalOptionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingNonOptionalOptionals.swift; sourceTree = "<group>"; };
 		3CE41F822152452D002A6600 /* UserTableViewCell+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserTableViewCell+Ex.swift"; sourceTree = "<group>"; };
+		3CE41F852152645B002A6600 /* ETBImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBImageViewerViewController.swift; sourceTree = "<group>"; };
+		3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBImageViewerViewController.xib; sourceTree = "<group>"; };
+		3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBImageScrollView.swift; sourceTree = "<group>"; };
 		3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionWithFunctions.swift; sourceTree = "<group>"; };
 		3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeErasureUsingClosures.swift; sourceTree = "<group>"; };
 		3CE8CAF52136AB49003752DC /* LogicControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicControllers.swift; sourceTree = "<group>"; };
@@ -441,6 +449,14 @@
 			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
+		3CCEA34821528A8B0081A7DB /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				3CCEA34921528AD00081A7DB /* RoundButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		3CD85A1120EF482A008D994C = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +544,8 @@
 		3CE41F6E21523AB5002A6600 /* UIPart */ = {
 			isa = PBXGroup;
 			children = (
+				3CCEA34821528A8B0081A7DB /* Controls */,
+				3CE41F84215263FB002A6600 /* ImageViewer */,
 				3CE41F6F21523AB5002A6600 /* AppDelegate.swift */,
 				3CE41F7121523AB5002A6600 /* ViewController.swift */,
 				3CE41F7321523AB5002A6600 /* Main.storyboard */,
@@ -536,6 +554,16 @@
 				3CE41F7B21523AB8002A6600 /* Info.plist */,
 			);
 			path = UIPart;
+			sourceTree = "<group>";
+		};
+		3CE41F84215263FB002A6600 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				3CE41F852152645B002A6600 /* ETBImageViewerViewController.swift */,
+				3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */,
+				3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */,
+			);
+			path = ImageViewer;
 			sourceTree = "<group>";
 		};
 		3CF444E3210EEC91005392CF /* PersonStatisticControl */ = {
@@ -725,6 +753,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CE41F882152645B002A6600 /* ETBImageViewerViewController.xib in Resources */,
 				3CE41F7A21523AB8002A6600 /* LaunchScreen.storyboard in Resources */,
 				3CE41F7721523AB8002A6600 /* Assets.xcassets in Resources */,
 				3CE41F7521523AB5002A6600 /* Main.storyboard in Resources */,
@@ -880,6 +909,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */,
+				3CE41F872152645B002A6600 /* ETBImageViewerViewController.swift in Sources */,
+				3CE41F8D21526B69002A6600 /* ETBImageScrollView.swift in Sources */,
 				3CE41F7221523AB5002A6600 /* ViewController.swift in Sources */,
 				3CE41F7021523AB5002A6600 /* AppDelegate.swift in Sources */,
 			);
