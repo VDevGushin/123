@@ -20,8 +20,10 @@ final class TestPresenterVC: UINavigationController {
 //TODO:  - Presenters
 private struct ConfirmationPresenter {
     enum Outcome {
-        case accepted, rejected
+        case accepted
+        case rejected
     }
+
     let question: String
     let acceptTitlte: String
     let rejectTitle: String
@@ -60,8 +62,8 @@ class NoteViewController: UIViewController {
 }
 
 //TODO: - Wrapping things up
- struct FavoritesManager { }
- struct FavoriteDataSource {
+struct FavoritesManager { }
+struct FavoriteDataSource {
     let manager: FavoritesManager
 }
 final class MovieListViewController: UIViewController {
@@ -83,7 +85,7 @@ private struct FavoritesPresenter {
         let dataSource = FavoriteDataSource(manager: manager)
         let list = MovieListViewController(dataSource: dataSource)
         let navigationController = UINavigationController(rootViewController: list)
-        list.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: navigationController, action: #selector(UIViewController.dismiss(animated:completion:)))
+        list.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: navigationController, action: #selector(UIViewController.dismiss(animated: completion:)))
         viewController.present(navigationController, animated: true)
     }
 }

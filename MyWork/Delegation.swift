@@ -9,8 +9,13 @@
 import Foundation
 class File {
     let path: String
+
     init() {
         self.path = ""
+    }
+
+    convenience init(data: Data) {
+        self.init()
     }
     func read()throws -> Data {
         return Data(base64Encoded: "123")!

@@ -21,16 +21,6 @@ private class Autoclosure {
     }
 }
 
-//Добавим расширение на опционал для разворачивания через throw API
-fileprivate extension Optional {
-    func unwrapOrThrow(_ errorExpression: @autoclosure () -> Error) throws -> Wrapped {
-        guard let value = self else {
-            throw errorExpression()
-        }
-        return value
-    }
-}
-
 private class TestOptional {
     struct ArgumetError {
         enum Er: Error {
