@@ -14,7 +14,7 @@ protocol IImageShowController: class {
 }
 
 fileprivate extension UIViewController {
-    func add(_ child: UIViewController) {
+    func addImageViewer(_ child: UIViewController) {
         addChild(child)
         child.view.frame = self.view.bounds
         view.addSubview(child.view)
@@ -22,7 +22,7 @@ fileprivate extension UIViewController {
         child.view.layoutSubviews()
     }
 
-    func remove() {
+    func removeImageViewer() {
         guard parent != nil else { return }
         UIView.animate(withDuration: 0.7, animations: {
             self.view.alpha = 0
@@ -37,11 +37,11 @@ fileprivate extension UIViewController {
 extension IImageShowController where Self: UIViewController {
     func showImage(with image: UIImage) {
         let imageView = ETBImageViewerViewController.controller(with: image)
-        self.add(imageView)
+        self.addImageViewer(imageView)
     }
 
     func closeImage() {
-        self.remove()
+        self.removeImageViewer()
     }
 }
 
@@ -53,6 +53,11 @@ class ETBImageViewerViewController: UIViewController, UIScrollViewDelegate {
     init(with image: UIImage) {
         self.image = image
         super.init(nibName: String(describing: ETBImageViewerViewController.self), bundle: nil)
+    }
+
+    @IBAction func processImage(_ sender: Any) {
+        let vc = ImageColorViewController(image: self.image)
+        add(vc)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -72,7 +77,7 @@ class ETBImageViewerViewController: UIViewController, UIScrollViewDelegate {
     }
 
     @IBAction func closeAction(_ sender: Any) {
-        self.remove()
+        self.removeImageViewer()
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
