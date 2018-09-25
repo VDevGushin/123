@@ -29,6 +29,7 @@
 		3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */; };
 		3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */; };
 		3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C3D0214B78DF008BBC12 /* ModellingState .swift */; };
+		3C362809215A11DB00161B3A /* CustomContainerViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C362808215A11DB00161B3A /* CustomContainerViewControllers.swift */; };
 		3C36D8B120FF185F0095F9A4 /* UsingTokensToHandleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */; };
 		3C37B767213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */; };
 		3C38E1742107732A005CBDE9 /* RoundPercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */; };
@@ -150,6 +151,7 @@
 		3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedAnalyticsSystem.swift; sourceTree = "<group>"; };
 		3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingSingletonsSwift.swift; sourceTree = "<group>"; };
 		3C30C3D0214B78DF008BBC12 /* ModellingState .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModellingState .swift"; sourceTree = "<group>"; };
+		3C362808215A11DB00161B3A /* CustomContainerViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerViewControllers.swift; sourceTree = "<group>"; };
 		3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingTokensToHandleAsync.swift; sourceTree = "<group>"; };
 		3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
 		3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPercentagesControl.swift; sourceTree = "<group>"; };
@@ -345,6 +347,7 @@
 				3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */,
 				3C2FA84F20F8875400F54E76 /* ChildViewControllers.swift */,
 				3CB1E5BE2158C528009DBDBE /* SubclassFreeViewControllers.swift */,
+				3C362808215A11DB00161B3A /* CustomContainerViewControllers.swift */,
 			);
 			path = "View controllers & Navigation";
 			sourceTree = "<group>";
@@ -852,6 +855,7 @@
 				3CD85A2020EF482A008D994C /* ViewController.swift in Sources */,
 				3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */,
 				3CFD253C2112F95400128554 /* UIView+Ex.swift in Sources */,
+				3C362809215A11DB00161B3A /* CustomContainerViewControllers.swift in Sources */,
 				3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */,
 				3CEE42572107911E00671D1D /* String+Ex.swift in Sources */,
 				3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */,
