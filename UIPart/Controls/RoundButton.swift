@@ -12,7 +12,6 @@ import UIKit
     override func layoutSubviews() {
         super.layoutSubviews()
         updateCornerRadius()
-        self.backgroundColor = .clear
     }
 
     @IBInspectable var rounded: Bool = true {

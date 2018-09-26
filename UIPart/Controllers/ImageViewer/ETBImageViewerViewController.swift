@@ -39,18 +39,13 @@ class ETBImageViewerViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func processImage(_ sender: Any) {
         let alert = UIAlertController(title: "Colors", message: "Please select an color getter", preferredStyle: .actionSheet)
 
-        alert.addAction(UIAlertAction(title: "Simple", style: .default, handler: { (UIAlertAction)in
-            let vc = ImageColorViewController(image: self.image, colorGetter: SimpleImageGetter())
-            self.addWithAnimaton(vc)
-        }))
-
         alert.addAction(UIAlertAction(title: "Percentage", style: .default, handler: { (UIAlertAction)in
             let vc = ImageColorViewController(image: self.image, colorGetter: ColorPercentageGetter())
             self.addWithAnimaton(vc)
         }))
-
-        alert.addAction(UIAlertAction(title: "Chameleon", style: .default, handler: { (UIAlertAction)in
-            let vc = ImageColorViewController(image: self.image, colorGetter: ChameleonImageGetter())
+        
+        alert.addAction(UIAlertAction(title: "Average color with scheme", style: .default, handler: { (UIAlertAction)in
+            let vc = ImageColorViewController(image: self.image, colorGetter: AverageColorSupportPercentageGetter())
             self.addWithAnimaton(vc)
         }))
         

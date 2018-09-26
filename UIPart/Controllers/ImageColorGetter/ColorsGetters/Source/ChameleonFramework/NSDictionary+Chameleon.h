@@ -12,5 +12,5 @@
 
 #endif /* NSDictionary_Chameleon_h */
 @interface NSDictionary (Chameleon)
-+ (NSDictionary*) mainColoursInImage:(UIImage *)image detail:(int)detail;
++ (NSDictionary*) mainColorsInImage:(UIImage *)image detail:(int)detail;
 @end

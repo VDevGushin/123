@@ -79,6 +79,9 @@
 		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
+		3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B1215C03460034CF0A /* ColorBuilder.swift */; };
+		3CB155B6215C05330034CF0A /* ImageSchemeUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */; };
+		3CB155B7215C05330034CF0A /* ImageSchemeUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */; };
 		3CB1E5BB2158C2A6009DBDBE /* AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1E5BA2158C2A6009DBDBE /* AsyncAwait.swift */; };
 		3CB1E5BF2158C528009DBDBE /* SubclassFreeViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1E5BE2158C528009DBDBE /* SubclassFreeViewControllers.swift */; };
 		3CBDAD36211D8133007ED110 /* TestProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDAD35211D8133007ED110 /* TestProperty.swift */; };
@@ -235,6 +238,9 @@
 		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
+		3CB155B1215C03460034CF0A /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
+		3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSchemeUViewController.swift; sourceTree = "<group>"; };
+		3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSchemeUViewController.xib; sourceTree = "<group>"; };
 		3CB1E5BA2158C2A6009DBDBE /* AsyncAwait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwait.swift; sourceTree = "<group>"; };
 		3CB1E5BE2158C528009DBDBE /* SubclassFreeViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubclassFreeViewControllers.swift; sourceTree = "<group>"; };
 		3CBDAD35211D8133007ED110 /* TestProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProperty.swift; sourceTree = "<group>"; };
@@ -581,6 +587,15 @@
 			path = Footer;
 			sourceTree = "<group>";
 		};
+		3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */ = {
+			isa = PBXGroup;
+			children = (
+				3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */,
+				3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */,
+			);
+			path = ColorSchemeViewer;
+			sourceTree = "<group>";
+		};
 		3CC633FC2105BD63002F3B8B /* ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
@@ -736,6 +751,7 @@
 		3CE3E56A215BE087003A0528 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */,
 				3CD0B057215A4EBD001E7411 /* ImageColorGetter */,
 				3CE41F84215263FB002A6600 /* ImageViewer */,
 			);
@@ -747,6 +763,7 @@
 			children = (
 				3CD0B058215A4EFF001E7411 /* UIImageColors.swift */,
 				3CE3E4FE215BC099003A0528 /* ChameleonFramework */,
+				3CB155B1215C03460034CF0A /* ColorBuilder.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -968,6 +985,7 @@
 				3CE41F882152645B002A6600 /* ETBImageViewerViewController.xib in Resources */,
 				3CD0B05D215A502A001E7411 /* ImageColorViewController.xib in Resources */,
 				3C98807D215B857100994BA8 /* TableViewCell.xib in Resources */,
+				3CB155B7215C05330034CF0A /* ImageSchemeUViewController.xib in Resources */,
 				3C988071215B807100994BA8 /* ColorView.xib in Resources */,
 				3CE41F7A21523AB8002A6600 /* LaunchScreen.storyboard in Resources */,
 				3CE41F7721523AB8002A6600 /* Assets.xcassets in Resources */,
@@ -1149,9 +1167,11 @@
 				3CE3E55A215BC1F2003A0528 /* UIColor+Chameleon.m in Sources */,
 				3CE3E561215BCAC5003A0528 /* ColorGetters.swift in Sources */,
 				3CD0B060215A5103001E7411 /* UIViewController+Ex2.swift in Sources */,
+				3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */,
 				3CE3E55C215BC1F2003A0528 /* UIAppearance+Swift.m in Sources */,
 				3CE3E55F215BC1FB003A0528 /* ChameleonShorthand.swift in Sources */,
 				3CE41F7221523AB5002A6600 /* ViewController.swift in Sources */,
+				3CB155B6215C05330034CF0A /* ImageSchemeUViewController.swift in Sources */,
 				3CE41F7021523AB5002A6600 /* AppDelegate.swift in Sources */,
 				3CE3E557215BC1F2003A0528 /* UIImage+ChameleonPrivate.m in Sources */,
 				3CD0B05C215A502A001E7411 /* ImageColorViewController.swift in Sources */,

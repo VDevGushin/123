@@ -23,12 +23,15 @@ class ImageColorViewController: UIViewController {
     deinit {
         print("Deinit ImageColorViewController")
     }
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var colorsTableView: UITableView!
     let image: UIImage
     let colorGetter: IColorGetter
     var dataSource: TableViewDataSource<ColorInfoModel>?
 
     private func colorsComplete(_ colors: [ColorInfoModel]) {
+        self.loadingIndicator.stopAnimating()
+        self.loadingIndicator.isHidden = true
         self.dataSource = .make(for: colors)
         self.colorsTableView?.dataSource = dataSource
         self.colorsTableView?.reloadData()
@@ -54,6 +57,7 @@ class ImageColorViewController: UIViewController {
         self.colorsTableView.showsHorizontalScrollIndicator = false
         self.colorsTableView.showsVerticalScrollIndicator = false
         self.colorsTableView.delegate = self
+        self.loadingIndicator.startAnimating()
     }
 
     @IBAction func closeColors(_ sender: Any) {
@@ -69,4 +73,11 @@ class ImageColorViewController: UIViewController {
     }
 }
 
-extension ImageColorViewController: UITableViewDelegate {}
+extension ImageColorViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let color = self.dataSource?.models[indexPath.row].color {
+            let schemeVC = ImageSchemeUViewController(color: color)
+            self.add(schemeVC)
+        }
+    }
+}

@@ -9,10 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "NSDictionary+Chameleon.h"
 
-
-
 @implementation NSDictionary (Chameleon)
-+(NSDictionary*)mainColoursInImage:(UIImage *)image detail:(int)detail {
++(NSDictionary*)mainColorsInImage:(UIImage *)image detail:(int)detail {
     //1. determine detail vars (0==low,1==default,2==high)
     //default detail
     float dimension = 10;

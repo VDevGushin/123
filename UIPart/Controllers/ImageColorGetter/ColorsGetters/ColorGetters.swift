@@ -8,28 +8,6 @@
 
 import Foundation
 
-//MARK: - Simple color getter
-final class SimpleImageGetter: IColorGetter {
-    var isInWork: Bool = false
-    func cancel() {
-        isInWork.toggle()
-    }
-
-    func process(_ image: UIImage, completion: @escaping ([ColorInfoModel]) -> Void) {
-        isInWork = true
-        DispatchQueue.global(qos: .utility).async {
-            let colors = image.getColors()
-            DispatchQueue.main.async {
-                let c1 = ColorInfoModel(color: colors.background, info: "Background")
-                let c2 = ColorInfoModel(color: colors.detail, info: "Detail")
-                let c3 = ColorInfoModel(color: colors.primary, info: "Primary")
-                let c4 = ColorInfoModel(color: colors.secondary, info: "Secondary")
-                completion([c1, c2, c3, c4])
-            }
-        }
-    }
-}
-
 //MARK: - Percentage color getter
 final class ColorPercentageGetter: IColorGetter {
     enum Detail: Int {
@@ -51,11 +29,10 @@ final class ColorPercentageGetter: IColorGetter {
 
     func process(_ image: UIImage, completion: @escaping ([ColorInfoModel]) -> Void) {
         isInWork = true
-
         DispatchQueue.global(qos: .utility).async { [weak self] in
             guard let wSelf = self else { return }
             if !wSelf.isInWork { return }
-            let colors = NSDictionary.mainColours(in: image, detail: Int32(wSelf.detail.rawValue))
+            let colors = NSDictionary.mainColors(in: image, detail: Int32(wSelf.detail.rawValue))
             guard let colorsUnwrap = colors else { return }
             var source = [ColorInfoModel]()
             let total = colorsUnwrap.reduce(0) { result, next in
@@ -85,11 +62,69 @@ final class ChameleonImageGetter: IColorGetter {
         DispatchQueue.global(qos: .utility).async { [weak self] in
             guard let wSelf = self else { return }
             if !wSelf.isInWork { return }
-            let colors = ColorsFromImage(image, withFlatScheme: false)
+            let colors = ColorsFromImage(image, withFlatScheme: true)
             var source = [ColorInfoModel]()
             for color in colors {
                 source.append(ColorInfoModel(color: color, info: color.hexValue()))
             }
+            DispatchQueue.main.async {
+                if !wSelf.isInWork { return }
+                completion(source)
+            }
+        }
+    }
+}
+
+//MARK: - Avarage color
+final class AvarageColorImageGetter: IColorGetter {
+    var isInWork: Bool = false
+    func cancel() {
+        isInWork.toggle()
+    }
+
+    func process(_ image: UIImage, completion: @escaping ([ColorInfoModel]) -> Void) {
+        isInWork = true
+        DispatchQueue.global(qos: .utility).async { [weak self] in
+            guard let wSelf = self else { return }
+            if !wSelf.isInWork { return }
+            let color = AverageColorFromImage(image)
+            let source = [ColorInfoModel(color: color, info: color.hexValue())]
+            DispatchQueue.main.async {
+                if !wSelf.isInWork { return }
+                completion(source)
+            }
+        }
+    }
+}
+
+//MARK: - Most procentage color
+final class AverageColorSupportPercentageGetter: IColorGetter {
+    enum Detail: Int {
+        case low = 0
+        case standart = 1
+        case high = 2
+    }
+
+    var isInWork: Bool = false
+    var detail: Detail
+
+    init(with details: Detail = .standart) {
+        self.detail = details
+    }
+
+    func cancel() {
+        isInWork.toggle()
+    }
+
+    func process(_ image: UIImage, completion: @escaping ([ColorInfoModel]) -> Void) {
+        isInWork = true
+        DispatchQueue.global(qos: .utility).async { [weak self] in
+            guard let wSelf = self else { return }
+            if !wSelf.isInWork { return }
+            var source = [ColorInfoModel]()
+            let averageColor = AverageColorFromImage(image)
+            source.append(ColorInfoModel(color: averageColor, info: averageColor.hexString()))
+
             DispatchQueue.main.async {
                 if !wSelf.isInWork { return }
                 completion(source)
