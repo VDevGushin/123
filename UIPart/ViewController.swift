@@ -19,13 +19,32 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidAppear(animated)
     }
 
-    @IBAction func openImage(_ sender: Any) {
+    @IBAction func openLibrary(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             imagePicker.delegate = self
             imagePicker.sourceType = .photoLibrary
             imagePicker.allowsEditing = false
             self.present(imagePicker, animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func openImage(_ sender: Any) {
+        #if targetEnvironment(simulator)
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        #else
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        #endif
+       
     }
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
