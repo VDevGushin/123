@@ -17,4 +17,9 @@ extension UIView {
         view?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         return view
     }
+    
+    func setup() {
+        guard let view = self.loadFromNib(ColorView.self) else { return }
+        self.addSubview(view)
+    }
 }

@@ -13,27 +13,6 @@ protocol IImageShowController: class {
     func closeImage()
 }
 
-fileprivate extension UIViewController {
-    func addImageViewer(_ child: UIViewController) {
-        addChild(child)
-        child.view.frame = self.view.bounds
-        view.addSubview(child.view)
-        child.didMove(toParent: self)
-        child.view.layoutSubviews()
-    }
-
-    func removeImageViewer() {
-        guard parent != nil else { return }
-        UIView.animate(withDuration: 0.7, animations: {
-            self.view.alpha = 0
-        }) { _ in
-            self.willMove(toParent: nil)
-            self.removeFromParent()
-            self.view.removeFromSuperview()
-        }
-    }
-}
-
 extension IImageShowController where Self: UIViewController {
     func showImage(with image: UIImage) {
         let imageView = ETBImageViewerViewController.controller(with: image)
@@ -41,23 +20,41 @@ extension IImageShowController where Self: UIViewController {
     }
 
     func closeImage() {
-        self.removeImageViewer()
+        self.removeWithAnimation()
     }
 }
 
 class ETBImageViewerViewController: UIViewController, UIScrollViewDelegate {
+    deinit {
+        print("Deinit ETBImageViewerViewController")
+    }
     @IBOutlet weak var imageScrollView: ImageScrollView!
     @IBOutlet weak var closeButton: RoundButton!
     let image: UIImage
-
     init(with image: UIImage) {
         self.image = image
         super.init(nibName: String(describing: ETBImageViewerViewController.self), bundle: nil)
     }
 
     @IBAction func processImage(_ sender: Any) {
-        let vc = ImageColorViewController(image: self.image)
-        add(vc)
+        let alert = UIAlertController(title: "Colors", message: "Please select an color getter", preferredStyle: .actionSheet)
+
+        alert.addAction(UIAlertAction(title: "Simple", style: .default, handler: { (UIAlertAction)in
+            let vc = ImageColorViewController(image: self.image, colorGetter: SimpleImageGetter())
+            self.addWithAnimaton(vc)
+        }))
+
+        alert.addAction(UIAlertAction(title: "Percentage", style: .default, handler: { (UIAlertAction)in
+            let vc = ImageColorViewController(image: self.image, colorGetter: ColorPercentageGetter())
+            self.addWithAnimaton(vc)
+        }))
+
+        alert.addAction(UIAlertAction(title: "Chameleon", style: .default, handler: { (UIAlertAction)in
+            let vc = ImageColorViewController(image: self.image, colorGetter: ChameleonImageGetter())
+            self.addWithAnimaton(vc)
+        }))
+        
+        present(alert, animated: true, completion: nil)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -77,7 +74,7 @@ class ETBImageViewerViewController: UIViewController, UIScrollViewDelegate {
     }
 
     @IBAction func closeAction(_ sender: Any) {
-        self.removeImageViewer()
+        self.removeWithAnimation()
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {

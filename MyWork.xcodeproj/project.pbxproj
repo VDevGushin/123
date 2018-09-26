@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0ED8786B7DB985A3964893C8 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */; };
+		287EE387051990F02A660DE9 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */; };
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
 		3C0B1764210EDF34003D9314 /* ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */; };
 		3C0E0829210AFD9700211B0B /* StatisticHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0828210AFD9700211B0B /* StatisticHeader.swift */; };
@@ -62,6 +63,16 @@
 		3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */; };
 		3C934C90210EF1B700E35A4D /* PersonStatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */; };
 		3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C91210EF50F00E35A4D /* SecondViewController.swift */; };
+		3C98806B215B7FF700994BA8 /* UIViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */; };
+		3C98806F215B806700994BA8 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98806E215B806700994BA8 /* ColorView.swift */; };
+		3C988071215B807100994BA8 /* ColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C988070215B807100994BA8 /* ColorView.xib */; };
+		3C988074215B82A500994BA8 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C988073215B82A500994BA8 /* UIColor+Ex.swift */; };
+		3C988077215B83F400994BA8 /* ColorInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C988076215B83F400994BA8 /* ColorInfoModel.swift */; };
+		3C988079215B84AD00994BA8 /* ColorsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C988078215B84AD00994BA8 /* ColorsDataSource.swift */; };
+		3C98807C215B857100994BA8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98807A215B857100994BA8 /* TableViewCell.swift */; };
+		3C98807D215B857100994BA8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C98807B215B857100994BA8 /* TableViewCell.xib */; };
+		3C988080215B89EF00994BA8 /* IColorGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98807F215B89EF00994BA8 /* IColorGetter.swift */; };
+		3C988081215B907400994BA8 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */; };
 		3C9A83C62133C9C4008A1F17 /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */; };
 		3C9AA1252147A3AE00085EEC /* СustomСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AA1242147A3AE00085EEC /* СustomСollections.swift */; };
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
@@ -97,13 +108,28 @@
 		3CD85A2320EF482A008D994C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2120EF482A008D994C /* Main.storyboard */; };
 		3CD85A2520EF482D008D994C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2420EF482D008D994C /* Assets.xcassets */; };
 		3CD85A2820EF482D008D994C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2620EF482D008D994C /* LaunchScreen.storyboard */; };
+		3CE3E552215BC1F2003A0528 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53A215BC1EF003A0528 /* UILabel+Chameleon.m */; };
+		3CE3E553215BC1F2003A0528 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53C215BC1EF003A0528 /* ChameleonConstants.m */; };
+		3CE3E554215BC1F2003A0528 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53E215BC1EF003A0528 /* UINavigationController+Chameleon.m */; };
+		3CE3E555215BC1F2003A0528 /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53F215BC1F0003A0528 /* UIViewController+Chameleon.m */; };
+		3CE3E556215BC1F2003A0528 /* UIButton+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E543215BC1F0003A0528 /* UIButton+Chameleon.m */; };
+		3CE3E557215BC1F2003A0528 /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E546215BC1F0003A0528 /* UIImage+ChameleonPrivate.m */; };
+		3CE3E558215BC1F2003A0528 /* UIColor+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E54A215BC1F1003A0528 /* UIColor+ChameleonPrivate.m */; };
+		3CE3E559215BC1F2003A0528 /* UIView+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E54B215BC1F1003A0528 /* UIView+ChameleonPrivate.m */; };
+		3CE3E55A215BC1F2003A0528 /* UIColor+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E54C215BC1F1003A0528 /* UIColor+Chameleon.m */; };
+		3CE3E55B215BC1F2003A0528 /* Chameleon_.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E54D215BC1F1003A0528 /* Chameleon_.m */; };
+		3CE3E55C215BC1F2003A0528 /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E54E215BC1F1003A0528 /* UIAppearance+Swift.m */; };
+		3CE3E55D215BC1F2003A0528 /* NSArray+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E551215BC1F2003A0528 /* NSArray+Chameleon.m */; };
+		3CE3E55F215BC1FB003A0528 /* ChameleonShorthand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E55E215BC1FB003A0528 /* ChameleonShorthand.swift */; };
+		3CE3E561215BCAC5003A0528 /* ColorGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E560215BCAC5003A0528 /* ColorGetters.swift */; };
+		3CE3E567215BCFD9003A0528 /* NSDictionary+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E566215BCFD9003A0528 /* NSDictionary+Chameleon.m */; };
+		3CE3E569215BD7C0003A0528 /* Double+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E568215BD7C0003A0528 /* Double+Ex.swift */; };
 		3CE41F7021523AB5002A6600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F6F21523AB5002A6600 /* AppDelegate.swift */; };
 		3CE41F7221523AB5002A6600 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F7121523AB5002A6600 /* ViewController.swift */; };
 		3CE41F7521523AB5002A6600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7321523AB5002A6600 /* Main.storyboard */; };
 		3CE41F7721523AB8002A6600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7621523AB8002A6600 /* Assets.xcassets */; };
 		3CE41F7A21523AB8002A6600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7821523AB8002A6600 /* LaunchScreen.storyboard */; };
 		3CE41F812152410B002A6600 /* HandlingNonOptionalOptionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F802152410B002A6600 /* HandlingNonOptionalOptionals.swift */; };
-		3CE41F832152452D002A6600 /* UserTableViewCell+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F822152452D002A6600 /* UserTableViewCell+Ex.swift */; };
 		3CE41F872152645B002A6600 /* ETBImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F852152645B002A6600 /* ETBImageViewerViewController.swift */; };
 		3CE41F882152645B002A6600 /* ETBImageViewerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */; };
 		3CE41F8D21526B69002A6600 /* ETBImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */; };
@@ -133,6 +159,7 @@
 		3CFD254E21132C9F00128554 /* ETBAddTimeViewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD254D21132C9F00128554 /* ETBAddTimeViewControl.xib */; };
 		3CFD25512113453F00128554 /* ETBAddTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */; };
 		3CFD25522113453F00128554 /* ETBAddTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */; };
+		64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +220,15 @@
 		3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticCell.swift; sourceTree = "<group>"; };
 		3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticCell.xib; sourceTree = "<group>"; };
 		3C934C91210EF50F00E35A4D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ex.swift"; sourceTree = "<group>"; };
+		3C98806E215B806700994BA8 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		3C988070215B807100994BA8 /* ColorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorView.xib; sourceTree = "<group>"; };
+		3C988073215B82A500994BA8 /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
+		3C988076215B83F400994BA8 /* ColorInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInfoModel.swift; sourceTree = "<group>"; };
+		3C988078215B84AD00994BA8 /* ColorsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDataSource.swift; sourceTree = "<group>"; };
+		3C98807A215B857100994BA8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3C98807B215B857100994BA8 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3C98807F215B89EF00994BA8 /* IColorGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IColorGetter.swift; sourceTree = "<group>"; };
 		3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
 		3C9AA1242147A3AE00085EEC /* СustomСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СustomСollections.swift"; sourceTree = "<group>"; };
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
@@ -227,6 +263,42 @@
 		3CD85A2420EF482D008D994C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CD85A2720EF482D008D994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CD85A2920EF482D008D994C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CE3E4F7215BBEEE003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE3E536215BC1EE003A0528 /* UIPart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPart-Bridging-Header.h"; sourceTree = "<group>"; };
+		3CE3E537215BC1EF003A0528 /* ChameleonConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonConstants.h; sourceTree = "<group>"; };
+		3CE3E538215BC1EF003A0528 /* UIButton+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Chameleon.h"; sourceTree = "<group>"; };
+		3CE3E539215BC1EF003A0528 /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		3CE3E53A215BC1EF003A0528 /* UILabel+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Chameleon.m"; sourceTree = "<group>"; };
+		3CE3E53B215BC1EF003A0528 /* UIViewController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Chameleon.h"; sourceTree = "<group>"; };
+		3CE3E53C215BC1EF003A0528 /* ChameleonConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChameleonConstants.m; sourceTree = "<group>"; };
+		3CE3E53D215BC1EF003A0528 /* ChameleonEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonEnums.h; sourceTree = "<group>"; };
+		3CE3E53E215BC1EF003A0528 /* UINavigationController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Chameleon.m"; sourceTree = "<group>"; };
+		3CE3E53F215BC1F0003A0528 /* UIViewController+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Chameleon.m"; sourceTree = "<group>"; };
+		3CE3E540215BC1F0003A0528 /* UIAppearance+Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAppearance+Swift.h"; sourceTree = "<group>"; };
+		3CE3E541215BC1F0003A0528 /* UIImage+ChameleonPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		3CE3E542215BC1F0003A0528 /* Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon.h; sourceTree = "<group>"; };
+		3CE3E543215BC1F0003A0528 /* UIButton+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Chameleon.m"; sourceTree = "<group>"; };
+		3CE3E544215BC1F0003A0528 /* UINavigationController+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Chameleon.h"; sourceTree = "<group>"; };
+		3CE3E545215BC1F0003A0528 /* Chameleon_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon_.h; sourceTree = "<group>"; };
+		3CE3E546215BC1F0003A0528 /* UIImage+ChameleonPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		3CE3E547215BC1F0003A0528 /* NSArray+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Chameleon.h"; sourceTree = "<group>"; };
+		3CE3E548215BC1F0003A0528 /* UIColor+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Chameleon.h"; sourceTree = "<group>"; };
+		3CE3E549215BC1F1003A0528 /* ChameleonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChameleonMacros.h; sourceTree = "<group>"; };
+		3CE3E54A215BC1F1003A0528 /* UIColor+ChameleonPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		3CE3E54B215BC1F1003A0528 /* UIView+ChameleonPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChameleonPrivate.m"; sourceTree = "<group>"; };
+		3CE3E54C215BC1F1003A0528 /* UIColor+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Chameleon.m"; sourceTree = "<group>"; };
+		3CE3E54D215BC1F1003A0528 /* Chameleon_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chameleon_.m; sourceTree = "<group>"; };
+		3CE3E54E215BC1F1003A0528 /* UIAppearance+Swift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAppearance+Swift.m"; sourceTree = "<group>"; };
+		3CE3E54F215BC1F1003A0528 /* UILabel+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Chameleon.h"; sourceTree = "<group>"; };
+		3CE3E550215BC1F1003A0528 /* UIColor+ChameleonPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ChameleonPrivate.h"; sourceTree = "<group>"; };
+		3CE3E551215BC1F2003A0528 /* NSArray+Chameleon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Chameleon.m"; sourceTree = "<group>"; };
+		3CE3E55E215BC1FB003A0528 /* ChameleonShorthand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChameleonShorthand.swift; sourceTree = "<group>"; };
+		3CE3E560215BCAC5003A0528 /* ColorGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGetters.swift; sourceTree = "<group>"; };
+		3CE3E565215BCFCE003A0528 /* NSDictionary+Chameleon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Chameleon.h"; sourceTree = "<group>"; };
+		3CE3E566215BCFD9003A0528 /* NSDictionary+Chameleon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Chameleon.m"; sourceTree = "<group>"; };
+		3CE3E568215BD7C0003A0528 /* Double+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ex.swift"; sourceTree = "<group>"; };
 		3CE41F6D21523AB4002A6600 /* UIPart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE41F6F21523AB5002A6600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CE41F7121523AB5002A6600 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -235,7 +307,6 @@
 		3CE41F7921523AB8002A6600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CE41F7B21523AB8002A6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CE41F802152410B002A6600 /* HandlingNonOptionalOptionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingNonOptionalOptionals.swift; sourceTree = "<group>"; };
-		3CE41F822152452D002A6600 /* UserTableViewCell+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserTableViewCell+Ex.swift"; sourceTree = "<group>"; };
 		3CE41F852152645B002A6600 /* ETBImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBImageViewerViewController.swift; sourceTree = "<group>"; };
 		3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBImageViewerViewController.xib; sourceTree = "<group>"; };
 		3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBImageScrollView.swift; sourceTree = "<group>"; };
@@ -282,6 +353,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED8786B7DB985A3964893C8 /* Pods_MyWork.framework in Frameworks */,
+				64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */,
+				287EE387051990F02A660DE9 /* Pods_MyWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +371,9 @@
 		0A62CB7B25171A6FCD0001F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */,
+				3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */,
+				3CE3E4F7215BBEEE003A0528 /* Pods_MyWork.framework */,
 				44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */,
 			);
 			name = Frameworks;
@@ -373,7 +449,6 @@
 				3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */,
 				3CFD253B2112F95400128554 /* UIView+Ex.swift */,
 				3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */,
-				3CE41F822152452D002A6600 /* UserTableViewCell+Ex.swift */,
 				3CC042D421550D02009FB6E3 /* Optional+Ex.swift */,
 				3CD0B052215A4E68001E7411 /* UIViewController+Ex.swift */,
 				3CD0B05E215A50F5001E7411 /* UIViewController+Ex2.swift */,
@@ -457,6 +532,46 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		3C988069215B7FEA00994BA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */,
+				3C988073215B82A500994BA8 /* UIColor+Ex.swift */,
+				3CE3E568215BD7C0003A0528 /* Double+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C98806D215B804A00994BA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C98806E215B806700994BA8 /* ColorView.swift */,
+				3C988070215B807100994BA8 /* ColorView.xib */,
+				3C98807A215B857100994BA8 /* TableViewCell.swift */,
+				3C98807B215B857100994BA8 /* TableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C988075215B83E100994BA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C988076215B83F400994BA8 /* ColorInfoModel.swift */,
+				3C988078215B84AD00994BA8 /* ColorsDataSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C988082215B97E100994BA8 /* ColorsGetters */ = {
+			isa = PBXGroup;
+			children = (
+				3CE3E56B215BE106003A0528 /* Source */,
+				3C98807F215B89EF00994BA8 /* IColorGetter.swift */,
+				3CE3E560215BCAC5003A0528 /* ColorGetters.swift */,
+			);
+			path = ColorsGetters;
+			sourceTree = "<group>";
+		};
 		3CA420A3210B27EB00C303FC /* Footer */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +594,7 @@
 		3CCEA34821528A8B0081A7DB /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */,
 				3CCEA34921528AD00081A7DB /* RoundButton.swift */,
 			);
 			path = Controls;
@@ -487,9 +603,11 @@
 		3CD0B057215A4EBD001E7411 /* ImageColorGetter */ = {
 			isa = PBXGroup;
 			children = (
-				3CD0B058215A4EFF001E7411 /* UIImageColors.swift */,
 				3CD0B05A215A502A001E7411 /* ImageColorViewController.swift */,
 				3CD0B05B215A502A001E7411 /* ImageColorViewController.xib */,
+				3C988082215B97E100994BA8 /* ColorsGetters */,
+				3C988075215B83E100994BA8 /* Models */,
+				3C98806D215B804A00994BA8 /* Views */,
 			);
 			path = ImageColorGetter;
 			sourceTree = "<group>";
@@ -578,12 +696,68 @@
 			path = MyWork;
 			sourceTree = "<group>";
 		};
-		3CE41F6E21523AB5002A6600 /* UIPart */ = {
+		3CE3E4FE215BC099003A0528 /* ChameleonFramework */ = {
+			isa = PBXGroup;
+			children = (
+				3CE3E55E215BC1FB003A0528 /* ChameleonShorthand.swift */,
+				3CE3E545215BC1F0003A0528 /* Chameleon_.h */,
+				3CE3E54D215BC1F1003A0528 /* Chameleon_.m */,
+				3CE3E542215BC1F0003A0528 /* Chameleon.h */,
+				3CE3E537215BC1EF003A0528 /* ChameleonConstants.h */,
+				3CE3E53C215BC1EF003A0528 /* ChameleonConstants.m */,
+				3CE3E53D215BC1EF003A0528 /* ChameleonEnums.h */,
+				3CE3E549215BC1F1003A0528 /* ChameleonMacros.h */,
+				3CE3E547215BC1F0003A0528 /* NSArray+Chameleon.h */,
+				3CE3E551215BC1F2003A0528 /* NSArray+Chameleon.m */,
+				3CE3E540215BC1F0003A0528 /* UIAppearance+Swift.h */,
+				3CE3E54E215BC1F1003A0528 /* UIAppearance+Swift.m */,
+				3CE3E538215BC1EF003A0528 /* UIButton+Chameleon.h */,
+				3CE3E543215BC1F0003A0528 /* UIButton+Chameleon.m */,
+				3CE3E548215BC1F0003A0528 /* UIColor+Chameleon.h */,
+				3CE3E54C215BC1F1003A0528 /* UIColor+Chameleon.m */,
+				3CE3E550215BC1F1003A0528 /* UIColor+ChameleonPrivate.h */,
+				3CE3E54A215BC1F1003A0528 /* UIColor+ChameleonPrivate.m */,
+				3CE3E541215BC1F0003A0528 /* UIImage+ChameleonPrivate.h */,
+				3CE3E546215BC1F0003A0528 /* UIImage+ChameleonPrivate.m */,
+				3CE3E54F215BC1F1003A0528 /* UILabel+Chameleon.h */,
+				3CE3E53A215BC1EF003A0528 /* UILabel+Chameleon.m */,
+				3CE3E544215BC1F0003A0528 /* UINavigationController+Chameleon.h */,
+				3CE3E53E215BC1EF003A0528 /* UINavigationController+Chameleon.m */,
+				3CE3E539215BC1EF003A0528 /* UIView+ChameleonPrivate.h */,
+				3CE3E54B215BC1F1003A0528 /* UIView+ChameleonPrivate.m */,
+				3CE3E53B215BC1EF003A0528 /* UIViewController+Chameleon.h */,
+				3CE3E53F215BC1F0003A0528 /* UIViewController+Chameleon.m */,
+				3CE3E565215BCFCE003A0528 /* NSDictionary+Chameleon.h */,
+				3CE3E566215BCFD9003A0528 /* NSDictionary+Chameleon.m */,
+			);
+			path = ChameleonFramework;
+			sourceTree = "<group>";
+		};
+		3CE3E56A215BE087003A0528 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				3CD0B057215A4EBD001E7411 /* ImageColorGetter */,
-				3CCEA34821528A8B0081A7DB /* Controls */,
 				3CE41F84215263FB002A6600 /* ImageViewer */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CE3E56B215BE106003A0528 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3CD0B058215A4EFF001E7411 /* UIImageColors.swift */,
+				3CE3E4FE215BC099003A0528 /* ChameleonFramework */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3CE41F6E21523AB5002A6600 /* UIPart */ = {
+			isa = PBXGroup;
+			children = (
+				3CE3E536215BC1EE003A0528 /* UIPart-Bridging-Header.h */,
+				3CE3E56A215BE087003A0528 /* Controllers */,
+				3C988069215B7FEA00994BA8 /* Extensions */,
+				3CCEA34821528A8B0081A7DB /* Controls */,
 				3CE41F6F21523AB5002A6600 /* AppDelegate.swift */,
 				3CE41F7121523AB5002A6600 /* ViewController.swift */,
 				3CE41F7321523AB5002A6600 /* Main.storyboard */,
@@ -599,7 +773,6 @@
 			children = (
 				3CE41F852152645B002A6600 /* ETBImageViewerViewController.swift */,
 				3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */,
-				3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */,
 			);
 			path = ImageViewer;
 			sourceTree = "<group>";
@@ -730,6 +903,7 @@
 					};
 					3CE41F6C21523AB4002A6600 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -793,6 +967,8 @@
 			files = (
 				3CE41F882152645B002A6600 /* ETBImageViewerViewController.xib in Resources */,
 				3CD0B05D215A502A001E7411 /* ImageColorViewController.xib in Resources */,
+				3C98807D215B857100994BA8 /* TableViewCell.xib in Resources */,
+				3C988071215B807100994BA8 /* ColorView.xib in Resources */,
 				3CE41F7A21523AB8002A6600 /* LaunchScreen.storyboard in Resources */,
 				3CE41F7721523AB8002A6600 /* Assets.xcassets in Resources */,
 				3CE41F7521523AB5002A6600 /* Main.storyboard in Resources */,
@@ -947,7 +1123,6 @@
 				3CFD25352112EDB000128554 /* ETBSimpleTimer.swift in Sources */,
 				3C1DD6722118183700383851 /* Serialization.swift in Sources */,
 				3C1DD66F2118135D00383851 /* PowerOfSet.swift in Sources */,
-				3CE41F832152452D002A6600 /* UserTableViewCell+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,15 +1130,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C988081215B907400994BA8 /* UITableView+Ex.swift in Sources */,
+				3CE3E567215BCFD9003A0528 /* NSDictionary+Chameleon.m in Sources */,
 				3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */,
+				3CE3E554215BC1F2003A0528 /* UINavigationController+Chameleon.m in Sources */,
+				3C98807C215B857100994BA8 /* TableViewCell.swift in Sources */,
 				3CD0B061215A54A3001E7411 /* UIViewController+Ex.swift in Sources */,
+				3C98806F215B806700994BA8 /* ColorView.swift in Sources */,
+				3CE3E555215BC1F2003A0528 /* UIViewController+Chameleon.m in Sources */,
+				3CE3E559215BC1F2003A0528 /* UIView+ChameleonPrivate.m in Sources */,
 				3CE41F872152645B002A6600 /* ETBImageViewerViewController.swift in Sources */,
+				3CE3E55B215BC1F2003A0528 /* Chameleon_.m in Sources */,
+				3CE3E556215BC1F2003A0528 /* UIButton+Chameleon.m in Sources */,
+				3C988080215B89EF00994BA8 /* IColorGetter.swift in Sources */,
 				3CE41F8D21526B69002A6600 /* ETBImageScrollView.swift in Sources */,
 				3CD0B059215A4EFF001E7411 /* UIImageColors.swift in Sources */,
+				3CE3E558215BC1F2003A0528 /* UIColor+ChameleonPrivate.m in Sources */,
+				3CE3E55A215BC1F2003A0528 /* UIColor+Chameleon.m in Sources */,
+				3CE3E561215BCAC5003A0528 /* ColorGetters.swift in Sources */,
 				3CD0B060215A5103001E7411 /* UIViewController+Ex2.swift in Sources */,
+				3CE3E55C215BC1F2003A0528 /* UIAppearance+Swift.m in Sources */,
+				3CE3E55F215BC1FB003A0528 /* ChameleonShorthand.swift in Sources */,
 				3CE41F7221523AB5002A6600 /* ViewController.swift in Sources */,
 				3CE41F7021523AB5002A6600 /* AppDelegate.swift in Sources */,
+				3CE3E557215BC1F2003A0528 /* UIImage+ChameleonPrivate.m in Sources */,
 				3CD0B05C215A502A001E7411 /* ImageColorViewController.swift in Sources */,
+				3C98806B215B7FF700994BA8 /* UIViewController+ex.swift in Sources */,
+				3C988077215B83F400994BA8 /* ColorInfoModel.swift in Sources */,
+				3C988079215B84AD00994BA8 /* ColorsDataSource.swift in Sources */,
+				3CE3E55D215BC1F2003A0528 /* NSArray+Chameleon.m in Sources */,
+				3C988074215B82A500994BA8 /* UIColor+Ex.swift in Sources */,
+				3CE3E569215BD7C0003A0528 /* Double+Ex.swift in Sources */,
+				3CE3E552215BC1F2003A0528 /* UILabel+Chameleon.m in Sources */,
+				3CE3E553215BC1F2003A0528 /* ChameleonConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1213,6 +1412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = UIPart/Info.plist;
@@ -1225,6 +1425,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.UIPart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIPart/UIPart-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1234,6 +1436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = UIPart/Info.plist;
@@ -1245,6 +1448,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.UIPart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIPart/UIPart-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

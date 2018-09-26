@@ -32,7 +32,7 @@
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="kC3-eg-ofG"/>
                         <constraint firstAttribute="width" constant="42" id="mLx-bT-r5k"/>
                     </constraints>
-                    <state key="normal" image="Close"/>
+                    <state key="normal" image="clors"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -41,10 +41,10 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFb-5S-ESP" customClass="RoundButton" customModule="UIPart" customModuleProvider="target">
-                    <rect key="frame" x="261" y="32" width="42" height="42"/>
+                    <rect key="frame" x="259" y="32" width="44" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="42" id="Fss-1A-UPa"/>
-                        <constraint firstAttribute="height" constant="42" id="cSt-Kn-eMS"/>
+                        <constraint firstAttribute="width" constant="44" id="Fss-1A-UPa"/>
+                        <constraint firstAttribute="height" constant="44" id="cSt-Kn-eMS"/>
                     </constraints>
                     <state key="normal" image="Close"/>
                     <userDefinedRuntimeAttributes>
@@ -74,5 +74,6 @@
     </objects>
     <resources>
         <image name="Close" width="43" height="43"/>
+        <image name="clors" width="77" height="77"/>
     </resources>
 </document>
