@@ -8,17 +8,6 @@
 
 import UIKit
 
-fileprivate extension TableViewDataSource where Model == ColorInfoModel {
-    static func make(for colors: [ColorInfoModel], reuseIdentifier: UITableViewCell.Type = TableViewCell.self) -> Self {
-        return self.init(models: colors, reuseIdentifier: reuseIdentifier) { (model, cell) in
-            guard let cell = cell as? TableViewCell else { return }
-            cell.selectionStyle = .none
-            cell.setInfo(model.info)
-            cell.setColor(model.color)
-        }
-    }
-}
-
 class ImageColorViewController: UIViewController {
     deinit {
         print("Deinit ImageColorViewController")

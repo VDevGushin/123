@@ -63,6 +63,8 @@
 		3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */; };
 		3C934C90210EF1B700E35A4D /* PersonStatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */; };
 		3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C91210EF50F00E35A4D /* SecondViewController.swift */; };
+		3C95D1A5215CA69E00B8E7BD /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95D1A4215CA69E00B8E7BD /* Navigation.swift */; };
+		3C95D1A9215CAABE00B8E7BD /* SelectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95D1A8215CAABE00B8E7BD /* SelectPresenter.swift */; };
 		3C98806B215B7FF700994BA8 /* UIViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */; };
 		3C98806F215B806700994BA8 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98806E215B806700994BA8 /* ColorView.swift */; };
 		3C988071215B807100994BA8 /* ColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C988070215B807100994BA8 /* ColorView.xib */; };
@@ -223,6 +225,8 @@
 		3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticCell.swift; sourceTree = "<group>"; };
 		3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticCell.xib; sourceTree = "<group>"; };
 		3C934C91210EF50F00E35A4D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3C95D1A4215CA69E00B8E7BD /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		3C95D1A8215CAABE00B8E7BD /* SelectPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPresenter.swift; sourceTree = "<group>"; };
 		3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ex.swift"; sourceTree = "<group>"; };
 		3C98806E215B806700994BA8 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		3C988070215B807100994BA8 /* ColorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorView.xib; sourceTree = "<group>"; };
@@ -440,6 +444,7 @@
 				3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */,
 				3CB1E5BE2158C528009DBDBE /* SubclassFreeViewControllers.swift */,
 				3C362808215A11DB00161B3A /* CustomContainerViewControllers.swift */,
+				3C95D1A4215CA69E00B8E7BD /* Navigation.swift */,
 			);
 			path = "View controllers & Navigation";
 			sourceTree = "<group>";
@@ -538,6 +543,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		3C95D1A3215CA4BD00B8E7BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C988078215B84AD00994BA8 /* ColorsDataSource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C95D1A7215CAAA400B8E7BD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3C95D1A8215CAABE00B8E7BD /* SelectPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		3C988069215B7FEA00994BA8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,7 +584,6 @@
 			isa = PBXGroup;
 			children = (
 				3C988076215B83F400994BA8 /* ColorInfoModel.swift */,
-				3C988078215B84AD00994BA8 /* ColorsDataSource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -751,6 +771,7 @@
 		3CE3E56A215BE087003A0528 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C95D1A3215CA4BD00B8E7BD /* Models */,
 				3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */,
 				3CD0B057215A4EBD001E7411 /* ImageColorGetter */,
 				3CE41F84215263FB002A6600 /* ImageViewer */,
@@ -772,9 +793,10 @@
 			isa = PBXGroup;
 			children = (
 				3CE3E536215BC1EE003A0528 /* UIPart-Bridging-Header.h */,
+				3C95D1A7215CAAA400B8E7BD /* Presenter */,
+				3CCEA34821528A8B0081A7DB /* Controls */,
 				3CE3E56A215BE087003A0528 /* Controllers */,
 				3C988069215B7FEA00994BA8 /* Extensions */,
-				3CCEA34821528A8B0081A7DB /* Controls */,
 				3CE41F6F21523AB5002A6600 /* AppDelegate.swift */,
 				3CE41F7121523AB5002A6600 /* ViewController.swift */,
 				3CE41F7321523AB5002A6600 /* Main.storyboard */,
@@ -1112,6 +1134,7 @@
 				3CFD254C21132C9500128554 /* ETBAddTimeViewControl.swift in Sources */,
 				3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */,
 				3CC042D521550D02009FB6E3 /* Optional+Ex.swift in Sources */,
+				3C95D1A5215CA69E00B8E7BD /* Navigation.swift in Sources */,
 				3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */,
 				3C37B767213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3C2FA85420F88FAE00F54E76 /* Observers+NotificationCenter.swift in Sources */,
@@ -1152,6 +1175,7 @@
 				3CE3E567215BCFD9003A0528 /* NSDictionary+Chameleon.m in Sources */,
 				3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */,
 				3CE3E554215BC1F2003A0528 /* UINavigationController+Chameleon.m in Sources */,
+				3C95D1A9215CAABE00B8E7BD /* SelectPresenter.swift in Sources */,
 				3C98807C215B857100994BA8 /* TableViewCell.swift in Sources */,
 				3CD0B061215A54A3001E7411 /* UIViewController+Ex.swift in Sources */,
 				3C98806F215B806700994BA8 /* ColorView.swift in Sources */,

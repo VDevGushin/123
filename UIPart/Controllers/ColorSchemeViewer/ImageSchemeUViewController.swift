@@ -8,17 +8,6 @@
 
 import UIKit
 
-fileprivate extension TableViewDataSource where Model == ColorInfoModel {
-    static func make(for colors: [ColorInfoModel], reuseIdentifier: UITableViewCell.Type = TableViewCell.self) -> Self {
-        return self.init(models: colors, reuseIdentifier: reuseIdentifier) { (model, cell) in
-            guard let cell = cell as? TableViewCell else { return }
-            cell.selectionStyle = .none
-            cell.setInfo(model.info)
-            cell.setColor(model.color)
-        }
-    }
-}
-
 class ImageSchemeUViewController: UIViewController {
     @IBOutlet weak var colorsTableView: UITableView!
     @IBOutlet weak var navItem: UINavigationItem!
@@ -86,29 +75,25 @@ class ImageSchemeUViewController: UIViewController {
     }
 
     @IBAction func changeScheme(_ sender: Any) {
-        let alert = UIAlertController(title: "Scheme", message: "Please select color scheme", preferredStyle: .actionSheet)
 
-        alert.addAction(UIAlertAction(title: "complementary", style: .default, handler: { (UIAlertAction)in
-            self.colorScheme = .complementary
-            self.processColor()
-        }))
+        let actions = [
+            ("Triad",
+             { self.colorScheme = .triad
+                 self.processColor() }),
+            ("Analagous",
+             { self.colorScheme = .analagous
+                 self.processColor() }),
+            ("Complementary",
+             { self.colorScheme = .complementary
+                 self.processColor() }),
+            ("Monochromatic",
+             { self.colorScheme = .monochromatic
+                 self.processColor() }),
 
-        alert.addAction(UIAlertAction(title: "monochromatic", style: .default, handler: { (UIAlertAction)in
-            self.colorScheme = .monochromatic
-            self.processColor()
-        }))
+        ]
 
-        alert.addAction(UIAlertAction(title: "triad", style: .default, handler: { (UIAlertAction)in
-            self.colorScheme = .triad
-            self.processColor()
-        }))
-
-        alert.addAction(UIAlertAction(title: "analagous", style: .default, handler: { (UIAlertAction)in
-            self.colorScheme = .analagous
-            self.processColor()
-        }))
-
-        present(alert, animated: true, completion: nil)
+        let selectPresenter = SelectPresenter.init(actions: actions, message: "Please select color scheme", title: "Scheme")
+        selectPresenter.present(in: self)
     }
 
     @IBAction func close(_ sender: Any) {
