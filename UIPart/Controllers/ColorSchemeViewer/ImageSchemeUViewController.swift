@@ -69,7 +69,6 @@ class ImageSchemeUViewController: UIViewController {
             for color in colorScheme {
                 source.append(ColorInfoModel(color: color, info: color.hexValue()))
             }
-            source = source.reversed()
             source.insert(ColorInfoModel(color: wSelf.color, info: "\(scheme) - \(wSelf.color.hexValue())"), at: 0)
             DispatchQueue.main.async {
                 wSelf.colorsComplete(source)
