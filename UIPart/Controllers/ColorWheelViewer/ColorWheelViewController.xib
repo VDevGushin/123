@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorWheelViewController" customModule="UIPart" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="OCA-GH-16T" id="mzY-Z1-QXC"/>
                 <outlet property="colorView" destination="jLI-wn-fhZ" id="O1g-6r-tNC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -21,30 +22,57 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLI-wn-fhZ" customClass="ColorsWheel" customModule="UIPart" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                    <rect key="frame" x="0.0" y="292" width="375" height="375"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="jLI-wn-fhZ" secondAttribute="height" multiplier="1:1" id="U8g-qi-FQv"/>
+                        <constraint firstAttribute="width" secondItem="jLI-wn-fhZ" secondAttribute="height" multiplier="1:1" id="Bgf-Sm-F9P"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAu-aK-Qwz">
-                    <rect key="frame" x="0.0" y="20" width="46" height="30"/>
-                    <state key="normal" title="Button">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="close:" destination="-1" eventType="touchUpInside" id="gvx-Pt-PsA"/>
-                    </connections>
-                </button>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9H-QW-GPL">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Title" id="Sx9-4r-1VS">
+                            <barButtonItem key="leftBarButtonItem" systemItem="done" id="3jv-sa-fmW">
+                                <color key="tintColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="closeView:" destination="-1" id="LRe-BA-6XR"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="edit" id="kYO-dI-ZhU">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="changeScheme:" destination="-1" id="lfF-ba-l0w"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OCA-GH-16T">
+                    <rect key="frame" x="0.0" y="64" width="375" height="228"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WTZ-el-sqr">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="jLI-wn-fhZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Fd-ec-CgR"/>
-                <constraint firstItem="JAu-aK-Qwz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NeQ-bV-z5g"/>
-                <constraint firstItem="JAu-aK-Qwz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Nqh-JV-CZZ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jLI-wn-fhZ" secondAttribute="trailing" id="V1s-Lh-dYe"/>
-                <constraint firstItem="jLI-wn-fhZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ix4-Jv-irP"/>
-                <constraint firstItem="jLI-wn-fhZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="yvT-f0-e85"/>
+                <constraint firstItem="OCA-GH-16T" firstAttribute="top" secondItem="v9H-QW-GPL" secondAttribute="bottom" id="0CM-Jp-sqX"/>
+                <constraint firstItem="v9H-QW-GPL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0Ds-Hn-aMd"/>
+                <constraint firstItem="v9H-QW-GPL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1zS-0m-Q5K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OCA-GH-16T" secondAttribute="trailing" id="BaK-mn-Qid"/>
+                <constraint firstItem="v9H-QW-GPL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JXm-09-AxD"/>
+                <constraint firstItem="v9H-QW-GPL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bag-hh-zIO"/>
+                <constraint firstItem="jLI-wn-fhZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dnb-9A-dQM"/>
+                <constraint firstItem="v9H-QW-GPL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hdP-tM-NhW"/>
+                <constraint firstItem="jLI-wn-fhZ" firstAttribute="top" secondItem="OCA-GH-16T" secondAttribute="bottom" id="lq0-7G-d4H"/>
+                <constraint firstItem="OCA-GH-16T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mRT-K9-Fia"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jLI-wn-fhZ" secondAttribute="bottom" id="uvH-d2-Snb"/>
+                <constraint firstItem="jLI-wn-fhZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vRp-Vp-3hB"/>
+                <constraint firstItem="v9H-QW-GPL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="x4W-Bz-ecc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

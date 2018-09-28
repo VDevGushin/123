@@ -90,14 +90,6 @@ class ImageSchemeUViewController: UIViewController {
             ("Monochromatic",
              { self.colorScheme = .monochromatic
                  self.processColor() }),
-            ("Show color wheel",
-             {
-                 if let colors = self.dataSource?.models.map({ $0.color }) {
-                     let schemeVC = ColorWheelViewController(colors: colors)
-                     self.add(schemeVC)
-                 }
-             }),
-
         ]
         let selectPresenter = SelectPresenter(senderView: self.view, actions: actions, message: "Please select color scheme", title: "Scheme", style: .actionSheet)
         selectPresenter.present(in: self)

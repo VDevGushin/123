@@ -65,7 +65,7 @@ class ImageColorViewController: UIViewController {
 extension ImageColorViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let color = self.dataSource?.models[indexPath.row].color {
-            let schemeVC = ImageSchemeUViewController(color: color)
+            let schemeVC = ColorWheelViewController(color: color)
             self.add(schemeVC)
         }
     }

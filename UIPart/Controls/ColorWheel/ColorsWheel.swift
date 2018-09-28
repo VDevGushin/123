@@ -8,9 +8,9 @@
 
 import UIKit
 
-fileprivate extension Array where Element == (indicator: CAShapeLayer, rect: CGRect) {
+fileprivate extension Array where Element == (indicator: CAShapeLayer, rect: CGRect, color: UIColor) {
     func removeFromView() {
-        for (element, _) in self {
+        for (element, _, _) in self {
             element.removeFromSuperlayer()
         }
     }
@@ -21,10 +21,7 @@ protocol ColorsWheelDelegate: class {
 }
 
 class ColorsWheel: UIView {
-    deinit {
-        print("test")
-    }
-    typealias IndicatorLayers = [(indicator: CAShapeLayer, rect: CGRect)]
+    typealias IndicatorLayers = [(indicator: CAShapeLayer, rect: CGRect, color: UIColor)]
 
     let indicatorCircleRadius: CGFloat = 8.0
     let selectedIndicatorCircleRadius: CGFloat = 18.0
@@ -80,32 +77,34 @@ class ColorsWheel: UIView {
         self.redraw(isFirtTime: true)
     }
 
+    func selectColor(_ color: UIColor) {
+        for i in 0..<self.indicators.count {
+            if color == self.indicators[i].color {
+                self.redraw()
+                self.changeIndicatorSize(self.indicators[i], index: i)
+                break
+            }
+        }
+    }
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // touchHandler(touches)
         touchHandlerForIndicators(touches)
     }
 
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // touchHandler(touches)
-    }
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) { }
 
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //touchHandler(touches)
-    }
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) { }
 }
 
 fileprivate extension ColorsWheel {
     func redraw(isFirtTime: Bool = false) {
-        defer {
-            if isFirtTime {
-                self.changeIndicatorSize(self.indicators[0], index: 0)
-            }
-        }
-
         self.indicators.removeFromView()
         self.indicators.removeAll()
         for i in 0..<colors.count {
             self.setup(colors[i])
+        }
+        if isFirtTime {
+            self.changeIndicatorSize(self.indicators[0], index: 0)
         }
     }
 
@@ -125,18 +124,14 @@ fileprivate extension ColorsWheel {
         self.layer.addSublayer(indicatorLayer)
         let newRect = CGRect(x: point.x - indicatorCircleRadius, y: point.y - indicatorCircleRadius, width: indicatorCircleRadius * 2, height: indicatorCircleRadius * 2)
         indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: indicatorCircleRadius).cgPath
-        self.indicators.append((indicatorLayer, newRect))
+        self.indicators.append((indicatorLayer, newRect, color))
     }
-
 
     func touchHandlerForIndicators(_ touches: Set<UITouch>) {
         self.redraw()
         var point: CGPoint = CGPoint(x: 0, y: 0)
-
-        if let touch = touches.first {
-            point = touch.location(in: self)
-        }
-
+        if let touch = touches.first { point = touch.location(in: self) }
+        
         point = getIndicatorCoordinate(point).point
         for i in 0..<self.indicators.count {
             let indicator = self.indicators[i]
@@ -149,14 +144,14 @@ fileprivate extension ColorsWheel {
         delegate?.selection(color: .white)
     }
 
-    func changeIndicatorSize(_ model: (indicator: CAShapeLayer, rect: CGRect), index: Int) {
-        delegate?.selection(color: UIColor.init(cgColor: model.indicator.fillColor!))
-        self.backgroundColor = UIColor.init(cgColor: model.indicator.fillColor!)
+    func changeIndicatorSize(_ model: (indicator: CAShapeLayer, rect: CGRect, color: UIColor), index: Int) {
+        delegate?.selection(color: model.color.lighter(by: 30)!)
+        self.backgroundColor = model.color.lighter(by: 30)!
         model.indicator.removeFromSuperlayer()
         let indicatorLayer = model.indicator
         let oldRect = model.rect
-        let newRect = CGRect(x: oldRect.midX - selectedIndicatorCircleRadius, y: oldRect.midY - selectedIndicatorCircleRadius, width: selectedIndicatorCircleRadius * 2, height: selectedIndicatorCircleRadius * 2)
-        indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: selectedIndicatorCircleRadius).cgPath
+        let newRect = CGRect(x: oldRect.midX - self.selectedIndicatorCircleRadius, y: oldRect.midY - self.selectedIndicatorCircleRadius, width: self.selectedIndicatorCircleRadius * 2, height: self.selectedIndicatorCircleRadius * 2)
+        indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: self.selectedIndicatorCircleRadius).cgPath
         self.indicators[index].rect = newRect
         self.layer.addSublayer(indicatorLayer)
     }
@@ -165,7 +160,6 @@ fileprivate extension ColorsWheel {
 fileprivate extension ColorsWheel {
     func getIndicatorCoordinate(_ coord: CGPoint) -> (point: CGPoint, isCenter: Bool) {
         // Making sure that the indicator can't get outside the Hue and Saturation wheel
-
         let dimension: CGFloat = min(wheelLayer.frame.width, wheelLayer.frame.height)
         let radius: CGFloat = dimension / 2
         let wheelLayerCenter: CGPoint = CGPoint(x: wheelLayer.frame.origin.x + radius, y: wheelLayer.frame.origin.y + radius)
