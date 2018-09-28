@@ -11,6 +11,13 @@
 		287EE387051990F02A660DE9 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */; };
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
 		3C0B1764210EDF34003D9314 /* ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */; };
+		3C0C24EC215CF7CB00472B3E /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */; };
+		3C0C24EF215CF97600472B3E /* ColorWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24ED215CF97600472B3E /* ColorWheelViewController.swift */; };
+		3C0C24F0215CF97600472B3E /* ColorWheelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0C24EE215CF97600472B3E /* ColorWheelViewController.xib */; };
+		3C0C24F3215D00DF00472B3E /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24F2215D00DF00472B3E /* SelectedColorView.swift */; };
+		3C0C24F5215D00F300472B3E /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24F4215D00F300472B3E /* ColorUtils.swift */; };
+		3C0C24F7215D00FF00472B3E /* SwiftHSVColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24F6215D00FF00472B3E /* SwiftHSVColorPicker.swift */; };
+		3C0C24F9215D011100472B3E /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24F8215D011100472B3E /* BrightnessView.swift */; };
 		3C0E0829210AFD9700211B0B /* StatisticHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0828210AFD9700211B0B /* StatisticHeader.swift */; };
 		3C0E082B210AFDA200211B0B /* StatisticHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E082A210AFDA200211B0B /* StatisticHeader.xib */; };
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
@@ -93,7 +100,6 @@
 		3CC2F212213D145400C59AF2 /* Dictionary+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */; };
 		3CC2F214213D152600C59AF2 /* EarlyReturningFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */; };
 		3CC3911C21395741001B42DA /* UsingBuilder .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3911B21395741001B42DA /* UsingBuilder .swift */; };
-		3CC633FE2105BD7C002F3B8B /* Assertions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FD2105BD7C002F3B8B /* Assertions.swift */; };
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
 		3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */; };
 		3CC7A3ED2148E56C0057BFEA /* FactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */; };
@@ -113,6 +119,7 @@
 		3CD85A2320EF482A008D994C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2120EF482A008D994C /* Main.storyboard */; };
 		3CD85A2520EF482D008D994C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2420EF482D008D994C /* Assets.xcassets */; };
 		3CD85A2820EF482D008D994C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2620EF482D008D994C /* LaunchScreen.storyboard */; };
+		3CDF4F63215E079A0042650D /* ColorsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4F62215E079A0042650D /* ColorsWheel.swift */; };
 		3CE3E552215BC1F2003A0528 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53A215BC1EF003A0528 /* UILabel+Chameleon.m */; };
 		3CE3E553215BC1F2003A0528 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53C215BC1EF003A0528 /* ChameleonConstants.m */; };
 		3CE3E554215BC1F2003A0528 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53E215BC1EF003A0528 /* UINavigationController+Chameleon.m */; };
@@ -171,6 +178,13 @@
 		20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 		3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
 		3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalConformances.swift; sourceTree = "<group>"; };
+		3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
+		3C0C24ED215CF97600472B3E /* ColorWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelViewController.swift; sourceTree = "<group>"; };
+		3C0C24EE215CF97600472B3E /* ColorWheelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorWheelViewController.xib; sourceTree = "<group>"; };
+		3C0C24F2215D00DF00472B3E /* SelectedColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedColorView.swift; sourceTree = "<group>"; };
+		3C0C24F4215D00F300472B3E /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		3C0C24F6215D00FF00472B3E /* SwiftHSVColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHSVColorPicker.swift; sourceTree = "<group>"; };
+		3C0C24F8215D011100472B3E /* BrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessView.swift; sourceTree = "<group>"; };
 		3C0E0828210AFD9700211B0B /* StatisticHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticHeader.swift; sourceTree = "<group>"; };
 		3C0E082A210AFDA200211B0B /* StatisticHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticHeader.xib; sourceTree = "<group>"; };
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
@@ -254,7 +268,6 @@
 		3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ex.swift"; sourceTree = "<group>"; };
 		3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlyReturningFunctions.swift; sourceTree = "<group>"; };
 		3CC3911B21395741001B42DA /* UsingBuilder .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingBuilder .swift"; sourceTree = "<group>"; };
-		3CC633FD2105BD7C002F3B8B /* Assertions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assertions.swift; sourceTree = "<group>"; };
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
 		3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidingUnifiedErrorAPI.swift; sourceTree = "<group>"; };
 		3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPattern.swift; sourceTree = "<group>"; };
@@ -273,6 +286,7 @@
 		3CD85A2420EF482D008D994C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CD85A2720EF482D008D994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CD85A2920EF482D008D994C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CDF4F62215E079A0042650D /* ColorsWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWheel.swift; sourceTree = "<group>"; };
 		3CE3E4F7215BBEEE003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -396,6 +410,36 @@
 				3C934C89210EEFA400E35A4D /* Person.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3C0C24E7215CCA5E00472B3E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3CB155B1215C03460034CF0A /* ColorBuilder.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3C0C24EA215CF7C200472B3E /* ColorWheel */ = {
+			isa = PBXGroup;
+			children = (
+				3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */,
+				3C0C24F2215D00DF00472B3E /* SelectedColorView.swift */,
+				3C0C24F4215D00F300472B3E /* ColorUtils.swift */,
+				3C0C24F6215D00FF00472B3E /* SwiftHSVColorPicker.swift */,
+				3C0C24F8215D011100472B3E /* BrightnessView.swift */,
+				3CDF4F62215E079A0042650D /* ColorsWheel.swift */,
+			);
+			path = ColorWheel;
+			sourceTree = "<group>";
+		};
+		3C0C24F1215CF97F00472B3E /* ColorWheelViewer */ = {
+			isa = PBXGroup;
+			children = (
+				3C0C24ED215CF97600472B3E /* ColorWheelViewController.swift */,
+				3C0C24EE215CF97600472B3E /* ColorWheelViewController.xib */,
+			);
+			path = ColorWheelViewer;
 			sourceTree = "<group>";
 		};
 		3C0E081D210AF3FD00211B0B /* Header */ = {
@@ -543,12 +587,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		3C95D1A3215CA4BD00B8E7BD /* Models */ = {
+		3C95D1A3215CA4BD00B8E7BD /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
 				3C988078215B84AD00994BA8 /* ColorsDataSource.swift */,
 			);
-			path = Models;
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		3C95D1A7215CAAA400B8E7BD /* Presenter */ = {
@@ -610,6 +654,7 @@
 		3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */ = {
 			isa = PBXGroup;
 			children = (
+				3C0C24E7215CCA5E00472B3E /* Source */,
 				3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */,
 				3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */,
 			);
@@ -619,7 +664,6 @@
 		3CC633FC2105BD63002F3B8B /* ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
-				3CC633FD2105BD7C002F3B8B /* Assertions.swift */,
 				3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */,
 				3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */,
 			);
@@ -629,6 +673,7 @@
 		3CCEA34821528A8B0081A7DB /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				3C0C24EA215CF7C200472B3E /* ColorWheel */,
 				3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */,
 				3CCEA34921528AD00081A7DB /* RoundButton.swift */,
 			);
@@ -771,7 +816,8 @@
 		3CE3E56A215BE087003A0528 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3C95D1A3215CA4BD00B8E7BD /* Models */,
+				3C95D1A3215CA4BD00B8E7BD /* DataSource */,
+				3C0C24F1215CF97F00472B3E /* ColorWheelViewer */,
 				3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */,
 				3CD0B057215A4EBD001E7411 /* ImageColorGetter */,
 				3CE41F84215263FB002A6600 /* ImageViewer */,
@@ -784,7 +830,6 @@
 			children = (
 				3CD0B058215A4EFF001E7411 /* UIImageColors.swift */,
 				3CE3E4FE215BC099003A0528 /* ChameleonFramework */,
-				3CB155B1215C03460034CF0A /* ColorBuilder.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -1007,6 +1052,7 @@
 				3CE41F882152645B002A6600 /* ETBImageViewerViewController.xib in Resources */,
 				3CD0B05D215A502A001E7411 /* ImageColorViewController.xib in Resources */,
 				3C98807D215B857100994BA8 /* TableViewCell.xib in Resources */,
+				3C0C24F0215CF97600472B3E /* ColorWheelViewController.xib in Resources */,
 				3CB155B7215C05330034CF0A /* ImageSchemeUViewController.xib in Resources */,
 				3C988071215B807100994BA8 /* ColorView.xib in Resources */,
 				3CE41F7A21523AB8002A6600 /* LaunchScreen.storyboard in Resources */,
@@ -1082,7 +1128,6 @@
 				3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */,
 				3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */,
 				3CC2F214213D152600C59AF2 /* EarlyReturningFunctions.swift in Sources */,
-				3CC633FE2105BD7C002F3B8B /* Assertions.swift in Sources */,
 				3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */,
 				3C6D8F682109C87F000190F3 /* UITableView+Ex.swift in Sources */,
 				3C38E1742107732A005CBDE9 /* RoundPercentagesControl.swift in Sources */,
@@ -1175,12 +1220,15 @@
 				3CE3E567215BCFD9003A0528 /* NSDictionary+Chameleon.m in Sources */,
 				3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */,
 				3CE3E554215BC1F2003A0528 /* UINavigationController+Chameleon.m in Sources */,
+				3C0C24EF215CF97600472B3E /* ColorWheelViewController.swift in Sources */,
 				3C95D1A9215CAABE00B8E7BD /* SelectPresenter.swift in Sources */,
 				3C98807C215B857100994BA8 /* TableViewCell.swift in Sources */,
 				3CD0B061215A54A3001E7411 /* UIViewController+Ex.swift in Sources */,
+				3CDF4F63215E079A0042650D /* ColorsWheel.swift in Sources */,
 				3C98806F215B806700994BA8 /* ColorView.swift in Sources */,
 				3CE3E555215BC1F2003A0528 /* UIViewController+Chameleon.m in Sources */,
 				3CE3E559215BC1F2003A0528 /* UIView+ChameleonPrivate.m in Sources */,
+				3C0C24F5215D00F300472B3E /* ColorUtils.swift in Sources */,
 				3CE41F872152645B002A6600 /* ETBImageViewerViewController.swift in Sources */,
 				3CE3E55B215BC1F2003A0528 /* Chameleon_.m in Sources */,
 				3CE3E556215BC1F2003A0528 /* UIButton+Chameleon.m in Sources */,
@@ -1194,12 +1242,16 @@
 				3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */,
 				3CE3E55C215BC1F2003A0528 /* UIAppearance+Swift.m in Sources */,
 				3CE3E55F215BC1FB003A0528 /* ChameleonShorthand.swift in Sources */,
+				3C0C24F3215D00DF00472B3E /* SelectedColorView.swift in Sources */,
 				3CE41F7221523AB5002A6600 /* ViewController.swift in Sources */,
 				3CB155B6215C05330034CF0A /* ImageSchemeUViewController.swift in Sources */,
 				3CE41F7021523AB5002A6600 /* AppDelegate.swift in Sources */,
+				3C0C24F9215D011100472B3E /* BrightnessView.swift in Sources */,
+				3C0C24EC215CF7CB00472B3E /* ColorWheel.swift in Sources */,
 				3CE3E557215BC1F2003A0528 /* UIImage+ChameleonPrivate.m in Sources */,
 				3CD0B05C215A502A001E7411 /* ImageColorViewController.swift in Sources */,
 				3C98806B215B7FF700994BA8 /* UIViewController+ex.swift in Sources */,
+				3C0C24F7215D00FF00472B3E /* SwiftHSVColorPicker.swift in Sources */,
 				3C988077215B83F400994BA8 /* ColorInfoModel.swift in Sources */,
 				3C988079215B84AD00994BA8 /* ColorsDataSource.swift in Sources */,
 				3CE3E55D215BC1F2003A0528 /* NSArray+Chameleon.m in Sources */,

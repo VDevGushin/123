@@ -39,6 +39,7 @@ class ImageSchemeUViewController: UIViewController {
         self.colorsTableView.register(TableViewCell.self)
         self.colorsTableView.separatorStyle = .none
         self.colorsTableView.rowHeight = 100
+        self.colorsTableView.delegate = self
         self.colorsTableView.showsHorizontalScrollIndicator = false
         self.colorsTableView.showsVerticalScrollIndicator = false
     }
@@ -64,10 +65,12 @@ class ImageSchemeUViewController: UIViewController {
             case .triad:
                 scheme = "triad"
             }
-            source.append(ColorInfoModel(color: wSelf.color, info: "\(scheme) - \(wSelf.color.hexValue())"))
+
             for color in colorScheme {
                 source.append(ColorInfoModel(color: color, info: color.hexValue()))
             }
+            source = source.reversed()
+            source.insert(ColorInfoModel(color: wSelf.color, info: "\(scheme) - \(wSelf.color.hexValue())"), at: 0)
             DispatchQueue.main.async {
                 wSelf.colorsComplete(source)
             }
@@ -75,7 +78,6 @@ class ImageSchemeUViewController: UIViewController {
     }
 
     @IBAction func changeScheme(_ sender: Any) {
-
         let actions = [
             ("Triad",
              { self.colorScheme = .triad
@@ -89,14 +91,24 @@ class ImageSchemeUViewController: UIViewController {
             ("Monochromatic",
              { self.colorScheme = .monochromatic
                  self.processColor() }),
+            ("Show color wheel",
+             {
+                 if let colors = self.dataSource?.models.map({ $0.color }) {
+                     let schemeVC = ColorWheelViewController(colors: colors)
+                     self.add(schemeVC)
+                 }
+             }),
 
         ]
-
-        let selectPresenter = SelectPresenter.init(actions: actions, message: "Please select color scheme", title: "Scheme")
+        let selectPresenter = SelectPresenter(senderView: self.view, actions: actions, message: "Please select color scheme", title: "Scheme", style: .actionSheet)
         selectPresenter.present(in: self)
     }
 
     @IBAction func close(_ sender: Any) {
         self.removeWithAnimation()
     }
+}
+
+extension ImageSchemeUViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { }
 }
