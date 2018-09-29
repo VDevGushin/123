@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="collectionView" destination="OCA-GH-16T" id="mzY-Z1-QXC"/>
                 <outlet property="colorView" destination="jLI-wn-fhZ" id="O1g-6r-tNC"/>
+                <outlet property="gradient" destination="Ji1-YI-WX4" id="63p-4I-drG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -48,8 +49,11 @@
                     </items>
                 </navigationBar>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OCA-GH-16T">
-                    <rect key="frame" x="0.0" y="64" width="375" height="228"/>
+                    <rect key="frame" x="0.0" y="64" width="375" height="100"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2t5-cf-7rj"/>
+                    </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WTZ-el-sqr">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -57,24 +61,32 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ji1-YI-WX4" customClass="GradientView" customModule="UIPart" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="164" width="375" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="OCA-GH-16T" firstAttribute="top" secondItem="v9H-QW-GPL" secondAttribute="bottom" id="0CM-Jp-sqX"/>
                 <constraint firstItem="v9H-QW-GPL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0Ds-Hn-aMd"/>
                 <constraint firstItem="v9H-QW-GPL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1zS-0m-Q5K"/>
+                <constraint firstItem="Ji1-YI-WX4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="43s-Lj-Efy"/>
+                <constraint firstItem="Ji1-YI-WX4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7RN-BL-5PA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OCA-GH-16T" secondAttribute="trailing" id="BaK-mn-Qid"/>
                 <constraint firstItem="v9H-QW-GPL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JXm-09-AxD"/>
+                <constraint firstItem="jLI-wn-fhZ" firstAttribute="top" secondItem="Ji1-YI-WX4" secondAttribute="bottom" id="NAT-hl-oHi"/>
                 <constraint firstItem="v9H-QW-GPL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bag-hh-zIO"/>
                 <constraint firstItem="jLI-wn-fhZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dnb-9A-dQM"/>
                 <constraint firstItem="v9H-QW-GPL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hdP-tM-NhW"/>
-                <constraint firstItem="jLI-wn-fhZ" firstAttribute="top" secondItem="OCA-GH-16T" secondAttribute="bottom" id="lq0-7G-d4H"/>
                 <constraint firstItem="OCA-GH-16T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mRT-K9-Fia"/>
+                <constraint firstItem="Ji1-YI-WX4" firstAttribute="top" secondItem="OCA-GH-16T" secondAttribute="bottom" id="ttJ-Gc-Wji"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jLI-wn-fhZ" secondAttribute="bottom" id="uvH-d2-Snb"/>
                 <constraint firstItem="jLI-wn-fhZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="vRp-Vp-3hB"/>
                 <constraint firstItem="v9H-QW-GPL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="x4W-Bz-ecc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="152.47376311844079"/>
         </view>
     </objects>
 </document>

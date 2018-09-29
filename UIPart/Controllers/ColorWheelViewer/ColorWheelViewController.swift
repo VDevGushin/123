@@ -10,7 +10,7 @@ import UIKit
 
 extension ColorWheelViewController: ColorsWheelDelegate, UICollectionViewDelegate {
     func selection(color: UIColor) {
-        self.view.backgroundColor = color
+      //  self.view.backgroundColor = color
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -21,6 +21,7 @@ extension ColorWheelViewController: ColorsWheelDelegate, UICollectionViewDelegat
 }
 
 class ColorWheelViewController: UIViewController {
+    @IBOutlet weak var gradient: GradientView!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var colorView: ColorsWheel!
     var dataSource: CollectionViewDataSource<ColorInfoModel>?
@@ -60,6 +61,8 @@ class ColorWheelViewController: UIViewController {
         if let colors = dataSource?.models.map({ $0.color }) {
             colorView.setColors(colors)
         }
+        
+        self.gradient.setGradientBackGround(colors: self.dataSource?.models.map({$0.color}))
     }
 
     @IBAction func changeScheme(_ sender: Any) {

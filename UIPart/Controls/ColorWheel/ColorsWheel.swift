@@ -40,7 +40,7 @@ class ColorsWheel: UIView {
 
     // Layer for the indicator
     var indicatorLayer: CAShapeLayer!
-    var point: CGPoint!
+    var brightnessLayer: CAShapeLayer!
 
     // Retina scaling factor
     let scale: CGFloat = UIScreen.main.scale
@@ -98,6 +98,11 @@ class ColorsWheel: UIView {
 
 fileprivate extension ColorsWheel {
     func redraw(isFirtTime: Bool = false) {
+        if isFirtTime {
+            self.brightness = self.colors[0].brightness()
+            self.wheelLayer.contents = createColorWheel(wheelLayer.frame.size)
+            layoutSubviews()
+        }
         self.indicators.removeFromView()
         self.indicators.removeAll()
         for i in 0..<colors.count {
@@ -131,7 +136,7 @@ fileprivate extension ColorsWheel {
         self.redraw()
         var point: CGPoint = CGPoint(x: 0, y: 0)
         if let touch = touches.first { point = touch.location(in: self) }
-        
+
         point = getIndicatorCoordinate(point).point
         for i in 0..<self.indicators.count {
             let indicator = self.indicators[i]
@@ -146,7 +151,6 @@ fileprivate extension ColorsWheel {
 
     func changeIndicatorSize(_ model: (indicator: CAShapeLayer, rect: CGRect, color: UIColor), index: Int) {
         delegate?.selection(color: model.color.lighter(by: 30)!)
-        self.backgroundColor = model.color.lighter(by: 30)!
         model.indicator.removeFromSuperlayer()
         let indicatorLayer = model.indicator
         let oldRect = model.rect
@@ -217,7 +221,7 @@ fileprivate extension ColorsWheel {
 
                     hsv.hue = hue
                     hsv.saturation = saturation
-                    hsv.brightness = 1.0
+                    hsv.brightness = self.brightness
                     hsv.alpha = a
                     rgb = hsv2rgb(hsv)
                 }

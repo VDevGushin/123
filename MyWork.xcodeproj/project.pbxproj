@@ -53,6 +53,8 @@
 		3C55FE13213FE42400ABA745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C55FE11213FE42400ABA745 /* LaunchScreen.storyboard */; };
 		3C55FE19213FE57700ABA745 /* DateFormater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE18213FE57700ABA745 /* DateFormater.swift */; };
 		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
+		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
+		3C69E4AC215FA4870022CA4D /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD253B2112F95400128554 /* UIView+Ex.swift */; };
 		3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */; };
 		3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5A21099BAC000190F3 /* LineControl.swift */; };
 		3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */; };
@@ -227,6 +229,7 @@
 		3C55FE14213FE42400ABA745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C55FE18213FE57700ABA745 /* DateFormater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormater.swift; sourceTree = "<group>"; };
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
+		3C69E4AA215FA4090022CA4D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
 		3C6D8F5A21099BAC000190F3 /* LineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineControl.swift; sourceTree = "<group>"; };
 		3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentagesControl.swift; sourceTree = "<group>"; };
@@ -687,6 +690,7 @@
 				3C0C24EA215CF7C200472B3E /* ColorWheel */,
 				3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */,
 				3CCEA34921528AD00081A7DB /* RoundButton.swift */,
+				3C69E4AA215FA4090022CA4D /* GradientView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -1272,8 +1276,10 @@
 				3CE3E561215BCAC5003A0528 /* ColorGetters.swift in Sources */,
 				3CD0B060215A5103001E7411 /* UIViewController+Ex2.swift in Sources */,
 				3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */,
+				3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */,
 				3CE3E55C215BC1F2003A0528 /* UIAppearance+Swift.m in Sources */,
 				3CE3E55F215BC1FB003A0528 /* ChameleonShorthand.swift in Sources */,
+				3C69E4AC215FA4870022CA4D /* UIView+Ex.swift in Sources */,
 				3C0C24F3215D00DF00472B3E /* SelectedColorView.swift in Sources */,
 				3CE41F7221523AB5002A6600 /* ViewController.swift in Sources */,
 				3CB155B6215C05330034CF0A /* ImageSchemeUViewController.swift in Sources */,
