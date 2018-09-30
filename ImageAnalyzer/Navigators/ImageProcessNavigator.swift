@@ -36,15 +36,3 @@ final class ImageProcessNavigator: INavigator {
         return UIViewController(nibName: nil, bundle: nil)
     }
 }
-
-extension ImageProcessNavigator {
-    static func makeRootWindow() -> UIWindow {
-        let window = UIWindow.init(frame: UIScreen.main.bounds)
-        let appNavigationController = AppNavigationViewController()
-        appNavigationController.setViewControllers([ImageCaptureViewController()], animated: true)
-        window.rootViewController = appNavigationController
-        window.makeKeyAndVisible()
-        return window
-    }
-}
-

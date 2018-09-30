@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol INavigator {
+protocol INavigator: class {
     associatedtype Destination
     func navigate(to destinaton: Destination)
 }

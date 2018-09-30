@@ -10,10 +10,6 @@ import UIKit
 
 class AppRootViewController: UIViewController {
     let viewTitle: String
-
-    var rootNavigatioController: AppNavigationViewController? {
-        return self.navigationController as? AppNavigationViewController
-    }
     
     init(title: String, nibName: String, bundle: Bundle) {
         self.viewTitle = title

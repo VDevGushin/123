@@ -18,6 +18,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZT-Fq-mSh" customClass="GradientView" customModule="SupportLib">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDm-wK-8Gt">
                         <rect key="frame" x="139" y="11.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -25,15 +29,22 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="rDm-wK-8Gt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HRc-7b-JNl"/>
+                    <constraint firstItem="rDm-wK-8Gt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AMQ-FS-2aA"/>
+                    <constraint firstAttribute="trailing" secondItem="uZT-Fq-mSh" secondAttribute="trailing" id="JmQ-4w-bhQ"/>
+                    <constraint firstItem="uZT-Fq-mSh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NQ6-Kp-KrI"/>
+                    <constraint firstAttribute="bottom" secondItem="uZT-Fq-mSh" secondAttribute="bottom" id="Xjr-OD-Lrh"/>
+                    <constraint firstItem="uZT-Fq-mSh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YrL-Uy-pIb"/>
                     <constraint firstItem="rDm-wK-8Gt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="mmc-qx-N4J"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="colorLabel" destination="rDm-wK-8Gt" id="QTI-ji-4Dc"/>
+                <outlet property="gradientView" destination="uZT-Fq-mSh" id="Wux-RN-tg7"/>
             </connections>
+            <point key="canvasLocation" x="160" y="189"/>
         </tableViewCell>
     </objects>
 </document>

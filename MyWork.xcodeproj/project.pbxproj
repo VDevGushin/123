@@ -18,6 +18,7 @@
 		3C0C24F9215D011100472B3E /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24F8215D011100472B3E /* BrightnessView.swift */; };
 		3C0E0829210AFD9700211B0B /* StatisticHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0828210AFD9700211B0B /* StatisticHeader.swift */; };
 		3C0E082B210AFDA200211B0B /* StatisticHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E082A210AFDA200211B0B /* StatisticHeader.xib */; };
+		3C0F05BE216135E800F04623 /* UIWindow+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F05BD216135E800F04623 /* UIWindow+Ex.swift */; };
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
 		3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */; };
 		3C1DD66F2118135D00383851 /* PowerOfSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DD66E2118135D00383851 /* PowerOfSet.swift */; };
@@ -48,12 +49,9 @@
 		3C41F8862160D732002334DB /* ImageAnalyzerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8852160D732002334DB /* ImageAnalyzerUITests.swift */; };
 		3C41F8942160D7B9002334DB /* ImageProcessNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8932160D7B9002334DB /* ImageProcessNavigator.swift */; };
 		3C41F8962160D7DB002334DB /* INavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8952160D7DB002334DB /* INavigator.swift */; };
-		3C41F89A2160DBC0002334DB /* AppNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8992160DBC0002334DB /* AppNavigationViewController.swift */; };
 		3C41F89D2160DC42002334DB /* ImageCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F89B2160DC42002334DB /* ImageCaptureViewController.swift */; };
 		3C41F89E2160DC42002334DB /* ImageCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C41F89C2160DC42002334DB /* ImageCaptureViewController.xib */; };
 		3C41F8A12160DFE7002334DB /* AppRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8A02160DFE7002334DB /* AppRootViewController.swift */; };
-		3C41F8A92161109A002334DB /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8A82161109A002334DB /* ImageScrollView.swift */; };
-		3C41F8AC21611333002334DB /* SelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8AB21611333002334DB /* SelectionPresenter.swift */; };
 		3C41F8AF21611443002334DB /* ImageGetColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8AD21611443002334DB /* ImageGetColorsViewController.swift */; };
 		3C41F8B021611443002334DB /* ImageGetColorsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C41F8AE21611443002334DB /* ImageGetColorsViewController.xib */; };
 		3C41F8D5216114CD002334DB /* ColorGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8B2216114CD002334DB /* ColorGetters.swift */; };
@@ -71,7 +69,6 @@
 		3C41F8E1216114CD002334DB /* UIViewController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8CD216114CD002334DB /* UIViewController+Chameleon.m */; };
 		3C41F8E2216114CD002334DB /* UIAppearance+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8CE216114CD002334DB /* UIAppearance+Swift.m */; };
 		3C41F8E3216114CD002334DB /* UIImage+ChameleonPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8CF216114CD002334DB /* UIImage+ChameleonPrivate.m */; };
-		3C41F8E4216114CD002334DB /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8D3216114CD002334DB /* UIImageColors.swift */; };
 		3C41F8E5216114CD002334DB /* IColorGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8D4216114CD002334DB /* IColorGetter.swift */; };
 		3C41F8EA216115AE002334DB /* ColorInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8E9216115AE002334DB /* ColorInfoModel.swift */; };
 		3C41F8F72161171B002334DB /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8F52161171B002334DB /* ColorTableViewCell.swift */; };
@@ -119,6 +116,10 @@
 		3C6D8F6C2109C9A5000190F3 /* StatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */; };
 		3C6D8F6D2109C9A5000190F3 /* StatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */; };
 		3C7CD75221103951009871B1 /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CD75121103951009871B1 /* Tuples.swift */; };
+		3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */; };
+		3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E235821613FDD0010F7E6 /* GradientView.swift */; };
+		3C8E235B21613FF90010F7E6 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E235A21613FF90010F7E6 /* ImageScrollView.swift */; };
+		3C8E235D21614EA60010F7E6 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E235C21614EA60010F7E6 /* UIImage+Ex.swift */; };
 		3C934C8A210EEFA400E35A4D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C89210EEFA400E35A4D /* Person.swift */; };
 		3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */; };
 		3C934C90210EF1B700E35A4D /* PersonStatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */; };
@@ -283,6 +284,7 @@
 		3C0C24F8215D011100472B3E /* BrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessView.swift; sourceTree = "<group>"; };
 		3C0E0828210AFD9700211B0B /* StatisticHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticHeader.swift; sourceTree = "<group>"; };
 		3C0E082A210AFDA200211B0B /* StatisticHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticHeader.xib; sourceTree = "<group>"; };
+		3C0F05BD216135E800F04623 /* UIWindow+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Ex.swift"; sourceTree = "<group>"; };
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
 		3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelСontrollers.swift"; sourceTree = "<group>"; };
 		3C1DD66E2118135D00383851 /* PowerOfSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSet.swift; sourceTree = "<group>"; };
@@ -319,12 +321,9 @@
 		3C41F8872160D732002334DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C41F8932160D7B9002334DB /* ImageProcessNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessNavigator.swift; sourceTree = "<group>"; };
 		3C41F8952160D7DB002334DB /* INavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INavigator.swift; sourceTree = "<group>"; };
-		3C41F8992160DBC0002334DB /* AppNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationViewController.swift; sourceTree = "<group>"; };
 		3C41F89B2160DC42002334DB /* ImageCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaptureViewController.swift; sourceTree = "<group>"; };
 		3C41F89C2160DC42002334DB /* ImageCaptureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCaptureViewController.xib; sourceTree = "<group>"; };
 		3C41F8A02160DFE7002334DB /* AppRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootViewController.swift; sourceTree = "<group>"; };
-		3C41F8A82161109A002334DB /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
-		3C41F8AB21611333002334DB /* SelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPresenter.swift; sourceTree = "<group>"; };
 		3C41F8AD21611443002334DB /* ImageGetColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGetColorsViewController.swift; sourceTree = "<group>"; };
 		3C41F8AE21611443002334DB /* ImageGetColorsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageGetColorsViewController.xib; sourceTree = "<group>"; };
 		3C41F8B2216114CD002334DB /* ColorGetters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGetters.swift; sourceTree = "<group>"; };
@@ -358,7 +357,6 @@
 		3C41F8D0216114CD002334DB /* UIButton+Chameleon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Chameleon.h"; sourceTree = "<group>"; };
 		3C41F8D1216114CD002334DB /* Chameleon_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chameleon_.h; sourceTree = "<group>"; };
 		3C41F8D2216114CD002334DB /* UIView+ChameleonPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChameleonPrivate.h"; sourceTree = "<group>"; };
-		3C41F8D3216114CD002334DB /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
 		3C41F8D4216114CD002334DB /* IColorGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IColorGetter.swift; sourceTree = "<group>"; };
 		3C41F8E82161151E002334DB /* ImageAnalyzer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageAnalyzer-Bridging-Header.h"; sourceTree = "<group>"; };
 		3C41F8E9216115AE002334DB /* ColorInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorInfoModel.swift; sourceTree = "<group>"; };
@@ -408,6 +406,10 @@
 		3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCell.swift; sourceTree = "<group>"; };
 		3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCell.xib; sourceTree = "<group>"; };
 		3C7CD75121103951009871B1 /* Tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuples.swift; sourceTree = "<group>"; };
+		3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPresenter.swift; sourceTree = "<group>"; };
+		3C8E235821613FDD0010F7E6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3C8E235A21613FF90010F7E6 /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
+		3C8E235C21614EA60010F7E6 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
 		3C934C89210EEFA400E35A4D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3C934C8D210EF1B700E35A4D /* PersonStatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticCell.swift; sourceTree = "<group>"; };
 		3C934C8E210EF1B700E35A4D /* PersonStatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticCell.xib; sourceTree = "<group>"; };
@@ -747,7 +749,6 @@
 		3C41F8642160D72C002334DB /* ImageAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
-				3C41F8AA21611321002334DB /* Presenters */,
 				3C41F8922160D790002334DB /* Navigators */,
 				3C41F8912160D750002334DB /* Controllers */,
 				3C41F8652160D72C002334DB /* AppDelegate.swift */,
@@ -780,8 +781,7 @@
 		3C41F8912160D750002334DB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3C41F8A721611081002334DB /* Controls */,
-				3C41F89F2160DFD6002334DB /* Roots */,
+				3C41F89F2160DFD6002334DB /* Base */,
 				3C41F8A62160E1FC002334DB /* ColorSchemeViewer */,
 				3C41F8A52160E1E6002334DB /* ColorGetter */,
 				3C41F8A42160E1D8002334DB /* ImageCapture */,
@@ -798,13 +798,12 @@
 			path = Navigators;
 			sourceTree = "<group>";
 		};
-		3C41F89F2160DFD6002334DB /* Roots */ = {
+		3C41F89F2160DFD6002334DB /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				3C41F8992160DBC0002334DB /* AppNavigationViewController.swift */,
 				3C41F8A02160DFE7002334DB /* AppRootViewController.swift */,
 			);
-			path = Roots;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		3C41F8A42160E1D8002334DB /* ImageCapture */ = {
@@ -835,28 +834,12 @@
 			path = ColorSchemeViewer;
 			sourceTree = "<group>";
 		};
-		3C41F8A721611081002334DB /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				3C41F8A82161109A002334DB /* ImageScrollView.swift */,
-			);
-			path = Controls;
-			sourceTree = "<group>";
-		};
-		3C41F8AA21611321002334DB /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				3C41F8AB21611333002334DB /* SelectionPresenter.swift */,
-			);
-			path = Presenters;
-			sourceTree = "<group>";
-		};
 		3C41F8B1216114CD002334DB /* ColorsGetters */ = {
 			isa = PBXGroup;
 			children = (
+				3C41F8D4216114CD002334DB /* IColorGetter.swift */,
 				3C41F8B2216114CD002334DB /* ColorGetters.swift */,
 				3C41F8B3216114CD002334DB /* Source */,
-				3C41F8D4216114CD002334DB /* IColorGetter.swift */,
 			);
 			path = ColorsGetters;
 			sourceTree = "<group>";
@@ -865,7 +848,6 @@
 			isa = PBXGroup;
 			children = (
 				3C41F8B4216114CD002334DB /* ChameleonFramework */,
-				3C41F8D3216114CD002334DB /* UIImageColors.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -927,6 +909,8 @@
 		3C41F90121611883002334DB /* SupportLib */ = {
 			isa = PBXGroup;
 			children = (
+				3C8E235721613FCB0010F7E6 /* Controls */,
+				3C8E2354216136AB0010F7E6 /* Presenters */,
 				3C41F92821611905002334DB /* DataSource */,
 				3C41F90D2161189B002334DB /* Extensions */,
 				3C41F90221611883002334DB /* SupportLib.h */,
@@ -951,6 +935,8 @@
 				3C41F913216118F0002334DB /* UIViewController+Ex.swift */,
 				3C41F910216118EF002334DB /* UIViewController+Ex2.swift */,
 				3C41F92D216119EC002334DB /* Double+Ex.swift */,
+				3C0F05BD216135E800F04623 /* UIWindow+Ex.swift */,
+				3C8E235C21614EA60010F7E6 /* UIImage+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1006,6 +992,23 @@
 				3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3C8E2354216136AB0010F7E6 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		3C8E235721613FCB0010F7E6 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				3C8E235821613FDD0010F7E6 /* GradientView.swift */,
+				3C8E235A21613FF90010F7E6 /* ImageScrollView.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		3C934C88210EEF7700E35A4D /* Cell */ = {
@@ -1718,16 +1721,12 @@
 				3C41F8F72161171B002334DB /* ColorTableViewCell.swift in Sources */,
 				3C41F8E3216114CD002334DB /* UIImage+ChameleonPrivate.m in Sources */,
 				3C41F8D6216114CD002334DB /* UIColor+ChameleonPrivate.m in Sources */,
-				3C41F8AC21611333002334DB /* SelectionPresenter.swift in Sources */,
-				3C41F8A92161109A002334DB /* ImageScrollView.swift in Sources */,
 				3C41F8D9216114CD002334DB /* ChameleonConstants.m in Sources */,
 				3C41F8DC216114CD002334DB /* UIView+ChameleonPrivate.m in Sources */,
-				3C41F89A2160DBC0002334DB /* AppNavigationViewController.swift in Sources */,
 				3C41F8D7216114CD002334DB /* ChameleonShorthand.swift in Sources */,
 				3C41F8E0216114CD002334DB /* UILabel+Chameleon.m in Sources */,
 				3C41F8DA216114CD002334DB /* UIColor+Chameleon.m in Sources */,
 				3C41F8A12160DFE7002334DB /* AppRootViewController.swift in Sources */,
-				3C41F8E4216114CD002334DB /* UIImageColors.swift in Sources */,
 				3C41F8E1216114CD002334DB /* UIViewController+Chameleon.m in Sources */,
 				3C41F8942160D7B9002334DB /* ImageProcessNavigator.swift in Sources */,
 				3C41F8662160D72C002334DB /* AppDelegate.swift in Sources */,
@@ -1759,13 +1758,18 @@
 				3C41F926216118F1002334DB /* UITableView+Ex.swift in Sources */,
 				3C41F925216118F1002334DB /* UIColllectionView+Ex.swift in Sources */,
 				3C41F921216118F1002334DB /* Optional+Ex.swift in Sources */,
+				3C8E235B21613FF90010F7E6 /* ImageScrollView.swift in Sources */,
+				3C8E235D21614EA60010F7E6 /* UIImage+Ex.swift in Sources */,
 				3C41F91E216118F1002334DB /* UIColor+Ex.swift in Sources */,
 				3C41F920216118F1002334DB /* Dictionary+ex.swift in Sources */,
 				3C41F923216118F1002334DB /* UIView+Ex.swift in Sources */,
 				3C41F92E216119EC002334DB /* Double+Ex.swift in Sources */,
 				3C41F91F216118F1002334DB /* UIViewController+Ex.swift in Sources */,
+				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,
 				3C41F922216118F1002334DB /* Result.swift in Sources */,
 				3C41F91C216118F1002334DB /* UIViewController+Ex2.swift in Sources */,
+				3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */,
+				3C0F05BE216135E800F04623 /* UIWindow+Ex.swift in Sources */,
 				3C41F91D216118F1002334DB /* String+Ex.swift in Sources */,
 				3C41F92A2161190F002334DB /* TableViewDataSource.swift in Sources */,
 				3C41F924216118F1002334DB /* NSMutableAttributedString.swift in Sources */,

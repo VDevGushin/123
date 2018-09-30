@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SupportLib
 
 extension ImageCaptureViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -20,6 +21,7 @@ extension ImageCaptureViewController: UIImagePickerControllerDelegate, UINavigat
 }
 
 final class ImageCaptureViewController: AppRootViewController {
+    let imageNavigator: ImageProcessNavigator
     private var selectedImage: UIImage? {
         didSet {
             if let selectedImage = selectedImage {
@@ -32,14 +34,14 @@ final class ImageCaptureViewController: AppRootViewController {
     private lazy var imagePicker = UIImagePickerController()
 
     @IBOutlet weak var imageScrollView: ImageScrollView!
-
-    init() {
+    init(navigator: ImageProcessNavigator) {
+        self.imageNavigator = navigator
         let bundle = Bundle(for: type(of: self))
-        super.init(title: "Image capture", nibName: String(describing: ImageCaptureViewController.self), bundle: bundle)
+        super.init(title: "Image", nibName: String(describing: ImageCaptureViewController.self), bundle: bundle)
     }
 
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        fatalError("init(coder:) has not been implemented")
     }
 
     override func viewDidLoad() {
@@ -81,19 +83,14 @@ final class ImageCaptureViewController: AppRootViewController {
         let actions = [
             ("Percentage",
              {
-                 if let appNavigator = super.rootNavigatioController?.imageNavigator {
-                     appNavigator.navigate(to: .imageColors(selectedImage: image, imageGetter: ColorPercentageGetter()))
-                 }
+                 self.imageNavigator.navigate(to: .imageColors(selectedImage: image, imageGetter: ColorPercentageGetter()))
              }),
             ("Avatage color",
              {
-                 if let appNavigator = super.rootNavigatioController?.imageNavigator {
-                     appNavigator.navigate(to: .imageColors(selectedImage: image, imageGetter: AvarageColorImageGetter()))
-                 }
+                 self.imageNavigator.navigate(to: .imageColors(selectedImage: image, imageGetter: AvarageColorImageGetter()))
              }),
         ]
-
-        let selectPresenter = SelectionPresenter.init(senderView: self.view, actions: actions, message: "Please select an color getter", title: "Colors", style: .actionSheet)
+        let selectPresenter = SelectionPresenter(senderView: self.view, actions: actions, message: "Please select an color getter", title: "Colors", style: .actionSheet)
         selectPresenter.present(in: self)
     }
 }

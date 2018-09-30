@@ -41,12 +41,8 @@ class ETBImageViewerViewController: UIViewController, UIScrollViewDelegate {
                  self.addWithAnimaton(vc) }),
             ("Average color",
              { let vc = ImageColorViewController(image: self.image, colorGetter: AverageColorSupportPercentageGetter())
-                 self.addWithAnimaton(vc) })
-        ]
-
+                 self.addWithAnimaton(vc) })]
         let selectPresenter = SelectPresenter.init(senderView: self.view, actions: actions, message: "Please select an color getter", title: "Colors", style: .actionSheet)
-    
-
         selectPresenter.present(in: self)
     }
 
