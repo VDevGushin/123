@@ -9,20 +9,30 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
-		<key>MyWork.xcscheme</key>
+		<key>ImageAnalyzer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>MyWorkV2.xcscheme</key>
+		<key>MyWork.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>UIPart.xcscheme</key>
+		<key>MyWorkV2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>SupportLib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>UIPart.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 </dict>
