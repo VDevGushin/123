@@ -22,17 +22,17 @@ public extension TableViewDataSource where Model == (ColorInfoModel, ColorInfoMo
 class ImageGetColorsViewController: AppRootViewController {
     @IBOutlet weak var colorsTableView: UITableView!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    let image: UIImage
-    let colorGetter: IColorGetter
-    var dataSource: TableViewDataSource<(ColorInfoModel, ColorInfoModel?)>?
-    var colors: [ColorInfoModel]?
-    private var isGradientCells = false
+
+    fileprivate let image: UIImage
+    fileprivate let colorGetter: IColorGetter
+    fileprivate var dataSource: TableViewDataSource<(ColorInfoModel, ColorInfoModel?)>?
+    fileprivate var colors: [ColorInfoModel]?
+    fileprivate var isGradientCells = false
 
     init(image: UIImage, colorGetter: @autoclosure () -> IColorGetter) {
         self.image = image
         self.colorGetter = colorGetter()
-        let bundle = Bundle(for: type(of: self))
-        super.init(title: "Image colors", nibName: String(describing: ImageGetColorsViewController.self), bundle: bundle)
+        super.init(title: "Image colors", nibName: String(describing: ImageGetColorsViewController.self), bundle: Bundle(for: type(of: self)))
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -41,22 +41,6 @@ class ImageGetColorsViewController: AppRootViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button1 = UIBarButtonItem.init(title: "view", style: .done, target: self,
-                                           action: #selector(changeView))
-        self.navigationItem.rightBarButtonItems = [button1]
-        self.colorsTableView.backgroundColor = UIColor.clear
-        self.colorsTableView.register(ColorTableViewCell.self)
-        self.colorsTableView.separatorStyle = .none
-        self.colorsTableView.rowHeight = 100
-        self.colorsTableView.showsHorizontalScrollIndicator = false
-        self.colorsTableView.showsVerticalScrollIndicator = false
-        self.colorsTableView.delegate = self
-        self.loadingIndicator.startAnimating()
-    }
-
-    @objc func changeView() {
-        self.isGradientCells.toggle()
-        self.makeColors(isGradientCells: self.isGradientCells)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -69,6 +53,11 @@ class ImageGetColorsViewController: AppRootViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.colorGetter.cancel()
+    }
+
+    fileprivate func changeView() {
+        self.isGradientCells.toggle()
+        self.makeColors(isGradientCells: self.isGradientCells)
     }
 
     private func colorsComplete(_ colors: [ColorInfoModel]) {
@@ -100,13 +89,27 @@ class ImageGetColorsViewController: AppRootViewController {
         self.colorsTableView?.dataSource = dataSource
         self.colorsTableView?.reloadData()
     }
+    
+    override func buildUI() {
+        let button1 = UIBarButtonItem.init(title: "view", style: .done, target: self,
+                                           action: #selector(changeViewHandler))
+        self.navigationItem.rightBarButtonItems = [button1]
+        self.colorsTableView.backgroundColor = UIColor.clear
+        self.colorsTableView.register(ColorTableViewCell.self)
+        self.colorsTableView.separatorStyle = .none
+        self.colorsTableView.rowHeight = 100
+        self.colorsTableView.showsHorizontalScrollIndicator = false
+        self.colorsTableView.showsVerticalScrollIndicator = false
+        self.colorsTableView.delegate = self
+        self.loadingIndicator.startAnimating()
+    }
 }
 
-extension ImageGetColorsViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let color = self.dataSource?.models[indexPath.row].color {
-//            let schemeVC = ColorWheelViewController(color: color)
-//            self.add(schemeVC)
-//        }
-//    }
+fileprivate extension ImageGetColorsViewController {
+    @objc func changeViewHandler() {
+        self.changeView()
+    }
 }
+
+//MARK: - UITableViewDelegate
+extension ImageGetColorsViewController: UITableViewDelegate { }

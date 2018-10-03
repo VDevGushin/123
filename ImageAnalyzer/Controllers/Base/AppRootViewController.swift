@@ -10,7 +10,7 @@ import UIKit
 
 class AppRootViewController: UIViewController {
     let viewTitle: String
-    
+
     init(title: String, nibName: String, bundle: Bundle) {
         self.viewTitle = title
         super.init(nibName: nibName, bundle: bundle)
@@ -26,5 +26,8 @@ class AppRootViewController: UIViewController {
             navBar.layer.backgroundColor = UIColor.white.cgColor
             self.navigationItem.title = viewTitle
         }
+        self.buildUI()
     }
+    
+    func buildUI() {}
 }

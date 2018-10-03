@@ -120,6 +120,8 @@
 		3C82F47E2164ABDB0024B3E4 /* ButtonAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F47D2164ABDB0024B3E4 /* ButtonAnimationViewController.swift */; };
 		3C82F47F2164AD190024B3E4 /* SupportLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; };
 		3C82F4822164AD310024B3E4 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4812164AD310024B3E4 /* Animation.swift */; };
+		3C82F4852164B3330024B3E4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4842164B3330024B3E4 /* Request.swift */; };
+		3C82F4872164B3F50024B3E4 /* MethodsPerformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */; };
 		3C866AD9216334CB0044EB1C /* ReplicatorLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C866AD8216334CB0044EB1C /* ReplicatorLayer.swift */; };
 		3C866ADD216337920044EB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7621523AB8002A6600 /* Assets.xcassets */; };
 		3C866AE6216344850044EB1C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C866AE5216344850044EB1C /* Identifier.swift */; };
@@ -413,6 +415,8 @@
 		3C82F4792164AA120024B3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C82F47D2164ABDB0024B3E4 /* ButtonAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimationViewController.swift; sourceTree = "<group>"; };
 		3C82F4812164AD310024B3E4 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		3C82F4842164B3330024B3E4 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsPerformers.swift; sourceTree = "<group>"; };
 		3C866AD8216334CB0044EB1C /* ReplicatorLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicatorLayer.swift; sourceTree = "<group>"; };
 		3C866AE5216344850044EB1C /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPresenter.swift; sourceTree = "<group>"; };
@@ -918,6 +922,7 @@
 		3C41F90121611883002334DB /* SupportLib */ = {
 			isa = PBXGroup;
 			children = (
+				3C82F4832164B3250024B3E4 /* Network */,
 				3C82F4802164AD210024B3E4 /* Animation */,
 				3C866AE221633B130044EB1C /* Helpers */,
 				3C8E235721613FCB0010F7E6 /* Controls */,
@@ -1012,11 +1017,20 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
+		3C82F4832164B3250024B3E4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3C82F4842164B3330024B3E4 /* Request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		3C866AE221633B130044EB1C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				3C41F916216118F0002334DB /* Result.swift */,
 				3C866AE5216344850044EB1C /* Identifier.swift */,
+				3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1785,9 +1799,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C41F926216118F1002334DB /* UITableView+Extension.swift in Sources */,
+				3C82F4852164B3330024B3E4 /* Request.swift in Sources */,
 				3C82F4662164A98A0024B3E4 /* Date+Extension.swift in Sources */,
 				3C41F925216118F1002334DB /* UIColllectionView+Extension.swift in Sources */,
 				3C41F921216118F1002334DB /* Optional+Extension.swift in Sources */,
+				3C82F4872164B3F50024B3E4 /* MethodsPerformers.swift in Sources */,
 				3C82F4822164AD310024B3E4 /* Animation.swift in Sources */,
 				3C8E235B21613FF90010F7E6 /* ImageScrollView.swift in Sources */,
 				3C8E235D21614EA60010F7E6 /* UIImage+Extension.swift in Sources */,
