@@ -19,11 +19,6 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>MyWorkV2.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
-		</dict>
 		<key>SupportLib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
