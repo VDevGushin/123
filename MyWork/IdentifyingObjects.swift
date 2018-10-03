@@ -71,7 +71,6 @@ private class BookStore {
 
 // MARK: - Hashable for protocol types
 private class Renderer {
-
     func enqueue(_ circle: Circle) { }
 }
 

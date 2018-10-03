@@ -1,19 +1,17 @@
 //
 //  ViewController.swift
-//  MyWorkV2
+//  WorkWithUI
 //
-//  Created by Vladislav Gushin on 05/09/2018.
+//  Created by Vladislav Gushin on 03/10/2018.
 //  Copyright © 2018 Vladislav Gushin. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var ttt: UILabel!
-    let tcs = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "testID")
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let image = #imageLiteral(resourceName: "clors")
         
         let replicatorLayer = CAReplicatorLayer()
@@ -35,9 +33,9 @@ class ViewController: UIViewController {
         
         // Reduce the red & green color component of each instance,
         // effectively making each copy more and more blue
-//        let colorOffset = -1 / Float(replicatorLayer.instanceCount)
-//        replicatorLayer.instanceRedOffset = colorOffset
-//        replicatorLayer.instanceGreenOffset = colorOffset
+        //        let colorOffset = -1 / Float(replicatorLayer.instanceCount)
+        //        replicatorLayer.instanceRedOffset = colorOffset
+        //        replicatorLayer.instanceGreenOffset = colorOffset
         
         let verticalReplicatorLayer = CAReplicatorLayer()
         verticalReplicatorLayer.frame.size = view.frame.size
@@ -67,21 +65,6 @@ class ViewController: UIViewController {
         imageLayer.add(animation, forKey: "hypnoscale")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
 
 }
+

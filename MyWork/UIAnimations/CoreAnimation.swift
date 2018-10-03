@@ -7,3 +7,7 @@
 //
 
 import UIKit
+
+fileprivate class CoreAnimateionTest{
+    
+}

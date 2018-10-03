@@ -1,5 +1,5 @@
 //
-//  UIColor+Ex.swift
+//  UIColor+Extension.swift
 //  MyWork
 //
 //  Created by Vladislav Gushin on 24/07/2018.

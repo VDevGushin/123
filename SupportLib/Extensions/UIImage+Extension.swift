@@ -1,5 +1,5 @@
 //
-//  UIImage+Ex.swift
+//  UIImage+Extension.swift
 //  SupportLib
 //
 //  Created by Vladislav Gushin on 30/09/2018.
@@ -18,7 +18,6 @@ public extension UIImage {
         guard let result = UIGraphicsGetImageFromCurrentImageContext() else {
             fatalError("UIImageColors.resizeForUIImageColors failed: UIGraphicsGetImageFromCurrentImageContext returned nil.")
         }
-
         return result
     }
 
@@ -31,7 +30,6 @@ public extension UIImage {
             }
         }
     }
-
 
     public func getColors(quality: UIImageColorsQuality = .high) -> UIImageColors {
         var scaleDownSize: CGSize = self.size

@@ -1,5 +1,5 @@
 //
-//  UIWindow+Ex.swift
+//  UIWindow+Extension.swift
 //  SupportLib
 //
 //  Created by Vladislav Gushin on 30/09/2018.

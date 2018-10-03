@@ -1,5 +1,5 @@
 //
-//  Double+Ex.swift
+//  Double+Extension.swift
 //  SupportLib
 //
 //  Created by Vladislav Gushin on 30/09/2018.
@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 public extension Double {
     public func rounded(toPlaces places: Int) -> Double {
         let divisor = pow(10.0, Double(places))

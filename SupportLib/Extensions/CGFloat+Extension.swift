@@ -1,5 +1,5 @@
 //
-//  CGFloat+Ex.swift
+//  CGFloat+Extension.swift
 //  MyWork
 //
 //  Created by Vladislav Gushin on 26/07/2018.

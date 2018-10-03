@@ -1,5 +1,5 @@
 //
-//  UIView+Ex.swift
+//  UIView+Extension.swift
 //  MyWork
 //
 //  Created by Vladislav Gushin on 02/08/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     func loadFromNib(_ viewType: UIView.Type) -> UIView? {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: String(describing: viewType), bundle: bundle)

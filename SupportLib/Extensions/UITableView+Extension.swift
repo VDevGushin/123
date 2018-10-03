@@ -1,5 +1,5 @@
 //
-//  UITableView+Ex.swift
+//  UITableView+Extension.swift
 //  MyWork
 //
 //  Created by Vladislav Gushin on 26/07/2018.

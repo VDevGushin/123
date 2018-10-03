@@ -1,5 +1,5 @@
 //
-//  UIColllectionView+Ex.swift
+//  UIColllectionView+Extension.swift
 //  MyWork
 //
 //  Created by Vladislav Gushin on 28/09/2018.

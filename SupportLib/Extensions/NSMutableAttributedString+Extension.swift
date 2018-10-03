@@ -1,5 +1,5 @@
 //
-//  NSMutableAttributedString.swift
+//  NSMutableAttributedString+Extension.swift
 //  MyWork
 //
 //  Created by Vladislav Gushin on 27/07/2018.

@@ -1,5 +1,5 @@
 //
-//  Optional+Ex.swift
+//  Optional+Extension.swift
 //  MyWork
 //
 //  Created by Vladislav Gushin on 21/09/2018.
@@ -20,7 +20,6 @@ extension Optional {
         guard let value = self else {
             return nil
         }
-
         return try transform(value)
     }
 
@@ -28,7 +27,6 @@ extension Optional {
         guard let value = self else {
             throw errorClosure()
         }
-
         return value
     }
 }
