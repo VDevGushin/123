@@ -1,5 +1,5 @@
 //
-//  INavigator.swift
+//  ICooridnator.swift
 //  ImageAnalyzer
 //
 //  Created by Vladislav Gushin on 30/09/2018.
@@ -8,7 +8,9 @@
 
 import Foundation
 
-protocol INavigator: class {
+protocol ICoordinator: class {
     associatedtype Destination
+    associatedtype DataFor
     func navigate(to destinaton: Destination)
+    func send(messageFor: DataFor)
 }

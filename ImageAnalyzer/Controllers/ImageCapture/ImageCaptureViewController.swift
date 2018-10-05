@@ -11,7 +11,6 @@ import SupportLib
 
 final class ImageCaptureViewController: AppRootViewController {
     @IBOutlet weak var imageScrollView: ImageScrollView!
-    private let imageNavigator: ImageProcessNavigator
     private lazy var imagePicker = UIImagePickerController()
 
     private var selectedImage: UIImage? {
@@ -24,10 +23,9 @@ final class ImageCaptureViewController: AppRootViewController {
         }
     }
 
-    init(navigator: ImageProcessNavigator) {
-        self.imageNavigator = navigator
+    init(navigator: Coordinator) {
         let bundle = Bundle(for: type(of: self))
-        super.init(title: "Image", nibName: String(describing: ImageCaptureViewController.self), bundle: bundle)
+        super.init(navigator: navigator, title: "Image", nibName: String(describing: ImageCaptureViewController.self), bundle: bundle)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -65,9 +63,9 @@ final class ImageCaptureViewController: AppRootViewController {
         guard let image = self.selectedImage else { return }
         let actions = [
             ("Percentage",
-             { self.imageNavigator.navigate(to: .imageColors(selectedImage: image, imageGetter: ColorPercentageGetter())) }),
+             { self.navigator.navigate(to: .imageColors(selectedImage: image, imageGetter: ColorPercentageGetter())) }),
             ("Avatage color",
-             { self.imageNavigator.navigate(to: .imageColors(selectedImage: image, imageGetter: AvarageColorImageGetter())) }),
+             { self.navigator.navigate(to: .imageColors(selectedImage: image, imageGetter: AvarageColorImageGetter())) }),
         ]
         let selectPresenter = SelectionPresenter(senderView: self.view, actions: actions, message: "Please select an color getter", title: "Colors", style: .actionSheet)
         selectPresenter.present(in: self)

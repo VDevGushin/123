@@ -10,9 +10,10 @@ import UIKit
 
 class AppRootViewController: UIViewController {
     let viewTitle: String
-
-    init(title: String, nibName: String, bundle: Bundle) {
+    let navigator: Coordinator
+    init(navigator: Coordinator, title: String, nibName: String, bundle: Bundle) {
         self.viewTitle = title
+        self.navigator = navigator
         super.init(nibName: nibName, bundle: bundle)
     }
 
@@ -28,6 +29,10 @@ class AppRootViewController: UIViewController {
         }
         self.buildUI()
     }
-    
-    func buildUI() {}
+
+    func getMessage(message: Any) {
+        print("Get")
+    }
+
+    func buildUI() { }
 }

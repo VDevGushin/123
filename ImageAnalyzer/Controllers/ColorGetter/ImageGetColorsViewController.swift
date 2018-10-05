@@ -29,10 +29,10 @@ class ImageGetColorsViewController: AppRootViewController {
     fileprivate var colors: [ColorInfoModel]?
     fileprivate var isGradientCells = false
 
-    init(image: UIImage, colorGetter: @autoclosure () -> IColorGetter) {
+    init(navigator: Coordinator, image: UIImage, colorGetter: @autoclosure () -> IColorGetter) {
         self.image = image
         self.colorGetter = colorGetter()
-        super.init(title: "Image colors", nibName: String(describing: ImageGetColorsViewController.self), bundle: Bundle(for: type(of: self)))
+        super.init(navigator: navigator, title: "Image colors", nibName: String(describing: ImageGetColorsViewController.self), bundle: Bundle(for: type(of: self)))
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -89,7 +89,7 @@ class ImageGetColorsViewController: AppRootViewController {
         self.colorsTableView?.dataSource = dataSource
         self.colorsTableView?.reloadData()
     }
-    
+
     override func buildUI() {
         let button1 = UIBarButtonItem.init(title: "view", style: .done, target: self,
                                            action: #selector(changeViewHandler))
@@ -107,6 +107,7 @@ class ImageGetColorsViewController: AppRootViewController {
 
 fileprivate extension ImageGetColorsViewController {
     @objc func changeViewHandler() {
+        self.navigator.send(messageFor: .imageCaptureViewController(with: 1))
         self.changeView()
     }
 }

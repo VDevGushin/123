@@ -13,10 +13,28 @@ class ButtonAnimationViewController: UIViewController {
     @IBOutlet weak var sizeButton: UIButton!
     @IBOutlet weak var alphaButton: UIButton!
 
+    deinit {
+        print("test")
+    }
     @IBAction func startAnimation(_ sender: Any) {
-        let firstSize = self.sizeButton.bounds.size
-        self.sizeButton.animate([.resize(to: CGSize(width: 200, height: 200)), .resize(to: firstSize)])
-
+        UIView.animate(
+            sizeButton.animate(.fadeIn(), .move(byX: 0, y: 150), .fadeOut()),
+            alphaButton.animate(.fadeIn(), .fadeOut()),
+            sizeButton.animate(.fadeIn(), .move(byX: 0, y: -150), .fadeOut()),
+            alphaButton.animate(.fadeIn(), .move(byX: 150, y: 0), .fadeOut()),
+            sizeButton.animate(.fadeIn()),
+            alphaButton.animate(.fadeIn(), .move(byX: -150, y: 0))
+        )
+        //self.sizeButton.animate([.resize(to: CGSize(width: 200, height: 200)), .resize(to: firstSize)])
+//        animate([
+//            label.animate([
+//                .fadeIn(),
+//                .move(byX: 0, y: -50)
+//                ]),
+//            button.animate([
+//                .fadeIn()
+//                ])
+//            ])
 
 //        alphaButton.animate(inParallel: [
 //                .fadeIn(duration: 3),

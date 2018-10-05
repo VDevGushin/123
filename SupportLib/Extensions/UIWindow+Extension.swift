@@ -9,11 +9,18 @@
 import Foundation
 
 public extension UIWindow {
-    func makeFor(navigationController: @autoclosure () -> UINavigationController, childControllers: @autoclosure () -> [UIViewController]) {
+    func makeFor(navigationController: @autoclosure () -> UINavigationController, childControllers: @autoclosure () -> [UIViewController], completion: (() -> ())? = nil) {
         let nVC = navigationController()
         let cVC = childControllers()
         nVC.setViewControllers(cVC, animated: true)
         self.rootViewController = nVC
         self.makeKeyAndVisible()
+        completion?()
+    }
+
+    func makeFor(viewController: @autoclosure () -> UIViewController, completion: (() -> ())? = nil) {
+        self.rootViewController = viewController()
+        self.makeKeyAndVisible()
+        completion?()
     }
 }

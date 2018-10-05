@@ -14,10 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        let navVC = UINavigationController()
-        window?.makeFor(navigationController: navVC, childControllers: [ImageCaptureViewController(navigator: ImageProcessNavigator(navigationController: navVC))])
+        let navigationViewController = UINavigationController()
+        let navigator = Coordinator(navigationController: navigationViewController)
+        window?.makeFor(viewController: navigationViewController) {
+            navigator.navigate(to: .imageCaptureViewController)
+        }
         return true
     }
 
