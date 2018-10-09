@@ -39,7 +39,6 @@ final class Coordinator: ICoordinator {
         case .imageColorsScheme(colors: let colors):
             break
         }
-
         //FIXME: - temp
         return UIViewController(nibName: nil, bundle: nil)
     }

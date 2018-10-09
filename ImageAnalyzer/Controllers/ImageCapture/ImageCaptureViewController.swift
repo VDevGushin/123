@@ -10,8 +10,8 @@ import UIKit
 import SupportLib
 
 final class ImageCaptureViewController: AppRootViewController {
-    @IBOutlet weak var imageScrollView: ImageScrollView!
-    private lazy var imagePicker = UIImagePickerController()
+    @IBOutlet private weak var imageScrollView: ImageScrollView!
+    private var imagePicker: ImagePickerPresenter?
 
     private var selectedImage: UIImage? {
         didSet {
@@ -25,7 +25,7 @@ final class ImageCaptureViewController: AppRootViewController {
 
     init(navigator: Coordinator) {
         let bundle = Bundle(for: type(of: self))
-        super.init(navigator: navigator, title: "Image", nibName: String(describing: ImageCaptureViewController.self), bundle: bundle)
+        super.init(navigator: navigator, title: AppText.ImageCaptureViewController.title.text, nibName: String(describing: ImageCaptureViewController.self), bundle: bundle)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -34,29 +34,7 @@ final class ImageCaptureViewController: AppRootViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    //MARK: Functional
-    fileprivate func getImageFromLibrary() {
-        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            imagePicker.delegate = self
-            imagePicker.sourceType = .photoLibrary
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
-        }
-    }
-
-    fileprivate func getImageFromCamera() {
-        #if targetEnvironment(simulator)
-            self.getImageFromLibrary()
-        #else
-            if UIImagePickerController.isSourceTypeAvailable(.camera) {
-                imagePicker.delegate = self
-                imagePicker.sourceType = .camera
-                imagePicker.allowsEditing = false
-                self.present(imagePicker, animated: true, completion: nil)
-            }
-        #endif
+        self.imagePicker = .init(viewController: self, getImageHandler: get)
     }
 
     fileprivate func processImage() {
@@ -70,7 +48,7 @@ final class ImageCaptureViewController: AppRootViewController {
         let selectPresenter = SelectionPresenter(senderView: self.view, actions: actions, message: "Please select an color getter", title: "Colors", style: .actionSheet)
         selectPresenter.present(in: self)
     }
-    
+
     override func buildUI() {
         let button1 = UIBarButtonItem.init(title: "Library", style: .done, target: self,
                                            action: #selector(getImageFromLibraryHandler))
@@ -86,26 +64,18 @@ final class ImageCaptureViewController: AppRootViewController {
 //MARK: - Build ui
 fileprivate extension ImageCaptureViewController {
     @objc func getImageFromLibraryHandler() {
-        self.getImageFromLibrary()
+        self.imagePicker?.getImageFromLibrary()
     }
 
     @objc func getImageFromCameraHandler() {
-        self.getImageFromCamera()
+        self.imagePicker?.getImageFromCamera()
     }
 
     @objc func processImageHandler() {
         self.processImage()
     }
-}
 
-//MARK: - UIImagePickerController delegate
-extension ImageCaptureViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
-    }
-
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-        picker.dismiss(animated: true, completion: nil)
-        self.selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+    private func get(selected image: UIImage?) {
+        self.selectedImage = image
     }
 }

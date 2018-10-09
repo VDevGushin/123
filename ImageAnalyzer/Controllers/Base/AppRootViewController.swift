@@ -11,7 +11,12 @@ import UIKit
 class AppRootViewController: UIViewController {
     let viewTitle: String
     let navigator: Coordinator
-    init(navigator: Coordinator, title: String, nibName: String, bundle: Bundle) {
+
+    init(navigator: Coordinator,
+         title: String,
+         nibName: String,
+         bundle: Bundle) {
+
         self.viewTitle = title
         self.navigator = navigator
         super.init(nibName: nibName, bundle: bundle)

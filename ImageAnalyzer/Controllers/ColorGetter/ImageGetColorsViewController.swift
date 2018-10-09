@@ -20,8 +20,8 @@ public extension TableViewDataSource where Model == (ColorInfoModel, ColorInfoMo
 }
 
 class ImageGetColorsViewController: AppRootViewController {
-    @IBOutlet weak var colorsTableView: UITableView!
-    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet private weak var colorsTableView: UITableView!
+    @IBOutlet private weak var loadingIndicator: UIActivityIndicatorView!
 
     fileprivate let image: UIImage
     fileprivate let colorGetter: IColorGetter
@@ -32,7 +32,7 @@ class ImageGetColorsViewController: AppRootViewController {
     init(navigator: Coordinator, image: UIImage, colorGetter: @autoclosure () -> IColorGetter) {
         self.image = image
         self.colorGetter = colorGetter()
-        super.init(navigator: navigator, title: "Image colors", nibName: String(describing: ImageGetColorsViewController.self), bundle: Bundle(for: type(of: self)))
+        super.init(navigator: navigator, title: AppText.ImageGetColorsViewController.title.text, nibName: String(describing: ImageGetColorsViewController.self), bundle: Bundle(for: type(of: self)))
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -69,30 +69,34 @@ class ImageGetColorsViewController: AppRootViewController {
 
     private func makeColors(isGradientCells: Bool) {
         guard let colors = self.colors else { return }
-        var source = [(ColorInfoModel, ColorInfoModel?)]()
-        if isGradientCells {
-            for i in 0..<colors.count {
-                let color1 = colors[i]
-                var color2: ColorInfoModel? = nil
-                if i < colors.count - 1 {
-                    color2 = colors[i + 1]
+        DispatchQueue.global(qos: .userInitiated).async {
+            var source = [(ColorInfoModel, ColorInfoModel?)]()
+            if isGradientCells {
+                for i in 0..<colors.count {
+                    let color1 = colors[i]
+                    var color2: ColorInfoModel? = nil
+                    if i < colors.count - 1 {
+                        color2 = colors[i + 1]
+                    }
+                    source.append((color1, color2))
                 }
-                source.append((color1, color2))
+            } else {
+                for i in 0..<colors.count {
+                    let color1 = colors[i]
+                    source.append((color1, nil))
+                }
             }
-        } else {
-            for i in 0..<colors.count {
-                let color1 = colors[i]
-                source.append((color1, nil))
+
+            DispatchQueue.main.async {
+                self.dataSource = .make(for: source)
+                self.colorsTableView?.dataSource = self.dataSource
+                self.colorsTableView?.reloadData()
             }
         }
-        self.dataSource = .make(for: source)
-        self.colorsTableView?.dataSource = dataSource
-        self.colorsTableView?.reloadData()
     }
 
     override func buildUI() {
-        let button1 = UIBarButtonItem.init(title: "view", style: .done, target: self,
-                                           action: #selector(changeViewHandler))
+        let button1 = UIBarButtonItem.init(title: "view", style: .done, target: self, action: #selector(changeViewHandler))
         self.navigationItem.rightBarButtonItems = [button1]
         self.colorsTableView.backgroundColor = UIColor.clear
         self.colorsTableView.register(ColorTableViewCell.self)

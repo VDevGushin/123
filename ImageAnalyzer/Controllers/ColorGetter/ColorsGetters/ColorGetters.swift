@@ -29,7 +29,7 @@ final class ColorPercentageGetter: IColorGetter {
 
     func process(_ image: UIImage, completion: @escaping ([ColorInfoModel]) -> Void) {
         isInWork = true
-        DispatchQueue.global(qos: .utility).async { [weak self] in
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let wSelf = self else { return }
             if !wSelf.isInWork { return }
             let colors = NSDictionary.mainColors(in: image, detail: Int32(wSelf.detail.rawValue))
@@ -59,7 +59,7 @@ final class ChameleonImageGetter: IColorGetter {
 
     func process(_ image: UIImage, completion: @escaping ([ColorInfoModel]) -> Void) {
         isInWork = true
-        DispatchQueue.global(qos: .utility).async { [weak self] in
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let wSelf = self else { return }
             if !wSelf.isInWork { return }
             let colors = ColorsFromImage(image, withFlatScheme: true)
@@ -84,7 +84,7 @@ final class AvarageColorImageGetter: IColorGetter {
 
     func process(_ image: UIImage, completion: @escaping ([ColorInfoModel]) -> Void) {
         isInWork = true
-        DispatchQueue.global(qos: .utility).async { [weak self] in
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let wSelf = self else { return }
             if !wSelf.isInWork { return }
             let color = AverageColorFromImage(image)
@@ -118,7 +118,7 @@ final class AverageColorSupportPercentageGetter: IColorGetter {
 
     func process(_ image: UIImage, completion: @escaping ([ColorInfoModel]) -> Void) {
         isInWork = true
-        DispatchQueue.global(qos: .utility).async { [weak self] in
+        DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let wSelf = self else { return }
             if !wSelf.isInWork { return }
             var source = [ColorInfoModel]()
