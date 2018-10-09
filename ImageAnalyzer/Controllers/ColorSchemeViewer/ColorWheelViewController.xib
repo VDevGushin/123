@@ -21,14 +21,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNc-Nc-MjG" customClass="ColorsWheel" customModule="ImageAnalyzer" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <rect key="frame" x="0.0" y="40" width="375" height="375"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iNc-Nc-MjG" secondAttribute="height" multiplier="1:1" id="cDB-ao-Js3"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="iNc-Nc-MjG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="TcW-zr-TcL"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="iNc-Nc-MjG" secondAttribute="bottom" id="iJ0-D4-OHJ"/>
                 <constraint firstItem="iNc-Nc-MjG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iuJ-fF-rBg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iNc-Nc-MjG" secondAttribute="trailing" id="tdH-O4-tav"/>
             </constraints>
