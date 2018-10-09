@@ -110,8 +110,7 @@ class ImageGetColorsViewController: AppRootViewController {
 }
 
 fileprivate extension ImageGetColorsViewController {
-    @objc func changeViewHandler() {
-        self.navigator.send(messageFor: .imageCaptureViewController(with: 1))
+    @objc private func changeViewHandler() {
         self.changeView()
     }
 }

@@ -43,16 +43,16 @@ final class Coordinator: ICoordinator {
         return UIViewController(nibName: nil, bundle: nil)
     }
 
-    func send(messageFor: DataFor) {
-        guard let controllers = self.navigationController?.viewControllers else { return }
-        for receiver in controllers {
-            guard let receiver = receiver as? AppRootViewController else { return }
-            switch messageFor {
-            case .imageCaptureViewController(let data) where receiver is ImageCaptureViewController:
-                receiver.getMessage(message: data)
-            default:
-                break
-            }
-        }
-    }
+//    func send(messageFor: DataFor) {
+//        guard let controllers = self.navigationController?.viewControllers else { return }
+//        for receiver in controllers {
+//            guard let receiver = receiver as? AppRootViewController else { return }
+//            switch messageFor {
+//            case .imageCaptureViewController(let data) where receiver is ImageCaptureViewController:
+//                receiver.getMessage(message: data)
+//            default:
+//                break
+//            }
+//        }
+//    }
 }

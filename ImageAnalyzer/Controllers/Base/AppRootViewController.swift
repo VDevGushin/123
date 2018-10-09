@@ -35,9 +35,5 @@ class AppRootViewController: UIViewController {
         self.buildUI()
     }
 
-    func getMessage(message: Any) {
-        print("Get")
-    }
-
     func buildUI() { }
 }

@@ -24,11 +24,6 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
-		<key>TestUI.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
-		</dict>
 		<key>UIPart.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,6 +33,24 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3C41F8622160D72C002334DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C41F8752160D732002334DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C41F8802160D732002334DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

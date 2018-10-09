@@ -59,6 +59,13 @@ final class ImageCaptureViewController: AppRootViewController {
                                            action: #selector(processImageHandler))
         self.navigationItem.rightBarButtonItems = [button3]
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: nil, completion: { [weak self] _ in
+            self?.imageScrollView.refresh()
+        })
+    }
 }
 
 //MARK: - Build ui

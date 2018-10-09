@@ -12,5 +12,5 @@ protocol ICoordinator: class {
     associatedtype Destination
     associatedtype DataFor
     func navigate(to destinaton: Destination)
-    func send(messageFor: DataFor)
+//    func send(messageFor: DataFor)
 }

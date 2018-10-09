@@ -10,8 +10,8 @@ import UIKit
 import SupportLib
 
 public class ColorTableViewCell: UITableViewCell {
-    @IBOutlet weak var gradientView: GradientView!
-    @IBOutlet weak var colorLabel: UILabel!
+    @IBOutlet private weak var gradientView: GradientView!
+    @IBOutlet private weak var colorLabel: UILabel!
 
     override public func awakeFromNib() {
         super.awakeFromNib()
