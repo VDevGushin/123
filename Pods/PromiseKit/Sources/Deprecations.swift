@@ -8,7 +8,7 @@ public func wrap<T>(_ body: (@escaping (T?, Error?) -> Void) throws -> Void) -> 
 }
 
 @available(*, deprecated, message: "See `init(resolver:)`")
-public func wrap<T>(_ body: (@escaping (T, Error?) -> Void) throws -> Void) -> Promise<T> {
+public func wrap<T>(_ body: (@escaping (T, Error?) -> Void) throws -> Void) -> Promise<T>  {
     return Promise { seal in
         try body(seal.resolve)
     }

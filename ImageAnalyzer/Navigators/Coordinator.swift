@@ -12,7 +12,7 @@ final class Coordinator: ICoordinator {
     enum Destination {
         case imageCaptureViewController
         case imageColors(selectedImage: UIImage, imageGetter: IColorGetter)
-        case imageColorsScheme(colors: [UIColor])
+        case imageColorsScheme(colors: UIColor)
     }
 
     enum DataFor {
@@ -37,22 +37,7 @@ final class Coordinator: ICoordinator {
         case .imageColors(selectedImage: let image, imageGetter: let getter):
             return ImageGetColorsViewController(navigator: self, image: image, colorGetter: getter)
         case .imageColorsScheme(colors: let colors):
-            break
+            return ColorWheelViewController(navigator: self, color: colors)
         }
-        //FIXME: - temp
-        return UIViewController(nibName: nil, bundle: nil)
     }
-
-//    func send(messageFor: DataFor) {
-//        guard let controllers = self.navigationController?.viewControllers else { return }
-//        for receiver in controllers {
-//            guard let receiver = receiver as? AppRootViewController else { return }
-//            switch messageFor {
-//            case .imageCaptureViewController(let data) where receiver is ImageCaptureViewController:
-//                receiver.getMessage(message: data)
-//            default:
-//                break
-//            }
-//        }
-//    }
 }

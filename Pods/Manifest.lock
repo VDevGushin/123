@@ -1,15 +1,15 @@
 PODS:
-  - Charts (3.2.0):
-    - Charts/Core (= 3.2.0)
-  - Charts/Core (3.2.0)
-  - PromiseKit (6.4.0):
-    - PromiseKit/CorePromise (= 6.4.0)
-    - PromiseKit/Foundation (= 6.4.0)
-    - PromiseKit/UIKit (= 6.4.0)
-  - PromiseKit/CorePromise (6.4.0)
-  - PromiseKit/Foundation (6.4.0):
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - PromiseKit (6.5.1):
+    - PromiseKit/CorePromise (= 6.5.1)
+    - PromiseKit/Foundation (= 6.5.1)
+    - PromiseKit/UIKit (= 6.5.1)
+  - PromiseKit/CorePromise (6.5.1)
+  - PromiseKit/Foundation (6.5.1):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.4.0):
+  - PromiseKit/UIKit (6.5.1):
     - PromiseKit/CorePromise
   - SwiftLint (0.27.0)
   - Unbox (3.0.0)
@@ -28,8 +28,8 @@ SPEC REPOS:
     - Unbox
 
 SPEC CHECKSUMS:
-  Charts: 680c8328bd5e90cb14f67e00d2176f3113d19141
-  PromiseKit: ae3616f45d7bb9bf4ff1e91abc9b7a8c48a340e0
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  PromiseKit: 162f56c89aae9989ffc14476a5f821af17c3f4ba
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 

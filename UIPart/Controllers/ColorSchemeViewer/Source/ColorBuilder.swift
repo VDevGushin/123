@@ -20,7 +20,7 @@ public extension Color {
     typealias TransformBlock = (CGFloat) -> CGFloat
     
     // MARK: - Enums
-    enum ColorScheme:Int {
+    public enum ColorScheme:Int {
         case analagous = 0, monochromatic, triad, complementary
     }
     

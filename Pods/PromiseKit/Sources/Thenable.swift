@@ -287,7 +287,7 @@ public extension Thenable where T: Sequence {
          }
      */
     func mapValues<U>(on: DispatchQueue? = conf.Q.map, flags: DispatchWorkItemFlags? = nil, _ transform: @escaping(T.Iterator.Element) throws -> U) -> Promise<[U]> {
-        return map(on: on, flags: flags) { try $0.map(transform) }
+        return map(on: on, flags: flags){ try $0.map(transform) }
     }
 
     /**
@@ -302,8 +302,8 @@ public extension Thenable where T: Sequence {
          }
      */
     func flatMapValues<U: Sequence>(on: DispatchQueue? = conf.Q.map, flags: DispatchWorkItemFlags? = nil, _ transform: @escaping(T.Iterator.Element) throws -> U) -> Promise<[U.Iterator.Element]> {
-        return map(on: on, flags: flags) { (foo: T) in
-            try foo.flatMap { try transform($0) }
+        return map(on: on, flags: flags){ (foo: T) in
+            try foo.flatMap{ try transform($0) }
         }
     }
 
@@ -360,7 +360,7 @@ public extension Thenable where T: Sequence {
         return then(on: on, flags: flags) {
             when(fulfilled: try $0.map(transform))
         }.map(on: nil) {
-            $0.flatMap { $0 }
+            $0.flatMap{ $0 }
         }
     }
 
@@ -419,6 +419,6 @@ public extension Thenable where T: Collection {
 public extension Thenable where T: Sequence, T.Iterator.Element: Comparable {
     /// - Returns: a promise fulfilled with the sorted values of this `Sequence`.
     func sortedValues(on: DispatchQueue? = conf.Q.map, flags: DispatchWorkItemFlags? = nil) -> Promise<[T.Iterator.Element]> {
-        return map(on: on, flags: flags) { $0.sorted() }
+        return map(on: on, flags: flags){ $0.sorted() }
     }
 }

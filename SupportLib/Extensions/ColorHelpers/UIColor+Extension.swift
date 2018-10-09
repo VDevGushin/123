@@ -8,6 +8,28 @@
 
 import UIKit
 
+public extension UIColor{
+    func lighter(by percentage: CGFloat = 30.0) -> UIColor? {
+        return self.adjust(by: abs(percentage))
+    }
+    
+    func darker(by percentage: CGFloat = 30.0) -> UIColor? {
+        return self.adjust(by: -1 * abs(percentage))
+    }
+    
+    func adjust(by percentage: CGFloat = 30.0) -> UIColor? {
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        if self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
+            return UIColor(red: min(red + percentage / 100, 1.0),
+                           green: min(green + percentage / 100, 1.0),
+                           blue: min(blue + percentage / 100, 1.0),
+                           alpha: alpha)
+        } else {
+            return nil
+        }
+    }
+}
+
 public struct UIImageColors {
     public var background: UIColor!
     public var primary: UIColor!
@@ -39,10 +61,10 @@ public struct UIImageColorsCounter {
 }
 
 public extension UIColor {
-    convenience init(hex: String) {
-        let color = hex.fromHex()
-        self.init(cgColor: color.cgColor)
-    }
+//    convenience init(hex: String) {
+//        let color = hex.fromHex()
+//        self.init(cgColor: color.cgColor)
+//    }
 
     convenience init(_ colorType: ColorType) {
         self.init(hex: colorType.rawValue)

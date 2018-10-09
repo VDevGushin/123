@@ -116,4 +116,9 @@ fileprivate extension ImageGetColorsViewController {
 }
 
 //MARK: - UITableViewDelegate
-extension ImageGetColorsViewController: UITableViewDelegate { }
+extension ImageGetColorsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let color = self.dataSource?.models[indexPath.row].0.color else { return }
+        self.navigator.navigate(to: .imageColorsScheme(colors: color))
+    }
+}

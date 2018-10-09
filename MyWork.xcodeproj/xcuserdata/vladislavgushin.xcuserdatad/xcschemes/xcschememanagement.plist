@@ -12,7 +12,7 @@
 		<key>ImageAnalyzer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
 		</dict>
 		<key>MyWork.xcscheme</key>
 		<dict>
@@ -22,12 +22,12 @@
 		<key>SupportLib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>6</integer>
 		</dict>
 		<key>UIPart.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>7</integer>
 		</dict>
 		<key>WorkWithUI.xcscheme</key>
 		<dict>

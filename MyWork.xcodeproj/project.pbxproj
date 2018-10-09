@@ -136,6 +136,15 @@
 		3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C934C91210EF50F00E35A4D /* SecondViewController.swift */; };
 		3C95D1A5215CA69E00B8E7BD /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95D1A4215CA69E00B8E7BD /* Navigation.swift */; };
 		3C95D1A9215CAABE00B8E7BD /* SelectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95D1A8215CAABE00B8E7BD /* SelectPresenter.swift */; };
+		3C9709D4216CCA9A00394013 /* ColorWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9709D2216CCA9A00394013 /* ColorWheelViewController.swift */; };
+		3C9709D5216CCA9A00394013 /* ColorWheelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C9709D3216CCA9A00394013 /* ColorWheelViewController.xib */; };
+		3C9709DE216CCB7B00394013 /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9709D8216CCB7B00394013 /* SelectedColorView.swift */; };
+		3C9709DF216CCB7B00394013 /* SwiftHSVColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9709D9216CCB7B00394013 /* SwiftHSVColorPicker.swift */; };
+		3C9709E0216CCB7B00394013 /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9709DA216CCB7B00394013 /* BrightnessView.swift */; };
+		3C9709E1216CCB7B00394013 /* ColorsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9709DB216CCB7B00394013 /* ColorsWheel.swift */; };
+		3C9709E3216CCB7B00394013 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9709DD216CCB7B00394013 /* ColorWheel.swift */; };
+		3C9709E5216CCC8800394013 /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9709E4216CCC8800394013 /* ColorBuilder.swift */; };
+		3C9709E8216CCD0900394013 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9709E7216CCD0900394013 /* ColorUtils.swift */; };
 		3C98806B215B7FF700994BA8 /* UIViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */; };
 		3C98806F215B806700994BA8 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98806E215B806700994BA8 /* ColorView.swift */; };
 		3C988071215B807100994BA8 /* ColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C988070215B807100994BA8 /* ColorView.xib */; };
@@ -431,6 +440,15 @@
 		3C934C91210EF50F00E35A4D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3C95D1A4215CA69E00B8E7BD /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		3C95D1A8215CAABE00B8E7BD /* SelectPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPresenter.swift; sourceTree = "<group>"; };
+		3C9709D2216CCA9A00394013 /* ColorWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelViewController.swift; sourceTree = "<group>"; };
+		3C9709D3216CCA9A00394013 /* ColorWheelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorWheelViewController.xib; sourceTree = "<group>"; };
+		3C9709D8216CCB7B00394013 /* SelectedColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedColorView.swift; sourceTree = "<group>"; };
+		3C9709D9216CCB7B00394013 /* SwiftHSVColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftHSVColorPicker.swift; sourceTree = "<group>"; };
+		3C9709DA216CCB7B00394013 /* BrightnessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessView.swift; sourceTree = "<group>"; };
+		3C9709DB216CCB7B00394013 /* ColorsWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsWheel.swift; sourceTree = "<group>"; };
+		3C9709DD216CCB7B00394013 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
+		3C9709E4216CCC8800394013 /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
+		3C9709E7216CCD0900394013 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ex.swift"; sourceTree = "<group>"; };
 		3C98806E215B806700994BA8 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		3C988070215B807100994BA8 /* ColorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorView.xib; sourceTree = "<group>"; };
@@ -772,6 +790,7 @@
 		3C41F8642160D72C002334DB /* ImageAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				3C9709D6216CCB4400394013 /* Controls */,
 				3C3D0E3F216C8647006B7907 /* Source */,
 				3C41F8922160D790002334DB /* Navigators */,
 				3C41F8912160D750002334DB /* Controllers */,
@@ -854,6 +873,8 @@
 		3C41F8A62160E1FC002334DB /* ColorSchemeViewer */ = {
 			isa = PBXGroup;
 			children = (
+				3C9709D2216CCA9A00394013 /* ColorWheelViewController.swift */,
+				3C9709D3216CCA9A00394013 /* ColorWheelViewController.xib */,
 			);
 			path = ColorSchemeViewer;
 			sourceTree = "<group>";
@@ -949,13 +970,13 @@
 		3C41F90D2161189B002334DB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3C9709E6216CCCF000394013 /* ColorHelpers */,
 				3C41F91B216118F1002334DB /* CGFloat+Extension.swift */,
 				3C41F914216118F0002334DB /* Dictionary+Extension.swift */,
 				3C41F918216118F0002334DB /* NSMutableAttributedString+Extension.swift */,
 				3C41F915216118F0002334DB /* Optional+Extension.swift */,
 				3C41F911216118F0002334DB /* String+Extension.swift */,
 				3C41F919216118F1002334DB /* UIColllectionView+Extension.swift */,
-				3C41F912216118F0002334DB /* UIColor+Extension.swift */,
 				3C41F91A216118F1002334DB /* UITableView+Extension.swift */,
 				3C41F917216118F0002334DB /* UIView+Extension.swift */,
 				3C41F913216118F0002334DB /* UIViewController+Extension.swift */,
@@ -1087,6 +1108,36 @@
 				3C95D1A8215CAABE00B8E7BD /* SelectPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3C9709D6216CCB4400394013 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				3C9709D7216CCB5600394013 /* ColorWheel */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		3C9709D7216CCB5600394013 /* ColorWheel */ = {
+			isa = PBXGroup;
+			children = (
+				3C9709DA216CCB7B00394013 /* BrightnessView.swift */,
+				3C9709DB216CCB7B00394013 /* ColorsWheel.swift */,
+				3C9709DD216CCB7B00394013 /* ColorWheel.swift */,
+				3C9709D8216CCB7B00394013 /* SelectedColorView.swift */,
+				3C9709D9216CCB7B00394013 /* SwiftHSVColorPicker.swift */,
+			);
+			path = ColorWheel;
+			sourceTree = "<group>";
+		};
+		3C9709E6216CCCF000394013 /* ColorHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				3C41F912216118F0002334DB /* UIColor+Extension.swift */,
+				3C9709E4216CCC8800394013 /* ColorBuilder.swift */,
+				3C9709E7216CCD0900394013 /* ColorUtils.swift */,
+			);
+			path = ColorHelpers;
 			sourceTree = "<group>";
 		};
 		3C988069215B7FEA00994BA8 /* Extensions */ = {
@@ -1625,6 +1676,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9709D5216CCA9A00394013 /* ColorWheelViewController.xib in Resources */,
 				3C41F8702160D732002334DB /* LaunchScreen.storyboard in Resources */,
 				3C41F89E2160DC42002334DB /* ImageCaptureViewController.xib in Resources */,
 				3C41F8B021611443002334DB /* ImageGetColorsViewController.xib in Resources */,
@@ -1757,19 +1809,24 @@
 				3C41F8E5216114CD002334DB /* IColorGetter.swift in Sources */,
 				3C41F8DD216114CD002334DB /* Chameleon_.m in Sources */,
 				3C41F8DB216114CD002334DB /* UIButton+Chameleon.m in Sources */,
+				3C9709DE216CCB7B00394013 /* SelectedColorView.swift in Sources */,
 				3C41F8DF216114CD002334DB /* UINavigationController+Chameleon.m in Sources */,
 				3C41F8D5216114CD002334DB /* ColorGetters.swift in Sources */,
 				3C41F8D8216114CD002334DB /* NSDictionary+Chameleon.m in Sources */,
+				3C9709DF216CCB7B00394013 /* SwiftHSVColorPicker.swift in Sources */,
 				3C41F8E2216114CD002334DB /* UIAppearance+Swift.m in Sources */,
 				3C3D0E41216C8654006B7907 /* Strings.swift in Sources */,
 				3C41F89D2160DC42002334DB /* ImageCaptureViewController.swift in Sources */,
+				3C9709E1216CCB7B00394013 /* ColorsWheel.swift in Sources */,
 				3C41F8EA216115AE002334DB /* ColorInfoModel.swift in Sources */,
 				3C41F8DE216114CD002334DB /* NSArray+Chameleon.m in Sources */,
 				3C41F8F72161171B002334DB /* ColorTableViewCell.swift in Sources */,
+				3C9709D4216CCA9A00394013 /* ColorWheelViewController.swift in Sources */,
 				3C41F8E3216114CD002334DB /* UIImage+ChameleonPrivate.m in Sources */,
 				3C41F8D6216114CD002334DB /* UIColor+ChameleonPrivate.m in Sources */,
 				3C41F8D9216114CD002334DB /* ChameleonConstants.m in Sources */,
 				3C41F8DC216114CD002334DB /* UIView+ChameleonPrivate.m in Sources */,
+				3C9709E0216CCB7B00394013 /* BrightnessView.swift in Sources */,
 				3C41F8D7216114CD002334DB /* ChameleonShorthand.swift in Sources */,
 				3C41F8E0216114CD002334DB /* UILabel+Chameleon.m in Sources */,
 				3C41F8DA216114CD002334DB /* UIColor+Chameleon.m in Sources */,
@@ -1779,6 +1836,7 @@
 				3C41F8662160D72C002334DB /* AppDelegate.swift in Sources */,
 				3C41F8AF21611443002334DB /* ImageGetColorsViewController.swift in Sources */,
 				3C41F8962160D7DB002334DB /* ICooridnator.swift in Sources */,
+				3C9709E3216CCB7B00394013 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1809,6 +1867,7 @@
 				3C41F921216118F1002334DB /* Optional+Extension.swift in Sources */,
 				3C82F4872164B3F50024B3E4 /* MethodsPerformers.swift in Sources */,
 				3C82F4822164AD310024B3E4 /* Animation.swift in Sources */,
+				3C9709E5216CCC8800394013 /* ColorBuilder.swift in Sources */,
 				3C8E235B21613FF90010F7E6 /* ImageScrollView.swift in Sources */,
 				3C8E235D21614EA60010F7E6 /* UIImage+Extension.swift in Sources */,
 				3C41F91E216118F1002334DB /* UIColor+Extension.swift in Sources */,
@@ -1816,6 +1875,7 @@
 				3C41F920216118F1002334DB /* Dictionary+Extension.swift in Sources */,
 				3C41F923216118F1002334DB /* UIView+Extension.swift in Sources */,
 				3C41F92E216119EC002334DB /* Double+Extension.swift in Sources */,
+				3C9709E8216CCD0900394013 /* ColorUtils.swift in Sources */,
 				3C41F91F216118F1002334DB /* UIViewController+Extension.swift in Sources */,
 				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,
 				3C41F922216118F1002334DB /* Result.swift in Sources */,

@@ -48,7 +48,7 @@ class EmptyBox<T>: Box<T> {
         //THOUGH since `then` etc. typically invoke after a run-loop cycle, this issue is somewhat less severe
 
         if let handlers = handlers {
-            handlers.bodies.forEach { $0(value) }
+            handlers.bodies.forEach{ $0(value) }
         }
 
         //TODO solution is an unfortunate third state “sealed” where then's get added
@@ -82,6 +82,7 @@ class EmptyBox<T>: Box<T> {
         }
     }
 }
+
 
 extension Optional where Wrapped: DispatchQueue {
     @inline(__always)

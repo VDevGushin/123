@@ -12,57 +12,64 @@
 import Foundation
 import CoreGraphics
 
-open class BubbleChartDataEntry: ChartDataEntry {
+open class BubbleChartDataEntry: ChartDataEntry
+{
     /// The size of the bubble.
     @objc open var size = CGFloat(0.0)
-
-    public required init() {
+    
+    public required init()
+    {
         super.init()
     }
-
+    
     /// - parameter x: The index on the x-axis.
     /// - parameter y: The value on the y-axis.
     /// - parameter size: The size of the bubble.
-    @objc public init(x: Double, y: Double, size: CGFloat) {
+    @objc public init(x: Double, y: Double, size: CGFloat)
+    {
         super.init(x: x, y: y)
-
+        
         self.size = size
     }
-
+    
     /// - parameter x: The index on the x-axis.
     /// - parameter y: The value on the y-axis.
     /// - parameter size: The size of the bubble.
     /// - parameter data: Spot for additional data this Entry represents.
-    @objc public init(x: Double, y: Double, size: CGFloat, data: AnyObject?) {
+    @objc public init(x: Double, y: Double, size: CGFloat, data: AnyObject?)
+    {
         super.init(x: x, y: y, data: data)
-
+        
         self.size = size
     }
-
+    
     /// - parameter x: The index on the x-axis.
     /// - parameter y: The value on the y-axis.
     /// - parameter size: The size of the bubble.
     /// - parameter icon: icon image
-    @objc public init(x: Double, y: Double, size: CGFloat, icon: NSUIImage?) {
+    @objc public init(x: Double, y: Double, size: CGFloat, icon: NSUIImage?)
+    {
         super.init(x: x, y: y, icon: icon)
-
+        
         self.size = size
     }
-
+    
     /// - parameter x: The index on the x-axis.
     /// - parameter y: The value on the y-axis.
     /// - parameter size: The size of the bubble.
     /// - parameter icon: icon image
     /// - parameter data: Spot for additional data this Entry represents.
-    @objc public init(x: Double, y: Double, size: CGFloat, icon: NSUIImage?, data: AnyObject?) {
+    @objc public init(x: Double, y: Double, size: CGFloat, icon: NSUIImage?, data: AnyObject?)
+    {
         super.init(x: x, y: y, icon: icon, data: data)
-
+        
         self.size = size
     }
-
+    
     // MARK: NSCopying
-
-    open override func copyWithZone(_ zone: NSZone?) -> AnyObject {
+    
+    open override func copyWithZone(_ zone: NSZone?) -> AnyObject
+    {
         let copy = super.copyWithZone(zone) as! BubbleChartDataEntry
         copy.size = size
         return copy

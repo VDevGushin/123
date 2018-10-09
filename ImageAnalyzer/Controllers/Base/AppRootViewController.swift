@@ -21,19 +21,16 @@ class AppRootViewController: UIViewController {
         self.navigator = navigator
         super.init(nibName: nibName, bundle: bundle)
     }
-
+    
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let navBar = self.navigationController?.navigationBar {
-            navBar.layer.backgroundColor = UIColor.white.cgColor
-            self.navigationItem.title = viewTitle
-        }
         self.buildUI()
     }
 
-    func buildUI() { }
+    func buildUI() { fatalError("Not implemented method") }
 }

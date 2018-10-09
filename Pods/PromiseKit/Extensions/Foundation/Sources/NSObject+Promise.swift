@@ -41,7 +41,7 @@ private class KVOProxy: NSObject {
         retainCycle = self
     }
 
-    fileprivate override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+    fileprivate override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if let change = change, context == pointer {
             defer { retainCycle = nil }
             fulfill(change[NSKeyValueChangeKey.newKey])
