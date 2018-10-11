@@ -12,5 +12,4 @@ struct Indicator {
     var layer: CAShapeLayer
     var rect: CGRect
     var color: UIColor
-    var isMainColor: Bool
 }

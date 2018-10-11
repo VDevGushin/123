@@ -16,33 +16,32 @@ fileprivate extension Array where Element == Indicator {
         }
         self.removeAll()
     }
+
+    mutating func removeFromView(ignore index: Int) {
+        var indexes = [Int]()
+        for i in 0..<self.count {
+            if i != index {
+                indexes.append(i)
+            }
+        }
+
+        for index in indexes.sorted(by: >) {
+            self[index].layer.removeFromSuperlayer()
+            remove(at: index)
+        }
+    }
 }
 
 protocol ColorsWheelDelegate: class {
     func selection(color: UIColor)
 }
 
-fileprivate struct ColorsWheelConfiguration {
-    typealias IndicatorLayers = [Indicator]
-    let indicatorCircleRadius: CGFloat = 8.0
-    let selectedIndicatorCircleRadius: CGFloat = 18.0
-    let indicatorColor: CGColor = UIColor.lightGray.cgColor
-    let indicatorBorderWidth: CGFloat = 2.0
-    let scale: CGFloat = UIScreen.main.scale
-    var brightness: CGFloat = 1.0
-    var indicators: IndicatorLayers = []
-    var colors: [UIColor] = []
-    var colorScheme: UIColor.ColorScheme = .triad
-}
-
 class ColorsWheel: UIView {
-    fileprivate lazy var config = ColorsWheelConfiguration()
+    lazy var config = ColorsWheelConfiguration()
     var isReady = false
     var wheelLayer: CALayer!
     // Layer for the indicator
     var brightnessLayer: CAShapeLayer!
-
-
     weak var delegate: ColorsWheelDelegate?
 
     required init?(coder aDecoder: NSCoder) {
@@ -107,7 +106,7 @@ fileprivate extension ColorsWheel {
         config.indicators.removeFromView()
         for i in 0..<config.colors.count {
             let isMainColor = i == 0 ? true : false
-            self.drawIndicator(config.colors[i], isMainColor: isMainColor)
+            self.drawIndicator(config.colors[i])
         }
         if isFirtTime {
             self.changeIndicatorSize(config.indicators[0], index: 0)
@@ -139,12 +138,21 @@ fileprivate extension ColorsWheel {
 
 //MARK: - Drawing
 fileprivate extension ColorsWheel {
+    func makeNewIndicatorsFor(color: UIColor, index: Int) {
+        let colors = color.colorScheme(config.colorScheme)
+        config.indicators.removeFromView(ignore: index)
+        for color in colors {
+            self.drawIndicator(color)
+        }
+    }
+
     func changeIndicatorSize(_ model: Indicator, index: Int, newPoint: CGPoint? = nil) {
         delegate?.selection(color: model.color.lighter(by: 30)!)
         let indicatorLayer = model.layer
         var newRect = CGRect.zero
         if let newPoint = newPoint {
             newRect = CGRect(x: newPoint.x - config.selectedIndicatorCircleRadius, y: newPoint.y - config.selectedIndicatorCircleRadius, width: config.selectedIndicatorCircleRadius * 2, height: config.selectedIndicatorCircleRadius * 2)
+            self.makeNewIndicatorsFor(color: model.color, index: index)
         } else {
             let oldRect = model.rect
             newRect = CGRect(x: oldRect.midX - config.selectedIndicatorCircleRadius, y: oldRect.midY - config.selectedIndicatorCircleRadius, width: config.selectedIndicatorCircleRadius * 2, height: config.selectedIndicatorCircleRadius * 2)
@@ -154,7 +162,7 @@ fileprivate extension ColorsWheel {
         config.indicators[index].rect = newRect
     }
 
-    func drawIndicator(_ color: UIColor, isMainColor: Bool) {
+    func drawIndicator(_ color: UIColor) {
         var hue: CGFloat = 0.0, saturation: CGFloat = 0.0, brightness: CGFloat = 0.0, alpha: CGFloat = 0.0
         let ok: Bool = color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         if (!ok) { print("SwiftHSVColorPicker: exception <The color provided to SwiftHSVColorPicker is not convertible to HSV>") }
@@ -166,7 +174,7 @@ fileprivate extension ColorsWheel {
         self.layer.addSublayer(indicatorLayer)
         let newRect = CGRect(x: point.x - config.indicatorCircleRadius, y: point.y - config.indicatorCircleRadius, width: config.indicatorCircleRadius * 2, height: config.indicatorCircleRadius * 2)
         indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: config.indicatorCircleRadius).cgPath
-        let newIndicator = Indicator(layer: indicatorLayer, rect: newRect, color: color, isMainColor: isMainColor)
+        let newIndicator = Indicator(layer: indicatorLayer, rect: newRect, color: color)
         config.indicators.append(newIndicator)
     }
 

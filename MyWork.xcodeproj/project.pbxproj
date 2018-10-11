@@ -124,6 +124,7 @@
 		3C82F4822164AD310024B3E4 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4812164AD310024B3E4 /* Animation.swift */; };
 		3C82F4852164B3330024B3E4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4842164B3330024B3E4 /* Request.swift */; };
 		3C82F4872164B3F50024B3E4 /* MethodsPerformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */; };
+		3C857861216FAC5200445EB8 /* ColorsWheelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */; };
 		3C866ADD216337920044EB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7621523AB8002A6600 /* Assets.xcassets */; };
 		3C866AE6216344850044EB1C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C866AE5216344850044EB1C /* Identifier.swift */; };
 		3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */; };
@@ -430,6 +431,7 @@
 		3C82F4812164AD310024B3E4 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		3C82F4842164B3330024B3E4 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsPerformers.swift; sourceTree = "<group>"; };
+		3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWheelConfiguration.swift; sourceTree = "<group>"; };
 		3C866AE5216344850044EB1C /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPresenter.swift; sourceTree = "<group>"; };
 		3C8E235821613FDD0010F7E6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -1340,6 +1342,7 @@
 			isa = PBXGroup;
 			children = (
 				3CE12B53216F694900E0DF20 /* Indicator.swift */,
+				3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1831,6 +1834,7 @@
 				3C41F89D2160DC42002334DB /* ImageCaptureViewController.swift in Sources */,
 				3C9709E1216CCB7B00394013 /* ColorsWheel.swift in Sources */,
 				3C41F8EA216115AE002334DB /* ColorInfoModel.swift in Sources */,
+				3C857861216FAC5200445EB8 /* ColorsWheelConfiguration.swift in Sources */,
 				3C41F8DE216114CD002334DB /* NSArray+Chameleon.m in Sources */,
 				3C41F8F72161171B002334DB /* ColorTableViewCell.swift in Sources */,
 				3C9709D4216CCA9A00394013 /* ColorWheelViewController.swift in Sources */,
