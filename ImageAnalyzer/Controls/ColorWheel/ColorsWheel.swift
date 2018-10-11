@@ -10,10 +10,11 @@ import UIKit
 import SupportLib
 
 fileprivate extension Array where Element == Indicator {
-    func removeFromView() {
+    mutating func removeFromView() {
         for element in self {
             element.layer.removeFromSuperlayer()
         }
+        self.removeAll()
     }
 }
 
@@ -21,30 +22,26 @@ protocol ColorsWheelDelegate: class {
     func selection(color: UIColor)
 }
 
-class ColorsWheel: UIView {
+fileprivate struct ColorsWheelConfiguration {
     typealias IndicatorLayers = [Indicator]
-
     let indicatorCircleRadius: CGFloat = 8.0
     let selectedIndicatorCircleRadius: CGFloat = 18.0
     let indicatorColor: CGColor = UIColor.lightGray.cgColor
     let indicatorBorderWidth: CGFloat = 2.0
-    var isReady = false
-
+    let scale: CGFloat = UIScreen.main.scale
+    var brightness: CGFloat = 1.0
     var indicators: IndicatorLayers = []
     var colors: [UIColor] = []
+    var colorScheme: UIColor.ColorScheme = .triad
+}
 
-    // Layer for the Hue and Saturation wheel
+class ColorsWheel: UIView {
+    fileprivate lazy var config = ColorsWheelConfiguration()
+    var isReady = false
     var wheelLayer: CALayer!
-    // Overlay layer for the brightness
-    //var brightnessLayer: CAShapeLayer!
-    var brightness: CGFloat = 1.0
-
     // Layer for the indicator
-    var indicatorLayer: CAShapeLayer!
     var brightnessLayer: CAShapeLayer!
 
-    // Retina scaling factor
-    let scale: CGFloat = UIScreen.main.scale
 
     weak var delegate: ColorsWheelDelegate?
 
@@ -73,15 +70,16 @@ class ColorsWheel: UIView {
         }
     }
 
-    func setColors(_ colors: [UIColor]) {
-        self.colors = colors
+    func setColors(_ colors: [UIColor], colorScheme: UIColor.ColorScheme) {
+        config.colors = colors
+        config.colorScheme = colorScheme
         self.redraw(isFirtTime: true)
     }
 
     func selectColor(_ color: UIColor) {
-        for i in 0..<self.indicators.count where self.indicators[i].color == color {
+        for i in 0..<config.indicators.count where config.indicators[i].color == color {
             self.redraw()
-            self.changeIndicatorSize(self.indicators[i], index: i)
+            self.changeIndicatorSize(config.indicators[i], index: i)
             break
         }
     }
@@ -102,18 +100,17 @@ class ColorsWheel: UIView {
 fileprivate extension ColorsWheel {
     func redraw(isFirtTime: Bool = false) {
         if isFirtTime {
-            self.brightness = self.colors[0].brightness()
+            config.brightness = config.colors[0].brightness()
             self.wheelLayer.contents = createColorWheel(wheelLayer.frame.size)
             layoutSubviews()
         }
-        self.indicators.removeFromView()
-        self.indicators.removeAll()
-        for i in 0..<colors.count {
+        config.indicators.removeFromView()
+        for i in 0..<config.colors.count {
             let isMainColor = i == 0 ? true : false
-            self.drawIndicator(colors[i], isMainColor: isMainColor)
+            self.drawIndicator(config.colors[i], isMainColor: isMainColor)
         }
         if isFirtTime {
-            self.changeIndicatorSize(self.indicators[0], index: 0)
+            self.changeIndicatorSize(config.indicators[0], index: 0)
         }
     }
 
@@ -123,14 +120,14 @@ fileprivate extension ColorsWheel {
         let indicatorCoordinate = getIndicatorCoordinate(point)
         point = indicatorCoordinate.point
 
-        for i in 0..<self.indicators.count {
-            let indicator = self.indicators[i]
+        for i in 0..<config.indicators.count {
+            let indicator = config.indicators[i]
             if indicator.rect.contains(point) {
                 var color = (hue: CGFloat(0), saturation: CGFloat(0))
                 if !indicatorCoordinate.isCenter {
-                    color = hueSaturationAtPoint(CGPoint(x: point.x * scale, y: point.y * scale))
+                    color = hueSaturationAtPoint(CGPoint(x: point.x * config.scale, y: point.y * config.scale))
                 }
-                self.indicators[i].color = UIColor(hue: color.hue, saturation: color.saturation, brightness: self.brightness, alpha: 1.0)
+                config.indicators[i].color = UIColor(hue: color.hue, saturation: color.saturation, brightness: config.brightness, alpha: 1.0)
                 self.changeIndicatorSize(indicator, index: i, newPoint: point)
                 break
             } else {
@@ -142,43 +139,43 @@ fileprivate extension ColorsWheel {
 
 //MARK: - Drawing
 fileprivate extension ColorsWheel {
+    func changeIndicatorSize(_ model: Indicator, index: Int, newPoint: CGPoint? = nil) {
+        delegate?.selection(color: model.color.lighter(by: 30)!)
+        let indicatorLayer = model.layer
+        var newRect = CGRect.zero
+        if let newPoint = newPoint {
+            newRect = CGRect(x: newPoint.x - config.selectedIndicatorCircleRadius, y: newPoint.y - config.selectedIndicatorCircleRadius, width: config.selectedIndicatorCircleRadius * 2, height: config.selectedIndicatorCircleRadius * 2)
+        } else {
+            let oldRect = model.rect
+            newRect = CGRect(x: oldRect.midX - config.selectedIndicatorCircleRadius, y: oldRect.midY - config.selectedIndicatorCircleRadius, width: config.selectedIndicatorCircleRadius * 2, height: config.selectedIndicatorCircleRadius * 2)
+        }
+        indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: config.selectedIndicatorCircleRadius).cgPath
+        indicatorLayer.fillColor = model.color.cgColor
+        config.indicators[index].rect = newRect
+    }
+
     func drawIndicator(_ color: UIColor, isMainColor: Bool) {
         var hue: CGFloat = 0.0, saturation: CGFloat = 0.0, brightness: CGFloat = 0.0, alpha: CGFloat = 0.0
         let ok: Bool = color.getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha)
         if (!ok) { print("SwiftHSVColorPicker: exception <The color provided to SwiftHSVColorPicker is not convertible to HSV>") }
         let point = pointAtHueSaturation(hue, saturation: saturation)
         let indicatorLayer = CAShapeLayer()
-        indicatorLayer.strokeColor = indicatorColor
-        indicatorLayer.lineWidth = indicatorBorderWidth
+        indicatorLayer.strokeColor = config.indicatorColor
+        indicatorLayer.lineWidth = config.indicatorBorderWidth
         indicatorLayer.fillColor = color.cgColor
         self.layer.addSublayer(indicatorLayer)
-        let newRect = CGRect(x: point.x - indicatorCircleRadius, y: point.y - indicatorCircleRadius, width: indicatorCircleRadius * 2, height: indicatorCircleRadius * 2)
-        indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: indicatorCircleRadius).cgPath
+        let newRect = CGRect(x: point.x - config.indicatorCircleRadius, y: point.y - config.indicatorCircleRadius, width: config.indicatorCircleRadius * 2, height: config.indicatorCircleRadius * 2)
+        indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: config.indicatorCircleRadius).cgPath
         let newIndicator = Indicator(layer: indicatorLayer, rect: newRect, color: color, isMainColor: isMainColor)
-        self.indicators.append(newIndicator)
+        config.indicators.append(newIndicator)
     }
 
     func resetIndicatorSize(_ model: Indicator, index: Int) {
         let indicatorLayer = model.layer
         let oldRect = model.rect
-        let newRect = CGRect(x: oldRect.midX - self.indicatorCircleRadius, y: oldRect.midY - self.indicatorCircleRadius, width: self.indicatorCircleRadius * 2, height: self.indicatorCircleRadius * 2)
-        indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: self.indicatorCircleRadius).cgPath
-        self.indicators[index].rect = newRect
-    }
-
-    func changeIndicatorSize(_ model: Indicator, index: Int, newPoint: CGPoint? = nil) {
-        delegate?.selection(color: model.color.lighter(by: 30)!)
-        let indicatorLayer = model.layer
-        var newRect = CGRect.zero
-        if let newPoint = newPoint {
-            newRect = CGRect(x: newPoint.x - self.selectedIndicatorCircleRadius, y: newPoint.y - self.selectedIndicatorCircleRadius, width: self.selectedIndicatorCircleRadius * 2, height: self.selectedIndicatorCircleRadius * 2)
-        } else {
-            let oldRect = model.rect
-            newRect = CGRect(x: oldRect.midX - self.selectedIndicatorCircleRadius, y: oldRect.midY - self.selectedIndicatorCircleRadius, width: self.selectedIndicatorCircleRadius * 2, height: self.selectedIndicatorCircleRadius * 2)
-        }
-        indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: self.selectedIndicatorCircleRadius).cgPath
-        indicatorLayer.fillColor = model.color.cgColor
-        self.indicators[index].rect = newRect
+        let newRect = CGRect(x: oldRect.midX - config.indicatorCircleRadius, y: oldRect.midY - config.indicatorCircleRadius, width: config.indicatorCircleRadius * 2, height: config.indicatorCircleRadius * 2)
+        indicatorLayer.path = UIBezierPath(roundedRect: newRect, cornerRadius: config.indicatorCircleRadius).cgPath
+        config.indicators[index].rect = newRect
     }
 
     func getIndicatorCoordinate(_ coord: CGPoint) -> (point: CGPoint, isCenter: Bool) {
@@ -214,7 +211,7 @@ fileprivate extension ColorsWheel {
         // Creates a bitmap of the Hue Saturation wheel
         let originalWidth: CGFloat = size.width
         let originalHeight: CGFloat = size.height
-        let dimension: CGFloat = min(originalWidth * scale, originalHeight * scale)
+        let dimension: CGFloat = min(originalWidth * config.scale, originalHeight * config.scale)
         let bufferLength: Int = Int(dimension * dimension * 4)
 
         let bitmapData: CFMutableData = CFDataCreateMutable(nil, 0)
@@ -240,7 +237,7 @@ fileprivate extension ColorsWheel {
 
                     hsv.hue = hue
                     hsv.saturation = saturation
-                    hsv.brightness = self.brightness
+                    hsv.brightness = config.brightness
                     hsv.alpha = a
                     rgb = hsv2rgb(hsv)
                 }
@@ -262,7 +259,7 @@ fileprivate extension ColorsWheel {
 
     func hueSaturationAtPoint(_ position: CGPoint) -> (hue: CGFloat, saturation: CGFloat) {
         // Get hue and saturation for a given point (x,y) in the wheel
-        let c = wheelLayer.frame.width * scale / 2
+        let c = wheelLayer.frame.width * config.scale / 2
         let dx = CGFloat(position.x - c) / c
         let dy = CGFloat(position.y - c) / c
         let d = sqrt(CGFloat (dx * dx + dy * dy))
@@ -282,7 +279,6 @@ fileprivate extension ColorsWheel {
     }
 
     func pointAtHueSaturation(_ hue: CGFloat, saturation: CGFloat) -> CGPoint {
-        // Get a point (x,y) in the wheel for a given hue and saturation
         let dimension: CGFloat = min(wheelLayer.frame.width, wheelLayer.frame.height)
         let radius: CGFloat = saturation * dimension / 2
         let x = dimension / 2 + radius * cos(hue * CGFloat(Double.pi) * 2) + wheelLayer.frame.origin.x

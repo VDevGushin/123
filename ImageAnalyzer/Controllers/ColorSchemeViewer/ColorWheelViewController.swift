@@ -94,6 +94,6 @@ fileprivate extension ColorWheelViewController {
 
     private func colorsComplete(_ colors: [ColorInfoModel]) {
         let colors = colors.map({ $0.color })
-        self.colorsWheel.setColors(colors)
+        self.colorsWheel.setColors(colors, colorScheme: self.colorScheme)
     }
 }
