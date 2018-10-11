@@ -199,6 +199,7 @@
 		3CDF4F63215E079A0042650D /* ColorsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4F62215E079A0042650D /* ColorsWheel.swift */; };
 		3CDF4F66215E4AF10042650D /* ColorWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4F64215E4AF10042650D /* ColorWheelViewController.swift */; };
 		3CDF4F67215E4AF10042650D /* ColorWheelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDF4F65215E4AF10042650D /* ColorWheelViewController.xib */; };
+		3CE12B54216F694900E0DF20 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE12B53216F694900E0DF20 /* Indicator.swift */; };
 		3CE3E552215BC1F2003A0528 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53A215BC1EF003A0528 /* UILabel+Chameleon.m */; };
 		3CE3E553215BC1F2003A0528 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53C215BC1EF003A0528 /* ChameleonConstants.m */; };
 		3CE3E554215BC1F2003A0528 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53E215BC1EF003A0528 /* UINavigationController+Chameleon.m */; };
@@ -501,6 +502,7 @@
 		3CDF4F62215E079A0042650D /* ColorsWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWheel.swift; sourceTree = "<group>"; };
 		3CDF4F64215E4AF10042650D /* ColorWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelViewController.swift; sourceTree = "<group>"; };
 		3CDF4F65215E4AF10042650D /* ColorWheelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorWheelViewController.xib; sourceTree = "<group>"; };
+		3CE12B53216F694900E0DF20 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		3CE3E4F7215BBEEE003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1121,6 +1123,7 @@
 		3C9709D7216CCB5600394013 /* ColorWheel */ = {
 			isa = PBXGroup;
 			children = (
+				3CE12B52216F692500E0DF20 /* Model */,
 				3C9709DA216CCB7B00394013 /* BrightnessView.swift */,
 				3C9709DB216CCB7B00394013 /* ColorsWheel.swift */,
 				3C9709DD216CCB7B00394013 /* ColorWheel.swift */,
@@ -1331,6 +1334,14 @@
 				3CD85A2920EF482D008D994C /* Info.plist */,
 			);
 			path = MyWork;
+			sourceTree = "<group>";
+		};
+		3CE12B52216F692500E0DF20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CE12B53216F694900E0DF20 /* Indicator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3CE3E4FE215BC099003A0528 /* ChameleonFramework */ = {
@@ -1813,6 +1824,7 @@
 				3C41F8DF216114CD002334DB /* UINavigationController+Chameleon.m in Sources */,
 				3C41F8D5216114CD002334DB /* ColorGetters.swift in Sources */,
 				3C41F8D8216114CD002334DB /* NSDictionary+Chameleon.m in Sources */,
+				3CE12B54216F694900E0DF20 /* Indicator.swift in Sources */,
 				3C9709DF216CCB7B00394013 /* SwiftHSVColorPicker.swift in Sources */,
 				3C41F8E2216114CD002334DB /* UIAppearance+Swift.m in Sources */,
 				3C3D0E41216C8654006B7907 /* Strings.swift in Sources */,
