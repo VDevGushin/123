@@ -39,6 +39,8 @@ final class ImageCaptureViewController: AppRootViewController {
 
     fileprivate func processImage() {
         guard let image = self.selectedImage else { return }
+        self.navigator.navigate(to: .imageColors(selectedImage: image, imageGetter: ColorPercentageGetter()))
+        return
         let actions = [
             ("Percentage",
              { self.navigator.navigate(to: .imageColors(selectedImage: image, imageGetter: ColorPercentageGetter())) }),

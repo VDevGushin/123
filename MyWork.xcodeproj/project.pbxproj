@@ -19,6 +19,7 @@
 		3C0C24F9215D011100472B3E /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24F8215D011100472B3E /* BrightnessView.swift */; };
 		3C0E0829210AFD9700211B0B /* StatisticHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0E0828210AFD9700211B0B /* StatisticHeader.swift */; };
 		3C0E082B210AFDA200211B0B /* StatisticHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0E082A210AFDA200211B0B /* StatisticHeader.xib */; };
+		3C0EA7BD21708A5400C5EB13 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0EA7BC21708A5400C5EB13 /* Style.swift */; };
 		3C0F05BE216135E800F04623 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F05BD216135E800F04623 /* UIWindow+Extension.swift */; };
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
 		3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */; };
@@ -41,6 +42,8 @@
 		3C37B767213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */; };
 		3C38E1742107732A005CBDE9 /* RoundPercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */; };
 		3C38E17621077353005CBDE9 /* RoundPercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */; };
+		3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464B2174643E0032BC36 /* DLSViewController.swift */; };
+		3C3B464F21746A770032BC36 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464E21746A770032BC36 /* LayoutConstraint.swift */; };
 		3C3D0E41216C8654006B7907 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E40216C8654006B7907 /* Strings.swift */; };
 		3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */; };
 		3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */; };
@@ -303,6 +306,7 @@
 		3C0C24F8215D011100472B3E /* BrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessView.swift; sourceTree = "<group>"; };
 		3C0E0828210AFD9700211B0B /* StatisticHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticHeader.swift; sourceTree = "<group>"; };
 		3C0E082A210AFDA200211B0B /* StatisticHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticHeader.xib; sourceTree = "<group>"; };
+		3C0EA7BC21708A5400C5EB13 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		3C0F05BD216135E800F04623 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
 		3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelСontrollers.swift"; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 		3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
 		3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPercentagesControl.swift; sourceTree = "<group>"; };
 		3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundPercentagesControl.xib; sourceTree = "<group>"; };
+		3C3B464B2174643E0032BC36 /* DLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLSViewController.swift; sourceTree = "<group>"; };
+		3C3B464E21746A770032BC36 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
 		3C3D0E40216C8654006B7907 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPresenter.swift; sourceTree = "<group>"; };
 		3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingAutoclosure .swift"; sourceTree = "<group>"; };
@@ -783,6 +789,14 @@
 			path = UIControls;
 			sourceTree = "<group>";
 		};
+		3C3B464D21746A5B0032BC36 /* LayoutConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				3C3B464E21746A770032BC36 /* LayoutConstraint.swift */,
+			);
+			path = LayoutConstraint;
+			sourceTree = "<group>";
+		};
 		3C3D0E3F216C8647006B7907 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -958,6 +972,7 @@
 		3C41F90121611883002334DB /* SupportLib */ = {
 			isa = PBXGroup;
 			children = (
+				3C3B464D21746A5B0032BC36 /* LayoutConstraint */,
 				3C82F4832164B3250024B3E4 /* Network */,
 				3C82F4802164AD210024B3E4 /* Animation */,
 				3C866AE221633B130044EB1C /* Helpers */,
@@ -1041,6 +1056,7 @@
 				3C82F4762164AA120024B3E4 /* LaunchScreen.storyboard */,
 				3C82F4792164AA120024B3E4 /* Info.plist */,
 				3C82F47D2164ABDB0024B3E4 /* ButtonAnimationViewController.swift */,
+				3C3B464B2174643E0032BC36 /* DLSViewController.swift */,
 			);
 			path = WorkWithUI;
 			sourceTree = "<group>";
@@ -1067,6 +1083,7 @@
 				3C41F916216118F0002334DB /* Result.swift */,
 				3C866AE5216344850044EB1C /* Identifier.swift */,
 				3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */,
+				3C0EA7BC21708A5400C5EB13 /* Style.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1896,8 +1913,10 @@
 				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,
 				3C41F922216118F1002334DB /* Result.swift in Sources */,
 				3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */,
+				3C3B464F21746A770032BC36 /* LayoutConstraint.swift in Sources */,
 				3C0F05BE216135E800F04623 /* UIWindow+Extension.swift in Sources */,
 				3C41F91D216118F1002334DB /* String+Extension.swift in Sources */,
+				3C0EA7BD21708A5400C5EB13 /* Style.swift in Sources */,
 				3C41F92A2161190F002334DB /* TableViewDataSource.swift in Sources */,
 				3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */,
 				3C41F924216118F1002334DB /* NSMutableAttributedString+Extension.swift in Sources */,
@@ -1911,6 +1930,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3C82F47E2164ABDB0024B3E4 /* ButtonAnimationViewController.swift in Sources */,

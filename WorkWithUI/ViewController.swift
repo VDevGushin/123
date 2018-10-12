@@ -64,7 +64,5 @@ class ViewController: UIViewController {
         animation.repeatCount = .infinity
         imageLayer.add(animation, forKey: "hypnoscale")
     }
-
-
 }
 
