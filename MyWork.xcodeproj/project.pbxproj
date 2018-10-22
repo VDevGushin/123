@@ -11,6 +11,7 @@
 		287EE387051990F02A660DE9 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */; };
 		3C01716B21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */; };
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
+		3C09E493217D93C7007ABDD8 /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */; };
 		3C0B1764210EDF34003D9314 /* ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */; };
 		3C0C24EC215CF7CB00472B3E /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */; };
 		3C0C24F3215D00DF00472B3E /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24F2215D00DF00472B3E /* SelectedColorView.swift */; };
@@ -298,6 +299,7 @@
 		20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 		3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentFlavorsOfViewModels.swift; sourceTree = "<group>"; };
 		3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
+		3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
 		3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalConformances.swift; sourceTree = "<group>"; };
 		3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		3C0C24F2215D00DF00472B3E /* SelectedColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedColorView.swift; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
 		3C4C676821254370005D05D5 /* LazyProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyProperties.swift; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
 		3C69E4AA215FA4090022CA4D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
@@ -1264,13 +1267,14 @@
 		3CD85A1120EF482A008D994C = {
 			isa = PBXGroup;
 			children = (
+				3C57ED97217D984400A12E57 /* Default-568h@2x.png */,
 				3CD85A1C20EF482A008D994C /* MyWork */,
 				3CE41F6E21523AB5002A6600 /* UIPart */,
 				3C41F8642160D72C002334DB /* ImageAnalyzer */,
 				3C41F8792160D732002334DB /* ImageAnalyzerTests */,
 				3C41F8842160D732002334DB /* ImageAnalyzerUITests */,
-				3C41F90121611883002334DB /* SupportLib */,
 				3C82F46C2164AA0F0024B3E4 /* WorkWithUI */,
+				3C41F90121611883002334DB /* SupportLib */,
 				3CD85A1B20EF482A008D994C /* Products */,
 				CE930C0AC3A3715B8BA78B66 /* Pods */,
 				0A62CB7B25171A6FCD0001F5 /* Frameworks */,
@@ -1296,6 +1300,7 @@
 			children = (
 				3C55FDFF213FC4AC00ABA745 /* Habr */,
 				3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */,
+				3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */,
 				3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */,
 				3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */,
 				3CE41F802152410B002A6600 /* HandlingNonOptionalOptionals.swift */,
@@ -1986,6 +1991,7 @@
 				3CC3911C21395741001B42DA /* UsingBuilder .swift in Sources */,
 				3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */,
 				3C9A83C62133C9C4008A1F17 /* HandlingMutableModels.swift in Sources */,
+				3C09E493217D93C7007ABDD8 /* SpecializingProtocols.swift in Sources */,
 				3C01716B21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift in Sources */,
 				3CC2F210213D10F200C59AF2 /* FeatureFlags.swift in Sources */,
 				3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */,

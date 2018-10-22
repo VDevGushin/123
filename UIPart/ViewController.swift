@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, IImageShowController {
     var imagePicker = UIImagePickerController()
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }
