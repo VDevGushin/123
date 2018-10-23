@@ -16,9 +16,15 @@ public extension DateFormatter {
         case formatV4 = "yyyy.MM.dd"
     }
     
-   public class func getShortFormatter(with format: VariantDateFormater) -> DateFormatter {
+   public class func getShortFormatterZeroTimeZone(with format: VariantDateFormater) -> DateFormatter {
         let formatter = DateFormatter()
         formatter.timeZone = TimeZone(abbreviation: "GMT+0:00")
+        formatter.dateFormat = format.rawValue
+        return formatter
+    }
+    
+    public class func getShortFormatter(with format: VariantDateFormater) -> DateFormatter {
+        let formatter = DateFormatter()
         formatter.dateFormat = format.rawValue
         return formatter
     }

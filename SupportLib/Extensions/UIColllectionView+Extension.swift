@@ -9,16 +9,20 @@
 import UIKit
 
 
-extension UICollectionView {
-    func register(_ cellType: UICollectionViewCell.Type) {
+public extension UICollectionView {
+    public func registerWithNib(_ cellType: UICollectionViewCell.Type) {
         let id = String(describing: cellType)
         let nib = UINib(nibName: id, bundle: nil)
         self.register(nib, forCellWithReuseIdentifier: id)
     }
-    
-    func dequeueReusableCell<T: UICollectionViewCell>(type: T.Type, indexPath: IndexPath) -> T? {
+
+    public func registerWithClass(_ cellType: UICollectionViewCell.Type) {
+        let id = String(describing: cellType)
+        self.register(cellType, forCellWithReuseIdentifier: id)
+    }
+
+    public func dequeueReusableCell<T: UICollectionViewCell>(type: T.Type, indexPath: IndexPath) -> T? {
         let cell = self.dequeueReusableCell(withReuseIdentifier: String(describing: type), for: indexPath)
         return cell as? T
     }
-
 }

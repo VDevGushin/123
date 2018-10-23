@@ -49,6 +49,8 @@ public class LayoutProxy {
     public lazy var bottom = property(with: view.bottomAnchor)
     public lazy var width = property(with: view.widthAnchor)
     public lazy var height = property(with: view.heightAnchor)
+    public lazy var leftAnchor = property(with: view.leftAnchor)
+    public lazy var rightAnchor = property(with: view.rightAnchor)
 
     private let view: UIView
 
@@ -77,7 +79,7 @@ public func - <A: LayoutAnchor>(lhs: A, rhs: CGFloat) -> (A, CGFloat) {
 }
 
 public func == <A: LayoutAnchor>(lhs: LayoutProperty<A>,
-                          rhs: (A, CGFloat)) {
+                                 rhs: (A, CGFloat)) {
     lhs.equal(to: rhs.0, offsetBy: rhs.1)
 }
 
@@ -86,7 +88,7 @@ public func == <A: LayoutAnchor>(lhs: LayoutProperty<A>, rhs: A) {
 }
 
 public func >= <A: LayoutAnchor>(lhs: LayoutProperty<A>,
-                          rhs: (A, CGFloat)) {
+                                 rhs: (A, CGFloat)) {
     lhs.greaterThanOrEqual(to: rhs.0, offsetBy: rhs.1)
 }
 
@@ -95,7 +97,7 @@ public func >= <A: LayoutAnchor>(lhs: LayoutProperty<A>, rhs: A) {
 }
 
 public func <= <A: LayoutAnchor>(lhs: LayoutProperty<A>,
-                          rhs: (A, CGFloat)) {
+                                 rhs: (A, CGFloat)) {
     lhs.lessThanOrEqual(to: rhs.0, offsetBy: rhs.1)
 }
 

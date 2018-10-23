@@ -39,7 +39,6 @@ private struct Product: Codable {
 func test() {
     let data = Data()
     let product: Product = try! JSONDecoder().decode(Product.self, from: data)
-
     let productObject = Product(title: "Cheese", price: 10.5, quantity: 1)
     let encodedData = try? JSONEncoder().encode(productObject)
 }
