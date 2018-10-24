@@ -124,7 +124,7 @@
 		3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE3217EF64E002E51DC /* CalendarView.swift */; };
 		3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C746BE5217EF9E0002E51DC /* CalendarView.xib */; };
 		3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE7217F18FC002E51DC /* DaysView.swift */; };
-		3C746BEA217F191B002E51DC /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE9217F191B002E51DC /* CalendarCell.swift */; };
+		3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE9217F191B002E51DC /* CalendarCellMonth.swift */; };
 		3C7CD75221103951009871B1 /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CD75121103951009871B1 /* Tuples.swift */; };
 		3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */; };
 		3C82F4662164A98A0024B3E4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4652164A98A0024B3E4 /* Date+Extension.swift */; };
@@ -449,7 +449,7 @@
 		3C746BE3217EF64E002E51DC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		3C746BE5217EF9E0002E51DC /* CalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		3C746BE7217F18FC002E51DC /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
-		3C746BE9217F191B002E51DC /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		3C746BE9217F191B002E51DC /* CalendarCellMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCellMonth.swift; sourceTree = "<group>"; };
 		3C7CD75121103951009871B1 /* Tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuples.swift; sourceTree = "<group>"; };
 		3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		3C82F4652164A98A0024B3E4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -1234,7 +1234,7 @@
 			isa = PBXGroup;
 			children = (
 				3C97C338217F38020025BD3D /* CalendarCellDay.swift */,
-				3C746BE9217F191B002E51DC /* CalendarCell.swift */,
+				3C746BE9217F191B002E51DC /* CalendarCellMonth.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2018,7 +2018,7 @@
 				3C97C33E217F3B740025BD3D /* CalendarModel.swift in Sources */,
 				3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */,
 				3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */,
-				3C746BEA217F191B002E51DC /* CalendarCell.swift in Sources */,
+				3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */,

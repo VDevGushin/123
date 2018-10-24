@@ -126,7 +126,7 @@ extension DaysView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
 fileprivate extension DaysView {
     func getCellWidth(with text: String, height: CGFloat) -> CGFloat {
         let style = NSMutableParagraphStyle()
-        style.lineSpacing = CalendarCell.lineHeight
+        style.lineSpacing = CalendarCellMonth.lineHeight
         let width = text.width(withConstraintedHeight: height, font: CalendarCellDay.defaultFont, paragraphStyle: style) + CalendarCellDay.offsetForDays
         return width
     }

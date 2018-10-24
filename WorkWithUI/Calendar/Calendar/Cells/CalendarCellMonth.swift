@@ -8,11 +8,11 @@
 
 import UIKit
 
-class CalendarCell: UICollectionViewCell {
+class CalendarCellMonth: UICollectionViewCell {
     static let offsetForMonth: CGFloat = 12.0
     static let lineHeight: CGFloat = 20.0
     static let defaultFontSize: CGFloat = 17.0
-    static let font = UIFont.systemFont(ofSize: CalendarCell.defaultFontSize)
+    static let font = UIFont.systemFont(ofSize: CalendarCellMonth.defaultFontSize)
 
     var calendarItem: CalendarItem?
 
@@ -45,8 +45,8 @@ class CalendarCell: UICollectionViewCell {
         addSubview(self.month)
         self.month.layout {
             $0.top.equal(to: topAnchor)
-            $0.leftAnchor.equal(to: leftAnchor, offsetBy: CalendarCell.offsetForMonth / 2)
-            $0.rightAnchor.equal(to: rightAnchor, offsetBy: -(CalendarCell.offsetForMonth / 2))
+            $0.leftAnchor.equal(to: leftAnchor, offsetBy: CalendarCellMonth.offsetForMonth / 2)
+            $0.rightAnchor.equal(to: rightAnchor, offsetBy: -(CalendarCellMonth.offsetForMonth / 2))
             $0.bottom.equal(to: bottomAnchor)
         }
 
@@ -69,8 +69,8 @@ class CalendarCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "00"
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: CalendarCell.defaultFontSize)
-        label.setLineHeight(lineHeight: CalendarCell.lineHeight)
+        label.font = UIFont.systemFont(ofSize: CalendarCellMonth.defaultFontSize)
+        label.setLineHeight(lineHeight: CalendarCellMonth.lineHeight)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -82,7 +82,7 @@ class CalendarCell: UICollectionViewCell {
 }
 
 // MARK: - Style
-fileprivate extension CalendarCell {
+fileprivate extension CalendarCellMonth {
     func setSelectedStyle() {
         self.month.textColor = CalendarStyle.Colors.blackFontColor
         self.border.backgroundColor = CalendarStyle.Colors.selectedColor

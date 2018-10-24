@@ -49,7 +49,7 @@ final class MonthView: UIView {
 
         self.monthCollection.delegate = self
         self.monthCollection.dataSource = self
-        self.monthCollection.registerWithClass(CalendarCell.self)
+        self.monthCollection.registerWithClass(CalendarCellMonth.self)
         self.backgroundColor = CalendarStyle.Colors.monthBackground
     }
 
@@ -72,7 +72,7 @@ extension MonthView: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(type: CalendarCell.self, indexPath: indexPath)!
+        let cell = collectionView.dequeueReusableCell(type: CalendarCellMonth.self, indexPath: indexPath)!
         cell.setCalendarItemForDay(with: self.getMonthName(indexPath.item))
         return cell
     }
@@ -100,8 +100,8 @@ extension MonthView: UICollectionViewDelegate, UICollectionViewDataSource, UICol
 fileprivate extension MonthView {
     func getCellWidth(with text: String, height: CGFloat) -> CGFloat {
         let style = NSMutableParagraphStyle()
-        style.lineSpacing = CalendarCell.lineHeight
-        let width = text.width(withConstraintedHeight: height, font: CalendarCell.font, paragraphStyle: style) + CalendarCell.offsetForMonth
+        style.lineSpacing = CalendarCellMonth.lineHeight
+        let width = text.width(withConstraintedHeight: height, font: CalendarCellMonth.font, paragraphStyle: style) + CalendarCellMonth.offsetForMonth
         return width
     }
 

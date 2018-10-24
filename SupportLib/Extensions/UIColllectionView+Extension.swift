@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 public extension UICollectionView {
     public func registerWithNib(_ cellType: UICollectionViewCell.Type) {
         let id = String(describing: cellType)
