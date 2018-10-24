@@ -33,10 +33,10 @@ fileprivate extension Array where Element == [Date] {
 }
 
 struct CalendarModel {
-    typealias SheduleItem = (date: [Int], items: AnyObject)
+    typealias CalendarSheduleItem = (date: [Int], items: AnyObject)
     private let calendarItems: [[CalendarItem]]
 
-    init(with sheduleItem: [SheduleItem]) {
+    init(with sheduleItem: [CalendarSheduleItem]) {
         let allDates = Date.sortDateByMonth(dateArray: sheduleItem.map { Date.getDate($0.date, orDefault: Date()) })
         self.calendarItems = allDates.getCalendarItems()
     }

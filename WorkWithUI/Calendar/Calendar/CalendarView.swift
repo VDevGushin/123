@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 final class CalendarView: UIView {
     @IBOutlet private weak var monthView: MonthView!
     @IBOutlet private weak var daysView: DaysView!
@@ -23,25 +22,7 @@ final class CalendarView: UIView {
         setupUI()
     }
 
-    func setModel() {
-        let source: [CalendarModel.SheduleItem] = [
-            ([2018, 10, 24], UIView()),
-            ([2018, 10, 25], UIView()),
-            ([2018, 10, 26], UIView()),
-            ([2018, 10, 27], UIView()),
-            ([2018, 10, 28], UIView()),
-            ([2018, 10, 29], UIView()),
-            ([2018, 10, 30], UIView()),
-            ([2018, 10, 31], UIView()),
-            ([2018, 11, 1], UIView()),
-            ([2018, 11, 2], UIView()),
-            ([2018, 11, 3], UIView()),
-            ([2018, 11, 4], UIView()),
-            ([2018, 11, 5], UIView()),
-            ([2018, 11, 6], UIView()),
-            ([2018, 11, 7], UIView()),
-            ([2018, 11, 8], UIView()),
-        ]
+    func update(with source: [CalendarModel.CalendarSheduleItem]) {
         let model = CalendarModel(with: source)
         self.daysView.update(with: model.source)
         self.monthView.update(with: model.source)
@@ -52,7 +33,6 @@ final class CalendarView: UIView {
         self.monthView.didSelectMonthHandler.delegate(to: self, with: self.didSelectMonth)
         self.daysView.didSelectDayHandler.delegate(to: self, with: self.self.didSelectDay)
         self.addSubview(view)
-        self.setModel()
     }
 }
 

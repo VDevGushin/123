@@ -12,7 +12,7 @@ public extension Date {
     
     public static func getDate(_ from: [Int]?) -> Date? {
         guard let from = from, from.count == 3 else { return nil }
-        let date = getDate("\(from[2]).\(from[1]).\(from[0])", formatter: .init(with: .ddMMyyyy))
+        let date = getDate("\(from[2]).\(from[1]).\(from[0])")
         return date
     }
 
