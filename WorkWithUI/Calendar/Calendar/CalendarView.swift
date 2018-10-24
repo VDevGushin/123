@@ -8,29 +8,6 @@
 
 import UIKit
 
-fileprivate extension Array where Element == Date {
-    func getCalendarItems() -> [CalendarItem] {
-        var array: [CalendarItem] = []
-        for i in 0..<self.count {
-            switch i {
-            case 0:
-                array.append(CalendarItem(date: self[i], type: .first))
-            case self.count - 1:
-                array.append(CalendarItem(date: self[i], type: .last))
-            default:
-                array.append(CalendarItem(date: self[i], type: .middle))
-            }
-
-        }
-        return array
-    }
-}
-
-fileprivate extension Array where Element == [Date] {
-    func getCalendarItems() -> [[CalendarItem]] {
-        return self.map { $0.getCalendarItems() }
-    }
-}
 
 final class CalendarView: UIView {
     @IBOutlet private weak var monthView: MonthView!
@@ -46,12 +23,28 @@ final class CalendarView: UIView {
         setupUI()
     }
 
-    func setModel(with: CalendarModel) {
-        Date.getDatesBetweenInterval(with.startDate, with.endDate) {
-            let items = $0.sortedByMonth.getCalendarItems()
-            self.monthView.update(with: items)
-            self.daysView.update(with: items)
-        }
+    func setModel() {
+        let source: [CalendarModel.SheduleItem] = [
+            ([2018, 10, 24], UIView()),
+            ([2018, 10, 25], UIView()),
+            ([2018, 10, 26], UIView()),
+            ([2018, 10, 27], UIView()),
+            ([2018, 10, 28], UIView()),
+            ([2018, 10, 29], UIView()),
+            ([2018, 10, 30], UIView()),
+            ([2018, 10, 31], UIView()),
+            ([2018, 11, 1], UIView()),
+            ([2018, 11, 2], UIView()),
+            ([2018, 11, 3], UIView()),
+            ([2018, 11, 4], UIView()),
+            ([2018, 11, 5], UIView()),
+            ([2018, 11, 6], UIView()),
+            ([2018, 11, 7], UIView()),
+            ([2018, 11, 8], UIView()),
+        ]
+        let model = CalendarModel(with: source)
+        self.daysView.update(with: model.source)
+        self.monthView.update(with: model.source)
     }
 
     private func setupUI() {
@@ -59,7 +52,7 @@ final class CalendarView: UIView {
         self.monthView.didSelectMonthHandler.delegate(to: self, with: self.didSelectMonth)
         self.daysView.didSelectDayHandler.delegate(to: self, with: self.self.didSelectDay)
         self.addSubview(view)
-        self.setModel(with: CalendarModel(startDate: Date(), endDate: Date.getDate("25.10.2020")!))
+        self.setModel()
     }
 }
 
