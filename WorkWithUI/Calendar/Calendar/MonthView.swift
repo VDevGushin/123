@@ -7,12 +7,11 @@
 //
 
 import UIKit
-
-protocol MonthViewDelegate: class {
-    func didSelectMonth(monthModel: CalendarItem)
-}
+import SupportLib
 
 final class MonthView: UIView {
+    var didSelectMonthHandler = DelegatedCall<CalendarItem>()
+
     private let monthCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -26,16 +25,15 @@ final class MonthView: UIView {
     }()
 
     private var dates: [CalendarItem] = []
-    var delegate: MonthViewDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupUI()
+        self.setupUI()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setupUI()
+        self.setupUI()
     }
 
     private func setupUI() {
@@ -52,21 +50,19 @@ final class MonthView: UIView {
         self.monthCollection.delegate = self
         self.monthCollection.dataSource = self
         self.monthCollection.registerWithClass(CalendarCell.self)
+        self.backgroundColor = CalendarStyle.Colors.monthBackground
     }
 
     func update(with dates: [[CalendarItem]]) {
         self.dates = dates.compactMap { $0.first }
         self.monthCollection.reloadData()
     }
-    
+
     func scrollToMonth(monthHash: Int) {
-        let index = self.dates.index {
-            $0.monthHash == monthHash
-        }
+        let index = self.dates.index { $0.monthHash == monthHash }
         guard let neededIndex = index else { return }
         let indexPath = IndexPath(item: neededIndex, section: 0)
         self.monthCollection.selectItem(at: indexPath, animated: false, scrollPosition: .left)
-        //self.monthCollection.scrollToItem(at: indexPath, at: [.centeredVertically, .left], animated: true)
     }
 }
 
@@ -86,13 +82,23 @@ extension MonthView: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.didSelectMonth(monthModel: self.dates[indexPath.item])
+        didSelectMonthHandler.execute?(self.dates[indexPath.item])
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height: CGFloat = collectionView.frame.height - 12
+        let height: CGFloat = collectionView.frame.height
         let month = self.getMonthName(indexPath.item).monthName
-        let width = month.width(withConstraintedHeight: height, font: UIFont.systemFont(ofSize: 16)) + CalendarCellDay.offsetForDays
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = CalendarCell.lineHeight
+        let width = month.width(withConstraintedHeight: height, font: UIFont.systemFont(ofSize: CalendarCell.defaultFontSize), paragraphStyle: style) + CalendarCellDay.offsetForDays
         return CGSize(width: width, height: height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0.0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10.0
     }
 }

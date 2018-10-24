@@ -56,19 +56,19 @@ final class CalendarView: UIView {
 
     private func setupUI() {
         guard let view = self.loadFromNib(CalendarView.self) else { return }
-        self.daysView.delegate = self
-        self.monthView.delegate = self
+        self.monthView.didSelectMonthHandler.delegate(to: self, with: self.didSelectMonth)
+        self.daysView.didSelectDayHandler.delegate(to: self, with: self.self.didSelectDay)
         self.addSubview(view)
-        self.setModel(with: CalendarModel(startDate: Date(), endDate: Date.getDate("2020-11-24")!))
+        self.setModel(with: CalendarModel(startDate: Date(), endDate: Date.getDate("25.10.2020")!))
     }
 }
 
-extension CalendarView: DaysViewDelegate, MonthViewDelegate {
-    func didSelectDay(dayModel: CalendarItem) {
+extension CalendarView {
+    func didSelectDay(delegate: CalendarView, dayModel: CalendarItem) {
         self.monthView.scrollToMonth(monthHash: dayModel.monthHash)
     }
 
-    func didSelectMonth(monthModel: CalendarItem) {
+    func didSelectMonth(delegate: CalendarView, monthModel: CalendarItem) {
         self.daysView.scrollToDay(monthHash: monthModel.monthHash)
     }
 }

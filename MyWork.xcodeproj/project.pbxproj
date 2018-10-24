@@ -104,6 +104,9 @@
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
 		3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54E21006423003F484C /* PromiseKit.swift */; };
 		3C4C676921254370005D05D5 /* LazyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C676821254370005D05D5 /* LazyProperties.swift */; };
+		3C4EAF182180487F00CEB18B /* DelegateCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EAF172180487F00CEB18B /* DelegateCall.swift */; };
+		3C4EAF1A2180628800CEB18B /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EAF192180628800CEB18B /* CalendarStyle.swift */; };
+		3C4EAF1C218067B300CEB18B /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EAF1B218067B300CEB18B /* CALayer+Extension.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
 		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
@@ -138,6 +141,7 @@
 		3C857861216FAC5200445EB8 /* ColorsWheelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */; };
 		3C866ADD216337920044EB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7621523AB8002A6600 /* Assets.xcassets */; };
 		3C866AE6216344850044EB1C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C866AE5216344850044EB1C /* Identifier.swift */; };
+		3C892E5B2180772400BDEE55 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */; };
 		3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */; };
 		3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E235821613FDD0010F7E6 /* GradientView.swift */; };
 		3C8E235B21613FF90010F7E6 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E235A21613FF90010F7E6 /* ImageScrollView.swift */; };
@@ -425,6 +429,9 @@
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
 		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
 		3C4C676821254370005D05D5 /* LazyProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyProperties.swift; sourceTree = "<group>"; };
+		3C4EAF172180487F00CEB18B /* DelegateCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateCall.swift; sourceTree = "<group>"; };
+		3C4EAF192180628800CEB18B /* CalendarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStyle.swift; sourceTree = "<group>"; };
+		3C4EAF1B218067B300CEB18B /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
@@ -459,6 +466,7 @@
 		3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsPerformers.swift; sourceTree = "<group>"; };
 		3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWheelConfiguration.swift; sourceTree = "<group>"; };
 		3C866AE5216344850044EB1C /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPresenter.swift; sourceTree = "<group>"; };
 		3C8E235821613FDD0010F7E6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C8E235A21613FF90010F7E6 /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
@@ -774,8 +782,8 @@
 			children = (
 				3C97C33F217F3C940025BD3D /* Cells */,
 				3C97C33A217F3B3D0025BD3D /* Models */,
-				3C746BE7217F18FC002E51DC /* DaysView.swift */,
 				3C27668F217DEA1400374E7E /* MonthView.swift */,
+				3C746BE7217F18FC002E51DC /* DaysView.swift */,
 				3C746BE3217EF64E002E51DC /* CalendarView.swift */,
 				3C746BE5217EF9E0002E51DC /* CalendarView.xib */,
 			);
@@ -1050,6 +1058,8 @@
 				3C8E235C21614EA60010F7E6 /* UIImage+Extension.swift */,
 				3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */,
 				3C82F4652164A98A0024B3E4 /* Date+Extension.swift */,
+				3C4EAF1B218067B300CEB18B /* CALayer+Extension.swift */,
+				3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1131,6 +1141,7 @@
 				3C866AE5216344850044EB1C /* Identifier.swift */,
 				3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */,
 				3C0EA7BC21708A5400C5EB13 /* Style.swift */,
+				3C4EAF172180487F00CEB18B /* DelegateCall.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1214,6 +1225,7 @@
 			children = (
 				3C97C33B217F3B520025BD3D /* CalendarItem.swift */,
 				3C97C33D217F3B740025BD3D /* CalendarModel.swift */,
+				3C4EAF192180628800CEB18B /* CalendarStyle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1973,10 +1985,12 @@
 				3C8E235B21613FF90010F7E6 /* ImageScrollView.swift in Sources */,
 				3C8E235D21614EA60010F7E6 /* UIImage+Extension.swift in Sources */,
 				3C41F91E216118F1002334DB /* UIColor+Extension.swift in Sources */,
+				3C892E5B2180772400BDEE55 /* UILabel+Extension.swift in Sources */,
 				3C866AE6216344850044EB1C /* Identifier.swift in Sources */,
 				3C41F920216118F1002334DB /* Dictionary+Extension.swift in Sources */,
 				3C41F923216118F1002334DB /* UIView+Extension.swift in Sources */,
 				3C41F92E216119EC002334DB /* Double+Extension.swift in Sources */,
+				3C4EAF182180487F00CEB18B /* DelegateCall.swift in Sources */,
 				3C9709E8216CCD0900394013 /* ColorUtils.swift in Sources */,
 				3C41F91F216118F1002334DB /* UIViewController+Extension.swift in Sources */,
 				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,
@@ -1988,6 +2002,7 @@
 				3C0EA7BD21708A5400C5EB13 /* Style.swift in Sources */,
 				3C41F92A2161190F002334DB /* TableViewDataSource.swift in Sources */,
 				3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */,
+				3C4EAF1C218067B300CEB18B /* CALayer+Extension.swift in Sources */,
 				3C41F924216118F1002334DB /* NSMutableAttributedString+Extension.swift in Sources */,
 				3C41F927216118F1002334DB /* CGFloat+Extension.swift in Sources */,
 				3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */,
@@ -2007,6 +2022,7 @@
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */,
+				3C4EAF1A2180628800CEB18B /* CalendarStyle.swift in Sources */,
 				3C82F47E2164ABDB0024B3E4 /* ButtonAnimationViewController.swift in Sources */,
 				3C97C339217F38020025BD3D /* CalendarCellDay.swift in Sources */,
 				3C276690217DEA1400374E7E /* MonthView.swift in Sources */,

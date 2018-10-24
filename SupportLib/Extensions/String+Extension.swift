@@ -58,10 +58,18 @@ extension String {
         return ceil(boundingBox.height)
     }
 
-    public func width(withConstraintedHeight height: CGFloat, font: UIFont) -> CGFloat {
+    public func width(withConstraintedHeight height: CGFloat, font: UIFont, paragraphStyle: NSMutableParagraphStyle) -> CGFloat {
         let constraintRect = CGSize(width: .greatestFiniteMagnitude, height: height)
-        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        let boundingBox = self.boundingRect(with: constraintRect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font, NSAttributedString.Key.paragraphStyle: paragraphStyle], context: nil)
         return ceil(boundingBox.width)
     }
-}
 
+    public func getAttributedString(lineSpacing: CGFloat) -> NSMutableAttributedString {
+        let text = self
+        let attributeString = NSMutableAttributedString(string: text)
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = lineSpacing
+        attributeString.addAttribute(NSAttributedString.Key.paragraphStyle, value: style, range: NSMakeRange(0, text.count))
+        return attributeString
+    }
+}

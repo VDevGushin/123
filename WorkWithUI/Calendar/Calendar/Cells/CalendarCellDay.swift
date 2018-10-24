@@ -12,6 +12,7 @@ class CalendarCellDay: UICollectionViewCell {
     static let offsetForDays: CGFloat = 12.0
     var calendarItem: CalendarItem?
     struct Colors {
+        static var sekectedColor = UIColor.init(hex: "#00aec5")
         static var darkRed = #colorLiteral(red: 0.8039215803, green: 0.3953110376, blue: 0.4118975407, alpha: 1)
         static var lightGray = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         static var lightRed = #colorLiteral(red: 0.8039215803, green: 0.572896705, blue: 0.5696038044, alpha: 1)

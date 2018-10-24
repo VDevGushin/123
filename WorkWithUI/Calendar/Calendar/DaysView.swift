@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SupportLib
 
 fileprivate extension Array where Element == [CalendarItem] {
     func getFlatDates() -> [CalendarItem] {
@@ -15,11 +16,9 @@ fileprivate extension Array where Element == [CalendarItem] {
     }
 }
 
-protocol DaysViewDelegate: class {
-    func didSelectDay(dayModel: CalendarItem)
-}
-
 final class DaysView: UIView {
+    var didSelectDayHandler = DelegatedCall<CalendarItem>()
+
     private let dayCollection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -32,7 +31,6 @@ final class DaysView: UIView {
         return myCollectionView
     }()
 
-    var delegate: DaysViewDelegate?
     private var dates: [CalendarItem] = []
     private var scrollDelegateIsLock = false
 
@@ -88,10 +86,10 @@ extension DaysView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         let visiblePoint = CGPoint(x: visibleRect.minX + 10, y: visibleRect.midY)
         guard let indexPath = dayCollection.indexPathForItem(at: visiblePoint) else { return }
         if !self.scrollDelegateIsLock {
-            delegate?.didSelectDay(dayModel: self.dates[indexPath.item])
+            didSelectDayHandler.execute?(self.dates[indexPath.item])
         }
     }
-    
+
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if self.scrollDelegateIsLock {
             self.scrollDelegateIsLock = false
@@ -104,7 +102,7 @@ extension DaysView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.didSelectDay(dayModel: self.dates[indexPath.item])
+        didSelectDayHandler.execute?(self.dates[indexPath.item])
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -118,9 +116,9 @@ extension DaysView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height: CGFloat = collectionView.frame.height - 12
+        let height: CGFloat = collectionView.frame.height
         let day = "\(self.getMonthDate(indexPath.item))"
-        let width = day.width(withConstraintedHeight: height, font: UIFont.systemFont(ofSize: 16)) + CalendarCellDay.offsetForDays
+        let width = day.width(withConstraintedHeight: height, font: UIFont.systemFont(ofSize: 16), paragraphStyle: NSMutableParagraphStyle()) + CalendarCellDay.offsetForDays
         return CGSize(width: width, height: height)
     }
 
