@@ -27,14 +27,14 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fry-Ca-te4" customClass="CalendarView" customModule="WorkWithUI" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="58" width="375" height="150"/>
+                    <rect key="frame" x="0.0" y="58" width="375" height="130"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="Q4N-AS-ig4"/>
+                        <constraint firstAttribute="height" constant="130" id="Q4N-AS-ig4"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="gc2-hm-4Gs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="36n-Zq-7Aj"/>
                 <constraint firstItem="fry-Ca-te4" firstAttribute="top" secondItem="gc2-hm-4Gs" secondAttribute="bottom" constant="8" id="5K9-Lc-on4"/>

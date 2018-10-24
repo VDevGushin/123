@@ -67,10 +67,6 @@ final class MonthView: UIView {
 }
 
 extension MonthView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    private func getMonthName(_ index: Int) -> CalendarItem {
-        return self.dates[index]
-    }
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.dates.count
     }
@@ -88,9 +84,7 @@ extension MonthView: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let height: CGFloat = collectionView.frame.height
         let month = self.getMonthName(indexPath.item).monthName
-        let style = NSMutableParagraphStyle()
-        style.lineSpacing = CalendarCell.lineHeight
-        let width = month.width(withConstraintedHeight: height, font: UIFont.systemFont(ofSize: CalendarCell.defaultFontSize), paragraphStyle: style) + CalendarCellDay.offsetForDays
+        let width = self.getCellWidth(with: month, height: height)
         return CGSize(width: width, height: height)
     }
 
@@ -100,5 +94,18 @@ extension MonthView: UICollectionViewDelegate, UICollectionViewDataSource, UICol
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10.0
+    }
+}
+
+fileprivate extension MonthView {
+    func getCellWidth(with text: String, height: CGFloat) -> CGFloat {
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = CalendarCell.lineHeight
+        let width = text.width(withConstraintedHeight: height, font: CalendarCell.font, paragraphStyle: style) + CalendarCell.offsetForMonth
+        return width
+    }
+
+    func getMonthName(_ index: Int) -> CalendarItem {
+        return self.dates[index]
     }
 }

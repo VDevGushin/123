@@ -66,11 +66,8 @@ final class DaysView: UIView {
     }
 
     func scrollToDay(monthHash: Int) {
-        let index = self.dates.index {
-            $0.monthHash == monthHash
-        }
+        let index = self.dates.index { $0.monthHash == monthHash }
         guard let neededIndex = index else { return }
-
         let indexPath = IndexPath(item: neededIndex, section: 0)
         self.scrollDelegateIsLock = true
         self.dayCollection.scrollToItem(at: indexPath, at: [.centeredVertically, .left], animated: true)
@@ -96,11 +93,6 @@ extension DaysView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         }
     }
 
-    private func getMonthDate(_ index: Int) -> Int {
-        let datesForMonth = self.dates[index]
-        return datesForMonth.day
-    }
-
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         didSelectDayHandler.execute?(self.dates[indexPath.item])
     }
@@ -115,19 +107,31 @@ extension DaysView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         return cell
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let height: CGFloat = collectionView.frame.height
-        let day = "\(self.getMonthDate(indexPath.item))"
-        let width = day.width(withConstraintedHeight: height, font: UIFont.systemFont(ofSize: 16), paragraphStyle: NSMutableParagraphStyle()) + CalendarCellDay.offsetForDays
-        return CGSize(width: width, height: height)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let height: CGFloat = collectionView.frame.height
+//        let day = "\(self.getMonthDate(indexPath.item))"
+//        let width = self.getCellWidth(with: day, height: height)
+//        return CGSize(width: width, height: height)
+//    }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0.0
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.0
+        return 8.0
     }
 }
 
+fileprivate extension DaysView {
+    func getCellWidth(with text: String, height: CGFloat) -> CGFloat {
+        let style = NSMutableParagraphStyle()
+        style.lineSpacing = CalendarCell.lineHeight
+        let width = text.width(withConstraintedHeight: height, font: CalendarCellDay.defaultFont, paragraphStyle: style) + CalendarCellDay.offsetForDays
+        return width
+    }
+    
+    func getMonthDate(_ index: Int) -> Int {
+        return self.dates[index].day
+    }
+}

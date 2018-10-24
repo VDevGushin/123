@@ -9,9 +9,10 @@
 import UIKit
 
 class CalendarCell: UICollectionViewCell {
-    static let offsetForDays: CGFloat = 12.0
+    static let offsetForMonth: CGFloat = 12.0
     static let lineHeight: CGFloat = 20.0
     static let defaultFontSize: CGFloat = 17.0
+    static let font = UIFont.systemFont(ofSize: CalendarCell.defaultFontSize)
 
     var calendarItem: CalendarItem?
 
@@ -44,8 +45,8 @@ class CalendarCell: UICollectionViewCell {
         addSubview(self.month)
         self.month.layout {
             $0.top.equal(to: topAnchor)
-            $0.leftAnchor.equal(to: leftAnchor, offsetBy: CalendarCell.offsetForDays / 2)
-            $0.rightAnchor.equal(to: rightAnchor, offsetBy: -(CalendarCell.offsetForDays / 2))
+            $0.leftAnchor.equal(to: leftAnchor, offsetBy: CalendarCell.offsetForMonth / 2)
+            $0.rightAnchor.equal(to: rightAnchor, offsetBy: -(CalendarCell.offsetForMonth / 2))
             $0.bottom.equal(to: bottomAnchor)
         }
 
@@ -55,7 +56,6 @@ class CalendarCell: UICollectionViewCell {
             $0.rightAnchor.equal(to: rightAnchor)
             $0.bottom.equal(to: bottomAnchor)
         }
-        
         self.border.heightAnchor.constraint(equalToConstant: 2).isActive = true
         self.backgroundColor = CalendarStyle.Colors.monthBackground
         self.setDefaultStyle()

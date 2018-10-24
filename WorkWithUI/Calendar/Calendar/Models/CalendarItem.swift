@@ -13,7 +13,6 @@ struct CalendarItem {
     private let days = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
 
     var monthHash: Int { return month.hashValue ^ year.hashValue }
-    var dayHash: Int { return day.hashValue ^ month.hashValue ^ year.hashValue }
 
     enum ItemType {
         case first

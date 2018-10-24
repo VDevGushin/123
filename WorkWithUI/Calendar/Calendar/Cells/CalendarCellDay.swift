@@ -10,44 +10,49 @@ import UIKit
 
 class CalendarCellDay: UICollectionViewCell {
     static let offsetForDays: CGFloat = 12.0
+    static let defaultFontSize: CGFloat = 17.0
+    static let smallFontSize: CGFloat = 12.0
+    static let defaultLineHeight: CGFloat = 20.0
+    static let smallLineHeight: CGFloat = 14.0
+    static let defaultFont = UIFont.systemFont(ofSize: CalendarCellDay.defaultFontSize)
+    static let smallFont = UIFont.systemFont(ofSize: CalendarCellDay.smallFontSize)
+
     var calendarItem: CalendarItem?
-    struct Colors {
-        static var sekectedColor = UIColor.init(hex: "#00aec5")
-        static var darkRed = #colorLiteral(red: 0.8039215803, green: 0.3953110376, blue: 0.4118975407, alpha: 1)
-        static var lightGray = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        static var lightRed = #colorLiteral(red: 0.8039215803, green: 0.572896705, blue: 0.5696038044, alpha: 1)
-        static var lightYellow = #colorLiteral(red: 0.8039215803, green: 0.7101274876, blue: 0.5080572985, alpha: 1)
-    }
 
     override var isSelected: Bool {
-        didSet { self.backgroundColor = isSelected == true ? Colors.darkRed : self.makeBackgroundColor() }
+        didSet {
+            if isSelected {
+                self.setSelectedStyle()
+            } else {
+                self.setDefaultStyle()
+            }
+        }
     }
 
     func setCalendarItemForDay(with: CalendarItem) {
         self.calendarItem = with
         self.dayNumber.text = "\(with.day)"
         self.day.text = with.dayName
-
-        self.backgroundColor = self.makeBackgroundColor()
+        self.setDefaultStyle()
+        self.border.backgroundColor = self.makeBorderColor()
     }
 
-    private func makeBackgroundColor() -> UIColor {
-        if let item = self.calendarItem {
-            switch item.type {
-            case .first:
-                self.dayNumber.textColor = .white
-                return Colors.lightYellow
-            case .last:
-                self.dayNumber.textColor = .white
-                return Colors.lightRed
-            case .middle:
-                self.dayNumber.textColor = .white
-                return Colors.lightGray
-            }
-        }
-        self.dayNumber.textColor = .black
-        return .clear
-    }
+//        if let item = self.calendarItem {
+//            switch item.type {
+//            case .first:
+//                self.dayNumber.textColor = .white
+//                return Colors.lightYellow
+//            case .last:
+//                self.dayNumber.textColor = .white
+//                return Colors.lightRed
+//            case .middle:
+//                self.dayNumber.textColor = .white
+//                return Colors.lightGray
+//            }
+//        }
+//        self.dayNumber.textColor = .black
+//        return .clear
+//}
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -60,8 +65,9 @@ class CalendarCellDay: UICollectionViewCell {
     }
 
     private func setup() {
-        backgroundColor = UIColor.clear
         setupViews()
+        self.backgroundColor = CalendarStyle.Colors.whiteFontColor
+        self.setDefaultStyle()
     }
 
     private func setupViews() {
@@ -73,15 +79,31 @@ class CalendarCellDay: UICollectionViewCell {
             $0.bottom.equal(to: bottomAnchor)
         }
         myStackView.addArrangedSubview(day)
-        myStackView.addArrangedSubview(dayNumber)
+        myStackView.addArrangedSubview(roundView)
+
+        addSubview(border)
+        border.layout {
+            $0.top.equal(to: topAnchor)
+            $0.rightAnchor.equal(to: rightAnchor)
+            $0.bottom.equal(to: bottomAnchor)
+        }
+
+        roundView.addSubview(dayNumber)
+        dayNumber.layout {
+            $0.top.equal(to: roundView.topAnchor)
+            $0.leftAnchor.equal(to: roundView.leftAnchor)
+            $0.rightAnchor.equal(to: roundView.rightAnchor)
+            $0.bottom.equal(to: roundView.bottomAnchor)
+        }
+        border.widthAnchor.constraint(equalToConstant: 1).isActive = true
     }
 
     private let day: UILabel = {
         let label = UILabel()
         label.text = "00"
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = UIColor.darkGray
+        label.font = CalendarCellDay.smallFont
+        label.setLineHeight(lineHeight: CalendarCellDay.smallLineHeight)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -90,8 +112,8 @@ class CalendarCellDay: UICollectionViewCell {
         let label = UILabel()
         label.text = "00"
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 16)
-        label.textColor = UIColor.darkGray
+        label.font = CalendarCellDay.defaultFont
+        label.setLineHeight(lineHeight: CalendarCellDay.defaultLineHeight)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -103,4 +125,46 @@ class CalendarCellDay: UICollectionViewCell {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
+
+    private let border: UIView = {
+        let border = UIView()
+        border.backgroundColor = .clear
+        return border
+    }()
+
+    private let roundView: RoundView = {
+        let view = RoundView()
+        return view
+    }()
 }
+
+// MARK: - Style
+fileprivate extension CalendarCellDay {
+    func makeBorderColor() -> UIColor {
+        if let item = self.calendarItem, case item.type = CalendarItem.ItemType.last {
+            return CalendarStyle.Colors.grayFontColor
+        }
+        return .clear
+    }
+
+    func setSelectedStyle() {
+        self.dayNumber.textColor = CalendarStyle.Colors.whiteFontColor
+        self.day.textColor = CalendarStyle.Colors.grayFontColor
+        self.roundView.backgroundColor = CalendarStyle.Colors.selectedColor
+    }
+
+    func setDefaultStyle() {
+        self.dayNumber.textColor = CalendarStyle.Colors.blackFontColor
+        self.day.textColor = CalendarStyle.Colors.grayFontColor
+        self.roundView.backgroundColor = .clear
+    }
+}
+
+final class RoundView: UIView {
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.layer.cornerRadius = self.frame.size.height / 2
+        self.clipsToBounds = true
+    }
+}
+
