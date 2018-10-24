@@ -55,11 +55,9 @@ class CalendarCell: UICollectionViewCell {
             $0.rightAnchor.equal(to: rightAnchor)
             $0.bottom.equal(to: bottomAnchor)
         }
+        
         self.border.heightAnchor.constraint(equalToConstant: 2).isActive = true
-
         self.backgroundColor = CalendarStyle.Colors.monthBackground
-        self.month.font = UIFont.systemFont(ofSize: CalendarCell.defaultFontSize)
-        self.month.setLineHeight(lineHeight: CalendarCell.lineHeight)
         self.setDefaultStyle()
     }
 
@@ -71,7 +69,8 @@ class CalendarCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "00"
         label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: CalendarCell.defaultFontSize)
+        label.setLineHeight(lineHeight: CalendarCell.lineHeight)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -80,7 +79,6 @@ class CalendarCell: UICollectionViewCell {
         let border = UIView()
         return border
     }()
-
 }
 
 // MARK: - Style
