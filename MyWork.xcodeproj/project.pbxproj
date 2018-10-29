@@ -141,6 +141,7 @@
 		3C857861216FAC5200445EB8 /* ColorsWheelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */; };
 		3C866ADD216337920044EB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7621523AB8002A6600 /* Assets.xcassets */; };
 		3C866AE6216344850044EB1C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C866AE5216344850044EB1C /* Identifier.swift */; };
+		3C8701EA2186EEB40094186B /* KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8701E92186EEB40094186B /* KeyPaths.swift */; };
 		3C892E5B2180772400BDEE55 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */; };
 		3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */; };
 		3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E235821613FDD0010F7E6 /* GradientView.swift */; };
@@ -466,6 +467,7 @@
 		3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsPerformers.swift; sourceTree = "<group>"; };
 		3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWheelConfiguration.swift; sourceTree = "<group>"; };
 		3C866AE5216344850044EB1C /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		3C8701E92186EEB40094186B /* KeyPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPaths.swift; sourceTree = "<group>"; };
 		3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPresenter.swift; sourceTree = "<group>"; };
 		3C8E235821613FDD0010F7E6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -1374,6 +1376,7 @@
 			children = (
 				3C55FDFF213FC4AC00ABA745 /* Habr */,
 				3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */,
+				3C8701E92186EEB40094186B /* KeyPaths.swift */,
 				3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */,
 				3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */,
 				3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */,
@@ -2035,6 +2038,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CF62BA3214F718A00BD1579 /* ReusableDataSources.swift in Sources */,
+				3C8701EA2186EEB40094186B /* KeyPaths.swift in Sources */,
 				3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */,
 				3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */,
 				3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */,

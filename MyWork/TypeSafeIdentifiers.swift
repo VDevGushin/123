@@ -16,6 +16,10 @@ extension Identifier: ExpressibleByStringLiteral {
     init(stringLiteral value: String) {
         string = value
     }
+
+    init() {
+        self.init(string: UUID().uuidString)
+    }
 }
 //to make it simple to print an identifier
 extension Identifier: CustomStringConvertible {
