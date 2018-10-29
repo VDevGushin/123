@@ -1,5 +1,5 @@
 //
-//  LayoutConstraint.swift
+//  LayoutConstraint+NSLayoutAnchor.swift
 //  SupportLib
 //
 //  Created by Vladislav Gushin on 15/10/2018.
@@ -9,7 +9,7 @@
 import UIKit
 
 extension NSLayoutAnchor: LayoutAnchor { }
-
+//extension NSLayoutDimension : LayoutAnchorDimension { }
 public protocol LayoutAnchor {
     func constraint(equalTo anchor: Self,
                     constant: CGFloat) -> NSLayoutConstraint
@@ -21,20 +21,18 @@ public protocol LayoutAnchor {
 
 public struct LayoutProperty<Anchor: LayoutAnchor> {
     fileprivate let anchor: Anchor
-}
-
-public extension LayoutProperty {
+    
     public func equal(to otherAnchor: Anchor, offsetBy constant: CGFloat = 0) {
         anchor.constraint(equalTo: otherAnchor,
                           constant: constant).isActive = true
     }
-
+    
     public func greaterThanOrEqual(to otherAnchor: Anchor,
                                    offsetBy constant: CGFloat = 0) {
         anchor.constraint(greaterThanOrEqualTo: otherAnchor,
                           constant: constant).isActive = true
     }
-
+    
     public func lessThanOrEqual(to otherAnchor: Anchor,
                                 offsetBy constant: CGFloat = 0) {
         anchor.constraint(lessThanOrEqualTo: otherAnchor,
@@ -42,11 +40,13 @@ public extension LayoutProperty {
     }
 }
 
+
 public class LayoutProxy {
     public lazy var leading = property(with: view.leadingAnchor)
     public lazy var trailing = property(with: view.trailingAnchor)
     public lazy var top = property(with: view.topAnchor)
     public lazy var bottom = property(with: view.bottomAnchor)
+    
     public lazy var width = property(with: view.widthAnchor)
     public lazy var height = property(with: view.heightAnchor)
     public lazy var leftAnchor = property(with: view.leftAnchor)
@@ -64,7 +64,7 @@ public class LayoutProxy {
 }
 
 extension UIView {
-    public func layout(using closure: (LayoutProxy) -> Void) {
+    public func layoutConstraint(using closure: (LayoutProxy) -> Void) {
         translatesAutoresizingMaskIntoConstraints = false
         closure(LayoutProxy(view: self))
     }

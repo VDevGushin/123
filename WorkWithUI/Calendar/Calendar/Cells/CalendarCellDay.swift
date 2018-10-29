@@ -72,7 +72,7 @@ class CalendarCellDay: UICollectionViewCell {
 
     private func setupViews() {
         addSubview(myStackView)
-        myStackView.layout {
+        myStackView.layoutConstraint {
             $0.top.equal(to: topAnchor)
             $0.leftAnchor.equal(to: leftAnchor)
             $0.rightAnchor.equal(to: rightAnchor)
@@ -82,14 +82,14 @@ class CalendarCellDay: UICollectionViewCell {
         myStackView.addArrangedSubview(roundView)
 
         addSubview(border)
-        border.layout {
+        border.layoutConstraint {
             $0.top.equal(to: topAnchor)
             $0.rightAnchor.equal(to: rightAnchor)
             $0.bottom.equal(to: bottomAnchor)
         }
 
         roundView.addSubview(dayNumber)
-        dayNumber.layout {
+        dayNumber.layoutConstraint {
             $0.top.equal(to: roundView.topAnchor)
             $0.leftAnchor.equal(to: roundView.leftAnchor)
             $0.rightAnchor.equal(to: roundView.rightAnchor)

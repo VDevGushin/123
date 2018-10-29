@@ -43,7 +43,7 @@ class CalendarCellMonth: UICollectionViewCell {
 
     private func setupViews() {
         addSubview(self.month)
-        self.month.layout {
+        self.month.layoutConstraint {
             $0.top.equal(to: topAnchor)
             $0.leftAnchor.equal(to: leftAnchor, offsetBy: CalendarCellMonth.offsetForMonth / 2)
             $0.rightAnchor.equal(to: rightAnchor, offsetBy: -(CalendarCellMonth.offsetForMonth / 2))
@@ -51,7 +51,7 @@ class CalendarCellMonth: UICollectionViewCell {
         }
 
         addSubview(self.border)
-        self.border.layout {
+        self.border.layoutConstraint {
             $0.leftAnchor.equal(to: leftAnchor)
             $0.rightAnchor.equal(to: rightAnchor)
             $0.bottom.equal(to: bottomAnchor)

@@ -37,7 +37,7 @@ class DLSViewController: UIViewController {
 //        proxy.width.equal(to: guide.widthAnchor)
 
 //        //using uivuew extension
-        label.layout {
+        label.layoutConstraint {
             $0.top.equal(to: guide.topAnchor, offsetBy: 20)
             $0.leading.equal(to: guide.leadingAnchor)
             $0.width.equal(to: guide.widthAnchor)

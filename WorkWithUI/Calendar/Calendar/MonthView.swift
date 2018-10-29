@@ -40,7 +40,7 @@ final class MonthView: UIView {
         self.backgroundColor = UIColor.clear
         self.addSubview(monthCollection)
 
-        self.monthCollection.layout {
+        self.monthCollection.layoutConstraint {
             $0.top.equal(to: self.topAnchor)
             $0.leading.equal(to: self.leadingAnchor)
             $0.trailing.equal(to: self.trailingAnchor)

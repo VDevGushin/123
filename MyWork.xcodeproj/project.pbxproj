@@ -47,7 +47,7 @@
 		3C38E1742107732A005CBDE9 /* RoundPercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */; };
 		3C38E17621077353005CBDE9 /* RoundPercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */; };
 		3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464B2174643E0032BC36 /* DLSViewController.swift */; };
-		3C3B464F21746A770032BC36 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464E21746A770032BC36 /* LayoutConstraint.swift */; };
+		3C3B464F21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */; };
 		3C3D0E41216C8654006B7907 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E40216C8654006B7907 /* Strings.swift */; };
 		3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */; };
 		3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */; };
@@ -249,6 +249,12 @@
 		3CE8CAF62136AB49003752DC /* LogicControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8CAF52136AB49003752DC /* LogicControllers.swift */; };
 		3CEE4255210790FA00671D1D /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE4254210790FA00671D1D /* UIColor+Ex.swift */; };
 		3CEE42572107911E00671D1D /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE42562107911E00671D1D /* String+Ex.swift */; };
+		3CEF8E892187105800996597 /* LayoutConstraint+NSLayoutDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E882187105800996597 /* LayoutConstraint+NSLayoutDimension.swift */; };
+		3CEF8E8D218713DE00996597 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E8C218713DE00996597 /* Endpoint.swift */; };
+		3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */; };
+		3CEF8E9421871AF600996597 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E9321871AF600996597 /* Chat.swift */; };
+		3CEF8E9621871EC500996597 /* ChatsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E9521871EC500996597 /* ChatsLoader.swift */; };
+		3CEF8E98218723D500996597 /* TestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E97218723D500996597 /* TestMock.swift */; };
 		3CF3D1A22140EFDA00CB004A /* CapturingObjectsInClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */; };
 		3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */; };
 		3CF444E9210EECCC005392CF /* PersonStatisticControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */; };
@@ -350,7 +356,7 @@
 		3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPercentagesControl.swift; sourceTree = "<group>"; };
 		3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundPercentagesControl.xib; sourceTree = "<group>"; };
 		3C3B464B2174643E0032BC36 /* DLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLSViewController.swift; sourceTree = "<group>"; };
-		3C3B464E21746A770032BC36 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutConstraint+NSLayoutAnchor.swift"; sourceTree = "<group>"; };
 		3C3D0E40216C8654006B7907 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPresenter.swift; sourceTree = "<group>"; };
 		3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingAutoclosure .swift"; sourceTree = "<group>"; };
@@ -596,6 +602,12 @@
 		3CE8CAF52136AB49003752DC /* LogicControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicControllers.swift; sourceTree = "<group>"; };
 		3CEE4254210790FA00671D1D /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
 		3CEE42562107911E00671D1D /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		3CEF8E882187105800996597 /* LayoutConstraint+NSLayoutDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutConstraint+NSLayoutDimension.swift"; sourceTree = "<group>"; };
+		3CEF8E8C218713DE00996597 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBChatWebConfigurator.swift; sourceTree = "<group>"; };
+		3CEF8E9321871AF600996597 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		3CEF8E9521871EC500996597 /* ChatsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsLoader.swift; sourceTree = "<group>"; };
+		3CEF8E97218723D500996597 /* TestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMock.swift; sourceTree = "<group>"; };
 		3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturingObjectsInClosures.swift; sourceTree = "<group>"; };
 		3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticControl.swift; sourceTree = "<group>"; };
 		3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticControl.xib; sourceTree = "<group>"; };
@@ -848,7 +860,8 @@
 		3C3B464D21746A5B0032BC36 /* LayoutConstraint */ = {
 			isa = PBXGroup;
 			children = (
-				3C3B464E21746A770032BC36 /* LayoutConstraint.swift */,
+				3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */,
+				3CEF8E882187105800996597 /* LayoutConstraint+NSLayoutDimension.swift */,
 			);
 			path = LayoutConstraint;
 			sourceTree = "<group>";
@@ -1107,6 +1120,7 @@
 		3C82F46C2164AA0F0024B3E4 /* WorkWithUI */ = {
 			isa = PBXGroup;
 			children = (
+				3CEF8E8A218712FB00996597 /* Chat */,
 				3C276687217DE1C200374E7E /* Calendar */,
 				3C82F46D2164AA0F0024B3E4 /* AppDelegate.swift */,
 				3C82F4712164AA0F0024B3E4 /* Main.storyboard */,
@@ -1529,6 +1543,34 @@
 				3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */,
 			);
 			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		3CEF8E8A218712FB00996597 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF8E9121871AE100996597 /* ChatModels */,
+				3CEF8E8B2187137800996597 /* WebService */,
+				3CEF8E97218723D500996597 /* TestMock.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		3CEF8E8B2187137800996597 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF8E8C218713DE00996597 /* Endpoint.swift */,
+				3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */,
+				3CEF8E9521871EC500996597 /* ChatsLoader.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		3CEF8E9121871AE100996597 /* ChatModels */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF8E9321871AF600996597 /* Chat.swift */,
+			);
+			path = ChatModels;
 			sourceTree = "<group>";
 		};
 		3CF444E3210EEC91005392CF /* PersonStatisticControl */ = {
@@ -1999,12 +2041,13 @@
 				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,
 				3C41F922216118F1002334DB /* Result.swift in Sources */,
 				3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */,
-				3C3B464F21746A770032BC36 /* LayoutConstraint.swift in Sources */,
+				3C3B464F21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift in Sources */,
 				3C0F05BE216135E800F04623 /* UIWindow+Extension.swift in Sources */,
 				3C41F91D216118F1002334DB /* String+Extension.swift in Sources */,
 				3C0EA7BD21708A5400C5EB13 /* Style.swift in Sources */,
 				3C41F92A2161190F002334DB /* TableViewDataSource.swift in Sources */,
 				3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */,
+				3CEF8E892187105800996597 /* LayoutConstraint+NSLayoutDimension.swift in Sources */,
 				3C4EAF1C218067B300CEB18B /* CALayer+Extension.swift in Sources */,
 				3C41F924216118F1002334DB /* NSMutableAttributedString+Extension.swift in Sources */,
 				3C41F927216118F1002334DB /* CGFloat+Extension.swift in Sources */,
@@ -2017,19 +2060,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CEF8E8D218713DE00996597 /* Endpoint.swift in Sources */,
 				3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */,
 				3C97C33E217F3B740025BD3D /* CalendarModel.swift in Sources */,
+				3CEF8E98218723D500996597 /* TestMock.swift in Sources */,
 				3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */,
 				3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */,
+				3CEF8E9421871AF600996597 /* Chat.swift in Sources */,
 				3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
+				3CEF8E9621871EC500996597 /* ChatsLoader.swift in Sources */,
 				3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */,
 				3C4EAF1A2180628800CEB18B /* CalendarStyle.swift in Sources */,
 				3C82F47E2164ABDB0024B3E4 /* ButtonAnimationViewController.swift in Sources */,
 				3C97C339217F38020025BD3D /* CalendarCellDay.swift in Sources */,
 				3C276690217DEA1400374E7E /* MonthView.swift in Sources */,
 				3C97C33C217F3B520025BD3D /* CalendarItem.swift in Sources */,
+				3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

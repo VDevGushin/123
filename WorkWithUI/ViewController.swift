@@ -65,10 +65,12 @@ class ViewController: UIViewController {
         animation.repeatCount = .infinity
         imageLayer.add(animation, forKey: "hypnoscale")
     }
-
+    let t = TestMock()
     @IBAction func openYellow(_ sender: Any) {
         let vc = CalendarViewController.init(nibName: "CalendarViewController", bundle: nil)
         self.present(vc, animated: true, completion: nil)
+
+        t.test()
     }
 }
 

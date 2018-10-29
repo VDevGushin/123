@@ -48,7 +48,7 @@ final class DaysView: UIView {
         self.backgroundColor = UIColor.clear
         self.addSubview(dayCollection)
 
-        self.dayCollection.layout {
+        self.dayCollection.layoutConstraint {
             $0.top.equal(to: self.topAnchor)
             $0.leading.equal(to: self.leadingAnchor)
             $0.trailing.equal(to: self.trailingAnchor)
