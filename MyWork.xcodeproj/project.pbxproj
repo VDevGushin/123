@@ -41,6 +41,17 @@
 		3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */; };
 		3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */; };
 		3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C3D0214B78DF008BBC12 /* ModellingState .swift */; };
+		3C35CBFB2187830200DDE92E /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFA2187830200DDE92E /* Data+Extension.swift */; };
+		3C35CBFD218784F600DDE92E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFC218784F600DDE92E /* Message.swift */; };
+		3C35CBFF2187869300DDE92E /* ChatMessagesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFE2187869300DDE92E /* ChatMessagesLoader.swift */; };
+		3C35CC012187892800DDE92E /* ChatsLoaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC002187892800DDE92E /* ChatsLoaderError.swift */; };
+		3C35CC08218796C200DDE92E /* ChatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC06218796C200DDE92E /* ChatsTableViewController.swift */; };
+		3C35CC09218796C200DDE92E /* ChatsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C35CC07218796C200DDE92E /* ChatsTableViewController.xib */; };
+		3C35CC0C218798B100DDE92E /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC0B218798B100DDE92E /* ChatCell.swift */; };
+		3C35CC0F2187A5E100DDE92E /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC0D2187A5E100DDE92E /* MessagesTableViewController.swift */; };
+		3C35CC102187A5E100DDE92E /* MessagesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C35CC0E2187A5E100DDE92E /* MessagesTableViewController.xib */; };
+		3C35CC122187A7D400DDE92E /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC112187A7D400DDE92E /* MessageCell.swift */; };
+		3C35CC142187A93C00DDE92E /* Set+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC132187A93B00DDE92E /* Set+Extension.swift */; };
 		3C362809215A11DB00161B3A /* CustomContainerViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C362808215A11DB00161B3A /* CustomContainerViewControllers.swift */; };
 		3C36D8B120FF185F0095F9A4 /* UsingTokensToHandleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */; };
 		3C37B767213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */; };
@@ -254,7 +265,6 @@
 		3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */; };
 		3CEF8E9421871AF600996597 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E9321871AF600996597 /* Chat.swift */; };
 		3CEF8E9621871EC500996597 /* ChatsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E9521871EC500996597 /* ChatsLoader.swift */; };
-		3CEF8E98218723D500996597 /* TestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E97218723D500996597 /* TestMock.swift */; };
 		3CF3D1A22140EFDA00CB004A /* CapturingObjectsInClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */; };
 		3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */; };
 		3CF444E9210EECCC005392CF /* PersonStatisticControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */; };
@@ -350,6 +360,17 @@
 		3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedAnalyticsSystem.swift; sourceTree = "<group>"; };
 		3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingSingletonsSwift.swift; sourceTree = "<group>"; };
 		3C30C3D0214B78DF008BBC12 /* ModellingState .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModellingState .swift"; sourceTree = "<group>"; };
+		3C35CBFA2187830200DDE92E /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		3C35CBFC218784F600DDE92E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		3C35CBFE2187869300DDE92E /* ChatMessagesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessagesLoader.swift; sourceTree = "<group>"; };
+		3C35CC002187892800DDE92E /* ChatsLoaderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsLoaderError.swift; sourceTree = "<group>"; };
+		3C35CC06218796C200DDE92E /* ChatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewController.swift; sourceTree = "<group>"; };
+		3C35CC07218796C200DDE92E /* ChatsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatsTableViewController.xib; sourceTree = "<group>"; };
+		3C35CC0B218798B100DDE92E /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		3C35CC0D2187A5E100DDE92E /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		3C35CC0E2187A5E100DDE92E /* MessagesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesTableViewController.xib; sourceTree = "<group>"; };
+		3C35CC112187A7D400DDE92E /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		3C35CC132187A93B00DDE92E /* Set+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+Extension.swift"; sourceTree = "<group>"; };
 		3C362808215A11DB00161B3A /* CustomContainerViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerViewControllers.swift; sourceTree = "<group>"; };
 		3C36D8B020FF185F0095F9A4 /* UsingTokensToHandleAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingTokensToHandleAsync.swift; sourceTree = "<group>"; };
 		3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
@@ -607,7 +628,6 @@
 		3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBChatWebConfigurator.swift; sourceTree = "<group>"; };
 		3CEF8E9321871AF600996597 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		3CEF8E9521871EC500996597 /* ChatsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsLoader.swift; sourceTree = "<group>"; };
-		3CEF8E97218723D500996597 /* TestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMock.swift; sourceTree = "<group>"; };
 		3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturingObjectsInClosures.swift; sourceTree = "<group>"; };
 		3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticControl.swift; sourceTree = "<group>"; };
 		3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticControl.xib; sourceTree = "<group>"; };
@@ -832,6 +852,15 @@
 				3CD7AF7C215E71710006A4DD /* UIColllectionView+Ex.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3C35CC0A218798A200DDE92E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3C35CC0B218798B100DDE92E /* ChatCell.swift */,
+				3C35CC112187A7D400DDE92E /* MessageCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		3C36D8AF20FF18300095F9A4 /* ConcurrencyProgramming */ = {
@@ -1075,6 +1104,8 @@
 				3C82F4652164A98A0024B3E4 /* Date+Extension.swift */,
 				3C4EAF1B218067B300CEB18B /* CALayer+Extension.swift */,
 				3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */,
+				3C35CBFA2187830200DDE92E /* Data+Extension.swift */,
+				3C35CC132187A93B00DDE92E /* Set+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1548,9 +1579,13 @@
 		3CEF8E8A218712FB00996597 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				3C35CC0A218798A200DDE92E /* Cells */,
 				3CEF8E9121871AE100996597 /* ChatModels */,
 				3CEF8E8B2187137800996597 /* WebService */,
-				3CEF8E97218723D500996597 /* TestMock.swift */,
+				3C35CC06218796C200DDE92E /* ChatsTableViewController.swift */,
+				3C35CC07218796C200DDE92E /* ChatsTableViewController.xib */,
+				3C35CC0D2187A5E100DDE92E /* MessagesTableViewController.swift */,
+				3C35CC0E2187A5E100DDE92E /* MessagesTableViewController.xib */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1558,9 +1593,9 @@
 		3CEF8E8B2187137800996597 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
-				3CEF8E8C218713DE00996597 /* Endpoint.swift */,
 				3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */,
 				3CEF8E9521871EC500996597 /* ChatsLoader.swift */,
+				3C35CBFE2187869300DDE92E /* ChatMessagesLoader.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -1568,7 +1603,10 @@
 		3CEF8E9121871AE100996597 /* ChatModels */ = {
 			isa = PBXGroup;
 			children = (
+				3CEF8E8C218713DE00996597 /* Endpoint.swift */,
 				3CEF8E9321871AF600996597 /* Chat.swift */,
+				3C35CBFC218784F600DDE92E /* Message.swift */,
+				3C35CC002187892800DDE92E /* ChatsLoaderError.swift */,
 			);
 			path = ChatModels;
 			sourceTree = "<group>";
@@ -1866,8 +1904,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */,
+				3C35CC09218796C200DDE92E /* ChatsTableViewController.xib in Resources */,
 				3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */,
 				3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */,
+				3C35CC102187A5E100DDE92E /* MessagesTableViewController.xib in Resources */,
 				3C82F4752164AA120024B3E4 /* Assets.xcassets in Resources */,
 				3C82F4732164AA0F0024B3E4 /* Main.storyboard in Resources */,
 			);
@@ -2041,6 +2081,8 @@
 				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,
 				3C41F922216118F1002334DB /* Result.swift in Sources */,
 				3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */,
+				3C35CC142187A93C00DDE92E /* Set+Extension.swift in Sources */,
+				3C35CBFB2187830200DDE92E /* Data+Extension.swift in Sources */,
 				3C3B464F21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift in Sources */,
 				3C0F05BE216135E800F04623 /* UIWindow+Extension.swift in Sources */,
 				3C41F91D216118F1002334DB /* String+Extension.swift in Sources */,
@@ -2063,21 +2105,27 @@
 				3CEF8E8D218713DE00996597 /* Endpoint.swift in Sources */,
 				3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */,
 				3C97C33E217F3B740025BD3D /* CalendarModel.swift in Sources */,
-				3CEF8E98218723D500996597 /* TestMock.swift in Sources */,
 				3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */,
 				3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */,
 				3CEF8E9421871AF600996597 /* Chat.swift in Sources */,
+				3C35CBFD218784F600DDE92E /* Message.swift in Sources */,
+				3C35CC012187892800DDE92E /* ChatsLoaderError.swift in Sources */,
 				3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
+				3C35CBFF2187869300DDE92E /* ChatMessagesLoader.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3CEF8E9621871EC500996597 /* ChatsLoader.swift in Sources */,
+				3C35CC0C218798B100DDE92E /* ChatCell.swift in Sources */,
 				3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */,
 				3C4EAF1A2180628800CEB18B /* CalendarStyle.swift in Sources */,
 				3C82F47E2164ABDB0024B3E4 /* ButtonAnimationViewController.swift in Sources */,
+				3C35CC122187A7D400DDE92E /* MessageCell.swift in Sources */,
+				3C35CC0F2187A5E100DDE92E /* MessagesTableViewController.swift in Sources */,
 				3C97C339217F38020025BD3D /* CalendarCellDay.swift in Sources */,
 				3C276690217DEA1400374E7E /* MonthView.swift in Sources */,
 				3C97C33C217F3B520025BD3D /* CalendarItem.swift in Sources */,
 				3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */,
+				3C35CC08218796C200DDE92E /* ChatsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,11 @@ public extension UITableView {
         self.register(nib, forCellReuseIdentifier: id)
     }
 
+    public func registerWithClass(_ cellType: UITableViewCell.Type) {
+        let id = String(describing: cellType)
+        self.register(cellType, forCellReuseIdentifier: id)
+    }
+    
     func registerFooterHeader(_ type: UITableViewHeaderFooterView.Type) {
         let id = String(describing: type)
         let nib = UINib(nibName: id, bundle: nil)

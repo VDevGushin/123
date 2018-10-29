@@ -34,7 +34,7 @@ struct ChatEndpoint {
         return request
     }
 
-    init (configurator: ETBChatWebConfigurator) {
+    init(configurator: ETBChatWebConfigurator) {
         self.scheme = configurator.scheme
         self.host = configurator.host
         self.path = configurator.path
