@@ -13,8 +13,8 @@ final class ChatMessagesLoader {
     private let chatId: Int
     private var page = 1
     private var perPage = 1000
-    private var source = Set<Message>()
-    var sourceChanged = DelegatedCall<Result<Set<Message>>>()
+    private var source = [Message]()
+    var sourceChanged = DelegatedCall<Result<[Message]>>()
 
     init(chatId: Int) { self.chatId = chatId }
 
@@ -22,10 +22,6 @@ final class ChatMessagesLoader {
         self.source.removeAll()
         self.page = 1
         self.getChatMessages()
-    }
-
-    func getLastMessages() {
-        self.getChatMessages(page: 1)
     }
 
     func getChatMessages(page: Int? = nil) {
@@ -43,17 +39,11 @@ final class ChatMessagesLoader {
                 return
             }
             do {
-                let decoder = JSONDecoder.init()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let formatter = DateFormatter()
-                formatter.timeZone = TimeZone(abbreviation: "GMT+0:00")
-                formatter.dateFormat =  "dd.MM.yyyy HH:mm"
-                decoder.dateDecodingStrategy = .formatted(formatter)
-                let messages: Messages = try jsonData.decode(using: decoder)
+                let messages: [Message] = try jsonData.decode(using: ChatResources.decoder)
                 for i in 0..<messages.count {
-                    wSelf.source.insert(messages[i])
+                    wSelf.source.append(messages[i])
                 }
-                wSelf.sourceChanged.execute?(Result.result(wSelf.source))
+                wSelf.sourceChanged.execute?(Result.result(wSelf.source.reversed()))
                 wSelf.page += 1
             } catch {
                 self?.sourceChanged.execute?(Result.error(error))
@@ -61,4 +51,32 @@ final class ChatMessagesLoader {
         }
         task.resume()
     }
+
+//    func getLast() {
+//        let config = ETBChatWebConfigurator.getChatMessages(chatId: self.chatId, page: 1, perPage: self.perPage)
+//        let request = ChatEndpoint(configurator: config).urlRequest()
+//        let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+//            guard let wSelf = self else { return }
+//
+//            if let error = error {
+//                self?.sourceChanged.execute?(Result.error(error))
+//                return
+//            }
+//            guard let jsonData = data else {
+//                self?.sourceChanged.execute?(Result.error(ChatsLoaderError.noData))
+//                return
+//            }
+//            do {
+//                let messages: Messages = try jsonData.decode(using: wSelf.decoder())
+//                for i in 0..<messages.count {
+//                    wSelf.source.insert(messages[i])
+//                }
+//                wSelf.sourceChanged.execute?(Result.result(wSelf.source))
+//                wSelf.page += 1
+//            } catch {
+//                self?.sourceChanged.execute?(Result.error(error))
+//            }
+//        }
+//        task.resume()
+//    }
 }

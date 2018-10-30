@@ -19,7 +19,7 @@ public extension UITableView {
         let id = String(describing: cellType)
         self.register(cellType, forCellReuseIdentifier: id)
     }
-    
+
     func registerFooterHeader(_ type: UITableViewHeaderFooterView.Type) {
         let id = String(describing: type)
         let nib = UINib(nibName: id, bundle: nil)
@@ -58,6 +58,16 @@ public extension UITableView {
             frame.size.height = height
             footerView.frame = frame
             self.tableFooterView = footerView
+        }
+    }
+
+    func scrollToBottom(animated: Bool = true) {
+        let section = self.numberOfSections
+        if section > 0 {
+            let row = self.numberOfRows(inSection: section - 1)
+            if row > 0 {
+                self.scrollToRow(at: NSIndexPath(row: row - 1, section: section - 1) as IndexPath, at: .bottom, animated: animated)
+            }
         }
     }
 }

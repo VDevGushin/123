@@ -26,13 +26,7 @@ final class ChatsLoader {
             }
             
             do {
-                let decoder = JSONDecoder.init()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                let formatter = DateFormatter()
-                formatter.timeZone = TimeZone(abbreviation: "GMT+0:00")
-                formatter.dateFormat =  "dd.MM.yyyy HH:mm"
-                decoder.dateDecodingStrategy = .formatted(formatter)
-                let chats: Chats = try jsonData.decode(using: decoder)
+                let chats: Chats = try jsonData.decode(using:  ChatResources.decoder)
                 handler(Result.result(chats))
             } catch {
                 handler(Result.error(error))

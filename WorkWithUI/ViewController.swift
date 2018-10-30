@@ -70,8 +70,7 @@ class ViewController: UIViewController {
     @IBAction func openYellow(_ sender: Any) {
 //        let vc = CalendarViewController.init(nibName: "CalendarViewController", bundle: nil)
 //        self.present(vc, animated: true, completion: nil)
-        let vc = ChatsTableViewController.init(nibName: "ChatsTableViewController", bundle: nil)
-        self.present(vc, animated: true, completion: nil)
+        self.present( ChatCoordinator.chatNavigation(), animated: true, completion: nil)
     }
     
 }

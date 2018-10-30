@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SupportLib
 
 class CalendarCellDay: UICollectionViewCell {
     static let offsetForDays: CGFloat = 12.0
@@ -157,14 +158,6 @@ fileprivate extension CalendarCellDay {
         self.dayNumber.textColor = CalendarStyle.Colors.blackFontColor
         self.day.textColor = CalendarStyle.Colors.grayFontColor
         self.roundView.backgroundColor = .clear
-    }
-}
-
-final class RoundView: UIView {
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        self.layer.cornerRadius = self.frame.size.height / 2
-        self.clipsToBounds = true
     }
 }
 
