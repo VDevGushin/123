@@ -10,11 +10,11 @@ import UIKit
 
 struct ChatResources {
     //Auth part
-    static let authToken = "a74d900e934cfeee126105c19d0ed5b8"
+    static let authToken = "5fb51ffbe0cf24a2a2b7741087084bf5"
     static let pid = 5787352
     static let userid = "5609724"
-    static let host = "dnevnik.mos.ru"
-    
+    static let host = "dnevnik-test.mos.ru"
+
     static var headers: [String: String] {
         let headers = [
             "Auth-Token": ChatResources.authToken,
@@ -33,26 +33,44 @@ struct ChatResources {
     static let textColor = UIColor.black
     static let myMessageBackgroundColor = UIColor.lightGray
 
+    static let dateFormats = ["dd.MM.yyyy HH:mm", "dd.MM.yyyy HH:mm:ss", "yyyy.MM.dd HH:mm:ss"]
 
     static var decoder: JSONDecoder {
         let decoder = JSONDecoder.init()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         decoder.dateDecodingStrategy = .formatted(dateFormatter)
+
+        decoder.dateDecodingStrategy = .custom({ (decoder) -> Date in
+            let data = try decoder.singleValueContainer().decode(String.self)
+            for format in dateFormats {
+                let formatter = DateFormatter()
+                formatter.dateFormat = format
+                if let date = formatter.date(from: data) {
+                    return date
+                }
+            }
+            return Date()
+        })
         return decoder
+    }
+
+    static var encoder: JSONEncoder {
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
+        encoder.dateEncodingStrategy = .custom({ (date, encoder) in
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd.MM.yyyy HH:mm:ss"
+            let stringData = formatter.string(from: date)
+            var container = encoder.singleValueContainer()
+            try container.encode(stringData)
+        })
+        return encoder
     }
 
     static var dateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.timeZone = TimeZone(abbreviation: "GMT+0:00")
         formatter.dateFormat = "dd.MM.yyyy HH:mm"
-        // formatter.dateFormat = "yyyy.MM.dd HH:mm:ss"
         return formatter
-    }
-    
-    static var encoder : JSONEncoder{
-        let encoder = JSONEncoder()
-        encoder.keyEncodingStrategy = .convertToSnakeCase
-        encoder.dateEncodingStrategy = .formatted(dateFormatter)
-        return encoder
     }
 }

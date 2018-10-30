@@ -9,45 +9,88 @@
 import Foundation
 import SupportLib
 
+protocol ChatMessagesWorkerDelegate: class {
+    func sourceChanged(isFirstTime: Bool, source: Result<[Message]>)
+    func receiveNewMessages(source: Result<[Message]>)
+    func sourceCount(perPage: Int) -> Int
+}
+
 final class ChatMessagesWorker {
+    weak var delegate: ChatMessagesWorkerDelegate?
     private let chatId: Int
+    private var perPage = 100
     private var page = 1
-    private var perPage = 1000
     private var isFirstTime = true
-    var sourceChanged = DelegatedCall<Result<(isFirstTime: Bool, source: [Message])>>()
+    private var isInLoading = false
 
     init(chatId: Int) { self.chatId = chatId }
 
     func refresh() {
-        self.page = 1
         self.isFirstTime = true
+        self.page = 1
         self.getChatMessages()
     }
 
-    func getChatMessages(page: Int? = nil) {
-        let config = ETBChatWebConfigurator.getChatMessages(chatId: self.chatId, page: page ?? self.page, perPage: self.perPage)
+    func startWork() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) { [weak self] in
+            guard let wSelf = self else { return }
+            if !wSelf.isInLoading {
+                wSelf.getNewMessages()
+            }
+            wSelf.startWork()
+        }
+    }
+
+    func getNewMessages() {
+        self.isInLoading = true
+        let config = ETBChatWebConfigurator.getChatMessages(chatId: self.chatId, page: 1, perPage: self.perPage)
+        let request = ChatEndpoint(configurator: config).urlRequest()
+        let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+            guard let wSelf = self else { return }
+            if let error = error {
+                wSelf.delegate?.receiveNewMessages(source: Result.error(error))
+                return
+            }
+            guard let jsonData = data else {
+                wSelf.delegate?.receiveNewMessages(source: Result.error(ChatsLoaderError.noData))
+                return
+            }
+            do {
+                let messages: [Message] = try jsonData.decode(using: ChatResources.decoder)
+                wSelf.delegate?.receiveNewMessages(source: Result.result(messages.reversed()))
+            } catch {
+                wSelf.delegate?.receiveNewMessages(source: Result.error(error))
+            }
+            wSelf.isInLoading = false
+        }
+        task.resume()
+    }
+
+    func getChatMessages() {
+        guard let page = delegate?.sourceCount(perPage: self.perPage) else { return }
+        self.isInLoading = true
+        self.page = page
+        let config = ETBChatWebConfigurator.getChatMessages(chatId: self.chatId, page: self.page, perPage: self.perPage)
         let request = ChatEndpoint(configurator: config).urlRequest()
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
             guard let wSelf = self else { return }
 
             if let error = error {
-                self?.sourceChanged.execute?(Result.error(error))
+                wSelf.delegate?.sourceChanged(isFirstTime: false, source: Result.error(error))
                 return
             }
             guard let jsonData = data else {
-                self?.sourceChanged.execute?(Result.error(ChatsLoaderError.noData))
+                wSelf.delegate?.sourceChanged(isFirstTime: false, source: Result.error(ChatsLoaderError.noData))
                 return
             }
             do {
                 let messages: [Message] = try jsonData.decode(using: ChatResources.decoder)
-                wSelf.sourceChanged.execute?(Result.result((wSelf.isFirstTime, messages.reversed())))
+                wSelf.delegate?.sourceChanged(isFirstTime: wSelf.isFirstTime, source: Result.result(messages.reversed()))
                 wSelf.isFirstTime = false
-                if messages.count > 0 {
-                    wSelf.page += 1
-                }
             } catch {
-                self?.sourceChanged.execute?(Result.error(error))
-            }
+                wSelf.delegate?.sourceChanged(isFirstTime: false, source: Result.error(error)) }
+            
+            wSelf.isInLoading = false
         }
         task.resume()
     }

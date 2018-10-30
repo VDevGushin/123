@@ -9,6 +9,26 @@
 import UIKit
 import SupportLib
 
+extension Array where Element == Message {
+    @discardableResult
+    mutating func appendMessage(_ newElement: Message) -> Bool {
+        if !self.contains(newElement) {
+            self.append(newElement)
+            return true
+        }
+        return false
+    }
+
+    @discardableResult
+    mutating func insertMessage(_ newElement: Message, at: Int) -> Bool {
+        if !self.contains(newElement) {
+            self.insert(newElement, at: 0)
+            return true
+        }
+        return false
+    }
+}
+
 class MessageViewController: ChatBaseViewController {
     @IBOutlet weak var keyboardConstraint: NSLayoutConstraint!
     @IBOutlet private weak var messageTable: UITableView!
@@ -35,13 +55,11 @@ class MessageViewController: ChatBaseViewController {
             guard let wSelf = self else { return }
             DispatchQueue.main.async {
                 if case Result.result(let value) = result {
-                    wSelf.source.append(value)
-                    wSelf.messageTable.beginUpdates()
-                    wSelf.messageTable.insertRows(at: [IndexPath(row: wSelf.source.count - 1, section: 0)], with: .automatic)
-                    wSelf.messageTable.endUpdates()
-                    
-                    wSelf.messageTable.scrollToBottom()
-                    wSelf.newMessageText.text = String()
+                    if wSelf.source.appendMessage(value) {
+                        wSelf.updateTableWithNewMessage()
+                        wSelf.messageTable.scrollToBottom()
+                        wSelf.newMessageText.text = String()
+                    }
                 }
             }
         }
@@ -49,28 +67,9 @@ class MessageViewController: ChatBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.messagesWorker.sourceChanged.delegate(to: self) { delegate, result in
-            DispatchQueue.main.async {
-                switch result {
-                case .error(let error):
-                    print(error.localizedDescription)
-                case .result(let value):
-                    if value.isFirstTime {
-                        delegate.source = value.source
-                        delegate.messageTable.reloadData()
-                        delegate.messageTable.scrollToBottom(animated: true)
-                    } else {
-                        for i in 0..<value.source.count {
-                            delegate.source.insert(value.source[i], at: 0)
-                            delegate.messageTable.beginUpdates()
-                            delegate.messageTable.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
-                            delegate.messageTable.endUpdates()
-                        }
-                    }
-                }
-            }
-        }
+        self.messagesWorker.delegate = self
         self.getMessages()
+        self.messagesWorker.startWork()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -110,11 +109,64 @@ class MessageViewController: ChatBaseViewController {
     }
 }
 
-extension MessageViewController {
+extension MessageViewController: ChatMessagesWorkerDelegate {
+    func sourceCount(perPage: Int) -> Int {
+        if self.source.count == 0 {
+            return 1
+        }
+        let pages = Int(self.source.count / perPage)
+        return pages + 1
+    }
+
+    fileprivate func updateTableWithNewMessage() {
+        if self.source.count > 0 {
+            self.messageTable.beginUpdates()
+            self.messageTable.insertRows(at: [IndexPath(row: self.source.count - 1, section: 0)], with: .automatic)
+            self.messageTable.endUpdates()
+        }
+    }
+
+    func sourceChanged(isFirstTime: Bool, source: Result<[Message]>) {
+        DispatchQueue.main.async {
+            if case Result.result(let value) = source {
+                if isFirstTime {
+                    self.source = value
+                    self.messageTable.reloadData()
+                    self.messageTable.scrollToBottom(animated: false)
+                } else {
+                    for element in value.reversed() {
+                        if self.source.insertMessage(element, at: 0) {
+                            self.messageTable.beginUpdates()
+                            self.messageTable.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
+                            self.messageTable.endUpdates()
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    func receiveNewMessages(source: Result<[Message]>) {
+        DispatchQueue.main.async {
+            if case Result.result(let value) = source {
+                for i in 0..<value.count {
+                    if self.source.appendMessage(value[i]) {
+                        self.updateTableWithNewMessage()
+                    }
+                }
+            }
+        }
+    }
+
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
-        self.messagesWorker.refresh()
-        //self.getMessages()
+        self.getMessages()
+        //self.refresh()
         refreshControl.endRefreshing()
+    }
+
+    fileprivate func refresh() {
+        self.source.removeAll()
+        self.messagesWorker.refresh()
     }
 
     fileprivate func getMessages() {
