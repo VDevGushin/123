@@ -41,7 +41,6 @@ class ChatCell: UITableViewCell {
         }
     }
     
-
     private let chatName: UILabel = {
         let label = UILabel()
         label.text = "name"

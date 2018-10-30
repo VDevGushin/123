@@ -9,9 +9,9 @@
 import UIKit
 import SupportLib
 
-final class ChatsLoader {
+final class ChatsWorker {
     func getAllChats(then handler: @escaping (Result<Chats>) -> Void) {
-        let config = ETBChatWebConfigurator.getAllChatsConfigurator()
+        let config = ETBChatWebConfigurator.getAllChats()
         let endpoint = ChatEndpoint(configurator: config)
         let request = endpoint.urlRequest()
         let task = URLSession.shared.dataTask(with: request) { data, response, error in

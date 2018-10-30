@@ -10,6 +10,8 @@ import UIKit
 import SupportLib
 
 class MessageTableViewCell: UITableViewCell {
+    private let sideIndent: CGFloat = 25.0
+
     @IBOutlet private weak var backView: UIView!
     @IBOutlet private weak var messageLabel: UILabel!
 
@@ -35,13 +37,13 @@ class MessageTableViewCell: UITableViewCell {
         self.authorLabel.textColor = ChatResources.subTextColor
         self.timeLabel.textColor = ChatResources.subTextColor
 
-        if message.fromProfileId == ETBChatWebConfigurator.pid {
-            backView.backgroundColor = ChatResources.myMessageBackgroundColor
+        if message.fromProfileId == ChatResources.pid {
+            backView.backgroundColor = ChatResources.myMessageColor
             rightConstraint?.constant = 8.0
-            leftConstraint?.constant = 25.0
+            leftConstraint?.constant = self.sideIndent
         } else {
             backView.backgroundColor = ChatResources.defaultMessageColor
-            rightConstraint?.constant = 25.0
+            rightConstraint?.constant = self.sideIndent
             leftConstraint?.constant = 8.0
         }
     }

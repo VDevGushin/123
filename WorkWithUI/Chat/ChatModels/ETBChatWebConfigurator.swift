@@ -9,10 +9,6 @@
 import UIKit
 
 struct ETBChatWebConfigurator {
-    static let authToken = "e75a69e7deed965e8ca00015d7194b21"
-    static let pid = 5787352
-    static let userid = "5609724"
-
     enum ChatComponents: String {
         case core
         case api
@@ -38,39 +34,30 @@ struct ETBChatWebConfigurator {
     let method: String
     let queryItems: [URLQueryItem]
     let header: [String: String]
+    var body: Data?
 
-    static func getAllChatsConfigurator() -> ETBChatWebConfigurator {
-        func requiredHeaderMESH() -> [String: String] {
-            let headers = [
-                "Auth-Token": authToken,
-                "Profile-Id": "\(pid)",
-                "User-Id": userid,
-                "Content-Type": "application/json"
-            ]
-            return headers
-        }
+    static func getAllChats() -> ETBChatWebConfigurator {
         let paths = ChatComponents.createPath(components: .core, .api, .chats)
-        let queryItem = URLQueryItem(name: "pid", value: "\(pid)")
-        let configurator = ETBChatWebConfigurator(scheme: "https", host: "dnevnik.mos.ru", path: paths, method: "GET", queryItems: [queryItem], header: requiredHeaderMESH())
+        let queryItem = URLQueryItem(name: "pid", value: "\(ChatResources.pid)")
+        let configurator = ETBChatWebConfigurator(scheme: "https", host: ChatResources.host, path: paths, method: "GET", queryItems: [queryItem], header: ChatResources.headers, body: nil)
         return configurator
     }
 
     static func getChatMessages(chatId: Int, page: Int, perPage: Int) -> ETBChatWebConfigurator {
-        func requiredHeaderMESH() -> [String: String] {
-            let headers = [
-                "Auth-Token": authToken,
-                "Profile-Id": "\(pid)",
-                "User-Id": userid,
-                "Content-Type": "application/json"
-            ]
-            return headers
-        }
         let paths = ChatComponents.createPath(components: .core, .api, .messages)
-        let queryItemPid = URLQueryItem(name: "pid", value: "\(pid)")
+        let queryItemPid = URLQueryItem(name: "pid", value: "\(ChatResources.pid)")
         let queryItemChatId = URLQueryItem(name: "chat_id", value: "\(chatId)")
         let queryItemPage = URLQueryItem(name: "page", value: "\(page)")
         let queryItemPerPage = URLQueryItem(name: "per_page", value: "\(perPage)")
-        let configurator = ETBChatWebConfigurator(scheme: "https", host: "dnevnik.mos.ru", path: paths, method: "GET", queryItems: [queryItemPid, queryItemChatId, queryItemPage, queryItemPerPage], header: requiredHeaderMESH())
+        let configurator = ETBChatWebConfigurator(scheme: "https", host: ChatResources.host, path: paths, method: "GET", queryItems: [queryItemPid, queryItemChatId, queryItemPage, queryItemPerPage], header: ChatResources.headers, body: nil)
+        return configurator
+    }
+
+    static func postNew(message: NewMessage) -> ETBChatWebConfigurator? {
+        guard let data = message.encode() else { return nil }
+        let paths = ChatComponents.createPath(components: .core, .api, .messages)
+        let queryItem = URLQueryItem(name: "pid", value: "\(ChatResources.pid)")
+        let configurator = ETBChatWebConfigurator(scheme: "https", host: ChatResources.host, path: paths, method: "POST", queryItems: [queryItem], header: ChatResources.headers, body: data)
         return configurator
     }
 }

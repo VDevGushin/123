@@ -15,6 +15,7 @@ struct ChatEndpoint {
     private let method: String
     private let queryItems: [URLQueryItem]
     private let header: [String: String]
+    private var body: Data? = nil
 
     private var url: URL? {
         var components = URLComponents()
@@ -25,12 +26,12 @@ struct ChatEndpoint {
         return components.url
     }
 
-
     func urlRequest() -> URLRequest {
         var request = URLRequest(url: self.url!)
         request.allHTTPHeaderFields = self.header
         request.httpMethod = self.method
         request.timeoutInterval = 30
+        request.httpBody = self.body
         return request
     }
 
@@ -41,5 +42,6 @@ struct ChatEndpoint {
         self.method = configurator.method
         self.queryItems = configurator.queryItems
         self.header = configurator.header
+        self.body = configurator.body
     }
 }

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController" customModule="WorkWithUI" customModuleProvider="target">
             <connections>
+                <outlet property="keyboardConstraint" destination="e1l-8D-hsx" id="tB7-C0-v6i"/>
                 <outlet property="messageTable" destination="7tW-Il-yfl" id="7Fu-of-GAq"/>
                 <outlet property="newMessageText" destination="TTq-ht-uPJ" id="i3T-F7-FXl"/>
                 <outlet property="sendBackground" destination="4LQ-pR-wkZ" id="VGm-P5-xFK"/>
@@ -42,6 +43,9 @@
                                 <constraint firstAttribute="width" constant="48" id="Wcw-Tb-oX4"/>
                             </constraints>
                             <state key="normal" title="Send"/>
+                            <connections>
+                                <action selector="sendMessageHandler:" destination="-1" eventType="touchUpInside" id="EJU-Hq-MNf"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,7 +61,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="7tW-Il-yfl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JbB-vR-0wb"/>
                 <constraint firstItem="4LQ-pR-wkZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dIt-dz-hEG"/>

@@ -10,7 +10,7 @@ import UIKit
 
 class ChatsViewController: ChatBaseViewController {
     @IBOutlet private weak var chatsTable: UITableView!
-    private lazy var chatLoader = ChatsLoader()
+    private lazy var chatLoader = ChatsWorker()
     private var source = Set<Chat>()
 
     init(navigator: ChatCoordinator) {

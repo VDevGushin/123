@@ -19,7 +19,7 @@ struct Message: Codable, Hashable, Equatable {
     let isReported: Bool?
     let readBy: [Int]?
     let fromProfile: Profile?
-
+    
     var hashValue: Int {
         return self.id ^ self.chatId ^ self.createdAt.hashValue ^ self.fromProfileId
     }

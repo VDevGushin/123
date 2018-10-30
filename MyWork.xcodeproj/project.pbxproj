@@ -43,7 +43,7 @@
 		3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C3D0214B78DF008BBC12 /* ModellingState .swift */; };
 		3C35CBFB2187830200DDE92E /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFA2187830200DDE92E /* Data+Extension.swift */; };
 		3C35CBFD218784F600DDE92E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFC218784F600DDE92E /* Message.swift */; };
-		3C35CBFF2187869300DDE92E /* ChatMessagesLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFE2187869300DDE92E /* ChatMessagesLoader.swift */; };
+		3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFE2187869300DDE92E /* ChatMessagesWorker.swift */; };
 		3C35CC012187892800DDE92E /* ChatsLoaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC002187892800DDE92E /* ChatsLoaderError.swift */; };
 		3C35CC0C218798B100DDE92E /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC0B218798B100DDE92E /* ChatCell.swift */; };
 		3C35CC142187A93C00DDE92E /* Set+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CC132187A93B00DDE92E /* Set+Extension.swift */; };
@@ -259,7 +259,7 @@
 		3CEF8E8D218713DE00996597 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E8C218713DE00996597 /* Endpoint.swift */; };
 		3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */; };
 		3CEF8E9421871AF600996597 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E9321871AF600996597 /* Chat.swift */; };
-		3CEF8E9621871EC500996597 /* ChatsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E9521871EC500996597 /* ChatsLoader.swift */; };
+		3CEF8E9621871EC500996597 /* ChatsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E9521871EC500996597 /* ChatsWorker.swift */; };
 		3CF3D1A22140EFDA00CB004A /* CapturingObjectsInClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */; };
 		3CF444E5210EECB0005392CF /* PersonStatisticControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */; };
 		3CF444E9210EECCC005392CF /* PersonStatisticControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */; };
@@ -274,6 +274,7 @@
 		3CF58AED21884FCC008FEB6D /* Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AEC21884FCC008FEB6D /* Views.swift */; };
 		3CF58AEF21885C7A008FEB6D /* ChatResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AEE21885C7A008FEB6D /* ChatResources.swift */; };
 		3CF58AF32188639B008FEB6D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AF22188639B008FEB6D /* Profile.swift */; };
+		3CF58AF52188884D008FEB6D /* NewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AF42188884D008FEB6D /* NewMessage.swift */; };
 		3CF62BA3214F718A00BD1579 /* ReusableDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */; };
 		3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */; };
 		3CFBCC0B21145A7B00A8A458 /* ETBVariantsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */; };
@@ -368,7 +369,7 @@
 		3C30C3D0214B78DF008BBC12 /* ModellingState .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModellingState .swift"; sourceTree = "<group>"; };
 		3C35CBFA2187830200DDE92E /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		3C35CBFC218784F600DDE92E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		3C35CBFE2187869300DDE92E /* ChatMessagesLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessagesLoader.swift; sourceTree = "<group>"; };
+		3C35CBFE2187869300DDE92E /* ChatMessagesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessagesWorker.swift; sourceTree = "<group>"; };
 		3C35CC002187892800DDE92E /* ChatsLoaderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsLoaderError.swift; sourceTree = "<group>"; };
 		3C35CC0B218798B100DDE92E /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		3C35CC132187A93B00DDE92E /* Set+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Set+Extension.swift"; sourceTree = "<group>"; };
@@ -628,7 +629,7 @@
 		3CEF8E8C218713DE00996597 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBChatWebConfigurator.swift; sourceTree = "<group>"; };
 		3CEF8E9321871AF600996597 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		3CEF8E9521871EC500996597 /* ChatsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsLoader.swift; sourceTree = "<group>"; };
+		3CEF8E9521871EC500996597 /* ChatsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsWorker.swift; sourceTree = "<group>"; };
 		3CF3D1A12140EFDA00CB004A /* CapturingObjectsInClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturingObjectsInClosures.swift; sourceTree = "<group>"; };
 		3CF444E4210EECB0005392CF /* PersonStatisticControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStatisticControl.swift; sourceTree = "<group>"; };
 		3CF444E8210EECCC005392CF /* PersonStatisticControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonStatisticControl.xib; sourceTree = "<group>"; };
@@ -643,6 +644,7 @@
 		3CF58AEC21884FCC008FEB6D /* Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views.swift; sourceTree = "<group>"; };
 		3CF58AEE21885C7A008FEB6D /* ChatResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatResources.swift; sourceTree = "<group>"; };
 		3CF58AF22188639B008FEB6D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3CF58AF42188884D008FEB6D /* NewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessage.swift; sourceTree = "<group>"; };
 		3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableDataSources.swift; sourceTree = "<group>"; };
 		3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstClassFunctions .swift"; sourceTree = "<group>"; };
 		3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBVariantsControl.swift; sourceTree = "<group>"; };
@@ -1609,8 +1611,8 @@
 		3CEF8E8B2187137800996597 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
-				3CEF8E9521871EC500996597 /* ChatsLoader.swift */,
-				3C35CBFE2187869300DDE92E /* ChatMessagesLoader.swift */,
+				3CEF8E9521871EC500996597 /* ChatsWorker.swift */,
+				3C35CBFE2187869300DDE92E /* ChatMessagesWorker.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -1625,6 +1627,7 @@
 				3C35CC002187892800DDE92E /* ChatsLoaderError.swift */,
 				3C35CBFC218784F600DDE92E /* Message.swift */,
 				3CF58AF22188639B008FEB6D /* Profile.swift */,
+				3CF58AF42188884D008FEB6D /* NewMessage.swift */,
 			);
 			path = ChatModels;
 			sourceTree = "<group>";
@@ -2141,17 +2144,18 @@
 				3C35CC012187892800DDE92E /* ChatsLoaderError.swift in Sources */,
 				3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
-				3C35CBFF2187869300DDE92E /* ChatMessagesLoader.swift in Sources */,
+				3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3CF58AE721883CF0008FEB6D /* ChatBaseViewController.swift in Sources */,
 				3CF58AE521883C5D008FEB6D /* ChatCoordinator.swift in Sources */,
-				3CEF8E9621871EC500996597 /* ChatsLoader.swift in Sources */,
+				3CEF8E9621871EC500996597 /* ChatsWorker.swift in Sources */,
 				3C35CC0C218798B100DDE92E /* ChatCell.swift in Sources */,
 				3CF58AE121883A2B008FEB6D /* MessageViewController.swift in Sources */,
 				3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */,
 				3CF58AEA21883D68008FEB6D /* ChatsViewController.swift in Sources */,
 				3C4EAF1A2180628800CEB18B /* CalendarStyle.swift in Sources */,
 				3C82F47E2164ABDB0024B3E4 /* ButtonAnimationViewController.swift in Sources */,
+				3CF58AF52188884D008FEB6D /* NewMessage.swift in Sources */,
 				3CF58AD9218837F0008FEB6D /* MessageTableViewCell.swift in Sources */,
 				3C97C339217F38020025BD3D /* CalendarCellDay.swift in Sources */,
 				3CF58AEF21885C7A008FEB6D /* ChatResources.swift in Sources */,
