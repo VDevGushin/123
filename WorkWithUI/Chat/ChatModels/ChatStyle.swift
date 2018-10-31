@@ -2,40 +2,48 @@
 //  ChatStyle.swift
 //  WorkWithUI
 //
-//  Created by Vladislav Gushin on 30/10/2018.
+//  Created by Vladislav Gushin on 31/10/2018.
 //  Copyright © 2018 Vladislav Gushin. All rights reserved.
 //
 
 import UIKit
-
-struct ChatResources {
-    static let whiteColor = UIColor.white
-    static let styleColor = UIColor.init(hex: "#4caabe")
-    static let myMessageColor = UIColor.red
-    static let defaultMessageColor = styleColor
-    static let subTextColor = UIColor.darkGray
-    static let textColor = UIColor.black
-    static let myMessageBackgroundColor = UIColor.lightGray
+typealias Decoration<T> = (T) -> Void
+typealias TableDecoration = (UITableView, _ delegate: UITableViewDelegate&UITableViewDataSource, _ cellType: UITableViewCell.Type) -> Void
 
 
-    static var decoder: JSONDecoder {
-        let decoder = JSONDecoder.init()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        decoder.dateDecodingStrategy = .formatted(dateFormatter)
-        return decoder
-    }
-
-    static var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.timeZone = TimeZone(abbreviation: "GMT+0:00")
-        formatter.dateFormat = "dd.MM.yyyy HH:mm"
-        return formatter
+final class ChatStyle {
+    static let defaultBackground: Decoration<UIView> = { (view: UIView) -> Void in
+        view.backgroundColor = ChatResources.styleColor
     }
     
-    static var encoder : JSONEncoder{
-        let encoder = JSONEncoder()
-        encoder.keyEncodingStrategy = .convertToSnakeCase
-        encoder.dateEncodingStrategy = .formatted(dateFormatter)
-        return encoder
+    static let sendButton: Decoration<UIButton> = { (button: UIButton) -> Void in
+        button.backgroundColor = ChatResources.styleColor
+        button.tintColor = ChatResources.whiteColor
+    }
+
+    static let navigationBar: Decoration<UINavigationBar> = { (navigationBar: UINavigationBar) -> Void in
+        navigationBar.isTranslucent = false
+        navigationBar.barTintColor = ChatResources.styleColor
+        navigationBar.tintColor = ChatResources.whiteColor
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: ChatResources.whiteColor]
+    }
+
+    static let tableView: TableDecoration = {
+        (_ table: UITableView, delegate: UITableViewDelegate&UITableViewDataSource, cellType: UITableViewCell.Type) -> Void in
+        table.registerNib(cellType)
+        table.delegate = delegate
+        table.dataSource = delegate
+        table.separatorStyle = .none
+        table.backgroundColor = ChatResources.whiteColor
+
+        if let delegate = delegate as? IPullToRefresh {
+            let refreshControl = UIRefreshControl()
+            refreshControl.addTarget(delegate, action: #selector(delegate.handleRefresh(_:)), for: UIControl.Event.valueChanged)
+            refreshControl.tintColor = ChatResources.styleColor
+            table.addSubview(refreshControl)
+        }
     }
 }
+
+
+

@@ -10,7 +10,7 @@ import UIKit
 
 struct ChatResources {
     //Auth part
-    static let authToken = "5fb51ffbe0cf24a2a2b7741087084bf5"
+    static let authToken = "d2f646056b65ab18a35b4858b2cbc610"
     static let pid = 5787352
     static let userid = "5609724"
     static let host = "dnevnik-test.mos.ru"

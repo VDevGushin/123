@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ChatsViewController: ChatBaseViewController {
+class ChatsViewController: ChatBaseViewController, IPullToRefresh {
     @IBOutlet private weak var chatsTable: UITableView!
     private lazy var chatLoader = ChatsWorker()
-    private var source = Set<Chat>()
+    private var source = [Chat]()
 
     init(navigator: ChatCoordinator) {
         let bundle = Bundle(for: type(of: self))
@@ -26,25 +26,12 @@ class ChatsViewController: ChatBaseViewController {
     }
 
     override func buildUI() {
-        self.chatsTable.registerWithClass(ChatCell.self)
-        self.chatsTable.delegate = self
-        self.chatsTable.dataSource = self
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action:
-            #selector(ChatsViewController.handleRefresh(_:)),
-        for: UIControl.Event.valueChanged)
-        refreshControl.tintColor = UIColor.red
-        self.chatsTable.addSubview(refreshControl)
-
-        let button1 = UIBarButtonItem.init(title: "Close", style: .done, target: self,
-                                           action: #selector(closeChat))
-
-        self.navigationItem.leftBarButtonItems = [button1]
+        ChatStyle.tableView(self.chatsTable, self, ChatTableViewCell.self)
+        let closeButton = UIBarButtonItem.init(title: "Close", style: .done, target: self, action: #selector(closeChat))
+        self.navigationItem.leftBarButtonItems = [closeButton]
     }
-}
 
-fileprivate extension ChatsViewController {
-    func getChats() {
+    private func getChats() {
         self.source.removeAll()
         chatLoader.getAllChats { [weak self] result in
             DispatchQueue.main.async {
@@ -52,9 +39,7 @@ fileprivate extension ChatsViewController {
                 case .error(let error):
                     print(error.localizedDescription)
                 case .result(let result):
-                    for chat in result {
-                        self?.source.insert(chat)
-                    }
+                    self?.source = result
                     self?.chatsTable.reloadData()
                 }
             }
@@ -66,20 +51,21 @@ fileprivate extension ChatsViewController {
         self.chatsTable.reloadData()
         refreshControl.endRefreshing()
     }
-    
-    @objc func closeChat() {
+
+    @objc private func closeChat() {
         self.navigator.close()
     }
 }
 
+// MARK: - Table view delegate
 extension ChatsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return source.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(type: ChatCell.self, indexPath: indexPath)!
-        cell.setChat(with: self.source.getElement(index: indexPath.item))
+        let cell = tableView.dequeueReusableCell(type: ChatTableViewCell.self, indexPath: indexPath)!
+        cell.setChat(with: self.source[indexPath.item])
         return cell
     }
 

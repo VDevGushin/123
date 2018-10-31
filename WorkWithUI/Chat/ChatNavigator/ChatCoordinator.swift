@@ -43,10 +43,7 @@ final class ChatCoordinator {
 
     static func chatNavigation() -> UINavigationController {
         let navigationViewController = UINavigationController()
-        navigationViewController.navigationBar.isTranslucent = false
-        navigationViewController.navigationBar.barTintColor = ChatResources.styleColor
-        navigationViewController.navigationBar.tintColor = ChatResources.whiteColor
-        navigationViewController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: ChatResources.whiteColor]
+        ChatStyle.navigationBar(navigationViewController.navigationBar)
         let navigator = ChatCoordinator(navigationController: navigationViewController)
         navigator.navigate(to: .allChats)
         return navigationViewController

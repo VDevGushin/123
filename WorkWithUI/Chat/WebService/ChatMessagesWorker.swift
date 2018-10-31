@@ -9,14 +9,14 @@
 import Foundation
 import SupportLib
 
-protocol ChatMessagesWorkerDelegate: class {
+protocol MessagesWorkerDelegate: class {
     func sourceChanged(isFirstTime: Bool, source: Result<[Message]>)
     func receiveNewMessages(source: Result<[Message]>)
     func sourceCount(perPage: Int) -> Int
 }
 
 final class ChatMessagesWorker {
-    weak var delegate: ChatMessagesWorkerDelegate?
+    weak var delegate: MessagesWorkerDelegate?
     private let chatId: Int
     private var perPage = 100
     private var page = 1

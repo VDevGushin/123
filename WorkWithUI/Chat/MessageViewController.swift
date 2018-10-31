@@ -9,27 +9,7 @@
 import UIKit
 import SupportLib
 
-extension Array where Element == Message {
-    @discardableResult
-    mutating func appendMessage(_ newElement: Message) -> Bool {
-        if !self.contains(newElement) {
-            self.append(newElement)
-            return true
-        }
-        return false
-    }
-
-    @discardableResult
-    mutating func insertMessage(_ newElement: Message, at: Int) -> Bool {
-        if !self.contains(newElement) {
-            self.insert(newElement, at: 0)
-            return true
-        }
-        return false
-    }
-}
-
-class MessageViewController: ChatBaseViewController {
+class MessageViewController: ChatBaseViewController, IPullToRefresh {
     @IBOutlet weak var keyboardConstraint: NSLayoutConstraint!
     @IBOutlet private weak var messageTable: UITableView!
     @IBOutlet private weak var sendBackground: ShadowView!
@@ -49,6 +29,38 @@ class MessageViewController: ChatBaseViewController {
         super.init(navigator: navigator, title: chat.name ?? "чат", nibName: String(describing: MessageViewController.self), bundle: bundle)
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.messagesWorker.delegate = self
+        self.getMessages()
+        self.messagesWorker.startWork()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: self.view.window)
+    }
+
+    override func buildUI() {
+        //table view delegate
+        ChatStyle.tableView(self.messageTable, self, MessageTableViewCell.self)
+        ChatStyle.sendButton(self.sendButton)
+        ChatStyle.defaultBackground(self.sendBackground)
+
+        let notifier = NotificationCenter.default
+        notifier.addObserver(self,
+                             selector: #selector(MessageViewController.keyboardWillShowNotification(_:)),
+                             name: UIWindow.keyboardWillShowNotification,
+                             object: self.view.window)
+        notifier.addObserver(self,
+                             selector: #selector(MessageViewController.keyboardWillHideNotification(_:)),
+                             name: UIWindow.keyboardWillHideNotification,
+                             object: self.view.window)
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+
     @IBAction func sendMessageHandler(_ sender: Any) {
         self.dismissKeyboard()
         self.messagesWorker.sendNewMessage(text: self.newMessageText.text) { [weak self] result in
@@ -65,65 +77,38 @@ class MessageViewController: ChatBaseViewController {
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.messagesWorker.delegate = self
-        self.getMessages()
-        self.messagesWorker.startWork()
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
-        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: self.view.window)
-    }
-
-    override func buildUI() {
-        self.messageTable.delegate = self
-        self.messageTable.dataSource = self
-        self.messageTable.separatorStyle = .none
-
-        self.messageTable.register(MessageTableViewCell.self)
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(MessageViewController.handleRefresh(_:)), for: UIControl.Event.valueChanged)
-        self.messageTable.addSubview(refreshControl)
-
-        refreshControl.tintColor = ChatResources.styleColor
-        sendBackground.backgroundColor = ChatResources.styleColor
-        self.messageTable.backgroundColor = ChatResources.whiteColor
-        self.sendButton.backgroundColor = ChatResources.styleColor
-        self.sendButton.tintColor = ChatResources.whiteColor
-
-
-        let notifier = NotificationCenter.default
-        notifier.addObserver(self,
-                             selector: #selector(MessageViewController.keyboardWillShowNotification(_:)),
-                             name: UIWindow.keyboardWillShowNotification,
-                             object: self.view.window)
-        notifier.addObserver(self,
-                             selector: #selector(MessageViewController.keyboardWillHideNotification(_:)),
-                             name: UIWindow.keyboardWillHideNotification,
-                             object: self.view.window)
-
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
-    }
-}
-
-extension MessageViewController: ChatMessagesWorkerDelegate {
-    func sourceCount(perPage: Int) -> Int {
-        if self.source.count == 0 {
-            return 1
-        }
-        let pages = Int(self.source.count / perPage)
-        return pages + 1
-    }
-
     fileprivate func updateTableWithNewMessage() {
         if self.source.count > 0 {
             self.messageTable.beginUpdates()
             self.messageTable.insertRows(at: [IndexPath(row: self.source.count - 1, section: 0)], with: .automatic)
             self.messageTable.endUpdates()
         }
+    }
+
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        self.getMessages()
+        //self.refresh()
+        refreshControl.endRefreshing()
+    }
+
+    fileprivate func refresh() {
+        self.source.removeAll()
+        self.messagesWorker.refresh()
+    }
+
+    fileprivate func getMessages() {
+        self.messagesWorker.getChatMessages()
+    }
+}
+
+// MARK: - Messagesworker Delegate
+extension MessageViewController: MessagesWorkerDelegate {
+    func sourceCount(perPage: Int) -> Int {
+        if self.source.count == 0 {
+            return 1
+        }
+        let pages = Int(self.source.count / perPage)
+        return pages + 1
     }
 
     func sourceChanged(isFirstTime: Bool, source: Result<[Message]>) {
@@ -157,24 +142,9 @@ extension MessageViewController: ChatMessagesWorkerDelegate {
             }
         }
     }
-
-    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
-        self.getMessages()
-        //self.refresh()
-        refreshControl.endRefreshing()
-    }
-
-    fileprivate func refresh() {
-        self.source.removeAll()
-        self.messagesWorker.refresh()
-    }
-
-    fileprivate func getMessages() {
-        self.messagesWorker.getChatMessages()
-    }
 }
 
-// MARK: - Tablve view delegate
+// MARK: - Table view delegate
 extension MessageViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return source.count
@@ -219,3 +189,25 @@ fileprivate extension MessageViewController {
         view.endEditing(true)
     }
 }
+
+// MARK: - Class helpers
+fileprivate extension Array where Element == Message {
+    @discardableResult
+    mutating func appendMessage(_ newElement: Message) -> Bool {
+        if !self.contains(newElement) {
+            self.append(newElement)
+            return true
+        }
+        return false
+    }
+
+    @discardableResult
+    mutating func insertMessage(_ newElement: Message, at: Int) -> Bool {
+        if !self.contains(newElement) {
+            self.insert(newElement, at: 0)
+            return true
+        }
+        return false
+    }
+}
+
