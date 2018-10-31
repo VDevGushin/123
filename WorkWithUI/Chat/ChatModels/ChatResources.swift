@@ -9,7 +9,7 @@
 import UIKit
 
 struct ChatResources {
-    //Auth part
+    // MARK: - Auth part
     static let authToken = "d2f646056b65ab18a35b4858b2cbc610"
     static let pid = 5787352
     static let userid = "5609724"
@@ -24,22 +24,23 @@ struct ChatResources {
         ]
         return headers
     }
-    //UIPart
+    // MARK: - UIPart
     static let whiteColor = UIColor.white
-    static let styleColor = UIColor.init(hex: "#4caabe")
-    static let myMessageColor = UIColor.init(hex: "#8fb5bd")
+    static let styleColor = UIColor.init(hex: "#8fb5bd")
+    static let myMessageColor = UIColor.init(hex: "#4caabe")
     static let defaultMessageColor = styleColor
     static let subTextColor = UIColor.darkGray
     static let textColor = UIColor.black
     static let myMessageBackgroundColor = UIColor.lightGray
+    static let titleFont = UIFont.systemFont(ofSize: 17.0)
+    static let subTitleFont = UIFont.systemFont(ofSize: 12.0)
 
+
+    // MARK: - Formats part
     static let dateFormats = ["dd.MM.yyyy HH:mm", "dd.MM.yyyy HH:mm:ss", "yyyy.MM.dd HH:mm:ss"]
 
     static var decoder: JSONDecoder {
         let decoder = JSONDecoder.init()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        decoder.dateDecodingStrategy = .formatted(dateFormatter)
-
         decoder.dateDecodingStrategy = .custom({ (decoder) -> Date in
             let data = try decoder.singleValueContainer().decode(String.self)
             for format in dateFormats {

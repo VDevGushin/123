@@ -89,14 +89,17 @@ final class ChatMessagesWorker {
                 wSelf.isFirstTime = false
             } catch {
                 wSelf.delegate?.sourceChanged(isFirstTime: false, source: Result.error(error)) }
-            
+
             wSelf.isInLoading = false
         }
         task.resume()
     }
 
-    func sendNewMessage(text: String?, then handler: @escaping (Result<Message>) -> Void) {
-        guard let text = text, !text.isEmpty else { return }
+    func sendNewMessage(attributedString: NSAttributedString?, then handler: @escaping (Result<Message>) -> Void) {
+        guard let attributedString = attributedString else { return }
+        if attributedString.length == 0 { return }
+        let htmlText = attributedString.trimmedAttributedString().htmlString()
+        guard let text = htmlText, !text.isEmpty else { return }
         let new = NewMessage(text: text, chatId: chatId, readBy: [ChatResources.pid], attachmentIds: [])
         guard let config = ETBChatWebConfigurator.postNew(message: new) else { return }
         let request = ChatEndpoint(configurator: config).urlRequest()
@@ -120,3 +123,4 @@ final class ChatMessagesWorker {
         task.resume()
     }
 }
+

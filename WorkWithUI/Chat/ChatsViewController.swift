@@ -27,8 +27,10 @@ class ChatsViewController: ChatBaseViewController, IPullToRefresh {
 
     override func buildUI() {
         ChatStyle.tableView(self.chatsTable, self, ChatTableViewCell.self)
-        let closeButton = UIBarButtonItem.init(title: "Close", style: .done, target: self, action: #selector(closeChat))
+        let closeButton = UIBarButtonItem(title: "Close", style: .done, target: self, action: #selector(closeChat))
         self.navigationItem.leftBarButtonItems = [closeButton]
+        let addChatButton = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addChat))
+        self.navigationItem.rightBarButtonItems = [addChatButton]
     }
 
     private func getChats() {
@@ -55,6 +57,10 @@ class ChatsViewController: ChatBaseViewController, IPullToRefresh {
     @objc private func closeChat() {
         self.navigator.close()
     }
+    
+    @objc private func addChat() {
+    
+    }
 }
 
 // MARK: - Table view delegate
@@ -66,6 +72,7 @@ extension ChatsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(type: ChatTableViewCell.self, indexPath: indexPath)!
         cell.setChat(with: self.source[indexPath.item])
+        cell.selectionStyle = .none
         return cell
     }
 

@@ -11,15 +11,26 @@ import Foundation
 typealias Messages = [Message]
 
 struct Message: Codable, Hashable, Equatable {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case chatId = "chat_id"
+        case createdAt = "created_at"
+        case fromProfileId = "from_profile_id"
+        case text
+        case isReported = "is_reported"
+        case readBy = "read_by"
+        case fromProfile = "from_profile"
+    }
+
     let id: Int
     let chatId: Int
     let createdAt: Date
     let fromProfileId: Int
-    let text: String?
+    var text: String?
     let isReported: Bool?
     let readBy: [Int]?
     let fromProfile: Profile?
-    
+
     var hashValue: Int {
         return self.id ^ self.chatId ^ self.createdAt.hashValue ^ self.fromProfileId
     }
@@ -38,5 +49,18 @@ struct Message: Codable, Hashable, Equatable {
     func encode() -> Data? {
         let encoder = ChatResources.encoder
         return try? encoder.encode(self)
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.chatId = try container.decode(Int.self, forKey: .chatId)
+        self.createdAt = try container.decode(Date.self, forKey: .createdAt)
+        self.fromProfileId = try container.decode(Int.self, forKey: .fromProfileId)
+        self.isReported = try container.decode(Bool?.self, forKey: .isReported)
+        self.readBy = try container.decode([Int]?.self, forKey: .readBy)
+        self.fromProfile = try container.decode(Profile?.self, forKey: .fromProfile)
+        let text = try container.decode(String?.self, forKey: .text)
+        self.text = text?.htmlToString
     }
 }

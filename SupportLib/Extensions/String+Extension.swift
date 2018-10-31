@@ -73,3 +73,32 @@ extension String {
         return attributeString
     }
 }
+
+// MARK: - HTML
+
+public extension String {
+    public func fromHTML(then: @escaping (String?) -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            var result: String? = nil
+            if let data = self.data(using: .utf8) {
+                result = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil).string
+            }
+            DispatchQueue.main.async {
+                then(result)
+            }
+        }
+    }
+
+    public var htmlToAttributedString: NSAttributedString? {
+        guard let data = data(using: .utf8) else { return NSAttributedString() }
+        do {
+            return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
+        } catch {
+            return NSAttributedString()
+        }
+    }
+
+    public var htmlToString: String {
+        return htmlToAttributedString?.string ?? ""
+    }
+}

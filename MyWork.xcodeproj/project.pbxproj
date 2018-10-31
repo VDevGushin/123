@@ -116,6 +116,7 @@
 		3C52D35B2189AB470027DA4C /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */; };
 		3C52D35C2189AB470027DA4C /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */; };
 		3C52D35E2189B3F40027DA4C /* IPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D35D2189B3F40027DA4C /* IPullToRefresh.swift */; };
+		3C52D3602189D4550027DA4C /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
 		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
@@ -468,6 +469,7 @@
 		3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		3C52D35D2189B3F40027DA4C /* IPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPullToRefresh.swift; sourceTree = "<group>"; };
+		3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
@@ -1128,6 +1130,7 @@
 				3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */,
 				3C35CBFA2187830200DDE92E /* Data+Extension.swift */,
 				3C35CC132187A93B00DDE92E /* Set+Extension.swift */,
+				3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1627,6 +1630,7 @@
 		3CEF8E9121871AE100996597 /* ChatModels */ = {
 			isa = PBXGroup;
 			children = (
+				3C52D3572189A4140027DA4C /* ChatStyle.swift */,
 				3CF58AEE21885C7A008FEB6D /* ChatResources.swift */,
 				3CEF8E8F21871A7000996597 /* ETBChatWebConfigurator.swift */,
 				3CEF8E8C218713DE00996597 /* Endpoint.swift */,
@@ -1635,7 +1639,6 @@
 				3C35CBFC218784F600DDE92E /* Message.swift */,
 				3CF58AF22188639B008FEB6D /* Profile.swift */,
 				3CF58AF42188884D008FEB6D /* NewMessage.swift */,
-				3C52D3572189A4140027DA4C /* ChatStyle.swift */,
 				3C52D35D2189B3F40027DA4C /* IPullToRefresh.swift */,
 			);
 			path = ChatModels;
@@ -2116,6 +2119,7 @@
 				3C41F923216118F1002334DB /* UIView+Extension.swift in Sources */,
 				3C41F92E216119EC002334DB /* Double+Extension.swift in Sources */,
 				3C4EAF182180487F00CEB18B /* DelegateCall.swift in Sources */,
+				3C52D3602189D4550027DA4C /* NSAttributedString+Extension.swift in Sources */,
 				3C9709E8216CCD0900394013 /* ColorUtils.swift in Sources */,
 				3C41F91F216118F1002334DB /* UIViewController+Extension.swift in Sources */,
 				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,

@@ -13,7 +13,10 @@ class MessageViewController: ChatBaseViewController, IPullToRefresh {
     @IBOutlet weak var keyboardConstraint: NSLayoutConstraint!
     @IBOutlet private weak var messageTable: UITableView!
     @IBOutlet private weak var sendBackground: ShadowView!
-    @IBOutlet private weak var newMessageText: UITextField!
+
+    @IBOutlet weak var sendMessageHeight: NSLayoutConstraint!
+
+    @IBOutlet private weak var newMessageText: UITextView!
     @IBOutlet private weak var sendButton: UIButton!
 
     private let chat: Chat
@@ -32,6 +35,7 @@ class MessageViewController: ChatBaseViewController, IPullToRefresh {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.messagesWorker.delegate = self
+        self.newMessageText.delegate = self
         self.getMessages()
         self.messagesWorker.startWork()
     }
@@ -63,7 +67,7 @@ class MessageViewController: ChatBaseViewController, IPullToRefresh {
 
     @IBAction func sendMessageHandler(_ sender: Any) {
         self.dismissKeyboard()
-        self.messagesWorker.sendNewMessage(text: self.newMessageText.text) { [weak self] result in
+        self.messagesWorker.sendNewMessage(attributedString: self.newMessageText.textStorage) { [weak self] result in
             guard let wSelf = self else { return }
             DispatchQueue.main.async {
                 if case Result.result(let value) = result {
@@ -71,6 +75,7 @@ class MessageViewController: ChatBaseViewController, IPullToRefresh {
                         wSelf.updateTableWithNewMessage()
                         wSelf.messageTable.scrollToBottom()
                         wSelf.newMessageText.text = String()
+                        wSelf.textViewDidChange(wSelf.newMessageText)
                     }
                 }
             }
@@ -190,6 +195,13 @@ fileprivate extension MessageViewController {
     }
 }
 
+// MARK: - UITextView delegate
+extension MessageViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        self.sendMessageHeight.constant = textView.contentSize.height
+    }
+}
+
 // MARK: - Class helpers
 fileprivate extension Array where Element == Message {
     @discardableResult
@@ -210,4 +222,3 @@ fileprivate extension Array where Element == Message {
         return false
     }
 }
-

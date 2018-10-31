@@ -8,14 +8,37 @@
 
 import UIKit
 typealias Decoration<T> = (T) -> Void
+typealias DecorationWithColor<T> = (T, UIColor) -> Void
 typealias TableDecoration = (UITableView, _ delegate: UITableViewDelegate&UITableViewDataSource, _ cellType: UITableViewCell.Type) -> Void
 
-
 final class ChatStyle {
+    static let messageText: Decoration<UILabel> = { (label: UILabel) -> Void in
+        label.font = ChatResources.titleFont
+        label.numberOfLines = 0
+        label.textColor = ChatResources.textColor
+    }
+
+    static let titleLabel: Decoration<UILabel> = { (label: UILabel) -> Void in
+        label.font = ChatResources.titleFont
+        label.numberOfLines = 3
+        label.textColor = ChatResources.textColor
+    }
+
+    static let subTitleLabel: Decoration<UILabel> = { (label: UILabel) -> Void in
+        label.font = ChatResources.subTitleFont
+        label.numberOfLines = 1
+        label.textColor = ChatResources.subTextColor
+    }
+
+    static let messageBackView: DecorationWithColor<UIView> = { (view: UIView, color: UIColor) -> Void in
+        view.layer.cornerRadius = 12
+        view.backgroundColor = color
+    }
+
     static let defaultBackground: Decoration<UIView> = { (view: UIView) -> Void in
         view.backgroundColor = ChatResources.styleColor
     }
-    
+
     static let sendButton: Decoration<UIButton> = { (button: UIButton) -> Void in
         button.backgroundColor = ChatResources.styleColor
         button.tintColor = ChatResources.whiteColor
@@ -35,7 +58,7 @@ final class ChatStyle {
         table.dataSource = delegate
         table.separatorStyle = .none
         table.backgroundColor = ChatResources.whiteColor
-
+        
         if let delegate = delegate as? IPullToRefresh {
             let refreshControl = UIRefreshControl()
             refreshControl.addTarget(delegate, action: #selector(delegate.handleRefresh(_:)), for: UIControl.Event.valueChanged)
