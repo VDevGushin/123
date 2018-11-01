@@ -99,9 +99,6 @@ final class ChatMessagesWorker {
         guard let attributedString = attributedString else { return }
         if attributedString.length == 0 { return }
         let text = attributedString.string
-//        let text = attributedString.string.reduce("") {
-//            return $0 + ("\($1)" == "\n" ? "<br>" : "\($1)")
-//        }
         guard !text.isEmpty else { return }
         let new = NewMessage(text: text, chatId: chatId, readBy: [ChatResources.pid], attachmentIds: [])
         guard let config = ETBChatWebConfigurator.postNew(message: new) else { return }

@@ -191,6 +191,9 @@
 		3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31443218AD62F00A06369 /* AddChatViewController.xib */; };
 		3CA31451218AFA2900A06369 /* SupportLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; };
 		3CA31452218AFA2900A06369 /* SupportLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CA31457218B094700A06369 /* ProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31456218B094700A06369 /* ProfileWorker.swift */; };
+		3CA3145A218B149800A06369 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31458218B149800A06369 /* ProfileTableViewCell.swift */; };
+		3CA3145B218B149800A06369 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31459218B149800A06369 /* ProfileTableViewCell.xib */; };
 		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
@@ -563,6 +566,9 @@
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		3CA31442218AD62E00A06369 /* AddChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatViewController.swift; sourceTree = "<group>"; };
 		3CA31443218AD62F00A06369 /* AddChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChatViewController.xib; sourceTree = "<group>"; };
+		3CA31456218B094700A06369 /* ProfileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWorker.swift; sourceTree = "<group>"; };
+		3CA31458218B149800A06369 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		3CA31459218B149800A06369 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
@@ -902,11 +908,12 @@
 		3C35CC0A218798A200DDE92E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				3CA3144A218AEAF800A06369 /* StaticCells */,
 				3CF58AD7218837F0008FEB6D /* MessageTableViewCell.swift */,
 				3CF58AD8218837F0008FEB6D /* MessageTableViewCell.xib */,
 				3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */,
 				3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */,
+				3CA31458218B149800A06369 /* ProfileTableViewCell.swift */,
+				3CA31459218B149800A06369 /* ProfileTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1375,13 +1382,6 @@
 			path = ColorsGetters;
 			sourceTree = "<group>";
 		};
-		3CA3144A218AEAF800A06369 /* StaticCells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StaticCells;
-			sourceTree = "<group>";
-		};
 		3CA420A3210B27EB00C303FC /* Footer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1656,6 +1656,7 @@
 			children = (
 				3CEF8E9521871EC500996597 /* ChatsWorker.swift */,
 				3C35CBFE2187869300DDE92E /* ChatMessagesWorker.swift */,
+				3CA31456218B094700A06369 /* ProfileWorker.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -1988,6 +1989,7 @@
 				3C82F4752164AA120024B3E4 /* Assets.xcassets in Resources */,
 				3C82F4732164AA0F0024B3E4 /* Main.storyboard in Resources */,
 				3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */,
+				3CA3145B218B149800A06369 /* ProfileTableViewCell.xib in Resources */,
 				3CF58AE221883A2B008FEB6D /* MessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2194,6 +2196,7 @@
 				3C35CC012187892800DDE92E /* ChatsLoaderError.swift in Sources */,
 				3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
+				3CA3145A218B149800A06369 /* ProfileTableViewCell.swift in Sources */,
 				3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3CF58AE721883CF0008FEB6D /* ChatBaseViewController.swift in Sources */,
@@ -2214,6 +2217,7 @@
 				3C97C33C217F3B520025BD3D /* CalendarItem.swift in Sources */,
 				3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */,
 				3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */,
+				3CA31457218B094700A06369 /* ProfileWorker.swift in Sources */,
 				3C52D3582189A4140027DA4C /* ChatStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

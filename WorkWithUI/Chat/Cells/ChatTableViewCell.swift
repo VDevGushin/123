@@ -16,22 +16,24 @@ class ChatTableViewCell: UITableViewCell {
     @IBOutlet private weak var lastMessage: UILabel!
 
     func setChat(with: Chat) {
-        self.timeLabel.text = ""
-        self.author.text = ""
-        self.lastMessage.text = ""
-        self.title.text = "\(with.name ?? "...")"
-        if let date = with.createdAt {
-            self.timeLabel.text = ChatResources.dateFormatter.string(from: date)
-        }
-        if let lastMessage = with.lastMessage, let profile = lastMessage.fromProfile {
-            self.author.text = profile.name ?? ""
-            self.lastMessage.text = lastMessage.text ?? ""
-        }
+        DispatchQueue.main.async {
+            self.timeLabel.text = ""
+            self.author.text = ""
+            self.lastMessage.text = ""
+            self.title.text = "\(with.name ?? "...")"
+            if let date = with.createdAt {
+                self.timeLabel.text = ChatResources.dateFormatter.string(from: date)
+            }
+            if let lastMessage = with.lastMessage, let profile = lastMessage.fromProfile {
+                self.author.text = profile.name ?? ""
+                self.lastMessage.text = lastMessage.text ?? ""
+            }
 
-        ChatStyle.titleLabel(self.title)
-        ChatStyle.subTitleLabel(self.timeLabel)
-        ChatStyle.subTitleLabel(self.author)
-        ChatStyle.subTitleLabel(self.lastMessage)
-        ChatStyle.messageBackView(self.backView, ChatResources.defaultMessageColor)
+            ChatStyle.titleLabel(self.title)
+            ChatStyle.subTitleLabel(self.timeLabel)
+            ChatStyle.subTitleLabel(self.author)
+            ChatStyle.subTitleLabel(self.lastMessage)
+            ChatStyle.messageBackView(self.backView, ChatResources.defaultMessageColor)
+        }
     }
 }

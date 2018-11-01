@@ -14,6 +14,7 @@ struct ETBChatWebConfigurator {
         case api
         case chats
         case messages
+        case profiles
 
         var value: String {
             return self.rawValue
@@ -58,6 +59,15 @@ struct ETBChatWebConfigurator {
         let paths = ChatComponents.createPath(components: .core, .api, .messages)
         let queryItem = URLQueryItem(name: "pid", value: "\(ChatResources.pid)")
         let configurator = ETBChatWebConfigurator(scheme: "https", host: ChatResources.host, path: paths, method: "POST", queryItems: [queryItem], header: ChatResources.headers, body: data)
+        return configurator
+    }
+    
+    static func getProfiles(page: Int, perPage: Int) -> ETBChatWebConfigurator {
+        let paths = ChatComponents.createPath(components: .core, .api, .profiles)
+        let queryItemPid = URLQueryItem(name: "pid", value: "\(ChatResources.pid)")
+        let queryItemPage = URLQueryItem(name: "page", value: "\(page)")
+        let queryItemPerPage = URLQueryItem(name: "per_page", value: "\(perPage)")
+        let configurator = ETBChatWebConfigurator(scheme: "https", host: ChatResources.host, path: paths, method: "GET", queryItems: [queryItemPid, queryItemPage, queryItemPerPage], header: ChatResources.headers, body: nil)
         return configurator
     }
 }

@@ -26,9 +26,9 @@ class ChatsViewController: ChatBaseViewController, IPullToRefresh {
 
     override func buildUI() {
         ChatStyle.tableView(self.chatsTable, self, [ChatTableViewCell.self])
-        let closeButton = UIBarButtonItem(title: "Close", style: .done, target: self, action: #selector(closeChat))
+        let closeButton = UIBarButtonItem(title: "Закрыть", style: .done, target: self, action: #selector(closeChat))
         self.navigationItem.leftBarButtonItems = [closeButton]
-        let addChatButton = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addChat))
+        let addChatButton = UIBarButtonItem(title: "Новый чат", style: .done, target: self, action: #selector(addChat))
         self.navigationItem.rightBarButtonItems = [addChatButton]
     }
 
