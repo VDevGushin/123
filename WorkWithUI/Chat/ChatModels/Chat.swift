@@ -42,7 +42,6 @@ struct Chat: Decodable, Hashable, Equatable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(Int.self, forKey: .id)
-        
         self.lastMessage = try? container.decode(Message.self, forKey: .lastMessage)
         self.name = try? container.decode(String.self, forKey: .name)
         self.authorProfileId = try? container.decode(Int.self, forKey: .authorProfileId)

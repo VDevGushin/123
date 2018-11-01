@@ -21,7 +21,14 @@ class ChatsViewController: ChatBaseViewController, IPullToRefresh {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getChats()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if navigator.chatCreated {
+            navigator.chatCreated.toggle()
+            self.getChats()
+        }
     }
 
     override func buildUI() {
@@ -78,5 +85,9 @@ extension ChatsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let chat = Array(self.source)[indexPath.item]
         self.navigator.navigate(to: .chatMessages(chat: chat))
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }

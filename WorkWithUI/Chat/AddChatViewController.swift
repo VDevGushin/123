@@ -86,7 +86,7 @@ class AddChatViewController: ChatBaseViewController, IPullToRefresh {
         self.chatWorker.createChat(with: NewChat(name: self.chatName.text, profileIds: ids, authorProfileId: ChatResources.pid)) { source in
             DispatchQueue.main.async {
                 if case Result.result(let value) = source {
-
+                    self.navigator.navigate(to: .chatCreated(chat: value))
                 }
             }
         }

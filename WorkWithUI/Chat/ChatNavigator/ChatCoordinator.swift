@@ -9,10 +9,12 @@
 import UIKit
 
 final class ChatCoordinator {
+    var chatCreated = true
     enum Destination {
         case allChats
         case chatMessages(chat: Chat)
         case createChat
+        case chatCreated(chat: Chat)
     }
 
     func close() {
@@ -38,6 +40,13 @@ final class ChatCoordinator {
             return MessageViewController(navigator: self, chat: chat)
         case .createChat:
             return AddChatViewController(navigator: self)
+        case .chatCreated(chat: let chat):
+            if var navigationArray = self.navigationController?.viewControllers {
+                navigationArray.remove(at: navigationArray.count - 1) // To remove previous UIViewController
+                self.navigationController?.viewControllers = navigationArray
+            }
+            self.chatCreated = true
+            return MessageViewController(navigator: self, chat: chat)
         }
     }
 
