@@ -34,4 +34,27 @@ final class ChatsWorker {
         }
         task.resume()
     }
+    
+    func createChat(with: NewChat, then handler: @escaping (Result<Chat>) -> Void) {
+        guard let config = ETBChatWebConfigurator.postChat(chat:with) else { return }
+        let request = ChatEndpoint(configurator: config).urlRequest()
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                handler(Result.error(error))
+                return
+            }
+            guard let jsonData = data else {
+                handler(Result.error(ChatsLoaderError.noData))
+                return
+            }
+            do {
+                let chat: Chat = try jsonData.decode(using: ChatResources.decoder)
+                handler(Result.result(chat))
+            } catch {
+                handler(Result.error(error))
+            }
+        }
+        task.resume()
+    }
 }

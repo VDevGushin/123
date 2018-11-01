@@ -62,6 +62,14 @@ struct ETBChatWebConfigurator {
         return configurator
     }
     
+    static func postChat(chat: NewChat) -> ETBChatWebConfigurator? {
+        guard let data = chat.encode() else { return nil }
+        let paths = ChatComponents.createPath(components: .core, .api, .chats)
+        let queryItem = URLQueryItem(name: "pid", value: "\(ChatResources.pid)")
+        let configurator = ETBChatWebConfigurator(scheme: "https", host: ChatResources.host, path: paths, method: "POST", queryItems: [queryItem], header: ChatResources.headers, body: data)
+        return configurator
+    }
+    
     static func getProfiles(page: Int, perPage: Int) -> ETBChatWebConfigurator {
         let paths = ChatComponents.createPath(components: .core, .api, .profiles)
         let queryItemPid = URLQueryItem(name: "pid", value: "\(ChatResources.pid)")

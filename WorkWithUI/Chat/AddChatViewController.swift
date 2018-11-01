@@ -12,18 +12,21 @@ import SupportLib
 class AddChatViewController: ChatBaseViewController, IPullToRefresh {
     @IBOutlet private weak var keyboardConstraint: NSLayoutConstraint!
     @IBOutlet private weak var contentTable: UITableView!
-    @IBOutlet private weak var backView: UIView!
+    @IBOutlet private weak var backView: ShadowView!
     @IBOutlet private weak var chatName: UITextField!
     @IBOutlet private weak var createButton: UIButton!
 
     @IBOutlet private weak var keyBoardView: UIView!
-    
+
+    @IBOutlet weak var backViewHeight: NSLayoutConstraint!
     private lazy var profileWorker: ProfileWorker = ProfileWorker()
+    private lazy var chatWorker = ChatsWorker()
+    private lazy var searchBar = UISearchBar(frame: CGRect.zero)
     private lazy var resultSearchController = UISearchController(searchResultsController: nil)
 
     private var source = [Profile]()
     private var filteredSource = [Profile]()
-    private var selectedSource = [Profile]()
+    private var selectedItems = Set<Profile>()
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(navigator: ChatCoordinator) {
@@ -56,7 +59,7 @@ class AddChatViewController: ChatBaseViewController, IPullToRefresh {
         self.contentTable.tableHeaderView = resultSearchController.searchBar
 
         self.keyBoardView.isHidden = true
-        
+
         let notifier = NotificationCenter.default
         notifier.addObserver(self,
                              selector: #selector(AddChatViewController.keyboardWillShowNotification(_:)),
@@ -75,6 +78,19 @@ class AddChatViewController: ChatBaseViewController, IPullToRefresh {
         self.profileWorker.refresh()
         refreshControl.endRefreshing()
     }
+
+    @IBAction func addChat(_ sender: Any) {
+        let ids = self.selectedItems.map { $0.id }
+        guard ids.count > 0 else { return }
+
+        self.chatWorker.createChat(with: NewChat(name: self.chatName.text, profileIds: ids, authorProfileId: ChatResources.pid)) { source in
+            DispatchQueue.main.async {
+                if case Result.result(let value) = source {
+
+                }
+            }
+        }
+    }
 }
 
 // MARK: - UISearchResults delegate
@@ -91,20 +107,20 @@ extension AddChatViewController: UISearchResultsUpdating, ProfileWorkerDelegate 
     }
 
     func updateSearchResults(for searchController: UISearchController) {
-        if let text = searchController.searchBar.text, text.count > 3 {
-            filteredSource.removeAll()
-
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        if text.count > 3 {
+            self.selectedItems.removeAll()
+            self.filteredSource.removeAll()
             self.filteredSource = source.filter {
                 if let user = $0.user {
-
                     if let firstName = user.firstName, firstName.lowercased().contains(text.lowercased()) {
                         return true
                     }
-
                     if let middleName = user.middleName, middleName.lowercased().contains(text.lowercased()) {
                         return true
                     }
-
                     if let middleName = user.middleName, middleName.lowercased().contains(text.lowercased()) {
                         return true
                     }
@@ -113,10 +129,12 @@ extension AddChatViewController: UISearchResultsUpdating, ProfileWorkerDelegate 
             }
             self.contentTable.reloadData()
         } else {
+            self.selectedItems.removeAll()
             self.filteredSource.removeAll()
             self.filteredSource = self.source
             self.contentTable.reloadData()
         }
+        self.createButton?.isEnabled = !self.selectedItems.isEmpty
     }
 }
 
@@ -124,18 +142,20 @@ extension AddChatViewController: UISearchResultsUpdating, ProfileWorkerDelegate 
 extension AddChatViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if resultSearchController.isActive {
-            filteredSource[indexPath.row].isSelected = true
+            selectedItems.insert(filteredSource[indexPath.row])
         } else {
-            source[indexPath.row].isSelected = true
+            selectedItems.insert(source[indexPath.row])
         }
+        createButton?.isEnabled = !self.selectedItems.isEmpty
     }
 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if resultSearchController.isActive {
-            filteredSource[indexPath.row].isSelected = false
+            selectedItems.remove(filteredSource[indexPath.row])
         } else {
-            source[indexPath.row].isSelected = false
+            selectedItems.remove(source[indexPath.row])
         }
+        createButton?.isEnabled = !self.selectedItems.isEmpty
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -169,8 +189,6 @@ fileprivate extension AddChatViewController {
     }
 
     private func adjustingHeight(_ show: Bool, notification: NSNotification) {
-        if !self.chatName.isEditing { return }
-
         guard let userInfo = notification.userInfo,
             let keyboardFrameBeginUserInfoKey = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue,
             let animationDurarion = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval
@@ -190,12 +208,17 @@ fileprivate extension AddChatViewController {
                 self.keyboardConstraint.constant = 0.0
             } else {
                 self.keyBoardView.isHidden = false
+                if !self.chatName.isEditing {
+                    safeArea += self.backViewHeight.constant
+                    self.keyBoardView.isHidden = true
+                }
                 self.keyboardConstraint.constant = keyboardFrame.height - safeArea
             }
         })
     }
 
     @objc func dismissKeyboard() {
+        self.keyBoardView.isHidden = true
         view.endEditing(true)
     }
 }

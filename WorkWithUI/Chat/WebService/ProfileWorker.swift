@@ -34,7 +34,7 @@ final class ProfileWorker {
         let request = ChatEndpoint(configurator: config).urlRequest()
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
             guard let wSelf = self else { return }
-            
+
             if let error = error {
                 wSelf.delegate?.sourceChanged(isFirstTime: false, source: Result.error(error))
                 return
@@ -43,14 +43,14 @@ final class ProfileWorker {
                 wSelf.delegate?.sourceChanged(isFirstTime: false, source: Result.error(ChatsLoaderError.noData))
                 return
             }
-            
+
             do {
                 let profiles: [Profile] = try jsonData.decode(using: ChatResources.decoder)
                 wSelf.delegate?.sourceChanged(isFirstTime: wSelf.isFirstTime, source: Result.result(profiles.reversed()))
                 wSelf.isFirstTime = false
             } catch {
                 wSelf.delegate?.sourceChanged(isFirstTime: false, source: Result.error(error)) }
-            
+
             wSelf.isInLoading = false
         }
         task.resume()

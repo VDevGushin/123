@@ -131,6 +131,7 @@
 		3C6D8F682109C87F000190F3 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */; };
 		3C6D8F6C2109C9A5000190F3 /* StatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */; };
 		3C6D8F6D2109C9A5000190F3 /* StatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */; };
+		3C6E7750218B527A00938D42 /* NewChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E774F218B527A00938D42 /* NewChat.swift */; };
 		3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE3217EF64E002E51DC /* CalendarView.swift */; };
 		3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C746BE5217EF9E0002E51DC /* CalendarView.xib */; };
 		3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE7217F18FC002E51DC /* DaysView.swift */; };
@@ -508,6 +509,7 @@
 		3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
 		3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCell.swift; sourceTree = "<group>"; };
 		3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCell.xib; sourceTree = "<group>"; };
+		3C6E774F218B527A00938D42 /* NewChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChat.swift; sourceTree = "<group>"; };
 		3C746BE3217EF64E002E51DC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		3C746BE5217EF9E0002E51DC /* CalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		3C746BE7217F18FC002E51DC /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
@@ -1674,6 +1676,7 @@
 				3CF58AF22188639B008FEB6D /* Profile.swift */,
 				3CF58AF42188884D008FEB6D /* NewMessage.swift */,
 				3C52D35D2189B3F40027DA4C /* IPullToRefresh.swift */,
+				3C6E774F218B527A00938D42 /* NewChat.swift */,
 			);
 			path = ChatModels;
 			sourceTree = "<group>";
@@ -2218,6 +2221,7 @@
 				3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */,
 				3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */,
 				3CA31457218B094700A06369 /* ProfileWorker.swift in Sources */,
+				3C6E7750218B527A00938D42 /* NewChat.swift in Sources */,
 				3C52D3582189A4140027DA4C /* ChatStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

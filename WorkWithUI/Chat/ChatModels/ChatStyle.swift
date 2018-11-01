@@ -17,8 +17,19 @@ final class ChatStyle {
         serachController.searchResultsUpdater = delegate
         serachController.hidesNavigationBarDuringPresentation = false
         serachController.dimsBackgroundDuringPresentation = false
-        serachController.searchBar.searchBarStyle = UISearchBar.Style.minimal
+        serachController.searchBar.barTintColor = ChatResources.styleColor
+        serachController.searchBar.searchBarStyle = .default
         serachController.searchBar.sizeToFit()
+
+        if let textfield = serachController.searchBar.value(forKey: "searchField") as? UITextField {
+            textfield.backgroundColor = ChatResources.whiteColor
+            textfield.layer.cornerRadius = 16.0
+            textfield.clearButtonMode = UITextField.ViewMode.whileEditing
+            textfield.borderStyle = UITextField.BorderStyle.roundedRect
+            textfield.layer.masksToBounds = true
+            textfield.layer.borderColor = ChatResources.styleColor.cgColor
+            textfield.layer.borderWidth = 1.5
+        }
     }
 
     static let messageText: Decoration<UILabel> = { (label: UILabel) -> Void in
@@ -60,12 +71,11 @@ final class ChatStyle {
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: ChatResources.whiteColor]
     }
 
-    static let tableView: TableDecoration = {
-        (_ table: UITableView, delegate: UITableViewDelegate&UITableViewDataSource, cellTypes: [UITableViewCell.Type]) -> Void in
+    static let tableView: TableDecoration = { (_ table: UITableView, delegate: UITableViewDelegate&UITableViewDataSource, cellTypes: [UITableViewCell.Type]) -> Void in
         cellTypes.forEach {
             table.registerNib($0)
         }
-        
+
         table.delegate = delegate
         table.dataSource = delegate
         table.separatorStyle = .none

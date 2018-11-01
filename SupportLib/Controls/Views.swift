@@ -33,6 +33,6 @@ public final class RoundViewCornerRadius: UIView {
 public final class ShadowView: UIView {
     override public func layoutSubviews() {
         super.layoutSubviews()
-        self.dropShadow(color: .black, opacity: 1, offSet: CGSize(width: -1, height: 1), radius: 1, scale: true)
+        self.dropShadow(color: .black, opacity: 0.5, offSet: CGSize(width: 0, height: -0.5), radius: 0.5, scale: true)
     }
 }

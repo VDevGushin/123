@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddChatViewController" customModule="WorkWithUI" customModuleProvider="target">
             <connections>
                 <outlet property="backView" destination="N8u-qE-ud7" id="ukb-vh-Cxa"/>
+                <outlet property="backViewHeight" destination="DTo-c2-SPl" id="weq-U8-1r1"/>
                 <outlet property="chatName" destination="Spi-WC-D8f" id="fm1-Cq-70b"/>
                 <outlet property="contentTable" destination="Vk9-Vk-PPj" id="OHF-CK-8Bh"/>
                 <outlet property="createButton" destination="7gi-KJ-41I" id="pJN-tQ-pdx"/>
@@ -32,7 +33,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8u-qE-ud7">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8u-qE-ud7" customClass="ShadowView" customModule="SupportLib">
                             <rect key="frame" x="0.0" y="597" width="375" height="50"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gi-KJ-41I">
@@ -41,6 +42,9 @@
                                         <constraint firstAttribute="width" constant="80" id="5gp-wg-Hpv"/>
                                     </constraints>
                                     <state key="normal" title="Создать"/>
+                                    <connections>
+                                        <action selector="addChat:" destination="-1" eventType="touchUpInside" id="BoM-m0-5KA"/>
+                                    </connections>
                                 </button>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название чата" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Spi-WC-D8f">
                                     <rect key="frame" x="6" y="6" width="277" height="38"/>
@@ -55,7 +59,6 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="DTo-c2-SPl"/>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IJW-TP-QDz"/>
                                 <constraint firstItem="7gi-KJ-41I" firstAttribute="centerY" secondItem="Spi-WC-D8f" secondAttribute="centerY" id="Pg7-Yf-gfj"/>
                                 <constraint firstItem="Spi-WC-D8f" firstAttribute="top" secondItem="N8u-qE-ud7" secondAttribute="top" constant="6" id="QLt-Jz-KvQ"/>
                                 <constraint firstAttribute="trailing" secondItem="7gi-KJ-41I" secondAttribute="trailing" constant="6" id="W48-8B-glt"/>

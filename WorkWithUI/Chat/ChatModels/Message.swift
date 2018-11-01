@@ -26,10 +26,10 @@ struct Message: Codable, Hashable, Equatable {
     let chatId: Int
     let createdAt: Date
     let fromProfileId: Int
-    var text: String?
-    let isReported: Bool?
-    let readBy: [Int]?
-    let fromProfile: Profile?
+    var text: String? = nil
+    var isReported: Bool? = nil
+    var readBy: [Int]? = nil
+    var fromProfile: Profile? = nil
 
     var hashValue: Int {
         return self.id ^ self.chatId ^ self.createdAt.hashValue ^ self.fromProfileId
@@ -53,14 +53,16 @@ struct Message: Codable, Hashable, Equatable {
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
+
+
         self.id = try container.decode(Int.self, forKey: .id)
         self.chatId = try container.decode(Int.self, forKey: .chatId)
         self.createdAt = try container.decode(Date.self, forKey: .createdAt)
         self.fromProfileId = try container.decode(Int.self, forKey: .fromProfileId)
-        self.isReported = try container.decode(Bool?.self, forKey: .isReported)
-        self.readBy = try container.decode([Int]?.self, forKey: .readBy)
-        self.fromProfile = try container.decode(Profile?.self, forKey: .fromProfile)
-        let text = try container.decode(String?.self, forKey: .text)
-        self.text = text?.htmlToString
+
+        self.isReported = try? container.decode(Bool.self, forKey: .isReported)
+        self.readBy = try? container.decode([Int].self, forKey: .readBy)
+        self.fromProfile = try? container.decode(Profile.self, forKey: .fromProfile)
+        self.text =  try? container.decode(String.self, forKey: .text)
     }
 }

@@ -34,8 +34,7 @@ class ChatBaseViewController: UIViewController {
     }
 
     func buildUI() {
-        //#error("You need to override this method")
-        fatalError("Not implemented method")
+        self.view.backgroundColor = ChatResources.whiteColor
     }
     
     override func viewWillDisappear(_ animated: Bool) {
