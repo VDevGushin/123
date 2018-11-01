@@ -37,7 +37,7 @@ final class ChatCoordinator {
         case .chatMessages(let chat):
             return MessageViewController(navigator: self, chat: chat)
         case .createChat:
-            fatalError()
+            return AddChatViewController(navigator: self)
         }
     }
 

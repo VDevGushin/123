@@ -13,12 +13,11 @@ class ChatsViewController: ChatBaseViewController, IPullToRefresh {
     private lazy var chatLoader = ChatsWorker()
     private var source = [Chat]()
 
+    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(navigator: ChatCoordinator) {
         let bundle = Bundle(for: type(of: self))
         super.init(navigator: navigator, title: "Чаты", nibName: String(describing: ChatsViewController.self), bundle: bundle)
     }
-
-    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,7 @@ class ChatsViewController: ChatBaseViewController, IPullToRefresh {
     }
 
     override func buildUI() {
-        ChatStyle.tableView(self.chatsTable, self, ChatTableViewCell.self)
+        ChatStyle.tableView(self.chatsTable, self, [ChatTableViewCell.self])
         let closeButton = UIBarButtonItem(title: "Close", style: .done, target: self, action: #selector(closeChat))
         self.navigationItem.leftBarButtonItems = [closeButton]
         let addChatButton = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addChat))
@@ -57,9 +56,9 @@ class ChatsViewController: ChatBaseViewController, IPullToRefresh {
     @objc private func closeChat() {
         self.navigator.close()
     }
-    
+
     @objc private func addChat() {
-    
+        self.navigator.navigate(to: .createChat)
     }
 }
 

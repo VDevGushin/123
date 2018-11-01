@@ -144,7 +144,6 @@
 		3C82F4752164AA120024B3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C82F4742164AA120024B3E4 /* Assets.xcassets */; };
 		3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C82F4762164AA120024B3E4 /* LaunchScreen.storyboard */; };
 		3C82F47E2164ABDB0024B3E4 /* ButtonAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F47D2164ABDB0024B3E4 /* ButtonAnimationViewController.swift */; };
-		3C82F47F2164AD190024B3E4 /* SupportLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; };
 		3C82F4822164AD310024B3E4 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4812164AD310024B3E4 /* Animation.swift */; };
 		3C82F4852164B3330024B3E4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4842164B3330024B3E4 /* Request.swift */; };
 		3C82F4872164B3F50024B3E4 /* MethodsPerformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */; };
@@ -188,6 +187,10 @@
 		3C9A83C62133C9C4008A1F17 /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */; };
 		3C9AA1252147A3AE00085EEC /* СustomСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AA1242147A3AE00085EEC /* СustomСollections.swift */; };
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
+		3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31442218AD62E00A06369 /* AddChatViewController.swift */; };
+		3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31443218AD62F00A06369 /* AddChatViewController.xib */; };
+		3CA31451218AFA2900A06369 /* SupportLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; };
+		3CA31452218AFA2900A06369 /* SupportLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
@@ -321,6 +324,13 @@
 			remoteGlobalIDString = 3C41F8FF21611882002334DB;
 			remoteInfo = SupportLib;
 		};
+		3CA31453218AFA2900A06369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CD85A1220EF482A008D994C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C41F8FF21611882002334DB;
+			remoteInfo = SupportLib;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -331,6 +341,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3C41F90821611883002334DB /* SupportLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CA31455218AFA2900A06369 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3CA31452218AFA2900A06369 /* SupportLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +561,8 @@
 		3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
 		3C9AA1242147A3AE00085EEC /* СustomСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СustomСollections.swift"; sourceTree = "<group>"; };
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		3CA31442218AD62E00A06369 /* AddChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatViewController.swift; sourceTree = "<group>"; };
+		3CA31443218AD62F00A06369 /* AddChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChatViewController.xib; sourceTree = "<group>"; };
 		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
@@ -708,7 +731,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C82F47F2164AD190024B3E4 /* SupportLib.framework in Frameworks */,
+				3CA31451218AFA2900A06369 /* SupportLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,6 +902,7 @@
 		3C35CC0A218798A200DDE92E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3CA3144A218AEAF800A06369 /* StaticCells */,
 				3CF58AD7218837F0008FEB6D /* MessageTableViewCell.swift */,
 				3CF58AD8218837F0008FEB6D /* MessageTableViewCell.xib */,
 				3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */,
@@ -1351,6 +1375,13 @@
 			path = ColorsGetters;
 			sourceTree = "<group>";
 		};
+		3CA3144A218AEAF800A06369 /* StaticCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StaticCells;
+			sourceTree = "<group>";
+		};
 		3CA420A3210B27EB00C303FC /* Footer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1613,6 +1644,8 @@
 				3CF58AE021883A2B008FEB6D /* MessageViewController.xib */,
 				3CF58AE821883D68008FEB6D /* ChatsViewController.swift */,
 				3CF58AE921883D68008FEB6D /* ChatsViewController.xib */,
+				3CA31442218AD62E00A06369 /* AddChatViewController.swift */,
+				3CA31443218AD62F00A06369 /* AddChatViewController.xib */,
 				3CF58AE621883CF0008FEB6D /* ChatBaseViewController.swift */,
 			);
 			path = Chat;
@@ -1798,10 +1831,12 @@
 				3C82F4672164AA0F0024B3E4 /* Sources */,
 				3C82F4682164AA0F0024B3E4 /* Frameworks */,
 				3C82F4692164AA0F0024B3E4 /* Resources */,
+				3CA31455218AFA2900A06369 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3CA31454218AFA2900A06369 /* PBXTargetDependency */,
 			);
 			name = WorkWithUI;
 			productName = WorkWithUI;
@@ -1952,6 +1987,7 @@
 				3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */,
 				3C82F4752164AA120024B3E4 /* Assets.xcassets in Resources */,
 				3C82F4732164AA0F0024B3E4 /* Main.storyboard in Resources */,
+				3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */,
 				3CF58AE221883A2B008FEB6D /* MessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2177,6 +2213,7 @@
 				3C276690217DEA1400374E7E /* MonthView.swift in Sources */,
 				3C97C33C217F3B520025BD3D /* CalendarItem.swift in Sources */,
 				3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */,
+				3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */,
 				3C52D3582189A4140027DA4C /* ChatStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2350,6 +2387,11 @@
 			isa = PBXTargetDependency;
 			target = 3C41F8FF21611882002334DB /* SupportLib */;
 			targetProxy = 3C41F90521611883002334DB /* PBXContainerItemProxy */;
+		};
+		3CA31454218AFA2900A06369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C41F8FF21611882002334DB /* SupportLib */;
+			targetProxy = 3CA31453218AFA2900A06369 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2617,6 +2659,7 @@
 		3C82F47B2164AA120024B3E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
@@ -2638,6 +2681,7 @@
 		3C82F47C2164AA120024B3E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;

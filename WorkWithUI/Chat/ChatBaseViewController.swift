@@ -33,5 +33,13 @@ class ChatBaseViewController: UIViewController {
         self.buildUI()
     }
 
-    func buildUI() { fatalError("Not implemented method") }
+    func buildUI() {
+        //#error("You need to override this method")
+        fatalError("Not implemented method")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: self.view.window)
+    }
 }

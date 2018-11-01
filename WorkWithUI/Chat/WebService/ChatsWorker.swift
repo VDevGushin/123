@@ -27,7 +27,7 @@ final class ChatsWorker {
             
             do {
                 let chats: Chats = try jsonData.decode(using:  ChatResources.decoder)
-                handler(Result.result(chats))
+                handler(Result.result(chats.reversed()))
             } catch {
                 handler(Result.error(error))
             }

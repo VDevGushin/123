@@ -9,7 +9,7 @@
 import UIKit
 typealias Decoration<T> = (T) -> Void
 typealias DecorationWithColor<T> = (T, UIColor) -> Void
-typealias TableDecoration = (UITableView, _ delegate: UITableViewDelegate&UITableViewDataSource, _ cellType: UITableViewCell.Type) -> Void
+typealias TableDecoration = (UITableView, _ delegate: UITableViewDelegate&UITableViewDataSource, _ cellTypes: [UITableViewCell.Type]) -> Void
 
 final class ChatStyle {
     static let messageText: Decoration<UILabel> = { (label: UILabel) -> Void in
@@ -52,18 +52,31 @@ final class ChatStyle {
     }
 
     static let tableView: TableDecoration = {
-        (_ table: UITableView, delegate: UITableViewDelegate&UITableViewDataSource, cellType: UITableViewCell.Type) -> Void in
-        table.registerNib(cellType)
+        (_ table: UITableView, delegate: UITableViewDelegate&UITableViewDataSource, cellTypes: [UITableViewCell.Type]) -> Void in
+        cellTypes.forEach {
+            table.registerNib($0)
+        }
+
         table.delegate = delegate
         table.dataSource = delegate
         table.separatorStyle = .none
         table.backgroundColor = ChatResources.whiteColor
-        
+
         if let delegate = delegate as? IPullToRefresh {
             let refreshControl = UIRefreshControl()
             refreshControl.addTarget(delegate, action: #selector(delegate.handleRefresh(_:)), for: UIControl.Event.valueChanged)
             refreshControl.tintColor = ChatResources.styleColor
             table.addSubview(refreshControl)
+        }
+
+        if let delegate = delegate as? UISearchResultsUpdating {
+            let resultSearchController = UISearchController(searchResultsController: nil)
+            resultSearchController.searchResultsUpdater = delegate
+            resultSearchController.hidesNavigationBarDuringPresentation = false
+            resultSearchController.dimsBackgroundDuringPresentation = false
+            resultSearchController.searchBar.searchBarStyle = UISearchBar.Style.minimal
+            resultSearchController.searchBar.sizeToFit()
+            table.tableHeaderView = resultSearchController.searchBar
         }
     }
 }

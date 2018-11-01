@@ -10,12 +10,11 @@ import UIKit
 import SupportLib
 
 class MessageViewController: ChatBaseViewController, IPullToRefresh {
-    @IBOutlet weak var keyboardConstraint: NSLayoutConstraint!
+    @IBOutlet weak var keyboardConstraint: NSLayoutConstraint! //для передвижения контетнта при открытии клавиатуры
+    @IBOutlet weak var sendMessageHeight: NSLayoutConstraint! //для увеличении площади ввода сообщения
+    
     @IBOutlet private weak var messageTable: UITableView!
     @IBOutlet private weak var sendBackground: ShadowView!
-
-    @IBOutlet weak var sendMessageHeight: NSLayoutConstraint!
-
     @IBOutlet private weak var newMessageText: UITextView!
     @IBOutlet private weak var sendButton: UIButton!
 
@@ -40,14 +39,9 @@ class MessageViewController: ChatBaseViewController, IPullToRefresh {
         self.messagesWorker.startWork()
     }
 
-    override func viewWillDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
-        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: self.view.window)
-    }
-
     override func buildUI() {
         //table view delegate
-        ChatStyle.tableView(self.messageTable, self, MessageTableViewCell.self)
+        ChatStyle.tableView(self.messageTable, self, [MessageTableViewCell.self])
         ChatStyle.sendButton(self.sendButton)
         ChatStyle.defaultBackground(self.sendBackground)
 
@@ -175,17 +169,23 @@ fileprivate extension MessageViewController {
 
     private func adjustingHeight(_ show: Bool, notification: NSNotification) {
         guard let userInfo = notification.userInfo,
-            let keyboardFrameBeginUserInfoKey = userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue,
+            let keyboardFrameBeginUserInfoKey = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue,
             let animationDurarion = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval
             else { return }
 
         let keyboardFrame: CGRect = keyboardFrameBeginUserInfoKey.cgRectValue
 
+        var safeArea: CGFloat = 0.0
+        if #available(iOS 11.0, *) {
+            let window = UIApplication.shared.keyWindow
+            safeArea = window?.safeAreaInsets.bottom ?? 0.0
+        }
+
         UIView.animate(withDuration: animationDurarion, animations: { () -> Void in
             if !show {
                 self.keyboardConstraint.constant = 0.0
             } else {
-                self.keyboardConstraint.constant += keyboardFrame.height
+                self.keyboardConstraint.constant = keyboardFrame.height - safeArea
             }
         })
     }

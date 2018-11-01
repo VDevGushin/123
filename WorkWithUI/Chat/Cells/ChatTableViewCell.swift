@@ -16,7 +16,7 @@ class ChatTableViewCell: UITableViewCell {
     @IBOutlet private weak var lastMessage: UILabel!
 
     func setChat(with: Chat) {
-
+        self.timeLabel.text = ""
         self.author.text = ""
         self.lastMessage.text = ""
         self.title.text = "\(with.name ?? "...")"
