@@ -118,6 +118,13 @@
 		3C52D35E2189B3F40027DA4C /* IPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D35D2189B3F40027DA4C /* IPullToRefresh.swift */; };
 		3C52D3602189D4550027DA4C /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
+		3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */; };
+		3C5FDEF52191EBCB00F0C6DF /* CaptchaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaService.swift */; };
+		3C5FDEF72191EC8400F0C6DF /* FeedBackEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */; };
+		3C5FDEFA2191ED1300F0C6DF /* FeedBackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF92191ED1300F0C6DF /* FeedBackError.swift */; };
+		3C5FDEFD2191F4FB00F0C6DF /* CaptchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEFC2191F4FB00F0C6DF /* CaptchaView.swift */; };
+		3C5FDF012191F5D600F0C6DF /* CaptchaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FDF002191F5D600F0C6DF /* CaptchaView.xib */; };
+		3C5FDF032191FCC700F0C6DF /* FeedBackStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */; };
 		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
 		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
 		3C69E4AC215FA4870022CA4D /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD253B2112F95400128554 /* UIView+Ex.swift */; };
@@ -136,6 +143,7 @@
 		3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C746BE5217EF9E0002E51DC /* CalendarView.xib */; };
 		3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE7217F18FC002E51DC /* DaysView.swift */; };
 		3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE9217F191B002E51DC /* CalendarCellMonth.swift */; };
+		3C78FFDF2191E16700540752 /* FeedBackConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78FFDE2191E16700540752 /* FeedBackConfig.swift */; };
 		3C7CD75221103951009871B1 /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CD75121103951009871B1 /* Tuples.swift */; };
 		3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */; };
 		3C82F4662164A98A0024B3E4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4652164A98A0024B3E4 /* Date+Extension.swift */; };
@@ -498,6 +506,13 @@
 		3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackWebConfigurator.swift; sourceTree = "<group>"; };
+		3C5FDEF42191EBCB00F0C6DF /* CaptchaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaService.swift; sourceTree = "<group>"; };
+		3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackEndpoint.swift; sourceTree = "<group>"; };
+		3C5FDEF92191ED1300F0C6DF /* FeedBackError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackError.swift; sourceTree = "<group>"; };
+		3C5FDEFC2191F4FB00F0C6DF /* CaptchaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaView.swift; sourceTree = "<group>"; };
+		3C5FDF002191F5D600F0C6DF /* CaptchaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptchaView.xib; sourceTree = "<group>"; };
+		3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackStyle.swift; sourceTree = "<group>"; };
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
 		3C69E4AA215FA4090022CA4D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
@@ -515,6 +530,7 @@
 		3C746BE5217EF9E0002E51DC /* CalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		3C746BE7217F18FC002E51DC /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
 		3C746BE9217F191B002E51DC /* CalendarCellMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCellMonth.swift; sourceTree = "<group>"; };
+		3C78FFDE2191E16700540752 /* FeedBackConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackConfig.swift; sourceTree = "<group>"; };
 		3C7CD75121103951009871B1 /* Tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuples.swift; sourceTree = "<group>"; };
 		3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		3C82F4652164A98A0024B3E4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -1187,6 +1203,32 @@
 			path = Habr;
 			sourceTree = "<group>";
 		};
+		3C5FDEF22191EBB500F0C6DF /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FDEF42191EBCB00F0C6DF /* CaptchaService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		3C5FDEF82191ED0500F0C6DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */,
+				3C5FDEF92191ED1300F0C6DF /* FeedBackError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C5FDEFB2191F4D700F0C6DF /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FDEFC2191F4FB00F0C6DF /* CaptchaView.swift */,
+				3C5FDF002191F5D600F0C6DF /* CaptchaView.xib */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		3C6D8F622109C1FC000190F3 /* StatisticControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1208,9 +1250,31 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		3C78FFDC2191E0FE00540752 /* FeedBack */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FDEFB2191F4D700F0C6DF /* Controls */,
+				3C5FDEF82191ED0500F0C6DF /* Models */,
+				3C5FDEF22191EBB500F0C6DF /* WebService */,
+				3C78FFDD2191E12B00540752 /* Settings */,
+			);
+			path = FeedBack;
+			sourceTree = "<group>";
+		};
+		3C78FFDD2191E12B00540752 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */,
+				3C78FFDE2191E16700540752 /* FeedBackConfig.swift */,
+				3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		3C82F46C2164AA0F0024B3E4 /* WorkWithUI */ = {
 			isa = PBXGroup;
 			children = (
+				3C78FFDC2191E0FE00540752 /* FeedBack */,
 				3CEF8E8A218712FB00996597 /* Chat */,
 				3C276687217DE1C200374E7E /* Calendar */,
 				3C82F46D2164AA0F0024B3E4 /* AppDelegate.swift */,
@@ -1989,6 +2053,7 @@
 				3CF58AEB21883D68008FEB6D /* ChatsViewController.xib in Resources */,
 				3C52D35C2189AB470027DA4C /* ChatTableViewCell.xib in Resources */,
 				3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */,
+				3C5FDF012191F5D600F0C6DF /* CaptchaView.xib in Resources */,
 				3CF58ADA218837F0008FEB6D /* MessageTableViewCell.xib in Resources */,
 				3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */,
 				3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */,
@@ -2191,13 +2256,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5FDF032191FCC700F0C6DF /* FeedBackStyle.swift in Sources */,
 				3CEF8E8D218713DE00996597 /* Endpoint.swift in Sources */,
+				3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */,
 				3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */,
 				3CF58AF32188639B008FEB6D /* Profile.swift in Sources */,
 				3C97C33E217F3B740025BD3D /* CalendarModel.swift in Sources */,
+				3C5FDEFD2191F4FB00F0C6DF /* CaptchaView.swift in Sources */,
 				3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */,
+				3C5FDEF52191EBCB00F0C6DF /* CaptchaService.swift in Sources */,
 				3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */,
 				3CEF8E9421871AF600996597 /* Chat.swift in Sources */,
+				3C5FDEF72191EC8400F0C6DF /* FeedBackEndpoint.swift in Sources */,
 				3C35CBFD218784F600DDE92E /* Message.swift in Sources */,
 				3C35CC012187892800DDE92E /* ChatsLoaderError.swift in Sources */,
 				3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */,
@@ -2213,6 +2283,7 @@
 				3CF58AEA21883D68008FEB6D /* ChatsViewController.swift in Sources */,
 				3C4EAF1A2180628800CEB18B /* CalendarStyle.swift in Sources */,
 				3C82F47E2164ABDB0024B3E4 /* ButtonAnimationViewController.swift in Sources */,
+				3C78FFDF2191E16700540752 /* FeedBackConfig.swift in Sources */,
 				3CF58AF52188884D008FEB6D /* NewMessage.swift in Sources */,
 				3CF58AD9218837F0008FEB6D /* MessageTableViewCell.swift in Sources */,
 				3C97C339217F38020025BD3D /* CalendarCellDay.swift in Sources */,
@@ -2224,6 +2295,7 @@
 				3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */,
 				3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */,
 				3CA31457218B094700A06369 /* ProfileWorker.swift in Sources */,
+				3C5FDEFA2191ED1300F0C6DF /* FeedBackError.swift in Sources */,
 				3C6E7750218B527A00938D42 /* NewChat.swift in Sources */,
 				3C52D3582189A4140027DA4C /* ChatStyle.swift in Sources */,
 			);

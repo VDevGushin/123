@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SupportLib
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var tp: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        return
         let image = #imageLiteral(resourceName: "clors")
 
         let replicatorLayer = CAReplicatorLayer()
@@ -66,12 +68,12 @@ class ViewController: UIViewController {
         imageLayer.add(animation, forKey: "hypnoscale")
     }
 
-    
+
     @IBAction func openYellow(_ sender: Any) {
 //        let vc = CalendarViewController.init(nibName: "CalendarViewController", bundle: nil)
 //        self.present(vc, animated: true, completion: nil)
-        self.present( ChatCoordinator.chatNavigation(), animated: true, completion: nil)
+        //self.present( ChatCoordinator.chatNavigation(), animated: true, completion: nil)
+
     }
-    
 }
 
