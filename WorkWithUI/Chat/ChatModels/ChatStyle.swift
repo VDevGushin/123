@@ -29,6 +29,7 @@ final class ChatStyle {
             textfield.layer.masksToBounds = true
             textfield.layer.borderColor = ChatResources.styleColor.cgColor
             textfield.layer.borderWidth = 1.5
+            textfield.textColor = .red
         }
     }
 

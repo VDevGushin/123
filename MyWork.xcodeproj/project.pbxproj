@@ -187,6 +187,7 @@
 		3C988081215B907400994BA8 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F672109C87F000190F3 /* UITableView+Ex.swift */; };
 		3C9A83C62133C9C4008A1F17 /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */; };
 		3C9AA1252147A3AE00085EEC /* СustomСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AA1242147A3AE00085EEC /* СustomСollections.swift */; };
+		3C9AC62B219176FA00772425 /* AvoidingRaceConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AC62A219176FA00772425 /* AvoidingRaceConditions.swift */; };
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
 		3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31442218AD62E00A06369 /* AddChatViewController.swift */; };
 		3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31443218AD62F00A06369 /* AddChatViewController.xib */; };
@@ -565,6 +566,7 @@
 		3C98807F215B89EF00994BA8 /* IColorGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IColorGetter.swift; sourceTree = "<group>"; };
 		3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
 		3C9AA1242147A3AE00085EEC /* СustomСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СustomСollections.swift"; sourceTree = "<group>"; };
+		3C9AC62A219176FA00772425 /* AvoidingRaceConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingRaceConditions.swift; sourceTree = "<group>"; };
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		3CA31442218AD62E00A06369 /* AddChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatViewController.swift; sourceTree = "<group>"; };
 		3CA31443218AD62F00A06369 /* AddChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChatViewController.xib; sourceTree = "<group>"; };
@@ -1524,6 +1526,7 @@
 				3CA86048216B2AC5001BF023 /* URLs.swift */,
 				3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */,
 				3C4C676821254370005D05D5 /* LazyProperties.swift */,
+				3C9AC62A219176FA00772425 /* AvoidingRaceConditions.swift */,
 				3C38E172210772DD005CBDE9 /* UIControls */,
 				3CC633FC2105BD63002F3B8B /* ErrorHandling */,
 				3C36D8AF20FF18300095F9A4 /* ConcurrencyProgramming */,
@@ -2235,6 +2238,7 @@
 				3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */,
 				3C934C92210EF50F00E35A4D /* SecondViewController.swift in Sources */,
 				3C934C8F210EF1B700E35A4D /* PersonStatisticCell.swift in Sources */,
+				3C9AC62B219176FA00772425 /* AvoidingRaceConditions.swift in Sources */,
 				3CC2F214213D152600C59AF2 /* EarlyReturningFunctions.swift in Sources */,
 				3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */,
 				3CD7AF7D215E71710006A4DD /* UIColllectionView+Ex.swift in Sources */,

@@ -11,4 +11,11 @@ import Foundation
 enum Result<T> {
     case result(T)
     case error(Error)
+
+    var value: T? {
+        if case Result.result(let T) = self {
+            return T
+        }
+        return nil
+    }
 }

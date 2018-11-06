@@ -26,19 +26,4 @@ class ProfileTableViewCell: UITableViewCell {
         // update UI
         accessoryType = selected ? .checkmark : .none
     }
-
-//    override var isSelected: Bool {
-//        didSet {
-//            if isSelected {
-//                ChatStyle.messageBackView(self.backView, ChatResources.myMessageColor)
-//            } else {
-//                ChatStyle.messageBackView(self.backView, ChatResources.defaultMessageColor)
-//            }
-//        }
-//    }
-
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//        accessoryType = selected ? .checkmark : .none
-//    }
 }
