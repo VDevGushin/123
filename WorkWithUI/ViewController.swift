@@ -74,6 +74,7 @@ class ViewController: UIViewController {
 //        self.present(vc, animated: true, completion: nil)
         //self.present( ChatCoordinator.chatNavigation(), animated: true, completion: nil)
 
+        self.present(FeedBackNavigator.feedBackNavigation(), animated: true, completion: nil)
     }
 }
 

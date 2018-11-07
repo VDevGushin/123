@@ -21,7 +21,7 @@ class AddChatViewController: ChatBaseViewController, IPullToRefresh {
     @IBOutlet weak var backViewHeight: NSLayoutConstraint!
     private lazy var profileWorker: ProfileWorker = ProfileWorker()
     private lazy var chatWorker = ChatsWorker()
-    private lazy var searchBar = UISearchBar(frame: CGRect.zero)
+
     private lazy var resultSearchController = UISearchController(searchResultsController: nil)
 
     private var source = [Profile]()

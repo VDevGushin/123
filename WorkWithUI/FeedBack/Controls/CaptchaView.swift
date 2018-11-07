@@ -20,7 +20,7 @@ final class CaptchaView: UIView {
         }
     }
 
-    private let serivce = CaptchaService()
+    private let serivce = CaptchaWorker()
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()

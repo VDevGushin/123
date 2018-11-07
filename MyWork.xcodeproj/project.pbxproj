@@ -24,6 +24,17 @@
 		3C0F05BE216135E800F04623 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F05BD216135E800F04623 /* UIWindow+Extension.swift */; };
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
 		3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */; };
+		3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */; };
+		3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */; };
+		3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */; };
+		3C1DB19B2192B48D001BD557 /* UIDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB19A2192B48D001BD557 /* UIDecoration.swift */; };
+		3C1DB19D2192B639001BD557 /* IPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB19C2192B639001BD557 /* IPullToRefresh.swift */; };
+		3C1DB19F2192C6AD001BD557 /* FeedBackBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB19E2192C6AD001BD557 /* FeedBackBaseViewController.swift */; };
+		3C1DB1A12192CCD7001BD557 /* ISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A02192CCD7001BD557 /* ISource.swift */; };
+		3C1DB1A52192CD54001BD557 /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */; };
+		3C1DB1A62192CD54001BD557 /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A42192CD54001BD557 /* SourceTableViewCell.xib */; };
+		3C1DB1A92192D654001BD557 /* OrganisationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A82192D654001BD557 /* OrganisationWorker.swift */; };
+		3C1DB1AB2192D6CB001BD557 /* Organisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1AA2192D6CB001BD557 /* Organisation.swift */; };
 		3C1DD66F2118135D00383851 /* PowerOfSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DD66E2118135D00383851 /* PowerOfSet.swift */; };
 		3C1DD6722118183700383851 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DD6712118183700383851 /* Serialization.swift */; };
 		3C1EC266212150BC00E929E5 /* TrimmingLongArgumentLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */; };
@@ -115,11 +126,10 @@
 		3C52D3582189A4140027DA4C /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D3572189A4140027DA4C /* ChatStyle.swift */; };
 		3C52D35B2189AB470027DA4C /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */; };
 		3C52D35C2189AB470027DA4C /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */; };
-		3C52D35E2189B3F40027DA4C /* IPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D35D2189B3F40027DA4C /* IPullToRefresh.swift */; };
 		3C52D3602189D4550027DA4C /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */; };
-		3C5FDEF52191EBCB00F0C6DF /* CaptchaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaService.swift */; };
+		3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */; };
 		3C5FDEF72191EC8400F0C6DF /* FeedBackEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */; };
 		3C5FDEFA2191ED1300F0C6DF /* FeedBackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF92191ED1300F0C6DF /* FeedBackError.swift */; };
 		3C5FDEFD2191F4FB00F0C6DF /* CaptchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEFC2191F4FB00F0C6DF /* CaptchaView.swift */; };
@@ -388,6 +398,17 @@
 		3C0F05BD216135E800F04623 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
 		3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelСontrollers.swift"; sourceTree = "<group>"; };
+		3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackNavigator.swift; sourceTree = "<group>"; };
+		3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSearchViewController.swift; sourceTree = "<group>"; };
+		3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackSearchViewController.xib; sourceTree = "<group>"; };
+		3C1DB19A2192B48D001BD557 /* UIDecoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDecoration.swift; sourceTree = "<group>"; };
+		3C1DB19C2192B639001BD557 /* IPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPullToRefresh.swift; sourceTree = "<group>"; };
+		3C1DB19E2192C6AD001BD557 /* FeedBackBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackBaseViewController.swift; sourceTree = "<group>"; };
+		3C1DB1A02192CCD7001BD557 /* ISource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISource.swift; sourceTree = "<group>"; };
+		3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
+		3C1DB1A42192CD54001BD557 /* SourceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourceTableViewCell.xib; sourceTree = "<group>"; };
+		3C1DB1A82192D654001BD557 /* OrganisationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationWorker.swift; sourceTree = "<group>"; };
+		3C1DB1AA2192D6CB001BD557 /* Organisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organisation.swift; sourceTree = "<group>"; };
 		3C1DD66E2118135D00383851 /* PowerOfSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSet.swift; sourceTree = "<group>"; };
 		3C1DD6712118183700383851 /* Serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
 		3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmingLongArgumentLists.swift; sourceTree = "<group>"; };
@@ -502,12 +523,11 @@
 		3C52D3572189A4140027DA4C /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
 		3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
-		3C52D35D2189B3F40027DA4C /* IPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPullToRefresh.swift; sourceTree = "<group>"; };
 		3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackWebConfigurator.swift; sourceTree = "<group>"; };
-		3C5FDEF42191EBCB00F0C6DF /* CaptchaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaService.swift; sourceTree = "<group>"; };
+		3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaWorker.swift; sourceTree = "<group>"; };
 		3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackEndpoint.swift; sourceTree = "<group>"; };
 		3C5FDEF92191ED1300F0C6DF /* FeedBackError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackError.swift; sourceTree = "<group>"; };
 		3C5FDEFC2191F4FB00F0C6DF /* CaptchaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaView.swift; sourceTree = "<group>"; };
@@ -872,6 +892,23 @@
 			path = LinePercentagesControl;
 			sourceTree = "<group>";
 		};
+		3C1DB1922192B216001BD557 /* FeedBackNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */,
+			);
+			path = FeedBackNavigator;
+			sourceTree = "<group>";
+		};
+		3C1DB1A22192CD19001BD557 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */,
+				3C1DB1A42192CD54001BD557 /* SourceTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		3C276687217DE1C200374E7E /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1206,7 +1243,8 @@
 		3C5FDEF22191EBB500F0C6DF /* WebService */ = {
 			isa = PBXGroup;
 			children = (
-				3C5FDEF42191EBCB00F0C6DF /* CaptchaService.swift */,
+				3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */,
+				3C1DB1A82192D654001BD557 /* OrganisationWorker.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -1216,6 +1254,8 @@
 			children = (
 				3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */,
 				3C5FDEF92191ED1300F0C6DF /* FeedBackError.swift */,
+				3C1DB1A02192CCD7001BD557 /* ISource.swift */,
+				3C1DB1AA2192D6CB001BD557 /* Organisation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1253,10 +1293,15 @@
 		3C78FFDC2191E0FE00540752 /* FeedBack */ = {
 			isa = PBXGroup;
 			children = (
+				3C1DB1A22192CD19001BD557 /* Cells */,
+				3C1DB1922192B216001BD557 /* FeedBackNavigator */,
 				3C5FDEFB2191F4D700F0C6DF /* Controls */,
 				3C5FDEF82191ED0500F0C6DF /* Models */,
 				3C5FDEF22191EBB500F0C6DF /* WebService */,
 				3C78FFDD2191E12B00540752 /* Settings */,
+				3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */,
+				3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */,
+				3C1DB19E2192C6AD001BD557 /* FeedBackBaseViewController.swift */,
 			);
 			path = FeedBack;
 			sourceTree = "<group>";
@@ -1313,6 +1358,8 @@
 				3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */,
 				3C0EA7BC21708A5400C5EB13 /* Style.swift */,
 				3C4EAF172180487F00CEB18B /* DelegateCall.swift */,
+				3C1DB19A2192B48D001BD557 /* UIDecoration.swift */,
+				3C1DB19C2192B639001BD557 /* IPullToRefresh.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1742,7 +1789,6 @@
 				3C35CBFC218784F600DDE92E /* Message.swift */,
 				3CF58AF22188639B008FEB6D /* Profile.swift */,
 				3CF58AF42188884D008FEB6D /* NewMessage.swift */,
-				3C52D35D2189B3F40027DA4C /* IPullToRefresh.swift */,
 				3C6E774F218B527A00938D42 /* NewChat.swift */,
 			);
 			path = ChatModels;
@@ -2055,12 +2101,14 @@
 				3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */,
 				3C5FDF012191F5D600F0C6DF /* CaptchaView.xib in Resources */,
 				3CF58ADA218837F0008FEB6D /* MessageTableViewCell.xib in Resources */,
+				3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */,
 				3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */,
 				3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */,
 				3C82F4752164AA120024B3E4 /* Assets.xcassets in Resources */,
 				3C82F4732164AA0F0024B3E4 /* Main.storyboard in Resources */,
 				3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */,
 				3CA3145B218B149800A06369 /* ProfileTableViewCell.xib in Resources */,
+				3C1DB1A62192CD54001BD557 /* SourceTableViewCell.xib in Resources */,
 				3CF58AE221883A2B008FEB6D /* MessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2232,6 +2280,7 @@
 				3C9709E8216CCD0900394013 /* ColorUtils.swift in Sources */,
 				3C41F91F216118F1002334DB /* UIViewController+Extension.swift in Sources */,
 				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,
+				3C1DB19B2192B48D001BD557 /* UIDecoration.swift in Sources */,
 				3CF58AED21884FCC008FEB6D /* Views.swift in Sources */,
 				3C41F922216118F1002334DB /* Result.swift in Sources */,
 				3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */,
@@ -2249,6 +2298,7 @@
 				3C41F927216118F1002334DB /* CGFloat+Extension.swift in Sources */,
 				3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */,
 				3C41F92C21611953002334DB /* CollectionViewDataSource.swift in Sources */,
+				3C1DB19D2192B639001BD557 /* IPullToRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2260,17 +2310,21 @@
 				3CEF8E8D218713DE00996597 /* Endpoint.swift in Sources */,
 				3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */,
 				3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */,
+				3C1DB1A12192CCD7001BD557 /* ISource.swift in Sources */,
 				3CF58AF32188639B008FEB6D /* Profile.swift in Sources */,
 				3C97C33E217F3B740025BD3D /* CalendarModel.swift in Sources */,
 				3C5FDEFD2191F4FB00F0C6DF /* CaptchaView.swift in Sources */,
+				3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */,
 				3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */,
-				3C5FDEF52191EBCB00F0C6DF /* CaptchaService.swift in Sources */,
+				3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */,
 				3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */,
 				3CEF8E9421871AF600996597 /* Chat.swift in Sources */,
 				3C5FDEF72191EC8400F0C6DF /* FeedBackEndpoint.swift in Sources */,
 				3C35CBFD218784F600DDE92E /* Message.swift in Sources */,
 				3C35CC012187892800DDE92E /* ChatsLoaderError.swift in Sources */,
 				3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */,
+				3C1DB19F2192C6AD001BD557 /* FeedBackBaseViewController.swift in Sources */,
+				3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
 				3CA3145A218B149800A06369 /* ProfileTableViewCell.swift in Sources */,
 				3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */,
@@ -2289,13 +2343,15 @@
 				3C97C339217F38020025BD3D /* CalendarCellDay.swift in Sources */,
 				3CF58AEF21885C7A008FEB6D /* ChatResources.swift in Sources */,
 				3C52D35B2189AB470027DA4C /* ChatTableViewCell.swift in Sources */,
-				3C52D35E2189B3F40027DA4C /* IPullToRefresh.swift in Sources */,
 				3C276690217DEA1400374E7E /* MonthView.swift in Sources */,
 				3C97C33C217F3B520025BD3D /* CalendarItem.swift in Sources */,
 				3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */,
+				3C1DB1A52192CD54001BD557 /* SourceTableViewCell.swift in Sources */,
 				3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */,
 				3CA31457218B094700A06369 /* ProfileWorker.swift in Sources */,
+				3C1DB1AB2192D6CB001BD557 /* Organisation.swift in Sources */,
 				3C5FDEFA2191ED1300F0C6DF /* FeedBackError.swift in Sources */,
+				3C1DB1A92192D654001BD557 /* OrganisationWorker.swift in Sources */,
 				3C6E7750218B527A00938D42 /* NewChat.swift in Sources */,
 				3C52D3582189A4140027DA4C /* ChatStyle.swift in Sources */,
 			);

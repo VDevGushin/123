@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SupportLib
 
 class ChatsViewController: ChatBaseViewController, IPullToRefresh {
     @IBOutlet private weak var chatsTable: UITableView!

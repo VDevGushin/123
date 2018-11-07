@@ -7,10 +7,7 @@
 //
 
 import UIKit
-typealias Decoration<T> = (T) -> Void
-typealias DecorationWithColor<T> = (T, UIColor) -> Void
-typealias TableDecoration = (UITableView, _ delegate: UITableViewDelegate&UITableViewDataSource, _ cellTypes: [UITableViewCell.Type]) -> Void
-typealias SearchControllerDecoration = (UISearchController, _ delegate: UISearchResultsUpdating) -> Void
+import SupportLib
 
 final class ChatStyle {
     static let serachController: SearchControllerDecoration = { (_ serachController: UISearchController, delegate: UISearchResultsUpdating) -> Void in

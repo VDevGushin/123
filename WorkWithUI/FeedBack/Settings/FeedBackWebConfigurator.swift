@@ -13,6 +13,8 @@ struct FeedBackWebConfigurator {
         case argus
         case api
         case captcha
+        case school_dictionaries
+        case schools
 
         var value: String {
             return self.rawValue
@@ -42,6 +44,18 @@ struct FeedBackWebConfigurator {
             "Accept-Encoding": " br, gzip, deflate"
         ]
         let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: nil, header: header, body: nil)
+        return configurator
+    }
+
+    static func getOrganisations(page: Int, perPage: Int) -> FeedBackWebConfigurator {
+        let paths = FeedBackComponents.createPath(components: .argus, .api, .school_dictionaries, .schools)
+        let header = [
+            "Accept": "application/json",
+            "Accept-Encoding": " br, gzip, deflate"
+        ]
+        let queryItemPage = URLQueryItem(name: "page", value: "\(page)")
+        let queryItemPerPage = URLQueryItem(name: "per_page", value: "\(perPage)")
+        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: [queryItemPage, queryItemPerPage], header: header, body: nil)
         return configurator
     }
 }

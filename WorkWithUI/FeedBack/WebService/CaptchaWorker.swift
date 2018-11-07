@@ -15,11 +15,9 @@ fileprivate extension String {
             let regex = try NSRegularExpression(pattern: regex)
             let results = regex.matches(in: self, range: NSRange(self.startIndex..., in: self))
             return results.map {
-                //self.substring(with: Range($0.range, in: self)!)
                 String(self[Range($0.range, in: self)!])
             }
-        } catch let error {
-            print("invalid regex: \(error.localizedDescription)")
+        } catch {
             return []
         }
     }
@@ -32,21 +30,21 @@ fileprivate extension String {
     }
 }
 
-final class CaptchaService {
+final class CaptchaWorker {
     typealias Handler = (Result<UIImage?>) -> Void
 
     func getCaptcha(then handler: @escaping Handler) {
         struct CaptchaModel: Decodable {
             enum CodingKeys: String, CodingKey {
                 case id = "Id"
-                case name = "Image"
+                case image = "Image"
             }
             let id: String
             var image: UIImage?
             init(from decoder: Decoder) throws {
                 let container = try decoder.container(keyedBy: CodingKeys.self)
                 self.id = try container.decode(String.self, forKey: .id)
-                if let text = try? container.decode(String.self, forKey: .name) {
+                if let text = try? container.decode(String.self, forKey: .image) {
                     let results = text.matches(for: "data:image\\/([a-zA-Z]*);base64,([^\\\"]*)")
                     for imageString in results {
                         autoreleasepool {
