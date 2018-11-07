@@ -104,11 +104,12 @@ extension FeedBackSearchViewController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if resultSearchController.isActive {
             let element = self.filteredSource[indexPath.item]
-            self.delegate?.selectSource(selected: element)
+            self.delegate?.selectSource(selected: element.innerRaw)
         } else {
             let element = self.source[indexPath.item]
-            self.delegate?.selectSource(selected: element)
+            self.delegate?.selectSource(selected: element.innerRaw)
         }
+        self.navigator.back()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

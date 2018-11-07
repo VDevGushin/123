@@ -10,7 +10,7 @@ import Foundation
 import SupportLib
 
 final class OrganisationWorker: IFeedBackWorker {
-    var withPagination: Bool = false
+    var withPagination: Bool = true
     weak var delegate: IFeedBackWorkerDelegate?
     private var perPage = 100
     private var page = 1

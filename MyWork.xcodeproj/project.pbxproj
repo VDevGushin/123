@@ -163,6 +163,8 @@
 		3C7A5AD5219337F700DE016B /* MultiIInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5AD3219337F700DE016B /* MultiIInputTableViewCell.swift */; };
 		3C7A5AD6219337F700DE016B /* MultiIInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7A5AD4219337F700DE016B /* MultiIInputTableViewCell.xib */; };
 		3C7A5AD821933E6700DE016B /* IFeedbackStaticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5AD721933E6700DE016B /* IFeedbackStaticCell.swift */; };
+		3C7A5ADB21934A8200DE016B /* DoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5AD921934A8200DE016B /* DoneTableViewCell.swift */; };
+		3C7A5ADC21934A8200DE016B /* DoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7A5ADA21934A8200DE016B /* DoneTableViewCell.xib */; };
 		3C7CD75221103951009871B1 /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CD75121103951009871B1 /* Tuples.swift */; };
 		3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */; };
 		3C82F4662164A98A0024B3E4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4652164A98A0024B3E4 /* Date+Extension.swift */; };
@@ -575,6 +577,8 @@
 		3C7A5AD3219337F700DE016B /* MultiIInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiIInputTableViewCell.swift; sourceTree = "<group>"; };
 		3C7A5AD4219337F700DE016B /* MultiIInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiIInputTableViewCell.xib; sourceTree = "<group>"; };
 		3C7A5AD721933E6700DE016B /* IFeedbackStaticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFeedbackStaticCell.swift; sourceTree = "<group>"; };
+		3C7A5AD921934A8200DE016B /* DoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTableViewCell.swift; sourceTree = "<group>"; };
+		3C7A5ADA21934A8200DE016B /* DoneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneTableViewCell.xib; sourceTree = "<group>"; };
 		3C7CD75121103951009871B1 /* Tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuples.swift; sourceTree = "<group>"; };
 		3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		3C82F4652164A98A0024B3E4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -1361,6 +1365,8 @@
 				3C7A5AD02193376500DE016B /* CaptchaTableViewCell.xib */,
 				3C7A5AD3219337F700DE016B /* MultiIInputTableViewCell.swift */,
 				3C7A5AD4219337F700DE016B /* MultiIInputTableViewCell.xib */,
+				3C7A5AD921934A8200DE016B /* DoneTableViewCell.swift */,
+				3C7A5ADA21934A8200DE016B /* DoneTableViewCell.xib */,
 			);
 			path = StaticCells;
 			sourceTree = "<group>";
@@ -2176,6 +2182,7 @@
 				3CF58AEB21883D68008FEB6D /* ChatsViewController.xib in Resources */,
 				3C52D35C2189AB470027DA4C /* ChatTableViewCell.xib in Resources */,
 				3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */,
+				3C7A5ADC21934A8200DE016B /* DoneTableViewCell.xib in Resources */,
 				3C5FDF012191F5D600F0C6DF /* CaptchaView.xib in Resources */,
 				3CF58ADA218837F0008FEB6D /* MessageTableViewCell.xib in Resources */,
 				3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */,
@@ -2418,6 +2425,7 @@
 				3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3CF58AE721883CF0008FEB6D /* ChatBaseViewController.swift in Sources */,
+				3C7A5ADB21934A8200DE016B /* DoneTableViewCell.swift in Sources */,
 				3CA69B93219332D5009DD38D /* FeedBackFormViewController.swift in Sources */,
 				3C7A5AD5219337F700DE016B /* MultiIInputTableViewCell.swift in Sources */,
 				3CF58AE521883C5D008FEB6D /* ChatCoordinator.swift in Sources */,

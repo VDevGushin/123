@@ -20,6 +20,10 @@ final class FeedBackNavigator {
     func close() {
         self.navigationController?.dismiss(animated: true)
     }
+    
+    func back() {
+        self.navigationController?.popViewController(animated: true)
+    }
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -48,8 +52,6 @@ final class FeedBackNavigator {
         let navigationViewController = UINavigationController()
         ChatStyle.navigationBar(navigationViewController.navigationBar)
         let navigator = FeedBackNavigator(navigationController: navigationViewController)
-        //navigator.navigate(to: .selection(title: "Организации", worker : OrganisationWorker()))
-        // navigator.navigate(to: .selection(title: "Тема", worker: ThemesWorker(), delegate: nil))
         navigator.navigate(to: .feedBackForm)
         return navigationViewController
     }
