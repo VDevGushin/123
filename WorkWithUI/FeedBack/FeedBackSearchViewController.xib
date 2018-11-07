@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedBackSearchViewController" customModule="WorkWithUI" customModuleProvider="target">
             <connections>
                 <outlet property="contentTable" destination="fSx-oo-gHd" id="yDj-jw-uvB"/>
+                <outlet property="keyBoardView" destination="oaI-Tt-ssb" id="jHW-d6-rsE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,13 +25,21 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaI-Tt-ssb">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="oaI-Tt-ssb" firstAttribute="centerX" secondItem="fSx-oo-gHd" secondAttribute="centerX" id="2Bo-c5-pnr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fSx-oo-gHd" secondAttribute="bottom" id="6iN-Hz-vwx"/>
+                <constraint firstItem="oaI-Tt-ssb" firstAttribute="centerY" secondItem="fSx-oo-gHd" secondAttribute="centerY" id="M7v-H0-KGm"/>
                 <constraint firstItem="fSx-oo-gHd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="P0C-qB-lH6"/>
+                <constraint firstItem="oaI-Tt-ssb" firstAttribute="width" secondItem="fSx-oo-gHd" secondAttribute="width" id="Uml-kc-6ir"/>
                 <constraint firstItem="fSx-oo-gHd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZzT-Eh-51S"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fSx-oo-gHd" secondAttribute="trailing" id="uwG-Cm-c0g"/>
+                <constraint firstItem="oaI-Tt-ssb" firstAttribute="height" secondItem="fSx-oo-gHd" secondAttribute="height" id="wFy-yL-f8O"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

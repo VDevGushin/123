@@ -216,6 +216,7 @@
 		3CA3145B218B149800A06369 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31459218B149800A06369 /* ProfileTableViewCell.xib */; };
 		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
+		3CA69B8C219308BD009DD38D /* IFeedBackWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B1215C03460034CF0A /* ColorBuilder.swift */; };
@@ -611,6 +612,7 @@
 		3CA31459218B149800A06369 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
+		3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFeedBackWorker.swift; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CB155B1215C03460034CF0A /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
@@ -1243,6 +1245,7 @@
 		3C5FDEF22191EBB500F0C6DF /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				3CA69B8A219308AA009DD38D /* Base */,
 				3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */,
 				3C1DB1A82192D654001BD557 /* OrganisationWorker.swift */,
 			);
@@ -1504,6 +1507,14 @@
 				3CA420A6210B281000C303FC /* StatisticFooter.xib */,
 			);
 			path = Footer;
+			sourceTree = "<group>";
+		};
+		3CA69B8A219308AA009DD38D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */ = {
@@ -2346,6 +2357,7 @@
 				3C276690217DEA1400374E7E /* MonthView.swift in Sources */,
 				3C97C33C217F3B520025BD3D /* CalendarItem.swift in Sources */,
 				3CEF8E9021871A7000996597 /* ETBChatWebConfigurator.swift in Sources */,
+				3CA69B8C219308BD009DD38D /* IFeedBackWorker.swift in Sources */,
 				3C1DB1A52192CD54001BD557 /* SourceTableViewCell.swift in Sources */,
 				3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */,
 				3CA31457218B094700A06369 /* ProfileWorker.swift in Sources */,

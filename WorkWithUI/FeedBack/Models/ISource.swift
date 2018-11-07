@@ -10,5 +10,5 @@ import Foundation
 
 protocol ISource {
     var innerTitle: String? { get set }
-    var innderRaw: Any? { get set }
+    var innerRaw: Any? { get set }
 }

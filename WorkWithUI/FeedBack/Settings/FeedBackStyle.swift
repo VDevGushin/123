@@ -13,7 +13,7 @@ final class FeedBackStyle {
     static let indicator: Decoration<UIActivityIndicatorView> = { (indicator: UIActivityIndicatorView) -> Void in
         indicator.color = FeedBackConfig.indicatorColor
     }
-    
+
     static let titleLabel: Decoration<UILabel> = { (label: UILabel) -> Void in
         label.font = FeedBackConfig.titleFont
         label.numberOfLines = 3
@@ -37,7 +37,7 @@ final class FeedBackStyle {
             table.addSubview(refreshControl)
         }
     }
-    
+
     static let serachController: SearchControllerDecoration = { (_ serachController: UISearchController, delegate: UISearchResultsUpdating) -> Void in
         serachController.searchResultsUpdater = delegate
         serachController.hidesNavigationBarDuringPresentation = false
@@ -45,7 +45,7 @@ final class FeedBackStyle {
         serachController.searchBar.barTintColor = FeedBackConfig.styleColor
         serachController.searchBar.searchBarStyle = .default
         serachController.searchBar.sizeToFit()
-        
+
         if let textfield = serachController.searchBar.value(forKey: "searchField") as? UITextField {
             textfield.backgroundColor = FeedBackConfig.whiteColor
             textfield.layer.cornerRadius = 16.0
@@ -54,7 +54,7 @@ final class FeedBackStyle {
             textfield.layer.masksToBounds = true
             textfield.layer.borderColor = FeedBackConfig.styleColor.cgColor
             textfield.layer.borderWidth = 1.5
-            textfield.textColor = .red
+            textfield.textColor = FeedBackConfig.styleColor
         }
     }
 }

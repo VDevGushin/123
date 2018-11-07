@@ -10,10 +10,9 @@ import UIKit
 
 class SourceTableViewCell: UITableViewCell {
     @IBOutlet private weak var title: UILabel!
-    
+
     func setSource(with: ISource) {
-        DispatchQueue.main.async {
-            self.title.text = with.innerTitle
-        }
+        self.title.text = with.innerTitle
+        FeedBackStyle.titleLabel(self.title)
     }
 }
