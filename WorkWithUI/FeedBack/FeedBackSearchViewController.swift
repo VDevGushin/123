@@ -10,7 +10,7 @@ import UIKit
 import SupportLib
 
 protocol FeedBackSearchViewControllerDelegate: class {
-    func selectSource(selected: ISource)
+    func selectSource<T>(selected: T)
 }
 
 class FeedBackSearchViewController: FeedBackBaseViewController {
@@ -106,11 +106,9 @@ extension FeedBackSearchViewController: UITableViewDelegate, UITableViewDataSour
         if resultSearchController.isActive {
             let element = self.filteredSource[indexPath.item]
             self.delegate?.selectSource(selected: element)
-            print(element.innerTitle ?? "...")
         } else {
             let element = self.source[indexPath.item]
             self.delegate?.selectSource(selected: element)
-            print(element.innerTitle ?? "...")
         }
     }
 
@@ -132,7 +130,7 @@ extension FeedBackSearchViewController: UITableViewDelegate, UITableViewDataSour
         cell.selectionStyle = .none
 
         //load next
-        if indexPath.row == self.source.count - 1 && !self.resultSearchController.isActive {
+        if indexPath.row == self.source.count - 1 && !self.resultSearchController.isActive && self.worker.withPagination {
             self.worker.execute()
         }
         return cell
@@ -141,7 +139,7 @@ extension FeedBackSearchViewController: UITableViewDelegate, UITableViewDataSour
 
 extension FeedBackSearchViewController: IFeedBackWorkerDelegate {
     func sourceChanged<T>(isFirstTime: Bool, source: T) {
-        guard let result = source as? Organisations else { return }
+        guard let result = source as? [ISource] else { return }
         DispatchQueue.main.async {
             if isFirstTime {
                 self.source = result

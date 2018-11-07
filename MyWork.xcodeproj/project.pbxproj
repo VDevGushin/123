@@ -217,6 +217,8 @@
 		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
 		3CA69B8C219308BD009DD38D /* IFeedBackWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */; };
+		3CA69B8E2193226F009DD38D /* FeedbackTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */; };
+		3CA69B90219322AA009DD38D /* ThemesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8F219322AA009DD38D /* ThemesWorker.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B1215C03460034CF0A /* ColorBuilder.swift */; };
@@ -613,6 +615,8 @@
 		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
 		3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFeedBackWorker.swift; sourceTree = "<group>"; };
+		3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTheme.swift; sourceTree = "<group>"; };
+		3CA69B8F219322AA009DD38D /* ThemesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesWorker.swift; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CB155B1215C03460034CF0A /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
@@ -1248,6 +1252,7 @@
 				3CA69B8A219308AA009DD38D /* Base */,
 				3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */,
 				3C1DB1A82192D654001BD557 /* OrganisationWorker.swift */,
+				3CA69B8F219322AA009DD38D /* ThemesWorker.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -1259,6 +1264,7 @@
 				3C5FDEF92191ED1300F0C6DF /* FeedBackError.swift */,
 				3C1DB1A02192CCD7001BD557 /* ISource.swift */,
 				3C1DB1AA2192D6CB001BD557 /* Organisation.swift */,
+				3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2329,6 +2335,7 @@
 				3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */,
 				3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */,
 				3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */,
+				3CA69B90219322AA009DD38D /* ThemesWorker.swift in Sources */,
 				3CEF8E9421871AF600996597 /* Chat.swift in Sources */,
 				3C5FDEF72191EC8400F0C6DF /* FeedBackEndpoint.swift in Sources */,
 				3C35CBFD218784F600DDE92E /* Message.swift in Sources */,
@@ -2337,6 +2344,7 @@
 				3C1DB19F2192C6AD001BD557 /* FeedBackBaseViewController.swift in Sources */,
 				3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
+				3CA69B8E2193226F009DD38D /* FeedbackTheme.swift in Sources */,
 				3CA3145A218B149800A06369 /* ProfileTableViewCell.swift in Sources */,
 				3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,

@@ -13,7 +13,7 @@ final class FeedBackNavigator {
 
     enum Destination {
         case feedBackForm
-        case allOrganizations(title: String, worker: IFeedBackWorker)
+        case selection(title: String, worker: IFeedBackWorker)
         case feedbackType
     }
 
@@ -34,7 +34,7 @@ final class FeedBackNavigator {
         switch destination {
         case .feedBackForm:
             break
-        case .allOrganizations(let title, let worker):
+        case .selection(let title, let worker):
             return FeedBackSearchViewController(navigator: self, title: title, worker: worker)
         case .feedbackType:
             break
@@ -46,7 +46,8 @@ final class FeedBackNavigator {
         let navigationViewController = UINavigationController()
         ChatStyle.navigationBar(navigationViewController.navigationBar)
         let navigator = FeedBackNavigator(navigationController: navigationViewController)
-        navigator.navigate(to: .allOrganizations(title: "Организации", worker : OrganisationWorker()))
+        //navigator.navigate(to: .selection(title: "Организации", worker : OrganisationWorker()))
+        navigator.navigate(to: .selection(title: "Тема", worker : ThemesWorker()))
         return navigationViewController
     }
 }

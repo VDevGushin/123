@@ -15,6 +15,7 @@ protocol IFeedBackWorkerDelegate: class {
 
 protocol IFeedBackWorker {
     var delegate: IFeedBackWorkerDelegate? { get set }
+    var withPagination: Bool { get set }
     func execute()
     func refresh()
 }

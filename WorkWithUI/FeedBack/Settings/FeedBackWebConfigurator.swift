@@ -15,7 +15,8 @@ struct FeedBackWebConfigurator {
         case captcha
         case school_dictionaries
         case schools
-
+        case tickets
+        case categories
         var value: String {
             return self.rawValue
         }
@@ -56,6 +57,17 @@ struct FeedBackWebConfigurator {
         let queryItemPage = URLQueryItem(name: "page", value: "\(page)")
         let queryItemPerPage = URLQueryItem(name: "per_page", value: "\(perPage)")
         let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: [queryItemPage, queryItemPerPage], header: header, body: nil)
+        return configurator
+    }
+
+
+    static func getThemes() -> FeedBackWebConfigurator {
+        let paths = FeedBackComponents.createPath(components: .argus, .api, .tickets, .categories)
+        let header = [
+            "Accept": "application/json",
+            "Accept-Encoding": " br, gzip, deflate"
+        ]
+        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: nil, header: header, body: nil)
         return configurator
     }
 }
