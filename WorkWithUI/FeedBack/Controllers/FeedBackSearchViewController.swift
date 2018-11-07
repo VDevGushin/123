@@ -34,7 +34,6 @@ class FeedBackSearchViewController: FeedBackBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.worker.delegate = self
-
         self.worker.refresh()
     }
 
@@ -42,7 +41,7 @@ class FeedBackSearchViewController: FeedBackBaseViewController {
         self.keyBoardView.isHidden = true
         FeedBackStyle.serachController(self.resultSearchController, self)
         FeedBackStyle.tableView(self.contentTable, self, [SourceTableViewCell.self])
-        self.contentTable.allowsMultipleSelection = true
+        self.contentTable.allowsMultipleSelection = false
         self.contentTable.tableHeaderView = resultSearchController.searchBar
 
         let notifier = NotificationCenter.default
