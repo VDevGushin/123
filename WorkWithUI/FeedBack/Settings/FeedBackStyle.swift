@@ -17,6 +17,13 @@ final class FeedBackStyle {
     static let textColor = UIColor.black
     static let errorInputFormColor = UIColor.red
 
+    static let sendButton: Decoration<UIButton> = { (button: UIButton) -> Void in
+        button.tintColor = FeedBackStyle.whiteColor
+        button.layer.cornerRadius = 10
+        button.layer.masksToBounds = true
+        button.backgroundColor = FeedBackStyle.styleColor
+    }
+
     static let textView: Decoration<UITextView> = { (textView: UITextView) -> Void in
         textView.font = FeedBackStyle.titleFont
         textView.textColor = FeedBackStyle.textColor
@@ -25,7 +32,7 @@ final class FeedBackStyle {
         textView.layer.masksToBounds = true
         textView.layer.borderColor = FeedBackStyle.textFieldBorderColor.cgColor
     }
-    
+
     static let textViewWithError: Decoration<UITextView> = { (textView: UITextView) -> Void in
         textView.font = FeedBackStyle.titleFont
         textView.textColor = FeedBackStyle.errorInputFormColor

@@ -8,6 +8,31 @@
 
 import UIKit
 
+final class SendForm {
+    var name: String?
+    var surName: String?
+    var middleName: String?
+    var organisation: Organisation?
+    var phone: String?
+    var mail: String?
+    var theme: FeedbackTheme?
+    var captcha: String?
+    var detail: String?
+
+    var isValid: Bool {
+        if name != nil &&
+            surName != nil &&
+            detail != nil &&
+            organisation != nil &&
+            mail != nil &&
+            theme != nil &&
+            captcha != nil {
+            return true
+        }
+        return false
+    }
+}
+
 enum ActionsForStaticCells {
     typealias FeedBackHandler = (DataFromStaticCells) -> Void
     case setName(FeedBackHandler)
@@ -23,15 +48,15 @@ enum ActionsForStaticCells {
 }
 
 enum DataFromStaticCells {
-    case name(with: String)
-    case surName(with: String)
-    case middleName(with: String)
-    case organisation(with: Organisation)
-    case phone(with: String)
-    case mail(with: String)
-    case theme(with: FeedbackTheme)
-    case captcha(with: String)
-    case detail(with: String)
+    case name(with: String?)
+    case surName(with: String?)
+    case middleName(with: String?)
+    case organisation(with: Organisation?)
+    case phone(with: String?)
+    case mail(with: String?)
+    case theme(with: FeedbackTheme?)
+    case captcha(with: String?)
+    case detail(with: String?)
     case done
 }
 
@@ -42,9 +67,11 @@ final class FeedBackTableViewController: UITableViewController {
 
     typealias doneAction = () -> Void
 
-    let navigator: FeedBackNavigator
+    private let navigator: FeedBackNavigator
     private var source = [cellSource]()
     private var collectionCells = Set<UITableViewCell>()
+    private let sendForm = SendForm()
+    private var isFirstLoad = true
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(navigator: FeedBackNavigator) {
@@ -66,7 +93,30 @@ final class FeedBackTableViewController: UITableViewController {
     }
 
     func doneAction(_ with: DataFromStaticCells) {
-        dump(with)
+        switch with {
+        case .captcha(with: let value):
+            self.sendForm.captcha = value
+        case .detail(with: let value):
+            self.sendForm.detail = value
+        case .mail(with: let value):
+            self.sendForm.mail = value
+        case .middleName(with: let value):
+            self.sendForm.middleName = value
+        case .name(with: let value):
+            self.sendForm.name = value
+        case .organisation(with: let value):
+            self.sendForm.organisation = value
+        case .phone(with: let value):
+            self.sendForm.phone = value
+        case .surName(with: let value):
+            self.sendForm.surName = value
+        case .theme(with: let value):
+            self.sendForm.theme = value
+        case .done:
+            if sendForm.isValid {
+                print("!!!!!!!!!!!!!!!!")
+            }
+        }
     }
 
     override func viewDidLoad() {
@@ -91,15 +141,25 @@ final class FeedBackTableViewController: UITableViewController {
         return source.count
     }
 
-
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellSource = self.source[indexPath.item]
-        let cell = tableView.dequeueReusableCell(type: cellSource.cellType, indexPath: indexPath) as! IFeedbackStaticCell
-        cell.config(value: cellSource.title, action: cellSource.action)
-        let tableCell = cell as! UITableViewCell
-        tableCell.selectionStyle = .none
-        self.collectionCells.insert(tableCell)
-        return tableCell
+        let cell = tableView.dequeueReusableCell(type: cellSource.cellType, indexPath: indexPath)!
+        
+        if let inputTableViewCell = cell as? InputTableViewCell {
+           inputTableViewCell.config(value: cellSource.title, action: cellSource.action)
+        }
+        
+        if let captchaTableViewCell = cell as? CaptchaTableViewCell {
+            captchaTableViewCell.config(value: cellSource.title, action: cellSource.action)
+        }
+        
+        if let multiIInputTableViewCell = cell as? MultiIInputTableViewCell {
+            multiIInputTableViewCell.config(value: cellSource.title, action: cellSource.action)
+        }
+        
+        cell.selectionStyle = .none
+        self.collectionCells.insert(cell)
+        return cell
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -107,6 +167,7 @@ final class FeedBackTableViewController: UITableViewController {
         switch cellSource.action {
         case .setCaptcha: return 206
         case .setDetail: return 140
+        case .done: return 76
         default: return 96
             //        case .setMail: break
             //        case .setName: break

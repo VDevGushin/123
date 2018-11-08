@@ -12,6 +12,7 @@ enum FeedbackStrings {
     enum FeedBackView: String {
         var value: String { return self.rawValue }
 
+        case send = "Отправить"
         case title = "Задать вопрос"
         case themeTitle = "Тема*"
         case organisationTitle = "Учебная организация*"
@@ -22,5 +23,6 @@ enum FeedbackStrings {
         case emailTitle = "Электронная почта*"
         case detailTitle = "Подробно о ситуации*"
         case captchaTitle = "Введите текст с картинки*"
+        case backButtonText = "Назад"
     }
 }

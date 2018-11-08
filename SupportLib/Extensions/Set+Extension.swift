@@ -12,4 +12,13 @@ public extension Set {
     func getElement(index: Int) -> Element {
         return Array(self)[index]
     }
+
+    func getElement(index: Int) -> Element? {
+        if self.isEmpty { return nil }
+        
+        if self.count > index {
+            return Array(self)[index]
+        }
+        return nil
+    }
 }

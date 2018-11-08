@@ -9,6 +9,11 @@
 import UIKit
 
 class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    var isValid: Bool = true
+
+    func check() {
+        self.inputEditAction(with: inputField.text)
+    }
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var inputField: UITextField!
@@ -19,6 +24,7 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
         self.titleLabel.text = value
         self.action = action
         self.normalInputStyle()
+        self.isValid = true
         textFieldHeight.constant = 36.0
         self.actionBitton.isHidden = true
         if let action = self.action {
@@ -32,6 +38,10 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
                 self.actionBitton.isHidden = true
             }
         }
+    }
+
+    @IBAction func textChange(_ sender: Any) {
+        self.inputEditAction(with: inputField.text)
     }
 
     override func awakeFromNib() {
@@ -64,17 +74,16 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
 }
 
 extension InputTableViewCell: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.inputEditAction(with: textField.text)
+    }
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.endEditing(true)
         return false
     }
 
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        self.inputEditAction(with: textField.text)
-    }
-
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        self.inputEditAction(with: textField.text)
         if let action = self.action {
             if case ActionsForStaticCells.setOrganisation = action {
                 return false
@@ -92,34 +101,35 @@ extension InputTableViewCell: UITextFieldDelegate {
         guard let action = self.action else { return }
         switch action {
         case .setName(let handler):
-            if let result = self.validResult(string: text, action: action) {
-                handler(.name(with: result))
-            }
+            let result = self.validResult(string: text, action: action)
+            handler(.name(with: result))
+
         case .setSurName(let handler):
-            if let result = self.validResult(string: text, action: action) {
-                handler(.surName(with: result))
-            }
+            let result = self.validResult(string: text, action: action)
+            handler(.surName(with: result))
+
         case .setMiddleName(let handler):
-            if let result = self.validResult(string: text, action: action) {
-                handler(.middleName(with: result))
-            }
+            let result = self.validResult(string: text, action: action)
+            handler(.middleName(with: result))
 
         case .setCaptcha(let handler):
-            if let result = self.validResult(string: text, action: action) {
-                handler(.captcha(with: result))
-            }
+            let result = self.validResult(string: text, action: action)
+            handler(.captcha(with: result))
+
         case .setDetail(let handler):
-            if let result = self.validResult(string: text, action: action) {
-                handler(.detail(with: result))
-            }
+            let result = self.validResult(string: text, action: action)
+            handler(.detail(with: result))
+
         case .setMail(let handler):
-            if let result = self.validResult(string: text, action: action) {
-                handler(.mail(with: result))
-            }
+            let result = self.validResult(string: text, action: action)
+            handler(.mail(with: result))
+
         case .setPhone(let handler):
-            if let result = self.validResult(string: text, action: action) {
-                handler(.phone(with: result))
-            }
+            let result = self.validResult(string: text, action: action)
+            handler(.phone(with: result))
+
+        case .setOrganisation, .setTheme:
+            self.validResult(string: text, action: action)
         default:
             break
         }
@@ -134,16 +144,20 @@ extension InputTableViewCell: UITextFieldDelegate {
             let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
             if emailTest.evaluate(with: string) {
                 self.normalInputStyle()
+                self.isValid = true
                 return string
             }
             self.wrongInputStyle()
+            self.isValid = false
             return nil
         case .setName, .setSurName, .setOrganisation, .setTheme:
-            if !string.isEmpty {
+            if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                 self.normalInputStyle()
+                self.isValid = true
                 return string
             }
             self.wrongInputStyle()
+            self.isValid = false
             return nil
         default:
             return string

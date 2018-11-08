@@ -47,6 +47,10 @@ class FeedBackSearchViewController: UIViewController {
         self.contentTable.allowsMultipleSelection = false
         self.contentTable.tableHeaderView = resultSearchController.searchBar
 
+        let closeButton = UIBarButtonItem(title: FeedbackStrings.FeedBackView.backButtonText.value, style: .done, target: self, action: #selector(closeSelection))
+
+        self.navigationItem.leftBarButtonItems = [closeButton]
+
         let notifier = NotificationCenter.default
         notifier.addObserver(self,
                              selector: #selector(FeedBackSearchViewController.keyboardWillShowNotification(_:)),
@@ -80,6 +84,10 @@ class FeedBackSearchViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         delegate?.selectSource(selected: self.selectedElement)
+    }
+
+    @objc func closeSelection() {
+        self.navigator.back()
     }
 }
 
