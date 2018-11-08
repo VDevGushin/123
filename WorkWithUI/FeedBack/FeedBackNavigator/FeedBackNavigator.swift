@@ -37,7 +37,7 @@ final class FeedBackNavigator {
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
         case .feedBackForm:
-            return FeedBackViewController(navigator: self)
+            return FeedBackTableViewController(navigator: self)
         case .selection(let title, let worker, let delegate):
             let vc = FeedBackSearchViewController(navigator: self, title: title, worker: worker)
             vc.delegate = delegate

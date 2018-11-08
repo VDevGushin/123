@@ -9,12 +9,6 @@
 import UIKit
 
 class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var isValid: Bool = true
-
-    func check() {
-        self.inputEditAction(with: textInput.text)
-    }
-
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textInput: UITextView!
@@ -22,7 +16,6 @@ class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
     func config(value: String, action: ActionsForStaticCells) {
         self.titleLabel.text = value
         self.action = action
-        isValid = true
         normalInputStyle()
         textInput.delegate = self
     }
@@ -35,6 +28,10 @@ class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
     func normalInputStyle() {
         FeedBackStyle.titleLabel(self.titleLabel)
         FeedBackStyle.textView(self.textInput)
+    }
+
+    func check() {
+        self.inputEditAction(with: textInput.text)
     }
 }
 
@@ -62,18 +59,14 @@ extension MultiIInputTableViewCell: UITextViewDelegate {
     @discardableResult
     func validResult(string: String?, action: ActionsForStaticCells) -> String? {
         guard let string = string else { return nil }
-        switch action {
-        case .setDetail:
+        if case .setDetail = action {
             if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                 self.normalInputStyle()
-                self.isValid = true
                 return string
             }
             self.wrongInputStyle()
-            self.isValid = false
             return nil
-        default:
-            return string
         }
+        return string
     }
 }

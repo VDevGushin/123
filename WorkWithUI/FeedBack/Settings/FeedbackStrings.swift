@@ -17,7 +17,7 @@ enum FeedbackStrings {
         case themeTitle = "Тема*"
         case organisationTitle = "Учебная организация*"
         case name = "Имя*"
-        case surname = "Фамилия*"
+        case lastName = "Фамилия*"
         case middleName = "Отчество"
         case phoneTitle = "Телефон"
         case emailTitle = "Электронная почта*"

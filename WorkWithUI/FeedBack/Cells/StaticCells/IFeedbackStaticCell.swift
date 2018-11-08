@@ -14,13 +14,4 @@ protocol IFeedbackStaticCell: class {
     var titleLabel: UILabel! { get set }
     func config(value: String, action: ActionsForStaticCells)
     func check()
-    var isValid: Bool { get set }
 }
-
-extension IFeedbackStaticCell {
-    func config(value: String, action: ActionsForStaticCells) {
-        self.titleLabel.text = value
-        self.action = action
-    }
-}
-

@@ -9,11 +9,6 @@
 import UIKit
 
 class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var isValid: Bool = true
-
-    func check() {
-        self.inputEditAction(with: inputField.text)
-    }
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var inputField: UITextField!
@@ -24,7 +19,6 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
         self.titleLabel.text = value
         self.action = action
         self.normalInputStyle()
-        self.isValid = true
         textFieldHeight.constant = 36.0
         self.actionBitton.isHidden = true
         if let action = self.action {
@@ -49,6 +43,9 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
         self.inputField.delegate = self
     }
 
+    func check() {
+        self.inputEditAction(with: inputField.text)
+    }
 
     @IBAction func openSelectionAction(_ sender: Any) {
         guard let action = self.action else { return }
@@ -104,17 +101,13 @@ extension InputTableViewCell: UITextFieldDelegate {
             let result = self.validResult(string: text, action: action)
             handler(.name(with: result))
 
-        case .setSurName(let handler):
+        case .setLastName(let handler):
             let result = self.validResult(string: text, action: action)
-            handler(.surName(with: result))
+            handler(.lastName(with: result))
 
         case .setMiddleName(let handler):
             let result = self.validResult(string: text, action: action)
             handler(.middleName(with: result))
-
-        case .setCaptcha(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.captcha(with: result))
 
         case .setDetail(let handler):
             let result = self.validResult(string: text, action: action)
@@ -144,20 +137,16 @@ extension InputTableViewCell: UITextFieldDelegate {
             let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
             if emailTest.evaluate(with: string) {
                 self.normalInputStyle()
-                self.isValid = true
                 return string
             }
             self.wrongInputStyle()
-            self.isValid = false
             return nil
-        case .setName, .setSurName, .setOrganisation, .setTheme:
+        case .setName, .setLastName, .setOrganisation, .setTheme:
             if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                 self.normalInputStyle()
-                self.isValid = true
                 return string
             }
             self.wrongInputStyle()
-            self.isValid = false
             return nil
         default:
             return string

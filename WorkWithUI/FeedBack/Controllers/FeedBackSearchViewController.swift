@@ -82,12 +82,19 @@ class FeedBackSearchViewController: UIViewController {
     }
 
     override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
         delegate?.selectSource(selected: self.selectedElement)
+        self.resultSearchController.view.isHidden = true
+        self.resultSearchController.isActive = false
+        super.viewWillDisappear(animated)
     }
 
     @objc func closeSelection() {
         self.navigator.back()
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: self.view.window)
     }
 }
 

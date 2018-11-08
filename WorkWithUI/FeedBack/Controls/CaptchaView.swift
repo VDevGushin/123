@@ -13,6 +13,7 @@ final class CaptchaView: UIView {
     @IBOutlet private weak var refresh: UIButton!
     @IBOutlet private weak var image: UIImageView!
     @IBOutlet private weak var activity: UIActivityIndicatorView!
+    public var model: CaptchaModel?
 
     private var isInRequest: Bool = false {
         didSet {
@@ -47,8 +48,9 @@ final class CaptchaView: UIView {
 
         self.serivce.getCaptcha { [weak self]res in
             DispatchQueue.main.async {
-                if case Result.result(let image) = res {
-                    self?.image.image = image
+                if case Result.result(let model) = res {
+                    self?.image.image = model.image
+                    self?.model = model
                 }
                 self?.isInRequest.toggle()
             }

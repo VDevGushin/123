@@ -9,12 +9,6 @@
 import UIKit
 
 class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var isValid: Bool = true
-    
-    func check() {
-        self.inputEditAction(with: input.text)
-    }
-    
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var captcha: CaptchaView!
@@ -22,7 +16,6 @@ class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
 
     func config(value: String, action: ActionsForStaticCells) {
         self.titleLabel.text = value
-        self.isValid = true
         self.action = action
         self.normalInputStyle()
         self.input.delegate = self
@@ -39,6 +32,10 @@ class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
     }
 
     @IBAction func textChange(_ sender: Any) {
+        self.inputEditAction(with: input.text)
+    }
+
+    func check() {
         self.inputEditAction(with: input.text)
     }
 }
@@ -62,27 +59,23 @@ extension CaptchaTableViewCell: UITextFieldDelegate {
         switch action {
         case .setCaptcha(let handler):
             let result = self.validResult(string: text, action: action)
-            handler(.captcha(with: result))
+            handler(.captcha(id: result.id, text: result.text))
         default:
             break
         }
     }
 
     @discardableResult
-    func validResult(string: String?, action: ActionsForStaticCells) -> String? {
-        guard let string = string else { return "" }
-        switch action {
-        case .setCaptcha:
-            if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+    func validResult(string: String?, action: ActionsForStaticCells) -> (id: String?, text: String?) {
+        guard let string = string, let captchaId = self.captcha.model?.id else { return (nil, nil) }
+        if case .setCaptcha = action {
+            if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && !captchaId.isEmpty {
                 self.normalInputStyle()
-                 self.isValid = true
-                return string
+                return (captchaId, string)
             }
             self.wrongInputStyle()
-             self.isValid = false
-            return nil
-        default:
-            return string
+            return (nil, nil)
         }
+        return (nil, string)
     }
 }

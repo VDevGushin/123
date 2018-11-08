@@ -27,7 +27,6 @@
 		3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */; };
 		3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */; };
 		3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */; };
-		3C1DB19F2192C6AD001BD557 /* FeedBackBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB19E2192C6AD001BD557 /* FeedBackBaseViewController.swift */; };
 		3C1DB1A12192CCD7001BD557 /* ISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A02192CCD7001BD557 /* ISource.swift */; };
 		3C1DB1A52192CD54001BD557 /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */; };
 		3C1DB1A62192CD54001BD557 /* SourceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A42192CD54001BD557 /* SourceTableViewCell.xib */; };
@@ -132,6 +131,7 @@
 		3C54A7CF219483E3007AEBF2 /* FeedBackTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */; };
 		3C54A7D22194B287007AEBF2 /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54A7D02194B287007AEBF2 /* FeedBackViewController.swift */; };
 		3C54A7D32194B287007AEBF2 /* FeedBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54A7D12194B287007AEBF2 /* FeedBackViewController.xib */; };
+		3C54FE472194D499005E99B7 /* CaptchaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE462194D499005E99B7 /* CaptchaModel.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */; };
 		3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */; };
@@ -417,7 +417,6 @@
 		3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackNavigator.swift; sourceTree = "<group>"; };
 		3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSearchViewController.swift; sourceTree = "<group>"; };
 		3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackSearchViewController.xib; sourceTree = "<group>"; };
-		3C1DB19E2192C6AD001BD557 /* FeedBackBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackBaseViewController.swift; sourceTree = "<group>"; };
 		3C1DB1A02192CCD7001BD557 /* ISource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISource.swift; sourceTree = "<group>"; };
 		3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
 		3C1DB1A42192CD54001BD557 /* SourceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SourceTableViewCell.xib; sourceTree = "<group>"; };
@@ -543,6 +542,7 @@
 		3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackTableViewController.xib; sourceTree = "<group>"; };
 		3C54A7D02194B287007AEBF2 /* FeedBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
 		3C54A7D12194B287007AEBF2 /* FeedBackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackViewController.xib; sourceTree = "<group>"; };
+		3C54FE462194D499005E99B7 /* CaptchaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaModel.swift; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackWebConfigurator.swift; sourceTree = "<group>"; };
@@ -1292,6 +1292,7 @@
 				3C1DB1A02192CCD7001BD557 /* ISource.swift */,
 				3C1DB1AA2192D6CB001BD557 /* Organisation.swift */,
 				3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */,
+				3C54FE462194D499005E99B7 /* CaptchaModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1567,7 +1568,6 @@
 		3CA69B95219332F1009DD38D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3CA69B9621933304009DD38D /* Base */,
 				3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */,
 				3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */,
 				3C54A7CC219483E3007AEBF2 /* FeedBackTableViewController.swift */,
@@ -1576,14 +1576,6 @@
 				3C54A7D12194B287007AEBF2 /* FeedBackViewController.xib */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		3CA69B9621933304009DD38D /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				3C1DB19E2192C6AD001BD557 /* FeedBackBaseViewController.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */ = {
@@ -2412,7 +2404,6 @@
 				3C35CBFD218784F600DDE92E /* Message.swift in Sources */,
 				3C35CC012187892800DDE92E /* ChatsLoaderError.swift in Sources */,
 				3C746BEA217F191B002E51DC /* CalendarCellMonth.swift in Sources */,
-				3C1DB19F2192C6AD001BD557 /* FeedBackBaseViewController.swift in Sources */,
 				3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
 				3CA69B8E2193226F009DD38D /* FeedbackTheme.swift in Sources */,
@@ -2425,6 +2416,7 @@
 				3C7A5AD5219337F700DE016B /* MultiIInputTableViewCell.swift in Sources */,
 				3CF58AE521883C5D008FEB6D /* ChatCoordinator.swift in Sources */,
 				3CEF8E9621871EC500996597 /* ChatsWorker.swift in Sources */,
+				3C54FE472194D499005E99B7 /* CaptchaModel.swift in Sources */,
 				3CF58AE121883A2B008FEB6D /* MessageViewController.swift in Sources */,
 				3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */,
 				3CF58AEA21883D68008FEB6D /* ChatsViewController.swift in Sources */,
