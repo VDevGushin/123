@@ -18,54 +18,62 @@
                 <rect key="frame" x="0.0" y="0.0" width="465" height="161.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR9-qL-yv0">
-                        <rect key="frame" x="16" y="15" width="433" height="20"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SeT-uA-uCI">
+                        <rect key="frame" x="0.0" y="0.0" width="465" height="100"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Die-3D-gzg">
+                                <rect key="frame" x="15" y="46" width="435" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textChange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="QmO-7y-nqa"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR9-qL-yv0">
+                                <rect key="frame" x="15" y="15" width="435" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wHt-fv-sdd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgP-EV-csG">
+                                <rect key="frame" x="15" y="46" width="435" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="openSelectionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tB2-Ek-GbV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="oRA-p4-PRB"/>
+                            <constraint firstItem="jgP-EV-csG" firstAttribute="height" secondItem="Die-3D-gzg" secondAttribute="height" id="Bn8-sH-Xu9"/>
+                            <constraint firstAttribute="trailing" secondItem="cR9-qL-yv0" secondAttribute="trailing" constant="15" id="DOr-jS-DnW"/>
+                            <constraint firstItem="Die-3D-gzg" firstAttribute="leading" secondItem="SeT-uA-uCI" secondAttribute="leading" constant="15" id="Fkx-ZF-mTu"/>
+                            <constraint firstItem="cR9-qL-yv0" firstAttribute="top" secondItem="SeT-uA-uCI" secondAttribute="top" constant="15" id="cUo-y5-oNH"/>
+                            <constraint firstItem="Die-3D-gzg" firstAttribute="top" secondItem="cR9-qL-yv0" secondAttribute="bottom" constant="10" id="fGw-tn-Kck"/>
+                            <constraint firstItem="jgP-EV-csG" firstAttribute="centerY" secondItem="Die-3D-gzg" secondAttribute="centerY" id="hFJ-4D-bT4"/>
+                            <constraint firstItem="jgP-EV-csG" firstAttribute="centerX" secondItem="Die-3D-gzg" secondAttribute="centerX" id="mDf-P6-pKS"/>
+                            <constraint firstAttribute="height" constant="100" id="pJc-Zv-u5i"/>
+                            <constraint firstItem="cR9-qL-yv0" firstAttribute="leading" secondItem="SeT-uA-uCI" secondAttribute="leading" constant="15" id="vU2-kg-7zz"/>
+                            <constraint firstAttribute="trailing" secondItem="Die-3D-gzg" secondAttribute="trailing" constant="15" id="xYd-P9-Gos"/>
+                            <constraint firstItem="jgP-EV-csG" firstAttribute="width" secondItem="Die-3D-gzg" secondAttribute="width" id="yZh-Ti-Pqg"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Die-3D-gzg">
-                        <rect key="frame" x="15" y="45" width="435" height="36"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="36" id="lBc-VL-8pt"/>
-                        </constraints>
-                        <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                        <connections>
-                            <action selector="textChange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="QmO-7y-nqa"/>
-                        </connections>
-                    </textField>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgP-EV-csG">
-                        <rect key="frame" x="15" y="45" width="435" height="36"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <connections>
-                            <action selector="openSelectionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tB2-Ek-GbV"/>
-                        </connections>
-                    </button>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="cR9-qL-yv0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="5gY-qv-nCD"/>
-                    <constraint firstItem="Die-3D-gzg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Bef-0J-qTO"/>
-                    <constraint firstAttribute="bottom" secondItem="Die-3D-gzg" secondAttribute="bottom" constant="15" id="BlG-kM-xFX"/>
-                    <constraint firstItem="cR9-qL-yv0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="GMy-Y4-Niy"/>
-                    <constraint firstAttribute="trailing" secondItem="Die-3D-gzg" secondAttribute="trailing" constant="15" id="GgP-zi-xIW"/>
-                    <constraint firstItem="Die-3D-gzg" firstAttribute="top" secondItem="cR9-qL-yv0" secondAttribute="bottom" constant="10" id="LPW-bi-lJX"/>
-                    <constraint firstItem="jgP-EV-csG" firstAttribute="width" secondItem="Die-3D-gzg" secondAttribute="width" id="Lps-F2-jxU"/>
-                    <constraint firstItem="jgP-EV-csG" firstAttribute="centerX" secondItem="Die-3D-gzg" secondAttribute="centerX" id="OS8-ER-9f6"/>
-                    <constraint firstAttribute="trailing" secondItem="cR9-qL-yv0" secondAttribute="trailing" constant="16" id="jeL-s7-Kfo"/>
-                    <constraint firstItem="jgP-EV-csG" firstAttribute="height" secondItem="Die-3D-gzg" secondAttribute="height" id="ohl-fL-OQk"/>
-                    <constraint firstItem="jgP-EV-csG" firstAttribute="centerY" secondItem="Die-3D-gzg" secondAttribute="centerY" id="tig-9a-6SM"/>
+                    <constraint firstAttribute="trailing" secondItem="SeT-uA-uCI" secondAttribute="trailing" id="XUe-i5-mxS"/>
+                    <constraint firstItem="SeT-uA-uCI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="av7-2N-hGU"/>
+                    <constraint firstItem="SeT-uA-uCI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ptx-8H-tmU"/>
+                    <constraint firstAttribute="bottom" secondItem="SeT-uA-uCI" secondAttribute="bottom" id="rGx-pP-sPp"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="actionBitton" destination="jgP-EV-csG" id="Od8-lf-bMi"/>
                 <outlet property="inputField" destination="Die-3D-gzg" id="rvV-9G-a6m"/>
-                <outlet property="textFieldHeight" destination="lBc-VL-8pt" id="tVJ-gp-fap"/>
                 <outlet property="titleLabel" destination="cR9-qL-yv0" id="w7Y-OO-iUL"/>
             </connections>
             <point key="canvasLocation" x="13.6" y="152.92353823088456"/>

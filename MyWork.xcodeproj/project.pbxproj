@@ -132,6 +132,7 @@
 		3C54A7D22194B287007AEBF2 /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54A7D02194B287007AEBF2 /* FeedBackViewController.swift */; };
 		3C54A7D32194B287007AEBF2 /* FeedBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54A7D12194B287007AEBF2 /* FeedBackViewController.xib */; };
 		3C54FE472194D499005E99B7 /* CaptchaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE462194D499005E99B7 /* CaptchaModel.swift */; };
+		3C54FE492194D80E005E99B7 /* FeedBackSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */; };
 		3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */; };
@@ -543,6 +544,7 @@
 		3C54A7D02194B287007AEBF2 /* FeedBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
 		3C54A7D12194B287007AEBF2 /* FeedBackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackViewController.xib; sourceTree = "<group>"; };
 		3C54FE462194D499005E99B7 /* CaptchaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaModel.swift; sourceTree = "<group>"; };
+		3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSendModel.swift; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackWebConfigurator.swift; sourceTree = "<group>"; };
@@ -1293,6 +1295,7 @@
 				3C1DB1AA2192D6CB001BD557 /* Organisation.swift */,
 				3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */,
 				3C54FE462194D499005E99B7 /* CaptchaModel.swift */,
+				3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2384,6 +2387,7 @@
 			files = (
 				3C5FDF032191FCC700F0C6DF /* FeedBackStyle.swift in Sources */,
 				3CEF8E8D218713DE00996597 /* Endpoint.swift in Sources */,
+				3C54FE492194D80E005E99B7 /* FeedBackSendModel.swift in Sources */,
 				3C7A5AD821933E6700DE016B /* IFeedbackStaticCell.swift in Sources */,
 				3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */,
 				3C7A5AD12193376500DE016B /* CaptchaTableViewCell.swift in Sources */,

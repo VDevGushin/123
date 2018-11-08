@@ -9,11 +9,15 @@
 import UIKit
 
 class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    var isReady: Bool = false
+    
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textInput: UITextView!
 
     func config(value: String, action: ActionsForStaticCells) {
+        if isReady { return }
+        self.isReady.toggle()
         self.titleLabel.text = value
         self.action = action
         normalInputStyle()

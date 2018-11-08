@@ -9,17 +9,16 @@
 import UIKit
 
 class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    func check() {
-        
-    }
+    var isReady: Bool = false
     
-    func setStyle(_ isValid: Bool) {}
-    var isValid: Bool = true
+    func check() { }
     var titleLabel: UILabel!
     var action: ActionsForStaticCells?
     @IBOutlet private weak var sendButton: UIButton!
-   
+
     func config(value: String, action: ActionsForStaticCells) {
+        if isReady { return }
+        self.isReady.toggle()
         self.action = action
         sendButton.setTitle(FeedbackStrings.FeedBackView.send.value, for: .normal)
         FeedBackStyle.sendButton(self.sendButton)
@@ -27,8 +26,6 @@ class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
 
     @IBAction func doneAction(_ sender: Any) {
         guard let action = self.action else { return }
-        if case ActionsForStaticCells.done(let done) = action {
-            done(.done)
-        }
+        if case ActionsForStaticCells.done(let done) = action { done(.done) }
     }
 }

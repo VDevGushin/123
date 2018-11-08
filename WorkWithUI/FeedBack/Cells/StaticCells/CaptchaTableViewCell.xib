@@ -14,50 +14,59 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="210" id="KGk-i7-Jjw" customClass="CaptchaTableViewCell" customModule="WorkWithUI" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="566" height="210"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="566" height="209.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GG-pn-zUy">
-                        <rect key="frame" x="15" y="15" width="536" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="PuX-3a-L0H"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNC-Ad-Jl6">
-                        <rect key="frame" x="15" y="45" width="536" height="36"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="36" id="HU7-kP-Yw0"/>
-                        </constraints>
-                        <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                        <connections>
-                            <action selector="textChange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="edG-72-SYW"/>
-                        </connections>
-                    </textField>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehc-tZ-ezZ" customClass="CaptchaView" customModule="WorkWithUI" customModuleProvider="target">
-                        <rect key="frame" x="15" y="91" width="536" height="100"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IG-1Q-DjB">
+                        <rect key="frame" x="0.0" y="0.0" width="566" height="209.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GG-pn-zUy">
+                                <rect key="frame" x="15" y="15" width="536" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="SN7-dR-gDD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNC-Ad-Jl6">
+                                <rect key="frame" x="15" y="45" width="536" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="JYy-Ae-RDU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textChange:" destination="KGk-i7-Jjw" eventType="editingChanged" id="edG-72-SYW"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehc-tZ-ezZ" customClass="CaptchaView" customModule="WorkWithUI" customModuleProvider="target">
+                                <rect key="frame" x="15" y="91" width="536" height="103.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="yzk-we-SFx"/>
+                            <constraint firstItem="kNC-Ad-Jl6" firstAttribute="top" secondItem="6GG-pn-zUy" secondAttribute="bottom" constant="10" id="4w1-YY-ST9"/>
+                            <constraint firstItem="ehc-tZ-ezZ" firstAttribute="top" secondItem="kNC-Ad-Jl6" secondAttribute="bottom" constant="10" id="AXk-tr-9N8"/>
+                            <constraint firstAttribute="trailing" secondItem="6GG-pn-zUy" secondAttribute="trailing" constant="15" id="D8G-dH-deb"/>
+                            <constraint firstItem="6GG-pn-zUy" firstAttribute="leading" secondItem="5IG-1Q-DjB" secondAttribute="leading" constant="15" id="Dl9-TJ-HAN"/>
+                            <constraint firstItem="ehc-tZ-ezZ" firstAttribute="leading" secondItem="5IG-1Q-DjB" secondAttribute="leading" constant="15" id="Jlb-TY-cw7"/>
+                            <constraint firstAttribute="bottom" secondItem="ehc-tZ-ezZ" secondAttribute="bottom" constant="15" id="TKl-DM-VQp"/>
+                            <constraint firstItem="6GG-pn-zUy" firstAttribute="top" secondItem="5IG-1Q-DjB" secondAttribute="top" constant="15" id="Vcn-0b-yTc"/>
+                            <constraint firstAttribute="trailing" secondItem="ehc-tZ-ezZ" secondAttribute="trailing" constant="15" id="Vgh-yR-XIc"/>
+                            <constraint firstItem="kNC-Ad-Jl6" firstAttribute="leading" secondItem="5IG-1Q-DjB" secondAttribute="leading" constant="15" id="Zgy-Zh-nCQ"/>
+                            <constraint firstAttribute="trailing" secondItem="kNC-Ad-Jl6" secondAttribute="trailing" constant="15" id="xYg-Cu-kQ4"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ehc-tZ-ezZ" firstAttribute="top" secondItem="kNC-Ad-Jl6" secondAttribute="bottom" constant="10" id="0Oc-Ll-rED"/>
-                    <constraint firstAttribute="trailing" secondItem="6GG-pn-zUy" secondAttribute="trailing" constant="15" id="6XU-j0-ieK"/>
-                    <constraint firstItem="6GG-pn-zUy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="FnA-tM-JSg"/>
-                    <constraint firstItem="kNC-Ad-Jl6" firstAttribute="top" secondItem="6GG-pn-zUy" secondAttribute="bottom" constant="10" id="ZnT-SG-fKW"/>
-                    <constraint firstAttribute="trailing" secondItem="ehc-tZ-ezZ" secondAttribute="trailing" constant="15" id="beU-FT-gWj"/>
-                    <constraint firstItem="ehc-tZ-ezZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="cQd-Jf-HSN"/>
-                    <constraint firstItem="6GG-pn-zUy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="gtX-LW-f8Z"/>
-                    <constraint firstAttribute="trailing" secondItem="kNC-Ad-Jl6" secondAttribute="trailing" constant="15" id="sug-YJ-iO3"/>
-                    <constraint firstItem="kNC-Ad-Jl6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="t8J-eW-X9d"/>
-                    <constraint firstAttribute="bottom" secondItem="ehc-tZ-ezZ" secondAttribute="bottom" constant="15" id="xAu-pE-qpf"/>
+                    <constraint firstAttribute="trailing" secondItem="5IG-1Q-DjB" secondAttribute="trailing" id="9NP-fP-Pof"/>
+                    <constraint firstItem="5IG-1Q-DjB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="P10-ge-46P"/>
+                    <constraint firstAttribute="bottom" secondItem="5IG-1Q-DjB" secondAttribute="bottom" id="aLz-bk-5YH"/>
+                    <constraint firstItem="5IG-1Q-DjB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="thy-J2-LA4"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -18,33 +18,43 @@
                 <rect key="frame" x="0.0" y="0.0" width="720" height="138.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yo2-7Q-zg6">
-                        <rect key="frame" x="15" y="15.5" width="690" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="7dK-FJ-WVo"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-A3-HKX">
-                        <rect key="frame" x="15" y="45.5" width="690" height="80"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBZ-oE-fPp">
+                        <rect key="frame" x="0.0" y="0.0" width="720" height="140.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yo2-7Q-zg6">
+                                <rect key="frame" x="15" y="15.5" width="690" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="aqQ-Dv-LfM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-A3-HKX">
+                                <rect key="frame" x="15" y="45.5" width="690" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="80" id="Pfn-mO-Cdj"/>
+                            <constraint firstAttribute="height" constant="140" id="4Iz-Hd-VK9"/>
+                            <constraint firstAttribute="bottom" secondItem="wcb-A3-HKX" secondAttribute="bottom" constant="15" id="CEX-Gy-8vK"/>
+                            <constraint firstItem="yo2-7Q-zg6" firstAttribute="leading" secondItem="zBZ-oE-fPp" secondAttribute="leading" constant="15" id="NSg-Rc-EWL"/>
+                            <constraint firstAttribute="trailing" secondItem="wcb-A3-HKX" secondAttribute="trailing" constant="15" id="V1N-ZX-GD5"/>
+                            <constraint firstItem="wcb-A3-HKX" firstAttribute="leading" secondItem="zBZ-oE-fPp" secondAttribute="leading" constant="15" id="V9T-Vi-od6"/>
+                            <constraint firstAttribute="trailing" secondItem="yo2-7Q-zg6" secondAttribute="trailing" constant="15" id="WDK-O2-x1X"/>
+                            <constraint firstItem="yo2-7Q-zg6" firstAttribute="top" secondItem="zBZ-oE-fPp" secondAttribute="top" constant="15" id="dYL-Xs-XcH"/>
+                            <constraint firstItem="wcb-A3-HKX" firstAttribute="top" secondItem="yo2-7Q-zg6" secondAttribute="bottom" constant="10" id="ovg-tF-NAJ"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                    </textView>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="wcb-A3-HKX" secondAttribute="bottom" constant="15" id="6Gh-pv-7Tc"/>
-                    <constraint firstAttribute="trailing" secondItem="wcb-A3-HKX" secondAttribute="trailing" constant="15" id="77R-go-tp6"/>
-                    <constraint firstItem="wcb-A3-HKX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="CbK-yD-D5g"/>
-                    <constraint firstItem="yo2-7Q-zg6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="DAh-Nr-RxV"/>
-                    <constraint firstItem="wcb-A3-HKX" firstAttribute="top" secondItem="yo2-7Q-zg6" secondAttribute="bottom" constant="10" id="Ice-YO-fG6"/>
-                    <constraint firstItem="yo2-7Q-zg6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="hVS-Q2-XZe"/>
-                    <constraint firstAttribute="trailing" secondItem="yo2-7Q-zg6" secondAttribute="trailing" constant="15" id="qp0-2P-w4D"/>
+                    <constraint firstAttribute="trailing" secondItem="zBZ-oE-fPp" secondAttribute="trailing" id="Etu-PP-uDD"/>
+                    <constraint firstItem="zBZ-oE-fPp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lJU-DU-Q4x"/>
+                    <constraint firstAttribute="bottom" secondItem="zBZ-oE-fPp" secondAttribute="bottom" id="oB9-64-P3M"/>
+                    <constraint firstItem="zBZ-oE-fPp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="u08-Um-w72"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

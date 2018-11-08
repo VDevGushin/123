@@ -9,12 +9,16 @@
 import UIKit
 
 class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    var isReady: Bool = false
+    
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var captcha: CaptchaView!
     @IBOutlet weak var input: UITextField!
 
     func config(value: String, action: ActionsForStaticCells) {
+        if isReady { return }
+        self.isReady.toggle()
         self.titleLabel.text = value
         self.action = action
         self.normalInputStyle()

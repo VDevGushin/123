@@ -30,4 +30,8 @@ struct FeedBackConfig {
         return decoder
     }
 
+    static var encoder: JSONEncoder {
+        let encoder = JSONEncoder()
+        return encoder
+    }
 }

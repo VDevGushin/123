@@ -8,40 +8,13 @@
 
 import UIKit
 
-fileprivate extension Dictionary where Value: UITableViewCell {
+fileprivate extension Array where Element: CellSource {
     func checkAll() {
         self.forEach {
-            if let cell = $0.value as? IFeedbackStaticCell {
+            if let cell = $0.cell as? IFeedbackStaticCell {
                 cell.check()
             }
         }
-    }
-}
-
-final class SendForm {
-    var name: String?
-    var surName: String?
-    var lastName: String?
-    var organisation: Organisation?
-    var phone: String?
-    var mail: String?
-    var theme: FeedbackTheme?
-    var captcha: String?
-    var captchaId: String?
-    var detail: String?
-
-    var isValid: Bool {
-        if name != nil &&
-            surName != nil &&
-            detail != nil &&
-            organisation != nil &&
-            mail != nil &&
-            theme != nil &&
-            captcha != nil &&
-            captchaId != nil {
-            return true
-        }
-        return false
     }
 }
 
@@ -72,21 +45,29 @@ enum DataFromStaticCells {
     case done
 }
 
+final class CellSource {
+    let title: String
+    let cellType: UITableViewCell.Type
+    let action: ActionsForStaticCells
+    let cell: UITableViewCell
+    init(title: String, cellType: UITableViewCell.Type, action: ActionsForStaticCells, cell: UITableViewCell) {
+        self.title = title
+        self.cellType = cellType
+        self.action = action
+        self.cell = cell
+    }
+}
+
 final class FeedBackTableViewController: UITableViewController {
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
         NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: self.view.window)
     }
 
-    typealias cellSource = (title: String,
-                            cellType: UITableViewCell.Type,
-                            action: ActionsForStaticCells)
-
     typealias doneAction = () -> Void
 
     private let navigator: FeedBackNavigator
-    private var source = [cellSource]()
-    private var collectionCells = [Int: UITableViewCell]()
+    private var source = [CellSource]()
     private let sendForm = SendForm()
     private var isFirstLoad = true
 
@@ -97,16 +78,67 @@ final class FeedBackTableViewController: UITableViewController {
         super.init(nibName: String(describing: FeedBackTableViewController.self), bundle: bundle)
         self.navigationItem.title = FeedbackStrings.FeedBackView.title.value
 
-        self.source.append((title: FeedbackStrings.FeedBackView.name.value, cellType: InputTableViewCell.self, action: .setName(self.doneAction)))
-        self.source.append((title: FeedbackStrings.FeedBackView.lastName.value, cellType: InputTableViewCell.self, action: .setLastName(self.doneAction)))
-        self.source.append((title: FeedbackStrings.FeedBackView.middleName.value, cellType: InputTableViewCell.self, action: .setMiddleName(self.doneAction)))
-        self.source.append((title: FeedbackStrings.FeedBackView.organisationTitle.value, cellType: InputTableViewCell.self, action: .setOrganisation(self.navigator, self.doneAction)))
-        self.source.append((title: FeedbackStrings.FeedBackView.phoneTitle.value, cellType: InputTableViewCell.self, action: .setPhone(self.doneAction)))
-        self.source.append((title: FeedbackStrings.FeedBackView.emailTitle.value, cellType: InputTableViewCell.self, action: .setMail(self.doneAction)))
-        self.source.append((title: FeedbackStrings.FeedBackView.themeTitle.value, cellType: InputTableViewCell.self, action: .setTheme(self.navigator, self.doneAction)))
-        self.source.append((title: FeedbackStrings.FeedBackView.detailTitle.value, cellType: MultiIInputTableViewCell.self, action: .setDetail(self.doneAction)))
-        self.source.append((title: FeedbackStrings.FeedBackView.captchaTitle.value, cellType: CaptchaTableViewCell.self, action: .setCaptcha(self.doneAction)))
-        self.source.append((title: "", cellType: DoneTableViewCell.self, action: .done(self.doneAction)))
+
+        let nameSource = CellSource(title: FeedbackStrings.FeedBackView.name.value,
+                                    cellType: InputTableViewCell.self,
+                                    action: .setName(self.doneAction),
+                                    cell: Bundle.main.loadNibNamed("InputTableViewCell", owner: self, options: nil)?[0] as! InputTableViewCell)
+        self.source.append(nameSource)
+
+
+        let lastNameSource = CellSource(title: FeedbackStrings.FeedBackView.lastName.value,
+                                        cellType: InputTableViewCell.self,
+                                        action: .setLastName(self.doneAction),
+                                        cell: Bundle.main.loadNibNamed("InputTableViewCell", owner: self, options: nil)?[0] as! InputTableViewCell)
+        self.source.append(lastNameSource)
+
+        let middleNameSource = CellSource(title: FeedbackStrings.FeedBackView.middleName.value,
+                                          cellType: InputTableViewCell.self,
+                                          action: .setMiddleName(self.doneAction),
+                                          cell: Bundle.main.loadNibNamed("InputTableViewCell", owner: self, options: nil)?[0] as! InputTableViewCell)
+        self.source.append(middleNameSource)
+
+        let organisationSource = CellSource(title: FeedbackStrings.FeedBackView.organisationTitle.value,
+                                            cellType: InputTableViewCell.self,
+                                            action: .setOrganisation(self.navigator, self.doneAction),
+                                            cell: Bundle.main.loadNibNamed("InputTableViewCell", owner: self, options: nil)?[0] as! InputTableViewCell)
+        self.source.append(organisationSource)
+
+        let phoneSource = CellSource(title: FeedbackStrings.FeedBackView.phoneTitle.value,
+                                     cellType: InputTableViewCell.self,
+                                     action: .setPhone(self.doneAction),
+                                     cell: Bundle.main.loadNibNamed("InputTableViewCell", owner: self, options: nil)?[0] as! InputTableViewCell)
+        self.source.append(phoneSource)
+
+        let emailSource = CellSource(title: FeedbackStrings.FeedBackView.emailTitle.value,
+                                     cellType: InputTableViewCell.self,
+                                     action: .setMail(self.doneAction),
+                                     cell: Bundle.main.loadNibNamed("InputTableViewCell", owner: self, options: nil)?[0] as! InputTableViewCell)
+        self.source.append(emailSource)
+
+        let themeSource = CellSource(title: FeedbackStrings.FeedBackView.themeTitle.value,
+                                     cellType: InputTableViewCell.self,
+                                     action: .setTheme(self.navigator, self.doneAction),
+                                     cell: Bundle.main.loadNibNamed("InputTableViewCell", owner: self, options: nil)?[0] as! InputTableViewCell)
+        self.source.append(themeSource)
+
+        let detailSource = CellSource(title: FeedbackStrings.FeedBackView.detailTitle.value,
+                                      cellType: InputTableViewCell.self,
+                                      action: .setDetail(self.doneAction),
+                                      cell: Bundle.main.loadNibNamed("MultiIInputTableViewCell", owner: self, options: nil)?[0] as! MultiIInputTableViewCell)
+        self.source.append(detailSource)
+
+        let captchaSource = CellSource(title: FeedbackStrings.FeedBackView.captchaTitle.value,
+                                       cellType: InputTableViewCell.self,
+                                       action: .setCaptcha(self.doneAction),
+                                       cell: Bundle.main.loadNibNamed("CaptchaTableViewCell", owner: self, options: nil)?[0] as! CaptchaTableViewCell)
+        self.source.append(captchaSource)
+
+        let doneSource = CellSource(title: "",
+                                    cellType: InputTableViewCell.self,
+                                    action: .done(self.doneAction),
+                                    cell: Bundle.main.loadNibNamed("DoneTableViewCell", owner: self, options: nil)?[0] as! DoneTableViewCell)
+        self.source.append(doneSource)
     }
 
     func doneAction(_ with: DataFromStaticCells) {
@@ -119,7 +151,7 @@ final class FeedBackTableViewController: UITableViewController {
         case .mail(with: let value):
             self.sendForm.mail = value
         case .middleName(with: let value):
-            self.sendForm.lastName = value
+            self.sendForm.middleName = value
         case .name(with: let value):
             self.sendForm.name = value
         case .organisation(with: let value):
@@ -127,14 +159,15 @@ final class FeedBackTableViewController: UITableViewController {
         case .phone(with: let value):
             self.sendForm.phone = value
         case .lastName(with: let value):
-            self.sendForm.surName = value
+            self.sendForm.lastName = value
         case .theme(with: let value):
             self.sendForm.theme = value
         case .done:
-            if sendForm.isValid {
-                print("!!!!!!!!!!!!!!!!")
+            if sendForm.isValid, let sendData = FeedBackSendModel(from: self.sendForm) {
+                let data = sendData.encode()
+                dump(data)
             } else {
-                self.collectionCells.checkAll()
+                self.source.checkAll()
             }
         }
     }
@@ -142,13 +175,14 @@ final class FeedBackTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buildUI()
-        self.tableView.reloadData()
     }
 
     func buildUI() {
         self.view.backgroundColor = FeedBackStyle.whiteColor
         let types = self.source.map { return $0.cellType }
         FeedBackStyle.tableView(self.tableView, self, types)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 96
         self.tableView.keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
     }
 
@@ -163,29 +197,9 @@ final class FeedBackTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellSource = self.source[indexPath.item]
-
-        guard let readyCell = self.collectionCells[indexPath.row] else {
-            let cell = tableView.dequeueReusableCell(type: cellSource.cellType, indexPath: indexPath)!
-            (cell as! IFeedbackStaticCell).config(value: cellSource.title, action: cellSource.action)
-            cell.selectionStyle = .none
-            self.collectionCells[indexPath.row] = cell
-            return cell
-        }
-        return readyCell
-    }
-
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let cellSource = self.source[indexPath.item]
-        switch cellSource.action {
-        case .setCaptcha: return 206
-        case .setDetail: return 140
-        case .done: return 76
-        default: return 96
-            //        case .setMail: break
-            //        case .setName: break
-            //        case .setOrganisation: break
-            //        case .setPhone: break
-            //        case .setTheme: break
-        }
+        let cell = cellSource.cell
+        (cell as! IFeedbackStaticCell).config(value: cellSource.title, action: cellSource.action)
+        cell.selectionStyle = .none
+        return cell
     }
 }

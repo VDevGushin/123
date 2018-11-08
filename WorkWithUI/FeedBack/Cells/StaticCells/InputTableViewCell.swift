@@ -9,6 +9,8 @@
 import UIKit
 
 class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    var isReady: Bool = false
+    
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var inputField: UITextField!
@@ -16,10 +18,12 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
 
     @IBOutlet weak var textFieldHeight: NSLayoutConstraint!
     func config(value: String, action: ActionsForStaticCells) {
+        if isReady { return }
+        self.isReady.toggle()
+        
         self.titleLabel.text = value
         self.action = action
         self.normalInputStyle()
-        textFieldHeight.constant = 36.0
         self.actionBitton.isHidden = true
         if let action = self.action {
             switch action {
