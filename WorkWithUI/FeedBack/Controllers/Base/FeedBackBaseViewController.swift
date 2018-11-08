@@ -32,7 +32,7 @@ class FeedBackBaseViewController: UIViewController {
     }
 
     func buildUI() {
-        self.view.backgroundColor = FeedBackConfig.whiteColor
+        self.view.backgroundColor = FeedBackStyle.whiteColor
     }
 
     override func viewWillDisappear(_ animated: Bool) {

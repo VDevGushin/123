@@ -13,12 +13,14 @@ enum FeedbackStrings {
         var value: String { return self.rawValue }
 
         case title = "Задать вопрос"
-        case themeTitle = "Тема"
-        case organisationTitle = "Учебная организация"
-        case fullNameTitle = "ФИО"
+        case themeTitle = "Тема*"
+        case organisationTitle = "Учебная организация*"
+        case name = "Имя*"
+        case surname = "Фамилия*"
+        case middleName = "Отчество"
         case phoneTitle = "Телефон"
-        case emailTitle = "Электронная почта"
-        case detailTitle = "Подробно о ситуации"
-        case captchaTitle = "Введите текст с картинки"
+        case emailTitle = "Электронная почта*"
+        case detailTitle = "Подробно о ситуации*"
+        case captchaTitle = "Введите текст с картинки*"
     }
 }

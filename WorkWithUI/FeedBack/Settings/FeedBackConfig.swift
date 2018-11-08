@@ -11,13 +11,6 @@ import UIKit
 struct FeedBackConfig {
     static let host = "urs-test.mos.ru"
 
-    // MARK: - UIPart
-    static let indicatorColor = UIColor.red
-    static let whiteColor = UIColor.white
-    static let styleColor = UIColor.init(hex: "#8fb5bd")
-    static let titleFont = UIFont.systemFont(ofSize: 17.0)
-    static let textColor = UIColor.black
-
     // MARK: - Encoders/Decoders
     static let dateFormats = ["dd.MM.yyyy HH:mm", "dd.MM.yyyy HH:mm:ss", "yyyy.MM.dd HH:mm:ss"]
 

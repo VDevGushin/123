@@ -156,8 +156,6 @@
 		3C78FFDF2191E16700540752 /* FeedBackConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C78FFDE2191E16700540752 /* FeedBackConfig.swift */; };
 		3C7A5AC92193372100DE016B /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5AC72193372100DE016B /* InputTableViewCell.swift */; };
 		3C7A5ACA2193372100DE016B /* InputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7A5AC82193372100DE016B /* InputTableViewCell.xib */; };
-		3C7A5ACD2193373200DE016B /* SelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5ACB2193373200DE016B /* SelectionTableViewCell.swift */; };
-		3C7A5ACE2193373200DE016B /* SelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7A5ACC2193373200DE016B /* SelectionTableViewCell.xib */; };
 		3C7A5AD12193376500DE016B /* CaptchaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5ACF2193376500DE016B /* CaptchaTableViewCell.swift */; };
 		3C7A5AD22193376500DE016B /* CaptchaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7A5AD02193376500DE016B /* CaptchaTableViewCell.xib */; };
 		3C7A5AD5219337F700DE016B /* MultiIInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5AD3219337F700DE016B /* MultiIInputTableViewCell.swift */; };
@@ -570,8 +568,6 @@
 		3C78FFDE2191E16700540752 /* FeedBackConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackConfig.swift; sourceTree = "<group>"; };
 		3C7A5AC72193372100DE016B /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
 		3C7A5AC82193372100DE016B /* InputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTableViewCell.xib; sourceTree = "<group>"; };
-		3C7A5ACB2193373200DE016B /* SelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCell.swift; sourceTree = "<group>"; };
-		3C7A5ACC2193373200DE016B /* SelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionTableViewCell.xib; sourceTree = "<group>"; };
 		3C7A5ACF2193376500DE016B /* CaptchaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaTableViewCell.swift; sourceTree = "<group>"; };
 		3C7A5AD02193376500DE016B /* CaptchaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptchaTableViewCell.xib; sourceTree = "<group>"; };
 		3C7A5AD3219337F700DE016B /* MultiIInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiIInputTableViewCell.swift; sourceTree = "<group>"; };
@@ -1359,8 +1355,6 @@
 				3C7A5AD721933E6700DE016B /* IFeedbackStaticCell.swift */,
 				3C7A5AC72193372100DE016B /* InputTableViewCell.swift */,
 				3C7A5AC82193372100DE016B /* InputTableViewCell.xib */,
-				3C7A5ACB2193373200DE016B /* SelectionTableViewCell.swift */,
-				3C7A5ACC2193373200DE016B /* SelectionTableViewCell.xib */,
 				3C7A5ACF2193376500DE016B /* CaptchaTableViewCell.swift */,
 				3C7A5AD02193376500DE016B /* CaptchaTableViewCell.xib */,
 				3C7A5AD3219337F700DE016B /* MultiIInputTableViewCell.swift */,
@@ -2188,7 +2182,6 @@
 				3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */,
 				3C7A5AD22193376500DE016B /* CaptchaTableViewCell.xib in Resources */,
 				3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */,
-				3C7A5ACE2193373200DE016B /* SelectionTableViewCell.xib in Resources */,
 				3CA69B94219332D5009DD38D /* FeedBackFormViewController.xib in Resources */,
 				3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */,
 				3C82F4752164AA120024B3E4 /* Assets.xcassets in Resources */,
@@ -2399,7 +2392,6 @@
 				3CEF8E8D218713DE00996597 /* Endpoint.swift in Sources */,
 				3C7A5AD821933E6700DE016B /* IFeedbackStaticCell.swift in Sources */,
 				3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */,
-				3C7A5ACD2193373200DE016B /* SelectionTableViewCell.swift in Sources */,
 				3C7A5AD12193376500DE016B /* CaptchaTableViewCell.swift in Sources */,
 				3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */,
 				3C1DB1A12192CCD7001BD557 /* ISource.swift in Sources */,

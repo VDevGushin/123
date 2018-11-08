@@ -9,7 +9,7 @@
 import UIKit
 
 class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var action: FeedbackActions?
+    var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var captcha: CaptchaView!
     @IBOutlet weak var input: UITextField!

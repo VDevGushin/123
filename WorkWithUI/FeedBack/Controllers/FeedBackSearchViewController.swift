@@ -10,7 +10,7 @@ import UIKit
 import SupportLib
 
 protocol FeedBackSearchViewControllerDelegate: class {
-    func selectSource<T>(selected: T)
+    func selectSource<T>(selected: T?)
 }
 
 class FeedBackSearchViewController: FeedBackBaseViewController {
@@ -21,7 +21,7 @@ class FeedBackSearchViewController: FeedBackBaseViewController {
     private lazy var resultSearchController = UISearchController(searchResultsController: nil)
     private var source = [ISource]()
     private var filteredSource = [ISource]()
-
+    private var selectedElement: Any?
     private var worker: IFeedBackWorker
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
@@ -73,6 +73,11 @@ class FeedBackSearchViewController: FeedBackBaseViewController {
     @objc func keyboardWillHideNotification(_ sender: NSNotification) {
         self.keyBoardView.isHidden = true
     }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate?.selectSource(selected: self.selectedElement)
+    }
 }
 
 extension FeedBackSearchViewController: IPullToRefresh, UISearchResultsUpdating {
@@ -104,10 +109,10 @@ extension FeedBackSearchViewController: UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if resultSearchController.isActive {
             let element = self.filteredSource[indexPath.item]
-            self.delegate?.selectSource(selected: element.innerRaw)
+            self.selectedElement = element.innerRaw
         } else {
             let element = self.source[indexPath.item]
-            self.delegate?.selectSource(selected: element.innerRaw)
+            self.selectedElement = element.innerRaw
         }
         self.navigator.back()
     }

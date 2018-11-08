@@ -10,15 +10,15 @@ import UIKit
 
 class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
     var titleLabel: UILabel!
-    var action: FeedbackActions?
-    func config(value: String, action: FeedbackActions) {
+    var action: ActionsForStaticCells?
+    func config(value: String, action: ActionsForStaticCells) {
         self.action = action
     }
 
     @IBAction func doneAction(_ sender: Any) {
         guard let action = self.action else { return }
-        if case FeedbackActions.done(let done) = action {
-            done()
+        if case ActionsForStaticCells.done(let done) = action {
+            done(.done)
         }
     }
 }

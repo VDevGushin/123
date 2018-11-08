@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 protocol IFeedbackStaticCell: class {
-    var action: FeedbackActions? { get set }
+    var action: ActionsForStaticCells? { get set }
     var titleLabel: UILabel! { get set }
-    func config(value: String, action: FeedbackActions)
+    func config(value: String, action: ActionsForStaticCells)
 }
 
 extension IFeedbackStaticCell {
-    func config(value: String, action: FeedbackActions) {
+    func config(value: String, action: ActionsForStaticCells) {
         self.titleLabel.text = value
         self.action = action
     }

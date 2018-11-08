@@ -9,7 +9,7 @@
 import UIKit
 
 class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var action: FeedbackActions?
+    var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textInput: UITextView!
 }
