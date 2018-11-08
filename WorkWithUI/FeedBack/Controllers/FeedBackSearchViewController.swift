@@ -13,11 +13,11 @@ protocol FeedBackSearchViewControllerDelegate: class {
     func selectSource<T>(selected: T?)
 }
 
-class FeedBackSearchViewController: FeedBackBaseViewController {
+class FeedBackSearchViewController: UIViewController {
     weak var delegate: FeedBackSearchViewControllerDelegate?
     @IBOutlet private weak var keyBoardView: UIView!
     @IBOutlet private weak var contentTable: UITableView!
-
+    let navigator: FeedBackNavigator
     private lazy var resultSearchController = UISearchController(searchResultsController: nil)
     private var source = [ISource]()
     private var filteredSource = [ISource]()
@@ -26,18 +26,21 @@ class FeedBackSearchViewController: FeedBackBaseViewController {
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(navigator: FeedBackNavigator, title: String, worker: IFeedBackWorker) {
+        self.navigator = navigator
         self.worker = worker
         let bundle = Bundle(for: type(of: self))
-        super.init(navigator: navigator, title: title, nibName: String(describing: FeedBackSearchViewController.self), bundle: bundle)
+        super.init(nibName: String(describing: FeedBackSearchViewController.self), bundle: bundle)
+        self.navigationItem.title = title
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.buildUI()
         self.worker.delegate = self
         self.worker.refresh()
     }
 
-    override func buildUI() {
+    func buildUI() {
         self.keyBoardView.isHidden = true
         FeedBackStyle.serachController(self.resultSearchController, self)
         FeedBackStyle.tableView(self.contentTable, self, [SourceTableViewCell.self])

@@ -62,6 +62,7 @@
             <connections>
                 <outlet property="actionBitton" destination="jgP-EV-csG" id="Od8-lf-bMi"/>
                 <outlet property="inputField" destination="Die-3D-gzg" id="rvV-9G-a6m"/>
+                <outlet property="textFieldHeight" destination="lBc-VL-8pt" id="tVJ-gp-fap"/>
                 <outlet property="titleLabel" destination="cR9-qL-yv0" id="w7Y-OO-iUL"/>
             </connections>
             <point key="canvasLocation" x="13.6" y="152.92353823088456"/>

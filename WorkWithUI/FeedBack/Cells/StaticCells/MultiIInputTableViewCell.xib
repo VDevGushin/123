@@ -11,22 +11,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="MultiIInputTableViewCell" customModule="WorkWithUI" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="720" height="150"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="MultiIInputTableViewCell" customModule="WorkWithUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="720" height="139"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="720" height="149.5"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="720" height="138.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yo2-7Q-zg6">
-                        <rect key="frame" x="15" y="15" width="690" height="21"/>
+                        <rect key="frame" x="15" y="15.5" width="690" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="7dK-FJ-WVo"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-A3-HKX">
-                        <rect key="frame" x="15" y="46" width="690" height="88.5"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wcb-A3-HKX">
+                        <rect key="frame" x="15" y="45.5" width="690" height="80"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Pfn-mO-Cdj"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
@@ -46,7 +52,7 @@
                 <outlet property="textInput" destination="wcb-A3-HKX" id="PCx-tv-vF7"/>
                 <outlet property="titleLabel" destination="yo2-7Q-zg6" id="fME-1j-ZkX"/>
             </connections>
-            <point key="canvasLocation" x="-182.40000000000001" y="202.39880059970017"/>
+            <point key="canvasLocation" x="-182.40000000000001" y="197.45127436281859"/>
         </tableViewCell>
     </objects>
 </document>

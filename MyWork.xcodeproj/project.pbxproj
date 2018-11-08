@@ -27,8 +27,6 @@
 		3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */; };
 		3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */; };
 		3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */; };
-		3C1DB19B2192B48D001BD557 /* UIDecoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB19A2192B48D001BD557 /* UIDecoration.swift */; };
-		3C1DB19D2192B639001BD557 /* IPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB19C2192B639001BD557 /* IPullToRefresh.swift */; };
 		3C1DB19F2192C6AD001BD557 /* FeedBackBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB19E2192C6AD001BD557 /* FeedBackBaseViewController.swift */; };
 		3C1DB1A12192CCD7001BD557 /* ISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A02192CCD7001BD557 /* ISource.swift */; };
 		3C1DB1A52192CD54001BD557 /* SourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */; };
@@ -127,6 +125,11 @@
 		3C52D35B2189AB470027DA4C /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */; };
 		3C52D35C2189AB470027DA4C /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */; };
 		3C52D3602189D4550027DA4C /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */; };
+		3C54A7C5219478D3007AEBF2 /* SupportLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; };
+		3C54A7C6219478D3007AEBF2 /* SupportLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C54A7CB21947918007AEBF2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54A7CA21947918007AEBF2 /* Common.swift */; };
+		3C54A7CE219483E3007AEBF2 /* FeedBackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54A7CC219483E3007AEBF2 /* FeedBackTableViewController.swift */; };
+		3C54A7CF219483E3007AEBF2 /* FeedBackTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */; };
 		3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */; };
@@ -218,8 +221,6 @@
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
 		3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31442218AD62E00A06369 /* AddChatViewController.swift */; };
 		3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31443218AD62F00A06369 /* AddChatViewController.xib */; };
-		3CA31451218AFA2900A06369 /* SupportLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; };
-		3CA31452218AFA2900A06369 /* SupportLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C41F90021611882002334DB /* SupportLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3CA31457218B094700A06369 /* ProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31456218B094700A06369 /* ProfileWorker.swift */; };
 		3CA3145A218B149800A06369 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31458218B149800A06369 /* ProfileTableViewCell.swift */; };
 		3CA3145B218B149800A06369 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31459218B149800A06369 /* ProfileTableViewCell.xib */; };
@@ -228,8 +229,6 @@
 		3CA69B8C219308BD009DD38D /* IFeedBackWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */; };
 		3CA69B8E2193226F009DD38D /* FeedbackTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */; };
 		3CA69B90219322AA009DD38D /* ThemesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8F219322AA009DD38D /* ThemesWorker.swift */; };
-		3CA69B93219332D5009DD38D /* FeedBackFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B91219332D5009DD38D /* FeedBackFormViewController.swift */; };
-		3CA69B94219332D5009DD38D /* FeedBackFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA69B92219332D5009DD38D /* FeedBackFormViewController.xib */; };
 		3CA69B9821933359009DD38D /* FeedbackStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B9721933359009DD38D /* FeedbackStrings.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
@@ -362,7 +361,7 @@
 			remoteGlobalIDString = 3C41F8FF21611882002334DB;
 			remoteInfo = SupportLib;
 		};
-		3CA31453218AFA2900A06369 /* PBXContainerItemProxy */ = {
+		3C54A7C7219478D3007AEBF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3CD85A1220EF482A008D994C /* Project object */;
 			proxyType = 1;
@@ -383,13 +382,13 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3CA31455218AFA2900A06369 /* Embed Frameworks */ = {
+		3C54A7C9219478D4007AEBF2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3CA31452218AFA2900A06369 /* SupportLib.framework in Embed Frameworks */,
+				3C54A7C6219478D3007AEBF2 /* SupportLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,8 +415,6 @@
 		3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackNavigator.swift; sourceTree = "<group>"; };
 		3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSearchViewController.swift; sourceTree = "<group>"; };
 		3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackSearchViewController.xib; sourceTree = "<group>"; };
-		3C1DB19A2192B48D001BD557 /* UIDecoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDecoration.swift; sourceTree = "<group>"; };
-		3C1DB19C2192B639001BD557 /* IPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPullToRefresh.swift; sourceTree = "<group>"; };
 		3C1DB19E2192C6AD001BD557 /* FeedBackBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackBaseViewController.swift; sourceTree = "<group>"; };
 		3C1DB1A02192CCD7001BD557 /* ISource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISource.swift; sourceTree = "<group>"; };
 		3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableViewCell.swift; sourceTree = "<group>"; };
@@ -539,6 +536,9 @@
 		3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		3C52D35F2189D4540027DA4C /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		3C54A7CA21947918007AEBF2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		3C54A7CC219483E3007AEBF2 /* FeedBackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackTableViewController.swift; sourceTree = "<group>"; };
+		3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackTableViewController.xib; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackWebConfigurator.swift; sourceTree = "<group>"; };
@@ -638,8 +638,6 @@
 		3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFeedBackWorker.swift; sourceTree = "<group>"; };
 		3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTheme.swift; sourceTree = "<group>"; };
 		3CA69B8F219322AA009DD38D /* ThemesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesWorker.swift; sourceTree = "<group>"; };
-		3CA69B91219332D5009DD38D /* FeedBackFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackFormViewController.swift; sourceTree = "<group>"; };
-		3CA69B92219332D5009DD38D /* FeedBackFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackFormViewController.xib; sourceTree = "<group>"; };
 		3CA69B9721933359009DD38D /* FeedbackStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStrings.swift; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
@@ -807,7 +805,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA31451218AFA2900A06369 /* SupportLib.framework in Frameworks */,
+				3C54A7C5219478D3007AEBF2 /* SupportLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1379,6 +1377,7 @@
 				3C82F4792164AA120024B3E4 /* Info.plist */,
 				3C82F47D2164ABDB0024B3E4 /* ButtonAnimationViewController.swift */,
 				3C3B464B2174643E0032BC36 /* DLSViewController.swift */,
+				3C54A7CA21947918007AEBF2 /* Common.swift */,
 			);
 			path = WorkWithUI;
 			sourceTree = "<group>";
@@ -1407,8 +1406,6 @@
 				3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */,
 				3C0EA7BC21708A5400C5EB13 /* Style.swift */,
 				3C4EAF172180487F00CEB18B /* DelegateCall.swift */,
-				3C1DB19A2192B48D001BD557 /* UIDecoration.swift */,
-				3C1DB19C2192B639001BD557 /* IPullToRefresh.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -1569,8 +1566,8 @@
 				3CA69B9621933304009DD38D /* Base */,
 				3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */,
 				3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */,
-				3CA69B91219332D5009DD38D /* FeedBackFormViewController.swift */,
-				3CA69B92219332D5009DD38D /* FeedBackFormViewController.xib */,
+				3C54A7CC219483E3007AEBF2 /* FeedBackTableViewController.swift */,
+				3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -2025,12 +2022,12 @@
 				3C82F4672164AA0F0024B3E4 /* Sources */,
 				3C82F4682164AA0F0024B3E4 /* Frameworks */,
 				3C82F4692164AA0F0024B3E4 /* Resources */,
-				3CA31455218AFA2900A06369 /* Embed Frameworks */,
+				3C54A7C9219478D4007AEBF2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3CA31454218AFA2900A06369 /* PBXTargetDependency */,
+				3C54A7C8219478D3007AEBF2 /* PBXTargetDependency */,
 			);
 			name = WorkWithUI;
 			productName = WorkWithUI;
@@ -2181,8 +2178,8 @@
 				3CF58ADA218837F0008FEB6D /* MessageTableViewCell.xib in Resources */,
 				3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */,
 				3C7A5AD22193376500DE016B /* CaptchaTableViewCell.xib in Resources */,
+				3C54A7CF219483E3007AEBF2 /* FeedBackTableViewController.xib in Resources */,
 				3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */,
-				3CA69B94219332D5009DD38D /* FeedBackFormViewController.xib in Resources */,
 				3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */,
 				3C82F4752164AA120024B3E4 /* Assets.xcassets in Resources */,
 				3C7A5AD6219337F700DE016B /* MultiIInputTableViewCell.xib in Resources */,
@@ -2362,7 +2359,6 @@
 				3C9709E8216CCD0900394013 /* ColorUtils.swift in Sources */,
 				3C41F91F216118F1002334DB /* UIViewController+Extension.swift in Sources */,
 				3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */,
-				3C1DB19B2192B48D001BD557 /* UIDecoration.swift in Sources */,
 				3CF58AED21884FCC008FEB6D /* Views.swift in Sources */,
 				3C41F922216118F1002334DB /* Result.swift in Sources */,
 				3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */,
@@ -2380,7 +2376,6 @@
 				3C41F927216118F1002334DB /* CGFloat+Extension.swift in Sources */,
 				3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */,
 				3C41F92C21611953002334DB /* CollectionViewDataSource.swift in Sources */,
-				3C1DB19D2192B639001BD557 /* IPullToRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2413,12 +2408,12 @@
 				3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
 				3CA69B8E2193226F009DD38D /* FeedbackTheme.swift in Sources */,
+				3C54A7CB21947918007AEBF2 /* Common.swift in Sources */,
 				3CA3145A218B149800A06369 /* ProfileTableViewCell.swift in Sources */,
 				3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3CF58AE721883CF0008FEB6D /* ChatBaseViewController.swift in Sources */,
 				3C7A5ADB21934A8200DE016B /* DoneTableViewCell.swift in Sources */,
-				3CA69B93219332D5009DD38D /* FeedBackFormViewController.swift in Sources */,
 				3C7A5AD5219337F700DE016B /* MultiIInputTableViewCell.swift in Sources */,
 				3CF58AE521883C5D008FEB6D /* ChatCoordinator.swift in Sources */,
 				3CEF8E9621871EC500996597 /* ChatsWorker.swift in Sources */,
@@ -2431,6 +2426,7 @@
 				3CF58AF52188884D008FEB6D /* NewMessage.swift in Sources */,
 				3CF58AD9218837F0008FEB6D /* MessageTableViewCell.swift in Sources */,
 				3C97C339217F38020025BD3D /* CalendarCellDay.swift in Sources */,
+				3C54A7CE219483E3007AEBF2 /* FeedBackTableViewController.swift in Sources */,
 				3CF58AEF21885C7A008FEB6D /* ChatResources.swift in Sources */,
 				3C52D35B2189AB470027DA4C /* ChatTableViewCell.swift in Sources */,
 				3C276690217DEA1400374E7E /* MonthView.swift in Sources */,
@@ -2620,10 +2616,10 @@
 			target = 3C41F8FF21611882002334DB /* SupportLib */;
 			targetProxy = 3C41F90521611883002334DB /* PBXContainerItemProxy */;
 		};
-		3CA31454218AFA2900A06369 /* PBXTargetDependency */ = {
+		3C54A7C8219478D3007AEBF2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C41F8FF21611882002334DB /* SupportLib */;
-			targetProxy = 3CA31453218AFA2900A06369 /* PBXContainerItemProxy */;
+			targetProxy = 3C54A7C7219478D3007AEBF2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

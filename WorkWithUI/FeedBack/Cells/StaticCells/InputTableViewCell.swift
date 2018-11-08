@@ -14,15 +14,20 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
     @IBOutlet private weak var inputField: UITextField!
     @IBOutlet weak var actionBitton: UIButton!
 
+    @IBOutlet weak var textFieldHeight: NSLayoutConstraint!
     func config(value: String, action: ActionsForStaticCells) {
         self.titleLabel.text = value
         self.action = action
         self.normalInputStyle()
+        textFieldHeight.constant = 36.0
         self.actionBitton.isHidden = true
         if let action = self.action {
             switch action {
             case .setOrganisation, .setTheme:
                 self.actionBitton.isHidden = false
+            case .setPhone:
+                self.inputField.keyboardType = .numberPad
+                self.actionBitton.isHidden = true
             default:
                 self.actionBitton.isHidden = true
             }
@@ -42,7 +47,8 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
         }
 
         if case ActionsForStaticCells.setTheme(let navigator, _) = action {
-            navigator.navigate(to: .selection(title: titleLabel.text!, worker: ThemesWorker(), delegate: self))
+            let title = titleLabel.text!.replacingOccurrences(of: "*", with: "")
+            navigator.navigate(to: .selection(title: title, worker: ThemesWorker(), delegate: self))
         }
     }
 
@@ -58,16 +64,17 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
 }
 
 extension InputTableViewCell: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return false
+    }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
         self.inputEditAction(with: textField.text)
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if let text = textField.text, text.count > 1 {
-            self.inputEditAction(with: text)
-        }
-
+        self.inputEditAction(with: textField.text)
         if let action = self.action {
             if case ActionsForStaticCells.setOrganisation = action {
                 return false
