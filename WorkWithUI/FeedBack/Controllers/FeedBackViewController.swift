@@ -9,9 +9,8 @@
 import UIKit
 
 class FeedBackViewController: UIViewController {
+    
     private let navigator: FeedBackNavigator
-
-
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(navigator: FeedBackNavigator) {
         let bundle = Bundle(for: type(of: self))
