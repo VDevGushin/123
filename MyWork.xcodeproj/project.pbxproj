@@ -130,6 +130,8 @@
 		3C54A7CB21947918007AEBF2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54A7CA21947918007AEBF2 /* Common.swift */; };
 		3C54A7CE219483E3007AEBF2 /* FeedBackTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54A7CC219483E3007AEBF2 /* FeedBackTableViewController.swift */; };
 		3C54A7CF219483E3007AEBF2 /* FeedBackTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */; };
+		3C54A7D22194B287007AEBF2 /* FeedBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54A7D02194B287007AEBF2 /* FeedBackViewController.swift */; };
+		3C54A7D32194B287007AEBF2 /* FeedBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54A7D12194B287007AEBF2 /* FeedBackViewController.xib */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */; };
 		3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */; };
@@ -539,6 +541,8 @@
 		3C54A7CA21947918007AEBF2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		3C54A7CC219483E3007AEBF2 /* FeedBackTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackTableViewController.swift; sourceTree = "<group>"; };
 		3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackTableViewController.xib; sourceTree = "<group>"; };
+		3C54A7D02194B287007AEBF2 /* FeedBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackViewController.swift; sourceTree = "<group>"; };
+		3C54A7D12194B287007AEBF2 /* FeedBackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackViewController.xib; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackWebConfigurator.swift; sourceTree = "<group>"; };
@@ -1568,6 +1572,8 @@
 				3C1DB1972192B438001BD557 /* FeedBackSearchViewController.xib */,
 				3C54A7CC219483E3007AEBF2 /* FeedBackTableViewController.swift */,
 				3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */,
+				3C54A7D02194B287007AEBF2 /* FeedBackViewController.swift */,
+				3C54A7D12194B287007AEBF2 /* FeedBackViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -2177,6 +2183,7 @@
 				3C5FDF012191F5D600F0C6DF /* CaptchaView.xib in Resources */,
 				3CF58ADA218837F0008FEB6D /* MessageTableViewCell.xib in Resources */,
 				3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */,
+				3C54A7D32194B287007AEBF2 /* FeedBackViewController.xib in Resources */,
 				3C7A5AD22193376500DE016B /* CaptchaTableViewCell.xib in Resources */,
 				3C54A7CF219483E3007AEBF2 /* FeedBackTableViewController.xib in Resources */,
 				3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */,
@@ -2390,6 +2397,7 @@
 				3C7A5AD12193376500DE016B /* CaptchaTableViewCell.swift in Sources */,
 				3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */,
 				3C1DB1A12192CCD7001BD557 /* ISource.swift in Sources */,
+				3C54A7D22194B287007AEBF2 /* FeedBackViewController.swift in Sources */,
 				3CF58AF32188639B008FEB6D /* Profile.swift in Sources */,
 				3CA69B9821933359009DD38D /* FeedbackStrings.swift in Sources */,
 				3C97C33E217F3B740025BD3D /* CalendarModel.swift in Sources */,
