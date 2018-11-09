@@ -93,7 +93,7 @@ final class FeedBackTableViewController: UITableViewController {
     private var feedBackFrom: FeedBackInitForm?
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
-    init(navigator: FeedBackNavigator, initFormData: FeedBackInitForm? = nil) {
+    init(navigator: FeedBackNavigator, initFormData: FeedBackInitForm?) {
         self.feedBackFrom = initFormData
         self.isInRequest = false
         let bundle = Bundle(for: type(of: self))
@@ -173,9 +173,7 @@ final class FeedBackTableViewController: UITableViewController {
                 self.isInRequest = false
                 switch result {
                 case .error(let error):
-                    if case FeedBackError.captcha = error {
-                        self.source.resetCaptcha(with: "")
-                    }
+                    if case FeedBackError.captcha = error { self.source.resetCaptcha(with: "") }
                 case .result(let value):
                     dump(value)
                 }
