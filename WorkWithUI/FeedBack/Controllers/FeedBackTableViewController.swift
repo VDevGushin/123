@@ -67,14 +67,15 @@ final class FeedBackTableViewController: UITableViewController {
 
     typealias doneAction = () -> Void
 
+    private var isInRequest: Bool
     private let navigator: FeedBackNavigator
     private var source = [CellSource]()
     private let sendForm = SendForm()
-    private var isFirstLoad = true
     private lazy var reported = FeedBackReportWorker()
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(navigator: FeedBackNavigator) {
+        self.isInRequest = false
         let bundle = Bundle(for: type(of: self))
         self.navigator = navigator
         super.init(nibName: String(describing: FeedBackTableViewController.self), bundle: bundle)
@@ -124,6 +125,8 @@ final class FeedBackTableViewController: UITableViewController {
             self.sendForm.theme = value
         case .done:
             if sendForm.isValid, let sendData = FeedBackSendModel(from: self.sendForm), let data = sendData.encode() {
+                if self.isInRequest { return }
+                self.isInRequest = true
                 self.send(model: sendData, data: data)
             } else {
                 self.source.checkAll()
@@ -146,6 +149,7 @@ final class FeedBackTableViewController: UITableViewController {
     private func send(model: FeedBackSendModel, data: Data) {
         self.reported.sendFeedBack(model: model, data: data) { result in
             DispatchQueue.main.async {
+                self.isInRequest = false
                 switch result {
                 case .error(let error):
                     dump(error)
