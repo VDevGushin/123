@@ -9,10 +9,6 @@
 import UIKit
 
 class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    func clear() {
-        
-    }
-    
     var initialSource: StaticCellsSource?
     var isReady: Bool = false
     
@@ -32,5 +28,9 @@ class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
     @IBAction func doneAction(_ sender: Any) {
         guard let action = self.action else { return }
         if case ActionsForStaticCells.done(let done) = action { done(.done) }
+    }
+    
+    func setValue(with: String){
+        
     }
 }

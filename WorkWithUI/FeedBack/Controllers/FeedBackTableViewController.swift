@@ -8,26 +8,6 @@
 
 import UIKit
 
-fileprivate extension Array where Element: CellSource {
-    func checkAll() {
-        self.forEach {
-            if let cell = $0.cell as? IFeedbackStaticCell {
-                cell.check()
-            }
-        }
-    }
-
-    func resetCaptcha() {
-        let capchaSource = self.first {
-            $0.cell is CaptchaTableViewCell
-        }
-        guard let capcha = capchaSource else {
-            return
-        }
-        (capcha.cell as! IFeedbackStaticCell).clear()
-    }
-}
-
 enum ActionsForStaticCells {
     typealias FeedBackHandler = (StaticCellsSource) -> Void
     case setName(FeedBackHandler)
@@ -40,6 +20,34 @@ enum ActionsForStaticCells {
     case setCaptcha(FeedBackHandler)
     case setDetail(FeedBackHandler)
     case done(FeedBackHandler)
+
+    var id: Int {
+        switch self {
+        case .setName: return StaticCellType.name.rawValue
+        case .setLastName: return StaticCellType.lastName.rawValue
+        case .setMiddleName: return StaticCellType.middleName.rawValue
+        case .setOrganisation: return StaticCellType.organisation.rawValue
+        case .setPhone: return StaticCellType.phone.rawValue
+        case .setMail: return StaticCellType.mail.rawValue
+        case .setTheme: return StaticCellType.theme.rawValue
+        case .setCaptcha: return StaticCellType.captcha.rawValue
+        case .setDetail: return StaticCellType.detail.rawValue
+        case .done: return StaticCellType.done.rawValue
+        }
+    }
+
+    enum StaticCellType: Int {
+        case name
+        case lastName
+        case middleName
+        case organisation
+        case phone
+        case mail
+        case theme
+        case captcha
+        case detail
+        case done
+    }
 }
 
 enum StaticCellsSource {
@@ -80,11 +88,13 @@ final class FeedBackTableViewController: UITableViewController {
     private var isInRequest: Bool
     private let navigator: FeedBackNavigator
     private var source = [CellSource]()
-    private let sendForm = SendForm()
+    private let sendForm = SendForm() // tmp form for init send from
     private lazy var reported = FeedBackReportWorker()
-
+    private var feedBackFrom: FeedBackInitForm?
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
-    init(navigator: FeedBackNavigator) {
+
+    init(navigator: FeedBackNavigator, initFormData: FeedBackInitForm? = nil) {
+        self.feedBackFrom = initFormData
         self.isInRequest = false
         let bundle = Bundle(for: type(of: self))
         self.navigator = navigator
@@ -94,6 +104,7 @@ final class FeedBackTableViewController: UITableViewController {
     }
 
     override func viewDidLoad() {
+        defer { self.source.initStartSource(from: self.feedBackFrom) }
         super.viewDidLoad()
         buildUI()
     }
@@ -163,7 +174,7 @@ final class FeedBackTableViewController: UITableViewController {
                 switch result {
                 case .error(let error):
                     if case FeedBackError.captcha = error {
-                        self.source.resetCaptcha()
+                        self.source.resetCaptcha(with: "")
                     }
                 case .result(let value):
                     dump(value)
@@ -256,5 +267,78 @@ fileprivate extension FeedBackTableViewController {
 
     func getFromNib<T:AnyObject>() -> T {
         return Bundle.main.loadNibNamed(String(describing: T.self), owner: self, options: nil)?[0] as! T
+    }
+}
+
+fileprivate extension Array where Element: CellSource {
+    func checkAll() {
+        self.forEach {
+            if let cell = $0.cell as? IFeedbackStaticCell {
+                cell.check()
+            }
+        }
+    }
+
+    func initStartSource(from: FeedBackInitForm?) {
+        guard let from = from else { return }
+        self.setName(with: (from.name, from.lastName, from.middleName))
+        self.setMail(with: from.mail)
+        self.setPhone(with: from.phone)
+    }
+
+    func resetCaptcha(with: String?) {
+        guard let with = with else { return }
+        if let cell: CaptchaTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.captcha) {
+            (cell as IFeedbackStaticCell).setValue(with: with)
+        }
+    }
+
+    func setPhone(with: String?) {
+        guard let with = with else { return }
+        if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.phone) {
+            (cell as IFeedbackStaticCell).setValue(with: with)
+        }
+    }
+
+    func setMail(with: String?) {
+        guard let with = with else { return }
+        if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.mail) {
+            (cell as IFeedbackStaticCell).setValue(with: with)
+        }
+    }
+
+    func setName(with: (firstName: String?,
+                        lastName: String?,
+                        middleName: String?)) {
+        if let firstName = with.firstName {
+            if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.name) {
+                (cell as IFeedbackStaticCell).setValue(with: firstName)
+            }
+        }
+
+        if let lastName = with.lastName {
+            if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.lastName) {
+                (cell as IFeedbackStaticCell).setValue(with: lastName)
+            }
+        }
+
+        if let middleName = with.middleName {
+            if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.middleName) {
+                (cell as IFeedbackStaticCell).setValue(with: middleName)
+            }
+        }
+    }
+
+
+
+    private func getNeedCell<T: UITableViewCell>(cellType: ActionsForStaticCells.StaticCellType) -> T? {
+        let capchaSource = self.first {
+            if $0.cell is T && $0.action.id == cellType.rawValue {
+                return true
+            }
+            return false
+        }
+        guard let capcha = capchaSource else { return nil }
+        return capcha.cell as? T
     }
 }

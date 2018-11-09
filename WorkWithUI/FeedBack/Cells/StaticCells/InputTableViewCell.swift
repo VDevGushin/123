@@ -9,10 +9,6 @@
 import UIKit
 
 class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    func clear() {
-
-    }
-
     var initialSource: StaticCellsSource?
     var isReady: Bool = false
     var action: ActionsForStaticCells?
@@ -76,6 +72,10 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
     func normalInputStyle() {
         FeedBackStyle.titleLabel(self.titleLabel)
         FeedBackStyle.textField(self.inputField)
+    }
+    
+    func setValue(with: String) {
+        self.inputField.text = with
     }
 }
 

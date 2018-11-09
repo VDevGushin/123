@@ -9,11 +9,6 @@
 import UIKit
 
 class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    func clear() {
-        self.input.text = ""
-        self.input.endEditing(true)
-    }
-
     var initialSource: StaticCellsSource?
     var isReady: Bool = false
 
@@ -47,6 +42,11 @@ class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
 
     func check() {
         self.inputEditAction(with: input.text)
+    }
+
+    func setValue(with: String) {
+        self.input.text = with
+        self.input.endEditing(true)
     }
 }
 
