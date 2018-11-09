@@ -9,9 +9,14 @@
 import UIKit
 
 class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    func clear() {
+        self.input.text = ""
+        self.input.endEditing(true)
+    }
+
     var initialSource: StaticCellsSource?
     var isReady: Bool = false
-    
+
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var captcha: CaptchaView!

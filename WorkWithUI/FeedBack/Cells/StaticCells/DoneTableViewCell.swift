@@ -9,6 +9,10 @@
 import UIKit
 
 class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    func clear() {
+        
+    }
+    
     var initialSource: StaticCellsSource?
     var isReady: Bool = false
     

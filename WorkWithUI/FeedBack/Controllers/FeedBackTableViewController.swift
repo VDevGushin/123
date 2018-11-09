@@ -16,6 +16,16 @@ fileprivate extension Array where Element: CellSource {
             }
         }
     }
+
+    func resetCaptcha() {
+        let capchaSource = self.first {
+            $0.cell is CaptchaTableViewCell
+        }
+        guard let capcha = capchaSource else {
+            return
+        }
+        (capcha.cell as! IFeedbackStaticCell).clear()
+    }
 }
 
 enum ActionsForStaticCells {
@@ -153,7 +163,7 @@ final class FeedBackTableViewController: UITableViewController {
                 switch result {
                 case .error(let error):
                     if case FeedBackError.captcha = error {
-                        dump(error)
+                        self.source.resetCaptcha()
                     }
                 case .result(let value):
                     dump(value)

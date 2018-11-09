@@ -16,4 +16,5 @@ protocol IFeedbackStaticCell: class {
     var isReady: Bool { get set }
     func check()
     var initialSource: StaticCellsSource? { get set }
+    func clear()
 }
