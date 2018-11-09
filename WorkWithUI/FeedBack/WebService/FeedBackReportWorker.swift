@@ -20,11 +20,16 @@ final class FeedBackReportWorker {
             if let error = error { return handler(Result.error(error)) }
             guard let jsonData = data else { return handler(Result.error(FeedBackError.noData)) }
             do {
-                guard let error: FeedBackErrorMessage = try? jsonData.decode(using: FeedBackConfig.decoder), error.errorCode != nil, error.errorMessage != nil else {
+                guard let error: FeedBackErrorMessage = try? jsonData.decode(using: FeedBackConfig.decoder), error.errorCode != nil, let message = error.errorMessage else {
                     let model: FeedBackSendModel = try jsonData.decode(using: FeedBackConfig.decoder)
                     return handler(Result.result(model))
                 }
-                return handler(Result.error(FeedBackError.sendModelError(error)))
+
+                if message.lowercased().contains("captcha") {
+                    return handler(Result.error(FeedBackError.captcha))
+                }
+
+                return handler(Result.error(FeedBackError.sendModelError))
             } catch {
                 handler(Result.error(error))
             }

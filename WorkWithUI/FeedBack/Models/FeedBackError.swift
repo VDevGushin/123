@@ -10,8 +10,9 @@ import Foundation
 
 enum FeedBackError: Error {
     case noData
+    case captcha
     case noImage
-    case sendModelError(FeedBackErrorMessage)
+    case sendModelError
     case decode
     case error(Error)
 }

@@ -152,7 +152,9 @@ final class FeedBackTableViewController: UITableViewController {
                 self.isInRequest = false
                 switch result {
                 case .error(let error):
-                    dump(error)
+                    if case FeedBackError.captcha = error {
+                        dump(error)
+                    }
                 case .result(let value):
                     dump(value)
                 }
