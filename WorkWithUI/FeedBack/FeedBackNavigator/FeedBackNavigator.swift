@@ -52,7 +52,7 @@ final class FeedBackNavigator {
         let navigationViewController = UINavigationController()
         ChatStyle.navigationBar(navigationViewController.navigationBar)
         let navigator = FeedBackNavigator(navigationController: navigationViewController)
-        let f = FeedBackInitForm.init(name: "IOStest", lastName: "IOStest", middleName: "IOStest", phone: "123123", mail: "123")
+        let f = FeedBackInitForm.init(name: "IOStest", lastName: "IOStest", middleName: "IOStest", phone: "123123", mail: "123@mai.ir")
         navigator.navigate(to: .feedBackForm(initData: f))
         return navigationViewController
     }

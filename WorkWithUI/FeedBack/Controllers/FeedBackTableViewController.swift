@@ -114,7 +114,7 @@ final class FeedBackTableViewController: UITableViewController {
         let types = self.source.map { return $0.cellType }
         FeedBackStyle.tableView(self.tableView, self, types)
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 96
+        tableView.estimatedRowHeight = 100
         self.tableView.keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
     }
 
@@ -290,6 +290,7 @@ fileprivate extension Array where Element: CellSource {
         guard let with = with else { return }
         if let cell: CaptchaTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.captcha) {
             (cell as IFeedbackStaticCell).setValue(with: with)
+            (cell as IFeedbackStaticCell).check()
         }
     }
 
@@ -310,26 +311,18 @@ fileprivate extension Array where Element: CellSource {
     func setName(with: (firstName: String?,
                         lastName: String?,
                         middleName: String?)) {
-        if let firstName = with.firstName {
-            if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.name) {
-                (cell as IFeedbackStaticCell).setValue(with: firstName)
-            }
+        if let firstName = with.firstName, let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.name) {
+            (cell as IFeedbackStaticCell).setValue(with: firstName)
         }
 
-        if let lastName = with.lastName {
-            if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.lastName) {
-                (cell as IFeedbackStaticCell).setValue(with: lastName)
-            }
+        if let lastName = with.lastName, let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.lastName) {
+            (cell as IFeedbackStaticCell).setValue(with: lastName)
         }
 
-        if let middleName = with.middleName {
-            if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.middleName) {
-                (cell as IFeedbackStaticCell).setValue(with: middleName)
-            }
+        if let middleName = with.middleName, let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.middleName) {
+            (cell as IFeedbackStaticCell).setValue(with: middleName)
         }
     }
-
-
 
     private func getNeedCell<T: UITableViewCell>(cellType: ActionsForStaticCells.StaticCellType) -> T? {
         let capchaSource = self.first {
