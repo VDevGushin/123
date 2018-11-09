@@ -75,7 +75,8 @@ struct FeedBackWebConfigurator {
         let paths = FeedBackComponents.createPath(components: .argus, .api, .tickets)
         let header = [
             "Accept": "application/json",
-            "Accept-Encoding": " br, gzip, deflate"
+            "Accept-Encoding": " br, gzip, deflate",
+            "Content-Type": "application/json"
         ]
 
         let q1 = URLQueryItem(name: "captcha_id", value: "\(captchaId)")

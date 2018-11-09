@@ -11,6 +11,7 @@ import Foundation
 enum FeedBackError: Error {
     case noData
     case noImage
+    case sendModelError(FeedBackErrorMessage)
     case decode
     case error(Error)
 }

@@ -144,8 +144,15 @@ final class FeedBackTableViewController: UITableViewController {
     }
 
     private func send(model: FeedBackSendModel, data: Data) {
-        self.reported.sendFeedBack(model: model, data: data) { _ in
-
+        self.reported.sendFeedBack(model: model, data: data) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .error(let error):
+                    dump(error)
+                case .result(let value):
+                    dump(value)
+                }
+            }
         }
     }
 }
