@@ -9,6 +9,7 @@
 import UIKit
 
 class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    var initialSource: StaticCellsSource?
     var isReady: Bool = false
     
     func check() { }

@@ -19,6 +19,9 @@ struct FeedBackSendModel: Codable {
     let middleName: String?
     let phone: String?
 
+    var captchaId = ""
+    var captchaValue = ""
+
     enum CodingKeys: String, CodingKey {
         case externalSystemID = "externalSystemId"
         case categoryID = "categoryId"
@@ -30,11 +33,14 @@ struct FeedBackSendModel: Codable {
     init?(from sendForm: SendForm) {
         guard let firstName = sendForm.name,
             let lastName = sendForm.lastName,
-            let organizationName = sendForm.organisation,
             let description = sendForm.detail,
             let organisation = sendForm.organisation,
             let emil = sendForm.mail,
-            let theme = sendForm.theme else { return nil }
+            let theme = sendForm.theme,
+            let externalSystemID = theme.systemID,
+            let captchaId = sendForm.captchaId,
+            let captchaValue = sendForm.captcha
+            else { return nil }
 
         self.status = "new"
         self.firstName = firstName
@@ -47,11 +53,14 @@ struct FeedBackSendModel: Codable {
         self.description = description
         self.organizationName = ""
         self.login = ""
+
+        self.externalSystemID = externalSystemID
+        self.categoryID = theme.id
         
-        self.externalSystemID = 2
-        self.categoryID = 2
+        self.captchaId = captchaId
+        self.captchaValue = captchaValue
     }
-    
+
     func encode() -> Data? {
         let encoder = FeedBackConfig.encoder
         return try? encoder.encode(self)

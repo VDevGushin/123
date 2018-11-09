@@ -9,6 +9,8 @@
 import UIKit
 
 class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    var initialSource: StaticCellsSource?
+    
     var isReady: Bool = false
     
     var action: ActionsForStaticCells?

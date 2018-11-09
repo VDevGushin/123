@@ -70,4 +70,18 @@ struct FeedBackWebConfigurator {
         let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: nil, header: header, body: nil)
         return configurator
     }
+
+    static func sendFeedBack(captchaId: String, captchaValue: String, data: Data) -> FeedBackWebConfigurator {
+        let paths = FeedBackComponents.createPath(components: .argus, .api, .tickets)
+        let header = [
+            "Accept": "application/json",
+            "Accept-Encoding": " br, gzip, deflate"
+        ]
+
+        let q1 = URLQueryItem(name: "captcha_id", value: "\(captchaId)")
+        let q2 = URLQueryItem(name: "captcha_value", value: "\(captchaValue)")
+
+        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "POST", queryItems: [q1, q2], header: header, body: data)
+        return configurator
+    }
 }

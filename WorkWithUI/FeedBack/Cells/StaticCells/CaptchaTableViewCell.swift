@@ -9,6 +9,7 @@
 import UIKit
 
 class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    var initialSource: StaticCellsSource?
     var isReady: Bool = false
     
     var action: ActionsForStaticCells?

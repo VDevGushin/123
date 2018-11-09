@@ -9,14 +9,15 @@
 import UIKit
 
 class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    var initialSource: StaticCellsSource?
     var isReady: Bool = false
-    
     var action: ActionsForStaticCells?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var inputField: UITextField!
     @IBOutlet weak var actionBitton: UIButton!
 
     @IBOutlet weak var textFieldHeight: NSLayoutConstraint!
+
     func config(value: String, action: ActionsForStaticCells) {
         if isReady { return }
         self.isReady.toggle()
@@ -164,12 +165,12 @@ extension InputTableViewCell: FeedBackSearchViewControllerDelegate {
 
         if case ActionsForStaticCells.setOrganisation(_, let then) = action, let model = selected as? Organisation {
             self.inputField.text = model.shortTitle
-            then(DataFromStaticCells.organisation(with: model))
+            then(StaticCellsSource.organisation(with: model))
         }
 
         if case ActionsForStaticCells.setTheme(_, let then) = action, let model = selected as? FeedbackTheme {
             self.inputField.text = model.title
-            then(DataFromStaticCells.theme(with: model))
+            then(StaticCellsSource.theme(with: model))
         }
 
         validResult(string: self.inputField.text, action: action)

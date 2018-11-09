@@ -42,7 +42,7 @@ final class ThemesWorker: IFeedBackWorker {
 
             do {
                 let model: FeedbackThemes = try jsonData.decode(using: FeedBackConfig.decoder)
-                wSelf.delegate?.sourceChanged(isFirstTime: wSelf.isFirstTime, source: model)
+                wSelf.delegate?.sourceChanged(isFirstTime: wSelf.isFirstTime, source: model.filter{ $0.id == 26 } )
             } catch {
                 wSelf.delegate?.sourceError(with: error)
             }

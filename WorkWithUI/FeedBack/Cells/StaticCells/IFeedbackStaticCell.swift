@@ -15,4 +15,5 @@ protocol IFeedbackStaticCell: class {
     func config(value: String, action: ActionsForStaticCells)
     var isReady: Bool { get set }
     func check()
+    var initialSource: StaticCellsSource? { get set }
 }
