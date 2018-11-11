@@ -13,7 +13,8 @@ final class CaptchaView: UIView {
     @IBOutlet private weak var refresh: UIButton!
     @IBOutlet private weak var image: UIImageView!
     @IBOutlet private weak var activity: UIActivityIndicatorView!
-    public var model: CaptchaModel?
+    private var model: CaptchaModel?
+    private let serivce = CaptchaWorker()
 
     private var isInRequest: Bool = false {
         didSet {
@@ -21,7 +22,6 @@ final class CaptchaView: UIView {
         }
     }
 
-    private let serivce = CaptchaWorker()
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
@@ -55,6 +55,10 @@ final class CaptchaView: UIView {
                 self?.isInRequest.toggle()
             }
         }
+    }
+
+    func getModel() -> CaptchaModel? {
+        return self.model
     }
 }
 

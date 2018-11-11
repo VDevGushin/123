@@ -8,75 +8,6 @@
 
 import UIKit
 
-enum ActionsForStaticCells {
-    typealias FeedBackHandler = (StaticCellsSource) -> Void
-    case setName(FeedBackHandler)
-    case setLastName(FeedBackHandler)
-    case setMiddleName(FeedBackHandler)
-    case setOrganisation(FeedBackNavigator, FeedBackHandler)
-    case setPhone(FeedBackHandler)
-    case setMail(FeedBackHandler)
-    case setTheme(FeedBackNavigator, FeedBackHandler)
-    case setCaptcha(FeedBackHandler)
-    case setDetail(FeedBackHandler)
-    case done(FeedBackHandler)
-
-    var id: Int {
-        switch self {
-        case .setName: return StaticCellType.name.rawValue
-        case .setLastName: return StaticCellType.lastName.rawValue
-        case .setMiddleName: return StaticCellType.middleName.rawValue
-        case .setOrganisation: return StaticCellType.organisation.rawValue
-        case .setPhone: return StaticCellType.phone.rawValue
-        case .setMail: return StaticCellType.mail.rawValue
-        case .setTheme: return StaticCellType.theme.rawValue
-        case .setCaptcha: return StaticCellType.captcha.rawValue
-        case .setDetail: return StaticCellType.detail.rawValue
-        case .done: return StaticCellType.done.rawValue
-        }
-    }
-
-    enum StaticCellType: Int {
-        case name
-        case lastName
-        case middleName
-        case organisation
-        case phone
-        case mail
-        case theme
-        case captcha
-        case detail
-        case done
-    }
-}
-
-enum StaticCellsSource {
-    case name(with: String?)
-    case lastName(with: String?)
-    case middleName(with: String?)
-    case organisation(with: Organisation?)
-    case phone(with: String?)
-    case mail(with: String?)
-    case theme(with: FeedbackTheme?)
-    case captcha(id: String?, text: String?)
-    case detail(with: String?)
-    case done
-}
-
-final class CellSource {
-    let title: String
-    let cellType: UITableViewCell.Type
-    let action: ActionsForStaticCells
-    var initialData: String?
-    let cell: UITableViewCell
-    init(title: String, cellType: UITableViewCell.Type, action: ActionsForStaticCells, cell: UITableViewCell) {
-        self.title = title
-        self.cellType = cellType
-        self.action = action
-        self.cell = cell
-    }
-}
-
 final class FeedBackTableViewController: UITableViewController {
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
@@ -90,10 +21,11 @@ final class FeedBackTableViewController: UITableViewController {
     private var source = [CellSource]()
     private let sendForm = SendForm() // tmp form for init send from
     private lazy var reported = FeedBackReportWorker()
-    private var feedBackFrom: FeedBackInitForm?
+    private var feedBackFrom: FeedBackInitFrom?
+    
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
-    init(navigator: FeedBackNavigator, initFormData: FeedBackInitForm?) {
+    init(navigator: FeedBackNavigator, initFormData: FeedBackInitFrom?) {
         self.feedBackFrom = initFormData
         self.isInRequest = false
         let bundle = Bundle(for: type(of: self))
@@ -123,6 +55,7 @@ final class FeedBackTableViewController: UITableViewController {
         view.endEditing(true)
     }
 
+    //Перенести в обработчик
     func doneAction(_ with: StaticCellsSource) {
         switch with {
         case .captcha(id: let id, text: let text):
@@ -145,10 +78,10 @@ final class FeedBackTableViewController: UITableViewController {
         case .theme(with: let value):
             self.sendForm.theme = value
         case .done:
-            if sendForm.isValid, let sendData = FeedBackSendModel(from: self.sendForm), let data = sendData.encode() {
+            if sendForm.isValid {
                 if self.isInRequest { return }
                 self.isInRequest = true
-                self.send(model: sendData, data: data)
+                self.send(model: sendForm)
             } else {
                 self.source.checkAll()
             }
@@ -167,8 +100,8 @@ final class FeedBackTableViewController: UITableViewController {
         return cell
     }
 
-    private func send(model: FeedBackSendModel, data: Data) {
-        self.reported.sendFeedBack(model: model, data: data) { result in
+    private func send(model: SendForm) {
+        self.reported.sendFeedBack(model) { result in
             DispatchQueue.main.async {
                 self.isInRequest = false
                 switch result {
@@ -277,7 +210,7 @@ fileprivate extension Array where Element: CellSource {
         }
     }
 
-    func initStartSource(from: FeedBackInitForm?) {
+    func initStartSource(from: FeedBackInitFrom?) {
         guard let from = from else { return }
         self.setName(with: (from.name, from.lastName, from.middleName))
         self.setMail(with: from.mail)

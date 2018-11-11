@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FeedBackInitForm {
+struct FeedBackInitFrom {
     var name: String?
     var lastName: String?
     var middleName: String?

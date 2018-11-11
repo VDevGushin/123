@@ -77,7 +77,7 @@ extension CaptchaTableViewCell: UITextFieldDelegate {
 
     @discardableResult
     func validResult(string: String?, action: ActionsForStaticCells) -> (id: String?, text: String?) {
-        guard let string = string, let captchaId = self.captcha.model?.id else { return (nil, nil) }
+        guard let string = string, let captchaId = self.captcha.getModel()?.id else { return (nil, nil) }
         if case .setCaptcha = action {
             if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && !captchaId.isEmpty {
                 self.normalInputStyle()

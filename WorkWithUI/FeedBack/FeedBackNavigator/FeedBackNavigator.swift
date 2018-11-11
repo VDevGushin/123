@@ -12,7 +12,7 @@ final class FeedBackNavigator {
     private weak var navigationController: UINavigationController?
 
     enum Destination {
-        case feedBackForm(initData: FeedBackInitForm?)
+        case feedBackForm(initData: FeedBackInitFrom?)
         case selection(title: String, worker: IFeedBackWorker, delegate: FeedBackSearchViewControllerDelegate?)
         case feedbackType
     }
@@ -52,7 +52,7 @@ final class FeedBackNavigator {
         let navigationViewController = UINavigationController()
         ChatStyle.navigationBar(navigationViewController.navigationBar)
         let navigator = FeedBackNavigator(navigationController: navigationViewController)
-        let f = FeedBackInitForm.init(name: "IOStest", lastName: "IOStest", middleName: "IOStest", phone: "123123", mail: "123@mai.ir")
+        let f = FeedBackInitFrom.init(name: "IOStest", lastName: "IOStest", middleName: "IOStest", phone: "123123", mail: "123@mai.ir")
         navigator.navigate(to: .feedBackForm(initData: f))
         return navigationViewController
     }
