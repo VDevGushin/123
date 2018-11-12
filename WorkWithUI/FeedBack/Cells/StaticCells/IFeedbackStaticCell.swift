@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 protocol IFeedbackStaticCell: class {
-    var action: ActionsForStaticCells? { get set }
+    var action: FeedBackCellAction? { get set }
     var titleLabel: UILabel! { get set }
-    func config(value: String, action: ActionsForStaticCells)
+    func config(value: String, action: FeedBackCellAction)
     var isReady: Bool { get set }
     func check()
-    var initialSource: StaticCellsSource? { get set }
+    var initialSource: FeedBackCellIncomeData? { get set }
     func setValue(with: String)
 }

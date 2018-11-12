@@ -8,8 +8,8 @@
 
 import UIKit
 
-enum ActionsForStaticCells {
-    typealias FeedBackHandler = (StaticCellsSource) -> Void
+enum FeedBackCellAction {
+    typealias FeedBackHandler = (FeedBackCellIncomeData) -> Void
     case setName(FeedBackHandler)
     case setLastName(FeedBackHandler)
     case setMiddleName(FeedBackHandler)
@@ -20,6 +20,7 @@ enum ActionsForStaticCells {
     case setCaptcha(FeedBackHandler)
     case setDetail(FeedBackHandler)
     case done(FeedBackHandler)
+    case attach(FeedBackHandler)
 
     var id: Int {
         switch self {
@@ -33,6 +34,7 @@ enum ActionsForStaticCells {
         case .setCaptcha: return StaticCellType.captcha.rawValue
         case .setDetail: return StaticCellType.detail.rawValue
         case .done: return StaticCellType.done.rawValue
+        case .attach: return StaticCellType.attach.rawValue
         }
     }
 
@@ -46,11 +48,12 @@ enum ActionsForStaticCells {
         case theme
         case captcha
         case detail
+        case attach
         case done
     }
 }
 
-enum StaticCellsSource {
+enum FeedBackCellIncomeData {
     case name(with: String?)
     case lastName(with: String?)
     case middleName(with: String?)
@@ -60,16 +63,17 @@ enum StaticCellsSource {
     case theme(with: FeedbackTheme?)
     case captcha(id: String?, text: String?)
     case detail(with: String?)
+    case attach(with : [Any])
     case done
 }
 
 final class CellSource {
     let title: String
     let cellType: UITableViewCell.Type
-    let action: ActionsForStaticCells
+    let action: FeedBackCellAction
     var initialData: String?
     let cell: UITableViewCell
-    init(title: String, cellType: UITableViewCell.Type, action: ActionsForStaticCells, cell: UITableViewCell) {
+    init(title: String, cellType: UITableViewCell.Type, action: FeedBackCellAction, cell: UITableViewCell) {
         self.title = title
         self.cellType = cellType
         self.action = action

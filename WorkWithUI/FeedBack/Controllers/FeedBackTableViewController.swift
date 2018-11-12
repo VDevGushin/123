@@ -16,18 +16,14 @@ final class FeedBackTableViewController: UITableViewController {
 
     typealias doneAction = () -> Void
 
-    private var isInRequest: Bool
     private let navigator: FeedBackNavigator
     private var source = [CellSource]()
-    private let sendForm = SendForm() // tmp form for init send from
-    private lazy var reported = FeedBackReportWorker()
+    private lazy var reporter = FeedBackReportWorker()
     private var feedBackFrom: FeedBackInitFrom?
-    
-    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
+    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(navigator: FeedBackNavigator, initFormData: FeedBackInitFrom?) {
         self.feedBackFrom = initFormData
-        self.isInRequest = false
         let bundle = Bundle(for: type(of: self))
         self.navigator = navigator
         super.init(nibName: String(describing: FeedBackTableViewController.self), bundle: bundle)
@@ -56,34 +52,19 @@ final class FeedBackTableViewController: UITableViewController {
     }
 
     //Перенести в обработчик
-    func doneAction(_ with: StaticCellsSource) {
-        switch with {
-        case .captcha(id: let id, text: let text):
-            self.sendForm.captcha = text
-            self.sendForm.captchaId = id
-        case .detail(with: let value):
-            self.sendForm.detail = value
-        case .mail(with: let value):
-            self.sendForm.mail = value
-        case .middleName(with: let value):
-            self.sendForm.middleName = value
-        case .name(with: let value):
-            self.sendForm.name = value
-        case .organisation(with: let value):
-            self.sendForm.organisation = value
-        case .phone(with: let value):
-            self.sendForm.phone = value
-        case .lastName(with: let value):
-            self.sendForm.lastName = value
-        case .theme(with: let value):
-            self.sendForm.theme = value
-        case .done:
-            if sendForm.isValid {
-                if self.isInRequest { return }
-                self.isInRequest = true
-                self.send(model: sendForm)
-            } else {
-                self.source.checkAll()
+    func doneAction(_ with: FeedBackCellIncomeData) {
+        self.reporter.sendAction(with) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .error(let error):
+                    switch error {
+                    case FeedBackError.captcha: self.source.resetCaptcha(with: "")
+                    case FeedBackError.invalidModel: self.source.checkAll()
+                    default: break
+                    }
+                case .result:
+                    break
+                }
             }
         }
     }
@@ -99,23 +80,13 @@ final class FeedBackTableViewController: UITableViewController {
         cell.selectionStyle = .none
         return cell
     }
-
-    private func send(model: SendForm) {
-        self.reported.sendFeedBack(model) { result in
-            DispatchQueue.main.async {
-                self.isInRequest = false
-                switch result {
-                case .error(let error):
-                    if case FeedBackError.captcha = error { self.source.resetCaptcha(with: "") }
-                case .result(let value):
-                    dump(value)
-                }
-            }
-        }
-    }
 }
 
+
+//MARK: - Make source
 fileprivate extension FeedBackTableViewController {
+    func getFromNib<T:AnyObject>() -> T { return Bundle.main.loadNibNamed(String(describing: T.self), owner: self, options: nil)?[0] as! T }
+    
     func initDataSource() -> [CellSource] {
         var source = [CellSource]()
 
@@ -179,6 +150,13 @@ fileprivate extension FeedBackTableViewController {
                                       action: .setDetail(self.doneAction),
                                       cell: detailCell)
         source.append(detailSource)
+        
+        let attachCell: AttachTableViewCell = self.getFromNib()
+        let attachlSource = CellSource(title: FeedbackStrings.FeedBackView.attachTitle.value,
+                                      cellType: AttachTableViewCell.self,
+                                      action: .setDetail(self.doneAction),
+                                      cell: attachCell)
+        source.append(attachlSource)
 
         let captchaCell: CaptchaTableViewCell = self.getFromNib()
         let captchaSource = CellSource(title: FeedbackStrings.FeedBackView.captchaTitle.value,
@@ -195,12 +173,9 @@ fileprivate extension FeedBackTableViewController {
         source.append(doneSource)
         return source
     }
-
-    func getFromNib<T:AnyObject>() -> T {
-        return Bundle.main.loadNibNamed(String(describing: T.self), owner: self, options: nil)?[0] as! T
-    }
 }
 
+//MARK: - Source data manager
 fileprivate extension Array where Element: CellSource {
     func checkAll() {
         self.forEach {
@@ -219,7 +194,7 @@ fileprivate extension Array where Element: CellSource {
 
     func resetCaptcha(with: String?) {
         guard let with = with else { return }
-        if let cell: CaptchaTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.captcha) {
+        if let cell: CaptchaTableViewCell = getNeedCell(cellType: FeedBackCellAction.StaticCellType.captcha) {
             (cell as IFeedbackStaticCell).setValue(with: with)
             (cell as IFeedbackStaticCell).check()
         }
@@ -227,14 +202,14 @@ fileprivate extension Array where Element: CellSource {
 
     func setPhone(with: String?) {
         guard let with = with else { return }
-        if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.phone) {
+        if let cell: InputTableViewCell = getNeedCell(cellType: FeedBackCellAction.StaticCellType.phone) {
             (cell as IFeedbackStaticCell).setValue(with: with)
         }
     }
 
     func setMail(with: String?) {
         guard let with = with else { return }
-        if let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.mail) {
+        if let cell: InputTableViewCell = getNeedCell(cellType: FeedBackCellAction.StaticCellType.mail) {
             (cell as IFeedbackStaticCell).setValue(with: with)
         }
     }
@@ -242,20 +217,20 @@ fileprivate extension Array where Element: CellSource {
     func setName(with: (firstName: String?,
                         lastName: String?,
                         middleName: String?)) {
-        if let firstName = with.firstName, let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.name) {
+        if let firstName = with.firstName, let cell: InputTableViewCell = getNeedCell(cellType: FeedBackCellAction.StaticCellType.name) {
             (cell as IFeedbackStaticCell).setValue(with: firstName)
         }
 
-        if let lastName = with.lastName, let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.lastName) {
+        if let lastName = with.lastName, let cell: InputTableViewCell = getNeedCell(cellType: FeedBackCellAction.StaticCellType.lastName) {
             (cell as IFeedbackStaticCell).setValue(with: lastName)
         }
 
-        if let middleName = with.middleName, let cell: InputTableViewCell = getNeedCell(cellType: ActionsForStaticCells.StaticCellType.middleName) {
+        if let middleName = with.middleName, let cell: InputTableViewCell = getNeedCell(cellType: FeedBackCellAction.StaticCellType.middleName) {
             (cell as IFeedbackStaticCell).setValue(with: middleName)
         }
     }
 
-    private func getNeedCell<T: UITableViewCell>(cellType: ActionsForStaticCells.StaticCellType) -> T? {
+    private func getNeedCell<T: UITableViewCell>(cellType: FeedBackCellAction.StaticCellType) -> T? {
         let capchaSource = self.first {
             if $0.cell is T && $0.action.id == cellType.rawValue {
                 return true

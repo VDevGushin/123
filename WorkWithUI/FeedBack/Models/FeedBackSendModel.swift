@@ -91,13 +91,13 @@ struct FeedBackSendModel: Codable {
 
         try container.encode(self.description, forKey: .description)
         try container.encode(self.organizationID, forKey: .organizationID)
-        
+
         try container.encode(self.problemType, forKey: .problemType)
         try container.encode(self.email, forKey: .email)
-        
+
         try container.encode(self.status, forKey: .status)
         try container.encode(self.attachments, forKey: .attachments)
-        
+
         try? container.encode(self.middleName, forKey: .middleName)
         try? container.encode(self.phone, forKey: .phone)
     }
@@ -114,7 +114,8 @@ final class SendForm {
     var captcha: String?
     var captchaId: String?
     var detail: String?
-
+    var attach: [Any]?
+    
     var isValid: Bool {
         if name != nil &&
             lastName != nil &&

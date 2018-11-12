@@ -9,15 +9,15 @@
 import UIKit
 
 class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var initialSource: StaticCellsSource?
+    var initialSource: FeedBackCellIncomeData?
     var isReady: Bool = false
 
-    var action: ActionsForStaticCells?
+    var action: FeedBackCellAction?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var captcha: CaptchaView!
     @IBOutlet weak var input: UITextField!
 
-    func config(value: String, action: ActionsForStaticCells) {
+    func config(value: String, action: FeedBackCellAction) {
         if isReady { return }
         self.isReady.toggle()
         self.titleLabel.text = value
@@ -76,7 +76,7 @@ extension CaptchaTableViewCell: UITextFieldDelegate {
     }
 
     @discardableResult
-    func validResult(string: String?, action: ActionsForStaticCells) -> (id: String?, text: String?) {
+    func validResult(string: String?, action: FeedBackCellAction) -> (id: String?, text: String?) {
         guard let string = string, let captchaId = self.captcha.getModel()?.id else { return (nil, nil) }
         if case .setCaptcha = action {
             if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && !captchaId.isEmpty {

@@ -9,15 +9,15 @@
 import UIKit
 
 class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var initialSource: StaticCellsSource?
+    var initialSource: FeedBackCellIncomeData?
     
     var isReady: Bool = false
     
-    var action: ActionsForStaticCells?
+    var action: FeedBackCellAction?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textInput: UITextView!
 
-    func config(value: String, action: ActionsForStaticCells) {
+    func config(value: String, action: FeedBackCellAction) {
         if isReady { return }
         self.isReady.toggle()
         self.titleLabel.text = value
@@ -67,7 +67,7 @@ extension MultiIInputTableViewCell: UITextViewDelegate {
     }
 
     @discardableResult
-    func validResult(string: String?, action: ActionsForStaticCells) -> String? {
+    func validResult(string: String?, action: FeedBackCellAction) -> String? {
         guard let string = string else { return nil }
         if case .setDetail = action {
             if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {

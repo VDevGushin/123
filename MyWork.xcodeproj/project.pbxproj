@@ -113,6 +113,8 @@
 		3C41F92A2161190F002334DB /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F9292161190F002334DB /* TableViewDataSource.swift */; };
 		3C41F92C21611953002334DB /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F92B21611953002334DB /* CollectionViewDataSource.swift */; };
 		3C41F92E216119EC002334DB /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F92D216119EC002334DB /* Double+Extension.swift */; };
+		3C437F69219961E9008B61DC /* AttachTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C437F67219961E9008B61DC /* AttachTableViewCell.swift */; };
+		3C437F6A219961E9008B61DC /* AttachTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C437F68219961E9008B61DC /* AttachTableViewCell.xib */; };
 		3C441B0D2198A39A001F275E /* CellSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C441B0C2198A39A001F275E /* CellSource.swift */; };
 		3C4763D8211AC567006D0C1B /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4763D7211AC567006D0C1B /* CustomOperators.swift */; };
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
@@ -528,6 +530,8 @@
 		3C41F9292161190F002334DB /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3C41F92B21611953002334DB /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		3C41F92D216119EC002334DB /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		3C437F67219961E9008B61DC /* AttachTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachTableViewCell.swift; sourceTree = "<group>"; };
+		3C437F68219961E9008B61DC /* AttachTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttachTableViewCell.xib; sourceTree = "<group>"; };
 		3C441B0C2198A39A001F275E /* CellSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSource.swift; sourceTree = "<group>"; };
 		3C4763D7211AC567006D0C1B /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
@@ -1364,6 +1368,8 @@
 			isa = PBXGroup;
 			children = (
 				3C7A5AD721933E6700DE016B /* IFeedbackStaticCell.swift */,
+				3C437F67219961E9008B61DC /* AttachTableViewCell.swift */,
+				3C437F68219961E9008B61DC /* AttachTableViewCell.xib */,
 				3C7A5AC72193372100DE016B /* InputTableViewCell.swift */,
 				3C7A5AC82193372100DE016B /* InputTableViewCell.xib */,
 				3C7A5ACF2193376500DE016B /* CaptchaTableViewCell.swift */,
@@ -2182,6 +2188,7 @@
 				3CF58ADA218837F0008FEB6D /* MessageTableViewCell.xib in Resources */,
 				3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */,
 				3C7A5AD22193376500DE016B /* CaptchaTableViewCell.xib in Resources */,
+				3C437F6A219961E9008B61DC /* AttachTableViewCell.xib in Resources */,
 				3C54A7CF219483E3007AEBF2 /* FeedBackTableViewController.xib in Resources */,
 				3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */,
 				3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */,
@@ -2399,6 +2406,7 @@
 				3CA69B9821933359009DD38D /* FeedbackStrings.swift in Sources */,
 				3C97C33E217F3B740025BD3D /* CalendarModel.swift in Sources */,
 				3C5FDEFD2191F4FB00F0C6DF /* CaptchaView.swift in Sources */,
+				3C437F69219961E9008B61DC /* AttachTableViewCell.swift in Sources */,
 				3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */,
 				3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */,
 				3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */,

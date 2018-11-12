@@ -13,6 +13,11 @@ public enum Result<Value> {
     case error(Error)
 }
 
+public enum ResultError<Value , Er: Error> {
+    case result(Value)
+    case error(Error)
+}
+
 public extension Result {
     func resolve() throws -> Value {
         switch self {

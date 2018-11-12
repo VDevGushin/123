@@ -13,6 +13,7 @@ enum FeedBackError: Error {
     case captcha
     case noImage
     case sendModelError
+    case invalidModel
     case decode
     case error(Error)
 }

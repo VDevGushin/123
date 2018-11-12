@@ -24,5 +24,6 @@ enum FeedbackStrings {
         case detailTitle = "Подробно о ситуации*"
         case captchaTitle = "Введите текст с картинки*"
         case backButtonText = "Назад"
+        case attachTitle = "Прикрепить файл"
     }
 }

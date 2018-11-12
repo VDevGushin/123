@@ -9,15 +9,15 @@
 import UIKit
 
 class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var initialSource: StaticCellsSource?
+    var initialSource: FeedBackCellIncomeData?
     var isReady: Bool = false
     
     func check() { }
     var titleLabel: UILabel!
-    var action: ActionsForStaticCells?
+    var action: FeedBackCellAction?
     @IBOutlet private weak var sendButton: UIButton!
 
-    func config(value: String, action: ActionsForStaticCells) {
+    func config(value: String, action: FeedBackCellAction) {
         if isReady { return }
         self.isReady.toggle()
         self.action = action
@@ -27,7 +27,7 @@ class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
 
     @IBAction func doneAction(_ sender: Any) {
         guard let action = self.action else { return }
-        if case ActionsForStaticCells.done(let done) = action { done(.done) }
+        if case FeedBackCellAction.done(let done) = action { done(.done) }
     }
     
     func setValue(with: String){

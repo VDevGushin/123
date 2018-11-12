@@ -9,16 +9,16 @@
 import UIKit
 
 class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var initialSource: StaticCellsSource?
+    var initialSource: FeedBackCellIncomeData?
     var isReady: Bool = false
-    var action: ActionsForStaticCells?
+    var action: FeedBackCellAction?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var inputField: UITextField!
     @IBOutlet weak var actionBitton: UIButton!
 
     @IBOutlet weak var textFieldHeight: NSLayoutConstraint!
 
-    func config(value: String, action: ActionsForStaticCells) {
+    func config(value: String, action: FeedBackCellAction) {
         if isReady { return }
         self.isReady.toggle()
 
@@ -54,11 +54,11 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
 
     @IBAction func openSelectionAction(_ sender: Any) {
         guard let action = self.action else { return }
-        if case ActionsForStaticCells.setOrganisation(let navigator, _) = action {
+        if case FeedBackCellAction.setOrganisation(let navigator, _) = action {
             navigator.navigate(to: .selection(title: titleLabel.text!, worker: OrganisationWorker(), delegate: self))
         }
 
-        if case ActionsForStaticCells.setTheme(let navigator, _) = action {
+        if case FeedBackCellAction.setTheme(let navigator, _) = action {
             let title = titleLabel.text!.replacingOccurrences(of: "*", with: "")
             navigator.navigate(to: .selection(title: title, worker: ThemesWorker(), delegate: self))
         }
@@ -73,7 +73,7 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
         FeedBackStyle.titleLabel(self.titleLabel)
         FeedBackStyle.textField(self.inputField)
     }
-    
+
     func setValue(with: String) {
         self.inputField.text = with
     }
@@ -90,17 +90,11 @@ extension InputTableViewCell: UITextFieldDelegate {
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if let action = self.action {
-            if case ActionsForStaticCells.setOrganisation = action {
-                return false
-            }
-
-            if case ActionsForStaticCells.setTheme = action {
-                self.inputEditAction(with: textField.text)
-                return false
-            }
+        guard let action = self.action else { return false }
+        switch action {
+        case .setOrganisation, .setTheme: return false
+        default: return true
         }
-        return true
     }
 
     func inputEditAction(with text: String?) {
@@ -138,7 +132,7 @@ extension InputTableViewCell: UITextFieldDelegate {
     }
 
     @discardableResult
-    func validResult(string: String?, action: ActionsForStaticCells) -> String? {
+    func validResult(string: String?, action: FeedBackCellAction) -> String? {
         guard let string = string else { return nil }
         switch action {
         case .setMail:
@@ -167,14 +161,14 @@ extension InputTableViewCell: FeedBackSearchViewControllerDelegate {
     func selectSource<T>(selected: T) {
         guard let action = self.action else { return }
 
-        if case ActionsForStaticCells.setOrganisation(_, let then) = action, let model = selected as? Organisation {
+        if case FeedBackCellAction.setOrganisation(_, let then) = action, let model = selected as? Organisation {
             self.inputField.text = model.shortTitle
-            then(StaticCellsSource.organisation(with: model))
+            then(FeedBackCellIncomeData.organisation(with: model))
         }
 
-        if case ActionsForStaticCells.setTheme(_, let then) = action, let model = selected as? FeedbackTheme {
+        if case FeedBackCellAction.setTheme(_, let then) = action, let model = selected as? FeedbackTheme {
             self.inputField.text = model.title
-            then(StaticCellsSource.theme(with: model))
+            then(FeedBackCellIncomeData.theme(with: model))
         }
 
         validResult(string: self.inputField.text, action: action)
