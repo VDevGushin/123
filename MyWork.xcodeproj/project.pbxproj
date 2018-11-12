@@ -117,6 +117,7 @@
 		3C437F6A219961E9008B61DC /* AttachTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C437F68219961E9008B61DC /* AttachTableViewCell.xib */; };
 		3C437F7521997663008B61DC /* FeedBackImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C437F7321997663008B61DC /* FeedBackImageCollectionViewCell.swift */; };
 		3C437F7621997663008B61DC /* FeedBackImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */; };
+		3C437F7B2199D744008B61DC /* FeedbackAttachFileIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C437F7A2199D744008B61DC /* FeedbackAttachFileIncome.swift */; };
 		3C441B0D2198A39A001F275E /* CellSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C441B0C2198A39A001F275E /* CellSource.swift */; };
 		3C4763D8211AC567006D0C1B /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4763D7211AC567006D0C1B /* CustomOperators.swift */; };
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
@@ -536,6 +537,7 @@
 		3C437F68219961E9008B61DC /* AttachTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttachTableViewCell.xib; sourceTree = "<group>"; };
 		3C437F7321997663008B61DC /* FeedBackImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		3C437F7A2199D744008B61DC /* FeedbackAttachFileIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAttachFileIncome.swift; sourceTree = "<group>"; };
 		3C441B0C2198A39A001F275E /* CellSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSource.swift; sourceTree = "<group>"; };
 		3C4763D7211AC567006D0C1B /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
@@ -1319,6 +1321,7 @@
 				3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */,
 				3CB806002195D5FC00728378 /* FeedBackInitFrom.swift */,
 				3C441B0C2198A39A001F275E /* CellSource.swift */,
+				3C437F7A2199D744008B61DC /* FeedbackAttachFileIncome.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -2435,6 +2438,7 @@
 				3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */,
 				3C82F4702164AA0F0024B3E4 /* ViewController.swift in Sources */,
 				3CA69B8E2193226F009DD38D /* FeedbackTheme.swift in Sources */,
+				3C437F7B2199D744008B61DC /* FeedbackAttachFileIncome.swift in Sources */,
 				3C54A7CB21947918007AEBF2 /* Common.swift in Sources */,
 				3CA3145A218B149800A06369 /* ProfileTableViewCell.swift in Sources */,
 				3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */,

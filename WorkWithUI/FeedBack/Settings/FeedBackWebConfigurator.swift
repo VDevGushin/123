@@ -17,6 +17,8 @@ struct FeedBackWebConfigurator {
         case schools
         case tickets
         case categories
+        case attachments
+
         var value: String {
             return self.rawValue
         }
@@ -37,6 +39,7 @@ struct FeedBackWebConfigurator {
     let queryItems: [URLQueryItem]?
     let header: [String: String]?
     var body: Data?
+    var multipartData: [Data]?
 
     static func getCaptcha() -> FeedBackWebConfigurator {
         let paths = FeedBackComponents.createPath(components: .argus, .api, .captcha)
@@ -44,7 +47,7 @@ struct FeedBackWebConfigurator {
             "Accept": "application/json",
             "Accept-Encoding": " br, gzip, deflate"
         ]
-        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: nil, header: header, body: nil)
+        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: nil, header: header, body: nil, multipartData: nil)
         return configurator
     }
 
@@ -56,7 +59,7 @@ struct FeedBackWebConfigurator {
         ]
         let queryItemPage = URLQueryItem(name: "page", value: "\(page)")
         let queryItemPerPage = URLQueryItem(name: "per_page", value: "\(perPage)")
-        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: [queryItemPage, queryItemPerPage], header: header, body: nil)
+        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: [queryItemPage, queryItemPerPage], header: header, body: nil, multipartData: nil)
         return configurator
     }
 
@@ -67,7 +70,7 @@ struct FeedBackWebConfigurator {
             "Accept": "application/json",
             "Accept-Encoding": " br, gzip, deflate"
         ]
-        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: nil, header: header, body: nil)
+        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "GET", queryItems: nil, header: header, body: nil, multipartData: nil)
         return configurator
     }
 
@@ -82,7 +85,18 @@ struct FeedBackWebConfigurator {
         let q1 = URLQueryItem(name: "captcha_id", value: "\(captchaId)")
         let q2 = URLQueryItem(name: "captcha_value", value: "\(captchaValue)")
 
-        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "POST", queryItems: [q1, q2], header: header, body: data)
+        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "POST", queryItems: [q1, q2], header: header, body: data, multipartData: nil)
+        return configurator
+    }
+
+    static func sendAttach(models: [FeedBackAttachModel]) -> FeedBackWebConfigurator {
+        let paths = FeedBackComponents.createPath(components: .argus, .api, .attachments)
+        let header = [
+            "Accept": "application/json",
+            "Accept-Encoding": " br, gzip, deflate"
+        ]
+        //"Content-Length": "\(model.size)"
+        let configurator = FeedBackWebConfigurator(scheme: "https", host: FeedBackConfig.host, path: paths, method: "POST", queryItems: nil, header: header, body: nil, multipartData: models.map { $0.data })
         return configurator
     }
 }

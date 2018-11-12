@@ -53,32 +53,54 @@ final class FeedBackReportWorker {
             guard let model = FeedBackSendModel(from: sendForm), let data = model.encode() else {
                 return handler(Result.error(FeedBackError.sendModelError))
             }
-
-            let config = FeedBackWebConfigurator.sendFeedBack(captchaId: model.captchaId, captchaValue: model.captchaValue, data: data)
-            let endpoint = FeedBackEndpoint(configurator: config)
-            let request = endpoint.urlRequest()
-            let task = URLSession.shared.dataTask(with: request) { data, response, error in
-                self.isInRequest = false
-                if let error = error { return handler(Result.error(error)) }
-                guard let jsonData = data else { return handler(Result.error(FeedBackError.noData)) }
-                do {
-                    guard let error: FeedBackErrorMessage = try? jsonData.decode(using: FeedBackConfig.decoder),
-                        error.errorCode != nil,
-                        let message = error.errorMessage else {
-                            let model: FeedBackSendModel = try jsonData.decode(using: FeedBackConfig.decoder)
-                            return handler(Result.result(model))
+            //if we have attach
+            if let attach = self.sendForm.attach, !attach.isEmpty {
+                let config = FeedBackWebConfigurator.sendAttach(models: attach)
+                let endpoint = FeedBackEndpoint(configurator: config)
+                let request = endpoint.urlRequest()
+                let task = URLSession.shared.dataTask(with: request) { data, response, error in
+                    self.isInRequest = false
+                    if let error = error { return handler(Result.error(error)) }
+                    guard let jsonData = data else { return handler(Result.error(FeedBackError.noData)) }
+                    do {
+                        
+                    } catch {
+                        handler(Result.error(error))
                     }
-
-                    if message.lowercased().contains("captcha") {
-                        return handler(Result.error(FeedBackError.captcha))
-                    }
-
-                    return handler(Result.error(FeedBackError.sendModelError))
-                } catch {
-                    handler(Result.error(error))
                 }
+                task.resume()
+
+            } else {
+                self.sendReport(model: model, modelData: data, then: handler)
             }
-            task.resume()
         }
+    }
+
+    private func sendReport(model: FeedBackSendModel, modelData: Data, then handler: @escaping Handler) {
+        let config = FeedBackWebConfigurator.sendFeedBack(captchaId: model.captchaId, captchaValue: model.captchaValue, data: modelData)
+        let endpoint = FeedBackEndpoint(configurator: config)
+        let request = endpoint.urlRequest()
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            self.isInRequest = false
+            if let error = error { return handler(Result.error(error)) }
+            guard let jsonData = data else { return handler(Result.error(FeedBackError.noData)) }
+            do {
+                guard let error: FeedBackErrorMessage = try? jsonData.decode(using: FeedBackConfig.decoder),
+                    error.errorCode != nil,
+                    let message = error.errorMessage else {
+                        let model: FeedBackSendModel = try jsonData.decode(using: FeedBackConfig.decoder)
+                        return handler(Result.result(model))
+                }
+
+                if message.lowercased().contains("captcha") {
+                    return handler(Result.error(FeedBackError.captcha))
+                }
+
+                return handler(Result.error(FeedBackError.sendModelError))
+            } catch {
+                handler(Result.error(error))
+            }
+        }
+        task.resume()
     }
 }

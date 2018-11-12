@@ -7,19 +7,45 @@
 //
 
 import UIKit
+import SupportLib
 
 final class FeedBackTableViewController: UITableViewController {
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
-        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: self.view.window)
-    }
-
     typealias doneAction = () -> Void
-
     private let navigator: FeedBackNavigator
     private var source = [CellSource]()
     private lazy var reporter = FeedBackReportWorker()
     private var feedBackFrom: FeedBackInitFrom?
+
+    deinit {
+        loadingView.removeFromSuperview()
+    }
+    
+    private let loadingView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(white: 1, alpha: 0.5)
+        let indicator = UIActivityIndicatorView(frame: .zero)
+        indicator.color = FeedBackStyle.styleColor
+        indicator.startAnimating()
+        view.addSubview(indicator)
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        indicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        indicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        indicator.widthAnchor.constraint(equalToConstant: 48.0).isActive = true
+        indicator.heightAnchor.constraint(equalToConstant: 48.0).isActive = true
+
+        if let delegateView = (UIApplication.shared.delegate as? AppDelegate)?.window {
+            delegateView.addSubview(view)
+            view.translatesAutoresizingMaskIntoConstraints = false
+            view.widthAnchor.constraint(equalTo: delegateView.widthAnchor).isActive = true
+            view.heightAnchor.constraint(equalTo: delegateView.heightAnchor).isActive = true
+            view.leftAnchor.constraint(equalTo: delegateView.leftAnchor).isActive = true
+            view.rightAnchor.constraint(equalTo: delegateView.rightAnchor).isActive = true
+            view.bottomAnchor.constraint(equalTo: delegateView.bottomAnchor).isActive = true
+            view.topAnchor.constraint(equalTo: delegateView.topAnchor).isActive = true
+        }
+
+        return view
+    }()
 
     required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     init(navigator: FeedBackNavigator, initFormData: FeedBackInitFrom?) {
@@ -44,6 +70,11 @@ final class FeedBackTableViewController: UITableViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
         self.tableView.keyboardDismissMode = UIScrollView.KeyboardDismissMode.onDrag
+        self.loading(false)
+    }
+
+    private func loading(_ show: Bool) {
+        self.loadingView.isHidden = !show
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -53,8 +84,11 @@ final class FeedBackTableViewController: UITableViewController {
 
     //Перенести в обработчик
     func doneAction(_ with: FeedBackCellIncomeData) {
+        if case .done = with { self.loading(true) }
+
         self.reporter.sendAction(with) { result in
             DispatchQueue.main.async {
+                self.loading(false)
                 switch result {
                 case .error(let error):
                     switch error {
@@ -63,7 +97,7 @@ final class FeedBackTableViewController: UITableViewController {
                     default: break
                     }
                 case .result:
-                    break
+                    self.navigator.close()
                 }
             }
         }
@@ -86,7 +120,7 @@ final class FeedBackTableViewController: UITableViewController {
 //MARK: - Make source
 fileprivate extension FeedBackTableViewController {
     func getFromNib<T:AnyObject>() -> T { return Bundle.main.loadNibNamed(String(describing: T.self), owner: self, options: nil)?[0] as! T }
-    
+
     func initDataSource() -> [CellSource] {
         var source = [CellSource]()
 
@@ -150,12 +184,12 @@ fileprivate extension FeedBackTableViewController {
                                       action: .setDetail(self.doneAction),
                                       cell: detailCell)
         source.append(detailSource)
-        
+
         let attachCell: AttachTableViewCell = self.getFromNib()
         let attachlSource = CellSource(title: FeedbackStrings.FeedBackView.attachTitle.value,
-                                      cellType: AttachTableViewCell.self,
-                                      action: .attach(self.doneAction),
-                                      cell: attachCell)
+                                       cellType: AttachTableViewCell.self,
+                                       action: .attach(self.doneAction),
+                                       cell: attachCell)
         source.append(attachlSource)
 
         let captchaCell: CaptchaTableViewCell = self.getFromNib()

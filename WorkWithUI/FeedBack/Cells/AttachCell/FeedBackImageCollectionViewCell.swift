@@ -10,10 +10,17 @@ import UIKit
 
 struct FeedBackAttachModel: Hashable {
     let image: UIImage
+    let data: Data
+    let bytes: [UInt8]
     let id: ObjectIdentifier
-    init(image: UIImage) {
+    var size: Int {
+        return self.bytes.count
+    }
+    init(image: UIImage, data: Data) {
+        self.data = data
         self.image = image
         self.id = ObjectIdentifier(self.image)
+        self.bytes = [UInt8](data)
     }
 }
 

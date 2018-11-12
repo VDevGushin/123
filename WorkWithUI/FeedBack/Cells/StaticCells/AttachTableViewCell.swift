@@ -11,6 +11,7 @@ import SupportLib
 
 class AttachTableViewCell: UITableViewCell, IFeedbackStaticCell {
     private let maxAttachFiles = 5
+    private let maxFileSize = 30.0
     weak var viewController: UIViewController?
     @IBOutlet weak var fileSource: UICollectionView!
     @IBOutlet weak var addButton: UIButton!
@@ -45,11 +46,19 @@ class AttachTableViewCell: UITableViewCell, IFeedbackStaticCell {
     }
 
     private func get(selected image: UIImage?) {
-        guard let image = image else { return }
-        self.images.append(FeedBackAttachModel(image: image))
-        self.fileSource.reloadData()
-        self.checkAddButtonEnabled()
-        self.handle()
+        DispatchQueue.global(qos: .utility).async { [weak self] in
+            guard let image = image, let uploadData = image.jpegData(compressionQuality: 1) else { return }
+            guard let wSelf = self else { return }
+            let array = [UInt8](uploadData)
+            let sizeMB = Double(array.count) / 1024.0 / 1024.0
+            if sizeMB > wSelf.maxFileSize { return }
+            DispatchQueue.main.async {
+                wSelf.images.append(FeedBackAttachModel(image: image, data: uploadData))
+                wSelf.fileSource.reloadData()
+                wSelf.checkAddButtonEnabled()
+                wSelf.handle()
+            }
+        }
     }
 
     private func deleteAttach(id: ObjectIdentifier) {
