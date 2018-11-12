@@ -17,7 +17,8 @@ class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textInput: UITextView!
 
-    func config(value: String, action: FeedBackCellAction) {
+    weak var viewController: UIViewController?
+    func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
         if isReady { return }
         self.isReady.toggle()
         self.titleLabel.text = value

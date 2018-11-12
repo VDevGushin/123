@@ -17,12 +17,14 @@ class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
     @IBOutlet weak var captcha: CaptchaView!
     @IBOutlet weak var input: UITextField!
 
-    func config(value: String, action: FeedBackCellAction) {
+    weak var viewController: UIViewController?
+    func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
         if isReady { return }
         self.isReady.toggle()
         self.titleLabel.text = value
         self.action = action
         self.normalInputStyle()
+        self.viewController = viewController
         self.input.delegate = self
     }
 

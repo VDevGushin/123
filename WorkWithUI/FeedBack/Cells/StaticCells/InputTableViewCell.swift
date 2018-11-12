@@ -18,7 +18,8 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
 
     @IBOutlet weak var textFieldHeight: NSLayoutConstraint!
 
-    func config(value: String, action: FeedBackCellAction) {
+    weak var viewController: UIViewController?
+    func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
         if isReady { return }
         self.isReady.toggle()
 

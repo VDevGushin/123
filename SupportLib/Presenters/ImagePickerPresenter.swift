@@ -9,9 +9,6 @@
 import UIKit
 
 public class ImagePickerPresenter: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    deinit {
-        print("test")
-    }
     private lazy var imagePicker = UIImagePickerController()
     private let viewController: UIViewController
     private let handler: (UIImage?) -> Void

@@ -115,6 +115,8 @@
 		3C41F92E216119EC002334DB /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F92D216119EC002334DB /* Double+Extension.swift */; };
 		3C437F69219961E9008B61DC /* AttachTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C437F67219961E9008B61DC /* AttachTableViewCell.swift */; };
 		3C437F6A219961E9008B61DC /* AttachTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C437F68219961E9008B61DC /* AttachTableViewCell.xib */; };
+		3C437F7521997663008B61DC /* FeedBackImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C437F7321997663008B61DC /* FeedBackImageCollectionViewCell.swift */; };
+		3C437F7621997663008B61DC /* FeedBackImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */; };
 		3C441B0D2198A39A001F275E /* CellSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C441B0C2198A39A001F275E /* CellSource.swift */; };
 		3C4763D8211AC567006D0C1B /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4763D7211AC567006D0C1B /* CustomOperators.swift */; };
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
@@ -532,6 +534,8 @@
 		3C41F92D216119EC002334DB /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		3C437F67219961E9008B61DC /* AttachTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachTableViewCell.swift; sourceTree = "<group>"; };
 		3C437F68219961E9008B61DC /* AttachTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttachTableViewCell.xib; sourceTree = "<group>"; };
+		3C437F7321997663008B61DC /* FeedBackImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		3C441B0C2198A39A001F275E /* CellSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSource.swift; sourceTree = "<group>"; };
 		3C4763D7211AC567006D0C1B /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
@@ -946,6 +950,8 @@
 				3C7A5AC6219336FD00DE016B /* StaticCells */,
 				3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */,
 				3C1DB1A42192CD54001BD557 /* SourceTableViewCell.xib */,
+				3C437F7321997663008B61DC /* FeedBackImageCollectionViewCell.swift */,
+				3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2188,6 +2194,7 @@
 				3CF58ADA218837F0008FEB6D /* MessageTableViewCell.xib in Resources */,
 				3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */,
 				3C7A5AD22193376500DE016B /* CaptchaTableViewCell.xib in Resources */,
+				3C437F7621997663008B61DC /* FeedBackImageCollectionViewCell.xib in Resources */,
 				3C437F6A219961E9008B61DC /* AttachTableViewCell.xib in Resources */,
 				3C54A7CF219483E3007AEBF2 /* FeedBackTableViewController.xib in Resources */,
 				3C82F4782164AA120024B3E4 /* LaunchScreen.storyboard in Resources */,
@@ -2423,6 +2430,7 @@
 				3C54A7CB21947918007AEBF2 /* Common.swift in Sources */,
 				3CA3145A218B149800A06369 /* ProfileTableViewCell.swift in Sources */,
 				3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */,
+				3C437F7521997663008B61DC /* FeedBackImageCollectionViewCell.swift in Sources */,
 				3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */,
 				3CF58AE721883CF0008FEB6D /* ChatBaseViewController.swift in Sources */,
 				3C7A5ADB21934A8200DE016B /* DoneTableViewCell.swift in Sources */,

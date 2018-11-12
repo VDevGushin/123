@@ -17,7 +17,8 @@ class DoneTableViewCell: UITableViewCell, IFeedbackStaticCell {
     var action: FeedBackCellAction?
     @IBOutlet private weak var sendButton: UIButton!
 
-    func config(value: String, action: FeedBackCellAction) {
+    weak var viewController: UIViewController?
+    func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
         if isReady { return }
         self.isReady.toggle()
         self.action = action
