@@ -19,7 +19,7 @@ class AttachTableViewCell: UITableViewCell, IFeedbackStaticCell {
     var action: FeedBackCellAction?
     var initialSource: FeedBackCellIncomeData?
     var isReady: Bool = false
-    private var images = Set<UIImage>()
+    private var images = [FeedBackAttachModel]()
 
     func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
         if isReady { return }
@@ -31,20 +31,11 @@ class AttachTableViewCell: UITableViewCell, IFeedbackStaticCell {
         self.imagePicker = ImagePickerPresenter.init(viewController: self.viewController!, getImageHandler: get)
 
         //config table
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        self.fileSource.collectionViewLayout = layout
-        self.fileSource.showsHorizontalScrollIndicator = false
-        self.fileSource.translatesAutoresizingMaskIntoConstraints = false
-        self.fileSource.backgroundColor = UIColor.clear
-        self.fileSource.allowsMultipleSelection = false
-        self.fileSource.delegate = self
-        self.fileSource.dataSource = self
-        self.fileSource.registerWithNib(FeedBackImageCollectionViewCell.self)
+        FeedBackStyle.collectionView(self.fileSource, self, [FeedBackImageCollectionViewCell.self])
     }
 
-    func check() { return }
+    func check() { self.handle() }
+
     func setValue(with: String) { return }
 
     @IBAction func addAction(_ sender: Any) {
@@ -55,14 +46,38 @@ class AttachTableViewCell: UITableViewCell, IFeedbackStaticCell {
 
     private func get(selected image: UIImage?) {
         guard let image = image else { return }
-        self.images.insert(image)
+        self.images.append(FeedBackAttachModel(image: image))
         self.fileSource.reloadData()
+        self.checkAddButtonEnabled()
+        self.handle()
+    }
+
+    private func deleteAttach(id: ObjectIdentifier) {
+        self.images.removeAll { $0.id == id }
+        self.fileSource.reloadData()
+        self.checkAddButtonEnabled()
+        self.handle()
+    }
+
+    private func handle() {
+        guard let action = self.action else { return }
+        if !images.isEmpty {
+            if case .attach(let handler) = action {
+                handler(.attach(with: self.images))
+            }
+        }
+    }
+
+    private func checkAddButtonEnabled() {
+        self.addButton.isEnabled = true
+        if self.images.count >= self.maxAttachFiles {
+            self.addButton.isEnabled = false
+        }
     }
 }
 
 extension AttachTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.images.count
@@ -70,15 +85,12 @@ extension AttachTableViewCell: UICollectionViewDelegate, UICollectionViewDataSou
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(type: FeedBackImageCollectionViewCell.self, indexPath: indexPath)!
-        cell.fileImage?.image = Array(images)[indexPath.row]
+        cell.configure(with: Array(images)[indexPath.row], deleteHandler: deleteAttach)
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if self.images.isEmpty {
-            return CGSize(width: 0, height: 0)
-        }
-        return CGSize(width: 60, height: 60)
+        return CGSize(width: 100, height: 100)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

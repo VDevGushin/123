@@ -21,13 +21,24 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fBy-NP-WTH">
                         <rect key="frame" x="0.0" y="0.0" width="178" height="198"/>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leE-DP-HrF">
+                        <rect key="frame" x="44.5" y="49" width="89" height="100"/>
+                        <state key="normal" image="delete"/>
+                        <connections>
+                            <action selector="deleteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="JsY-Vb-XIG"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="leE-DP-HrF" firstAttribute="centerY" secondItem="fBy-NP-WTH" secondAttribute="centerY" id="AEg-MU-QaF"/>
+                <constraint firstItem="leE-DP-HrF" firstAttribute="width" secondItem="fBy-NP-WTH" secondAttribute="width" multiplier="1/2" id="JRg-DT-oG4"/>
                 <constraint firstAttribute="bottom" secondItem="fBy-NP-WTH" secondAttribute="bottom" id="LnN-3R-LdE"/>
+                <constraint firstItem="leE-DP-HrF" firstAttribute="centerX" secondItem="fBy-NP-WTH" secondAttribute="centerX" id="ObY-jk-gmc"/>
                 <constraint firstItem="fBy-NP-WTH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XqZ-oo-WgX"/>
                 <constraint firstAttribute="trailing" secondItem="fBy-NP-WTH" secondAttribute="trailing" id="hi2-l6-wR8"/>
                 <constraint firstItem="fBy-NP-WTH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ine-3p-oK4"/>
+                <constraint firstItem="leE-DP-HrF" firstAttribute="height" secondItem="fBy-NP-WTH" secondAttribute="height" multiplier="1/2" constant="1" id="qvS-Pz-6lU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="178" height="198"/>
@@ -37,4 +48,7 @@
             <point key="canvasLocation" x="168" y="115.14242878560721"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="delete" width="43" height="43"/>
+    </resources>
 </document>

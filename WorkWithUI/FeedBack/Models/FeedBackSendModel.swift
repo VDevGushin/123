@@ -114,7 +114,7 @@ final class SendForm {
     var captcha: String?
     var captchaId: String?
     var detail: String?
-    var attach: [Any]?
+    var attach: [FeedBackAttachModel]?
     
     var isValid: Bool {
         if name != nil &&

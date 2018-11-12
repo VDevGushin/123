@@ -91,7 +91,7 @@ class FeedBackSearchViewController: UIViewController {
     @objc func closeSelection() {
         self.navigator.back()
     }
-    
+
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: self.view.window)
         NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: self.view.window)
@@ -164,6 +164,10 @@ extension FeedBackSearchViewController: IFeedBackWorkerDelegate {
     func sourceChanged<T>(isFirstTime: Bool, source: T) {
         guard let result = source as? [ISource] else { return }
         DispatchQueue.main.async {
+            self.contentTable.tableHeaderView = self.resultSearchController.searchBar
+            if result.count <= 1 {
+                self.contentTable.tableHeaderView = nil
+            }
             if isFirstTime {
                 self.source = result
                 self.contentTable.reloadData()

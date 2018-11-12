@@ -154,7 +154,7 @@ fileprivate extension FeedBackTableViewController {
         let attachCell: AttachTableViewCell = self.getFromNib()
         let attachlSource = CellSource(title: FeedbackStrings.FeedBackView.attachTitle.value,
                                       cellType: AttachTableViewCell.self,
-                                      action: .setDetail(self.doneAction),
+                                      action: .attach(self.doneAction),
                                       cell: attachCell)
         source.append(attachlSource)
 

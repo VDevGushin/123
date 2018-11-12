@@ -113,4 +113,21 @@ final class FeedBackStyle {
             textfield.textColor = FeedBackStyle.styleColor
         }
     }
+
+    static let collectionView: CollectionDecoration = { (_ collection: UICollectionView, delegate: UICollectionViewDelegate&UICollectionViewDataSource, cellTypes: [UICollectionViewCell.Type]) -> Void in
+        cellTypes.forEach {
+            collection.registerWithNib($0)
+        }
+
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        collection.collectionViewLayout = layout
+        collection.showsHorizontalScrollIndicator = false
+        collection.translatesAutoresizingMaskIntoConstraints = false
+        collection.backgroundColor = UIColor.clear
+        collection.allowsMultipleSelection = false
+        collection.delegate = delegate
+        collection.dataSource = delegate
+    }
 }

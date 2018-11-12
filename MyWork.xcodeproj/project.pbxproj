@@ -947,11 +947,10 @@
 		3C1DB1A22192CD19001BD557 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				3C437F7921999791008B61DC /* AttachCell */,
 				3C7A5AC6219336FD00DE016B /* StaticCells */,
 				3C1DB1A32192CD54001BD557 /* SourceTableViewCell.swift */,
 				3C1DB1A42192CD54001BD557 /* SourceTableViewCell.xib */,
-				3C437F7321997663008B61DC /* FeedBackImageCollectionViewCell.swift */,
-				3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1277,6 +1276,15 @@
 				3C41F92B21611953002334DB /* CollectionViewDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		3C437F7921999791008B61DC /* AttachCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C437F7321997663008B61DC /* FeedBackImageCollectionViewCell.swift */,
+				3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */,
+			);
+			path = AttachCell;
 			sourceTree = "<group>";
 		};
 		3C55FDFF213FC4AC00ABA745 /* Habr */ = {

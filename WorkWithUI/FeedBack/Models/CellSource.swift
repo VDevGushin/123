@@ -63,7 +63,7 @@ enum FeedBackCellIncomeData {
     case theme(with: FeedbackTheme?)
     case captcha(id: String?, text: String?)
     case detail(with: String?)
-    case attach(with : [Any])
+    case attach(with : [FeedBackAttachModel])
     case done
 }
 
