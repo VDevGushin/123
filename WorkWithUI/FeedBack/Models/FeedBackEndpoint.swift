@@ -58,15 +58,14 @@ struct FeedBackEndpoint {
 
     private func createBody(boundary: String, items: [Item]) -> Data {
         let body = NSMutableData()
-        var counter = 1
-        for item in items {
+        for index in 1...items.count {
+            let item = items[index - 1]
             let boundaryPrefix = "--\(boundary)\r\n"
             body.appendString(boundaryPrefix)
-            body.appendString("Content-Disposition: form-data; name=\"file\(counter)\"; filename=\"\(item.filename)\"\r\n")
+            body.appendString("Content-Disposition: form-data; name=\"file\(index)\"; filename=\"\(item.filename)\"\r\n")
             body.appendString("Content-Type: \(item.mimeType)\r\n\r\n")
             body.append(item.data)
             body.appendString("\r\n")
-            counter += 1
         }
         body.appendString("--".appending(boundary.appending("--")))
         return body as Data

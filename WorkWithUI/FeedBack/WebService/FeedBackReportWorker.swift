@@ -50,27 +50,23 @@ final class FeedBackReportWorker {
 
     private func sendFeedBack(_ sendForm: SendForm, then handler: @escaping Handler) {
         DispatchQueue.global(qos: .utility).async {
-            guard let model = FeedBackSendModel(from: sendForm), let data = model.encode() else {
-                return handler(Result.error(FeedBackError.sendModelError))
-            }
+            guard var model = FeedBackSendModel(from: sendForm) else { return handler(Result.error(FeedBackError.invalidModel)) }
             //if we have attach
             if let attach = self.sendForm.attach, !attach.isEmpty {
                 let config = FeedBackWebConfigurator.sendAttach(models: attach)
-                let endpoint = FeedBackEndpoint(configurator: config)
-                let request = endpoint.urlRequest()
+                let request = FeedBackEndpoint(configurator: config).urlRequest()
                 let task = URLSession.shared.dataTask(with: request) { data, response, error in
-                    self.isInRequest = false
                     if let error = error { return handler(Result.error(error)) }
                     guard let jsonData = data else { return handler(Result.error(FeedBackError.noData)) }
-                    do {
-                        
-                    } catch {
-                        handler(Result.error(error))
-                    }
+
+                    if let files: FeedbackAttachFileIncomes = try? jsonData.decode(using: FeedBackConfig.decoder) { model.attachments = files.map { $0.id } }
+
+                    guard let data = model.encode() else { return handler(Result.error(FeedBackError.sendModelError)) }
+                    self.sendReport(model: model, modelData: data, then: handler)
                 }
                 task.resume()
-
             } else {
+                guard let data = model.encode() else { return handler(Result.error(FeedBackError.sendModelError)) }
                 self.sendReport(model: model, modelData: data, then: handler)
             }
         }

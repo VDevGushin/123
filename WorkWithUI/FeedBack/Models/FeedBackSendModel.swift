@@ -31,7 +31,7 @@ struct FeedBackSendModel: Codable {
     let organizationID: Int
     let problemType, email: String
     let status: String
-    let attachments: [Int] = []
+    var attachments: [String] = []
 
     let middleName: String?
     let phone: String?
