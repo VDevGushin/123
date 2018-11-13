@@ -9,13 +9,18 @@
 import Foundation
 import UIKit
 
+protocol IFeedbackStaticCellDelegate: class {
+    func cellSource(with: FeedBackCellIncomeData)
+}
+
 protocol IFeedbackStaticCell: class {
+    var navigator: FeedBackNavigator? { get set }
+    var delegate: IFeedbackStaticCellDelegate? { get set }
     var viewController: UIViewController? { get set }
-    var action: FeedBackCellAction? { get set }
     var titleLabel: UILabel! { get set }
-    func config(value: String, action: FeedBackCellAction, viewController: UIViewController)
     var isReady: Bool { get set }
+    var type: StaticCellType? { get set }
+    func config(value: String, type: StaticCellType, viewController: UIViewController, navigator: FeedBackNavigator?, delegate: IFeedbackStaticCellDelegate?)
     func check()
-    var initialSource: FeedBackCellIncomeData? { get set }
     func setValue(with: String)
 }

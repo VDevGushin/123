@@ -9,20 +9,26 @@
 import UIKit
 
 class CaptchaTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var initialSource: FeedBackCellIncomeData?
+    weak var navigator: FeedBackNavigator?
+    weak var delegate: IFeedbackStaticCellDelegate?
+
+    var type: StaticCellType?
+
     var isReady: Bool = false
 
-    var action: FeedBackCellAction?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var captcha: CaptchaView!
     @IBOutlet weak var input: UITextField!
 
     weak var viewController: UIViewController?
-    func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
+
+    func config(value: String, type: StaticCellType, viewController: UIViewController, navigator: FeedBackNavigator?, delegate: IFeedbackStaticCellDelegate?) {
         if isReady { return }
         self.isReady.toggle()
+        self.navigator = navigator
+        self.delegate = delegate
         self.titleLabel.text = value
-        self.action = action
+        self.type = type
         self.normalInputStyle()
         self.viewController = viewController
         self.input.delegate = self
@@ -67,20 +73,18 @@ extension CaptchaTableViewCell: UITextFieldDelegate {
     }
 
     func inputEditAction(with text: String?) {
-        guard let action = self.action else { return }
-        switch action {
-        case .setCaptcha(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.captcha(id: result.id, text: result.text))
-        default:
-            break
+        guard let type = self.type else { return }
+
+        if case .captcha = type {
+            let result = self.validResult(string: text, type: type)
+            delegate?.cellSource(with: .captcha(id: result.id, text: result.text))
         }
     }
 
     @discardableResult
-    func validResult(string: String?, action: FeedBackCellAction) -> (id: String?, text: String?) {
+    func validResult(string: String?, type: StaticCellType) -> (id: String?, text: String?) {
         guard let string = string, let captchaId = self.captcha.getModel()?.id else { return (nil, nil) }
-        if case .setCaptcha = action {
+        if case .captcha = type {
             if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty && !captchaId.isEmpty {
                 self.normalInputStyle()
                 return (captchaId, string)

@@ -14,7 +14,7 @@ final class FeedBackReportWorker {
     typealias Handler = (Result<(Any)>) -> Void
     private var isInRequest: Bool = false
 
-    func sendAction(_ with: FeedBackCellIncomeData, then handler: @escaping Handler) {
+    func tryToSendReport(_ with: FeedBackCellIncomeData, then handler: @escaping Handler) {
         switch with {
         case .captcha(id: let id, text: let text):
             self.sendForm.captcha = text

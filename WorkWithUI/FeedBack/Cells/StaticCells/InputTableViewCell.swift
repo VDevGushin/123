@@ -9,29 +9,33 @@
 import UIKit
 
 class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var initialSource: FeedBackCellIncomeData?
+    weak var navigator: FeedBackNavigator?
+    weak var delegate: IFeedbackStaticCellDelegate?
+    weak var viewController: UIViewController?
+    var type: StaticCellType?
     var isReady: Bool = false
-    var action: FeedBackCellAction?
+
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var inputField: UITextField!
     @IBOutlet weak var actionBitton: UIButton!
 
     @IBOutlet weak var textFieldHeight: NSLayoutConstraint!
 
-    weak var viewController: UIViewController?
-    func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
+    func config(value: String, type: StaticCellType, viewController: UIViewController, navigator: FeedBackNavigator?, delegate: IFeedbackStaticCellDelegate?) {
         if isReady { return }
         self.isReady.toggle()
-
+        self.navigator = navigator
+        self.delegate = delegate
         self.titleLabel.text = value
-        self.action = action
+        self.type = type
         self.normalInputStyle()
         self.actionBitton.isHidden = true
-        if let action = self.action {
-            switch action {
-            case .setOrganisation, .setTheme:
+        self.inputField.delegate = self
+        if let type = self.type {
+            switch type {
+            case .organisation, .theme:
                 self.actionBitton.isHidden = false
-            case .setPhone:
+            case .phone:
                 self.inputField.keyboardType = .numberPad
                 self.actionBitton.isHidden = true
             default:
@@ -44,24 +48,20 @@ class InputTableViewCell: UITableViewCell, IFeedbackStaticCell {
         self.inputEditAction(with: inputField.text)
     }
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.inputField.delegate = self
-    }
-
     func check() {
         self.inputEditAction(with: inputField.text)
     }
 
     @IBAction func openSelectionAction(_ sender: Any) {
-        guard let action = self.action else { return }
-        if case FeedBackCellAction.setOrganisation(let navigator, _) = action {
-            navigator.navigate(to: .selection(title: titleLabel.text!, worker: OrganisationWorker(), delegate: self))
+        guard let type = self.type else { return }
+
+        if case .organisation = type {
+            self.navigator?.navigate(to: .selection(title: titleLabel.text!, worker: OrganisationWorker(), delegate: self))
         }
 
-        if case FeedBackCellAction.setTheme(let navigator, _) = action {
+        if case .theme = type {
             let title = titleLabel.text!.replacingOccurrences(of: "*", with: "")
-            navigator.navigate(to: .selection(title: title, worker: ThemesWorker(), delegate: self))
+            self.navigator?.navigate(to: .selection(title: title, worker: ThemesWorker(), delegate: self))
         }
     }
 
@@ -91,52 +91,51 @@ extension InputTableViewCell: UITextFieldDelegate {
     }
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let action = self.action else { return false }
-        switch action {
-        case .setOrganisation, .setTheme: return false
+        guard let type = self.type else { return false }
+        switch type {
+        case .organisation, .theme: return false
         default: return true
         }
     }
 
     func inputEditAction(with text: String?) {
-        guard let action = self.action else { return }
-        switch action {
-        case .setName(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.name(with: result))
+        guard let type = self.type else { return }
+        switch type {
+        case .name:
+            let result = self.validResult(string: text)
+            delegate?.cellSource(with: .name(with: result))
+        case .lastName:
+            let result = self.validResult(string: text)
+            delegate?.cellSource(with: .lastName(with: result))
 
-        case .setLastName(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.lastName(with: result))
+        case .middleName:
+            let result = self.validResult(string: text)
+            delegate?.cellSource(with: .middleName(with: result))
 
-        case .setMiddleName(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.middleName(with: result))
+        case .detail:
+            let result = self.validResult(string: text)
+            delegate?.cellSource(with: .detail(with: result))
 
-        case .setDetail(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.detail(with: result))
+        case .mail:
+            let result = self.validResult(string: text)
+            delegate?.cellSource(with: .mail(with: result))
 
-        case .setMail(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.mail(with: result))
+        case .phone:
+            let result = self.validResult(string: text)
+            delegate?.cellSource(with: .phone(with: result))
 
-        case .setPhone(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.phone(with: result))
-
-        case .setOrganisation, .setTheme:
-            self.validResult(string: text, action: action)
+        case .organisation, .theme:
+            self.validResult(string: text)
         default:
             break
         }
     }
 
     @discardableResult
-    func validResult(string: String?, action: FeedBackCellAction) -> String? {
-        guard let string = string else { return nil }
-        switch action {
-        case .setMail:
+    func validResult(string: String?) -> String? {
+        guard let string = string , let type = self.type else { return nil }
+        switch type {
+        case .mail:
             let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
             let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
             if emailTest.evaluate(with: string) {
@@ -145,7 +144,7 @@ extension InputTableViewCell: UITextFieldDelegate {
             }
             self.wrongInputStyle()
             return nil
-        case .setName, .setLastName, .setOrganisation, .setTheme:
+        case .name, .lastName, .organisation, .theme:
             if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                 self.normalInputStyle()
                 return string
@@ -160,18 +159,18 @@ extension InputTableViewCell: UITextFieldDelegate {
 
 extension InputTableViewCell: FeedBackSearchViewControllerDelegate {
     func selectSource<T>(selected: T) {
-        guard let action = self.action else { return }
+        guard let type = self.type else { return }
 
-        if case FeedBackCellAction.setOrganisation(_, let then) = action, let model = selected as? Organisation {
+        if case .organisation = type, let model = selected as? Organisation {
             self.inputField.text = model.shortTitle
-            then(FeedBackCellIncomeData.organisation(with: model))
+            delegate?.cellSource(with: .organisation(with: model))
         }
 
-        if case FeedBackCellAction.setTheme(_, let then) = action, let model = selected as? FeedbackTheme {
+        if case .theme = type, let model = selected as? FeedbackTheme {
             self.inputField.text = model.title
-            then(FeedBackCellIncomeData.theme(with: model))
+            delegate?.cellSource(with: .theme(with: model))
         }
 
-        validResult(string: self.inputField.text, action: action)
+        validResult(string: self.inputField.text)
     }
 }

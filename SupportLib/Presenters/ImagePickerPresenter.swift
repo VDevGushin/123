@@ -10,7 +10,7 @@ import UIKit
 
 public class ImagePickerPresenter: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     private lazy var imagePicker = UIImagePickerController()
-    private let viewController: UIViewController
+    private unowned let viewController: UIViewController
     private let handler: (UIImage?) -> Void
 
     public init(viewController: UIViewController, getImageHandler: @escaping (UIImage?) -> Void) {

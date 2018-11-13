@@ -9,20 +9,22 @@
 import UIKit
 
 class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
-    var initialSource: FeedBackCellIncomeData?
-    
+    weak var navigator: FeedBackNavigator?
+    weak var delegate: IFeedbackStaticCellDelegate?
+    var type: StaticCellType?
     var isReady: Bool = false
-    
-    var action: FeedBackCellAction?
+
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textInput: UITextView!
 
     weak var viewController: UIViewController?
-    func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
+    func config(value: String, type: StaticCellType, viewController: UIViewController, navigator: FeedBackNavigator?, delegate: IFeedbackStaticCellDelegate?) {
         if isReady { return }
         self.isReady.toggle()
+        self.delegate = delegate
+        self.navigator = navigator
         self.titleLabel.text = value
-        self.action = action
+        self.type = type
         normalInputStyle()
         textInput.delegate = self
     }
@@ -40,10 +42,8 @@ class MultiIInputTableViewCell: UITableViewCell, IFeedbackStaticCell {
     func check() {
         self.inputEditAction(with: textInput.text)
     }
-    
-    func setValue(with: String){
-        
-    }
+
+    func setValue(with: String) { }
 }
 
 extension MultiIInputTableViewCell: UITextViewDelegate {
@@ -57,20 +57,16 @@ extension MultiIInputTableViewCell: UITextViewDelegate {
     }
 
     func inputEditAction(with text: String?) {
-        guard let action = self.action else { return }
-        switch action {
-        case .setDetail(let handler):
-            let result = self.validResult(string: text, action: action)
-            handler(.detail(with: result))
-        default:
-            break
+        if let type = self.type, case .detail = type {
+            let result = self.validResult(string: text, type: type)
+            delegate?.cellSource(with: .detail(with: result))
         }
     }
 
     @discardableResult
-    func validResult(string: String?, action: FeedBackCellAction) -> String? {
+    func validResult(string: String?, type: StaticCellType) -> String? {
         guard let string = string else { return nil }
-        if case .setDetail = action {
+        if case .detail = type {
             if !string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
                 self.normalInputStyle()
                 return string

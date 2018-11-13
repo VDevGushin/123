@@ -10,6 +10,10 @@ import UIKit
 import SupportLib
 
 class AttachTableViewCell: UITableViewCell, IFeedbackStaticCell {
+    weak var navigator: FeedBackNavigator?
+    weak var delegate: IFeedbackStaticCellDelegate?
+    var type: StaticCellType?
+
     private let maxAttachFiles = 5
     private let maxFileSize = 30.0
     weak var viewController: UIViewController?
@@ -17,24 +21,24 @@ class AttachTableViewCell: UITableViewCell, IFeedbackStaticCell {
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     private var imagePicker: ImagePickerPresenter?
-    var action: FeedBackCellAction?
-    var initialSource: FeedBackCellIncomeData?
+    
     var isReady: Bool = false
     private var images = [FeedBackAttachModel]()
 
-    func config(value: String, action: FeedBackCellAction, viewController: UIViewController) {
+    func config(value: String, type: StaticCellType, viewController: UIViewController, navigator: FeedBackNavigator?, delegate: IFeedbackStaticCellDelegate?) {
         if isReady { return }
         self.isReady.toggle()
+        self.delegate = delegate
+        self.navigator = navigator
         self.viewController = viewController
         self.titleLabel.text = value
-        self.action = action
+        self.type = type
         FeedBackStyle.titleLabel(self.titleLabel)
-        self.imagePicker = ImagePickerPresenter.init(viewController: self.viewController!, getImageHandler: get)
+        self.imagePicker = ImagePickerPresenter(viewController: self.viewController!, getImageHandler: get)
 
         //config table
         FeedBackStyle.collectionView(self.fileSource, self, [FeedBackImageCollectionViewCell.self])
     }
-
     func check() { self.handle() }
 
     func setValue(with: String) { return }
@@ -69,10 +73,10 @@ class AttachTableViewCell: UITableViewCell, IFeedbackStaticCell {
     }
 
     private func handle() {
-        guard let action = self.action else { return }
+        guard let type = self.type else { return }
         if !images.isEmpty {
-            if case .attach(let handler) = action {
-                handler(.attach(with: self.images))
+            if case .attach = type {
+                delegate?.cellSource(with: .attach(with: self.images))
             }
         }
     }
