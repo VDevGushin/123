@@ -20,7 +20,7 @@ protocol IFeedbackStaticCell: class {
     var titleLabel: UILabel! { get set }
     var isReady: Bool { get set }
     var type: StaticCellType? { get set }
-    func config(value: String, type: StaticCellType, viewController: UIViewController, navigator: FeedBackNavigator?, delegate: IFeedbackStaticCellDelegate?)
+    func config(value: String, type: StaticCellType, viewController: UIViewController, navigator: FeedBackNavigator?, delegate : IFeedbackStaticCellDelegate?)
     func check()
     func setValue(with: String)
 }

@@ -133,11 +133,13 @@ extension InputTableViewCell: UITextFieldDelegate {
 
     @discardableResult
     func validResult(string: String?) -> String? {
-        guard let string = string , let type = self.type else { return nil }
+        guard let string = string,
+            let type = self.type else { return nil }
+
         switch type {
         case .mail:
-            let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-            let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
+            var emailTest: NSPredicate! = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}")
+            defer { emailTest = nil }
             if emailTest.evaluate(with: string) {
                 self.normalInputStyle()
                 return string

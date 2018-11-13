@@ -112,7 +112,10 @@ final class FeedBackTableViewController: UITableViewController, IFeedbackStaticC
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellSource = self.source[indexPath.item]
         let cell = cellSource.cell
-        (cell as! IFeedbackStaticCell).config(value: cellSource.title, type: cellSource.type, viewController: self, navigator: self.navigator, delegate: self)
+        let specialCell = cell as! IFeedbackStaticCell
+        if !specialCell.isReady {
+            specialCell.config(value: cellSource.title, type: cellSource.type, viewController: self, navigator: self.navigator, delegate: self)
+        }
         cell.selectionStyle = .none
         return cell
     }
