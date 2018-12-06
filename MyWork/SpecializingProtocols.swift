@@ -17,24 +17,7 @@ fileprivate protocol IAuthenticatedUser: IUser {
     var accessToken: String { get }
 }
 
-
-/*
- class DataLoader {
- func load(from endpoint: ProtectedEndpoint,
- onBehalfOf user: AuthenticatedUser,
- then: @escaping (Result<Data>) -> Void) {
- // Since 'AuthenticatedUser' inherits from 'User', we
- // get full access to all properties from both protocols.
- let request = makeRequest(for: endpoint,
- userID: user.id,
- accessToken: user.accessToken)
-
- }
- }
- */
-
 // MARK: - Specialization
-
 fileprivate protocol Component {
     associatedtype Container
     func add(to container: Container)

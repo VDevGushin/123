@@ -8,6 +8,8 @@
 
 import UIKit
 
+//Предотвращение представлений от модели Aware
+//Первый легкий вариант
 private class UserTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -15,9 +17,7 @@ private class UserTableViewCell: UITableViewCell {
         imageView?.layer.masksToBounds = true
         imageView?.layer.cornerRadius = image.bounds.height / 2
     }
-}
 
-extension UserTableViewCell {
     func configure(with user: User) {
         textLabel?.text = user.firstName
         imageView?.image = user.profileImage
@@ -25,9 +25,10 @@ extension UserTableViewCell {
 }
 
 // MARK: - more clear code
+// Добавляется варинат специфичного поведения с условиями
 
 extension UserTableViewCell {
-    func configureV2(with user: User) {
+    func configureIsFriend(with user: User) {
         textLabel?.text = user.firstName
         imageView?.image = user.profileImage
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Vladislav Gushin. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /*
  {
@@ -42,3 +42,72 @@ func test() {
     let productObject = Product(title: "Cheese", price: 10.5, quantity: 1)
     let encodedData = try? JSONEncoder().encode(productObject)
 }
+
+
+struct Bread {
+    var type: String
+}
+
+protocol IBreadBuilder {
+    var bread: Bread? { get set }
+    func createBread()
+    func buildWhiteBread()
+    func buildBlackBread()
+    func buildPadBread()
+    func buildMacBread()
+    func getBread() -> Bread?
+    func buldSpecialBread()
+}
+
+class BreadBuilder: IBreadBuilder {
+    var bread: Bread?
+
+    func createBread() {
+        self.bread = Bread(type: "хлеб")
+    }
+
+    func buildWhiteBread() {
+        self.bread?.type += " белый"
+    }
+
+    func buildBlackBread() {
+        self.bread?.type += " черный"
+    }
+
+    func buildPadBread() {
+        self.bread?.type += " поджарка"
+    }
+
+    func buildMacBread() {
+        self.bread?.type += " мак"
+    }
+
+    func buldSpecialBread() {
+        self.buildWhiteBread()
+        self.buildPadBread()
+        self.buildMacBread()
+    }
+
+    func getBread() -> Bread? {
+        return self.bread
+    }
+}
+
+class VC: UIViewController {
+    private let breadBulder: IBreadBuilder
+    init(breadBulder: IBreadBuilder) {
+        self.breadBulder = breadBulder
+        breadBulder.createBread()
+        breadBulder.buldSpecialBread()
+        let bread = breadBulder.getBread()
+        breadBulder.createBread()
+        breadBulder.buldSpecialBread()
+        let bread2 = breadBulder.getBread()
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
