@@ -275,19 +275,19 @@ fileprivate class BookReviewsViewController: UITableViewController {
                             text: textView.text,
                             numberOfStars: starsView.value)
     }
-    
+
     override func tableView(_ tableView: UITableView,
-                   numberOfRowsInSection section: Int) -> Int {
+                            numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfReviews
     }
-    
+
     override func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+                            cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "review", for: indexPath)
-        
+
         cell.textLabel?.text = viewModel.titleForReview(at: indexPath.row)
         cell.detailTextLabel?.text = viewModel.titleForReview(at: indexPath.row)
-        
+
         return cell
     }
 }
@@ -296,3 +296,67 @@ fileprivate class SpecialView: UIView {
     let text: String = ""
     let value: Int = 4
 }
+
+// MARK : - MVVM with delegate vs noDelegate
+
+@objc fileprivate protocol ViewModelWithClosureDelegate: class {
+    @objc optional func updateHandler0()
+    @objc optional func updateHandler1()
+    @objc optional func updateHandler2()
+    @objc optional func updateHandler3()
+    @objc optional func updateHandler4()
+    @objc optional func updateHandler5()
+}
+
+fileprivate class ViewModelWithClosure {
+    weak var delegate: ViewModelWithClosureDelegate?
+
+    var updateHandler0: () -> Void = { }
+    var updateHandler1: () -> Void = { }
+    var updateHandler2: () -> Void = { }
+    var updateHandler3: () -> Void = { }
+    var updateHandler4: () -> Void = { }
+    var updateHandler5: () -> Void = { }
+
+    func test() {
+        self.updateHandler0()
+        self.delegate?.updateHandler0?()
+        self.updateHandler1()
+        self.delegate?.updateHandler1?()
+        self.updateHandler2()
+        self.delegate?.updateHandler2?()
+        self.updateHandler3()
+        self.delegate?.updateHandler3?()
+        self.updateHandler4()
+        self.delegate?.updateHandler4?()
+        self.updateHandler5()
+        self.delegate?.updateHandler5?()
+    }
+}
+
+fileprivate class TestViewController: UIViewController {
+    private let viewModel1: ViewModelWithClosure
+    init(viewModel1: ViewModelWithClosure) {
+        self.viewModel1 = viewModel1
+        super.init(nibName: nil, bundle: nil)
+        self.subscribe()
+
+        self.viewModel1.delegate = self
+    }
+
+    required init?(coder aDecoder: NSCoder) { fatalError("init(coder:) has not been implemented") }
+
+    func subscribe() {
+        self.viewModel1.updateHandler0 = { [weak self] in self?.make() }
+        self.viewModel1.updateHandler1 = { [weak self] in self?.make() }
+        self.viewModel1.updateHandler2 = { [weak self] in self?.make() }
+        self.viewModel1.updateHandler3 = { [weak self] in self?.make() }
+        self.viewModel1.updateHandler4 = { [weak self] in self?.make() }
+        self.viewModel1.updateHandler5 = { [weak self] in self?.make() }
+    }
+
+    func make() { }
+}
+
+extension TestViewController: ViewModelWithClosureDelegate { }
+

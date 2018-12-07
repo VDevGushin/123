@@ -265,6 +265,7 @@
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
 		3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */; };
 		3CC7A3ED2148E56C0057BFEA /* FactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */; };
+		3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC99D3121BA76A500F7623B /* ModelControllers .swift */; };
 		3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEA34921528AD00081A7DB /* RoundButton.swift */; };
 		3CD0B053215A4E68001E7411 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0B052215A4E68001E7411 /* UIViewController+Ex.swift */; };
 		3CD0B059215A4EFF001E7411 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0B058215A4EFF001E7411 /* UIImageColors.swift */; };
@@ -695,6 +696,7 @@
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
 		3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidingUnifiedErrorAPI.swift; sourceTree = "<group>"; };
 		3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPattern.swift; sourceTree = "<group>"; };
+		3CC99D3121BA76A500F7623B /* ModelControllers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelControllers .swift"; sourceTree = "<group>"; };
 		3CCEA34921528AD00081A7DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3CD0B052215A4E68001E7411 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		3CD0B058215A4EFF001E7411 /* UIImageColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
@@ -1354,6 +1356,7 @@
 			isa = PBXGroup;
 			children = (
 				3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */,
+				3CC99D3121BA76A500F7623B /* ModelControllers .swift */,
 			);
 			path = "ManagingState&Objects";
 			sourceTree = "<group>";
@@ -2518,6 +2521,7 @@
 			files = (
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
+				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
