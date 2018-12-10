@@ -23,6 +23,8 @@
 		3C0EA7BD21708A5400C5EB13 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0EA7BC21708A5400C5EB13 /* Style.swift */; };
 		3C0F05BE216135E800F04623 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F05BD216135E800F04623 /* UIWindow+Extension.swift */; };
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
+		3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387021BE331600BA241D /* HandlingMutableModels.swift */; };
+		3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */; };
 		3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */; };
 		3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */; };
 		3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */; };
@@ -431,6 +433,8 @@
 		3C0EA7BC21708A5400C5EB13 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		3C0F05BD216135E800F04623 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
+		3C14387021BE331600BA241D /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
+		3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsAsControlFlow.swift; sourceTree = "<group>"; };
 		3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelСontrollers.swift"; sourceTree = "<group>"; };
 		3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackNavigator.swift; sourceTree = "<group>"; };
 		3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSearchViewController.swift; sourceTree = "<group>"; };
@@ -959,6 +963,14 @@
 			path = RoundPercentagesControl;
 			sourceTree = "<group>";
 		};
+		3C14387321BE3A4100BA241D /* ErrorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */,
+			);
+			path = ErrorHandler;
+			sourceTree = "<group>";
+		};
 		3C1D9C7121089F43006DF537 /* LinePercentagesControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1341,6 +1353,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				3C14387321BE3A4100BA241D /* ErrorHandler */,
 				3C517C6621B9052A009CAEE7 /* ManagingState&Objects */,
 				3C517C5621B9051A009CAEE7 /* AppDelegate.swift */,
 				3C517C5821B9051A009CAEE7 /* ViewController.swift */,
@@ -1357,6 +1370,7 @@
 			children = (
 				3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */,
 				3CC99D3121BA76A500F7623B /* ModelControllers .swift */,
+				3C14387021BE331600BA241D /* HandlingMutableModels.swift */,
 			);
 			path = "ManagingState&Objects";
 			sourceTree = "<group>";
@@ -2521,6 +2535,8 @@
 			files = (
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
+				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
+				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 			);
