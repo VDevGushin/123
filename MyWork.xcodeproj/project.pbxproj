@@ -258,6 +258,8 @@
 		3CB805FF2195732E00728378 /* FeedBackReportWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB805FE2195732E00728378 /* FeedBackReportWorker.swift */; };
 		3CB806012195D5FC00728378 /* FeedBackInitFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB806002195D5FC00728378 /* FeedBackInitFrom.swift */; };
 		3CBDAD36211D8133007ED110 /* TestProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDAD35211D8133007ED110 /* TestProperty.swift */; };
+		3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF54C121BF873C003D4F46 /* PowerOfResultTypes.swift */; };
+		3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */; };
 		3CC042D32154DD57009FB6E3 /* TransformingСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */; };
 		3CC042D521550D02009FB6E3 /* Optional+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC042D421550D02009FB6E3 /* Optional+Ex.swift */; };
 		3CC2F210213D10F200C59AF2 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */; };
@@ -691,6 +693,8 @@
 		3CB805FE2195732E00728378 /* FeedBackReportWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackReportWorker.swift; sourceTree = "<group>"; };
 		3CB806002195D5FC00728378 /* FeedBackInitFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackInitFrom.swift; sourceTree = "<group>"; };
 		3CBDAD35211D8133007ED110 /* TestProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProperty.swift; sourceTree = "<group>"; };
+		3CBF54C121BF873C003D4F46 /* PowerOfResultTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfResultTypes.swift; sourceTree = "<group>"; };
+		3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TypeSafeIdentifiers .swift"; sourceTree = "<group>"; };
 		3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransformingСollections.swift"; sourceTree = "<group>"; };
 		3CC042D421550D02009FB6E3 /* Optional+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ex.swift"; sourceTree = "<group>"; };
 		3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
@@ -1371,6 +1375,8 @@
 				3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */,
 				3CC99D3121BA76A500F7623B /* ModelControllers .swift */,
 				3C14387021BE331600BA241D /* HandlingMutableModels.swift */,
+				3CBF54C121BF873C003D4F46 /* PowerOfResultTypes.swift */,
+				3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */,
 			);
 			path = "ManagingState&Objects";
 			sourceTree = "<group>";
@@ -2534,8 +2540,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
+				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
+				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
