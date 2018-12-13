@@ -57,19 +57,33 @@ fileprivate func test() {
  такие как Int или даже UUID.
 */
 fileprivate protocol Identifiable {
-    associatedtype RawIdentifier: Codable = String
-    var id: Identifier<Self> { get }
+    associatedtype RawIdentifier: Codable
+    var id: Identifier1<Self> { get }
 }
 
 fileprivate struct Identifier1<Value: Identifiable> {
     let rawValue: Value.RawIdentifier
-    
     init(rawValue: Value.RawIdentifier) {
         self.rawValue = rawValue
     }
 }
 
+extension Identifier1: ExpressibleByIntegerLiteral where Value.RawIdentifier == Int {
+    typealias IntegerLiteralType = Int
+    init(integerLiteral value: Int) {
+        rawValue = value
+    }
+}
+
 fileprivate struct User1: Identifiable {
-    let id: Identifier<User1>
+    typealias RawIdentifier = String
+    let id: Identifier1<User1>
     let name: String
 }
+
+fileprivate struct Group : Identifiable {
+    typealias RawIdentifier = Int
+    let id: Identifier1<Group>
+    let name: String
+}
+

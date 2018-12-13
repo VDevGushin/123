@@ -55,9 +55,7 @@ fileprivate func signUpIfPossible(with credentials: Credentials) {
 }
 
 //using Validator
-fileprivate struct ValidatorMethods{
-    
-}
+fileprivate struct ValidatorMethods{}
 
 fileprivate struct Validator<Value> {
     let closure: (Value) throws -> Void
