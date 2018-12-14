@@ -249,6 +249,7 @@
 		3CA69B8E2193226F009DD38D /* FeedbackTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */; };
 		3CA69B90219322AA009DD38D /* ThemesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8F219322AA009DD38D /* ThemesWorker.swift */; };
 		3CA69B9821933359009DD38D /* FeedbackStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B9721933359009DD38D /* FeedbackStrings.swift */; };
+		3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B1215C03460034CF0A /* ColorBuilder.swift */; };
@@ -685,6 +686,7 @@
 		3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTheme.swift; sourceTree = "<group>"; };
 		3CA69B8F219322AA009DD38D /* ThemesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesWorker.swift; sourceTree = "<group>"; };
 		3CA69B9721933359009DD38D /* FeedbackStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStrings.swift; sourceTree = "<group>"; };
+		3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CB155B1215C03460034CF0A /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
@@ -1359,6 +1361,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				3CA6A26D21C23C49009D0F1F /* ServiceLocator */,
 				3C14387321BE3A4100BA241D /* ErrorHandler */,
 				3C517C6621B9052A009CAEE7 /* ManagingState&Objects */,
 				3C517C5621B9051A009CAEE7 /* AppDelegate.swift */,
@@ -1701,6 +1704,14 @@
 				3C54A7CD219483E3007AEBF2 /* FeedBackTableViewController.xib */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3CA6A26D21C23C49009D0F1F /* ServiceLocator */ = {
+			isa = PBXGroup;
+			children = (
+				3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */,
+			);
+			path = ServiceLocator;
 			sourceTree = "<group>";
 		};
 		3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */ = {
@@ -2548,6 +2559,7 @@
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
+				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
