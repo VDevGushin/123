@@ -25,6 +25,8 @@
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
 		3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387021BE331600BA241D /* HandlingMutableModels.swift */; };
 		3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */; };
+		3C15C8A021C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15C89F21C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift */; };
+		3C15C8A121C8D9B000734E30 /* ScrollRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39B3CC21C7BA7000323840 /* ScrollRootViewController.swift */; };
 		3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */; };
 		3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */; };
 		3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */; };
@@ -61,6 +63,9 @@
 		3C37B767213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */; };
 		3C38E1742107732A005CBDE9 /* RoundPercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */; };
 		3C38E17621077353005CBDE9 /* RoundPercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */; };
+		3C39B3CF21C7BA7000323840 /* ScrollRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C39B3CD21C7BA7000323840 /* ScrollRootViewController.xib */; };
+		3C39B3D421C7BBA600323840 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39B3D221C7BBA600323840 /* ContentViewController.swift */; };
+		3C39B3D521C7BBA600323840 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C39B3D321C7BBA600323840 /* ContentViewController.xib */; };
 		3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */; };
 		3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464B2174643E0032BC36 /* DLSViewController.swift */; };
 		3C3B464F21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */; };
@@ -441,6 +446,7 @@
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
 		3C14387021BE331600BA241D /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
 		3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsAsControlFlow.swift; sourceTree = "<group>"; };
+		3C15C89F21C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreventingМiewsFromBeingModelAware.swift"; sourceTree = "<group>"; };
 		3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelСontrollers.swift"; sourceTree = "<group>"; };
 		3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackNavigator.swift; sourceTree = "<group>"; };
 		3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSearchViewController.swift; sourceTree = "<group>"; };
@@ -477,6 +483,10 @@
 		3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
 		3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPercentagesControl.swift; sourceTree = "<group>"; };
 		3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundPercentagesControl.xib; sourceTree = "<group>"; };
+		3C39B3CC21C7BA7000323840 /* ScrollRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRootViewController.swift; sourceTree = "<group>"; };
+		3C39B3CD21C7BA7000323840 /* ScrollRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollRootViewController.xib; sourceTree = "<group>"; };
+		3C39B3D221C7BBA600323840 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		3C39B3D321C7BBA600323840 /* ContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
 		3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 		3C3B464B2174643E0032BC36 /* DLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLSViewController.swift; sourceTree = "<group>"; };
 		3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutConstraint+NSLayoutAnchor.swift"; sourceTree = "<group>"; };
@@ -1101,6 +1111,17 @@
 			path = UIControls;
 			sourceTree = "<group>";
 		};
+		3C39B3CB21C7BA2300323840 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3C39B3CC21C7BA7000323840 /* ScrollRootViewController.swift */,
+				3C39B3CD21C7BA7000323840 /* ScrollRootViewController.xib */,
+				3C39B3D221C7BBA600323840 /* ContentViewController.swift */,
+				3C39B3D321C7BBA600323840 /* ContentViewController.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		3C3B464D21746A5B0032BC36 /* LayoutConstraint */ = {
 			isa = PBXGroup;
 			children = (
@@ -1389,6 +1410,7 @@
 				3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */,
 				3CA4259721C2247A00636B47 /* LogicControllers.swift */,
 				3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */,
+				3C15C89F21C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift */,
 			);
 			path = "ManagingState&Objects";
 			sourceTree = "<group>";
@@ -1514,6 +1536,7 @@
 		3C82F46C2164AA0F0024B3E4 /* WorkWithUI */ = {
 			isa = PBXGroup;
 			children = (
+				3C39B3CB21C7BA2300323840 /* Menu */,
 				3C457F8D21B79F1800B5EF63 /* MVVM */,
 				3C78FFDC2191E0FE00540752 /* FeedBack */,
 				3CEF8E8A218712FB00996597 /* Chat */,
@@ -2357,6 +2380,7 @@
 				3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */,
 				3C7A5ADC21934A8200DE016B /* DoneTableViewCell.xib in Resources */,
 				3C5FDF012191F5D600F0C6DF /* CaptchaView.xib in Resources */,
+				3C39B3CF21C7BA7000323840 /* ScrollRootViewController.xib in Resources */,
 				3CF58ADA218837F0008FEB6D /* MessageTableViewCell.xib in Resources */,
 				3C1DB1992192B438001BD557 /* FeedBackSearchViewController.xib in Resources */,
 				3C7A5AD22193376500DE016B /* CaptchaTableViewCell.xib in Resources */,
@@ -2371,6 +2395,7 @@
 				3C82F4732164AA0F0024B3E4 /* Main.storyboard in Resources */,
 				3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */,
 				3CA3145B218B149800A06369 /* ProfileTableViewCell.xib in Resources */,
+				3C39B3D521C7BBA600323840 /* ContentViewController.xib in Resources */,
 				3C1DB1A62192CD54001BD557 /* SourceTableViewCell.xib in Resources */,
 				3CF58AE221883A2B008FEB6D /* MessageViewController.xib in Resources */,
 			);
@@ -2567,6 +2592,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C15C8A021C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
@@ -2626,7 +2652,9 @@
 				3C457F9221B79FEA00B5EF63 /* SourceListViewModel.swift in Sources */,
 				3CEF8E9621871EC500996597 /* ChatsWorker.swift in Sources */,
 				3C441B0D2198A39A001F275E /* CellSource.swift in Sources */,
+				3C15C8A121C8D9B000734E30 /* ScrollRootViewController.swift in Sources */,
 				3C54FE472194D499005E99B7 /* CaptchaModel.swift in Sources */,
+				3C39B3D421C7BBA600323840 /* ContentViewController.swift in Sources */,
 				3CF58AE121883A2B008FEB6D /* MessageViewController.swift in Sources */,
 				3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */,
 				3CF58AEA21883D68008FEB6D /* ChatsViewController.swift in Sources */,
@@ -3119,6 +3147,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = SwiftBySundell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3139,6 +3168,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = SwiftBySundell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
