@@ -74,7 +74,9 @@ class ViewController: UIViewController {
 //        self.present(vc, animated: true, completion: nil)
         //self.present( ChatCoordinator.chatNavigation(), animated: true, completion: nil)
         let vc = ScrollRootViewController.init(nibName: "ScrollRootViewController", bundle: nil)
-        self.present(vc, animated: true, completion: nil)
+        let nav = UINavigationController(rootViewController: vc)
+       
+        self.present(nav, animated: true, completion: nil)
         //self.present(FeedBackNavigator.feedBackNavigation(), animated: true, completion: nil)
     }
 }

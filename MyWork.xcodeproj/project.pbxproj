@@ -289,6 +289,7 @@
 		3CD0B061215A54A3001E7411 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0B052215A4E68001E7411 /* UIViewController+Ex.swift */; };
 		3CD3DB1E213521EB004F0FE7 /* PowerOfResult .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3DB1D213521EB004F0FE7 /* PowerOfResult .swift */; };
 		3CD3DB202135258A004F0FE7 /* TypeSafeIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */; };
+		3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */; };
 		3CD7AF7A215E71250006A4DD /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7AF78215E71250006A4DD /* ColorCollectionViewCell.swift */; };
 		3CD7AF7B215E71250006A4DD /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD7AF79215E71250006A4DD /* ColorCollectionViewCell.xib */; };
 		3CD7AF7D215E71710006A4DD /* UIColllectionView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7AF7C215E71710006A4DD /* UIColllectionView+Ex.swift */; };
@@ -731,6 +732,7 @@
 		3CD0B05E215A50F5001E7411 /* UIViewController+Ex2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex2.swift"; sourceTree = "<group>"; };
 		3CD3DB1D213521EB004F0FE7 /* PowerOfResult .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PowerOfResult .swift"; sourceTree = "<group>"; };
 		3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSafeIdentifiers.swift; sourceTree = "<group>"; };
+		3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparationOfConcernsUsingProtocols.swift; sourceTree = "<group>"; };
 		3CD7AF78215E71250006A4DD /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CD7AF79215E71250006A4DD /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
 		3CD7AF7C215E71710006A4DD /* UIColllectionView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColllectionView+Ex.swift"; sourceTree = "<group>"; };
@@ -1411,6 +1413,7 @@
 				3CA4259721C2247A00636B47 /* LogicControllers.swift */,
 				3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */,
 				3C15C89F21C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift */,
+				3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */,
 			);
 			path = "ManagingState&Objects";
 			sourceTree = "<group>";
@@ -2600,6 +2603,7 @@
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
+				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,

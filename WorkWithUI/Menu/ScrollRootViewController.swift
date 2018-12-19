@@ -8,18 +8,19 @@
 
 import UIKit
 
-protocol IRoot {
+//Fabrica
+class ChildViewControllers {
+    func getContentViewController() -> BaseContentController {
+        return ContentViewController(nibName: "ContentViewController", bundle: nil)
+    }
+}
+
+protocol LibraryRootController {
     var headerHeight: NSLayoutConstraint! { get }
     var headerHeightConstant: CGFloat { get }
 }
 
-class ChildViewControllers {
-    func getContentViewController() -> ChildRoot {
-        return ContentViewController.init(nibName: "ContentViewController", bundle: nil)
-    }
-}
-
-class ScrollRootViewController: UIViewController, IRoot, IContentOffsetProtocol {
+class ScrollRootViewController: UIViewController, LibraryRootController, ContentControllerProtocol {
     private lazy var fabric = ChildViewControllers()
 
     var headerHeightConstant: CGFloat = 150.0
@@ -45,8 +46,21 @@ class ScrollRootViewController: UIViewController, IRoot, IContentOffsetProtocol 
         self.view.layoutIfNeeded()
     }
 
-    func headerHeght() -> (headerHeight: CGFloat, needHeight: CGFloat) {
+    func headerHeght() -> (updateHeight: CGFloat, neededHeight: CGFloat) {
         return (headerHeight.constant, self.headerHeightConstant)
+    }
+
+    func resetHeader() {
+        self.headerHeight.constant = self.headerHeightConstant
+        UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: .curveEaseOut, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.title = "Test"
+        self.navigationController?.navigationBar.tintColor = .red
     }
 }
 
@@ -54,7 +68,6 @@ extension UIViewController {
     func add(_ child: UIViewController, to view: UIView) {
         addChild(child)
         view.addSubview(child.view)
-        child.view.isUserInteractionEnabled = true
         child.view.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         child.view.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         child.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
