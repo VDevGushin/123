@@ -21,7 +21,7 @@ protocol LibraryRootController {
 }
 
 extension LibraryRootController {
-    var headerHeightConstant: CGFloat { return 500.0 }
+    var headerHeightConstant: CGFloat { return 200.0 }
 }
 
 class ScrollRootViewController: UIViewController, LibraryRootController, ContentControllerProtocol {
