@@ -259,6 +259,7 @@
 		3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
+		3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */; };
 		3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B1215C03460034CF0A /* ColorBuilder.swift */; };
 		3CB155B6215C05330034CF0A /* ImageSchemeUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */; };
 		3CB155B7215C05330034CF0A /* ImageSchemeUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */; };
@@ -704,6 +705,7 @@
 		3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
+		3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		3CB155B1215C03460034CF0A /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
 		3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSchemeUViewController.swift; sourceTree = "<group>"; };
 		3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSchemeUViewController.xib; sourceTree = "<group>"; };
@@ -1414,6 +1416,7 @@
 				3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */,
 				3C15C89F21C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift */,
 				3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */,
+				3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */,
 			);
 			path = "ManagingState&Objects";
 			sourceTree = "<group>";
@@ -2597,6 +2600,7 @@
 			files = (
 				3C15C8A021C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
+				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,

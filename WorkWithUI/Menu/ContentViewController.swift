@@ -11,7 +11,6 @@ import UIKit
 protocol ContentControllerProtocol: class {
     func newHeight(_ value: CGFloat)
     func headerHeght() -> (updateHeight: CGFloat, neededHeight: CGFloat)
-    func resetHeader()
 }
 
 class BaseContentController: UIViewController, UIScrollViewDelegate {
@@ -37,20 +36,6 @@ class BaseContentController: UIViewController, UIScrollViewDelegate {
             newHeight -= scrollView.contentOffset.y / 100
             if newHeight < 0 { newHeight = 0 }
             self.delegate?.newHeight(newHeight)
-        }
-    }
-
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        guard let header = delegate?.headerHeght() else { return }
-        if header.updateHeight > header.neededHeight {
-            delegate?.resetHeader()
-        }
-    }
-
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        guard let header = delegate?.headerHeght() else { return }
-        if header.updateHeight > header.neededHeight {
-            delegate?.resetHeader()
         }
     }
 

@@ -20,17 +20,20 @@ protocol LibraryRootController {
     var headerHeightConstant: CGFloat { get }
 }
 
+extension LibraryRootController {
+    var headerHeightConstant: CGFloat { return 150.0 }
+}
+
 class ScrollRootViewController: UIViewController, LibraryRootController, ContentControllerProtocol {
     private lazy var fabric = ChildViewControllers()
-
-    var headerHeightConstant: CGFloat = 150.0
     @IBOutlet weak var headerHeight: NSLayoutConstraint!
-
     @IBOutlet private weak var header: UIView!
     @IBOutlet private weak var contentView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.headerHeight.constant = self.headerHeightConstant
+
         let contentVC = fabric.getContentViewController()
         contentVC.delegate = self
         self.changeChild(old: nil, new: contentVC)
@@ -48,13 +51,6 @@ class ScrollRootViewController: UIViewController, LibraryRootController, Content
 
     func headerHeght() -> (updateHeight: CGFloat, neededHeight: CGFloat) {
         return (headerHeight.constant, self.headerHeightConstant)
-    }
-
-    func resetHeader() {
-        self.headerHeight.constant = self.headerHeightConstant
-        UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: .curveEaseOut, animations: {
-            self.view.layoutIfNeeded()
-        }, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
