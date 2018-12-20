@@ -11,9 +11,11 @@ import UIKit
 protocol ContentControllerProtocol: class {
     func newHeight(_ value: CGFloat)
     func headerHeght() -> (updateHeight: CGFloat, neededHeight: CGFloat)
+    func resetHeader()
 }
 
 class BaseContentController: UIViewController, UIScrollViewDelegate {
+    private let displayPercentage : CGFloat = 20.0
     var delegate: ContentControllerProtocol?
     private var lastContentOffset: CGFloat = 0
     private weak var navController: UINavigationController?
@@ -30,6 +32,11 @@ class BaseContentController: UIViewController, UIScrollViewDelegate {
         var newHeight = header.updateHeight
         if scrollView.contentOffset.y < 0 {
             newHeight += abs(scrollView.contentOffset.y)
+            let p = header.updateHeight * 100 / header.neededHeight
+            if p >= displayPercentage {
+                self.delegate?.resetHeader()
+                return
+            }
             if newHeight >= header.neededHeight { newHeight = header.neededHeight }
             self.delegate?.newHeight(newHeight)
         } else if scrollView.contentOffset.y > 0 {
@@ -77,7 +84,11 @@ class ContentViewController: BaseContentController, UITableViewDataSource, UITab
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
-        cell.backgroundColor = .red
+        if indexPath.row == 0 {
+            cell.backgroundColor = .yellow
+        } else {
+            cell.backgroundColor = .red
+        }
         return cell
     }
 }

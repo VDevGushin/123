@@ -21,7 +21,7 @@ protocol LibraryRootController {
 }
 
 extension LibraryRootController {
-    var headerHeightConstant: CGFloat { return 150.0 }
+    var headerHeightConstant: CGFloat { return 500.0 }
 }
 
 class ScrollRootViewController: UIViewController, LibraryRootController, ContentControllerProtocol {
@@ -57,6 +57,13 @@ class ScrollRootViewController: UIViewController, LibraryRootController, Content
         super.viewWillAppear(animated)
         self.navigationItem.title = "Test"
         self.navigationController?.navigationBar.tintColor = .red
+    }
+    
+    func resetHeader() {
+        self.headerHeight.constant = self.headerHeightConstant
+        UIView.animate(withDuration: 0.4, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: .curveEaseOut, animations: {
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
 }
 
