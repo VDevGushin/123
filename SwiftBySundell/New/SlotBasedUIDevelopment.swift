@@ -143,6 +143,5 @@ fileprivate class VC2: UIViewController {
     typealias MovieHeaderView = HeaderView1<UIButton, UILabel>
     typealias UserHeaderView = HeaderView1<UIImageView, UIButton>
     typealias SettingHeaderView = HeaderView1<UILabel, UISwitch>
-
     private lazy var headerView = MovieHeaderView()
 }

@@ -22,7 +22,6 @@ class BaseContentController: UIViewController, UIScrollViewDelegate {
     private var barIsInAnination = false
     override func viewDidLoad() {
         self.navController = self.parent?.navigationController
-        self.navController?.navigationBar.isTranslucent = false
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

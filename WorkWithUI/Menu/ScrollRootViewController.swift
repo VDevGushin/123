@@ -21,7 +21,7 @@ protocol LibraryRootController {
 }
 
 extension LibraryRootController {
-    var headerHeightConstant: CGFloat { return 200.0 }
+    var headerHeightConstant: CGFloat { return 150.0 }
 }
 
 class ScrollRootViewController: UIViewController, LibraryRootController, ContentControllerProtocol {
@@ -33,7 +33,9 @@ class ScrollRootViewController: UIViewController, LibraryRootController, Content
     override func viewDidLoad() {
         super.viewDidLoad()
         self.headerHeight.constant = self.headerHeightConstant
-
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.isTranslucent = false
+        
         let contentVC = fabric.getContentViewController()
         contentVC.delegate = self
         self.changeChild(old: nil, new: contentVC)

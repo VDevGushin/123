@@ -73,7 +73,8 @@ class ViewController: UIViewController {
 //        let vc = CalendarViewController.init(nibName: "CalendarViewController", bundle: nil)
 //        self.present(vc, animated: true, completion: nil)
         //self.present( ChatCoordinator.chatNavigation(), animated: true, completion: nil)
-        let vc = ScrollRootViewController.init(nibName: "ScrollRootViewController", bundle: nil)
+        //let vc = ScrollRootViewController.init(nibName: "ScrollRootViewController", bundle: nil)
+        let vc = LibraryRootTableViewController.init(nibName: "LibraryRootTableViewController", bundle: nil)
         let nav = UINavigationController(rootViewController: vc)
        
         self.present(nav, animated: true, completion: nil)
