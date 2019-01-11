@@ -11,6 +11,8 @@
 		287EE387051990F02A660DE9 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */; };
 		3C01716B21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */; };
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
+		3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */; };
+		3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */; };
 		3C09E493217D93C7007ABDD8 /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */; };
 		3C0B1764210EDF34003D9314 /* ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */; };
 		3C0C24EC215CF7CB00472B3E /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */; };
@@ -40,6 +42,7 @@
 		3C1DD6722118183700383851 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DD6712118183700383851 /* Serialization.swift */; };
 		3C1EC266212150BC00E929E5 /* TrimmingLongArgumentLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */; };
 		3C1EC2682121526500E929E5 /* UsingGenericTypeConstraints .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */; };
+		3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */; };
 		3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C276688217DE1D600374E7E /* CalendarViewController.swift */; };
 		3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C276689217DE1D600374E7E /* CalendarViewController.xib */; };
 		3C276690217DEA1400374E7E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C27668F217DEA1400374E7E /* MonthView.swift */; };
@@ -134,6 +137,7 @@
 		3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */; };
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
 		3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54E21006423003F484C /* PromiseKit.swift */; };
+		3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B691321E883B1002175CB /* IdentifyingObjects.swift */; };
 		3C4C676921254370005D05D5 /* LazyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C676821254370005D05D5 /* LazyProperties.swift */; };
 		3C4EAF182180487F00CEB18B /* DelegateCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EAF172180487F00CEB18B /* DelegateCall.swift */; };
 		3C4EAF1A2180628800CEB18B /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EAF192180628800CEB18B /* CalendarStyle.swift */; };
@@ -441,6 +445,8 @@
 		20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 		3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentFlavorsOfViewModels.swift; sourceTree = "<group>"; };
 		3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
+		3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
+		3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
 		3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalConformances.swift; sourceTree = "<group>"; };
 		3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
@@ -469,6 +475,7 @@
 		3C1DD6712118183700383851 /* Serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
 		3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmingLongArgumentLists.swift; sourceTree = "<group>"; };
 		3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingGenericTypeConstraints .swift"; sourceTree = "<group>"; };
+		3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPatternToAvoidShared.swift; sourceTree = "<group>"; };
 		3C276688217DE1D600374E7E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3C276689217DE1D600374E7E /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		3C27668F217DEA1400374E7E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
@@ -587,6 +594,7 @@
 		3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCustomCollections.swift; sourceTree = "<group>"; };
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
 		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
+		3C4B691321E883B1002175CB /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
 		3C4C676821254370005D05D5 /* LazyProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyProperties.swift; sourceTree = "<group>"; };
 		3C4EAF172180487F00CEB18B /* DelegateCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateCall.swift; sourceTree = "<group>"; };
 		3C4EAF192180628800CEB18B /* CalendarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStyle.swift; sourceTree = "<group>"; };
@@ -931,6 +939,15 @@
 				44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C078A6F21E8D5DD005F08B4 /* Пораждающие паттерны */ = {
+			isa = PBXGroup;
+			children = (
+				3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */,
+				3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */,
+			);
+			path = "Пораждающие паттерны";
 			sourceTree = "<group>";
 		};
 		3C0B1761210EDD85003D9314 /* Models */ = {
@@ -1411,9 +1428,18 @@
 			path = "ViewСontrollers&Navigation";
 			sourceTree = "<group>";
 		};
+		3C4B691521E8BA24002175CB /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				3C078A6F21E8D5DD005F08B4 /* Пораждающие паттерны */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				3C4B691521E8BA24002175CB /* Patterns */,
 				3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation */,
 				3C815EF721C76E6300499AE5 /* New */,
 				3CA6A26D21C23C49009D0F1F /* ServiceLocator */,
@@ -1445,6 +1471,8 @@
 				3CD5D33121D0B48000682966 /* DependencyInjectionUsingFactories.swift */,
 				3CE1C25E21D20E65008FC070 /* CapturingObjectsSwift.swift */,
 				3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */,
+				3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */,
+				3C4B691321E883B1002175CB /* IdentifyingObjects.swift */,
 			);
 			path = "ManagingState&Objects";
 			sourceTree = "<group>";
@@ -2638,7 +2666,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C15C8A021C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift in Sources */,
+				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
+				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
+				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
@@ -2647,6 +2678,7 @@
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
+				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
