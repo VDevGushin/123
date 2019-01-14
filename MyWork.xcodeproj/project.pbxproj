@@ -287,6 +287,9 @@
 		3CC3911C21395741001B42DA /* UsingBuilder .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3911B21395741001B42DA /* UsingBuilder .swift */; };
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
 		3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */; };
+		3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC689D021EC5D960033F805 /* ModellingState.swift */; };
+		3CC689D321EC67270033F805 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC689D221EC67270033F805 /* Singleton.swift */; };
+		3CC689D521EC69880033F805 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC689D421EC69880033F805 /* Prototype.swift */; };
 		3CC7A3ED2148E56C0057BFEA /* FactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */; };
 		3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC99D3121BA76A500F7623B /* ModelControllers .swift */; };
 		3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEA34921528AD00081A7DB /* RoundButton.swift */; };
@@ -744,6 +747,9 @@
 		3CC3911B21395741001B42DA /* UsingBuilder .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingBuilder .swift"; sourceTree = "<group>"; };
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
 		3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidingUnifiedErrorAPI.swift; sourceTree = "<group>"; };
+		3CC689D021EC5D960033F805 /* ModellingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModellingState.swift; sourceTree = "<group>"; };
+		3CC689D221EC67270033F805 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		3CC689D421EC69880033F805 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPattern.swift; sourceTree = "<group>"; };
 		3CC99D3121BA76A500F7623B /* ModelControllers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelControllers .swift"; sourceTree = "<group>"; };
 		3CCEA34921528AD00081A7DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -946,6 +952,8 @@
 			children = (
 				3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */,
 				3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */,
+				3CC689D221EC67270033F805 /* Singleton.swift */,
+				3CC689D421EC69880033F805 /* Prototype.swift */,
 			);
 			path = "Пораждающие паттерны";
 			sourceTree = "<group>";
@@ -1473,6 +1481,7 @@
 				3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */,
 				3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */,
 				3C4B691321E883B1002175CB /* IdentifyingObjects.swift */,
+				3CC689D021EC5D960033F805 /* ModellingState.swift */,
 			);
 			path = "ManagingState&Objects";
 			sourceTree = "<group>";
@@ -2671,6 +2680,7 @@
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
+				3CC689D521EC69880033F805 /* Prototype.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
@@ -2678,12 +2688,14 @@
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
+				3CC689D321EC67270033F805 /* Singleton.swift in Sources */,
 				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
+				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,

@@ -139,7 +139,6 @@ fileprivate class WarriorFactory: HeroFactory {
 }
 
 // клиент - сам супергерой
-
 fileprivate class Hero {
     private let weapon: Weapon
     private let movement: Movement
