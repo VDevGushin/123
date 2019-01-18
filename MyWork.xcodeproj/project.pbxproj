@@ -27,7 +27,7 @@
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
 		3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387021BE331600BA241D /* HandlingMutableModels.swift */; };
 		3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */; };
-		3C15C8A021C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15C89F21C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift */; };
+		3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */; };
 		3C15C8A121C8D9B000734E30 /* ScrollRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39B3CC21C7BA7000323840 /* ScrollRootViewController.swift */; };
 		3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */; };
 		3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */; };
@@ -470,7 +470,7 @@
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
 		3C14387021BE331600BA241D /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
 		3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsAsControlFlow.swift; sourceTree = "<group>"; };
-		3C15C89F21C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreventingМiewsFromBeingModelAware.swift"; sourceTree = "<group>"; };
+		3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
 		3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelСontrollers.swift"; sourceTree = "<group>"; };
 		3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackNavigator.swift; sourceTree = "<group>"; };
 		3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSearchViewController.swift; sourceTree = "<group>"; };
@@ -1488,7 +1488,7 @@
 				3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */,
 				3CA4259721C2247A00636B47 /* LogicControllers.swift */,
 				3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */,
-				3C15C89F21C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift */,
+				3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */,
 				3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */,
 				3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */,
 				3CD5D33121D0B48000682966 /* DependencyInjectionUsingFactories.swift */,
@@ -2700,7 +2700,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C15C8A021C8B71B00734E30 /* PreventingМiewsFromBeingModelAware.swift in Sources */,
+				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3CD4913F21F05B9A0097618E /* Observer.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
