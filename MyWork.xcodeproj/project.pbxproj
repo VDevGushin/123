@@ -162,6 +162,9 @@
 		3C54FE472194D499005E99B7 /* CaptchaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE462194D499005E99B7 /* CaptchaModel.swift */; };
 		3C54FE492194D80E005E99B7 /* FeedBackSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
+		3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */; };
+		3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */; };
+		3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4E121F5B970001D26ED /* TemplateMethod.swift */; };
 		3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */; };
 		3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */; };
 		3C5FDEF72191EC8400F0C6DF /* FeedBackEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */; };
@@ -631,6 +634,9 @@
 		3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSendModel.swift; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerViewControllers.swift; sourceTree = "<group>"; };
+		3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePowerOfTypeAliases.swift; sourceTree = "<group>"; };
+		3C5CA4E121F5B970001D26ED /* TemplateMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethod.swift; sourceTree = "<group>"; };
 		3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackWebConfigurator.swift; sourceTree = "<group>"; };
 		3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaWorker.swift; sourceTree = "<group>"; };
 		3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackEndpoint.swift; sourceTree = "<group>"; };
@@ -1451,6 +1457,7 @@
 			children = (
 				3CD4913C21F0527D0097618E /* LightweightPresenters.swift */,
 				3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */,
+				3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */,
 			);
 			path = "ViewСontrollers&Navigation";
 			sourceTree = "<group>";
@@ -1622,6 +1629,7 @@
 			children = (
 				3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */,
 				3C9F666F21EF073600800E41 /* SharingSwift.swift */,
+				3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -1823,6 +1831,7 @@
 				3C9F667421EF0CB600800E41 /* Strategy.swift */,
 				3CD4913E21F05B9A0097618E /* Observer.swift */,
 				3C0A797921F1991F00082B2B /* Command.swift */,
+				3C5CA4E121F5B970001D26ED /* TemplateMethod.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -2707,9 +2716,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
+				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				3CD4913F21F05B9A0097618E /* Observer.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
+				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
@@ -2720,6 +2731,7 @@
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
+				3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
