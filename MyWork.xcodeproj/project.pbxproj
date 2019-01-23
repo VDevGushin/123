@@ -261,6 +261,7 @@
 		3C9F667021EF073600800E41 /* SharingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F666F21EF073600800E41 /* SharingSwift.swift */; };
 		3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */; };
 		3C9F667521EF0CB600800E41 /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F667421EF0CB600800E41 /* Strategy.swift */; };
+		3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0BE0521F83BA500DFDBEA /* Iterator.swift */; };
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
 		3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31442218AD62E00A06369 /* AddChatViewController.swift */; };
 		3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31443218AD62F00A06369 /* AddChatViewController.xib */; };
@@ -290,6 +291,7 @@
 		3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */; };
 		3CC042D32154DD57009FB6E3 /* TransformingСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */; };
 		3CC042D521550D02009FB6E3 /* Optional+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC042D421550D02009FB6E3 /* Optional+Ex.swift */; };
+		3CC1334E21F830630009A04B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC1334D21F830630009A04B /* Navigation.swift */; };
 		3CC2F210213D10F200C59AF2 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */; };
 		3CC2F212213D145400C59AF2 /* Dictionary+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */; };
 		3CC2F214213D152600C59AF2 /* EarlyReturningFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */; };
@@ -732,6 +734,7 @@
 		3C9F666F21EF073600800E41 /* SharingSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingSwift.swift; sourceTree = "<group>"; };
 		3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HandlingNon-OptionalOptionals .swift"; sourceTree = "<group>"; };
 		3C9F667421EF0CB600800E41 /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
+		3CA0BE0521F83BA500DFDBEA /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		3CA31442218AD62E00A06369 /* AddChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatViewController.swift; sourceTree = "<group>"; };
 		3CA31443218AD62F00A06369 /* AddChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChatViewController.xib; sourceTree = "<group>"; };
@@ -761,6 +764,7 @@
 		3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TypeSafeIdentifiers .swift"; sourceTree = "<group>"; };
 		3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransformingСollections.swift"; sourceTree = "<group>"; };
 		3CC042D421550D02009FB6E3 /* Optional+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ex.swift"; sourceTree = "<group>"; };
+		3CC1334D21F830630009A04B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
 		3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ex.swift"; sourceTree = "<group>"; };
 		3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlyReturningFunctions.swift; sourceTree = "<group>"; };
@@ -1458,6 +1462,7 @@
 				3CD4913C21F0527D0097618E /* LightweightPresenters.swift */,
 				3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */,
 				3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */,
+				3CC1334D21F830630009A04B /* Navigation.swift */,
 			);
 			path = "ViewСontrollers&Navigation";
 			sourceTree = "<group>";
@@ -1832,6 +1837,7 @@
 				3CD4913E21F05B9A0097618E /* Observer.swift */,
 				3C0A797921F1991F00082B2B /* Command.swift */,
 				3C5CA4E121F5B970001D26ED /* TemplateMethod.swift */,
+				3CA0BE0521F83BA500DFDBEA /* Iterator.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -2726,6 +2732,7 @@
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
 				3CC689D521EC69880033F805 /* Prototype.swift in Sources */,
+				3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
@@ -2750,6 +2757,7 @@
 				3C9F667521EF0CB600800E41 /* Strategy.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
+				3CC1334E21F830630009A04B /* Navigation.swift in Sources */,
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
