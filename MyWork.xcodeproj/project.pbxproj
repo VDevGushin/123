@@ -279,6 +279,8 @@
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */; };
+		3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */; };
+		3CADC72921FAF02400738B14 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CADC72821FAF02400738B14 /* State.swift */; };
 		3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B1215C03460034CF0A /* ColorBuilder.swift */; };
 		3CB155B6215C05330034CF0A /* ImageSchemeUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */; };
 		3CB155B7215C05330034CF0A /* ImageSchemeUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */; };
@@ -752,6 +754,8 @@
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingChildViewControllers.swift; sourceTree = "<group>"; };
+		3CADC72821FAF02400738B14 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		3CB155B1215C03460034CF0A /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
 		3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSchemeUViewController.swift; sourceTree = "<group>"; };
 		3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSchemeUViewController.xib; sourceTree = "<group>"; };
@@ -1463,6 +1467,7 @@
 				3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */,
 				3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */,
 				3CC1334D21F830630009A04B /* Navigation.swift */,
+				3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */,
 			);
 			path = "ViewСontrollers&Navigation";
 			sourceTree = "<group>";
@@ -1838,6 +1843,7 @@
 				3C0A797921F1991F00082B2B /* Command.swift */,
 				3C5CA4E121F5B970001D26ED /* TemplateMethod.swift */,
 				3CA0BE0521F83BA500DFDBEA /* Iterator.swift */,
+				3CADC72821FAF02400738B14 /* State.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -2724,6 +2730,7 @@
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				3CD4913F21F05B9A0097618E /* Observer.swift in Sources */,
+				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
@@ -2743,6 +2750,7 @@
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				3CC689D321EC67270033F805 /* Singleton.swift in Sources */,
+				3CADC72921FAF02400738B14 /* State.swift in Sources */,
 				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
 				3C9F667021EF073600800E41 /* SharingSwift.swift in Sources */,
 				3C0A797A21F1991F00082B2B /* Command.swift in Sources */,
