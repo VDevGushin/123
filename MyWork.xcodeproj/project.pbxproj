@@ -45,6 +45,8 @@
 		3C1EC266212150BC00E929E5 /* TrimmingLongArgumentLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */; };
 		3C1EC2682121526500E929E5 /* UsingGenericTypeConstraints .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */; };
 		3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */; };
+		3C204BC02201677800CB49B5 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C204BBF2201677800CB49B5 /* GCD.swift */; };
+		3C204BC222016FBF00CB49B5 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C204BC122016FBF00CB49B5 /* Memento.swift */; };
 		3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C276688217DE1D600374E7E /* CalendarViewController.swift */; };
 		3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C276689217DE1D600374E7E /* CalendarViewController.xib */; };
 		3C276690217DEA1400374E7E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C27668F217DEA1400374E7E /* MonthView.swift */; };
@@ -58,6 +60,9 @@
 		3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */; };
 		3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */; };
 		3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C3D0214B78DF008BBC12 /* ModellingState .swift */; };
+		3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */; };
+		3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C339ADD22002B4C008A85C6 /* Interpreter.swift */; };
+		3C339AE022002B77008A85C6 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C339ADF22002B77008A85C6 /* Mediator.swift */; };
 		3C35CBFB2187830200DDE92E /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFA2187830200DDE92E /* Data+Extension.swift */; };
 		3C35CBFD218784F600DDE92E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFC218784F600DDE92E /* Message.swift */; };
 		3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFE2187869300DDE92E /* ChatMessagesWorker.swift */; };
@@ -498,6 +503,8 @@
 		3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmingLongArgumentLists.swift; sourceTree = "<group>"; };
 		3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingGenericTypeConstraints .swift"; sourceTree = "<group>"; };
 		3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPatternToAvoidShared.swift; sourceTree = "<group>"; };
+		3C204BBF2201677800CB49B5 /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		3C204BC122016FBF00CB49B5 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		3C276688217DE1D600374E7E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3C276689217DE1D600374E7E /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		3C27668F217DEA1400374E7E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
@@ -511,6 +518,9 @@
 		3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedAnalyticsSystem.swift; sourceTree = "<group>"; };
 		3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingSingletonsSwift.swift; sourceTree = "<group>"; };
 		3C30C3D0214B78DF008BBC12 /* ModellingState .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModellingState .swift"; sourceTree = "<group>"; };
+		3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingTokensToHandleAsyncSwiftCode.swift; sourceTree = "<group>"; };
+		3C339ADD22002B4C008A85C6 /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		3C339ADF22002B77008A85C6 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
 		3C35CBFA2187830200DDE92E /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		3C35CBFC218784F600DDE92E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3C35CBFE2187869300DDE92E /* ChatMessagesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessagesWorker.swift; sourceTree = "<group>"; };
@@ -1690,6 +1700,8 @@
 			isa = PBXGroup;
 			children = (
 				3C8546BA21FEF0920004700D /* AvoidingRaceConditions.swift */,
+				3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */,
+				3C204BBF2201677800CB49B5 /* GCD.swift */,
 			);
 			path = ConcurrencyAsynchronousProgramming;
 			sourceTree = "<group>";
@@ -1858,6 +1870,9 @@
 				3CA0BE0521F83BA500DFDBEA /* Iterator.swift */,
 				3CADC72821FAF02400738B14 /* State.swift */,
 				3C8546BC21FEFAD40004700D /* ChainOfResponsibility.swift */,
+				3C339ADD22002B4C008A85C6 /* Interpreter.swift */,
+				3C339ADF22002B77008A85C6 /* Mediator.swift */,
+				3C204BC122016FBF00CB49B5 /* Memento.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -2741,14 +2756,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				3CD4913F21F05B9A0097618E /* Observer.swift in Sources */,
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
+				3C204BC222016FBF00CB49B5 /* Memento.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
+				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
@@ -2756,6 +2774,7 @@
 				3CC689D521EC69880033F805 /* Prototype.swift in Sources */,
 				3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
+				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
@@ -2776,6 +2795,7 @@
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
+				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
 				3C8DBE7321EF354100BEF5F3 /* Builder.swift in Sources */,
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3C9F667521EF0CB600800E41 /* Strategy.swift in Sources */,
