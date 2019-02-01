@@ -286,6 +286,8 @@
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */; };
+		3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */; };
+		3CAB744E22041E3A00C8FE01 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB744D22041E3A00C8FE01 /* Visitor.swift */; };
 		3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */; };
 		3CADC72921FAF02400738B14 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CADC72821FAF02400738B14 /* State.swift */; };
 		3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B1215C03460034CF0A /* ColorBuilder.swift */; };
@@ -768,6 +770,8 @@
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendingOptionals.swift; sourceTree = "<group>"; };
+		3CAB744D22041E3A00C8FE01 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingChildViewControllers.swift; sourceTree = "<group>"; };
 		3CADC72821FAF02400738B14 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		3CB155B1215C03460034CF0A /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
@@ -1498,6 +1502,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				3CAB744A22040C7300C8FE01 /* APIDesign */,
 				3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming */,
 				3C4B691521E8BA24002175CB /* Patterns */,
 				3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation */,
@@ -1873,6 +1878,7 @@
 				3C339ADD22002B4C008A85C6 /* Interpreter.swift */,
 				3C339ADF22002B77008A85C6 /* Mediator.swift */,
 				3C204BC122016FBF00CB49B5 /* Memento.swift */,
+				3CAB744D22041E3A00C8FE01 /* Visitor.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -1911,6 +1917,14 @@
 				3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */,
 			);
 			path = ServiceLocator;
+			sourceTree = "<group>";
+		};
+		3CAB744A22040C7300C8FE01 /* APIDesign */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */,
+			);
+			path = APIDesign;
 			sourceTree = "<group>";
 		};
 		3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */ = {
@@ -2762,6 +2776,7 @@
 				3CD4913F21F05B9A0097618E /* Observer.swift in Sources */,
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
 				3C204BC222016FBF00CB49B5 /* Memento.swift in Sources */,
+				3CAB744E22041E3A00C8FE01 /* Visitor.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
@@ -2790,6 +2805,7 @@
 				3C9F667021EF073600800E41 /* SharingSwift.swift in Sources */,
 				3C0A797A21F1991F00082B2B /* Command.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
+				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
