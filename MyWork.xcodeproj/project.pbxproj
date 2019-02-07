@@ -167,6 +167,7 @@
 		3C54FE472194D499005E99B7 /* CaptchaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE462194D499005E99B7 /* CaptchaModel.swift */; };
 		3C54FE492194D80E005E99B7 /* FeedBackSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
+		3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */; };
 		3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */; };
 		3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */; };
 		3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4E121F5B970001D26ED /* TemplateMethod.swift */; };
@@ -178,6 +179,8 @@
 		3C5FDF012191F5D600F0C6DF /* CaptchaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FDF002191F5D600F0C6DF /* CaptchaView.xib */; };
 		3C5FDF032191FCC700F0C6DF /* FeedBackStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */; };
 		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
+		3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */; };
+		3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6209C4220BF9E900E2A67A /* Decorator.swift */; };
 		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
 		3C69E4AC215FA4870022CA4D /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD253B2112F95400128554 /* UIView+Ex.swift */; };
 		3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */; };
@@ -652,6 +655,7 @@
 		3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSendModel.swift; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskBasedConcurrency .swift"; sourceTree = "<group>"; };
 		3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerViewControllers.swift; sourceTree = "<group>"; };
 		3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePowerOfTypeAliases.swift; sourceTree = "<group>"; };
 		3C5CA4E121F5B970001D26ED /* TemplateMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethod.swift; sourceTree = "<group>"; };
@@ -663,6 +667,8 @@
 		3C5FDF002191F5D600F0C6DF /* CaptchaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptchaView.xib; sourceTree = "<group>"; };
 		3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackStyle.swift; sourceTree = "<group>"; };
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
+		3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
+		3C6209C4220BF9E900E2A67A /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
 		3C69E4AA215FA4090022CA4D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
 		3C6D8F5A21099BAC000190F3 /* LineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineControl.swift; sourceTree = "<group>"; };
@@ -1493,6 +1499,7 @@
 		3C4B691521E8BA24002175CB /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				3C6209C3220BF9CF00E2A67A /* Структурные паттерны */,
 				3C9F667321EF0CA900800E41 /* Паттерны поведения */,
 				3C078A6F21E8D5DD005F08B4 /* Пораждающие паттерны */,
 			);
@@ -1588,6 +1595,14 @@
 				3C5FDF002191F5D600F0C6DF /* CaptchaView.xib */,
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		3C6209C3220BF9CF00E2A67A /* Структурные паттерны */ = {
+			isa = PBXGroup;
+			children = (
+				3C6209C4220BF9E900E2A67A /* Decorator.swift */,
+			);
+			path = "Структурные паттерны";
 			sourceTree = "<group>";
 		};
 		3C6D8F622109C1FC000190F3 /* StatisticControl */ = {
@@ -1707,6 +1722,7 @@
 				3C8546BA21FEF0920004700D /* AvoidingRaceConditions.swift */,
 				3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */,
 				3C204BBF2201677800CB49B5 /* GCD.swift */,
+				3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */,
 			);
 			path = ConcurrencyAsynchronousProgramming;
 			sourceTree = "<group>";
@@ -1923,6 +1939,7 @@
 			isa = PBXGroup;
 			children = (
 				3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */,
+				3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -2783,6 +2800,7 @@
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
+				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
@@ -2811,12 +2829,14 @@
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
+				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
 				3C8DBE7321EF354100BEF5F3 /* Builder.swift in Sources */,
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3C9F667521EF0CB600800E41 /* Strategy.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
+				3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */,
 				3CC1334E21F830630009A04B /* Navigation.swift in Sources */,
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
 			);
