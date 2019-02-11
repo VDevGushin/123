@@ -142,6 +142,8 @@
 		3C457F9421B7A43500B5EF63 /* SourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C457F9321B7A43500B5EF63 /* SourcesTableViewController.swift */; };
 		3C4763D8211AC567006D0C1B /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4763D7211AC567006D0C1B /* CustomOperators.swift */; };
 		3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */; };
+		3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A84FA221136DE0034627F /* BuildingDSLs.swift */; };
+		3C4A84FF2211477A0034627F /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A84FE2211477A0034627F /* Adapter.swift */; };
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
 		3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54E21006423003F484C /* PromiseKit.swift */; };
 		3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B691321E883B1002175CB /* IdentifyingObjects.swift */; };
@@ -629,6 +631,8 @@
 		3C457F9321B7A43500B5EF63 /* SourcesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTableViewController.swift; sourceTree = "<group>"; };
 		3C4763D7211AC567006D0C1B /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCustomCollections.swift; sourceTree = "<group>"; };
+		3C4A84FA221136DE0034627F /* BuildingDSLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDSLs.swift; sourceTree = "<group>"; };
+		3C4A84FE2211477A0034627F /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
 		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
 		3C4B691321E883B1002175CB /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
@@ -1601,6 +1605,7 @@
 			isa = PBXGroup;
 			children = (
 				3C6209C4220BF9E900E2A67A /* Decorator.swift */,
+				3C4A84FE2211477A0034627F /* Adapter.swift */,
 			);
 			path = "Структурные паттерны";
 			sourceTree = "<group>";
@@ -1940,6 +1945,7 @@
 			children = (
 				3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */,
 				3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */,
+				3C4A84FA221136DE0034627F /* BuildingDSLs.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -2806,6 +2812,7 @@
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
 				3CC689D521EC69880033F805 /* Prototype.swift in Sources */,
 				3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */,
+				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
@@ -2839,6 +2846,7 @@
 				3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */,
 				3CC1334E21F830630009A04B /* Navigation.swift in Sources */,
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
+				3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
