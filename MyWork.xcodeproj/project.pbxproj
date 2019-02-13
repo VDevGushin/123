@@ -81,6 +81,8 @@
 		3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */; };
 		3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464B2174643E0032BC36 /* DLSViewController.swift */; };
 		3C3B464F21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */; };
+		3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */; };
+		3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BDE6C2213E6C4004B9168 /* Composite.swift */; };
 		3C3D0E41216C8654006B7907 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E40216C8654006B7907 /* Strings.swift */; };
 		3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */; };
 		3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */; };
@@ -549,6 +551,8 @@
 		3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 		3C3B464B2174643E0032BC36 /* DLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLSViewController.swift; sourceTree = "<group>"; };
 		3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutConstraint+NSLayoutAnchor.swift"; sourceTree = "<group>"; };
+		3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type inference-powered serialization in Swift.swift"; sourceTree = "<group>"; };
+		3C3BDE6C2213E6C4004B9168 /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
 		3C3D0E40216C8654006B7907 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPresenter.swift; sourceTree = "<group>"; };
 		3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingAutoclosure .swift"; sourceTree = "<group>"; };
@@ -1611,6 +1615,7 @@
 				3C6209C4220BF9E900E2A67A /* Decorator.swift */,
 				3C4A84FE2211477A0034627F /* Adapter.swift */,
 				3C0018BA2212973B00CE9D3E /* Facade.swift */,
+				3C3BDE6C2213E6C4004B9168 /* Composite.swift */,
 			);
 			path = "Структурные паттерны";
 			sourceTree = "<group>";
@@ -1952,6 +1957,7 @@
 				3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */,
 				3C4A84FA221136DE0034627F /* BuildingDSLs.swift */,
 				3C0018B8221290B800CE9D3E /* Trimming long argument lists.swift */,
+				3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -2814,6 +2820,7 @@
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
+				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
@@ -2839,6 +2846,7 @@
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
+				3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
