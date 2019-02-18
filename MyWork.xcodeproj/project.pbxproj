@@ -189,6 +189,7 @@
 		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
 		3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */; };
 		3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6209C4220BF9E900E2A67A /* Decorator.swift */; };
+		3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */; };
 		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
 		3C69E4AC215FA4870022CA4D /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD253B2112F95400128554 /* UIView+Ex.swift */; };
 		3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */; };
@@ -276,7 +277,6 @@
 		3C9A83C62133C9C4008A1F17 /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */; };
 		3C9AA1252147A3AE00085EEC /* СustomСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AA1242147A3AE00085EEC /* СustomСollections.swift */; };
 		3C9AC62B219176FA00772425 /* AvoidingRaceConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AC62A219176FA00772425 /* AvoidingRaceConditions.swift */; };
-		3C9F667021EF073600800E41 /* SharingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F666F21EF073600800E41 /* SharingSwift.swift */; };
 		3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */; };
 		3C9F667521EF0CB600800E41 /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F667421EF0CB600800E41 /* Strategy.swift */; };
 		3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0BE0521F83BA500DFDBEA /* Iterator.swift */; };
@@ -421,6 +421,7 @@
 		3CFD254E21132C9F00128554 /* ETBAddTimeViewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD254D21132C9F00128554 /* ETBAddTimeViewControl.xib */; };
 		3CFD25512113453F00128554 /* ETBAddTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */; };
 		3CFD25522113453F00128554 /* ETBAddTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */; };
+		3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFCEC7221ABA1A00712FFD /* Bridge.swift */; };
 		64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */; };
 /* End PBXBuildFile section */
 
@@ -686,6 +687,7 @@
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
 		3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
 		3C6209C4220BF9E900E2A67A /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InlineTypesAndFunctions .swift"; sourceTree = "<group>"; };
 		3C69E4AA215FA4090022CA4D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
 		3C6D8F5A21099BAC000190F3 /* LineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineControl.swift; sourceTree = "<group>"; };
@@ -772,7 +774,6 @@
 		3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
 		3C9AA1242147A3AE00085EEC /* СustomСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СustomСollections.swift"; sourceTree = "<group>"; };
 		3C9AC62A219176FA00772425 /* AvoidingRaceConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingRaceConditions.swift; sourceTree = "<group>"; };
-		3C9F666F21EF073600800E41 /* SharingSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingSwift.swift; sourceTree = "<group>"; };
 		3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HandlingNon-OptionalOptionals .swift"; sourceTree = "<group>"; };
 		3C9F667421EF0CB600800E41 /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 		3CA0BE0521F83BA500DFDBEA /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
@@ -939,6 +940,7 @@
 		3CFD254D21132C9F00128554 /* ETBAddTimeViewControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBAddTimeViewControl.xib; sourceTree = "<group>"; };
 		3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBAddTimeViewController.swift; sourceTree = "<group>"; };
 		3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBAddTimeViewController.xib; sourceTree = "<group>"; };
+		3CFFCEC7221ABA1A00712FFD /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63A3AC3C3088AF515DBB31C /* Pods-MyWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1623,6 +1625,7 @@
 				3C0018BA2212973B00CE9D3E /* Facade.swift */,
 				3C3BDE6C2213E6C4004B9168 /* Composite.swift */,
 				3C04AE80221689BA0086CE4B /* Proxy.swift */,
+				3CFFCEC7221ABA1A00712FFD /* Bridge.swift */,
 			);
 			path = "Структурные паттерны";
 			sourceTree = "<group>";
@@ -1695,8 +1698,8 @@
 			isa = PBXGroup;
 			children = (
 				3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */,
-				3C9F666F21EF073600800E41 /* SharingSwift.swift */,
 				3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */,
+				3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */,
 			);
 			path = New;
 			sourceTree = "<group>";
@@ -2828,6 +2831,7 @@
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
+				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
@@ -2852,12 +2856,12 @@
 				3CC689D321EC67270033F805 /* Singleton.swift in Sources */,
 				3CADC72921FAF02400738B14 /* State.swift in Sources */,
 				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
-				3C9F667021EF073600800E41 /* SharingSwift.swift in Sources */,
 				3C04AE81221689BA0086CE4B /* Proxy.swift in Sources */,
 				3C0A797A21F1991F00082B2B /* Command.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
+				3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */,
 				3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
