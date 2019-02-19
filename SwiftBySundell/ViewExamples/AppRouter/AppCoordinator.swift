@@ -9,8 +9,21 @@
 import UIKit
 
 final class AppCoordinator {
-    enum Destination {
+    enum Destination: Int {
         case mainView
+        case lottieView
+        case promiseKit
+
+        var title: String {
+            switch self {
+            case .lottieView:
+                return "Lottie"
+            case .mainView:
+                return "Menu"
+            case .promiseKit:
+                return "Promise Kit"
+            }
+        }
     }
 
     private weak var navigationController: UINavigationController?
@@ -31,15 +44,16 @@ final class AppCoordinator {
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
-        case .mainView: return MainViewController.make()
+        case .mainView: return MainViewController.make(title: destination.title, navigator: self)
+        case .lottieView: return LottieAnimationViewController.make(title: destination.title, navigator: self)
+        case .promiseKit: return PromiseKitViewController.make(title: destination.title, navigator: self)
         }
     }
 
     static func navigation() -> UINavigationController {
         let navigationViewController = UINavigationController()
-
         let navigator = AppCoordinator(navigationController: navigationViewController)
-        
+
         navigator.navigate(to: .mainView)
         return navigationViewController
     }

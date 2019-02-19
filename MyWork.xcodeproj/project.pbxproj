@@ -35,6 +35,8 @@
 		3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */; };
 		3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */; };
 		3C15C8A121C8D9B000734E30 /* ScrollRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39B3CC21C7BA7000323840 /* ScrollRootViewController.swift */; };
+		3C176F08221C338A009CC12F /* switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C176F07221C338A009CC12F /* switch.json */; };
+		3C176F0A221C361A009CC12F /* switch-action.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C176F09221C361A009CC12F /* switch-action.json */; };
 		3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */; };
 		3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */; };
 		3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */; };
@@ -46,6 +48,15 @@
 		3C1DB1AB2192D6CB001BD557 /* Organisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1AA2192D6CB001BD557 /* Organisation.swift */; };
 		3C1DD66F2118135D00383851 /* PowerOfSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DD66E2118135D00383851 /* PowerOfSet.swift */; };
 		3C1DD6722118183700383851 /* Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DD6712118183700383851 /* Serialization.swift */; };
+		3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6ABB221C073000997F31 /* LottieAnimationViewController.swift */; };
+		3C1E6ABE221C073000997F31 /* LottieAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1E6ABC221C073000997F31 /* LottieAnimationViewController.xib */; };
+		3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6ABF221C09EE00997F31 /* CoordinatorViewController.swift */; };
+		3C1E6AC3221C0C9600997F31 /* im-thirsty.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C1E6AC1221C0C9500997F31 /* im-thirsty.json */; };
+		3C1E6AC4221C0C9600997F31 /* motorcycle.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C1E6AC2221C0C9500997F31 /* motorcycle.json */; };
+		3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6AC6221C19C800997F31 /* PromiseKitViewController.swift */; };
+		3C1E6AC9221C19C800997F31 /* PromiseKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C1E6AC7221C19C800997F31 /* PromiseKitViewController.xib */; };
+		3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1E6ACB221C1C8F00997F31 /* PromiseKitDataController.swift */; };
+		3C1EA4A9221BE01300B33763 /* not-found.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C1EA4A8221BE01300B33763 /* not-found.json */; };
 		3C1EC266212150BC00E929E5 /* TrimmingLongArgumentLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */; };
 		3C1EC2682121526500E929E5 /* UsingGenericTypeConstraints .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */; };
 		3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */; };
@@ -82,6 +93,8 @@
 		3C37B767213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */; };
 		3C38E1742107732A005CBDE9 /* RoundPercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */; };
 		3C38E17621077353005CBDE9 /* RoundPercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */; };
+		3C3925E9221BDC1F003CD1EE /* pulsing-loading-circles.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3925E8221BDC1E003CD1EE /* pulsing-loading-circles.json */; };
+		3C3925EB221BDD06003CD1EE /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3925EA221BDD06003CD1EE /* Pods_MyWork.framework */; };
 		3C39B3CF21C7BA7000323840 /* ScrollRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C39B3CD21C7BA7000323840 /* ScrollRootViewController.xib */; };
 		3C39B3D421C7BBA600323840 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39B3D221C7BBA600323840 /* ContentViewController.swift */; };
 		3C39B3D521C7BBA600323840 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C39B3D321C7BBA600323840 /* ContentViewController.xib */; };
@@ -428,6 +441,8 @@
 		3CFD25522113453F00128554 /* ETBAddTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */; };
 		3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFCEC7221ABA1A00712FFD /* Bridge.swift */; };
 		64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */; };
+		7D17D1A5DF282C3F768E4102 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3925EA221BDD06003CD1EE /* Pods_MyWork.framework */; };
+		8C3416F734325F5985830330 /* Pods_SwiftBySundell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -513,6 +528,8 @@
 		3C14387021BE331600BA241D /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
 		3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsAsControlFlow.swift; sourceTree = "<group>"; };
 		3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
+		3C176F07221C338A009CC12F /* switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = switch.json; sourceTree = "<group>"; };
+		3C176F09221C361A009CC12F /* switch-action.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "switch-action.json"; sourceTree = "<group>"; };
 		3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelСontrollers.swift"; sourceTree = "<group>"; };
 		3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackNavigator.swift; sourceTree = "<group>"; };
 		3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSearchViewController.swift; sourceTree = "<group>"; };
@@ -524,6 +541,15 @@
 		3C1DB1AA2192D6CB001BD557 /* Organisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organisation.swift; sourceTree = "<group>"; };
 		3C1DD66E2118135D00383851 /* PowerOfSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSet.swift; sourceTree = "<group>"; };
 		3C1DD6712118183700383851 /* Serialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serialization.swift; sourceTree = "<group>"; };
+		3C1E6ABB221C073000997F31 /* LottieAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieAnimationViewController.swift; sourceTree = "<group>"; };
+		3C1E6ABC221C073000997F31 /* LottieAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LottieAnimationViewController.xib; sourceTree = "<group>"; };
+		3C1E6ABF221C09EE00997F31 /* CoordinatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorViewController.swift; sourceTree = "<group>"; };
+		3C1E6AC1221C0C9500997F31 /* im-thirsty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "im-thirsty.json"; sourceTree = "<group>"; };
+		3C1E6AC2221C0C9500997F31 /* motorcycle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motorcycle.json; sourceTree = "<group>"; };
+		3C1E6AC6221C19C800997F31 /* PromiseKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitViewController.swift; sourceTree = "<group>"; };
+		3C1E6AC7221C19C800997F31 /* PromiseKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromiseKitViewController.xib; sourceTree = "<group>"; };
+		3C1E6ACB221C1C8F00997F31 /* PromiseKitDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKitDataController.swift; sourceTree = "<group>"; };
+		3C1EA4A8221BE01300B33763 /* not-found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "not-found.json"; sourceTree = "<group>"; };
 		3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmingLongArgumentLists.swift; sourceTree = "<group>"; };
 		3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingGenericTypeConstraints .swift"; sourceTree = "<group>"; };
 		3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPatternToAvoidShared.swift; sourceTree = "<group>"; };
@@ -560,6 +586,8 @@
 		3C37B766213E4BEB007E625A /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
 		3C38E1732107732A005CBDE9 /* RoundPercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPercentagesControl.swift; sourceTree = "<group>"; };
 		3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundPercentagesControl.xib; sourceTree = "<group>"; };
+		3C3925E8221BDC1E003CD1EE /* pulsing-loading-circles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pulsing-loading-circles.json"; sourceTree = "<group>"; };
+		3C3925EA221BDD06003CD1EE /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C39B3CC21C7BA7000323840 /* ScrollRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRootViewController.swift; sourceTree = "<group>"; };
 		3C39B3CD21C7BA7000323840 /* ScrollRootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollRootViewController.xib; sourceTree = "<group>"; };
 		3C39B3D221C7BBA600323840 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
@@ -952,7 +980,10 @@
 		3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBAddTimeViewController.xib; sourceTree = "<group>"; };
 		3CFFCEC7221ABA1A00712FFD /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E9ACB5FCDB45B1B02FAD02 /* Pods-SwiftBySundell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.debug.xcconfig"; sourceTree = "<group>"; };
 		D63A3AC3C3088AF515DBB31C /* Pods-MyWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.debug.xcconfig"; sourceTree = "<group>"; };
+		E74493E2C698AD9E6A939D06 /* Pods-SwiftBySundell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -989,6 +1020,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C3925EB221BDD06003CD1EE /* Pods_MyWork.framework in Frameworks */,
+				8C3416F734325F5985830330 /* Pods_SwiftBySundell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,6 +1040,7 @@
 				0ED8786B7DB985A3964893C8 /* Pods_MyWork.framework in Frameworks */,
 				64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */,
 				287EE387051990F02A660DE9 /* Pods_MyWork.framework in Frameworks */,
+				7D17D1A5DF282C3F768E4102 /* Pods_MyWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,10 +1057,12 @@
 		0A62CB7B25171A6FCD0001F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C3925EA221BDD06003CD1EE /* Pods_MyWork.framework */,
 				3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */,
 				3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */,
 				3CE3E4F7215BBEEE003A0528 /* Pods_MyWork.framework */,
 				44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */,
+				45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1121,6 +1157,13 @@
 			path = ErrorHandler;
 			sourceTree = "<group>";
 		};
+		3C176F06221C228F009CC12F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3C1D9C7121089F43006DF537 /* LinePercentagesControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1150,6 +1193,34 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		3C1E6ABA221C06FC00997F31 /* AnimationLottie */ = {
+			isa = PBXGroup;
+			children = (
+				3C1E6ABB221C073000997F31 /* LottieAnimationViewController.swift */,
+				3C1E6ABC221C073000997F31 /* LottieAnimationViewController.xib */,
+			);
+			path = AnimationLottie;
+			sourceTree = "<group>";
+		};
+		3C1E6AC5221C199900997F31 /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				3C176F06221C228F009CC12F /* Model */,
+				3C1E6ACA221C1C2300997F31 /* DataControllers */,
+				3C1E6AC6221C19C800997F31 /* PromiseKitViewController.swift */,
+				3C1E6AC7221C19C800997F31 /* PromiseKitViewController.xib */,
+			);
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		3C1E6ACA221C1C2300997F31 /* DataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C1E6ACB221C1C8F00997F31 /* PromiseKitDataController.swift */,
+			);
+			path = DataControllers;
+			sourceTree = "<group>";
+		};
 		3C276687217DE1C200374E7E /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1176,6 +1247,7 @@
 		3C2C9C1D221BD7E2004A2605 /* ViewExamples */ = {
 			isa = PBXGroup;
 			children = (
+				3C3925E7221BDB9E003CD1EE /* Sources */,
 				3C2C9C21221BD8F3004A2605 /* Controllers */,
 				3C2C9C1E221BD7F5004A2605 /* AppRouter */,
 			);
@@ -1193,7 +1265,10 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C1E6AC5221C199900997F31 /* PromiseKit */,
+				3C1E6ABA221C06FC00997F31 /* AnimationLottie */,
 				3C2C9C22221BD8FD004A2605 /* MainView */,
+				3C1E6ABF221C09EE00997F31 /* CoordinatorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1271,6 +1346,19 @@
 				3C12E33821086A610026F1D5 /* PercentagesControls */,
 			);
 			path = UIControls;
+			sourceTree = "<group>";
+		};
+		3C3925E7221BDB9E003CD1EE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3C176F09221C361A009CC12F /* switch-action.json */,
+				3C176F07221C338A009CC12F /* switch.json */,
+				3C1E6AC1221C0C9500997F31 /* im-thirsty.json */,
+				3C1E6AC2221C0C9500997F31 /* motorcycle.json */,
+				3C1EA4A8221BE01300B33763 /* not-found.json */,
+				3C3925E8221BDC1E003CD1EE /* pulsing-loading-circles.json */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		3C39B3CB21C7BA2300323840 /* Menu */ = {
@@ -2368,6 +2456,8 @@
 			children = (
 				D63A3AC3C3088AF515DBB31C /* Pods-MyWork.debug.xcconfig */,
 				20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */,
+				52E9ACB5FCDB45B1B02FAD02 /* Pods-SwiftBySundell.debug.xcconfig */,
+				E74493E2C698AD9E6A939D06 /* Pods-SwiftBySundell.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -2463,9 +2553,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C517C6521B9051B009CAEE7 /* Build configuration list for PBXNativeTarget "SwiftBySundell" */;
 			buildPhases = (
+				560351B2F1350A2D15141CDB /* [CP] Check Pods Manifest.lock */,
 				3C517C5021B9051A009CAEE7 /* Sources */,
 				3C517C5121B9051A009CAEE7 /* Frameworks */,
 				3C517C5221B9051A009CAEE7 /* Resources */,
+				A8102140F4B0A009A42A031B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2636,9 +2728,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */,
+				3C1E6AC3221C0C9600997F31 /* im-thirsty.json in Resources */,
+				3C1E6AC4221C0C9600997F31 /* motorcycle.json in Resources */,
 				3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */,
+				3C1EA4A9221BE01300B33763 /* not-found.json in Resources */,
 				3C517C5C21B9051A009CAEE7 /* Main.storyboard in Resources */,
+				3C3925E9221BDC1F003CD1EE /* pulsing-loading-circles.json in Resources */,
+				3C1E6AC9221C19C800997F31 /* PromiseKitViewController.xib in Resources */,
+				3C176F08221C338A009CC12F /* switch.json in Resources */,
 				3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */,
+				3C1E6ABE221C073000997F31 /* LottieAnimationViewController.xib in Resources */,
+				3C176F0A221C361A009CC12F /* switch-action.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2717,6 +2817,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		560351B2F1350A2D15141CDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftBySundell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6CE6F8A65F63ACA8B4D17589 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2724,10 +2842,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.4/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox-iOS11.4/Unbox.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.4/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -2739,6 +2857,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8102140F4B0A009A42A031B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox-iOS12.1/Unbox.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios-iOS12.1/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FFA2E5B8E53FBECA8EBD6EAB /* [CP] Check Pods Manifest.lock */ = {
@@ -2885,7 +3027,9 @@
 				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
 				3C517C5921B9051A009CAEE7 /* ViewController.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
+				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
+				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
@@ -2899,6 +3043,7 @@
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
 				3C2C9C1C221BD238004A2605 /* Flyweight.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
+				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */,
 				3C8546BD21FEFAD40004700D /* ChainOfResponsibility.swift in Sources */,
@@ -2919,6 +3064,7 @@
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
+				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
@@ -3280,7 +3426,10 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzer;
@@ -3300,7 +3449,10 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3319,7 +3471,11 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerTests;
@@ -3339,7 +3495,11 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3357,7 +3517,11 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzerUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerUITests;
@@ -3376,7 +3540,11 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzerUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3401,7 +3569,11 @@
 				INFOPLIST_FILE = SupportLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.SupportLib;
@@ -3430,7 +3602,11 @@
 				INFOPLIST_FILE = SupportLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.SupportLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -3444,13 +3620,17 @@
 		};
 		3C517C6321B9051B009CAEE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52E9ACB5FCDB45B1B02FAD02 /* Pods-SwiftBySundell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = SwiftBySundell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.SwiftBySundell;
@@ -3462,13 +3642,17 @@
 		};
 		3C517C6421B9051B009CAEE7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E74493E2C698AD9E6A939D06 /* Pods-SwiftBySundell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = SwiftBySundell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.SwiftBySundell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3486,7 +3670,10 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = WorkWithUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.WorkWithUI;
@@ -3505,7 +3692,10 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = WorkWithUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.WorkWithUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3636,7 +3826,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = MyWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -3652,7 +3845,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = MyWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -3669,7 +3865,10 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = UIPart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.UIPart;
@@ -3690,7 +3889,10 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = UIPart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.UIPart;
 				PRODUCT_NAME = "$(TARGET_NAME)";

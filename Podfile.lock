@@ -18,7 +18,7 @@ PODS:
 DEPENDENCIES:
   - Charts
   - lottie-ios
-  - PromiseKit (~> 6.0)
+  - PromiseKit
   - SwiftLint
   - Unbox
 
@@ -37,6 +37,6 @@ SPEC CHECKSUMS:
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: f33346133135b27df67b566bc92b734e7bc44a13
+PODFILE CHECKSUM: 1e294a6fa9cf4c1484ffda9afabe450f0feabc3d
 
 COCOAPODS: 1.5.0

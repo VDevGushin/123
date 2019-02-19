@@ -143,16 +143,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.4/PromiseKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Unbox-iOS11.4/Unbox.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.4/Lottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Unbox-iOS12.1/Unbox.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS12.1/Lottie.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.4/PromiseKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Unbox-iOS11.4/Unbox.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.4/Lottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Unbox-iOS12.1/Unbox.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS12.1/Lottie.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
