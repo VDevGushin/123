@@ -2,6 +2,7 @@ PODS:
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
+  - lottie-ios (2.5.2)
   - PromiseKit (6.5.1):
     - PromiseKit/CorePromise (= 6.5.1)
     - PromiseKit/Foundation (= 6.5.1)
@@ -16,6 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - Charts
+  - lottie-ios
   - PromiseKit (~> 6.0)
   - SwiftLint
   - Unbox
@@ -23,16 +25,18 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Charts
+    - lottie-ios
     - PromiseKit
     - SwiftLint
     - Unbox
 
 SPEC CHECKSUMS:
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   PromiseKit: 162f56c89aae9989ffc14476a5f821af17c3f4ba
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: c1d0b73a327126dda748874064007bcdfa0e901e
+PODFILE CHECKSUM: f33346133135b27df67b566bc92b734e7bc44a13
 
 COCOAPODS: 1.5.0

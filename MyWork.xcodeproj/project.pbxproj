@@ -54,6 +54,11 @@
 		3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C276688217DE1D600374E7E /* CalendarViewController.swift */; };
 		3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C276689217DE1D600374E7E /* CalendarViewController.xib */; };
 		3C276690217DEA1400374E7E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C27668F217DEA1400374E7E /* MonthView.swift */; };
+		3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */; };
+		3C2C9C1C221BD238004A2605 /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C1B221BD238004A2605 /* Flyweight.swift */; };
+		3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C1F221BD856004A2605 /* AppCoordinator.swift */; };
+		3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C23221BD919004A2605 /* MainViewController.swift */; };
+		3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C9C24221BD919004A2605 /* MainViewController.xib */; };
 		3C2FA84E20F8860600F54E76 /* StaticFactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */; };
 		3C2FA85220F88C3400F54E76 /* Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85120F88C3400F54E76 /* Delegation.swift */; };
 		3C2FA85420F88FAE00F54E76 /* Observers+NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85320F88FAE00F54E76 /* Observers+NotificationCenter.swift */; };
@@ -527,6 +532,11 @@
 		3C276688217DE1D600374E7E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3C276689217DE1D600374E7E /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		3C27668F217DEA1400374E7E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSelfDocumenting.swift; sourceTree = "<group>"; };
+		3C2C9C1B221BD238004A2605 /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
+		3C2C9C1F221BD856004A2605 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3C2C9C23221BD919004A2605 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3C2C9C24221BD919004A2605 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		3C2FA84D20F8860600F54E76 /* StaticFactoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactoryMethods.swift; sourceTree = "<group>"; };
 		3C2FA85120F88C3400F54E76 /* Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation.swift; sourceTree = "<group>"; };
 		3C2FA85320F88FAE00F54E76 /* Observers+NotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observers+NotificationCenter.swift"; sourceTree = "<group>"; };
@@ -1163,6 +1173,40 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		3C2C9C1D221BD7E2004A2605 /* ViewExamples */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C9C21221BD8F3004A2605 /* Controllers */,
+				3C2C9C1E221BD7F5004A2605 /* AppRouter */,
+			);
+			path = ViewExamples;
+			sourceTree = "<group>";
+		};
+		3C2C9C1E221BD7F5004A2605 /* AppRouter */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C9C1F221BD856004A2605 /* AppCoordinator.swift */,
+			);
+			path = AppRouter;
+			sourceTree = "<group>";
+		};
+		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C9C22221BD8FD004A2605 /* MainView */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3C2C9C22221BD8FD004A2605 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C9C23221BD919004A2605 /* MainViewController.swift */,
+				3C2C9C24221BD919004A2605 /* MainViewController.xib */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		3C2FA84B20F885CD00F54E76 /* View controllers & Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1529,6 +1573,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				3C2C9C1D221BD7E2004A2605 /* ViewExamples */,
 				3CAB744A22040C7300C8FE01 /* APIDesign */,
 				3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming */,
 				3C4B691521E8BA24002175CB /* Patterns */,
@@ -1626,6 +1671,7 @@
 				3C3BDE6C2213E6C4004B9168 /* Composite.swift */,
 				3C04AE80221689BA0086CE4B /* Proxy.swift */,
 				3CFFCEC7221ABA1A00712FFD /* Bridge.swift */,
+				3C2C9C1B221BD238004A2605 /* Flyweight.swift */,
 			);
 			path = "Структурные паттерны";
 			sourceTree = "<group>";
@@ -1970,6 +2016,7 @@
 				3C0018B8221290B800CE9D3E /* Trimming long argument lists.swift */,
 				3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */,
 				3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */,
+				3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -2591,6 +2638,7 @@
 				3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */,
 				3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */,
 				3C517C5C21B9051A009CAEE7 /* Main.storyboard in Resources */,
+				3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2679,12 +2727,14 @@
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2819,6 +2869,7 @@
 			files = (
 				3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */,
 				3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */,
+				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				3C0018BB2212973B00CE9D3E /* Facade.swift in Sources */,
@@ -2846,6 +2897,7 @@
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
+				3C2C9C1C221BD238004A2605 /* Flyweight.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */,
@@ -2860,6 +2912,7 @@
 				3C0A797A21F1991F00082B2B /* Command.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
+				3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */,
 				3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */,
@@ -2875,6 +2928,7 @@
 				3C9F667521EF0CB600800E41 /* Strategy.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
+				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,
 				3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */,
 				3CC1334E21F830630009A04B /* Navigation.swift in Sources */,
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
@@ -3226,10 +3280,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzer;
@@ -3249,10 +3300,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3271,11 +3319,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerTests;
@@ -3295,11 +3339,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3317,11 +3357,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzerUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerUITests;
@@ -3340,11 +3376,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = ImageAnalyzerUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3369,11 +3401,7 @@
 				INFOPLIST_FILE = SupportLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.SupportLib;
@@ -3402,11 +3430,7 @@
 				INFOPLIST_FILE = SupportLib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.SupportLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -3426,10 +3450,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = SwiftBySundell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.SwiftBySundell;
@@ -3447,10 +3468,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = SwiftBySundell/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.SwiftBySundell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3468,10 +3486,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = WorkWithUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.WorkWithUI;
@@ -3490,10 +3505,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = WorkWithUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.WorkWithUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3624,10 +3636,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = MyWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -3643,10 +3652,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = MyWork/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.MyWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -3663,10 +3669,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = UIPart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.UIPart;
@@ -3687,10 +3690,7 @@
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = UIPart/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.UIPart;
 				PRODUCT_NAME = "$(TARGET_NAME)";

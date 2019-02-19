@@ -8,6 +8,7 @@ target 'MyWork' do
   pod "PromiseKit", "~> 6.0"
   pod 'Charts'
   pod 'SwiftLint'
+  pod 'lottie-ios'
   # Pods for MyWork
 
 end
