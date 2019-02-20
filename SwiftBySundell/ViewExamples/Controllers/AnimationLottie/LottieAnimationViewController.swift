@@ -18,17 +18,22 @@ fileprivate extension Array where Element == LOTAnimationView {
 }
 
 class LottieAnimationViewController: CoordinatorViewController {
+
     @IBOutlet private weak var animationView: LOTAnimationView!
     @IBOutlet private weak var animationView2: LOTAnimationView!
     @IBOutlet private weak var animationView3: LOTAnimationView!
     @IBOutlet private weak var animationView4: LOTAnimationView!
     @IBOutlet private weak var contentView: UIView!
 
+    //For download testing
+    var prevProgress : CGFloat = 0.0
+    private var downloadTask: URLSessionDownloadTask?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addBigAnimations()
         self.addSwitcher()
+        self.progressAnimation()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -48,6 +53,13 @@ class LottieAnimationViewController: CoordinatorViewController {
                 print("End animation")
             }
         }
+
+        //Download for progress
+        let downloadRequest = URLRequest(url: URL(string: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Whole_world_-_land_and_oceans_12000.jpg")!)
+        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: self, delegateQueue: OperationQueue.main)
+
+        downloadTask = session.downloadTask(with: downloadRequest)
+        downloadTask!.resume()
     }
 
     @objc func switchTogge(animatedSwitch: LOTAnimatedSwitch) {
@@ -57,11 +69,16 @@ class LottieAnimationViewController: CoordinatorViewController {
             print("off")
         }
     }
-    
-    private func addSwitcher(){
+
+    private func progressAnimation() {
+        self.animationView4.setAnimation(named: "success")
+        self.animationView4.contentMode = .scaleAspectFit
+    }
+
+    private func addSwitcher() {
         let mySwitch = LOTAnimatedSwitch(named: "switch-action")
         mySwitch.translatesAutoresizingMaskIntoConstraints = false
-        
+
         mySwitch.setProgressRangeForOnState(fromProgress: 0.5, toProgress: 1.0)
         mySwitch.setProgressRangeForOffState(fromProgress: 1.0, toProgress: 0.5)
         mySwitch.addTarget(self, action: #selector(switchTogge), for: .valueChanged)
@@ -71,7 +88,7 @@ class LottieAnimationViewController: CoordinatorViewController {
             mySwitch.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor),
             mySwitch.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
             mySwitch.heightAnchor.constraint(equalTo: self.contentView.heightAnchor, multiplier: 0.5),
-            ])
+        ])
     }
 
     private func addBigAnimations() {
@@ -88,11 +105,6 @@ class LottieAnimationViewController: CoordinatorViewController {
         self.animationView3.loopAnimation = true
         self.animationView3.contentMode = .scaleAspectFit
         self.animationView3.play()
-
-        self.animationView4.setAnimation(named: "motorcycle")
-        self.animationView4.loopAnimation = true
-        self.animationView4.contentMode = .scaleAspectFit
-        self.animationView4.play()
     }
 }
 
@@ -100,4 +112,20 @@ extension LottieAnimationViewController {
     static func make(title: String, navigator: AppCoordinator) -> LottieAnimationViewController {
         return LottieAnimationViewController(navigator: navigator, title: title, nibName: String(describing: LottieAnimationViewController.self), bundle: nil)
     }
+}
+
+extension LottieAnimationViewController: URLSessionDownloadDelegate {
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        self.prevProgress = 0.0
+    }
+
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        let progress = CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)
+    
+        self.animationView4.play(fromProgress: self.prevProgress, toProgress: progress, withCompletion: { _ in
+            print(progress)
+        })
+        self.prevProgress = progress
+    }
+
 }

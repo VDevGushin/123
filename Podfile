@@ -3,7 +3,7 @@
 
 def shared_pods
     pod "Unbox"
-    pod 'PromiseKit'
+    pod "PromiseKit", "~> 6.8"
     pod 'Charts'
     pod 'SwiftLint'
     pod 'lottie-ios'

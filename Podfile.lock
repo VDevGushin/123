@@ -3,14 +3,14 @@ PODS:
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
   - lottie-ios (2.5.2)
-  - PromiseKit (6.5.1):
-    - PromiseKit/CorePromise (= 6.5.1)
-    - PromiseKit/Foundation (= 6.5.1)
-    - PromiseKit/UIKit (= 6.5.1)
-  - PromiseKit/CorePromise (6.5.1)
-  - PromiseKit/Foundation (6.5.1):
+  - PromiseKit (6.8.3):
+    - PromiseKit/CorePromise (= 6.8.3)
+    - PromiseKit/Foundation (= 6.8.3)
+    - PromiseKit/UIKit (= 6.8.3)
+  - PromiseKit/CorePromise (6.8.3)
+  - PromiseKit/Foundation (6.8.3):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.5.1):
+  - PromiseKit/UIKit (6.8.3):
     - PromiseKit/CorePromise
   - SwiftLint (0.27.0)
   - Unbox (3.0.0)
@@ -18,7 +18,7 @@ PODS:
 DEPENDENCIES:
   - Charts
   - lottie-ios
-  - PromiseKit
+  - PromiseKit (~> 6.8)
   - SwiftLint
   - Unbox
 
@@ -33,10 +33,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
-  PromiseKit: 162f56c89aae9989ffc14476a5f821af17c3f4ba
+  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: 1e294a6fa9cf4c1484ffda9afabe450f0feabc3d
+PODFILE CHECKSUM: df6756be05fc96cb647c846506a5d2c95d2dcea1
 
 COCOAPODS: 1.5.0

@@ -1,66 +1,148 @@
-////
-////  PromiseKitDataController.swift
-////  SwiftBySundell
-////
-////  Created by Vladislav Gushin on 19/02/2019.
-////  Copyright © 2019 Vladislav Gushin. All rights reserved.
-////
 //
-//import UIKit
-//import PromiseKit
+//  PromiseKitDataController.swift
+//  SwiftBySundell
 //
-//struct AuthData {
-//    struct User {
-//        let id: Int
-//        let name: String
-//    }
+//  Created by Vladislav Gushin on 19/02/2019.
+//  Copyright © 2019 Vladislav Gushin. All rights reserved.
 //
-//    let user: User
-//}
-//
-//class PromiseKitDataController {
-//    func downloadAvatar(then handler: @escaping (UIImage?) -> Void) {
-//        firstly {
-//            login()
-//        }.then { data in
-//
-//        }.done {
-//
-//        }
-////        self.login { creds, error in
-////            if let creds = creds {
-////                self.fetch(avatar: creds.user) { image in
-////                    handler(image)
-////                }
-////            }
-////        }
-//    }
-//
-//    func login() -> Promise<AuthData> {
-//
-//        func getAuthData() -> AuthData {
-//            sleep(15)
-//            return AuthData(user: .init(id: 1, name: "Vlad"))
-//        }
-//
-//        return Promise<AuthData> { fulfill in
-//            fulfill.fulfill(getAuthData())
-//        }
-//    }
-//
-//    func fetch(avatar: AuthData.User, then handler: @escaping (UIImage) -> Void) {
-//        let url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Whole_world_-_land_and_oceans_12000.jpg")!
-//        URLSession.shared.dataTask(with: url) { data, response, error in
-//            guard
-//                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-//                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-//                let data = data, error == nil,
-//                let image = UIImage(data: data)
-//                else { return }
-//            DispatchQueue.main.async() {
-//                handler(image)
-//            }
-//        }.resume()
-//
-//    }
-//}
+
+import UIKit
+import PromiseKit
+
+class PromiseKitDataController {
+
+    enum UploadError: Error {
+        case failedToUpload, noImage
+    }
+
+    enum RegisterError: Error {
+        case failedToRegister
+    }
+
+    enum LoginError: Error {
+        case failedToLogin
+    }
+
+    // MARK: - Simple api - обычное апи без использование PromiseKit и демонстрация неудобной работы
+    func uploadSimple(image: UIImage?, completion: @escaping (Result<String>) -> Void) {
+        guard image != nil else {
+            return completion(.rejected(UploadError.noImage))
+        }
+        completion(.fulfilled("uploadtoken"))
+    }
+
+    func registerSimple(credentials: String, completion: @escaping (Result<String>) -> Void) {
+        completion(.fulfilled("registertoken"))
+    }
+
+    func loginSimple(withToken token: String, completion: @escaping (Result<String>) -> Void) {
+        completion(.fulfilled("logintoken"))
+    }
+
+    func authWithSimple() {
+        let userImage = UIImage(named: "None")
+        self.uploadSimple(image: userImage) { uploadResult in
+            switch uploadResult {
+            case .rejected(let error):
+                print(error.localizedDescription)
+            case .fulfilled(let token):
+                self.registerSimple(credentials: token) { registerResult in
+                    switch registerResult {
+                    case .rejected(let error):
+                        print(error.localizedDescription)
+                    case .fulfilled(let result):
+                        self.loginSimple(withToken: result) { result in
+                            switch result {
+                            case .rejected(let error): print(error.localizedDescription)
+                            case .fulfilled(let res): print(res)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // MARK: - Promise kit
+
+    //wrappers - мы можем переопределить методы , которые уже были написаны калбэками для нашего приложениея
+    func uploadSimplePromiseWrapper(image: UIImage?) -> Promise<String> {
+        return Promise {
+            self.uploadSimple(image: nil, completion: $0.resolve)
+        }
+    }
+
+    func registerSimplePromiseWrapper(credentials: String) -> Promise<String> {
+        return Promise {
+            self.registerSimple(credentials: credentials, completion: $0.resolve)
+        }
+    }
+
+    func loginSimplePromiseWrapper(withToken token: String) -> Promise<String> {
+        return Promise {
+            self.loginSimple(withToken: token, completion: $0.resolve)
+        }
+    }
+
+    //clean code - чистое использование promise kit
+    func upload(image: UIImage?) -> Promise<String> {
+        return Promise { resolver in
+            arc4random() % 2 == 0 ? resolver.fulfill("uploadtoken") : resolver.reject(UploadError.failedToUpload)
+        }
+    }
+
+    func register(credentials: String) -> Promise<String> {
+        return Promise { resolver in
+            arc4random() % 2 == 0 ? resolver.fulfill("registertoken") : resolver.reject(RegisterError.failedToRegister)
+        }
+    }
+
+    func login(withToken token: String) -> Promise<String> {
+        return Promise { resolver in
+            arc4random() % 2 == 0 ? resolver.fulfill("uploadtlogintokenoken") : resolver.reject(LoginError.failedToLogin)
+        }
+    }
+
+    //Цепочка операций
+    func authWithPrimise() -> Promise<String> {
+        return Promise { resolver in
+            let userImage = UIImage(named: "None")
+            firstly {
+                upload(image: userImage)
+            }.then { token in
+                self.register(credentials: token)
+            }.then { token in
+                self.login(withToken: token)
+            }.done { result in
+                resolver.fulfill(result)
+            }.ensure { //handler is always called.
+                print("ensure")
+            }.catch { error in
+                resolver.reject(error)
+            }
+        }
+    }
+
+    //Выполнение операций вместе для получения одновременных операций
+    func authWithPrimiseWhenAll() {
+        let userImage = UIImage(named: "None")
+        firstly {
+            when(fulfilled: upload(image: userImage), register(credentials: "token"), login(withToken: "token"))
+        }.done { token1, token2, token3 in
+            print(token1, token2, token3)
+        }.catch { error in
+            dump(error)
+        }
+    }
+
+    // MARK: - Guarantee - гарантия, никогда не кидает ошибку, поэтому нет смысла использовать блок catch
+    func loginSimpleGuaranteeWrapper(withToken token: String) -> Guarantee<Result<String>> {
+        return Guarantee { reslover in
+            self.loginSimple(withToken: token) { result in
+                reslover(result)
+            }
+        }
+    }
+}
+
+
