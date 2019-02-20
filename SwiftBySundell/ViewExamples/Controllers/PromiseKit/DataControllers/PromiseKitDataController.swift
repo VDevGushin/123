@@ -199,7 +199,7 @@ extension PromiseKitDataController {
         }
     }
 
-    // MARK : Background Work
+    // MARK: Background Work
     func avatar2(url: URL) -> Promise<UIImage> {
         let globalQueue = DispatchQueue.global(qos: .userInitiated)
         return firstly {
@@ -208,6 +208,19 @@ extension PromiseKitDataController {
             URLSession.shared.dataTask(.promise, with: user.imageULR)
         }.compactMap(on: globalQueue) {
             UIImage(data: $0.data)
+        }
+    }
+
+    // MARK: Failing Chains
+    func failingChains() -> Promise<String> {
+        let userImage = UIImage(named: "None")
+        return firstly {
+            upload(image: userImage)
+        }.then { (token) -> Promise<String> in
+            guard !token.isEmpty else {
+                throw UploadError.failedToUpload
+            }
+            return self.register(credentials: token)
         }
     }
 }

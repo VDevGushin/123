@@ -17,6 +17,7 @@
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
 		3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */; };
 		3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */; };
+		3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */; };
 		3C09E493217D93C7007ABDD8 /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */; };
 		3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */; };
 		3C0A797A21F1991F00082B2B /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A797921F1991F00082B2B /* Command.swift */; };
@@ -80,6 +81,8 @@
 		3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */; };
 		3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */; };
 		3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C3D0214B78DF008BBC12 /* ModellingState .swift */; };
+		3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3253B4221D7B1600A7E3F0 /* loading-image.json */; };
+		3C3253B7221D7C6600A7E3F0 /* taxi-app-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3253B6221D7C6600A7E3F0 /* taxi-app-loading.json */; };
 		3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */; };
 		3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C339ADD22002B4C008A85C6 /* Interpreter.swift */; };
 		3C339AE022002B77008A85C6 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C339ADF22002B77008A85C6 /* Mediator.swift */; };
@@ -511,6 +514,7 @@
 		3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
 		3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
 		3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDataController.swift; sourceTree = "<group>"; };
 		3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
 		3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubclassFreeViewControllers.swift; sourceTree = "<group>"; };
 		3C0A797921F1991F00082B2B /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
@@ -573,6 +577,8 @@
 		3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedAnalyticsSystem.swift; sourceTree = "<group>"; };
 		3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingSingletonsSwift.swift; sourceTree = "<group>"; };
 		3C30C3D0214B78DF008BBC12 /* ModellingState .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModellingState .swift"; sourceTree = "<group>"; };
+		3C3253B4221D7B1600A7E3F0 /* loading-image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-image.json"; sourceTree = "<group>"; };
+		3C3253B6221D7C6600A7E3F0 /* taxi-app-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "taxi-app-loading.json"; sourceTree = "<group>"; };
 		3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingTokensToHandleAsyncSwiftCode.swift; sourceTree = "<group>"; };
 		3C339ADD22002B4C008A85C6 /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
 		3C339ADF22002B77008A85C6 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
@@ -1217,6 +1223,7 @@
 			isa = PBXGroup;
 			children = (
 				3C1E6ACB221C1C8F00997F31 /* PromiseKitDataController.swift */,
+				3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */,
 			);
 			path = DataControllers;
 			sourceTree = "<group>";
@@ -1351,7 +1358,9 @@
 		3C3925E7221BDB9E003CD1EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3C3253B4221D7B1600A7E3F0 /* loading-image.json */,
 				3C3A1B0B221D18E4005DDFA7 /* success.json */,
+				3C3253B6221D7C6600A7E3F0 /* taxi-app-loading.json */,
 				3C3A1B0D221D23AB005DDFA7 /* app-loading.json */,
 				3C176F09221C361A009CC12F /* switch-action.json */,
 				3C176F07221C338A009CC12F /* switch.json */,
@@ -2730,9 +2739,11 @@
 				3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */,
 				3C1E6AC3221C0C9600997F31 /* im-thirsty.json in Resources */,
 				3C1E6AC4221C0C9600997F31 /* motorcycle.json in Resources */,
+				3C3253B7221D7C6600A7E3F0 /* taxi-app-loading.json in Resources */,
 				3C3A1B0C221D18E4005DDFA7 /* success.json in Resources */,
 				3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */,
 				3C1EA4A9221BE01300B33763 /* not-found.json in Resources */,
+				3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */,
 				3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */,
 				3C3925E9221BDC1F003CD1EE /* pulsing-loading-circles.json in Resources */,
 				3C1E6AC9221C19C800997F31 /* PromiseKitViewController.xib in Resources */,
@@ -3039,6 +3050,7 @@
 				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
+				3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
 				3C2C9C1C221BD238004A2605 /* Flyweight.swift in Sources */,

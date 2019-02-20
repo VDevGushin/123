@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromiseKitViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromiseKitViewController" customModule="SwiftBySundell" customModuleProvider="target">
             <connections>
+                <outlet property="animationView" destination="bDT-Ww-zbY" id="89t-F8-srF"/>
+                <outlet property="imageView" destination="cf0-SC-TQX" id="uOI-NM-jGU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,7 +21,35 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cf0-SC-TQX">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDT-Ww-zbY" customClass="LOTAnimationView">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIT-Da-a7r">
+                    <rect key="frame" x="12" y="625" width="127" height="30"/>
+                    <state key="normal" title="Скачать картинку"/>
+                    <connections>
+                        <action selector="onStartAnimation:" destination="-1" eventType="touchUpInside" id="Mbu-1x-uSb"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cf0-SC-TQX" secondAttribute="bottom" id="0gq-t9-7V6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cf0-SC-TQX" secondAttribute="trailing" id="3zo-6O-P5e"/>
+                <constraint firstItem="cf0-SC-TQX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8ZR-dS-uZV"/>
+                <constraint firstItem="bDT-Ww-zbY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CLa-g3-1CX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sIT-Da-a7r" secondAttribute="bottom" constant="12" id="J8N-TS-L48"/>
+                <constraint firstItem="cf0-SC-TQX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QIk-FO-RWq"/>
+                <constraint firstItem="sIT-Da-a7r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="UxX-D4-E1p"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bDT-Ww-zbY" secondAttribute="bottom" id="Xg1-x2-g8U"/>
+                <constraint firstItem="bDT-Ww-zbY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZJw-7B-C9L"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bDT-Ww-zbY" secondAttribute="trailing" id="cc6-4S-OGw"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

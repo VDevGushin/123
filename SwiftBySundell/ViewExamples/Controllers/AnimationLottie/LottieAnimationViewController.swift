@@ -71,7 +71,9 @@ class LottieAnimationViewController: CoordinatorViewController {
     }
 
     private func progressAnimation() {
-        self.animationView4.setAnimation(named: "success")
+        //self.animationView4.setAnimation(named: "success")
+        //taxi-app-loading
+        self.animationView4.setAnimation(named: "taxi-app-loading")
         self.animationView4.contentMode = .scaleAspectFit
     }
 
