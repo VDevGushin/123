@@ -104,22 +104,31 @@ class PromiseKitDataController {
     }
 
     //Цепочка операций
+    func authWithPrimise() {
+        let userImage = UIImage(named: "None")
+        firstly {
+            upload(image: userImage)
+        }.then { token in
+            self.register(credentials: token)
+        }.then { token in
+            self.login(withToken: token)
+        }.done { result in
+            print(result)
+        }.ensure { //handler is always called.
+            print("ensure")
+        }.catch { error in
+            print(error)
+        }
+    }
+
     func authWithPrimise() -> Promise<String> {
-        return Promise { resolver in
-            let userImage = UIImage(named: "None")
-            firstly {
-                upload(image: userImage)
-            }.then { token in
-                self.register(credentials: token)
-            }.then { token in
-                self.login(withToken: token)
-            }.done { result in
-                resolver.fulfill(result)
-            }.ensure { //handler is always called.
-                print("ensure")
-            }.catch { error in
-                resolver.reject(error)
-            }
+        let userImage = UIImage(named: "None")
+        return firstly {
+            upload(image: userImage)
+        }.then { token in
+            self.register(credentials: token)
+        }.then { token in
+            self.login(withToken: token)
         }
     }
 
@@ -143,6 +152,63 @@ class PromiseKitDataController {
             }
         }
     }
+
+
+    // MARK: - map, compactMap
+    func testCollection(request: URLRequest) {
+        firstly {
+            URLSession.shared.dataTask(.promise, with: request)
+        }.compactMap {
+            try JSONSerialization.jsonObject(with: $0.data) as? [String]
+        }.done {
+            print($0)
+        }.catch { error in
+            dump(error)
+        }
+    }
 }
 
+// MARK: - Common Patterns
+extension PromiseKitDataController {
+    // MARK: APIs That Use Promises
+    struct User {
+        let imageULR: URL!
+        init?(dict: [String: Any]) {
+            return nil
+        }
+    }
+
+    func user(url: URL) -> Promise<User> {
+        return firstly {
+            URLSession.shared.dataTask(.promise, with: url)
+        }.compactMap {
+            try JSONSerialization.jsonObject(with: $0.data) as? [String: Any]
+        }.compactMap { dict in
+            User(dict: dict)
+        }
+    }
+
+    func avatar(url: URL) -> Promise<UIImage> {
+        //return user().then { user
+        return firstly {
+            user(url: url)
+        }.then { user in
+            URLSession.shared.dataTask(.promise, with: user.imageULR)
+        }.compactMap {
+            UIImage(data: $0.data)
+        }
+    }
+
+    // MARK : Background Work
+    func avatar2(url: URL) -> Promise<UIImage> {
+        let globalQueue = DispatchQueue.global(qos: .userInitiated)
+        return firstly {
+            user(url: url)
+        }.then(on: globalQueue) { user in
+            URLSession.shared.dataTask(.promise, with: user.imageULR)
+        }.compactMap(on: globalQueue) {
+            UIImage(data: $0.data)
+        }
+    }
+}
 
