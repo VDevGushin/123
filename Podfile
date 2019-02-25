@@ -7,6 +7,7 @@ def shared_pods
     pod 'Charts'
     pod 'SwiftLint'
     pod 'lottie-ios'
+    pod 'Swinject'
 end
 
 

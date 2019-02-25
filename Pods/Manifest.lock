@@ -13,6 +13,7 @@ PODS:
   - PromiseKit/UIKit (6.8.3):
     - PromiseKit/CorePromise
   - SwiftLint (0.27.0)
+  - Swinject (2.5.0)
   - Unbox (3.0.0)
 
 DEPENDENCIES:
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - lottie-ios
   - PromiseKit (~> 6.8)
   - SwiftLint
+  - Swinject
   - Unbox
 
 SPEC REPOS:
@@ -28,6 +30,7 @@ SPEC REPOS:
     - lottie-ios
     - PromiseKit
     - SwiftLint
+    - Swinject
     - Unbox
 
 SPEC CHECKSUMS:
@@ -35,8 +38,9 @@ SPEC CHECKSUMS:
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: df6756be05fc96cb647c846506a5d2c95d2dcea1
+PODFILE CHECKSUM: f1d30367505f9fee48daba963a9723a79940bd31
 
 COCOAPODS: 1.5.0

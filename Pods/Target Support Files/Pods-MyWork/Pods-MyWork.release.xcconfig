@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Charts-iOS11.4" "${PODS_CONFIGURATION_BUILD_DIR}/PromiseKit-iOS11.4" "${PODS_CONFIGURATION_BUILD_DIR}/Unbox-iOS11.4" "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios-iOS11.4"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Charts-iOS11.4" "${PODS_CONFIGURATION_BUILD_DIR}/PromiseKit-iOS11.4" "${PODS_CONFIGURATION_BUILD_DIR}/Swinject-iOS11.4" "${PODS_CONFIGURATION_BUILD_DIR}/Unbox-iOS11.4" "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios-iOS11.4"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Charts-iOS11.4/Charts.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/PromiseKit-iOS11.4/PromiseKit.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Unbox-iOS11.4/Unbox.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios-iOS11.4/Lottie.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Charts" -framework "Lottie" -framework "PromiseKit" -framework "Unbox"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Charts-iOS11.4/Charts.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/PromiseKit-iOS11.4/PromiseKit.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Swinject-iOS11.4/Swinject.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Unbox-iOS11.4/Unbox.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios-iOS11.4/Lottie.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Charts" -framework "Lottie" -framework "PromiseKit" -framework "Swinject" -framework "Unbox"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

@@ -145,12 +145,14 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.4/PromiseKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Swinject-iOS11.4/Swinject.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Unbox-iOS11.4/Unbox.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.4/Lottie.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.4/PromiseKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Swinject-iOS11.4/Swinject.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Unbox-iOS11.4/Unbox.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.4/Lottie.framework"
 fi

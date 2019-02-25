@@ -13,24 +13,44 @@ import Lottie
 class PromiseKitViewController: CoordinatorViewController {
     @IBOutlet private weak var animationView: LOTAnimationView!
     @IBOutlet private weak var imageView: UIImageView!
-    private let dataController = DownloadImageDataController()
+
+    private lazy var fetchImage = DownloadImageDataController.fetchImageWithCancel()
 
     @IBAction func onStartAnimation(_ sender: Any) {
-        self.imageView.image = nil
-        self.onDownloadStarted()
-
-        self.dataController.downloadImage().done { image in
-            self.imageView.image = image
-        }.ensure {
-            self.onDownloadComplete()
-        }.catch { error in
-            dump(error)
+        if self.fetchImage.promise.isResolved {
+            //Обновление задачи
+            self.fetchImage = DownloadImageDataController.fetchImageWithCancel()
+            //закачка картинки
+            self.downloadImage()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupAnimation()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.fetchImage.cancel()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.downloadImage()
+    }
+
+    private func downloadImage() {
+        self.imageView.image = nil
+        //закачка картинки
+        self.onDownloadStarted()
+        self.fetchImage.promise.done { [weak self] newImage in
+            self?.imageView.image = newImage
+        }.ensure { [weak self] in
+            self?.onDownloadComplete()
+        }.catch(policy: .allErrors) { error in
+            dump(error)
+        }
     }
 
     private func setupAnimation() {
@@ -41,14 +61,14 @@ class PromiseKitViewController: CoordinatorViewController {
         self.animationView.isHidden = true
     }
 
-    func onDownloadComplete() {
+    private func onDownloadComplete() {
         if animationView.isAnimationPlaying {
             self.animationView.stop()
             self.animationView.isHidden = true
         }
     }
 
-    func onDownloadStarted() {
+    private func onDownloadStarted() {
         if !animationView.isAnimationPlaying {
             self.animationView.play()
             self.animationView.isHidden = false

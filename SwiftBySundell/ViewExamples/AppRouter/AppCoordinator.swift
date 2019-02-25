@@ -9,7 +9,9 @@
 import UIKit
 
 final class AppCoordinator {
-    enum Destination: Int {
+    var currentDestination: Destination?
+
+    enum Destination: Int, Equatable {
         case mainView
         case lottieView
         case promiseKit
@@ -23,6 +25,10 @@ final class AppCoordinator {
             case .promiseKit:
                 return "Promise Kit"
             }
+        }
+
+        static func == (lhs: Destination, rhs: Destination) -> Bool {
+            return lhs.rawValue == rhs.rawValue
         }
     }
 
@@ -38,7 +44,9 @@ final class AppCoordinator {
 
 
     func navigate(to destination: Destination) {
-        let viewController = makeViewController(for: destination)
+        guard self.currentDestination != destination else { return }
+        self.currentDestination = destination
+        let viewController = makeViewController(for: self.currentDestination!)
         navigationController?.pushViewController(viewController, animated: true)
     }
 

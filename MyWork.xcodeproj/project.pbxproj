@@ -108,6 +108,7 @@
 		3C3B464F21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */; };
 		3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */; };
 		3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BDE6C2213E6C4004B9168 /* Composite.swift */; };
+		3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BED2D2223B3A100502361 /* PatternMatching.swift */; };
 		3C3D0E41216C8654006B7907 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E40216C8654006B7907 /* Strings.swift */; };
 		3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */; };
 		3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */; };
@@ -196,6 +197,7 @@
 		3C54FE472194D499005E99B7 /* CaptchaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE462194D499005E99B7 /* CaptchaModel.swift */; };
 		3C54FE492194D80E005E99B7 /* FeedBackSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
+		3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B8466221E6A8C00C959BE /* Delegation.swift */; };
 		3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */; };
 		3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */; };
 		3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */; };
@@ -339,6 +341,11 @@
 		3CC2F210213D10F200C59AF2 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */; };
 		3CC2F212213D145400C59AF2 /* Dictionary+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */; };
 		3CC2F214213D152600C59AF2 /* EarlyReturningFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */; };
+		3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC308592223BFB800E10683 /* DIContainer.swift */; };
+		3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3085B2223C64A00E10683 /* InjectionPatterns.swift */; };
+		3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3085D2223CA0300E10683 /* CircularDependencies.swift */; };
+		3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3085F2223D81300E10683 /* ObjectScopes.swift */; };
+		3CC308622223D98400E10683 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC308612223D98400E10683 /* Misc.swift */; };
 		3CC3911C21395741001B42DA /* UsingBuilder .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3911B21395741001B42DA /* UsingBuilder .swift */; };
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
 		3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */; };
@@ -605,6 +612,7 @@
 		3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutConstraint+NSLayoutAnchor.swift"; sourceTree = "<group>"; };
 		3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type inference-powered serialization in Swift.swift"; sourceTree = "<group>"; };
 		3C3BDE6C2213E6C4004B9168 /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
+		3C3BED2D2223B3A100502361 /* PatternMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatching.swift; sourceTree = "<group>"; };
 		3C3D0E40216C8654006B7907 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPresenter.swift; sourceTree = "<group>"; };
 		3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingAutoclosure .swift"; sourceTree = "<group>"; };
@@ -717,6 +725,7 @@
 		3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSendModel.swift; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C5B8466221E6A8C00C959BE /* Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation.swift; sourceTree = "<group>"; };
 		3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskBasedConcurrency .swift"; sourceTree = "<group>"; };
 		3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerViewControllers.swift; sourceTree = "<group>"; };
 		3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePowerOfTypeAliases.swift; sourceTree = "<group>"; };
@@ -859,6 +868,11 @@
 		3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
 		3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ex.swift"; sourceTree = "<group>"; };
 		3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlyReturningFunctions.swift; sourceTree = "<group>"; };
+		3CC308592223BFB800E10683 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		3CC3085B2223C64A00E10683 /* InjectionPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionPatterns.swift; sourceTree = "<group>"; };
+		3CC3085D2223CA0300E10683 /* CircularDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularDependencies.swift; sourceTree = "<group>"; };
+		3CC3085F2223D81300E10683 /* ObjectScopes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectScopes.swift; sourceTree = "<group>"; };
+		3CC308612223D98400E10683 /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		3CC3911B21395741001B42DA /* UsingBuilder .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingBuilder .swift"; sourceTree = "<group>"; };
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
 		3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidingUnifiedErrorAPI.swift; sourceTree = "<group>"; };
@@ -1272,6 +1286,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C3BED2F2223BCBF00502361 /* Swinject */,
 				3C1E6AC5221C199900997F31 /* PromiseKit */,
 				3C1E6ABA221C06FC00997F31 /* AnimationLottie */,
 				3C2C9C22221BD8FD004A2605 /* MainView */,
@@ -1393,6 +1408,18 @@
 				3CEF8E882187105800996597 /* LayoutConstraint+NSLayoutDimension.swift */,
 			);
 			path = LayoutConstraint;
+			sourceTree = "<group>";
+		};
+		3C3BED2F2223BCBF00502361 /* Swinject */ = {
+			isa = PBXGroup;
+			children = (
+				3CC308592223BFB800E10683 /* DIContainer.swift */,
+				3CC3085B2223C64A00E10683 /* InjectionPatterns.swift */,
+				3CC3085D2223CA0300E10683 /* CircularDependencies.swift */,
+				3CC3085F2223D81300E10683 /* ObjectScopes.swift */,
+				3CC308612223D98400E10683 /* Misc.swift */,
+			);
+			path = Swinject;
 			sourceTree = "<group>";
 		};
 		3C3D0E3F216C8647006B7907 /* Source */ = {
@@ -2107,6 +2134,7 @@
 		3CAB744A22040C7300C8FE01 /* APIDesign */ = {
 			isa = PBXGroup;
 			children = (
+				3C3BED2D2223B3A100502361 /* PatternMatching.swift */,
 				3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */,
 				3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */,
 				3C4A84FA221136DE0034627F /* BuildingDSLs.swift */,
@@ -2114,6 +2142,7 @@
 				3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */,
 				3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */,
 				3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */,
+				3C5B8466221E6A8C00C959BE /* Delegation.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -2856,6 +2885,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.4/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject-iOS11.4/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox-iOS11.4/Unbox.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.4/Lottie.framework",
 			);
@@ -2863,6 +2893,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
@@ -2880,6 +2911,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject-iOS12.1/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox-iOS12.1/Unbox.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios-iOS12.1/Lottie.framework",
 			);
@@ -2887,6 +2919,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
@@ -3033,16 +3066,19 @@
 				3CAB744E22041E3A00C8FE01 /* Visitor.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
+				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
 				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
+				3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
 				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
+				3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
 				3CC689D521EC69880033F805 /* Prototype.swift in Sources */,
 				3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */,
@@ -3058,6 +3094,7 @@
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */,
+				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
 				3C8546BD21FEFAD40004700D /* ChainOfResponsibility.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
@@ -3077,14 +3114,17 @@
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
+				3CC308622223D98400E10683 /* Misc.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
 				3C8DBE7321EF354100BEF5F3 /* Builder.swift in Sources */,
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,
+				3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */,
 				3C9F667521EF0CB600800E41 /* Strategy.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
+				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,
 				3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */,

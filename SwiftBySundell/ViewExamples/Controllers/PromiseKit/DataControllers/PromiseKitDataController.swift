@@ -170,6 +170,7 @@ class PromiseKitDataController {
 
 // MARK: - Common Patterns
 extension PromiseKitDataController {
+////========================================================================================================================
     // MARK: APIs That Use Promises
     struct User {
         let imageULR: URL!
@@ -198,6 +199,7 @@ extension PromiseKitDataController {
             UIImage(data: $0.data)
         }
     }
+////========================================================================================================================
 
     // MARK: Background Work
     func avatar2(url: URL) -> Promise<UIImage> {
@@ -210,6 +212,8 @@ extension PromiseKitDataController {
             UIImage(data: $0.data)
         }
     }
+
+////========================================================================================================================
 
     // MARK: Failing Chains
     func failingChains() -> Promise<String> {
@@ -224,4 +228,61 @@ extension PromiseKitDataController {
         }
     }
 }
+
+////========================================================================================================================
+// MARK: Abstracting Away Asychronicity
+fileprivate struct API {
+    enum RegisterError: Error {
+        case failedToRegister
+    }
+
+    func fetchInner() -> Promise<String> {
+        return Promise { resolver in
+            arc4random() % 2 == 0 ? resolver.fulfill("registertoken") : resolver.reject(RegisterError.failedToRegister)
+        }
+    }
+
+    static func fetch() -> Promise<String> {
+        let api = API()
+        return api.fetchInner()
+    }
+}
+
+fileprivate class SomeController {
+    var fetch = API.fetch()
+
+    func viewDidAppear() {
+        fetch.done { result in
+            print(result)
+        }.catch { error in
+            print(error)
+        }
+    }
+
+    func buttonPressed() {
+        fetch.done { result in
+            print(result)
+        }.catch { error in
+            print(error)
+        }
+    }
+
+    func refresh() -> Promise<String> {
+        if fetch.isResolved {
+            startSpinner()
+            fetch = API.fetch().ensure { [weak self] in
+                self?.stopSpinner()
+            }
+        }
+
+        return fetch
+    }
+
+    private func startSpinner() { }
+    private func stopSpinner() { }
+}
+
+
+
+////========================================================================================================================
 
