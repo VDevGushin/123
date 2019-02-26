@@ -75,10 +75,3 @@ class PromiseKitViewController: CoordinatorViewController {
         }
     }
 }
-
-extension PromiseKitViewController {
-    static func make(title: String, navigator: AppCoordinator) -> PromiseKitViewController {
-        return PromiseKitViewController(navigator: navigator, title: title, nibName: String(describing: PromiseKitViewController.self), bundle: nil)
-    }
-}
-

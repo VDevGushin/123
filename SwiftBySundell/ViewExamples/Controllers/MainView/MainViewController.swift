@@ -43,9 +43,3 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         self.navigator.navigate(to: source)
     }
 }
-
-extension MainViewController {
-    static func make(title: String, navigator: AppCoordinator) -> MainViewController {
-        return MainViewController(navigator: navigator, title: title, nibName: String(describing: MainViewController.self), bundle: nil)
-    }
-}

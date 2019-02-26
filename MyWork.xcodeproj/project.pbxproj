@@ -116,8 +116,6 @@
 		3C41F8662160D72C002334DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8652160D72C002334DB /* AppDelegate.swift */; };
 		3C41F86D2160D732002334DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C41F86C2160D732002334DB /* Assets.xcassets */; };
 		3C41F8702160D732002334DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C41F86E2160D732002334DB /* LaunchScreen.storyboard */; };
-		3C41F87B2160D732002334DB /* ImageAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F87A2160D732002334DB /* ImageAnalyzerTests.swift */; };
-		3C41F8862160D732002334DB /* ImageAnalyzerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8852160D732002334DB /* ImageAnalyzerUITests.swift */; };
 		3C41F8942160D7B9002334DB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8932160D7B9002334DB /* Coordinator.swift */; };
 		3C41F8962160D7DB002334DB /* ICooridnator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8952160D7DB002334DB /* ICooridnator.swift */; };
 		3C41F89D2160DC42002334DB /* ImageCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F89B2160DC42002334DB /* ImageCaptureViewController.swift */; };
@@ -410,6 +408,8 @@
 		3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */; };
 		3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */; };
 		3CE8CAF62136AB49003752DC /* LogicControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8CAF52136AB49003752DC /* LogicControllers.swift */; };
+		3CED73002224FE870058A1B5 /* SingleResponsibilityPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CED72FF2224FE870058A1B5 /* SingleResponsibilityPrinciple.swift */; };
+		3CED730922251C580058A1B5 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CED730822251C580058A1B5 /* DIService.swift */; };
 		3CEE4255210790FA00671D1D /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE4254210790FA00671D1D /* UIColor+Ex.swift */; };
 		3CEE42572107911E00671D1D /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE42562107911E00671D1D /* String+Ex.swift */; };
 		3CEF8E892187105800996597 /* LayoutConstraint+NSLayoutDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF8E882187105800996597 /* LayoutConstraint+NSLayoutDimension.swift */; };
@@ -456,20 +456,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C41F8772160D732002334DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3CD85A1220EF482A008D994C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C41F8622160D72C002334DB;
-			remoteInfo = ImageAnalyzer;
-		};
-		3C41F8822160D732002334DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3CD85A1220EF482A008D994C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C41F8622160D72C002334DB;
-			remoteInfo = ImageAnalyzer;
-		};
 		3C41F90521611883002334DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3CD85A1220EF482A008D994C /* Project object */;
@@ -622,12 +608,6 @@
 		3C41F86C2160D732002334DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C41F86F2160D732002334DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C41F8712160D732002334DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C41F8762160D732002334DB /* ImageAnalyzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageAnalyzerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C41F87A2160D732002334DB /* ImageAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalyzerTests.swift; sourceTree = "<group>"; };
-		3C41F87C2160D732002334DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C41F8812160D732002334DB /* ImageAnalyzerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageAnalyzerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C41F8852160D732002334DB /* ImageAnalyzerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnalyzerUITests.swift; sourceTree = "<group>"; };
-		3C41F8872160D732002334DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C41F8932160D7B9002334DB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		3C41F8952160D7DB002334DB /* ICooridnator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICooridnator.swift; sourceTree = "<group>"; };
 		3C41F89B2160DC42002334DB /* ImageCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaptureViewController.swift; sourceTree = "<group>"; };
@@ -959,6 +939,8 @@
 		3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionWithFunctions.swift; sourceTree = "<group>"; };
 		3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeErasureUsingClosures.swift; sourceTree = "<group>"; };
 		3CE8CAF52136AB49003752DC /* LogicControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicControllers.swift; sourceTree = "<group>"; };
+		3CED72FF2224FE870058A1B5 /* SingleResponsibilityPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResponsibilityPrinciple.swift; sourceTree = "<group>"; };
+		3CED730822251C580058A1B5 /* DIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIService.swift; sourceTree = "<group>"; };
 		3CEE4254210790FA00671D1D /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
 		3CEE42562107911E00671D1D /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		3CEF8E882187105800996597 /* LayoutConstraint+NSLayoutDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutConstraint+NSLayoutDimension.swift"; sourceTree = "<group>"; };
@@ -1012,20 +994,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C41F90721611883002334DB /* SupportLib.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C41F8732160D732002334DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C41F87E2160D732002334DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1268,9 +1236,9 @@
 		3C2C9C1D221BD7E2004A2605 /* ViewExamples */ = {
 			isa = PBXGroup;
 			children = (
+				3CED730622251C440058A1B5 /* Models */,
 				3C3925E7221BDB9E003CD1EE /* Sources */,
 				3C2C9C21221BD8F3004A2605 /* Controllers */,
-				3C2C9C1E221BD7F5004A2605 /* AppRouter */,
 			);
 			path = ViewExamples;
 			sourceTree = "<group>";
@@ -1444,24 +1412,6 @@
 				3C41F8E82161151E002334DB /* ImageAnalyzer-Bridging-Header.h */,
 			);
 			path = ImageAnalyzer;
-			sourceTree = "<group>";
-		};
-		3C41F8792160D732002334DB /* ImageAnalyzerTests */ = {
-			isa = PBXGroup;
-			children = (
-				3C41F87A2160D732002334DB /* ImageAnalyzerTests.swift */,
-				3C41F87C2160D732002334DB /* Info.plist */,
-			);
-			path = ImageAnalyzerTests;
-			sourceTree = "<group>";
-		};
-		3C41F8842160D732002334DB /* ImageAnalyzerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3C41F8852160D732002334DB /* ImageAnalyzerUITests.swift */,
-				3C41F8872160D732002334DB /* Info.plist */,
-			);
-			path = ImageAnalyzerUITests;
 			sourceTree = "<group>";
 		};
 		3C41F8912160D750002334DB /* Controllers */ = {
@@ -1689,6 +1639,7 @@
 		3C4B691521E8BA24002175CB /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				3CED72FE2224FE710058A1B5 /* SOLID */,
 				3C6209C3220BF9CF00E2A67A /* Структурные паттерны */,
 				3C9F667321EF0CA900800E41 /* Паттерны поведения */,
 				3C078A6F21E8D5DD005F08B4 /* Пораждающие паттерны */,
@@ -2205,8 +2156,6 @@
 				3CD85A1C20EF482A008D994C /* MyWork */,
 				3CE41F6E21523AB5002A6600 /* UIPart */,
 				3C41F8642160D72C002334DB /* ImageAnalyzer */,
-				3C41F8792160D732002334DB /* ImageAnalyzerTests */,
-				3C41F8842160D732002334DB /* ImageAnalyzerUITests */,
 				3C82F46C2164AA0F0024B3E4 /* WorkWithUI */,
 				3C41F90121611883002334DB /* SupportLib */,
 				3C517C5521B9051A009CAEE7 /* SwiftBySundell */,
@@ -2222,8 +2171,6 @@
 				3CD85A1A20EF482A008D994C /* MyWork.app */,
 				3CE41F6D21523AB4002A6600 /* UIPart.app */,
 				3C41F8632160D72C002334DB /* ImageAnalyzer.app */,
-				3C41F8762160D732002334DB /* ImageAnalyzerTests.xctest */,
-				3C41F8812160D732002334DB /* ImageAnalyzerUITests.xctest */,
 				3C41F90021611882002334DB /* SupportLib.framework */,
 				3C82F46B2164AA0F0024B3E4 /* WorkWithUI.app */,
 				3C517C5421B9051A009CAEE7 /* SwiftBySundell.app */,
@@ -2393,6 +2340,31 @@
 			path = ImageViewer;
 			sourceTree = "<group>";
 		};
+		3CED72FE2224FE710058A1B5 /* SOLID */ = {
+			isa = PBXGroup;
+			children = (
+				3CED72FF2224FE870058A1B5 /* SingleResponsibilityPrinciple.swift */,
+			);
+			path = SOLID;
+			sourceTree = "<group>";
+		};
+		3CED730622251C440058A1B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CED730722251C4B0058A1B5 /* DI */,
+				3C2C9C1E221BD7F5004A2605 /* AppRouter */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CED730722251C4B0058A1B5 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				3CED730822251C580058A1B5 /* DIService.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		3CEF8E8A218712FB00996597 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -2533,42 +2505,6 @@
 			productReference = 3C41F8632160D72C002334DB /* ImageAnalyzer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3C41F8752160D732002334DB /* ImageAnalyzerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C41F88F2160D732002334DB /* Build configuration list for PBXNativeTarget "ImageAnalyzerTests" */;
-			buildPhases = (
-				3C41F8722160D732002334DB /* Sources */,
-				3C41F8732160D732002334DB /* Frameworks */,
-				3C41F8742160D732002334DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3C41F8782160D732002334DB /* PBXTargetDependency */,
-			);
-			name = ImageAnalyzerTests;
-			productName = ImageAnalyzerTests;
-			productReference = 3C41F8762160D732002334DB /* ImageAnalyzerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3C41F8802160D732002334DB /* ImageAnalyzerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C41F8902160D732002334DB /* Build configuration list for PBXNativeTarget "ImageAnalyzerUITests" */;
-			buildPhases = (
-				3C41F87D2160D732002334DB /* Sources */,
-				3C41F87E2160D732002334DB /* Frameworks */,
-				3C41F87F2160D732002334DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3C41F8832160D732002334DB /* PBXTargetDependency */,
-			);
-			name = ImageAnalyzerUITests;
-			productName = ImageAnalyzerUITests;
-			productReference = 3C41F8812160D732002334DB /* ImageAnalyzerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		3C41F8FF21611882002334DB /* SupportLib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C41F90921611883002334DB /* Build configuration list for PBXNativeTarget "SupportLib" */;
@@ -2674,14 +2610,6 @@
 					3C41F8622160D72C002334DB = {
 						CreatedOnToolsVersion = 10.0;
 					};
-					3C41F8752160D732002334DB = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 3C41F8622160D72C002334DB;
-					};
-					3C41F8802160D732002334DB = {
-						CreatedOnToolsVersion = 10.0;
-						TestTargetID = 3C41F8622160D72C002334DB;
-					};
 					3C41F8FF21611882002334DB = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -2717,8 +2645,6 @@
 				3CD85A1920EF482A008D994C /* MyWork */,
 				3CE41F6C21523AB4002A6600 /* UIPart */,
 				3C41F8622160D72C002334DB /* ImageAnalyzer */,
-				3C41F8752160D732002334DB /* ImageAnalyzerTests */,
-				3C41F8802160D732002334DB /* ImageAnalyzerUITests */,
 				3C41F8FF21611882002334DB /* SupportLib */,
 				3C82F46A2164AA0F0024B3E4 /* WorkWithUI */,
 				3C517C5321B9051A009CAEE7 /* SwiftBySundell */,
@@ -2737,20 +2663,6 @@
 				3C41F8B021611443002334DB /* ImageGetColorsViewController.xib in Resources */,
 				3C41F86D2160D732002334DB /* Assets.xcassets in Resources */,
 				3C41F8F82161171B002334DB /* ColorTableViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C41F8742160D732002334DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C41F87F2160D732002334DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2989,22 +2901,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C41F8722160D732002334DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C41F87B2160D732002334DB /* ImageAnalyzerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C41F87D2160D732002334DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C41F8862160D732002334DB /* ImageAnalyzerUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3C41F8FC21611882002334DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3071,6 +2967,7 @@
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
 				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
+				3CED730922251C580058A1B5 /* DIService.swift in Sources */,
 				3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
@@ -3110,6 +3007,7 @@
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */,
 				3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */,
+				3CED73002224FE870058A1B5 /* SingleResponsibilityPrinciple.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
@@ -3371,16 +3269,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C41F8782160D732002334DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C41F8622160D72C002334DB /* ImageAnalyzer */;
-			targetProxy = 3C41F8772160D732002334DB /* PBXContainerItemProxy */;
-		};
-		3C41F8832160D732002334DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C41F8622160D72C002334DB /* ImageAnalyzer */;
-			targetProxy = 3C41F8822160D732002334DB /* PBXContainerItemProxy */;
-		};
 		3C41F90621611883002334DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C41F8FF21611882002334DB /* SupportLib */;
@@ -3503,98 +3391,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "ImageAnalyzer/ImageAnalyzer-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		3C41F88A2160D732002334DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ED5577XBKG;
-				INFOPLIST_FILE = ImageAnalyzerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageAnalyzer.app/ImageAnalyzer";
-			};
-			name = Debug;
-		};
-		3C41F88B2160D732002334DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ED5577XBKG;
-				INFOPLIST_FILE = ImageAnalyzerTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageAnalyzer.app/ImageAnalyzer";
-			};
-			name = Release;
-		};
-		3C41F88C2160D732002334DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ED5577XBKG;
-				INFOPLIST_FILE = ImageAnalyzerUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ImageAnalyzer;
-			};
-			name = Debug;
-		};
-		3C41F88D2160D732002334DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ED5577XBKG;
-				INFOPLIST_FILE = ImageAnalyzerUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = vdev.com.ImageAnalyzerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ImageAnalyzer;
 			};
 			name = Release;
 		};
@@ -3954,24 +3750,6 @@
 			buildConfigurations = (
 				3C41F8882160D732002334DB /* Debug */,
 				3C41F8892160D732002334DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C41F88F2160D732002334DB /* Build configuration list for PBXNativeTarget "ImageAnalyzerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C41F88A2160D732002334DB /* Debug */,
-				3C41F88B2160D732002334DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C41F8902160D732002334DB /* Build configuration list for PBXNativeTarget "ImageAnalyzerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C41F88C2160D732002334DB /* Debug */,
-				3C41F88D2160D732002334DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

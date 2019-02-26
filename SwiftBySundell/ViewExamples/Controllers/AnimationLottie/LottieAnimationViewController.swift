@@ -110,12 +110,6 @@ class LottieAnimationViewController: CoordinatorViewController {
     }
 }
 
-extension LottieAnimationViewController {
-    static func make(title: String, navigator: AppCoordinator) -> LottieAnimationViewController {
-        return LottieAnimationViewController(navigator: navigator, title: title, nibName: String(describing: LottieAnimationViewController.self), bundle: nil)
-    }
-}
-
 extension LottieAnimationViewController: URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
         self.prevProgress = 0.0
