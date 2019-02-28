@@ -7,6 +7,7 @@ def shared_pods
     pod 'Charts'
     pod 'SwiftLint'
     pod 'lottie-ios'
+    pod 'Alamofire', '~> 5.0.0-beta.2'
     pod 'Swinject'
 end
 

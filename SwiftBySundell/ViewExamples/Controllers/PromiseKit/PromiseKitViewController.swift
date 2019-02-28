@@ -11,6 +11,10 @@ import PromiseKit
 import Lottie
 
 class PromiseKitViewController: CoordinatorViewController {
+    deinit {
+        print("PromiseKitViewController deinit")
+    }
+    
     @IBOutlet private weak var animationView: LOTAnimationView!
     @IBOutlet private weak var imageView: UIImageView!
 

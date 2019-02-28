@@ -18,7 +18,10 @@ fileprivate extension Array where Element == LOTAnimationView {
 }
 
 class LottieAnimationViewController: CoordinatorViewController {
-
+    deinit {
+        print("LottieAnimationViewController deinit")
+    }
+    
     @IBOutlet private weak var animationView: LOTAnimationView!
     @IBOutlet private weak var animationView2: LOTAnimationView!
     @IBOutlet private weak var animationView3: LOTAnimationView!

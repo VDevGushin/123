@@ -11,7 +11,11 @@ import Lottie
 
 final class MainViewController: CoordinatorViewController {
     @IBOutlet private weak var menuTable: UITableView!
-    private var dataSource = [AppCoordinator.Destination.lottieView, AppCoordinator.Destination.promiseKit]
+    private var dataSource =
+        [AppCoordinator.Destination.lottieView,
+            AppCoordinator.Destination.promiseKit,
+            AppCoordinator.Destination.swinject,
+            AppCoordinator.Destination.alamofire]
 
     override func viewDidLoad() {
         super.viewDidLoad()

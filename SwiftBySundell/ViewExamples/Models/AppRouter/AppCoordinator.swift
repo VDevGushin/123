@@ -9,14 +9,15 @@
 import UIKit
 
 final class AppCoordinator {
-    fileprivate unowned var navigationController: UINavigationController
+    fileprivate var navigationController: UINavigationController
     var currentDestination: Destination?
 
     enum Destination: Int, Equatable {
         case mainView
         case lottieView
         case promiseKit
-
+        case swinject
+        case alamofire
         var title: String {
             switch self {
             case .lottieView:
@@ -25,6 +26,10 @@ final class AppCoordinator {
                 return "Menu"
             case .promiseKit:
                 return "Promise Kit"
+            case .swinject:
+                return "Swinject Kit"
+            case .alamofire:
+                return "Alamofire"
             }
         }
 
@@ -53,13 +58,14 @@ final class AppCoordinator {
         case .mainView: return DIService.ci.resolve(MainViewController.self, arguments: self, destination.title)!
         case .lottieView: return DIService.ci.resolve(LottieAnimationViewController.self, arguments: self, destination.title)!
         case .promiseKit: return DIService.ci.resolve(PromiseKitViewController.self, arguments: self, destination.title)!
+        case .swinject: return DIService.ci.resolve(SwinjectViewController.self, arguments: self, destination.title)!
+        case .alamofire: return DIService.ci.resolve(AlamofireViewController.self, arguments: self, destination.title)!
         }
     }
 
     static func navigation() -> UINavigationController {
-        let rootNavigation = DIService.ci.resolve(UINavigationController.self, name: "rootNavigationController")!
-        let navigator = DIService.ci.resolve(AppCoordinator.self, argument: rootNavigation)!
+        let navigator = DIService.ci.resolve(AppCoordinator.self)!
         defer { navigator.navigate(to: .mainView) }
-        return rootNavigation
+        return navigator.navigationController
     }
 }

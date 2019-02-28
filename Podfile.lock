@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.0.0-beta.2)
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
@@ -17,6 +18,7 @@ PODS:
   - Unbox (3.0.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.2)
   - Charts
   - lottie-ios
   - PromiseKit (~> 6.8)
@@ -26,6 +28,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Alamofire
     - Charts
     - lottie-ios
     - PromiseKit
@@ -34,6 +37,7 @@ SPEC REPOS:
     - Unbox
 
 SPEC CHECKSUMS:
+  Alamofire: d1e5493588babe3e7b56ae29e8032942f4de09fe
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
@@ -41,6 +45,6 @@ SPEC CHECKSUMS:
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: f1d30367505f9fee48daba963a9723a79940bd31
+PODFILE CHECKSUM: ca55f6576ae229f394739a9d09908db893280713
 
 COCOAPODS: 1.5.0
