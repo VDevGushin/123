@@ -316,6 +316,8 @@
 		3CA69B90219322AA009DD38D /* ThemesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8F219322AA009DD38D /* ThemesWorker.swift */; };
 		3CA69B9821933359009DD38D /* FeedbackStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B9721933359009DD38D /* FeedbackStrings.swift */; };
 		3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */; };
+		3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA81FA422281CAD008CC7BE /* ResumingDownload.swift */; };
+		3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA81FA622282097008CC7BE /* RealAlamofireDataController+Upload.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */; };
@@ -839,6 +841,8 @@
 		3CA69B8F219322AA009DD38D /* ThemesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesWorker.swift; sourceTree = "<group>"; };
 		3CA69B9721933359009DD38D /* FeedbackStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStrings.swift; sourceTree = "<group>"; };
 		3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		3CA81FA422281CAD008CC7BE /* ResumingDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumingDownload.swift; sourceTree = "<group>"; };
+		3CA81FA622282097008CC7BE /* RealAlamofireDataController+Upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealAlamofireDataController+Upload.swift"; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
@@ -2169,6 +2173,8 @@
 				3CD6DC322227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift */,
 				3CD6DC342227CC210062D2EC /* RealAlamofireDataController+Auth.swift */,
 				3CD6DC362227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift */,
+				3CA81FA422281CAD008CC7BE /* ResumingDownload.swift */,
+				3CA81FA622282097008CC7BE /* RealAlamofireDataController+Upload.swift */,
 			);
 			path = DataController;
 			sourceTree = "<group>";
@@ -3057,6 +3063,7 @@
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
+				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
 				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
@@ -3129,6 +3136,7 @@
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
 				3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */,
 				3CD6DC292227B4200062D2EC /* AlamofireDataController.swift in Sources */,
+				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

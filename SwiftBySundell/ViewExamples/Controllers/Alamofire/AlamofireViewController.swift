@@ -79,6 +79,7 @@ class AlamofireViewController: CoordinatorViewController {
                      self.dataController.downloadFileDestination(on: .global(qos: .background))])
         }.done { [weak self]images in
             self?.image?.image = images[0]
+            self?.dataController.uploadData(image: images[0])
         }.ensure { [weak self] in
             self?.animationView.stop()
             self?.animationView.isHidden = true
