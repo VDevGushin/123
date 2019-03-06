@@ -68,5 +68,9 @@ final class DIService {
         self.container.register(AlamofireViewController.self) { r, navigator, title in
             AlamofireViewController(dataController: r.resolve(AlamofireDataController.self)!, navigator: navigator, title: title, nibName: String(describing: AlamofireViewController.self), bundle: nil)
         }
+
+        self.container.register(DayViewController.self) { r, navigator, title in
+            DayViewController(navigator: navigator, title: title, nibName: String(describing: DayViewController.self), bundle: nil)
+        }
     }
 }

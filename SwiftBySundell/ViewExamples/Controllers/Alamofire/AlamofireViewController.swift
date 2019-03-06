@@ -33,7 +33,7 @@ class AlamofireViewController: CoordinatorViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.animationView.setAnimation(named: "pulsing-loading-circles")
+        self.animationView.setAnimation(named: "test1")
         self.animationView.contentMode = .scaleAspectFit
         self.animationView.animationSpeed = 1.0
         self.animationView.loopAnimation = true

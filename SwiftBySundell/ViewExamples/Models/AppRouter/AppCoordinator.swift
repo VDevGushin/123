@@ -18,6 +18,7 @@ final class AppCoordinator {
         case promiseKit
         case swinject
         case alamofire
+        case childVC
         var title: String {
             switch self {
             case .lottieView:
@@ -30,6 +31,8 @@ final class AppCoordinator {
                 return "Swinject Kit"
             case .alamofire:
                 return "Alamofire"
+            case .childVC:
+                return "Child vc"
             }
         }
 
@@ -60,6 +63,7 @@ final class AppCoordinator {
         case .promiseKit: return DIService.ci.resolve(PromiseKitViewController.self, arguments: self, destination.title)!
         case .swinject: return DIService.ci.resolve(SwinjectViewController.self, arguments: self, destination.title)!
         case .alamofire: return DIService.ci.resolve(AlamofireViewController.self, arguments: self, destination.title)!
+        case .childVC: return DIService.ci.resolve(DayViewController.self, arguments: self, destination.title)!
         }
     }
 

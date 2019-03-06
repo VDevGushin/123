@@ -15,7 +15,8 @@ final class MainViewController: CoordinatorViewController {
         [AppCoordinator.Destination.lottieView,
             AppCoordinator.Destination.promiseKit,
             AppCoordinator.Destination.swinject,
-            AppCoordinator.Destination.alamofire]
+            AppCoordinator.Destination.alamofire,
+            AppCoordinator.Destination.childVC]
 
     override func viewDidLoad() {
         super.viewDidLoad()

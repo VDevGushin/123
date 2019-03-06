@@ -289,6 +289,15 @@
 		3C97C339217F38020025BD3D /* CalendarCellDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97C338217F38020025BD3D /* CalendarCellDay.swift */; };
 		3C97C33C217F3B520025BD3D /* CalendarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97C33B217F3B520025BD3D /* CalendarItem.swift */; };
 		3C97C33E217F3B740025BD3D /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C97C33D217F3B740025BD3D /* CalendarModel.swift */; };
+		3C986977222FA9EF0065660B /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C986976222FA9EF0065660B /* StackViewController.swift */; };
+		3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98697F222FAD200065660B /* CalendarDemoViewController.swift */; };
+		3C986982222FAD200065660B /* CalendarDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C986980222FAD200065660B /* CalendarDemoViewController.xib */; };
+		3C986985222FAE280065660B /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C986983222FAE280065660B /* SummaryViewController.swift */; };
+		3C986986222FAE280065660B /* SummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C986984222FAE280065660B /* SummaryViewController.xib */; };
+		3C986989222FAE650065660B /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C986987222FAE650065660B /* SleepViewController.swift */; };
+		3C98698A222FAE650065660B /* SleepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C986988222FAE650065660B /* SleepViewController.xib */; };
+		3C98698D222FAFD00065660B /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98698B222FAFD00065660B /* DayViewController.swift */; };
+		3C98698E222FAFD00065660B /* DayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C98698C222FAFD00065660B /* DayViewController.xib */; };
 		3C98806B215B7FF700994BA8 /* UIViewController+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */; };
 		3C98806F215B806700994BA8 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C98806E215B806700994BA8 /* ColorView.swift */; };
 		3C988071215B807100994BA8 /* ColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C988070215B807100994BA8 /* ColorView.xib */; };
@@ -305,6 +314,7 @@
 		3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */; };
 		3C9F667521EF0CB600800E41 /* Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F667421EF0CB600800E41 /* Strategy.swift */; };
 		3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0BE0521F83BA500DFDBEA /* Iterator.swift */; };
+		3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1E6C2222E48CD00921DB7 /* Observers2.swift */; };
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
 		3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31442218AD62E00A06369 /* AddChatViewController.swift */; };
 		3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31443218AD62F00A06369 /* AddChatViewController.xib */; };
@@ -451,6 +461,7 @@
 		3CF58AEF21885C7A008FEB6D /* ChatResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AEE21885C7A008FEB6D /* ChatResources.swift */; };
 		3CF58AF32188639B008FEB6D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AF22188639B008FEB6D /* Profile.swift */; };
 		3CF58AF52188884D008FEB6D /* NewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AF42188884D008FEB6D /* NewMessage.swift */; };
+		3CF5A899222D07B4000833A1 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CF5A898222D07B4000833A1 /* test1.json */; };
 		3CF62BA3214F718A00BD1579 /* ReusableDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */; };
 		3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */; };
 		3CFBCC0B21145A7B00A8A458 /* ETBVariantsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */; };
@@ -818,6 +829,15 @@
 		3C97C338217F38020025BD3D /* CalendarCellDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCellDay.swift; sourceTree = "<group>"; };
 		3C97C33B217F3B520025BD3D /* CalendarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarItem.swift; sourceTree = "<group>"; };
 		3C97C33D217F3B740025BD3D /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		3C986976222FA9EF0065660B /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		3C98697F222FAD200065660B /* CalendarDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDemoViewController.swift; sourceTree = "<group>"; };
+		3C986980222FAD200065660B /* CalendarDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarDemoViewController.xib; sourceTree = "<group>"; };
+		3C986983222FAE280065660B /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		3C986984222FAE280065660B /* SummaryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryViewController.xib; sourceTree = "<group>"; };
+		3C986987222FAE650065660B /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
+		3C986988222FAE650065660B /* SleepViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SleepViewController.xib; sourceTree = "<group>"; };
+		3C98698B222FAFD00065660B /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		3C98698C222FAFD00065660B /* DayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayViewController.xib; sourceTree = "<group>"; };
 		3C98806A215B7FF700994BA8 /* UIViewController+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ex.swift"; sourceTree = "<group>"; };
 		3C98806E215B806700994BA8 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		3C988070215B807100994BA8 /* ColorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorView.xib; sourceTree = "<group>"; };
@@ -833,6 +853,7 @@
 		3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HandlingNon-OptionalOptionals .swift"; sourceTree = "<group>"; };
 		3C9F667421EF0CB600800E41 /* Strategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strategy.swift; sourceTree = "<group>"; };
 		3CA0BE0521F83BA500DFDBEA /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		3CA1E6C2222E48CD00921DB7 /* Observers2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers2.swift; sourceTree = "<group>"; };
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		3CA31442218AD62E00A06369 /* AddChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatViewController.swift; sourceTree = "<group>"; };
 		3CA31443218AD62F00A06369 /* AddChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChatViewController.xib; sourceTree = "<group>"; };
@@ -1001,6 +1022,7 @@
 		3CF58AEE21885C7A008FEB6D /* ChatResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatResources.swift; sourceTree = "<group>"; };
 		3CF58AF22188639B008FEB6D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		3CF58AF42188884D008FEB6D /* NewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessage.swift; sourceTree = "<group>"; };
+		3CF5A898222D07B4000833A1 /* test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1.json; sourceTree = "<group>"; };
 		3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableDataSources.swift; sourceTree = "<group>"; };
 		3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstClassFunctions .swift"; sourceTree = "<group>"; };
 		3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBVariantsControl.swift; sourceTree = "<group>"; };
@@ -1284,6 +1306,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C986975222FA9C60065660B /* ChildControllers */,
 				3CE138F32227AADF00E0B7CD /* Alamofire */,
 				3C3BED2F2223BCBF00502361 /* Swinject */,
 				3C1E6AC5221C199900997F31 /* PromiseKit */,
@@ -1372,6 +1395,7 @@
 		3C3925E7221BDB9E003CD1EE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				3CF5A898222D07B4000833A1 /* test1.json */,
 				3C3253B4221D7B1600A7E3F0 /* loading-image.json */,
 				3C3A1B0B221D18E4005DDFA7 /* success.json */,
 				3C3253B6221D7C6600A7E3F0 /* taxi-app-loading.json */,
@@ -2036,6 +2060,30 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		3C986975222FA9C60065660B /* ChildControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C986978222FAA5A0065660B /* BaseControllers */,
+				3C98697F222FAD200065660B /* CalendarDemoViewController.swift */,
+				3C986980222FAD200065660B /* CalendarDemoViewController.xib */,
+				3C986983222FAE280065660B /* SummaryViewController.swift */,
+				3C986984222FAE280065660B /* SummaryViewController.xib */,
+				3C986987222FAE650065660B /* SleepViewController.swift */,
+				3C986988222FAE650065660B /* SleepViewController.xib */,
+			);
+			path = ChildControllers;
+			sourceTree = "<group>";
+		};
+		3C986978222FAA5A0065660B /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C986976222FA9EF0065660B /* StackViewController.swift */,
+				3C98698B222FAFD00065660B /* DayViewController.swift */,
+				3C98698C222FAFD00065660B /* DayViewController.xib */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
 		3C988069215B7FEA00994BA8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -2142,6 +2190,7 @@
 				3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */,
 				3C5B8466221E6A8C00C959BE /* Delegation.swift */,
 				3CE138E622279EC100E0B7CD /* Observers1.swift */,
+				3CA1E6C2222E48CD00921DB7 /* Observers2.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -2791,6 +2840,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */,
+				3C98698A222FAE650065660B /* SleepViewController.xib in Resources */,
 				3CE138F22227A5BD00E0B7CD /* SwinjectViewController.xib in Resources */,
 				3C1E6AC3221C0C9600997F31 /* im-thirsty.json in Resources */,
 				3C1E6AC4221C0C9600997F31 /* motorcycle.json in Resources */,
@@ -2807,6 +2857,10 @@
 				3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */,
 				3C1E6ABE221C073000997F31 /* LottieAnimationViewController.xib in Resources */,
 				3C176F0A221C361A009CC12F /* switch-action.json in Resources */,
+				3C986982222FAD200065660B /* CalendarDemoViewController.xib in Resources */,
+				3CF5A899222D07B4000833A1 /* test1.json in Resources */,
+				3C986986222FAE280065660B /* SummaryViewController.xib in Resources */,
+				3C98698E222FAFD00065660B /* DayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3086,6 +3140,8 @@
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
 				3C452754222CEE7E004E5E19 /* PowerOfUserDefaults.swift in Sources */,
 				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
+				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
+				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
@@ -3103,11 +3159,13 @@
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */,
+				3C986985222FAE280065660B /* SummaryViewController.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
 				3CC689D521EC69880033F805 /* Prototype.swift in Sources */,
 				3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */,
 				3CD6DC2C2227B49F0062D2EC /* AlamofireViewController.swift in Sources */,
 				3CADC677221536C800E28084 /* Operation.swift in Sources */,
+				3C986989222FAE650065660B /* SleepViewController.swift in Sources */,
 				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
@@ -3125,6 +3183,7 @@
 				3C8546BD21FEFAD40004700D /* ChainOfResponsibility.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
+				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */,
 				3CC689D321EC67270033F805 /* Singleton.swift in Sources */,
@@ -3134,6 +3193,7 @@
 				3C0A797A21F1991F00082B2B /* Command.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
+				3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */,
 				3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */,
