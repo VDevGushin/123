@@ -19,8 +19,11 @@ final class AppCoordinator {
         case swinject
         case alamofire
         case childVC
+        case dynamicCollection
         var title: String {
             switch self {
+            case .dynamicCollection:
+                return "Dynamic collection"
             case .lottieView:
                 return "Lottie"
             case .mainView:
@@ -58,17 +61,18 @@ final class AppCoordinator {
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
-        case .mainView: return DIService.ci.resolve(MainViewController.self, arguments: self, destination.title)!
-        case .lottieView: return DIService.ci.resolve(LottieAnimationViewController.self, arguments: self, destination.title)!
-        case .promiseKit: return DIService.ci.resolve(PromiseKitViewController.self, arguments: self, destination.title)!
-        case .swinject: return DIService.ci.resolve(SwinjectViewController.self, arguments: self, destination.title)!
-        case .alamofire: return DIService.ci.resolve(AlamofireViewController.self, arguments: self, destination.title)!
-        case .childVC: return DIService.ci.resolve(DayViewController.self, arguments: self, destination.title)!
+        case .mainView: return DependencyProvider.shared.container.resolve(MainViewController.self, arguments: self, destination.title)!
+        case .lottieView: return DependencyProvider.shared.container.resolve(LottieAnimationViewController.self, arguments: self, destination.title)!
+        case .promiseKit: return DependencyProvider.shared.container.resolve(PromiseKitViewController.self, arguments: self, destination.title)!
+        case .swinject: return DependencyProvider.shared.container.resolve(SwinjectViewController.self, arguments: self, destination.title)!
+        case .alamofire: return DependencyProvider.shared.container.resolve(AlamofireViewController.self, arguments: self, destination.title)!
+        case .childVC: return DependencyProvider.shared.container.resolve(DayViewController.self, arguments: self, destination.title)!
+        case .dynamicCollection: return DependencyProvider.shared.container.resolve(CollectionViewsDynamicHeightViewController.self, arguments: self, destination.title)!
         }
     }
 
     static func navigation() -> UINavigationController {
-        let navigator = DIService.ci.resolve(AppCoordinator.self)!
+        let navigator = DependencyProvider.shared.container.resolve(AppCoordinator.self)!
         defer { navigator.navigate(to: .mainView) }
         return navigator.navigationController
     }

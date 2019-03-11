@@ -198,6 +198,8 @@
 		3C54FE472194D499005E99B7 /* CaptchaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE462194D499005E99B7 /* CaptchaModel.swift */; };
 		3C54FE492194D80E005E99B7 /* FeedBackSendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */; };
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
+		3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B0447223639710075ADCD /* DynamicHeightCollectionView.swift */; };
+		3C5B044E223644210075ADCD /* Dependency Injection in Swift with Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B044D223644210075ADCD /* Dependency Injection in Swift with Protocols.swift */; };
 		3C5B71822228FE27009D51DD /* AdvancedUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B71812228FE27009D51DD /* AdvancedUsage.swift */; };
 		3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B8466221E6A8C00C959BE /* Delegation.swift */; };
 		3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */; };
@@ -439,6 +441,13 @@
 		3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */; };
 		3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */; };
 		3CE8CAF62136AB49003752DC /* LogicControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8CAF52136AB49003752DC /* LogicControllers.swift */; };
+		3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */; };
+		3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09F32236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift */; };
+		3CEA09F62236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEA09F42236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib */; };
+		3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09F82236362500C03FF9 /* ContentTableViewCell.swift */; };
+		3CEA09FB2236362500C03FF9 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEA09F92236362500C03FF9 /* ContentTableViewCell.xib */; };
+		3CEA09FE2236389300C03FF9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09FC2236389300C03FF9 /* CollectionViewCell.swift */; };
+		3CEA09FF2236389300C03FF9 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEA09FD2236389300C03FF9 /* CollectionViewCell.xib */; };
 		3CED73002224FE870058A1B5 /* SingleResponsibilityPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CED72FF2224FE870058A1B5 /* SingleResponsibilityPrinciple.swift */; };
 		3CED730922251C580058A1B5 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CED730822251C580058A1B5 /* DIService.swift */; };
 		3CEE4255210790FA00671D1D /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE4254210790FA00671D1D /* UIColor+Ex.swift */; };
@@ -740,6 +749,8 @@
 		3C54FE482194D80E005E99B7 /* FeedBackSendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSendModel.swift; sourceTree = "<group>"; };
 		3C55FE00213FC4C000ABA745 /* Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3C5B0447223639710075ADCD /* DynamicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightCollectionView.swift; sourceTree = "<group>"; };
+		3C5B044D223644210075ADCD /* Dependency Injection in Swift with Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dependency Injection in Swift with Protocols.swift"; sourceTree = "<group>"; };
 		3C5B71812228FE27009D51DD /* AdvancedUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedUsage.swift; sourceTree = "<group>"; };
 		3C5B8466221E6A8C00C959BE /* Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation.swift; sourceTree = "<group>"; };
 		3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskBasedConcurrency .swift"; sourceTree = "<group>"; };
@@ -1002,6 +1013,13 @@
 		3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionWithFunctions.swift; sourceTree = "<group>"; };
 		3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeErasureUsingClosures.swift; sourceTree = "<group>"; };
 		3CE8CAF52136AB49003752DC /* LogicControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicControllers.swift; sourceTree = "<group>"; };
+		3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingTypes.swift; sourceTree = "<group>"; };
+		3CEA09F32236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewsDynamicHeightViewController.swift; sourceTree = "<group>"; };
+		3CEA09F42236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewsDynamicHeightViewController.xib; sourceTree = "<group>"; };
+		3CEA09F82236362500C03FF9 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		3CEA09F92236362500C03FF9 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
+		3CEA09FC2236389300C03FF9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3CEA09FD2236389300C03FF9 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		3CED72FF2224FE870058A1B5 /* SingleResponsibilityPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResponsibilityPrinciple.swift; sourceTree = "<group>"; };
 		3CED730822251C580058A1B5 /* DIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIService.swift; sourceTree = "<group>"; };
 		3CEE4254210790FA00671D1D /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
@@ -1310,6 +1328,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3CEA09F2223633FA00C03FF9 /* CollectionViewsDynamicHeight */,
 				3C986975222FA9C60065660B /* ChildControllers */,
 				3CE138F32227AADF00E0B7CD /* Alamofire */,
 				3C3BED2F2223BCBF00502361 /* Swinject */,
@@ -1675,6 +1694,7 @@
 			isa = PBXGroup;
 			children = (
 				3C452756222CF75E004E5E19 /* DatasourceForCollections.swift */,
+				3C5B044D223644210075ADCD /* Dependency Injection in Swift with Protocols.swift */,
 			);
 			path = HABR;
 			sourceTree = "<group>";
@@ -2205,6 +2225,7 @@
 				3CE138E622279EC100E0B7CD /* Observers1.swift */,
 				3CA1E6C2222E48CD00921DB7 /* Observers2.swift */,
 				3C8677A62230D8F300D73419 /* CodeEncapsulation.swift */,
+				3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -2513,6 +2534,28 @@
 				3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */,
 			);
 			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		3CEA09F2223633FA00C03FF9 /* CollectionViewsDynamicHeight */ = {
+			isa = PBXGroup;
+			children = (
+				3CEA09F72236360000C03FF9 /* Views */,
+				3CEA09F32236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift */,
+				3CEA09F42236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib */,
+			);
+			path = CollectionViewsDynamicHeight;
+			sourceTree = "<group>";
+		};
+		3CEA09F72236360000C03FF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CEA09F82236362500C03FF9 /* ContentTableViewCell.swift */,
+				3CEA09F92236362500C03FF9 /* ContentTableViewCell.xib */,
+				3CEA09FC2236389300C03FF9 /* CollectionViewCell.swift */,
+				3CEA09FD2236389300C03FF9 /* CollectionViewCell.xib */,
+				3C5B0447223639710075ADCD /* DynamicHeightCollectionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3CED72FE2224FE710058A1B5 /* SOLID */ = {
@@ -2862,11 +2905,14 @@
 				3C3A1B0C221D18E4005DDFA7 /* success.json in Resources */,
 				3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */,
 				3C1EA4A9221BE01300B33763 /* not-found.json in Resources */,
+				3CEA09F62236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib in Resources */,
 				3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */,
 				3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */,
 				3C3925E9221BDC1F003CD1EE /* pulsing-loading-circles.json in Resources */,
 				3CD6DC2D2227B49F0062D2EC /* AlamofireViewController.xib in Resources */,
+				3CEA09FF2236389300C03FF9 /* CollectionViewCell.xib in Resources */,
 				3C1E6AC9221C19C800997F31 /* PromiseKitViewController.xib in Resources */,
+				3CEA09FB2236362500C03FF9 /* ContentTableViewCell.xib in Resources */,
 				3C176F08221C338A009CC12F /* switch.json in Resources */,
 				3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */,
 				3C1E6ABE221C073000997F31 /* LottieAnimationViewController.xib in Resources */,
@@ -3168,9 +3214,11 @@
 				3C8677A72230D8F300D73419 /* CodeEncapsulation.swift in Sources */,
 				3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
+				3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
 				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
+				3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */,
 				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */,
@@ -3182,6 +3230,7 @@
 				3CADC677221536C800E28084 /* Operation.swift in Sources */,
 				3C986989222FAE650065660B /* SleepViewController.swift in Sources */,
 				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
+				3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
 				3CD6DC372227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift in Sources */,
@@ -3209,6 +3258,7 @@
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */,
+				3CEA09FE2236389300C03FF9 /* CollectionViewCell.swift in Sources */,
 				3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */,
@@ -3220,12 +3270,14 @@
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
 				3C8677AA2230DEB200D73419 /* UIViewStyling.swift in Sources */,
 				3C452757222CF75E004E5E19 /* DatasourceForCollections.swift in Sources */,
+				3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */,
 				3CC308622223D98400E10683 /* Misc.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3CD6DC2F2227BF8D0062D2EC /* RealAlamofireDataController.swift in Sources */,
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
 				3C8DBE7321EF354100BEF5F3 /* Builder.swift in Sources */,
+				3C5B044E223644210075ADCD /* Dependency Injection in Swift with Protocols.swift in Sources */,
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,
 				3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */,

@@ -16,7 +16,8 @@ final class MainViewController: CoordinatorViewController {
             AppCoordinator.Destination.promiseKit,
             AppCoordinator.Destination.swinject,
             AppCoordinator.Destination.alamofire,
-            AppCoordinator.Destination.childVC]
+            AppCoordinator.Destination.childVC,
+            AppCoordinator.Destination.dynamicCollection]
 
     override func viewDidLoad() {
         super.viewDidLoad()
