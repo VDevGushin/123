@@ -11,6 +11,7 @@ import UIKit
 /**
  `UITableViewDataSource` protocol extension to make conformants able to be a part of `ComposedTableViewDataSource`.
  */
+
 fileprivate protocol ComposableTableViewDataSource: UITableViewDataSource {
     /// Current number of sections.
     var numberOfSections: Int { get }
