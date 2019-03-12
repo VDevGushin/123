@@ -79,6 +79,10 @@ class RepositoryAssembly: Assembly {
         container.register(CollectionViewsDynamicHeightViewController.self) { r, navigator, title in
             CollectionViewsDynamicHeightViewController(logger: r.resolve(Logger.self)!, navigator: navigator, title: title, nibName: String(describing: CollectionViewsDynamicHeightViewController.self), bundle: nil)
         }.inObjectScope(.container)
+
+        container.register(RootContentViewController.self) { _, navigator, title in
+            RootContentViewController(navigator: navigator, title: title, nibName: String(describing: RootContentViewController.self), bundle: nil)
+        }.inObjectScope(.container)
     }
 }
 

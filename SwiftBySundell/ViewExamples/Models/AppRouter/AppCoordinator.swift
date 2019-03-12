@@ -20,6 +20,8 @@ final class AppCoordinator {
         case alamofire
         case childVC
         case dynamicCollection
+        case rootContent
+
         var title: String {
             switch self {
             case .dynamicCollection:
@@ -36,6 +38,8 @@ final class AppCoordinator {
                 return "Alamofire"
             case .childVC:
                 return "Child vc"
+            case .rootContent:
+                return "Root"
             }
         }
 
@@ -68,6 +72,7 @@ final class AppCoordinator {
         case .alamofire: return DependencyProvider.shared.container.resolve(AlamofireViewController.self, arguments: self, destination.title)!
         case .childVC: return DependencyProvider.shared.container.resolve(DayViewController.self, arguments: self, destination.title)!
         case .dynamicCollection: return DependencyProvider.shared.container.resolve(CollectionViewsDynamicHeightViewController.self, arguments: self, destination.title)!
+        case .rootContent: return DependencyProvider.shared.container.resolve(RootContentViewController.self, arguments: self, destination.title)!
         }
     }
 

@@ -113,6 +113,14 @@
 		3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BED2D2223B3A100502361 /* PatternMatching.swift */; };
 		3C3D0E41216C8654006B7907 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E40216C8654006B7907 /* Strings.swift */; };
 		3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */; };
+		3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4099822237CD3100E5FB05 /* RootContentViewController.swift */; };
+		3C4099852237CD3100E5FB05 /* RootContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4099832237CD3100E5FB05 /* RootContentViewController.xib */; };
+		3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40998B2237D5A700E5FB05 /* DemoHeaderView.swift */; };
+		3C40998E2237D5B600E5FB05 /* DemoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C40998D2237D5B600E5FB05 /* DemoHeaderView.xib */; };
+		3C4099912237D68400E5FB05 /* RootContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40998F2237D68400E5FB05 /* RootContentTableViewCell.swift */; };
+		3C4099922237D68400E5FB05 /* RootContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4099902237D68400E5FB05 /* RootContentTableViewCell.xib */; };
+		3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4099972237D86300E5FB05 /* DemoContentTableViewCell.swift */; };
+		3C40999A2237D86400E5FB05 /* DemoContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4099982237D86300E5FB05 /* DemoContentTableViewCell.xib */; };
 		3C40AB9620FC659E00B280B1 /* UsingAutoclosure .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */; };
 		3C40AB9820FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C40AB9720FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift */; };
 		3C41F8662160D72C002334DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C41F8652160D72C002334DB /* AppDelegate.swift */; };
@@ -647,6 +655,14 @@
 		3C3BED2D2223B3A100502361 /* PatternMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatching.swift; sourceTree = "<group>"; };
 		3C3D0E40216C8654006B7907 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPresenter.swift; sourceTree = "<group>"; };
+		3C4099822237CD3100E5FB05 /* RootContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentViewController.swift; sourceTree = "<group>"; };
+		3C4099832237CD3100E5FB05 /* RootContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootContentViewController.xib; sourceTree = "<group>"; };
+		3C40998B2237D5A700E5FB05 /* DemoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoHeaderView.swift; sourceTree = "<group>"; };
+		3C40998D2237D5B600E5FB05 /* DemoHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoHeaderView.xib; sourceTree = "<group>"; };
+		3C40998F2237D68400E5FB05 /* RootContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentTableViewCell.swift; sourceTree = "<group>"; };
+		3C4099902237D68400E5FB05 /* RootContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootContentTableViewCell.xib; sourceTree = "<group>"; };
+		3C4099972237D86300E5FB05 /* DemoContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoContentTableViewCell.swift; sourceTree = "<group>"; };
+		3C4099982237D86300E5FB05 /* DemoContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoContentTableViewCell.xib; sourceTree = "<group>"; };
 		3C40AB9520FC659E00B280B1 /* UsingAutoclosure .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingAutoclosure .swift"; sourceTree = "<group>"; };
 		3C40AB9720FC6B4F00B280B1 /* NamespacingAndNestedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespacingAndNestedTypes.swift; sourceTree = "<group>"; };
 		3C41F8632160D72C002334DB /* ImageAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1334,6 +1350,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C4099812237CD1400E5FB05 /* RootContentController */,
 				3CEA09F2223633FA00C03FF9 /* CollectionViewsDynamicHeight */,
 				3C986975222FA9C60065660B /* ChildControllers */,
 				3CE138F32227AADF00E0B7CD /* Alamofire */,
@@ -1478,6 +1495,37 @@
 				3C3D0E40216C8654006B7907 /* Strings.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		3C4099812237CD1400E5FB05 /* RootContentController */ = {
+			isa = PBXGroup;
+			children = (
+				3C40999B2237DB8200E5FB05 /* RootViews */,
+				3C4099862237CD5800E5FB05 /* Views */,
+				3C4099822237CD3100E5FB05 /* RootContentViewController.swift */,
+				3C4099832237CD3100E5FB05 /* RootContentViewController.xib */,
+			);
+			path = RootContentController;
+			sourceTree = "<group>";
+		};
+		3C4099862237CD5800E5FB05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C4099972237D86300E5FB05 /* DemoContentTableViewCell.swift */,
+				3C4099982237D86300E5FB05 /* DemoContentTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C40999B2237DB8200E5FB05 /* RootViews */ = {
+			isa = PBXGroup;
+			children = (
+				3C40998F2237D68400E5FB05 /* RootContentTableViewCell.swift */,
+				3C4099902237D68400E5FB05 /* RootContentTableViewCell.xib */,
+				3C40998B2237D5A700E5FB05 /* DemoHeaderView.swift */,
+				3C40998D2237D5B600E5FB05 /* DemoHeaderView.xib */,
+			);
+			path = RootViews;
 			sourceTree = "<group>";
 		};
 		3C41F8642160D72C002334DB /* ImageAnalyzer */ = {
@@ -2906,7 +2954,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */,
+				3C40998E2237D5B600E5FB05 /* DemoHeaderView.xib in Resources */,
 				3C98698A222FAE650065660B /* SleepViewController.xib in Resources */,
+				3C4099922237D68400E5FB05 /* RootContentTableViewCell.xib in Resources */,
 				3CE138F22227A5BD00E0B7CD /* SwinjectViewController.xib in Resources */,
 				3C1E6AC3221C0C9600997F31 /* im-thirsty.json in Resources */,
 				3C1E6AC4221C0C9600997F31 /* motorcycle.json in Resources */,
@@ -2921,10 +2971,12 @@
 				3CD6DC2D2227B49F0062D2EC /* AlamofireViewController.xib in Resources */,
 				3CEA09FF2236389300C03FF9 /* CollectionViewCell.xib in Resources */,
 				3C1E6AC9221C19C800997F31 /* PromiseKitViewController.xib in Resources */,
+				3C4099852237CD3100E5FB05 /* RootContentViewController.xib in Resources */,
 				3CEA09FB2236362500C03FF9 /* ContentTableViewCell.xib in Resources */,
 				3C176F08221C338A009CC12F /* switch.json in Resources */,
 				3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */,
 				3C1E6ABE221C073000997F31 /* LottieAnimationViewController.xib in Resources */,
+				3C40999A2237D86400E5FB05 /* DemoContentTableViewCell.xib in Resources */,
 				3C176F0A221C361A009CC12F /* switch-action.json in Resources */,
 				3C986982222FAD200065660B /* CalendarDemoViewController.xib in Resources */,
 				3CF5A899222D07B4000833A1 /* test1.json in Resources */,
@@ -3197,6 +3249,7 @@
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
+				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				3C0018BB2212973B00CE9D3E /* Facade.swift in Sources */,
 				3CD4913F21F05B9A0097618E /* Observer.swift in Sources */,
@@ -3239,6 +3292,7 @@
 				3CADC677221536C800E28084 /* Operation.swift in Sources */,
 				3C986989222FAE650065660B /* SleepViewController.swift in Sources */,
 				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
+				3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */,
 				3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
@@ -3252,6 +3306,7 @@
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */,
+				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
 				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
 				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
 				3C8546BD21FEFAD40004700D /* ChainOfResponsibility.swift in Sources */,
@@ -3261,6 +3316,7 @@
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */,
 				3CC689D321EC67270033F805 /* Singleton.swift in Sources */,
+				3C4099912237D68400E5FB05 /* RootContentTableViewCell.swift in Sources */,
 				3C36EA072237786C00993B6F /* Как использовать HTTP-кеш.swift in Sources */,
 				3CADC72921FAF02400738B14 /* State.swift in Sources */,
 				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
