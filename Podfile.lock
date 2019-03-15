@@ -3,6 +3,7 @@ PODS:
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
+  - Differ (1.3.0)
   - lottie-ios (2.5.2)
   - PromiseKit (6.8.3):
     - PromiseKit/CorePromise (= 6.8.3)
@@ -20,6 +21,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.2)
   - Charts
+  - Differ
   - lottie-ios
   - PromiseKit (~> 6.8)
   - SwiftLint
@@ -27,9 +29,10 @@ DEPENDENCIES:
   - Unbox
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Charts
+    - Differ
     - lottie-ios
     - PromiseKit
     - SwiftLint
@@ -39,12 +42,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: d1e5493588babe3e7b56ae29e8032942f4de09fe
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  Differ: 9fcee7602542d7c6484ce05a0faec1c11258ed63
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
   Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
   Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: ca55f6576ae229f394739a9d09908db893280713
+PODFILE CHECKSUM: de29e52f8bdd0d055f922bd0eeff6417160f4de9
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

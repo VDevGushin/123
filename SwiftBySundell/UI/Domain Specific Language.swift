@@ -32,8 +32,30 @@ public func view(apply closure: (UIView) -> Void) -> UIView {
     return view
 }
 
+protocol StylebleTest: class {
+
+}
+
+extension StylebleTest {
+    func applyStyle(closure: (Self) -> Void) {
+        closure(self)
+    }
+}
+
+extension UIView: StylebleTest {
+
+}
+
 public func stack(apply closure: (UIStackView) -> Void) -> UIStackView {
     let stack = UIStackView()
+    stack.applyStyle {
+        $0.spacing = 16
+        $0.axis = .vertical
+        $0.isLayoutMarginsRelativeArrangement = true
+    }
+//    stack.applyStyle {
+//        $0.
+//    }
     closure(stack)
     return stack
 }

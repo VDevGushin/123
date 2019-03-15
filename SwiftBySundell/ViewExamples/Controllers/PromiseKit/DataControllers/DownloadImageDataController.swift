@@ -9,11 +9,19 @@
 import Foundation
 import PromiseKit
 
-final class DownloadImageDataController {
-    let imageUrl = URL(string: "https://cdn-images-1.medium.com/max/2000/1*d6l1Gt7j47JyxONXn8moYg.png")!
+final class DownloadImageDataController: RequestDataController {
+    var requestBahavior: WebRequestBehavior
+    var endPoint: EndPoint
+
+    init() {
+        self.requestBahavior = CombinedWebRequestBehavior(behaviors: [LoggerBehavior()])
+        self.endPoint = DefaultEndPoint(configurator: BigImageDownloadConfigurator.getBitImage(id: 2000, filename: "1*d6l1Gt7j47JyxONXn8moYg.png"))
+    }
 
     func downloadImage() -> Promise<UIImage> {
-        let fetchImage = URLSession.shared.dataTask(.promise, with: self.imageUrl).compactMap { UIImage(data: $0.data) }
+        let request = self.endPoint.urlRequest()
+        self.requestBahavior.beforeSend(with: request)
+        let fetchImage = URLSession.shared.dataTask(.promise, with: request).compactMap { UIImage(data: $0.data) }
         return firstly {
             after(seconds: 5)
         }.then {
@@ -29,10 +37,13 @@ final class DownloadImageDataController {
         let promise = Promise<UIImage> { resolver in
             fetchImage.done { newImage in
                 guard !cancelMe else {
+                    self.requestBahavior.afterFailure(error: PMKError.cancelled, response: nil)
                     return resolver.reject(PMKError.cancelled)
                 }
+                self.requestBahavior.afterSuccess(result: newImage, response: nil)
                 resolver.fulfill(newImage)
             }.catch { error in
+                self.requestBahavior.afterFailure(error: error, response: nil)
                 resolver.reject(error)
             }
         }

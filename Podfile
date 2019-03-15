@@ -9,6 +9,7 @@ def shared_pods
     pod 'lottie-ios'
     pod 'Alamofire', '~> 5.0.0-beta.2'
     pod 'Swinject'
+    pod 'Differ'
 end
 
 

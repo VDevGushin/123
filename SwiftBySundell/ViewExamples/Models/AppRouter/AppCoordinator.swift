@@ -21,6 +21,7 @@ final class AppCoordinator {
         case childVC
         case dynamicCollection
         case rootContent
+        case diff
 
         var title: String {
             switch self {
@@ -40,6 +41,8 @@ final class AppCoordinator {
                 return "Child vc"
             case .rootContent:
                 return "Root"
+            case .diff:
+                return "Animation with diff"
             }
         }
 
@@ -73,6 +76,7 @@ final class AppCoordinator {
         case .childVC: return DependencyProvider.shared.container.resolve(DayViewController.self, arguments: self, destination.title)!
         case .dynamicCollection: return DependencyProvider.shared.container.resolve(CollectionViewsDynamicHeightViewController.self, arguments: self, destination.title)!
         case .rootContent: return DependencyProvider.shared.container.resolve(RootContentViewController.self, arguments: self, destination.title)!
+        case .diff: return DependencyProvider.shared.container.resolve(DiffExampleViewController.self, arguments: self, destination.title)!
         }
     }
 

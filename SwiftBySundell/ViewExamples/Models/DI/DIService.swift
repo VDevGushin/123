@@ -83,6 +83,10 @@ class RepositoryAssembly: Assembly {
         container.register(RootContentViewController.self) { _, navigator, title in
             RootContentViewController(navigator: navigator, title: title, nibName: String(describing: RootContentViewController.self), bundle: nil)
         }.inObjectScope(.container)
+
+        container.register(DiffExampleViewController.self) { _, navigator, title in
+            DiffExampleViewController(navigator: navigator, title: title, nibName: String(describing: DiffExampleViewController.self), bundle: nil)
+        }.inObjectScope(.container)
     }
 }
 

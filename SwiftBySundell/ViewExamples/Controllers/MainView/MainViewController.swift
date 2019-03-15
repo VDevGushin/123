@@ -18,7 +18,8 @@ final class MainViewController: CoordinatorViewController {
             AppCoordinator.Destination.alamofire,
             AppCoordinator.Destination.childVC,
             AppCoordinator.Destination.dynamicCollection,
-            AppCoordinator.Destination.rootContent]
+            AppCoordinator.Destination.rootContent,
+            AppCoordinator.Destination.diff]
 
     override func viewDidLoad() {
         super.viewDidLoad()

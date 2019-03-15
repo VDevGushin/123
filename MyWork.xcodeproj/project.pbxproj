@@ -38,6 +38,7 @@
 		3C15C8A121C8D9B000734E30 /* ScrollRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39B3CC21C7BA7000323840 /* ScrollRootViewController.swift */; };
 		3C176F08221C338A009CC12F /* switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C176F07221C338A009CC12F /* switch.json */; };
 		3C176F0A221C361A009CC12F /* switch-action.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C176F09221C361A009CC12F /* switch-action.json */; };
+		3C1854702238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C18546F2238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift */; };
 		3C1D566D212A8D4D0096F82D /* ModelСontrollers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */; };
 		3C1DB1942192B23A001BD557 /* FeedBackNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */; };
 		3C1DB1982192B438001BD557 /* FeedBackSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */; };
@@ -188,6 +189,9 @@
 		3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54E21006423003F484C /* PromiseKit.swift */; };
 		3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B691321E883B1002175CB /* IdentifyingObjects.swift */; };
 		3C4C676921254370005D05D5 /* LazyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C676821254370005D05D5 /* LazyProperties.swift */; };
+		3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D62BF223A5BAD00233C43 /* Differ.swift */; };
+		3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D62C1223A5CAE00233C43 /* DiffExampleViewController.swift */; };
+		3C4D62C4223A5CAE00233C43 /* DiffExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4D62C2223A5CAE00233C43 /* DiffExampleViewController.xib */; };
 		3C4EAF182180487F00CEB18B /* DelegateCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EAF172180487F00CEB18B /* DelegateCall.swift */; };
 		3C4EAF1A2180628800CEB18B /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EAF192180628800CEB18B /* CalendarStyle.swift */; };
 		3C4EAF1C218067B300CEB18B /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EAF1B218067B300CEB18B /* CALayer+Extension.swift */; };
@@ -195,6 +199,14 @@
 		3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C517C5D21B9051B009CAEE7 /* Assets.xcassets */; };
 		3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C517C5F21B9051B009CAEE7 /* LaunchScreen.storyboard */; };
 		3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */; };
+		3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A73F223B6C6B00D14490 /* WebRequestBehavior.swift */; };
+		3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A741223B6CB900D14490 /* LoggerBehavior.swift */; };
+		3C51A744223B6DCD00D14490 /* CombinedWebRequestBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A743223B6DCD00D14490 /* CombinedWebRequestBehavior.swift */; };
+		3C51A746223B6EDA00D14490 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A745223B6EDA00D14490 /* EndPoint.swift */; };
+		3C51A748223B6F2400D14490 /* RequestConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A747223B6F2400D14490 /* RequestConfigurator.swift */; };
+		3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A74B223B722A00D14490 /* DefaultEndPoint.swift */; };
+		3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A74E223B758800D14490 /* BigImageDownloadConfigurator.swift */; };
+		3C51A752223B7F0300D14490 /* RequestDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A751223B7F0300D14490 /* RequestDataController.swift */; };
 		3C52D3582189A4140027DA4C /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D3572189A4140027DA4C /* ChatStyle.swift */; };
 		3C52D35B2189AB470027DA4C /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */; };
 		3C52D35C2189AB470027DA4C /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */; };
@@ -413,8 +425,9 @@
 		3CD85A2320EF482A008D994C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2120EF482A008D994C /* Main.storyboard */; };
 		3CD85A2520EF482D008D994C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2420EF482D008D994C /* Assets.xcassets */; };
 		3CD85A2820EF482D008D994C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2620EF482D008D994C /* LaunchScreen.storyboard */; };
-		3CD86454223797880073BAD9 /* Обертки над запросами.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD86453223797880073BAD9 /* Обертки над запросами.swift */; };
+		3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */; };
 		3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD864552237A5300073BAD9 /* Domain Specific Language.swift */; };
+		3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */; };
 		3CDF4F63215E079A0042650D /* ColorsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4F62215E079A0042650D /* ColorsWheel.swift */; };
 		3CDF4F66215E4AF10042650D /* ColorWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4F64215E4AF10042650D /* ColorWheelViewController.swift */; };
 		3CDF4F67215E4AF10042650D /* ColorWheelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDF4F65215E4AF10042650D /* ColorWheelViewController.xib */; };
@@ -579,6 +592,7 @@
 		3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
 		3C176F07221C338A009CC12F /* switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = switch.json; sourceTree = "<group>"; };
 		3C176F09221C361A009CC12F /* switch-action.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "switch-action.json"; sourceTree = "<group>"; };
+		3C18546F2238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Поддержание состояния в ваших ViewControllers.swift"; sourceTree = "<group>"; };
 		3C1D566C212A8D4D0096F82D /* ModelСontrollers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelСontrollers.swift"; sourceTree = "<group>"; };
 		3C1DB1932192B23A001BD557 /* FeedBackNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackNavigator.swift; sourceTree = "<group>"; };
 		3C1DB1962192B438001BD557 /* FeedBackSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackSearchViewController.swift; sourceTree = "<group>"; };
@@ -749,6 +763,9 @@
 		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
 		3C4B691321E883B1002175CB /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
 		3C4C676821254370005D05D5 /* LazyProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyProperties.swift; sourceTree = "<group>"; };
+		3C4D62BF223A5BAD00233C43 /* Differ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Differ.swift; sourceTree = "<group>"; };
+		3C4D62C1223A5CAE00233C43 /* DiffExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffExampleViewController.swift; sourceTree = "<group>"; };
+		3C4D62C2223A5CAE00233C43 /* DiffExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiffExampleViewController.xib; sourceTree = "<group>"; };
 		3C4EAF172180487F00CEB18B /* DelegateCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateCall.swift; sourceTree = "<group>"; };
 		3C4EAF192180628800CEB18B /* CalendarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStyle.swift; sourceTree = "<group>"; };
 		3C4EAF1B218067B300CEB18B /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
@@ -758,6 +775,14 @@
 		3C517C6021B9051B009CAEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C517C6221B9051B009CAEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsInSwift.swift; sourceTree = "<group>"; };
+		3C51A73F223B6C6B00D14490 /* WebRequestBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRequestBehavior.swift; sourceTree = "<group>"; };
+		3C51A741223B6CB900D14490 /* LoggerBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerBehavior.swift; sourceTree = "<group>"; };
+		3C51A743223B6DCD00D14490 /* CombinedWebRequestBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedWebRequestBehavior.swift; sourceTree = "<group>"; };
+		3C51A745223B6EDA00D14490 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		3C51A747223B6F2400D14490 /* RequestConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfigurator.swift; sourceTree = "<group>"; };
+		3C51A74B223B722A00D14490 /* DefaultEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultEndPoint.swift; sourceTree = "<group>"; };
+		3C51A74E223B758800D14490 /* BigImageDownloadConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageDownloadConfigurator.swift; sourceTree = "<group>"; };
+		3C51A751223B7F0300D14490 /* RequestDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDataController.swift; sourceTree = "<group>"; };
 		3C52D3572189A4140027DA4C /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
 		3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
@@ -973,8 +998,9 @@
 		3CD85A2420EF482D008D994C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CD85A2720EF482D008D994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CD85A2920EF482D008D994C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CD86453223797880073BAD9 /* Обертки над запросами.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Обертки над запросами.swift"; sourceTree = "<group>"; };
+		3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Обертки над запросами, как в GO.swift"; sourceTree = "<group>"; };
 		3CD864552237A5300073BAD9 /* Domain Specific Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain Specific Language.swift"; sourceTree = "<group>"; };
+		3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Использование протоколов в качестве составных расширений.swift"; sourceTree = "<group>"; };
 		3CDF4F62215E079A0042650D /* ColorsWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWheel.swift; sourceTree = "<group>"; };
 		3CDF4F64215E4AF10042650D /* ColorWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelViewController.swift; sourceTree = "<group>"; };
 		3CDF4F65215E4AF10042650D /* ColorWheelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorWheelViewController.xib; sourceTree = "<group>"; };
@@ -1249,6 +1275,16 @@
 			path = ErrorHandler;
 			sourceTree = "<group>";
 		};
+		3C1854712238D41600A9B4D8 /* Animating changes in UITableView and UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3C4D62BF223A5BAD00233C43 /* Differ.swift */,
+				3C4D62C1223A5CAE00233C43 /* DiffExampleViewController.swift */,
+				3C4D62C2223A5CAE00233C43 /* DiffExampleViewController.xib */,
+			);
+			path = "Animating changes in UITableView and UICollectionView";
+			sourceTree = "<group>";
+		};
 		3C1D9C7121089F43006DF537 /* LinePercentagesControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1350,6 +1386,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C1854712238D41600A9B4D8 /* Animating changes in UITableView and UICollectionView */,
 				3C4099812237CD1400E5FB05 /* RootContentController */,
 				3CEA09F2223633FA00C03FF9 /* CollectionViewsDynamicHeight */,
 				3C986975222FA9C60065660B /* ChildControllers */,
@@ -1750,7 +1787,9 @@
 				3C452756222CF75E004E5E19 /* Композитный datasource.swift */,
 				3C5B044D223644210075ADCD /* Инверсия зависимостей через протоколы.swift */,
 				3C36EA062237786C00993B6F /* Как использовать HTTP-кеш.swift */,
-				3CD86453223797880073BAD9 /* Обертки над запросами.swift */,
+				3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */,
+				3C18546F2238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift */,
+				3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */,
 			);
 			path = HABR;
 			sourceTree = "<group>";
@@ -1841,6 +1880,53 @@
 				3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */,
 			);
 			path = "ManagingState&Objects";
+			sourceTree = "<group>";
+		};
+		3C51A73D223B6BE000D14490 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3C51A750223B7EEE00D14490 /* RequestDataController */,
+				3C51A74A223B71FA00D14490 /* EndPoint */,
+				3C51A749223B71EE00D14490 /* Configurators */,
+				3C51A73E223B6C4B00D14490 /* Behaviors */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3C51A73E223B6C4B00D14490 /* Behaviors */ = {
+			isa = PBXGroup;
+			children = (
+				3C51A73F223B6C6B00D14490 /* WebRequestBehavior.swift */,
+				3C51A741223B6CB900D14490 /* LoggerBehavior.swift */,
+				3C51A743223B6DCD00D14490 /* CombinedWebRequestBehavior.swift */,
+			);
+			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		3C51A749223B71EE00D14490 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				3C51A747223B6F2400D14490 /* RequestConfigurator.swift */,
+				3C51A74E223B758800D14490 /* BigImageDownloadConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		3C51A74A223B71FA00D14490 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				3C51A745223B6EDA00D14490 /* EndPoint.swift */,
+				3C51A74B223B722A00D14490 /* DefaultEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		3C51A750223B7EEE00D14490 /* RequestDataController */ = {
+			isa = PBXGroup;
+			children = (
+				3C51A751223B7F0300D14490 /* RequestDataController.swift */,
+			);
+			path = RequestDataController;
 			sourceTree = "<group>";
 		};
 		3C55FDFF213FC4AC00ABA745 /* Habr */ = {
@@ -2627,6 +2713,7 @@
 			isa = PBXGroup;
 			children = (
 				3CE138E82227A46300E0B7CD /* Services */,
+				3C51A73D223B6BE000D14490 /* Network */,
 				3CED730722251C4B0058A1B5 /* DI */,
 				3C2C9C1E221BD7F5004A2605 /* AppRouter */,
 			);
@@ -2979,6 +3066,7 @@
 				3C40999A2237D86400E5FB05 /* DemoContentTableViewCell.xib in Resources */,
 				3C176F0A221C361A009CC12F /* switch-action.json in Resources */,
 				3C986982222FAD200065660B /* CalendarDemoViewController.xib in Resources */,
+				3C4D62C4223A5CAE00233C43 /* DiffExampleViewController.xib in Resources */,
 				3CF5A899222D07B4000833A1 /* test1.json in Resources */,
 				3C986986222FAE280065660B /* SummaryViewController.xib in Resources */,
 				3C98698E222FAFD00065660B /* DayViewController.xib in Resources */,
@@ -3084,9 +3172,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.4/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differ-iOS11.4/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.4/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject-iOS11.4/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox-iOS11.4/Unbox.framework",
@@ -3096,6 +3185,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
@@ -3103,7 +3193,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A8102140F4B0A009A42A031B /* [CP] Embed Pods Frameworks */ = {
@@ -3112,9 +3202,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS12.1/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differ-iOS12.1/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject-iOS12.1/Swinject.framework",
 				"${BUILT_PRODUCTS_DIR}/Unbox-iOS12.1/Unbox.framework",
@@ -3124,6 +3215,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
@@ -3131,7 +3223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FFA2E5B8E53FBECA8EBD6EAB /* [CP] Check Pods Manifest.lock */ = {
@@ -3247,6 +3339,7 @@
 				3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */,
 				3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */,
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
+				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
@@ -3260,7 +3353,9 @@
 				3CAB744E22041E3A00C8FE01 /* Visitor.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
+				3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */,
 				3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */,
+				3C51A748223B6F2400D14490 /* RequestConfigurator.swift in Sources */,
 				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
 				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
 				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
@@ -3268,6 +3363,7 @@
 				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C5B71822228FE27009D51DD /* AdvancedUsage.swift in Sources */,
+				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
@@ -3292,19 +3388,24 @@
 				3CADC677221536C800E28084 /* Operation.swift in Sources */,
 				3C986989222FAE650065660B /* SleepViewController.swift in Sources */,
 				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
+				3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */,
 				3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */,
 				3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
 				3CD6DC372227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift in Sources */,
 				3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */,
+				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
 				3CD6DC352227CC210062D2EC /* RealAlamofireDataController+Auth.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
+				3C1854702238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
+				3C51A744223B6DCD00D14490 /* CombinedWebRequestBehavior.swift in Sources */,
 				3C2C9C1C221BD238004A2605 /* Flyweight.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
+				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
 				3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */,
 				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
 				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
@@ -3325,6 +3426,8 @@
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */,
+				3C51A752223B7F0300D14490 /* RequestDataController.swift in Sources */,
+				3C51A746223B6EDA00D14490 /* EndPoint.swift in Sources */,
 				3CEA09FE2236389300C03FF9 /* CollectionViewCell.swift in Sources */,
 				3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
@@ -3332,6 +3435,7 @@
 				3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */,
 				3CED73002224FE870058A1B5 /* SingleResponsibilityPrinciple.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
+				3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
@@ -3359,7 +3463,7 @@
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
 				3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */,
 				3CD6DC292227B4200062D2EC /* AlamofireDataController.swift in Sources */,
-				3CD86454223797880073BAD9 /* Обертки над запросами.swift in Sources */,
+				3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */,
 				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
