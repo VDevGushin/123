@@ -221,7 +221,6 @@
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B0447223639710075ADCD /* DynamicHeightCollectionView.swift */; };
 		3C5B044E223644210075ADCD /* Инверсия зависимостей через протоколы.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B044D223644210075ADCD /* Инверсия зависимостей через протоколы.swift */; };
-		3C5B71822228FE27009D51DD /* AdvancedUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B71812228FE27009D51DD /* AdvancedUsage.swift */; };
 		3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B8466221E6A8C00C959BE /* Delegation.swift */; };
 		3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */; };
 		3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */; };
@@ -266,6 +265,9 @@
 		3C7A5ADB21934A8200DE016B /* DoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5AD921934A8200DE016B /* DoneTableViewCell.swift */; };
 		3C7A5ADC21934A8200DE016B /* DoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7A5ADA21934A8200DE016B /* DoneTableViewCell.xib */; };
 		3C7CD75221103951009871B1 /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CD75121103951009871B1 /* Tuples.swift */; };
+		3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */; };
+		3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */; };
+		3C7EB0E6223F87EB000BF3A5 /* Освоение MVVM на iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */; };
 		3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */; };
 		3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */; };
 		3C82F4662164A98A0024B3E4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4652164A98A0024B3E4 /* Date+Extension.swift */; };
@@ -796,7 +798,6 @@
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5B0447223639710075ADCD /* DynamicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightCollectionView.swift; sourceTree = "<group>"; };
 		3C5B044D223644210075ADCD /* Инверсия зависимостей через протоколы.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Инверсия зависимостей через протоколы.swift"; sourceTree = "<group>"; };
-		3C5B71812228FE27009D51DD /* AdvancedUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedUsage.swift; sourceTree = "<group>"; };
 		3C5B8466221E6A8C00C959BE /* Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation.swift; sourceTree = "<group>"; };
 		3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskBasedConcurrency .swift"; sourceTree = "<group>"; };
 		3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerViewControllers.swift; sourceTree = "<group>"; };
@@ -840,6 +841,9 @@
 		3C7A5AD921934A8200DE016B /* DoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTableViewCell.swift; sourceTree = "<group>"; };
 		3C7A5ADA21934A8200DE016B /* DoneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneTableViewCell.xib; sourceTree = "<group>"; };
 		3C7CD75121103951009871B1 /* Tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuples.swift; sourceTree = "<group>"; };
+		3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type erasure using closures in Swift.swift"; sourceTree = "<group>"; };
+		3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registerable Views.swift"; sourceTree = "<group>"; };
+		3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Освоение MVVM на iOS.swift"; sourceTree = "<group>"; };
 		3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotBasedUIDevelopment.swift; sourceTree = "<group>"; };
 		3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		3C82F4652164A98A0024B3E4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -1790,6 +1794,7 @@
 				3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */,
 				3C18546F2238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift */,
 				3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */,
+				3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */,
 			);
 			path = HABR;
 			sourceTree = "<group>";
@@ -2129,6 +2134,7 @@
 			children = (
 				3C8677A92230DEB200D73419 /* Стили для UI элементов.swift */,
 				3CD864552237A5300073BAD9 /* Domain Specific Language.swift */,
+				3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -2369,6 +2375,7 @@
 				3CA1E6C2222E48CD00921DB7 /* Observers2.swift */,
 				3C8677A62230D8F300D73419 /* CodeEncapsulation.swift */,
 				3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */,
+				3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -2589,7 +2596,6 @@
 			isa = PBXGroup;
 			children = (
 				3C2197712227B28F0042D385 /* Usage.swift */,
-				3C5B71812228FE27009D51DD /* AdvancedUsage.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -3174,21 +3180,23 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.4/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bond-iOS11.4/Bond.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Differ-iOS11.4/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.4/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS11.4/ReactiveKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject-iOS11.4/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/Unbox-iOS11.4/Unbox.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.4/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3204,21 +3212,23 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS12.1/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bond-iOS12.1/Bond.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Differ-iOS12.1/Differ.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS12.1/ReactiveKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject-iOS12.1/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/Unbox-iOS12.1/Unbox.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios-iOS12.1/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3358,11 +3368,11 @@
 				3C51A748223B6F2400D14490 /* RequestConfigurator.swift in Sources */,
 				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
 				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
+				3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */,
 				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
-				3C5B71822228FE27009D51DD /* AdvancedUsage.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
@@ -3372,6 +3382,7 @@
 				3C8677A72230D8F300D73419 /* CodeEncapsulation.swift in Sources */,
 				3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
+				3C7EB0E6223F87EB000BF3A5 /* Освоение MVVM на iOS.swift in Sources */,
 				3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
@@ -3465,6 +3476,7 @@
 				3CD6DC292227B4200062D2EC /* AlamofireDataController.swift in Sources */,
 				3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */,
 				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
+				3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ import PromiseKit
 
 class AlamofireViewController: CoordinatorViewController {
     @IBOutlet private weak var image: UIImageView!
-    @IBOutlet private weak var animationView: LOTAnimationView!
+    @IBOutlet private weak var animationView: AnimationView!
 
     private let dataController: AlamofireDataController //DI
 
@@ -32,11 +32,10 @@ class AlamofireViewController: CoordinatorViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.animationView.setAnimation(named: "test1")
+        self.animationView.animation = Animation.named("test1")
         self.animationView.contentMode = .scaleAspectFit
         self.animationView.animationSpeed = 1.0
-        self.animationView.loopAnimation = true
+        self.animationView.loopMode = .loop
     }
 
     override func viewDidAppear(_ animated: Bool) {

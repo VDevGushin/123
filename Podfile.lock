@@ -1,10 +1,13 @@
 PODS:
-  - Alamofire (5.0.0-beta.2)
-  - Charts (3.2.1):
-    - Charts/Core (= 3.2.1)
-  - Charts/Core (3.2.1)
+  - Alamofire (5.0.0-beta.3)
+  - Bond (7.3.0):
+    - Differ (~> 1.3)
+    - ReactiveKit (~> 3.9)
+  - Charts (3.2.2):
+    - Charts/Core (= 3.2.2)
+  - Charts/Core (3.2.2)
   - Differ (1.3.0)
-  - lottie-ios (2.5.2)
+  - lottie-ios (3.0.0)
   - PromiseKit (6.8.3):
     - PromiseKit/CorePromise (= 6.8.3)
     - PromiseKit/Foundation (= 6.8.3)
@@ -14,41 +17,43 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.8.3):
     - PromiseKit/CorePromise
-  - SwiftLint (0.27.0)
-  - Swinject (2.5.0)
-  - Unbox (3.0.0)
+  - ReactiveKit (3.9.7)
+  - SwiftLint (0.31.0)
+  - Swinject (2.6.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0-beta.2)
+  - Alamofire (~> 5.0.0-beta.3)
+  - Bond
   - Charts
   - Differ
   - lottie-ios
   - PromiseKit (~> 6.8)
   - SwiftLint
   - Swinject
-  - Unbox
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Bond
     - Charts
     - Differ
     - lottie-ios
     - PromiseKit
+    - ReactiveKit
     - SwiftLint
     - Swinject
-    - Unbox
 
 SPEC CHECKSUMS:
-  Alamofire: d1e5493588babe3e7b56ae29e8032942f4de09fe
-  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
+  Bond: 981286b1fae920135b527514e44e1591048d56dc
+  Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
   Differ: 9fcee7602542d7c6484ce05a0faec1c11258ed63
-  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
+  lottie-ios: e412502a03b3dfdaa3e18284194022065d82c820
   PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
-  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
-  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
-  Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
+  ReactiveKit: 5f4c440715d671901c382ae6b42ed3337ce4699b
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
 
-PODFILE CHECKSUM: de29e52f8bdd0d055f922bd0eeff6417160f4de9
+PODFILE CHECKSUM: f3da80e98d35b63602d7064597c756f049a757c2
 
 COCOAPODS: 1.6.1

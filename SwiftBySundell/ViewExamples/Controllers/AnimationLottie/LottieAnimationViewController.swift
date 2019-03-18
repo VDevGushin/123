@@ -9,7 +9,7 @@
 import UIKit
 import Lottie
 
-fileprivate extension Array where Element == LOTAnimationView {
+fileprivate extension Array where Element == AnimationView {
     func stopAnimation() {
         for element in self {
             element.stop()
@@ -21,15 +21,15 @@ class LottieAnimationViewController: CoordinatorViewController {
     deinit {
         print("LottieAnimationViewController deinit")
     }
-    
-    @IBOutlet private weak var animationView: LOTAnimationView!
-    @IBOutlet private weak var animationView2: LOTAnimationView!
-    @IBOutlet private weak var animationView3: LOTAnimationView!
-    @IBOutlet private weak var animationView4: LOTAnimationView!
+
+    @IBOutlet private weak var animationView: AnimationView!
+    @IBOutlet private weak var animationView2: AnimationView!
+    @IBOutlet private weak var animationView3: AnimationView!
+    @IBOutlet private weak var animationView4: AnimationView!
     @IBOutlet private weak var contentView: UIView!
 
     //For download testing
-    var prevProgress : CGFloat = 0.0
+    var prevProgress: CGFloat = 0.0
     private var downloadTask: URLSessionDownloadTask?
 
     override func viewDidLoad() {
@@ -65,7 +65,7 @@ class LottieAnimationViewController: CoordinatorViewController {
         downloadTask!.resume()
     }
 
-    @objc func switchTogge(animatedSwitch: LOTAnimatedSwitch) {
+    @objc func switchTogge(animatedSwitch: AnimatedSwitch) {
         if animatedSwitch.isOn {
             print("on")
         } else {
@@ -76,16 +76,17 @@ class LottieAnimationViewController: CoordinatorViewController {
     private func progressAnimation() {
         //self.animationView4.setAnimation(named: "success")
         //taxi-app-loading
-        self.animationView4.setAnimation(named: "taxi-app-loading")
+        self.animationView4.animation = Animation.named("taxi-app-loading")
         self.animationView4.contentMode = .scaleAspectFit
     }
 
     private func addSwitcher() {
-        let mySwitch = LOTAnimatedSwitch(named: "switch-action")
+        let mySwitch = AnimatedSwitch(animation: Animation.named("switch-action")!)
         mySwitch.translatesAutoresizingMaskIntoConstraints = false
 
-        mySwitch.setProgressRangeForOnState(fromProgress: 0.5, toProgress: 1.0)
-        mySwitch.setProgressRangeForOffState(fromProgress: 1.0, toProgress: 0.5)
+        mySwitch.setProgressForState(fromProgress: CGFloat(0.5), toProgress: CGFloat(1.0), forOnState: true)
+        mySwitch.setProgressForState(fromProgress: CGFloat(1.0), toProgress: CGFloat(0.5), forOnState: false)
+
         mySwitch.addTarget(self, action: #selector(switchTogge), for: .valueChanged)
         self.contentView.addSubview(mySwitch)
         NSLayoutConstraint.activate([
@@ -97,18 +98,20 @@ class LottieAnimationViewController: CoordinatorViewController {
     }
 
     private func addBigAnimations() {
-        self.animationView.setAnimation(named: "pulsing-loading-circles")
+        self.animationView.animation = Animation.named("pulsing-loading-circles")
         self.animationView.contentMode = .scaleAspectFit
         self.animationView.animationSpeed = 1.0
-        self.animationView.loopAnimation = true
+        self.animationView.loopMode = .loop
 
-        self.animationView2.setAnimation(named: "not-found")
-        self.animationView2.loopAnimation = true
+        self.animationView2.animation = Animation.named("not-found")
+        self.animationView2.loopMode = .loop
         self.animationView2.contentMode = .scaleAspectFit
 
-        self.animationView3.setAnimation(named: "im-thirsty")
-        self.animationView3.loopAnimation = true
+
+        self.animationView3.animation = Animation.named("im-thirsty")
+        self.animationView3.loopMode = .loop
         self.animationView3.contentMode = .scaleAspectFit
+
         self.animationView3.play()
     }
 }
@@ -120,10 +123,9 @@ extension LottieAnimationViewController: URLSessionDownloadDelegate {
 
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
         let progress = CGFloat(totalBytesWritten) / CGFloat(totalBytesExpectedToWrite)
-    
-        self.animationView4.play(fromProgress: self.prevProgress, toProgress: progress, withCompletion: { _ in
-            print(progress)
-        })
+
+        self.animationView4.play(fromProgress: self.prevProgress, toProgress: progress, loopMode: .playOnce, completion: nil)
+
         self.prevProgress = progress
     }
 

@@ -2,12 +2,12 @@
 # platform :ios, '9.0'
 
 def shared_pods
-    pod "Unbox"
+    pod 'Bond'
     pod "PromiseKit", "~> 6.8"
     pod 'Charts'
     pod 'SwiftLint'
     pod 'lottie-ios'
-    pod 'Alamofire', '~> 5.0.0-beta.2'
+    pod 'Alamofire', '~> 5.0.0-beta.3'
     pod 'Swinject'
     pod 'Differ'
 end

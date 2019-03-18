@@ -14,8 +14,8 @@ class PromiseKitViewController: CoordinatorViewController {
     deinit {
         print("PromiseKitViewController deinit")
     }
-    
-    @IBOutlet private weak var animationView: LOTAnimationView!
+
+    @IBOutlet private weak var animationView: AnimationView!
     @IBOutlet private weak var imageView: UIImageView!
 
     private lazy var fetchImage = DownloadImageDataController.fetchImageWithCancel()
@@ -58,10 +58,10 @@ class PromiseKitViewController: CoordinatorViewController {
     }
 
     private func setupAnimation() {
-        self.animationView.setAnimation(named: "loading-image")
+        self.animationView.animation = Animation.named("loading-image")
         self.animationView.contentMode = .scaleAspectFit
         self.animationView.animationSpeed = 1.0
-        self.animationView.loopAnimation = true
+        self.animationView.loopMode = .loop
         self.animationView.isHidden = true
     }
 
