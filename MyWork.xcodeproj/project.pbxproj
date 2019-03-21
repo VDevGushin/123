@@ -359,6 +359,8 @@
 		3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA81FA422281CAD008CC7BE /* ResumingDownload.swift */; };
 		3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA81FA622282097008CC7BE /* RealAlamofireDataController+Upload.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
+		3CA91089224354B600F54A4C /* Using errors as control flow in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */; };
+		3CA9108B224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
 		3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */; };
 		3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */; };
@@ -440,6 +442,7 @@
 		3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE138EF2227A5BD00E0B7CD /* SwinjectViewController.swift */; };
 		3CE138F22227A5BD00E0B7CD /* SwinjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE138F02227A5BD00E0B7CD /* SwinjectViewController.xib */; };
 		3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE1C25E21D20E65008FC070 /* CapturingObjectsSwift.swift */; };
+		3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2914D22420B2600831A13 /* A better syntax for configurable initializations.swift */; };
 		3CE3E552215BC1F2003A0528 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53A215BC1EF003A0528 /* UILabel+Chameleon.m */; };
 		3CE3E553215BC1F2003A0528 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53C215BC1EF003A0528 /* ChameleonConstants.m */; };
 		3CE3E554215BC1F2003A0528 /* UINavigationController+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53E215BC1EF003A0528 /* UINavigationController+Chameleon.m */; };
@@ -474,6 +477,7 @@
 		3CEA09FB2236362500C03FF9 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEA09F92236362500C03FF9 /* ContentTableViewCell.xib */; };
 		3CEA09FE2236389300C03FF9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09FC2236389300C03FF9 /* CollectionViewCell.swift */; };
 		3CEA09FF2236389300C03FF9 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEA09FD2236389300C03FF9 /* CollectionViewCell.xib */; };
+		3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEC6FCF2241FE1800DE844E /* Pattern Matching with case let.swift */; };
 		3CED73002224FE870058A1B5 /* SingleResponsibilityPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CED72FF2224FE870058A1B5 /* SingleResponsibilityPrinciple.swift */; };
 		3CED730922251C580058A1B5 /* DIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CED730822251C580058A1B5 /* DIService.swift */; };
 		3CEE4255210790FA00671D1D /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE4254210790FA00671D1D /* UIColor+Ex.swift */; };
@@ -935,6 +939,8 @@
 		3CA81FA422281CAD008CC7BE /* ResumingDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumingDownload.swift; sourceTree = "<group>"; };
 		3CA81FA622282097008CC7BE /* RealAlamofireDataController+Upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealAlamofireDataController+Upload.swift"; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using errors as control flow in Swift.swift"; sourceTree = "<group>"; };
+		3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift"; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
 		3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendingOptionals.swift; sourceTree = "<group>"; };
@@ -1015,6 +1021,7 @@
 		3CE138EF2227A5BD00E0B7CD /* SwinjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectViewController.swift; sourceTree = "<group>"; };
 		3CE138F02227A5BD00E0B7CD /* SwinjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwinjectViewController.xib; sourceTree = "<group>"; };
 		3CE1C25E21D20E65008FC070 /* CapturingObjectsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturingObjectsSwift.swift; sourceTree = "<group>"; };
+		3CE2914D22420B2600831A13 /* A better syntax for configurable initializations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A better syntax for configurable initializations.swift"; sourceTree = "<group>"; };
 		3CE3E4F7215BBEEE003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1072,6 +1079,7 @@
 		3CEA09F92236362500C03FF9 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
 		3CEA09FC2236389300C03FF9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		3CEA09FD2236389300C03FF9 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		3CEC6FCF2241FE1800DE844E /* Pattern Matching with case let.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pattern Matching with case let.swift"; sourceTree = "<group>"; };
 		3CED72FF2224FE870058A1B5 /* SingleResponsibilityPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResponsibilityPrinciple.swift; sourceTree = "<group>"; };
 		3CED730822251C580058A1B5 /* DIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIService.swift; sourceTree = "<group>"; };
 		3CEE4254210790FA00671D1D /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
@@ -1795,6 +1803,9 @@
 				3C18546F2238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift */,
 				3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */,
 				3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */,
+				3CEC6FCF2241FE1800DE844E /* Pattern Matching with case let.swift */,
+				3CE2914D22420B2600831A13 /* A better syntax for configurable initializations.swift */,
+				3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */,
 			);
 			path = HABR;
 			sourceTree = "<group>";
@@ -1843,6 +1854,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				3CA910862243546800F54A4C /* Error handling */,
 				3C8677A82230DEA300D73419 /* UI */,
 				3C452755222CF745004E5E19 /* HABR */,
 				3C452752222CEE64004E5E19 /* Storage */,
@@ -1851,8 +1863,8 @@
 				3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming */,
 				3C4B691521E8BA24002175CB /* Patterns */,
 				3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation */,
-				3C815EF721C76E6300499AE5 /* New */,
-				3CA6A26D21C23C49009D0F1F /* ServiceLocator */,
+				3C815EF721C76E6300499AE5 /* Капашилка */,
+				3CA6A26D21C23C49009D0F1F /* ServiceLocator no pods simple */,
 				3C14387321BE3A4100BA241D /* ErrorHandler */,
 				3C517C6621B9052A009CAEE7 /* ManagingState&Objects */,
 				3C517C5621B9051A009CAEE7 /* AppDelegate.swift */,
@@ -2058,14 +2070,14 @@
 			path = StaticCells;
 			sourceTree = "<group>";
 		};
-		3C815EF721C76E6300499AE5 /* New */ = {
+		3C815EF721C76E6300499AE5 /* Капашилка */ = {
 			isa = PBXGroup;
 			children = (
 				3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */,
 				3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */,
 				3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */,
 			);
-			path = New;
+			path = "Капашилка";
 			sourceTree = "<group>";
 		};
 		3C82F46C2164AA0F0024B3E4 /* WorkWithUI */ = {
@@ -2351,12 +2363,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		3CA6A26D21C23C49009D0F1F /* ServiceLocator */ = {
+		3CA6A26D21C23C49009D0F1F /* ServiceLocator no pods simple */ = {
 			isa = PBXGroup;
 			children = (
 				3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */,
 			);
-			path = ServiceLocator;
+			path = "ServiceLocator no pods simple";
+			sourceTree = "<group>";
+		};
+		3CA910862243546800F54A4C /* Error handling */ = {
+			isa = PBXGroup;
+			children = (
+				3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */,
+			);
+			path = "Error handling";
 			sourceTree = "<group>";
 		};
 		3CAB744A22040C7300C8FE01 /* APIDesign */ = {
@@ -3357,6 +3377,7 @@
 				3C0018BB2212973B00CE9D3E /* Facade.swift in Sources */,
 				3CD4913F21F05B9A0097618E /* Observer.swift in Sources */,
 				3CE138E722279EC100E0B7CD /* Observers1.swift in Sources */,
+				3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */,
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
 				3C204BC222016FBF00CB49B5 /* Memento.swift in Sources */,
 				3C2197722227B28F0042D385 /* Usage.swift in Sources */,
@@ -3401,6 +3422,7 @@
 				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
 				3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */,
 				3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */,
+				3CA9108B224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift in Sources */,
 				3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
@@ -3447,6 +3469,7 @@
 				3CED73002224FE870058A1B5 /* SingleResponsibilityPrinciple.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */,
+				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
@@ -3474,6 +3497,7 @@
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
 				3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */,
 				3CD6DC292227B4200062D2EC /* AlamofireDataController.swift in Sources */,
+				3CA91089224354B600F54A4C /* Using errors as control flow in Swift.swift in Sources */,
 				3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */,
 				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
 				3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */,

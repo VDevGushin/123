@@ -11,11 +11,11 @@ import Foundation
 protocol EndPoint {
     var timeoutInterval: TimeInterval { get set }
     var configurator: RequestConfigurator { get }
-    func urlRequest() -> URLRequest
+    func makeURLRequest() -> URLRequest
 }
 
 extension EndPoint {
-    func urlRequest() -> URLRequest {
+    func makeURLRequest() -> URLRequest {
         var request = URLRequest(url: self.url!)
         request.allHTTPHeaderFields = self.configurator.header
         request.httpMethod = self.configurator.method

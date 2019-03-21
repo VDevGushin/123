@@ -19,7 +19,7 @@ final class DownloadImageDataController: RequestDataController {
     }
 
     func downloadImage() -> Promise<UIImage> {
-        let request = self.endPoint.urlRequest()
+        let request = self.endPoint.makeURLRequest()
         self.requestBahavior.beforeSend(with: request)
         let fetchImage = URLSession.shared.dataTask(.promise, with: request).compactMap { UIImage(data: $0.data) }
         return firstly {

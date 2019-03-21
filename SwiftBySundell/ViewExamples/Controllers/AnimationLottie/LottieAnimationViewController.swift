@@ -98,7 +98,8 @@ class LottieAnimationViewController: CoordinatorViewController {
     }
 
     private func addBigAnimations() {
-        self.animationView.animation = Animation.named("pulsing-loading-circles")
+        let animation = Animation.named("pulsing-loading-circles")
+        self.animationView.animation = animation
         self.animationView.contentMode = .scaleAspectFit
         self.animationView.animationSpeed = 1.0
         self.animationView.loopMode = .loop
