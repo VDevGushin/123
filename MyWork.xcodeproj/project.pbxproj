@@ -177,7 +177,7 @@
 		3C437F7B2199D744008B61DC /* FeedbackAttachFileIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C437F7A2199D744008B61DC /* FeedbackAttachFileIncome.swift */; };
 		3C441B0D2198A39A001F275E /* CellSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C441B0C2198A39A001F275E /* CellSource.swift */; };
 		3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C452753222CEE7E004E5E19 /* Использование User-Defaults.swift */; };
-		3C452757222CF75E004E5E19 /* Композитный datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C452756222CF75E004E5E19 /* Композитный datasource.swift */; };
+		3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C452756222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift */; };
 		3C457F9021B79F3000B5EF63 /* SourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C457F8F21B79F3000B5EF63 /* SourceViewModel.swift */; };
 		3C457F9221B79FEA00B5EF63 /* SourceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C457F9121B79FEA00B5EF63 /* SourceListViewModel.swift */; };
 		3C457F9421B7A43500B5EF63 /* SourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C457F9321B7A43500B5EF63 /* SourcesTableViewController.swift */; };
@@ -268,6 +268,9 @@
 		3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */; };
 		3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */; };
 		3C7EB0E6223F87EB000BF3A5 /* Освоение MVVM на iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */; };
+		3C80FF382248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */; };
+		3C80FF3B2248A6B8007B71F4 /* Different flavors of type erasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80FF3A2248A6B8007B71F4 /* Different flavors of type erasure.swift */; };
+		3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */; };
 		3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */; };
 		3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */; };
 		3C82F4662164A98A0024B3E4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4652164A98A0024B3E4 /* Date+Extension.swift */; };
@@ -757,7 +760,7 @@
 		3C437F7A2199D744008B61DC /* FeedbackAttachFileIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAttachFileIncome.swift; sourceTree = "<group>"; };
 		3C441B0C2198A39A001F275E /* CellSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSource.swift; sourceTree = "<group>"; };
 		3C452753222CEE7E004E5E19 /* Использование User-Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Использование User-Defaults.swift"; sourceTree = "<group>"; };
-		3C452756222CF75E004E5E19 /* Композитный datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Композитный datasource.swift"; sourceTree = "<group>"; };
+		3C452756222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Композитный datasource для таблиц и коллекций.swift"; sourceTree = "<group>"; };
 		3C457F8F21B79F3000B5EF63 /* SourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewModel.swift; sourceTree = "<group>"; };
 		3C457F9121B79FEA00B5EF63 /* SourceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceListViewModel.swift; sourceTree = "<group>"; };
 		3C457F9321B7A43500B5EF63 /* SourcesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTableViewController.swift; sourceTree = "<group>"; };
@@ -848,6 +851,9 @@
 		3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type erasure using closures in Swift.swift"; sourceTree = "<group>"; };
 		3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registerable Views.swift"; sourceTree = "<group>"; };
 		3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Освоение MVVM на iOS.swift"; sourceTree = "<group>"; };
+		3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deep dive into Pattern matching with ~= operator.swift"; sourceTree = "<group>"; };
+		3C80FF3A2248A6B8007B71F4 /* Different flavors of type erasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Different flavors of type erasure.swift"; sourceTree = "<group>"; };
+		3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The power of key paths in Swift.swift"; sourceTree = "<group>"; };
 		3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotBasedUIDevelopment.swift; sourceTree = "<group>"; };
 		3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		3C82F4652164A98A0024B3E4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -1796,7 +1802,8 @@
 		3C452755222CF745004E5E19 /* HABR */ = {
 			isa = PBXGroup;
 			children = (
-				3C452756222CF75E004E5E19 /* Композитный datasource.swift */,
+				3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */,
+				3C452756222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift */,
 				3C5B044D223644210075ADCD /* Инверсия зависимостей через протоколы.swift */,
 				3C36EA062237786C00993B6F /* Как использовать HTTP-кеш.swift */,
 				3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */,
@@ -1854,8 +1861,9 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				3C80FF362248A1F4007B71F4 /* Language features */,
 				3CA910862243546800F54A4C /* Error handling */,
-				3C8677A82230DEA300D73419 /* UI */,
+				3C8677A82230DEA300D73419 /* UI & Animations */,
 				3C452755222CF745004E5E19 /* HABR */,
 				3C452752222CEE64004E5E19 /* Storage */,
 				3C2C9C1D221BD7E2004A2605 /* ViewExamples */,
@@ -2070,12 +2078,20 @@
 			path = StaticCells;
 			sourceTree = "<group>";
 		};
+		3C80FF362248A1F4007B71F4 /* Language features */ = {
+			isa = PBXGroup;
+			children = (
+				3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */,
+				3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */,
+				3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */,
+			);
+			path = "Language features";
+			sourceTree = "<group>";
+		};
 		3C815EF721C76E6300499AE5 /* Капашилка */ = {
 			isa = PBXGroup;
 			children = (
-				3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */,
-				3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */,
-				3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */,
+				3C80FF3A2248A6B8007B71F4 /* Different flavors of type erasure.swift */,
 			);
 			path = "Капашилка";
 			sourceTree = "<group>";
@@ -2141,14 +2157,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		3C8677A82230DEA300D73419 /* UI */ = {
+		3C8677A82230DEA300D73419 /* UI & Animations */ = {
 			isa = PBXGroup;
 			children = (
+				3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */,
 				3C8677A92230DEB200D73419 /* Стили для UI элементов.swift */,
 				3CD864552237A5300073BAD9 /* Domain Specific Language.swift */,
 				3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */,
 			);
-			path = UI;
+			path = "UI & Animations";
 			sourceTree = "<group>";
 		};
 		3C8E2354216136AB0010F7E6 /* Presenters */ = {
@@ -3374,6 +3391,7 @@
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
+				3C80FF3B2248A6B8007B71F4 /* Different flavors of type erasure.swift in Sources */,
 				3C0018BB2212973B00CE9D3E /* Facade.swift in Sources */,
 				3CD4913F21F05B9A0097618E /* Observer.swift in Sources */,
 				3CE138E722279EC100E0B7CD /* Observers1.swift in Sources */,
@@ -3422,6 +3440,7 @@
 				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
 				3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */,
 				3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */,
+				3C80FF382248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift in Sources */,
 				3CA9108B224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift in Sources */,
 				3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
@@ -3440,6 +3459,7 @@
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
 				3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */,
+				3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */,
 				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
 				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
 				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
@@ -3474,7 +3494,7 @@
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
 				3C8677AA2230DEB200D73419 /* Стили для UI элементов.swift in Sources */,
-				3C452757222CF75E004E5E19 /* Композитный datasource.swift in Sources */,
+				3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */,
 				3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */,
 				3CC308622223D98400E10683 /* Misc.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
