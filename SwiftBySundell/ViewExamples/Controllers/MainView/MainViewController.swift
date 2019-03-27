@@ -25,6 +25,7 @@ final class MainViewController: CoordinatorViewController {
         super.viewDidLoad()
         self.menuTable.dataSource = self
         self.menuTable.delegate = self
+
     }
 }
 
