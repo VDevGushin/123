@@ -227,9 +227,9 @@ fileprivate class FileObserver {
 }
 
 fileprivate func using(file: File) {
-    let observer = try? FileObserver(file: file)
+    let observer = FileObserver(file: file)
 
-    observer?.start {
+    observer.start {
         print("File was changed")
     }
 }

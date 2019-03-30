@@ -1,0 +1,6 @@
+framework module Swinject {
+  umbrella header "Swinject-iOS11.0-umbrella.h"
+
+  export *
+  module * { export * }
+}

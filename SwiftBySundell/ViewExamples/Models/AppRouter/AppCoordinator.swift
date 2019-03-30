@@ -22,6 +22,7 @@ final class AppCoordinator {
         case dynamicCollection
         case rootContent
         case diff
+        case diffCollectionLayout
 
         var title: String {
             switch self {
@@ -43,6 +44,8 @@ final class AppCoordinator {
                 return "Root"
             case .diff:
                 return "Animation with diff"
+            case .diffCollectionLayout:
+                return "Diff layout"
             }
         }
 
@@ -77,6 +80,7 @@ final class AppCoordinator {
         case .dynamicCollection: return DependencyProvider.shared.container.resolve(CollectionViewsDynamicHeightViewController.self, arguments: self, destination.title)!
         case .rootContent: return DependencyProvider.shared.container.resolve(RootContentViewController.self, arguments: self, destination.title)!
         case .diff: return DependencyProvider.shared.container.resolve(DiffExampleViewController.self, arguments: self, destination.title)!
+        case .diffCollectionLayout: return DependencyProvider.shared.container.resolve(DifferentCollectionLayoutCollectionViewController.self, arguments: self, destination.title)!
         }
     }
 

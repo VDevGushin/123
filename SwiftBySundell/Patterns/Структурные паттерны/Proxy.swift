@@ -104,7 +104,7 @@ fileprivate class Programm{
     func main(){
         let book = BookStoreProxy()
         //Читаем 1 стрницу
-        let page1 = book.getPage(number: 1)
+        let _ = book.getPage(number: 1)
         //...
     }
 }

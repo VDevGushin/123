@@ -31,9 +31,8 @@ fileprivate class ListViewController: UITableViewController {
             wSelf.table?.reloadData()
         }
 
-        let context = (viewModel: self)
-        self.viewModel.observeNumberOfItemsChanged {
-            context.viewModel.table?.reloadData()
+        self.viewModel.observeNumberOfItemsChanged { [weak self] in
+            self?.table?.reloadData()
         }
     }
 

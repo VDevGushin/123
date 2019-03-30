@@ -20,8 +20,8 @@ fileprivate struct Book: Hashable {
     var isAvailable: Bool
     var price: String
 
-    var hashValue: Int {
-        return name.hashValue
+    func hash(into hasher: inout Hasher){
+        hasher.combine(name.hash)
     }
 }
 

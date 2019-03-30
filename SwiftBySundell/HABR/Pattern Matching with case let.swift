@@ -54,7 +54,7 @@ fileprivate func testTuples() {
     switch auth {
     case ("admin", "admin"): break
     case let (_, password) where password.count < 6: break
-    case let (username, password): break
+    case let (username, password): dump(username, name: password)
     }
 }
 

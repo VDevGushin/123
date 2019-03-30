@@ -17,9 +17,9 @@ import UIKit
  user actions.
  
  The `AnimatedControl` will show and hide layers depending on the current
- `UIControlState` of the control.
+ `UIControl.State` of the control.
  
- Users of `AnimationControl` can set a Layer Name for each `UIControlState`.
+ Users of `AnimationControl` can set a Layer Name for each `UIControl.State`.
  When the state is change the `AnimationControl` will change the visibility
  of its layers.
  
@@ -36,11 +36,12 @@ open class AnimatedControl: UIControl {
       animationView.bounds = animation?.bounds ?? .zero
       setNeedsLayout()
       updateForState()
+      animationDidSet()
     }
   }
   
   /// Sets which Animation Layer should be visible for the given state.
-  public func setLayer(named: String, forState: UIControlState) {
+  public func setLayer(named: String, forState: UIControl.State) {
     stateMap[forState.rawValue] = named
     updateForState()
   }
@@ -60,7 +61,9 @@ open class AnimatedControl: UIControl {
   }
   
   required public init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    self.animationView = AnimationView()
+    super.init(coder: aDecoder)
+    commonInit()
   }
   
   // MARK: UIControl Overrides
@@ -105,6 +108,10 @@ open class AnimatedControl: UIControl {
   
   open override var intrinsicContentSize: CGSize {
     return animationView.intrinsicContentSize
+  }
+  
+  open func animationDidSet() {
+    
   }
   
   // MARK: Private

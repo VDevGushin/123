@@ -80,8 +80,8 @@ fileprivate func test() {
 
     let cat: ICat? = ServiceLocator.local.tryGetService()
     let dog: IDog = ServiceLocator.local.getService()
-    cat?.meow()
-    dog.bark()
+    _ = cat?.meow()
+    _ = dog.bark()
 
-    let global = ServiceLocator.global.service1
+    let _ = ServiceLocator.global.service1
 }

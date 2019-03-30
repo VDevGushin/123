@@ -19,13 +19,13 @@ final class MainViewController: CoordinatorViewController {
             AppCoordinator.Destination.childVC,
             AppCoordinator.Destination.dynamicCollection,
             AppCoordinator.Destination.rootContent,
-            AppCoordinator.Destination.diff]
+            AppCoordinator.Destination.diff,
+            AppCoordinator.Destination.diffCollectionLayout]
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.menuTable.dataSource = self
         self.menuTable.delegate = self
-
     }
 }
 

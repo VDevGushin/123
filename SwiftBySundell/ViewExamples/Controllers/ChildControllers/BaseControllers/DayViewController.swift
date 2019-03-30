@@ -8,9 +8,7 @@
 
 import UIKit
 
-class DayViewController: CoordinatorViewController {
-    @IBOutlet private weak var scrollView : UIScrollView!
-    @IBOutlet private weak var stackView : UIStackView!
+class DayViewController: StackViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -25,21 +23,3 @@ class DayViewController: CoordinatorViewController {
         add(SleepViewController(date: today))
     }
 }
-
-
-extension DayViewController {
-    func add(_ child: UIViewController) {
-        addChild(child)
-        stackView.addArrangedSubview(child.view)
-        child.didMove(toParent: self)
-    }
-    
-    func remove(_ child: UIViewController) {
-        guard child.parent != nil else { return }
-        child.willMove(toParent: nil)
-        stackView.removeArrangedSubview(child.view)
-        child.view.removeFromSuperview()
-        child.removeFromParent()
-    }
-}
-

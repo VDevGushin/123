@@ -261,7 +261,7 @@ extension UIView {
 }
 
 fileprivate func TEST() {
-    let rootView = stack {
+    let _ = stack {
         $0.spacing = 16
         $0.axis = .vertical
         $0.isLayoutMarginsRelativeArrangement = true
@@ -289,7 +289,7 @@ fileprivate func TEST() {
             }
         }
 
-        let messageButton = $0.button {
+        let _ = $0.button {
             $0.tintColor = .white
             $0.setTitle("Say Hi!", for: .normal)
         }

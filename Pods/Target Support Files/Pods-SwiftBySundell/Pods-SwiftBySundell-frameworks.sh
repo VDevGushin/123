@@ -153,24 +153,24 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS12.1/Alamofire.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Bond-iOS12.1/Bond.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Differ-iOS12.1/Differ.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS12.1/ReactiveKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject-iOS12.1/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS12.1/Lottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.0/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Bond-iOS11.0/Bond.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS11.0/Charts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Differ-iOS11.0/Differ.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.0/PromiseKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS11.0/ReactiveKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Swinject-iOS11.0/Swinject.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.0/Lottie.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS12.1/Alamofire.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Bond-iOS12.1/Bond.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Differ-iOS12.1/Differ.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS12.1/ReactiveKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject-iOS12.1/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS12.1/Lottie.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.0/Alamofire.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Bond-iOS11.0/Bond.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS11.0/Charts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Differ-iOS11.0/Differ.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.0/PromiseKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS11.0/ReactiveKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Swinject-iOS11.0/Swinject.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.0/Lottie.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

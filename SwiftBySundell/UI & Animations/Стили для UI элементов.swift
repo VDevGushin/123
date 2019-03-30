@@ -22,6 +22,7 @@ extension ViewStyle {
     }
 }
 
+//=======================
 
 protocol Stylable { init() }
 
@@ -35,33 +36,51 @@ extension Stylable {
     }
 }
 
-//=======================
-
 extension ViewStyle where T: UIButton {
-    static var filled: ViewStyle<UIButton> {
-        return ViewStyle<UIButton> {
+
+    static var filled: ViewStyle<T> {
+        return ViewStyle<T> {
             $0.setTitleColor(.white, for: .normal)
             $0.backgroundColor = .red
         }
     }
 
-    static var rounded: ViewStyle<UIButton> {
-        return ViewStyle<UIButton> {
+    static var rounded: ViewStyle<T> {
+        return ViewStyle<T> {
             $0.layer.cornerRadius = 4.0
         }
     }
-    
-    static var roundedAndFilled: ViewStyle<UIButton> {
+
+    static func rounded(rad: CGFloat) -> ViewStyle<T> {
+        return ViewStyle<T> {
+            $0.layer.cornerRadius = rad
+        }
+    }
+
+    static var roundedAndFilled: ViewStyle<T> {
         return filled.compose(with: rounded)
     }
 }
 
+extension ViewStyle where T: UICollectionView {
+    static func rounded(rad: CGFloat) -> ViewStyle<T> {
+        return ViewStyle<T> {
+            $0.layer.cornerRadius = rad
+        }
+    }
+}
 //=======================
 
 extension UIView: Stylable { }
 
 func filledAndRoundedButton() {
     let button = UIButton(frame: .zero)
-    button.apply(.roundedAndFilled)
+    button.apply(.rounded(rad: 8))
+
+
+
     _ = UIButton(style: .roundedAndFilled)
+
+    let collection = UICollectionView(frame: .zero)
+    collection.apply(.rounded(rad: 8))
 }

@@ -65,8 +65,8 @@ fileprivate class InventoryManager {
 // MARK: - Hashable
 
 extension Book: Hashable {
-    var hashValue: Int {
-        return title.appending(author).hashValue
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(title.appending(author).hashValue)
     }
 }
 
@@ -101,8 +101,8 @@ extension RenderableWrapper: Equatable {
 }
 
 extension RenderableWrapper: Hashable {
-    var hashValue: Int {
-        return ObjectIdentifier(renderable).hashValue
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(renderable).hashValue)
     }
 }
 
@@ -120,7 +120,7 @@ fileprivate class Renderer {
         objectsNeedingRendering = []
 
         // Render each object
-        for object in objects {
+        for _ in objects {
             // object.render(in: context)
         }
     }

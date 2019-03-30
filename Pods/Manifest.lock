@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (5.0.0-beta.3)
-  - Bond (7.3.0):
+  - Alamofire (5.0.0-beta.4)
+  - Bond (7.3.3):
     - Differ (~> 1.3)
     - ReactiveKit (~> 3.9)
   - Charts (3.2.2):
     - Charts/Core (= 3.2.2)
   - Charts/Core (3.2.2)
   - Differ (1.3.0)
-  - lottie-ios (3.0.0)
+  - lottie-ios (3.0.3)
   - PromiseKit (6.8.3):
     - PromiseKit/CorePromise (= 6.8.3)
     - PromiseKit/Foundation (= 6.8.3)
@@ -44,11 +44,11 @@ SPEC REPOS:
     - Swinject
 
 SPEC CHECKSUMS:
-  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
-  Bond: 981286b1fae920135b527514e44e1591048d56dc
+  Alamofire: 6458d95477bc40adf10129f22c67cfb014162dc8
+  Bond: 48ffda2418dde1da39bad39495c32a55f3ad23b9
   Charts: f69cf0518b6d1d62608ca504248f1bbe0b6ae77e
   Differ: 9fcee7602542d7c6484ce05a0faec1c11258ed63
-  lottie-ios: e412502a03b3dfdaa3e18284194022065d82c820
+  lottie-ios: 06e0b54aab85ba128e332687d7f4ac4861a7a7ae
   PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
   ReactiveKit: 5f4c440715d671901c382ae6b42ed3337ce4699b
   SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3

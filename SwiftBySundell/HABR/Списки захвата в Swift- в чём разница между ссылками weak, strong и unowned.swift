@@ -121,8 +121,8 @@ fileprivate func testRetainCycle() {
     print("Creating a house and an owner")
 
     do {
-        let house = House()
-        let owner = Owner()
+        let _ = House()
+        let _ = Owner()
     }
 
     //В результате будут выведены сообщения: “Creating a house and an owner”, “I’m dying!”, “I'm being demolished!”, затем “Done” – всё работает, как надо.

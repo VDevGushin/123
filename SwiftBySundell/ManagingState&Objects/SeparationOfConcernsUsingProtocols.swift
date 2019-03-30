@@ -66,25 +66,25 @@ fileprivate class ContactSearchViewController1: UIViewController {
  */
 
 fileprivate class NSManagedObjectContext: DataBase {
-    func loadObjects<T>(matching query: Query) -> [T] where T: Model { return Model() as! [T] }
+    func loadObjects<T>(matching query: Query) -> [T] where T: Model { return [Model()] as! [T] }
     func loadObject<T>(withID id: String) -> T? where T: Model { return Model() as? T }
     func save<T>(_ object: T) where T: Model { }
 }
 
 fileprivate class Realm: DataBase {
-    func loadObjects<T>(matching query: Query) -> [T] where T: Model { return Model() as! [T] }
+    func loadObjects<T>(matching query: Query) -> [T] where T: Model { return [Model()] as! [T] }
     func loadObject<T>(withID id: String) -> T? where T: Model { return Model() as? T }
     func save<T>(_ object: T) where T: Model { }
 }
 
 fileprivate class MockedDatabase: DataBase {
-    func loadObjects<T>(matching query: Query) -> [T] where T: Model { return Model() as! [T] }
+    func loadObjects<T>(matching query: Query) -> [T] where T: Model { return [Model()] as! [T] }
     func loadObject<T>(withID id: String) -> T? where T: Model { return Model() as? T }
     func save<T>(_ object: T) where T: Model { }
 }
 
 fileprivate class UITestingDatabase: DataBase {
-    func loadObjects<T>(matching query: Query) -> [T] where T: Model { return Model() as! [T] }
+    func loadObjects<T>(matching query: Query) -> [T] where T: Model { return [Model()] as! [T] }
     func loadObject<T>(withID id: String) -> T? where T: Model { return Model() as? T }
     func save<T>(_ object: T) where T: Model { }
 }

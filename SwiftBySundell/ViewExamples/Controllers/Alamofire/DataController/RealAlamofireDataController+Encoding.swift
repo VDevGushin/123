@@ -26,20 +26,26 @@ extension RealAlamofireDataController {
         // MARK: - GET Request With URL-Encoded Parameters
         // encoding defaults to `URLEncoding.default`
         AF.request("https://httpbin.org/get", parameters: parameters).responseData { response in
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            switch response.result {
+            case .failure(let error): break
+            case .success(let result):
+                print("JSON: \(result)") // serialized json response
             }
         }
 
         AF.request("https://httpbin.org/get", parameters: parameters, encoding: URLEncoding.default).responseData { response in
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            switch response.result {
+            case .failure(let error): break
+            case .success(let result):
+                print("JSON: \(result)") // serialized json response
             }
         }
 
         AF.request("https://httpbin.org/get", parameters: parameters, encoding: URLEncoding(destination: .methodDependent)).responseData { response in
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            switch response.result {
+            case .failure(let error): break
+            case .success(let result):
+                print("JSON: \(result)") // serialized json response
             }
         }
 
@@ -56,19 +62,25 @@ extension RealAlamofireDataController {
 
         // All three of these calls are equivalent
         AF.request("https://httpbin.org/post", method: .post, parameters: parametersForPost).responseData { response in
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            switch response.result {
+            case .failure(let error): break
+            case .success(let result):
+                print("JSON: \(result)") // serialized json response
             }
         }
         AF.request("https://httpbin.org/post", method: .post, parameters: parametersForPost, encoding: URLEncoding.default).responseData { response in
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            switch response.result {
+            case .failure(let error): break
+            case .success(let result):
+                print("JSON: \(result)") // serialized json response
             }
         }
         // HTTP body: foo=bar&baz[]=a&baz[]=1&qux[x]=1&qux[y]=2&qux[z]=3
         AF.request("https://httpbin.org/post", method: .post, parameters: parametersForPost, encoding: URLEncoding.httpBody).responseData { response in
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            switch response.result {
+            case .failure(let error): break
+            case .success(let result):
+                print("JSON: \(result)") // serialized json response
             }
         }
 
@@ -100,13 +112,17 @@ extension RealAlamofireDataController {
 
         // Both calls are equivalent
         AF.request("https://httpbin.org/post", method: .post, parameters: parametersJSONEncoding, encoding: JSONEncoding.default).responseData { response in
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            switch response.result {
+            case .failure(let error): break
+            case .success(let result):
+                print("JSON: \(result)") // serialized json response
             }
         }
         AF.request("https://httpbin.org/post", method: .post, parameters: parametersJSONEncoding, encoding: JSONEncoding(options: [])).responseData { response in
-            if let json = response.result.value {
-                print("JSON: \(json)") // serialized json response
+            switch response.result {
+            case .failure(let error): break
+            case .success(let result):
+                print("JSON: \(result)") // serialized json response
             }
         }//// HTTP body: {"foo": [1, 2, 3], "bar": {"baz": "qux"}}
 

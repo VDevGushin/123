@@ -250,6 +250,17 @@
 		3C6D8F6C2109C9A5000190F3 /* StatisticCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */; };
 		3C6D8F6D2109C9A5000190F3 /* StatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */; };
 		3C6E7750218B527A00938D42 /* NewChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E774F218B527A00938D42 /* NewChat.swift */; };
+		3C6F2D42224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D40224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift */; };
+		3C6F2D43224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6F2D41224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.xib */; };
+		3C6F2D45224F617B000A194B /* CoordinatorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D44224F617B000A194B /* CoordinatorCollectionViewController.swift */; };
+		3C6F2D48224F647C000A194B /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D47224F647C000A194B /* Fruit.swift */; };
+		3C6F2D4A224F648E000A194B /* FruitsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D49224F648E000A194B /* FruitsProvider.swift */; };
+		3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D4C224F656E000A194B /* FruitCollectionViewCell.swift */; };
+		3C6F2D4F224F656E000A194B /* FruitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6F2D4D224F656E000A194B /* FruitCollectionViewCell.xib */; };
+		3C6F2D52224F66DF000A194B /* DefaultCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D51224F66DF000A194B /* DefaultCollectionViewDelegate.swift */; };
+		3C6F2D54224F672F000A194B /* TabledContentCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D53224F672F000A194B /* TabledContentCollectionViewDelegate.swift */; };
+		3C6F2D57224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D56224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift */; };
+		3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F2D58224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift */; };
 		3C746BE4217EF64E002E51DC /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE3217EF64E002E51DC /* CalendarView.swift */; };
 		3C746BE6217EF9E0002E51DC /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C746BE5217EF9E0002E51DC /* CalendarView.xib */; };
 		3C746BE8217F18FC002E51DC /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C746BE7217F18FC002E51DC /* DaysView.swift */; };
@@ -834,6 +845,17 @@
 		3C6D8F6A2109C9A5000190F3 /* StatisticCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCell.swift; sourceTree = "<group>"; };
 		3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCell.xib; sourceTree = "<group>"; };
 		3C6E774F218B527A00938D42 /* NewChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChat.swift; sourceTree = "<group>"; };
+		3C6F2D40224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentCollectionLayoutCollectionViewController.swift; sourceTree = "<group>"; };
+		3C6F2D41224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DifferentCollectionLayoutCollectionViewController.xib; sourceTree = "<group>"; };
+		3C6F2D44224F617B000A194B /* CoordinatorCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorCollectionViewController.swift; sourceTree = "<group>"; };
+		3C6F2D47224F647C000A194B /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		3C6F2D49224F648E000A194B /* FruitsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsProvider.swift; sourceTree = "<group>"; };
+		3C6F2D4C224F656E000A194B /* FruitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C6F2D4D224F656E000A194B /* FruitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitCollectionViewCell.xib; sourceTree = "<group>"; };
+		3C6F2D51224F66DF000A194B /* DefaultCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		3C6F2D53224F672F000A194B /* TabledContentCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabledContentCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		3C6F2D56224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGriddedContentCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		3C6F2D58224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGriddedContentCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		3C746BE3217EF64E002E51DC /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		3C746BE5217EF9E0002E51DC /* CalendarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		3C746BE7217F18FC002E51DC /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
@@ -1305,6 +1327,22 @@
 			path = "Animating changes in UITableView and UICollectionView";
 			sourceTree = "<group>";
 		};
+		3C1B37D7224C9953005200F5 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3CE138EC2227A4DC00E0B7CD /* FakeLogger.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		3C1B37D8224C995E005200F5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3CE138EA2227A4B300E0B7CD /* Logger.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		3C1D9C7121089F43006DF537 /* LinePercentagesControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -1389,7 +1427,7 @@
 			isa = PBXGroup;
 			children = (
 				3CED730622251C440058A1B5 /* Models */,
-				3C3925E7221BDB9E003CD1EE /* Sources */,
+				3C3925E7221BDB9E003CD1EE /* AnimationSources */,
 				3C2C9C21221BD8F3004A2605 /* Controllers */,
 			);
 			path = ViewExamples;
@@ -1406,6 +1444,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C6F2D3F224F604B000A194B /* Different collection layout */,
 				3C1854712238D41600A9B4D8 /* Animating changes in UITableView and UICollectionView */,
 				3C4099812237CD1400E5FB05 /* RootContentController */,
 				3CEA09F2223633FA00C03FF9 /* CollectionViewsDynamicHeight */,
@@ -1416,6 +1455,7 @@
 				3C1E6ABA221C06FC00997F31 /* AnimationLottie */,
 				3C2C9C22221BD8FD004A2605 /* MainView */,
 				3C1E6ABF221C09EE00997F31 /* CoordinatorViewController.swift */,
+				3C6F2D44224F617B000A194B /* CoordinatorCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1495,7 +1535,7 @@
 			path = UIControls;
 			sourceTree = "<group>";
 		};
-		3C3925E7221BDB9E003CD1EE /* Sources */ = {
+		3C3925E7221BDB9E003CD1EE /* AnimationSources */ = {
 			isa = PBXGroup;
 			children = (
 				3CF5A898222D07B4000833A1 /* test1.json */,
@@ -1510,7 +1550,7 @@
 				3C1EA4A8221BE01300B33763 /* not-found.json */,
 				3C3925E8221BDC1E003CD1EE /* pulsing-loading-circles.json */,
 			);
-			path = Sources;
+			path = AnimationSources;
 			sourceTree = "<group>";
 		};
 		3C39B3CB21C7BA2300323840 /* Menu */ = {
@@ -1913,8 +1953,8 @@
 		3C51A73D223B6BE000D14490 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				3C51A750223B7EEE00D14490 /* RequestDataController */,
 				3C51A74A223B71FA00D14490 /* EndPoint */,
+				3C51A750223B7EEE00D14490 /* RequestDataController */,
 				3C51A749223B71EE00D14490 /* Configurators */,
 				3C51A73E223B6C4B00D14490 /* Behaviors */,
 			);
@@ -2036,6 +2076,47 @@
 				3C6D8F6B2109C9A5000190F3 /* StatisticCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3C6F2D3F224F604B000A194B /* Different collection layout */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F2D50224F66CF000A194B /* Collection FlowLayouts */,
+				3C6F2D4B224F6552000A194B /* Views */,
+				3C6F2D46224F646A000A194B /* Models */,
+				3C6F2D40224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift */,
+				3C6F2D41224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.xib */,
+			);
+			path = "Different collection layout";
+			sourceTree = "<group>";
+		};
+		3C6F2D46224F646A000A194B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F2D47224F647C000A194B /* Fruit.swift */,
+				3C6F2D49224F648E000A194B /* FruitsProvider.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C6F2D4B224F6552000A194B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F2D4C224F656E000A194B /* FruitCollectionViewCell.swift */,
+				3C6F2D4D224F656E000A194B /* FruitCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C6F2D50224F66CF000A194B /* Collection FlowLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F2D51224F66DF000A194B /* DefaultCollectionViewDelegate.swift */,
+				3C6F2D53224F672F000A194B /* TabledContentCollectionViewDelegate.swift */,
+				3C6F2D56224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift */,
+				3C6F2D58224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift */,
+			);
+			path = "Collection FlowLayouts";
 			sourceTree = "<group>";
 		};
 		3C78FFDC2191E0FE00540752 /* FeedBack */ = {
@@ -2611,8 +2692,8 @@
 		3CE138E92227A46A00E0B7CD /* FakeService1 */ = {
 			isa = PBXGroup;
 			children = (
-				3CE138EA2227A4B300E0B7CD /* Logger.swift */,
-				3CE138EC2227A4DC00E0B7CD /* FakeLogger.swift */,
+				3C1B37D8224C995E005200F5 /* Base */,
+				3C1B37D7224C9953005200F5 /* Logic */,
 			);
 			path = FakeService1;
 			sourceTree = "<group>";
@@ -3104,6 +3185,7 @@
 				3C3253B7221D7C6600A7E3F0 /* taxi-app-loading.json in Resources */,
 				3C3A1B0C221D18E4005DDFA7 /* success.json in Resources */,
 				3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */,
+				3C6F2D43224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.xib in Resources */,
 				3C1EA4A9221BE01300B33763 /* not-found.json in Resources */,
 				3CEA09F62236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib in Resources */,
 				3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */,
@@ -3122,6 +3204,7 @@
 				3C986982222FAD200065660B /* CalendarDemoViewController.xib in Resources */,
 				3C4D62C4223A5CAE00233C43 /* DiffExampleViewController.xib in Resources */,
 				3CF5A899222D07B4000833A1 /* test1.json in Resources */,
+				3C6F2D4F224F656E000A194B /* FruitCollectionViewCell.xib in Resources */,
 				3C986986222FAE280065660B /* SummaryViewController.xib in Resources */,
 				3C98698E222FAFD00065660B /* DayViewController.xib in Resources */,
 			);
@@ -3259,14 +3342,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS12.1/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Bond-iOS12.1/Bond.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts-iOS12.1/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/Differ-iOS12.1/Differ.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS12.1/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS12.1/ReactiveKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject-iOS12.1/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/lottie-ios-iOS12.1/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.0/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bond-iOS11.0/Bond.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts-iOS11.0/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differ-iOS11.0/Differ.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.0/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS11.0/ReactiveKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject-iOS11.0/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.0/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -3395,6 +3478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */,
+				3C6F2D57224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
 				3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */,
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
 				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
@@ -3412,10 +3496,12 @@
 				3C2197722227B28F0042D385 /* Usage.swift in Sources */,
 				3CAB744E22041E3A00C8FE01 /* Visitor.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
+				3C6F2D42224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift in Sources */,
 				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
 				3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */,
 				3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */,
 				3C51A748223B6F2400D14490 /* RequestConfigurator.swift in Sources */,
+				3C6F2D54224F672F000A194B /* TabledContentCollectionViewDelegate.swift in Sources */,
 				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
 				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
 				3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */,
@@ -3452,15 +3538,19 @@
 				3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */,
 				3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */,
 				3C80FF382248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift in Sources */,
+				3C6F2D45224F617B000A194B /* CoordinatorCollectionViewController.swift in Sources */,
 				3CA9108B224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift in Sources */,
 				3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3C339ADE22002B4C008A85C6 /* Interpreter.swift in Sources */,
 				3CD6DC372227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift in Sources */,
 				3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */,
+				3C6F2D4A224F648E000A194B /* FruitsProvider.swift in Sources */,
+				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
 				3CD6DC352227CC210062D2EC /* RealAlamofireDataController+Auth.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
+				3C6F2D52224F66DF000A194B /* DefaultCollectionViewDelegate.swift in Sources */,
 				3C1854702238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
 				3C51A744223B6DCD00D14490 /* CombinedWebRequestBehavior.swift in Sources */,
@@ -3477,6 +3567,7 @@
 				3C8546BD21FEFAD40004700D /* ChainOfResponsibility.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
+				3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
 				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */,
@@ -3511,6 +3602,7 @@
 				3CC308622223D98400E10683 /* Misc.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
+				3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */,
 				3CD6DC2F2227BF8D0062D2EC /* RealAlamofireDataController.swift in Sources */,
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
 				3C8DBE7321EF354100BEF5F3 /* Builder.swift in Sources */,
@@ -3970,7 +4062,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = SwiftBySundell/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3979,7 +4071,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.SwiftBySundell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3992,7 +4084,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5577XBKG;
 				INFOPLIST_FILE = SwiftBySundell/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4000,7 +4092,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vdev.SwiftBySundell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
