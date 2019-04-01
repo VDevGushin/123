@@ -519,6 +519,7 @@
 		3CF58AF52188884D008FEB6D /* NewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AF42188884D008FEB6D /* NewMessage.swift */; };
 		3CF5A899222D07B4000833A1 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CF5A898222D07B4000833A1 /* test1.json */; };
 		3CF62BA3214F718A00BD1579 /* ReusableDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */; };
+		3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6F9132251DE1E001CA170 /* Bindable values in Swift.swift */; };
 		3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */; };
 		3CFBCC0B21145A7B00A8A458 /* ETBVariantsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */; };
 		3CFBCC0D21145A8300A8A458 /* ETBVariantsControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0C21145A8300A8A458 /* ETBVariantsControl.xib */; };
@@ -1136,6 +1137,7 @@
 		3CF58AF42188884D008FEB6D /* NewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessage.swift; sourceTree = "<group>"; };
 		3CF5A898222D07B4000833A1 /* test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1.json; sourceTree = "<group>"; };
 		3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableDataSources.swift; sourceTree = "<group>"; };
+		3CF6F9132251DE1E001CA170 /* Bindable values in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable values in Swift.swift"; sourceTree = "<group>"; };
 		3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstClassFunctions .swift"; sourceTree = "<group>"; };
 		3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBVariantsControl.swift; sourceTree = "<group>"; };
 		3CFBCC0C21145A8300A8A458 /* ETBVariantsControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBVariantsControl.xib; sourceTree = "<group>"; };
@@ -1877,6 +1879,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3C49AFC72251F5CF00E740A2 /* Network2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network2;
+			sourceTree = "<group>";
+		};
 		3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1953,6 +1962,7 @@
 		3C51A73D223B6BE000D14490 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3C49AFC72251F5CF00E740A2 /* Network2 */,
 				3C51A74A223B71FA00D14490 /* EndPoint */,
 				3C51A750223B7EEE00D14490 /* RequestDataController */,
 				3C51A749223B71EE00D14490 /* Configurators */,
@@ -2176,6 +2186,7 @@
 			isa = PBXGroup;
 			children = (
 				3C80FF3A2248A6B8007B71F4 /* Different flavors of type erasure.swift */,
+				3CF6F9132251DE1E001CA170 /* Bindable values in Swift.swift */,
 			);
 			path = "Капашилка";
 			sourceTree = "<group>";
@@ -3510,6 +3521,7 @@
 				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
+				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
 				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
 				3C339AE022002B77008A85C6 /* Mediator.swift in Sources */,
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
