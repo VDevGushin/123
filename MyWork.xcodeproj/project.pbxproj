@@ -390,6 +390,13 @@
 		3CB805FF2195732E00728378 /* FeedBackReportWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB805FE2195732E00728378 /* FeedBackReportWorker.swift */; };
 		3CB806012195D5FC00728378 /* FeedBackInitFrom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB806002195D5FC00728378 /* FeedBackInitFrom.swift */; };
 		3CBDAD36211D8133007ED110 /* TestProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDAD35211D8133007ED110 /* TestProperty.swift */; };
+		3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF779225334A20096528A /* HTTPMethod.swift */; };
+		3CBDF77C225334BD0096528A /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF77B225334BD0096528A /* HTTPHeader.swift */; };
+		3CBDF77E225334D60096528A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF77D225334D60096528A /* APIRequest.swift */; };
+		3CBDF780225335760096528A /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF77F225335760096528A /* APIResponse.swift */; };
+		3CBDF782225335A40096528A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF781225335A40096528A /* APIError.swift */; };
+		3CBDF784225336810096528A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF783225336810096528A /* APIClient.swift */; };
+		3CBDF78622533A620096528A /* HowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF78522533A620096528A /* HowToUse.swift */; };
 		3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF54C121BF873C003D4F46 /* PowerOfResultTypes.swift */; };
 		3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */; };
 		3CC042D32154DD57009FB6E3 /* TransformingСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */; };
@@ -986,6 +993,13 @@
 		3CB805FE2195732E00728378 /* FeedBackReportWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackReportWorker.swift; sourceTree = "<group>"; };
 		3CB806002195D5FC00728378 /* FeedBackInitFrom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackInitFrom.swift; sourceTree = "<group>"; };
 		3CBDAD35211D8133007ED110 /* TestProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProperty.swift; sourceTree = "<group>"; };
+		3CBDF779225334A20096528A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		3CBDF77B225334BD0096528A /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		3CBDF77D225334D60096528A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		3CBDF77F225335760096528A /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		3CBDF781225335A40096528A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		3CBDF783225336810096528A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3CBDF78522533A620096528A /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
 		3CBF54C121BF873C003D4F46 /* PowerOfResultTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfResultTypes.swift; sourceTree = "<group>"; };
 		3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TypeSafeIdentifiers .swift"; sourceTree = "<group>"; };
 		3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransformingСollections.swift"; sourceTree = "<group>"; };
@@ -1882,6 +1896,13 @@
 		3C49AFC72251F5CF00E740A2 /* Network2 */ = {
 			isa = PBXGroup;
 			children = (
+				3CBDF779225334A20096528A /* HTTPMethod.swift */,
+				3CBDF77B225334BD0096528A /* HTTPHeader.swift */,
+				3CBDF77D225334D60096528A /* APIRequest.swift */,
+				3CBDF77F225335760096528A /* APIResponse.swift */,
+				3CBDF781225335A40096528A /* APIError.swift */,
+				3CBDF783225336810096528A /* APIClient.swift */,
+				3CBDF78522533A620096528A /* HowToUse.swift */,
 			);
 			path = Network2;
 			sourceTree = "<group>";
@@ -3494,8 +3515,10 @@
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
 				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
+				3CBDF77E225334D60096528A /* APIRequest.swift in Sources */,
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
+				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				3C80FF3B2248A6B8007B71F4 /* Different flavors of type erasure.swift in Sources */,
 				3C0018BB2212973B00CE9D3E /* Facade.swift in Sources */,
@@ -3505,6 +3528,7 @@
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
 				3C204BC222016FBF00CB49B5 /* Memento.swift in Sources */,
 				3C2197722227B28F0042D385 /* Usage.swift in Sources */,
+				3CBDF78622533A620096528A /* HowToUse.swift in Sources */,
 				3CAB744E22041E3A00C8FE01 /* Visitor.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C6F2D42224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift in Sources */,
@@ -3593,6 +3617,7 @@
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */,
+				3CBDF780225335760096528A /* APIResponse.swift in Sources */,
 				3C51A752223B7F0300D14490 /* RequestDataController.swift in Sources */,
 				3C51A746223B6EDA00D14490 /* EndPoint.swift in Sources */,
 				3CEA09FE2236389300C03FF9 /* CollectionViewCell.swift in Sources */,
@@ -3608,6 +3633,7 @@
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
+				3CBDF784225336810096528A /* APIClient.swift in Sources */,
 				3C8677AA2230DEB200D73419 /* Стили для UI элементов.swift in Sources */,
 				3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */,
 				3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */,
@@ -3634,9 +3660,11 @@
 				3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */,
 				3CD6DC292227B4200062D2EC /* AlamofireDataController.swift in Sources */,
 				3CA91089224354B600F54A4C /* Using errors as control flow in Swift.swift in Sources */,
+				3CBDF77C225334BD0096528A /* HTTPHeader.swift in Sources */,
 				3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */,
 				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
 				3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */,
+				3CBDF782225335A40096528A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
