@@ -65,6 +65,7 @@
 		3C204BC02201677800CB49B5 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C204BBF2201677800CB49B5 /* GCD.swift */; };
 		3C204BC222016FBF00CB49B5 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C204BC122016FBF00CB49B5 /* Memento.swift */; };
 		3C2197722227B28F0042D385 /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2197712227B28F0042D385 /* Usage.swift */; };
+		3C23664E22571D66003A33C0 /* A detailed explanation of memory leaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C23664D22571D66003A33C0 /* A detailed explanation of memory leaks.swift */; };
 		3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C276688217DE1D600374E7E /* CalendarViewController.swift */; };
 		3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C276689217DE1D600374E7E /* CalendarViewController.xib */; };
 		3C276690217DEA1400374E7E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C27668F217DEA1400374E7E /* MonthView.swift */; };
@@ -82,6 +83,7 @@
 		3C2FA85D20F8BAB100F54E76 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85C20F8BAB100F54E76 /* Result.swift */; };
 		3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */; };
 		3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */; };
+		3C3076CB225B15610006D5FC /* String literals in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3076CA225B15610006D5FC /* String literals in Swift.swift */; };
 		3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C3D0214B78DF008BBC12 /* ModellingState .swift */; };
 		3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3253B4221D7B1600A7E3F0 /* loading-image.json */; };
 		3C3253B7221D7C6600A7E3F0 /* taxi-app-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3253B6221D7C6600A7E3F0 /* taxi-app-loading.json */; };
@@ -648,6 +650,7 @@
 		3C204BBF2201677800CB49B5 /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		3C204BC122016FBF00CB49B5 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		3C2197712227B28F0042D385 /* Usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
+		3C23664D22571D66003A33C0 /* A detailed explanation of memory leaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A detailed explanation of memory leaks.swift"; sourceTree = "<group>"; };
 		3C276688217DE1D600374E7E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3C276689217DE1D600374E7E /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		3C27668F217DEA1400374E7E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
@@ -665,6 +668,7 @@
 		3C2FA85C20F8BAB100F54E76 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedAnalyticsSystem.swift; sourceTree = "<group>"; };
 		3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingSingletonsSwift.swift; sourceTree = "<group>"; };
+		3C3076CA225B15610006D5FC /* String literals in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String literals in Swift.swift"; sourceTree = "<group>"; };
 		3C30C3D0214B78DF008BBC12 /* ModellingState .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModellingState .swift"; sourceTree = "<group>"; };
 		3C3253B4221D7B1600A7E3F0 /* loading-image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-image.json"; sourceTree = "<group>"; };
 		3C3253B6221D7C6600A7E3F0 /* taxi-app-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "taxi-app-loading.json"; sourceTree = "<group>"; };
@@ -1416,6 +1420,14 @@
 			path = DataControllers;
 			sourceTree = "<group>";
 		};
+		3C23664C22571D4C003A33C0 /* MemoryLeaks */ = {
+			isa = PBXGroup;
+			children = (
+				3C23664D22571D66003A33C0 /* A detailed explanation of memory leaks.swift */,
+			);
+			path = MemoryLeaks;
+			sourceTree = "<group>";
+		};
 		3C276687217DE1C200374E7E /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1460,6 +1472,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3C3076CC225B1BF10006D5FC /* UISplitViewController */,
 				3C6F2D3F224F604B000A194B /* Different collection layout */,
 				3C1854712238D41600A9B4D8 /* Animating changes in UITableView and UICollectionView */,
 				3C4099812237CD1400E5FB05 /* RootContentController */,
@@ -1513,6 +1526,13 @@
 				3CD7AF7C215E71710006A4DD /* UIColllectionView+Ex.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		3C3076CC225B1BF10006D5FC /* UISplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UISplitViewController;
 			sourceTree = "<group>";
 		};
 		3C35CC0A218798A200DDE92E /* Cells */ = {
@@ -1933,6 +1953,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				3C23664C22571D4C003A33C0 /* MemoryLeaks */,
 				3CCC0A34224B483300F635BB /* Maintenance, structure & code quality */,
 				3C80FF362248A1F4007B71F4 /* Language features */,
 				3CA910862243546800F54A4C /* Error handling */,
@@ -2199,6 +2220,7 @@
 				3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */,
 				3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */,
 				3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */,
+				3C3076CA225B15610006D5FC /* String literals in Swift.swift */,
 			);
 			path = "Language features";
 			sourceTree = "<group>";
@@ -3597,6 +3619,7 @@
 				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
 				3C5CA4E221F5B970001D26ED /* TemplateMethod.swift in Sources */,
 				3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */,
+				3C3076CB225B15610006D5FC /* String literals in Swift.swift in Sources */,
 				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
 				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
 				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
@@ -3626,6 +3649,7 @@
 				3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */,
 				3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */,
 				3CED73002224FE870058A1B5 /* SingleResponsibilityPrinciple.swift in Sources */,
+				3C23664E22571D66003A33C0 /* A detailed explanation of memory leaks.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */,
 				3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */,

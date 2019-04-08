@@ -22,7 +22,7 @@
 		<key>MyWork.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>24</integer>
 		</dict>
 		<key>SupportLib.xcscheme</key>
 		<dict>
@@ -32,12 +32,12 @@
 		<key>SupportLib.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>25</integer>
 		</dict>
 		<key>SwiftBySundell.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>22</integer>
 		</dict>
 		<key>UIPart.xcscheme</key>
 		<dict>
@@ -68,6 +68,11 @@
 			<true/>
 		</dict>
 		<key>3C41F8802160D732002334DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C517C5321B9051A009CAEE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
