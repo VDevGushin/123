@@ -15,8 +15,6 @@
 		3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */; };
 		3C04AE81221689BA0086CE4B /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AE80221689BA0086CE4B /* Proxy.swift */; };
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
-		3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */; };
-		3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */; };
 		3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */; };
 		3C09E493217D93C7007ABDD8 /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */; };
 		3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */; };
@@ -242,6 +240,8 @@
 		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
 		3C69E4AC215FA4870022CA4D /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD253B2112F95400128554 /* UIView+Ex.swift */; };
 		3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */; };
+		3C6BA91E225C6130000A2063 /* Replacing legacy code using Swift protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6BA91D225C6130000A2063 /* Replacing legacy code using Swift protocols.swift */; };
+		3C6BA921225C777F000A2063 /* Фабричный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6BA920225C777F000A2063 /* Фабричный метод.swift */; };
 		3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5A21099BAC000190F3 /* LineControl.swift */; };
 		3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */; };
 		3C6D8F5F21099D3C000190F3 /* LinePercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */; };
@@ -305,7 +305,6 @@
 		3C8677AA2230DEB200D73419 /* Стили для UI элементов.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8677A92230DEB200D73419 /* Стили для UI элементов.swift */; };
 		3C8701EA2186EEB40094186B /* KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8701E92186EEB40094186B /* KeyPaths.swift */; };
 		3C892E5B2180772400BDEE55 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */; };
-		3C8DBE7321EF354100BEF5F3 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DBE7221EF354100BEF5F3 /* Builder.swift */; };
 		3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */; };
 		3C8E235921613FDD0010F7E6 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E235821613FDD0010F7E6 /* GradientView.swift */; };
 		3C8E235B21613FF90010F7E6 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E235A21613FF90010F7E6 /* ImageScrollView.swift */; };
@@ -416,8 +415,6 @@
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
 		3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */; };
 		3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC689D021EC5D960033F805 /* ModellingState.swift */; };
-		3CC689D321EC67270033F805 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC689D221EC67270033F805 /* Singleton.swift */; };
-		3CC689D521EC69880033F805 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC689D421EC69880033F805 /* Prototype.swift */; };
 		3CC7A3ED2148E56C0057BFEA /* FactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */; };
 		3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC99D3121BA76A500F7623B /* ModelControllers .swift */; };
 		3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC0A35224B485900F635BB /* Constructing URLs in Swift.swift */; };
@@ -601,8 +598,6 @@
 		3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactoryMethods.swift; sourceTree = "<group>"; };
 		3C04AE80221689BA0086CE4B /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 		3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
-		3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
-		3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDataController.swift; sourceTree = "<group>"; };
 		3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
 		3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubclassFreeViewControllers.swift; sourceTree = "<group>"; };
@@ -847,6 +842,8 @@
 		3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InlineTypesAndFunctions .swift"; sourceTree = "<group>"; };
 		3C69E4AA215FA4090022CA4D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
+		3C6BA91D225C6130000A2063 /* Replacing legacy code using Swift protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Replacing legacy code using Swift protocols.swift"; sourceTree = "<group>"; };
+		3C6BA920225C777F000A2063 /* Фабричный метод.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Фабричный метод.swift"; sourceTree = "<group>"; };
 		3C6D8F5A21099BAC000190F3 /* LineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineControl.swift; sourceTree = "<group>"; };
 		3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentagesControl.swift; sourceTree = "<group>"; };
 		3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentagesControl.xib; sourceTree = "<group>"; };
@@ -911,7 +908,6 @@
 		3C8677A92230DEB200D73419 /* Стили для UI элементов.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стили для UI элементов.swift"; sourceTree = "<group>"; };
 		3C8701E92186EEB40094186B /* KeyPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPaths.swift; sourceTree = "<group>"; };
 		3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
-		3C8DBE7221EF354100BEF5F3 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 		3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPresenter.swift; sourceTree = "<group>"; };
 		3C8E235821613FDD0010F7E6 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C8E235A21613FF90010F7E6 /* ImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
@@ -1021,8 +1017,6 @@
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
 		3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidingUnifiedErrorAPI.swift; sourceTree = "<group>"; };
 		3CC689D021EC5D960033F805 /* ModellingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModellingState.swift; sourceTree = "<group>"; };
-		3CC689D221EC67270033F805 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
-		3CC689D421EC69880033F805 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPattern.swift; sourceTree = "<group>"; };
 		3CC99D3121BA76A500F7623B /* ModelControllers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelControllers .swift"; sourceTree = "<group>"; };
 		3CCC0A35224B485900F635BB /* Constructing URLs in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constructing URLs in Swift.swift"; sourceTree = "<group>"; };
@@ -1247,18 +1241,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3C078A6F21E8D5DD005F08B4 /* Пораждающие паттерны */ = {
-			isa = PBXGroup;
-			children = (
-				3C078A7021E8D5FA005F08B4 /* FactoryMethod.swift */,
-				3C078A7221E8E2B0005F08B4 /* AbstractFactory.swift */,
-				3CC689D221EC67270033F805 /* Singleton.swift */,
-				3CC689D421EC69880033F805 /* Prototype.swift */,
-				3C8DBE7221EF354100BEF5F3 /* Builder.swift */,
-			);
-			path = "Пораждающие паттерны";
-			sourceTree = "<group>";
-		};
 		3C0B1761210EDD85003D9314 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -1472,7 +1454,6 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3C3076CC225B1BF10006D5FC /* UISplitViewController */,
 				3C6F2D3F224F604B000A194B /* Different collection layout */,
 				3C1854712238D41600A9B4D8 /* Animating changes in UITableView and UICollectionView */,
 				3C4099812237CD1400E5FB05 /* RootContentController */,
@@ -1526,13 +1507,6 @@
 				3CD7AF7C215E71710006A4DD /* UIColllectionView+Ex.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		3C3076CC225B1BF10006D5FC /* UISplitViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UISplitViewController;
 			sourceTree = "<group>";
 		};
 		3C35CC0A218798A200DDE92E /* Cells */ = {
@@ -1942,10 +1916,10 @@
 		3C4B691521E8BA24002175CB /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				3C6BA91F225C7770000A2063 /* Порождающие паттерны */,
 				3CED72FE2224FE710058A1B5 /* SOLID */,
 				3C6209C3220BF9CF00E2A67A /* Структурные паттерны */,
 				3C9F667321EF0CA900800E41 /* Паттерны поведения */,
-				3C078A6F21E8D5DD005F08B4 /* Пораждающие паттерны */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -2107,6 +2081,14 @@
 				3C2C9C1B221BD238004A2605 /* Flyweight.swift */,
 			);
 			path = "Структурные паттерны";
+			sourceTree = "<group>";
+		};
+		3C6BA91F225C7770000A2063 /* Порождающие паттерны */ = {
+			isa = PBXGroup;
+			children = (
+				3C6BA920225C777F000A2063 /* Фабричный метод.swift */,
+			);
+			path = "Порождающие паттерны";
 			sourceTree = "<group>";
 		};
 		3C6D8F622109C1FC000190F3 /* StatisticControl */ = {
@@ -2578,6 +2560,7 @@
 			isa = PBXGroup;
 			children = (
 				3CCC0A35224B485900F635BB /* Constructing URLs in Swift.swift */,
+				3C6BA91D225C6130000A2063 /* Replacing legacy code using Swift protocols.swift */,
 			);
 			path = "Maintenance, structure & code quality";
 			sourceTree = "<group>";
@@ -3549,12 +3532,12 @@
 				3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */,
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
 				3C204BC222016FBF00CB49B5 /* Memento.swift in Sources */,
+				3C6BA91E225C6130000A2063 /* Replacing legacy code using Swift protocols.swift in Sources */,
 				3C2197722227B28F0042D385 /* Usage.swift in Sources */,
 				3CBDF78622533A620096528A /* HowToUse.swift in Sources */,
 				3CAB744E22041E3A00C8FE01 /* Visitor.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C6F2D42224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift in Sources */,
-				3C078A7321E8E2B0005F08B4 /* AbstractFactory.swift in Sources */,
 				3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */,
 				3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */,
 				3C51A748223B6F2400D14490 /* RequestConfigurator.swift in Sources */,
@@ -3582,12 +3565,10 @@
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
 				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
 				3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */,
-				3C078A7121E8D5FA005F08B4 /* FactoryMethod.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */,
 				3C986985222FAE280065660B /* SummaryViewController.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
-				3CC689D521EC69880033F805 /* Prototype.swift in Sources */,
 				3CA0BE0621F83BA500DFDBEA /* Iterator.swift in Sources */,
 				3CD6DC2C2227B49F0062D2EC /* AlamofireViewController.swift in Sources */,
 				3CADC677221536C800E28084 /* Operation.swift in Sources */,
@@ -3630,7 +3611,6 @@
 				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */,
-				3CC689D321EC67270033F805 /* Singleton.swift in Sources */,
 				3C4099912237D68400E5FB05 /* RootContentTableViewCell.swift in Sources */,
 				3C36EA072237786C00993B6F /* Как использовать HTTP-кеш.swift in Sources */,
 				3CADC72921FAF02400738B14 /* State.swift in Sources */,
@@ -3655,6 +3635,7 @@
 				3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */,
 				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
+				3C6BA921225C777F000A2063 /* Фабричный метод.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
 				3CBDF784225336810096528A /* APIClient.swift in Sources */,
@@ -3667,7 +3648,6 @@
 				3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */,
 				3CD6DC2F2227BF8D0062D2EC /* RealAlamofireDataController.swift in Sources */,
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
-				3C8DBE7321EF354100BEF5F3 /* Builder.swift in Sources */,
 				3C5B044E223644210075ADCD /* Инверсия зависимостей через протоколы.swift in Sources */,
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,

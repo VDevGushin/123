@@ -8,6 +8,12 @@
 
 import UIKit
 import Lottie
+import os
+
+private let subsystem = "com.vlad.Test"
+struct Log {
+    static let table = OSLog(subsystem: subsystem, category: "table")
+}
 
 final class MainViewController: CoordinatorViewController {
     @IBOutlet private weak var menuTable: UITableView!
@@ -49,6 +55,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let source = dataSource[indexPath.row]
+        os_log("Can't build a valid URL. Returning error.",
+               log: Log.table, type: .error)
         self.navigator.navigate(to: source)
     }
 }
