@@ -21,12 +21,12 @@ final class MainViewController: CoordinatorViewController {
         [AppCoordinator.Destination.lottieView,
             AppCoordinator.Destination.promiseKit,
             AppCoordinator.Destination.swinject,
-            AppCoordinator.Destination.alamofire,
             AppCoordinator.Destination.childVC,
             AppCoordinator.Destination.dynamicCollection,
             AppCoordinator.Destination.rootContent,
             AppCoordinator.Destination.diff,
-            AppCoordinator.Destination.diffCollectionLayout]
+            AppCoordinator.Destination.diffCollectionLayout,
+            AppCoordinator.Destination.expandingCellsController]
 
     override func viewDidLoad() {
         super.viewDidLoad()

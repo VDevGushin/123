@@ -12,7 +12,7 @@ final class AppCoordinator {
     fileprivate var navigationController: UINavigationController
     var currentDestination: Destination?
 
-    enum Destination: Int, Equatable {
+    enum Destination: Int, Equatable, CaseIterable {
         case mainView
         case lottieView
         case promiseKit
@@ -23,6 +23,7 @@ final class AppCoordinator {
         case rootContent
         case diff
         case diffCollectionLayout
+        case expandingCellsController
 
         var title: String {
             switch self {
@@ -46,6 +47,8 @@ final class AppCoordinator {
                 return "Animation with diff"
             case .diffCollectionLayout:
                 return "Diff layout"
+            case .expandingCellsController:
+                return "Expanding Cells"
             }
         }
 
@@ -81,6 +84,8 @@ final class AppCoordinator {
         case .rootContent: return DependencyProvider.shared.container.resolve(RootContentViewController.self, arguments: self, destination.title)!
         case .diff: return DependencyProvider.shared.container.resolve(DiffExampleViewController.self, arguments: self, destination.title)!
         case .diffCollectionLayout: return DependencyProvider.shared.container.resolve(DifferentCollectionLayoutCollectionViewController.self, arguments: self, destination.title)!
+        case .expandingCellsController:
+            return DependencyProvider.shared.container.resolve(ExpandingCellsController.self, arguments: self, destination.title)!
         }
     }
 

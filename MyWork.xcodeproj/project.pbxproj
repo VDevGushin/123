@@ -416,6 +416,7 @@
 		3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */; };
 		3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC689D021EC5D960033F805 /* ModellingState.swift */; };
 		3CC7A3ED2148E56C0057BFEA /* FactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */; };
+		3CC86607225F022700969E2F /* Inclusive enums with OptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */; };
 		3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC99D3121BA76A500F7623B /* ModelControllers .swift */; };
 		3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC0A35224B485900F635BB /* Constructing URLs in Swift.swift */; };
 		3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEA34921528AD00081A7DB /* RoundButton.swift */; };
@@ -490,6 +491,16 @@
 		3CE41F8D21526B69002A6600 /* ETBImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */; };
 		3CE4264720FE0FC00030559C /* DependencyInjectionWithFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */; };
 		3CE4264920FE15BD0030559C /* TypeErasureUsingClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */; };
+		3CE80B30225F0A8100CA9C02 /* Inspirations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CE80B2F225F0A8100CA9C02 /* Inspirations.plist */; };
+		3CE80B32225F0A9C00CA9C02 /* Inspiration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE80B31225F0A9C00CA9C02 /* Inspiration.swift */; };
+		3CE80B34225F0ACD00CA9C02 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE80B33225F0ACD00CA9C02 /* Session.swift */; };
+		3CE80B37225F0AFE00CA9C02 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE80B36225F0AFE00CA9C02 /* UIColor+Ex.swift */; };
+		3CE80B39225F0B1300CA9C02 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE80B38225F0B1300CA9C02 /* UIImage+Ex.swift */; };
+		3CE80B3F225F0CFA00CA9C02 /* InspirationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE80B3D225F0CFA00CA9C02 /* InspirationCell.swift */; };
+		3CE80B40225F0CFA00CA9C02 /* InspirationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE80B3E225F0CFA00CA9C02 /* InspirationCell.xib */; };
+		3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE80B41225F0E2700CA9C02 /* ExpandingCellsController.swift */; };
+		3CE80B44225F0E2700CA9C02 /* ExpandingCellsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE80B42225F0E2700CA9C02 /* ExpandingCellsController.xib */; };
+		3CE80B46225F132100CA9C02 /* UltravisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE80B45225F132100CA9C02 /* UltravisualLayout.swift */; };
 		3CE8CAF62136AB49003752DC /* LogicControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8CAF52136AB49003752DC /* LogicControllers.swift */; };
 		3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */; };
 		3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09F32236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift */; };
@@ -1018,6 +1029,7 @@
 		3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidingUnifiedErrorAPI.swift; sourceTree = "<group>"; };
 		3CC689D021EC5D960033F805 /* ModellingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModellingState.swift; sourceTree = "<group>"; };
 		3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPattern.swift; sourceTree = "<group>"; };
+		3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inclusive enums with OptionSet.swift"; sourceTree = "<group>"; };
 		3CC99D3121BA76A500F7623B /* ModelControllers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelControllers .swift"; sourceTree = "<group>"; };
 		3CCC0A35224B485900F635BB /* Constructing URLs in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constructing URLs in Swift.swift"; sourceTree = "<group>"; };
 		3CCEA34921528AD00081A7DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -1114,6 +1126,16 @@
 		3CE41F8C21526B69002A6600 /* ETBImageScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBImageScrollView.swift; sourceTree = "<group>"; };
 		3CE4264620FE0FC00030559C /* DependencyInjectionWithFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionWithFunctions.swift; sourceTree = "<group>"; };
 		3CE4264820FE15BD0030559C /* TypeErasureUsingClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeErasureUsingClosures.swift; sourceTree = "<group>"; };
+		3CE80B2F225F0A8100CA9C02 /* Inspirations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Inspirations.plist; sourceTree = "<group>"; };
+		3CE80B31225F0A9C00CA9C02 /* Inspiration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspiration.swift; sourceTree = "<group>"; };
+		3CE80B33225F0ACD00CA9C02 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		3CE80B36225F0AFE00CA9C02 /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
+		3CE80B38225F0B1300CA9C02 /* UIImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
+		3CE80B3D225F0CFA00CA9C02 /* InspirationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationCell.swift; sourceTree = "<group>"; };
+		3CE80B3E225F0CFA00CA9C02 /* InspirationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspirationCell.xib; sourceTree = "<group>"; };
+		3CE80B41225F0E2700CA9C02 /* ExpandingCellsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingCellsController.swift; sourceTree = "<group>"; };
+		3CE80B42225F0E2700CA9C02 /* ExpandingCellsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingCellsController.xib; sourceTree = "<group>"; };
+		3CE80B45225F132100CA9C02 /* UltravisualLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltravisualLayout.swift; sourceTree = "<group>"; };
 		3CE8CAF52136AB49003752DC /* LogicControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicControllers.swift; sourceTree = "<group>"; };
 		3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingTypes.swift; sourceTree = "<group>"; };
 		3CEA09F32236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewsDynamicHeightViewController.swift; sourceTree = "<group>"; };
@@ -1454,6 +1476,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3CC86608225F07A500969E2F /* Expanding Cells */,
 				3C6F2D3F224F604B000A194B /* Different collection layout */,
 				3C1854712238D41600A9B4D8 /* Animating changes in UITableView and UICollectionView */,
 				3C4099812237CD1400E5FB05 /* RootContentController */,
@@ -1865,6 +1888,7 @@
 				3CEC6FCF2241FE1800DE844E /* Pattern Matching with case let.swift */,
 				3CE2914D22420B2600831A13 /* A better syntax for configurable initializations.swift */,
 				3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */,
+				3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */,
 			);
 			path = HABR;
 			sourceTree = "<group>";
@@ -2556,6 +2580,19 @@
 			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
+		3CC86608225F07A500969E2F /* Expanding Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3CE80B41225F0E2700CA9C02 /* ExpandingCellsController.swift */,
+				3CE80B42225F0E2700CA9C02 /* ExpandingCellsController.xib */,
+				3CE80B3C225F0CE700CA9C02 /* Views */,
+				3CE80B35225F0AEE00CA9C02 /* Extentions */,
+				3CE80B2E225F093300CA9C02 /* Source */,
+				3CE80B29225F086700CA9C02 /* Models */,
+			);
+			path = "Expanding Cells";
+			sourceTree = "<group>";
+		};
 		3CCC0A34224B483300F635BB /* Maintenance, structure & code quality */ = {
 			isa = PBXGroup;
 			children = (
@@ -2849,6 +2886,42 @@
 				3CE41F862152645B002A6600 /* ETBImageViewerViewController.xib */,
 			);
 			path = ImageViewer;
+			sourceTree = "<group>";
+		};
+		3CE80B29225F086700CA9C02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CE80B31225F0A9C00CA9C02 /* Inspiration.swift */,
+				3CE80B33225F0ACD00CA9C02 /* Session.swift */,
+				3CE80B45225F132100CA9C02 /* UltravisualLayout.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CE80B2E225F093300CA9C02 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3CE80B2F225F0A8100CA9C02 /* Inspirations.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3CE80B35225F0AEE00CA9C02 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				3CE80B36225F0AFE00CA9C02 /* UIColor+Ex.swift */,
+				3CE80B38225F0B1300CA9C02 /* UIImage+Ex.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		3CE80B3C225F0CE700CA9C02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3CE80B3D225F0CFA00CA9C02 /* InspirationCell.swift */,
+				3CE80B3E225F0CFA00CA9C02 /* InspirationCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3CEA09F2223633FA00C03FF9 /* CollectionViewsDynamicHeight */ = {
@@ -3224,9 +3297,11 @@
 				3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */,
 				3C6F2D43224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.xib in Resources */,
 				3C1EA4A9221BE01300B33763 /* not-found.json in Resources */,
+				3CE80B40225F0CFA00CA9C02 /* InspirationCell.xib in Resources */,
 				3CEA09F62236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib in Resources */,
 				3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */,
 				3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */,
+				3CE80B44225F0E2700CA9C02 /* ExpandingCellsController.xib in Resources */,
 				3C3925E9221BDC1F003CD1EE /* pulsing-loading-circles.json in Resources */,
 				3CD6DC2D2227B49F0062D2EC /* AlamofireViewController.xib in Resources */,
 				3CEA09FF2236389300C03FF9 /* CollectionViewCell.xib in Resources */,
@@ -3241,6 +3316,7 @@
 				3C986982222FAD200065660B /* CalendarDemoViewController.xib in Resources */,
 				3C4D62C4223A5CAE00233C43 /* DiffExampleViewController.xib in Resources */,
 				3CF5A899222D07B4000833A1 /* test1.json in Resources */,
+				3CE80B30225F0A8100CA9C02 /* Inspirations.plist in Resources */,
 				3C6F2D4F224F656E000A194B /* FruitCollectionViewCell.xib in Resources */,
 				3C986986222FAE280065660B /* SummaryViewController.xib in Resources */,
 				3C98698E222FAFD00065660B /* DayViewController.xib in Resources */,
@@ -3523,6 +3599,7 @@
 				3CBDF77E225334D60096528A /* APIRequest.swift in Sources */,
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
+				3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */,
 				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				3C80FF3B2248A6B8007B71F4 /* Different flavors of type erasure.swift in Sources */,
@@ -3548,6 +3625,7 @@
 				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
+				3CC86607225F022700969E2F /* Inclusive enums with OptionSet.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
@@ -3588,6 +3666,7 @@
 				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
 				3CD6DC352227CC210062D2EC /* RealAlamofireDataController+Auth.swift in Sources */,
+				3CE80B3F225F0CFA00CA9C02 /* InspirationCell.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3C6F2D52224F66DF000A194B /* DefaultCollectionViewDelegate.swift in Sources */,
 				3C1854702238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift in Sources */,
@@ -3619,6 +3698,7 @@
 				3C0A797A21F1991F00082B2B /* Command.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
+				3CE80B46225F132100CA9C02 /* UltravisualLayout.swift in Sources */,
 				3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */,
 				3CBDF780225335760096528A /* APIResponse.swift in Sources */,
 				3C51A752223B7F0300D14490 /* RequestDataController.swift in Sources */,
@@ -3639,10 +3719,13 @@
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
 				3CBDF784225336810096528A /* APIClient.swift in Sources */,
+				3CE80B37225F0AFE00CA9C02 /* UIColor+Ex.swift in Sources */,
 				3C8677AA2230DEB200D73419 /* Стили для UI элементов.swift in Sources */,
+				3CE80B39225F0B1300CA9C02 /* UIImage+Ex.swift in Sources */,
 				3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */,
 				3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */,
 				3CC308622223D98400E10683 /* Misc.swift in Sources */,
+				3CE80B32225F0A9C00CA9C02 /* Inspiration.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */,
@@ -3650,6 +3733,7 @@
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
 				3C5B044E223644210075ADCD /* Инверсия зависимостей через протоколы.swift in Sources */,
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
+				3CE80B34225F0ACD00CA9C02 /* Session.swift in Sources */,
 				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,
 				3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */,
 				3CD6DC332227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift in Sources */,
