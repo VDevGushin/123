@@ -24,7 +24,7 @@ final class AppCoordinator {
         case diff
         case diffCollectionLayout
         case expandingCellsController
-
+        case stickyHeader
         var title: String {
             switch self {
             case .dynamicCollection:
@@ -49,6 +49,8 @@ final class AppCoordinator {
                 return "Diff layout"
             case .expandingCellsController:
                 return "Expanding Cells"
+            case .stickyHeader:
+                return "Sticky header"
             }
         }
 
@@ -86,6 +88,8 @@ final class AppCoordinator {
         case .diffCollectionLayout: return DependencyProvider.shared.container.resolve(DifferentCollectionLayoutCollectionViewController.self, arguments: self, destination.title)!
         case .expandingCellsController:
             return DependencyProvider.shared.container.resolve(ExpandingCellsController.self, arguments: self, destination.title)!
+        case .stickyHeader:
+            return DependencyProvider.shared.container.resolve(StickyHeaderViewController.self, arguments: self, destination.title)!
         }
     }
 

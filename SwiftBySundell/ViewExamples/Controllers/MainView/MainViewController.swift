@@ -26,7 +26,8 @@ final class MainViewController: CoordinatorViewController {
             AppCoordinator.Destination.rootContent,
             AppCoordinator.Destination.diff,
             AppCoordinator.Destination.diffCollectionLayout,
-            AppCoordinator.Destination.expandingCellsController]
+            AppCoordinator.Destination.expandingCellsController,
+            AppCoordinator.Destination.stickyHeader]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let source = dataSource[indexPath.row]
         os_log("Can't build a valid URL. Returning error.",
-               log: Log.table, type: .error)
+            log: Log.table, type: .error)
         self.navigator.navigate(to: source)
     }
 }

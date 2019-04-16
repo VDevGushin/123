@@ -91,10 +91,14 @@ class RepositoryAssembly: Assembly {
         container.register(DifferentCollectionLayoutCollectionViewController.self) { _, navigator, title in
             DifferentCollectionLayoutCollectionViewController(navigator: navigator, title: title, nibName: String(describing: DifferentCollectionLayoutCollectionViewController.self), bundle: nil)
         }.inObjectScope(.container)
-        
+
         container.register(ExpandingCellsController.self) { _, navigator, title in
             ExpandingCellsController(navigator: navigator, title: title, nibName: String(describing: ExpandingCellsController.self), bundle: nil)
-            }.inObjectScope(.container)
+        }.inObjectScope(.container)
+
+        container.register(StickyHeaderViewController.self) { _, navigator, title in
+            StickyHeaderViewController(navigator: navigator, title: title, nibName: String(describing: StickyHeaderViewController.self), bundle: nil)
+        }.inObjectScope(.container)
     }
 }
 
