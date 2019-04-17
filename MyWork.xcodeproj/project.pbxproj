@@ -552,6 +552,8 @@
 		3CFD25512113453F00128554 /* ETBAddTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */; };
 		3CFD25522113453F00128554 /* ETBAddTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */; };
 		3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFCEC7221ABA1A00712FFD /* Bridge.swift */; };
+		4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */; };
+		4525FE5C2266F14900E2EC83 /* Прототип.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525FE5B2266F14900E2EC83 /* Прототип.swift */; };
 		4545FC0622659998004F1C54 /* Абстрактная фабрика.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0522659998004F1C54 /* Абстрактная фабрика.swift */; };
 		4545FC0822659E4A004F1C54 /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0722659E4A004F1C54 /* Стратегия.swift */; };
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
@@ -1191,6 +1193,8 @@
 		3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBAddTimeViewController.xib; sourceTree = "<group>"; };
 		3CFFCEC7221ABA1A00712FFD /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Avoiding singletons in Swift.swift"; sourceTree = "<group>"; };
+		4525FE5B2266F14900E2EC83 /* Прототип.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Прототип.swift"; sourceTree = "<group>"; };
 		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545FC0522659998004F1C54 /* Абстрактная фабрика.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Абстрактная фабрика.swift"; sourceTree = "<group>"; };
 		4545FC0722659E4A004F1C54 /* Стратегия.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стратегия.swift"; sourceTree = "<group>"; };
@@ -1337,14 +1341,6 @@
 				3C38E17521077353005CBDE9 /* RoundPercentagesControl.xib */,
 			);
 			path = RoundPercentagesControl;
-			sourceTree = "<group>";
-		};
-		3C14387321BE3A4100BA241D /* ErrorHandler */ = {
-			isa = PBXGroup;
-			children = (
-				3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */,
-			);
-			path = ErrorHandler;
 			sourceTree = "<group>";
 		};
 		3C1854712238D41600A9B4D8 /* Animating changes in UITableView and UICollectionView */ = {
@@ -1932,7 +1928,7 @@
 			path = Network2;
 			sourceTree = "<group>";
 		};
-		3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation */ = {
+		3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation! */ = {
 			isa = PBXGroup;
 			children = (
 				3CD4913C21F0527D0097618E /* LightweightPresenters.swift */,
@@ -1941,7 +1937,7 @@
 				3CC1334D21F830630009A04B /* Navigation.swift */,
 				3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */,
 			);
-			path = "ViewСontrollers&Navigation";
+			path = "ViewСontrollers&Navigation!";
 			sourceTree = "<group>";
 		};
 		3C4B691521E8BA24002175CB /* Patterns */ = {
@@ -1957,22 +1953,14 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				4525FE582266E8CB00E2EC83 /* SundellResources */,
 				3C23664C22571D4C003A33C0 /* MemoryLeaks */,
-				3CCC0A34224B483300F635BB /* Maintenance, structure & code quality */,
-				3C80FF362248A1F4007B71F4 /* Language features */,
 				3CA910862243546800F54A4C /* Error handling */,
 				3C8677A82230DEA300D73419 /* UI & Animations */,
 				3C452755222CF745004E5E19 /* HABR */,
-				3C452752222CEE64004E5E19 /* Storage */,
 				3C2C9C1D221BD7E2004A2605 /* ViewExamples */,
-				3CAB744A22040C7300C8FE01 /* APIDesign */,
-				3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming */,
 				3C4B691521E8BA24002175CB /* Patterns */,
-				3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation */,
-				3C815EF721C76E6300499AE5 /* Капашилка */,
 				3CA6A26D21C23C49009D0F1F /* ServiceLocator no pods simple */,
-				3C14387321BE3A4100BA241D /* ErrorHandler */,
-				3C517C6621B9052A009CAEE7 /* ManagingState&Objects */,
 				3C517C5621B9051A009CAEE7 /* AppDelegate.swift */,
 				3C517C5D21B9051B009CAEE7 /* Assets.xcassets */,
 				3C517C5F21B9051B009CAEE7 /* LaunchScreen.storyboard */,
@@ -1981,7 +1969,7 @@
 			path = SwiftBySundell;
 			sourceTree = "<group>";
 		};
-		3C517C6621B9052A009CAEE7 /* ManagingState&Objects */ = {
+		3C517C6621B9052A009CAEE7 /* ManagingState&Objects! */ = {
 			isa = PBXGroup;
 			children = (
 				3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */,
@@ -2002,7 +1990,7 @@
 				3CC689D021EC5D960033F805 /* ModellingState.swift */,
 				3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */,
 			);
-			path = "ManagingState&Objects";
+			path = "ManagingState&Objects!";
 			sourceTree = "<group>";
 		};
 		3C51A73D223B6BE000D14490 /* Network */ = {
@@ -2118,6 +2106,7 @@
 			children = (
 				3C6BA920225C777F000A2063 /* Фабричный метод.swift */,
 				4545FC0522659998004F1C54 /* Абстрактная фабрика.swift */,
+				4525FE5B2266F14900E2EC83 /* Прототип.swift */,
 			);
 			path = "Порождающие паттерны";
 			sourceTree = "<group>";
@@ -2284,7 +2273,7 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming */ = {
+		3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming! */ = {
 			isa = PBXGroup;
 			children = (
 				3C8546BA21FEF0920004700D /* AvoidingRaceConditions.swift */,
@@ -2293,7 +2282,7 @@
 				3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */,
 				3CADC676221536C800E28084 /* Operation.swift */,
 			);
-			path = ConcurrencyAsynchronousProgramming;
+			path = "ConcurrencyAsynchronousProgramming!";
 			sourceTree = "<group>";
 		};
 		3C866AE221633B130044EB1C /* Helpers */ = {
@@ -2542,6 +2531,7 @@
 		3CA910862243546800F54A4C /* Error handling */ = {
 			isa = PBXGroup;
 			children = (
+				3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */,
 				3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */,
 			);
 			path = "Error handling";
@@ -2564,6 +2554,7 @@
 				3C8677A62230D8F300D73419 /* CodeEncapsulation.swift */,
 				3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */,
 				3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */,
+				4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -3066,6 +3057,21 @@
 				3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */,
 			);
 			path = TimerControl;
+			sourceTree = "<group>";
+		};
+		4525FE582266E8CB00E2EC83 /* SundellResources */ = {
+			isa = PBXGroup;
+			children = (
+				3C815EF721C76E6300499AE5 /* Капашилка */,
+				3C517C6621B9052A009CAEE7 /* ManagingState&Objects! */,
+				3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation! */,
+				3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming! */,
+				3CAB744A22040C7300C8FE01 /* APIDesign */,
+				3C452752222CEE64004E5E19 /* Storage */,
+				3C80FF362248A1F4007B71F4 /* Language features */,
+				3CCC0A34224B483300F635BB /* Maintenance, structure & code quality */,
+			);
+			path = SundellResources;
 			sourceTree = "<group>";
 		};
 		4545FC092265A513004F1C54 /* Sticky header */ = {
@@ -3706,6 +3712,7 @@
 				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
 				3C8546BD21FEFAD40004700D /* ChainOfResponsibility.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
+				4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
 				3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
 				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
@@ -3717,6 +3724,7 @@
 				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
 				3C04AE81221689BA0086CE4B /* Proxy.swift in Sources */,
 				3C0A797A21F1991F00082B2B /* Command.swift in Sources */,
+				4525FE5C2266F14900E2EC83 /* Прототип.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CE80B46225F132100CA9C02 /* UltravisualLayout.swift in Sources */,
