@@ -559,6 +559,9 @@
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
+		45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */; };
+		45BD147C2269958A00CC161D /* Строитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147B2269958A00CC161D /* Строитель.swift */; };
+		45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */; };
 		64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */; };
 		7D17D1A5DF282C3F768E4102 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3925EA221BDD06003CD1EE /* Pods_MyWork.framework */; };
 		8C3416F734325F5985830330 /* Pods_SwiftBySundell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */; };
@@ -1201,6 +1204,9 @@
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using @autoclosure when designing.swift"; sourceTree = "<group>"; };
+		45BD147B2269958A00CC161D /* Строитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Строитель.swift"; sourceTree = "<group>"; };
+		45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asynchronous completion handlers with Result type.swift"; sourceTree = "<group>"; };
 		52E9ACB5FCDB45B1B02FAD02 /* Pods-SwiftBySundell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.debug.xcconfig"; sourceTree = "<group>"; };
 		D63A3AC3C3088AF515DBB31C /* Pods-MyWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.debug.xcconfig"; sourceTree = "<group>"; };
 		E74493E2C698AD9E6A939D06 /* Pods-SwiftBySundell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.release.xcconfig"; sourceTree = "<group>"; };
@@ -1892,6 +1898,7 @@
 				3CE2914D22420B2600831A13 /* A better syntax for configurable initializations.swift */,
 				3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */,
 				3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */,
+				45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */,
 			);
 			path = HABR;
 			sourceTree = "<group>";
@@ -2107,6 +2114,7 @@
 				3C6BA920225C777F000A2063 /* Фабричный метод.swift */,
 				4545FC0522659998004F1C54 /* Абстрактная фабрика.swift */,
 				4525FE5B2266F14900E2EC83 /* Прототип.swift */,
+				45BD147B2269958A00CC161D /* Строитель.swift */,
 			);
 			path = "Порождающие паттерны";
 			sourceTree = "<group>";
@@ -2555,6 +2563,7 @@
 				3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */,
 				3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */,
 				4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */,
+				45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -3621,6 +3630,7 @@
 				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3CBDF77E225334D60096528A /* APIRequest.swift in Sources */,
+				45BD147C2269958A00CC161D /* Строитель.swift in Sources */,
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
 				3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */,
@@ -3759,6 +3769,7 @@
 				3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */,
 				3CD6DC2F2227BF8D0062D2EC /* RealAlamofireDataController.swift in Sources */,
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
+				45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */,
 				4545FC0822659E4A004F1C54 /* Стратегия.swift in Sources */,
 				3C5B044E223644210075ADCD /* Инверсия зависимостей через протоколы.swift in Sources */,
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
@@ -3766,6 +3777,7 @@
 				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,
 				3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */,
 				3CD6DC332227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift in Sources */,
+				45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
