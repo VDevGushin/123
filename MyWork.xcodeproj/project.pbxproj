@@ -548,6 +548,9 @@
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
 		457841A0226D928D0006141F /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578419F226D928D0006141F /* Стратегия.swift */; };
+		45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA7F226EE304004A830A /* CardsDataModel.swift */; };
+		45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA82226EE343004A830A /* StackContainterView.swift */; };
+		45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA84226EE36E004A830A /* SwipeCardView.swift */; };
 		45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */; };
 		45BD147C2269958A00CC161D /* Строитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147B2269958A00CC161D /* Строитель.swift */; };
 		45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */; };
@@ -1183,6 +1186,9 @@
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		4578419F226D928D0006141F /* Стратегия.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стратегия.swift"; sourceTree = "<group>"; };
+		45BCCA7F226EE304004A830A /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
+		45BCCA82226EE343004A830A /* StackContainterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainterView.swift; sourceTree = "<group>"; };
+		45BCCA84226EE36E004A830A /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
 		45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using @autoclosure when designing.swift"; sourceTree = "<group>"; };
 		45BD147B2269958A00CC161D /* Строитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Строитель.swift"; sourceTree = "<group>"; };
 		45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asynchronous completion handlers with Result type.swift"; sourceTree = "<group>"; };
@@ -1464,6 +1470,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45BCCA7D226EE2DC004A830A /* TinderSwipe */,
 				4545FC092265A513004F1C54 /* Sticky header */,
 				3CC86608225F07A500969E2F /* Expanding Cells */,
 				3C6F2D3F224F604B000A194B /* Different collection layout */,
@@ -3071,6 +3078,32 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		45BCCA7D226EE2DC004A830A /* TinderSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				45BCCA81226EE32F004A830A /* Views */,
+				45BCCA7E226EE2F9004A830A /* Models */,
+			);
+			path = TinderSwipe;
+			sourceTree = "<group>";
+		};
+		45BCCA7E226EE2F9004A830A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45BCCA7F226EE304004A830A /* CardsDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45BCCA81226EE32F004A830A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45BCCA82226EE343004A830A /* StackContainterView.swift */,
+				45BCCA84226EE36E004A830A /* SwipeCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CE930C0AC3A3715B8BA78B66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3640,6 +3673,7 @@
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
 				3C7EB0E6223F87EB000BF3A5 /* Освоение MVVM на iOS.swift in Sources */,
 				3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */,
+				45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
 				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
@@ -3712,8 +3746,10 @@
 				3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */,
 				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
+				45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */,
 				3C6BA921225C777F000A2063 /* Фабричный метод.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
+				45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
 				3CBDF784225336810096528A /* APIClient.swift in Sources */,
 				3CE80B37225F0AFE00CA9C02 /* UIColor+Ex.swift in Sources */,
