@@ -25,6 +25,8 @@ final class AppCoordinator {
         case diffCollectionLayout
         case expandingCellsController
         case stickyHeader
+        case tinder
+
         var title: String {
             switch self {
             case .dynamicCollection:
@@ -51,6 +53,8 @@ final class AppCoordinator {
                 return "Expanding Cells"
             case .stickyHeader:
                 return "Sticky header"
+            case .tinder:
+                return "tinder"
             }
         }
 
@@ -90,6 +94,8 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(ExpandingCellsController.self, arguments: self, destination.title)!
         case .stickyHeader:
             return DependencyProvider.shared.container.resolve(StickyHeaderViewController.self, arguments: self, destination.title)!
+        case .tinder:
+            return DependencyProvider.shared.container.resolve(TinderViewController.self, arguments: self, destination.title)!
         }
     }
 

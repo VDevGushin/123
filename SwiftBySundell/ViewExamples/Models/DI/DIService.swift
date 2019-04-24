@@ -99,6 +99,10 @@ class RepositoryAssembly: Assembly {
         container.register(StickyHeaderViewController.self) { _, navigator, title in
             StickyHeaderViewController(navigator: navigator, title: title, nibName: String(describing: StickyHeaderViewController.self), bundle: nil)
         }.inObjectScope(.container)
+
+        container.register(TinderViewController.self) { _, navigator, title in
+            TinderViewController(navigator: navigator, title: title, nibName: String(describing: TinderViewController.self), bundle: nil)
+        }.inObjectScope(.container)
     }
 }
 

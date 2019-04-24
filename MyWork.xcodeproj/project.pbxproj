@@ -555,6 +555,10 @@
 		45BD147C2269958A00CC161D /* Строитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147B2269958A00CC161D /* Строитель.swift */; };
 		45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */; };
+		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
+		45F5E7652270355A00E38983 /* Шаблонный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E7642270355900E38983 /* Шаблонный метод.swift */; };
+		45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76A227041F000E38983 /* TinderViewController.swift */; };
+		45F5E76D227041F000E38983 /* TinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F5E76B227041F000E38983 /* TinderViewController.xib */; };
 		64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */; };
 		7D17D1A5DF282C3F768E4102 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3925EA221BDD06003CD1EE /* Pods_MyWork.framework */; };
 		8C3416F734325F5985830330 /* Pods_SwiftBySundell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */; };
@@ -1193,6 +1197,10 @@
 		45BD147B2269958A00CC161D /* Строитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Строитель.swift"; sourceTree = "<group>"; };
 		45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asynchronous completion handlers with Result type.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift.swift"; sourceTree = "<group>"; };
+		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
+		45F5E7642270355900E38983 /* Шаблонный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Шаблонный метод.swift"; sourceTree = "<group>"; };
+		45F5E76A227041F000E38983 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		45F5E76B227041F000E38983 /* TinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinderViewController.xib; sourceTree = "<group>"; };
 		52E9ACB5FCDB45B1B02FAD02 /* Pods-SwiftBySundell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.debug.xcconfig"; sourceTree = "<group>"; };
 		D63A3AC3C3088AF515DBB31C /* Pods-MyWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.debug.xcconfig"; sourceTree = "<group>"; };
 		E74493E2C698AD9E6A939D06 /* Pods-SwiftBySundell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.release.xcconfig"; sourceTree = "<group>"; };
@@ -2472,6 +2480,7 @@
 		3C9F667321EF0CA900800E41 /* Паттерны поведения */ = {
 			isa = PBXGroup;
 			children = (
+				45F5E7642270355900E38983 /* Шаблонный метод.swift */,
 				4578419F226D928D0006141F /* Стратегия.swift */,
 			);
 			path = "Паттерны поведения";
@@ -2541,6 +2550,7 @@
 				3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */,
 				4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */,
 				45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */,
+				45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */,
 			);
 			path = APIDesign;
 			sourceTree = "<group>";
@@ -3083,6 +3093,8 @@
 			children = (
 				45BCCA81226EE32F004A830A /* Views */,
 				45BCCA7E226EE2F9004A830A /* Models */,
+				45F5E76A227041F000E38983 /* TinderViewController.swift */,
+				45F5E76B227041F000E38983 /* TinderViewController.xib */,
 			);
 			path = TinderSwipe;
 			sourceTree = "<group>";
@@ -3320,6 +3332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F5E76D227041F000E38983 /* TinderViewController.xib in Resources */,
 				3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */,
 				3C40998E2237D5B600E5FB05 /* DemoHeaderView.xib in Resources */,
 				3C98698A222FAE650065660B /* SleepViewController.xib in Resources */,
@@ -3662,6 +3675,7 @@
 				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
 				3CC86607225F022700969E2F /* Inclusive enums with OptionSet.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
+				45F5E7652270355A00E38983 /* Шаблонный метод.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
 				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
@@ -3699,6 +3713,7 @@
 				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
 				3CD6DC352227CC210062D2EC /* RealAlamofireDataController+Auth.swift in Sources */,
+				45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */,
 				3CE80B3F225F0CFA00CA9C02 /* InspirationCell.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3C6F2D52224F66DF000A194B /* DefaultCollectionViewDelegate.swift in Sources */,
@@ -3787,6 +3802,7 @@
 				3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */,
 				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
 				3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */,
+				45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */,
 				457841A0226D928D0006141F /* Стратегия.swift in Sources */,
 				3CBDF782225335A40096528A /* APIError.swift in Sources */,
 			);

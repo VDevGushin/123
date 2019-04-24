@@ -17,14 +17,14 @@ class SwipeCardView: UIView {
     private var swipeView: UIView!
     private var shadowView: UIView!
     private var imageView: UIImageView!
-    private var label: UILabel!
-    private var moreButton: UIButton!
+    var label = UILabel()
+    var moreButton = UIButton()
     weak var delegate: SwipeCardsDelegate?
 
     var dataSource: CardsDataModel? {
         didSet {
             self.swipeView?.backgroundColor = dataSource?.bgColor
-            self.label?.text = dataSource?.text
+            self.label.text = dataSource?.text
             if let image = dataSource?.image {
                 imageView?.image = UIImage(named: image)
             }
@@ -134,7 +134,7 @@ class SwipeCardView: UIView {
         let point = sender.translation(in: self)
         let centerOfParentContainer = CGPoint(x: self.frame.width / 2, y: self.frame.height / 2)
         card.center = CGPoint(x: centerOfParentContainer.x + point.x, y: centerOfParentContainer.y + point.y)
-        
+
         switch sender.state {
         case .ended:
             if (card.center.x) > 400 {
@@ -167,5 +167,4 @@ class SwipeCardView: UIView {
             break
         }
     }
-
 }
