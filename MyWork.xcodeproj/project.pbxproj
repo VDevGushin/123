@@ -547,6 +547,7 @@
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
+		456FA8D22272DCE60044FA9A /* Состояние.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FA8D12272DCE60044FA9A /* Состояние.swift */; };
 		4572F7F122717C32008772F6 /* Цепочка Обязанностей.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */; };
 		457841A0226D928D0006141F /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578419F226D928D0006141F /* Стратегия.swift */; };
 		45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA7F226EE304004A830A /* CardsDataModel.swift */; };
@@ -1190,6 +1191,7 @@
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		456FA8D12272DCE60044FA9A /* Состояние.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Состояние.swift"; sourceTree = "<group>"; };
 		4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Цепочка Обязанностей.swift"; sourceTree = "<group>"; };
 		4578419F226D928D0006141F /* Стратегия.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стратегия.swift"; sourceTree = "<group>"; };
 		45BCCA7F226EE304004A830A /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
@@ -2485,6 +2487,7 @@
 				45F5E7642270355900E38983 /* Шаблонный метод.swift */,
 				4578419F226D928D0006141F /* Стратегия.swift */,
 				4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */,
+				456FA8D12272DCE60044FA9A /* Состояние.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -3693,6 +3696,7 @@
 				45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
+				456FA8D22272DCE60044FA9A /* Состояние.swift in Sources */,
 				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
 				3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
