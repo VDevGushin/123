@@ -556,6 +556,7 @@
 		45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */; };
 		45BD147C2269958A00CC161D /* Строитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147B2269958A00CC161D /* Строитель.swift */; };
 		45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */; };
+		45D5F5882276BF1B00A438FF /* Итератор.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5F5872276BF1B00A438FF /* Итератор.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */; };
 		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
 		45F5E7652270355A00E38983 /* Шаблонный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E7642270355900E38983 /* Шаблонный метод.swift */; };
@@ -1200,6 +1201,7 @@
 		45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using @autoclosure when designing.swift"; sourceTree = "<group>"; };
 		45BD147B2269958A00CC161D /* Строитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Строитель.swift"; sourceTree = "<group>"; };
 		45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asynchronous completion handlers with Result type.swift"; sourceTree = "<group>"; };
+		45D5F5872276BF1B00A438FF /* Итератор.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Итератор.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift.swift"; sourceTree = "<group>"; };
 		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
 		45F5E7642270355900E38983 /* Шаблонный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Шаблонный метод.swift"; sourceTree = "<group>"; };
@@ -2488,6 +2490,7 @@
 				4578419F226D928D0006141F /* Стратегия.swift */,
 				4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */,
 				456FA8D12272DCE60044FA9A /* Состояние.swift */,
+				45D5F5872276BF1B00A438FF /* Итератор.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -3649,6 +3652,7 @@
 				3C6F2D57224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
 				3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */,
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
+				45D5F5882276BF1B00A438FF /* Итератор.swift in Sources */,
 				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3CBDF77E225334D60096528A /* APIRequest.swift in Sources */,
