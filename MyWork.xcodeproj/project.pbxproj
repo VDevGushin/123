@@ -548,8 +548,17 @@
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
 		456FA8D22272DCE60044FA9A /* Состояние.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FA8D12272DCE60044FA9A /* Состояние.swift */; };
+		456FBF9A22780932005AC721 /* Хранитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9922780932005AC721 /* Хранитель.swift */; };
+		456FBF9E2278155C005AC721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9D2278155C005AC721 /* Card.swift */; };
+		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
 		4572F7F122717C32008772F6 /* Цепочка Обязанностей.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */; };
 		457841A0226D928D0006141F /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578419F226D928D0006141F /* Стратегия.swift */; };
+		45B7140822782BE5008B63F2 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140622782BE5008B63F2 /* CardCell.swift */; };
+		45B7140922782BE5008B63F2 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140722782BE5008B63F2 /* CardCell.xib */; };
+		45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140B2278316B008B63F2 /* CardGameController.swift */; };
+		45B7140E2278316B008B63F2 /* CardGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140C2278316B008B63F2 /* CardGameController.xib */; };
+		45B71410227837A0008B63F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140F227837A0008B63F2 /* Constants.swift */; };
+		45B7141222783869008B63F2 /* GameApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7141122783869008B63F2 /* GameApiClient.swift */; };
 		45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA7F226EE304004A830A /* CardsDataModel.swift */; };
 		45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA82226EE343004A830A /* StackContainterView.swift */; };
 		45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA84226EE36E004A830A /* SwipeCardView.swift */; };
@@ -1193,8 +1202,17 @@
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		456FA8D12272DCE60044FA9A /* Состояние.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Состояние.swift"; sourceTree = "<group>"; };
+		456FBF9922780932005AC721 /* Хранитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Хранитель.swift"; sourceTree = "<group>"; };
+		456FBF9D2278155C005AC721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Цепочка Обязанностей.swift"; sourceTree = "<group>"; };
 		4578419F226D928D0006141F /* Стратегия.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стратегия.swift"; sourceTree = "<group>"; };
+		45B7140622782BE5008B63F2 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		45B7140722782BE5008B63F2 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		45B7140B2278316B008B63F2 /* CardGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameController.swift; sourceTree = "<group>"; };
+		45B7140C2278316B008B63F2 /* CardGameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardGameController.xib; sourceTree = "<group>"; };
+		45B7140F227837A0008B63F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		45B7141122783869008B63F2 /* GameApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameApiClient.swift; sourceTree = "<group>"; };
 		45BCCA7F226EE304004A830A /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
 		45BCCA82226EE343004A830A /* StackContainterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainterView.swift; sourceTree = "<group>"; };
 		45BCCA84226EE36E004A830A /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
@@ -1484,6 +1502,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				456FBF9B22781542005AC721 /* CardGame */,
 				45BCCA7D226EE2DC004A830A /* TinderSwipe */,
 				4545FC092265A513004F1C54 /* Sticky header */,
 				3CC86608225F07A500969E2F /* Expanding Cells */,
@@ -2491,6 +2510,7 @@
 				4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */,
 				456FA8D12272DCE60044FA9A /* Состояние.swift */,
 				45D5F5872276BF1B00A438FF /* Итератор.swift */,
+				456FBF9922780932005AC721 /* Хранитель.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -3097,6 +3117,37 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		456FBF9B22781542005AC721 /* CardGame */ = {
+			isa = PBXGroup;
+			children = (
+				45B7140A22783124008B63F2 /* Cell */,
+				456FBF9C2278154C005AC721 /* Models */,
+				45B7140B2278316B008B63F2 /* CardGameController.swift */,
+				45B7140C2278316B008B63F2 /* CardGameController.xib */,
+			);
+			path = CardGame;
+			sourceTree = "<group>";
+		};
+		456FBF9C2278154C005AC721 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				456FBF9D2278155C005AC721 /* Card.swift */,
+				456FBF9F22782711005AC721 /* MemoryGame.swift */,
+				45B7140F227837A0008B63F2 /* Constants.swift */,
+				45B7141122783869008B63F2 /* GameApiClient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45B7140A22783124008B63F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				45B7140622782BE5008B63F2 /* CardCell.swift */,
+				45B7140722782BE5008B63F2 /* CardCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		45BCCA7D226EE2DC004A830A /* TinderSwipe */ = {
 			isa = PBXGroup;
 			children = (
@@ -3343,6 +3394,7 @@
 			files = (
 				45F5E76D227041F000E38983 /* TinderViewController.xib in Resources */,
 				3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */,
+				45B7140E2278316B008B63F2 /* CardGameController.xib in Resources */,
 				3C40998E2237D5B600E5FB05 /* DemoHeaderView.xib in Resources */,
 				3C98698A222FAE650065660B /* SleepViewController.xib in Resources */,
 				3C4099922237D68400E5FB05 /* RootContentTableViewCell.xib in Resources */,
@@ -3356,6 +3408,7 @@
 				3C1EA4A9221BE01300B33763 /* not-found.json in Resources */,
 				3CE80B40225F0CFA00CA9C02 /* InspirationCell.xib in Resources */,
 				3CEA09F62236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib in Resources */,
+				45B7140922782BE5008B63F2 /* CardCell.xib in Resources */,
 				3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */,
 				3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */,
 				3CE80B44225F0E2700CA9C02 /* ExpandingCellsController.xib in Resources */,
@@ -3673,6 +3726,7 @@
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C6F2D42224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift in Sources */,
 				3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */,
+				45B71410227837A0008B63F2 /* Constants.swift in Sources */,
 				3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */,
 				3C51A748223B6F2400D14490 /* RequestConfigurator.swift in Sources */,
 				3C6F2D54224F672F000A194B /* TabledContentCollectionViewDelegate.swift in Sources */,
@@ -3726,6 +3780,7 @@
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
 				3CD6DC352227CC210062D2EC /* RealAlamofireDataController+Auth.swift in Sources */,
 				45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */,
+				456FBFA022782711005AC721 /* MemoryGame.swift in Sources */,
 				3CE80B3F225F0CFA00CA9C02 /* InspirationCell.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3C6F2D52224F66DF000A194B /* DefaultCollectionViewDelegate.swift in Sources */,
@@ -3746,9 +3801,11 @@
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
+				456FBF9A22780932005AC721 /* Хранитель.swift in Sources */,
 				3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
 				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
+				45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */,
 				3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */,
 				3C4099912237D68400E5FB05 /* RootContentTableViewCell.swift in Sources */,
 				3C36EA072237786C00993B6F /* Как использовать HTTP-кеш.swift in Sources */,
@@ -3759,6 +3816,7 @@
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CE80B46225F132100CA9C02 /* UltravisualLayout.swift in Sources */,
 				3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */,
+				45B7141222783869008B63F2 /* GameApiClient.swift in Sources */,
 				3CBDF780225335760096528A /* APIResponse.swift in Sources */,
 				3C51A752223B7F0300D14490 /* RequestDataController.swift in Sources */,
 				3C51A746223B6EDA00D14490 /* EndPoint.swift in Sources */,
@@ -3801,9 +3859,11 @@
 				3CD6DC332227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift in Sources */,
 				45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
+				456FBF9E2278155C005AC721 /* Card.swift in Sources */,
 				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,
+				45B7140822782BE5008B63F2 /* CardCell.swift in Sources */,
 				3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */,
 				3CC1334E21F830630009A04B /* Navigation.swift in Sources */,
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,

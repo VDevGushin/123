@@ -14,6 +14,7 @@ final class AppCoordinator {
 
     enum Destination: Int, Equatable, CaseIterable {
         case mainView
+        case cardGame
         case lottieView
         case promiseKit
         case swinject
@@ -55,6 +56,8 @@ final class AppCoordinator {
                 return "Sticky header"
             case .tinder:
                 return "tinder"
+            case .cardGame:
+                return "Card game"
             }
         }
 
@@ -96,6 +99,9 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(StickyHeaderViewController.self, arguments: self, destination.title)!
         case .tinder:
             return DependencyProvider.shared.container.resolve(TinderViewController.self, arguments: self, destination.title)!
+        case .cardGame:
+            return DependencyProvider.shared.container.resolve(CardGameController.self, arguments: self, destination.title)!
+
         }
     }
 

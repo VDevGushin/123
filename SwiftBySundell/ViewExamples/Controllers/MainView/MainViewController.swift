@@ -20,7 +20,8 @@ final class MainViewController: CoordinatorViewController {
     private var dataSource =
         [
             AppCoordinator.Destination.tinder,
-            AppCoordinator.Destination.lottieView,
+            AppCoordinator.Destination.cardGame,
+            //AppCoordinator.Destination.lottieView,
             AppCoordinator.Destination.promiseKit,
             AppCoordinator.Destination.swinject,
             AppCoordinator.Destination.childVC,
