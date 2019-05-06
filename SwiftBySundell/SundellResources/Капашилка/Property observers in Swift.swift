@@ -43,7 +43,20 @@ fileprivate class ToolboxViewController {
 }
 
 // Через key path
-fileprivate class GraphView: UIView {
+fileprivate protocol SelfPropertyChecker {
+    func property<T: Equatable>(_ keyPath: KeyPath<Self, T>, didChangeFrom oldValue: T)
+    func notify()
+}
+
+extension SelfPropertyChecker {
+    func property<T: Equatable>(_ keyPath: KeyPath<Self, T>, didChangeFrom oldValue: T) {
+        guard self[keyPath: keyPath] != oldValue else { return }
+        self.notify()
+    }
+}
+
+fileprivate final class GraphView: UIView, SelfPropertyChecker {
+
     var points = [CGPoint]() {
         didSet { property(\.points, didChangeFrom: oldValue) }
     }
@@ -60,11 +73,7 @@ fileprivate class GraphView: UIView {
         // Draw the graph
     }
 
-    private func property<T: Equatable>(_ keyPath: KeyPath<GraphView, T>, didChangeFrom oldValue: T) {
-        guard self[keyPath: keyPath] != oldValue else {
-            return
-        }
-
-        setNeedsDisplay()
+    func notify() {
+        self.setNeedsDisplay()
     }
 }

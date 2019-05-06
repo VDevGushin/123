@@ -565,6 +565,7 @@
 		45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */; };
 		45BD147C2269958A00CC161D /* Строитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147B2269958A00CC161D /* Строитель.swift */; };
 		45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */; };
+		45C4B1252280111000661426 /* Посетитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B1242280111000661426 /* Посетитель.swift */; };
 		45D5F5882276BF1B00A438FF /* Итератор.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5F5872276BF1B00A438FF /* Итератор.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */; };
 		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
@@ -1219,6 +1220,7 @@
 		45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using @autoclosure when designing.swift"; sourceTree = "<group>"; };
 		45BD147B2269958A00CC161D /* Строитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Строитель.swift"; sourceTree = "<group>"; };
 		45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asynchronous completion handlers with Result type.swift"; sourceTree = "<group>"; };
+		45C4B1242280111000661426 /* Посетитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Посетитель.swift"; sourceTree = "<group>"; };
 		45D5F5872276BF1B00A438FF /* Итератор.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Итератор.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift.swift"; sourceTree = "<group>"; };
 		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
@@ -2511,6 +2513,7 @@
 				456FA8D12272DCE60044FA9A /* Состояние.swift */,
 				45D5F5872276BF1B00A438FF /* Итератор.swift */,
 				456FBF9922780932005AC721 /* Хранитель.swift */,
+				45C4B1242280111000661426 /* Посетитель.swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -3717,6 +3720,7 @@
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				3C0018BB2212973B00CE9D3E /* Facade.swift in Sources */,
 				3CE138E722279EC100E0B7CD /* Observers1.swift in Sources */,
+				45C4B1252280111000661426 /* Посетитель.swift in Sources */,
 				3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */,
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
 				3C6BA91E225C6130000A2063 /* Replacing legacy code using Swift protocols.swift in Sources */,
