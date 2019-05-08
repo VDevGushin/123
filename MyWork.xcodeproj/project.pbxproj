@@ -553,6 +553,8 @@
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
 		4572F7F122717C32008772F6 /* Цепочка Обязанностей.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */; };
 		457841A0226D928D0006141F /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578419F226D928D0006141F /* Стратегия.swift */; };
+		45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45933C7B2282B00D0069639A /* TimerViewController.swift */; };
+		45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45933C7C2282B00D0069639A /* TimerViewController.xib */; };
 		45B7140822782BE5008B63F2 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140622782BE5008B63F2 /* CardCell.swift */; };
 		45B7140922782BE5008B63F2 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140722782BE5008B63F2 /* CardCell.xib */; };
 		45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140B2278316B008B63F2 /* CardGameController.swift */; };
@@ -568,6 +570,11 @@
 		45C4B1252280111000661426 /* Посетитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B1242280111000661426 /* Посетитель.swift */; };
 		45D5F5882276BF1B00A438FF /* Итератор.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5F5872276BF1B00A438FF /* Итератор.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */; };
+		45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D02282B16D0047940C /* TimerTask.swift */; };
+		45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */; };
+		45E4D1D62282B1B50047940C /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1D42282B1B50047940C /* TaskTableViewCell.xib */; };
+		45E4D1DE2282C85F0047940C /* success-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1DC2282C85F0047940C /* success-animation.json */; };
+		45E4D1DF2282C85F0047940C /* 109662_945474-lq.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1DD2282C85F0047940C /* 109662_945474-lq.mp3 */; };
 		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
 		45F5E7652270355A00E38983 /* Шаблонный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E7642270355900E38983 /* Шаблонный метод.swift */; };
 		45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76A227041F000E38983 /* TinderViewController.swift */; };
@@ -1208,6 +1215,8 @@
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Цепочка Обязанностей.swift"; sourceTree = "<group>"; };
 		4578419F226D928D0006141F /* Стратегия.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стратегия.swift"; sourceTree = "<group>"; };
+		45933C7B2282B00D0069639A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		45933C7C2282B00D0069639A /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		45B7140622782BE5008B63F2 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		45B7140722782BE5008B63F2 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		45B7140B2278316B008B63F2 /* CardGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameController.swift; sourceTree = "<group>"; };
@@ -1223,6 +1232,11 @@
 		45C4B1242280111000661426 /* Посетитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Посетитель.swift"; sourceTree = "<group>"; };
 		45D5F5872276BF1B00A438FF /* Итератор.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Итератор.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift.swift"; sourceTree = "<group>"; };
+		45E4D1D02282B16D0047940C /* TimerTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTask.swift; sourceTree = "<group>"; };
+		45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		45E4D1D42282B1B50047940C /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		45E4D1DC2282C85F0047940C /* success-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "success-animation.json"; sourceTree = "<group>"; };
+		45E4D1DD2282C85F0047940C /* 109662_945474-lq.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "109662_945474-lq.mp3"; sourceTree = "<group>"; };
 		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
 		45F5E7642270355900E38983 /* Шаблонный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Шаблонный метод.swift"; sourceTree = "<group>"; };
 		45F5E76A227041F000E38983 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
@@ -1504,6 +1518,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45933C7A2282AFF80069639A /* Timer */,
 				456FBF9B22781542005AC721 /* CardGame */,
 				45BCCA7D226EE2DC004A830A /* TinderSwipe */,
 				4545FC092265A513004F1C54 /* Sticky header */,
@@ -3142,6 +3157,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		45933C7A2282AFF80069639A /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				45E4D1D72282C30A0047940C /* Resource */,
+				45E4D1D22282B19D0047940C /* Views */,
+				45E4D1CF2282B1600047940C /* Models */,
+				45933C7B2282B00D0069639A /* TimerViewController.swift */,
+				45933C7C2282B00D0069639A /* TimerViewController.xib */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		45B7140A22783124008B63F2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -3177,6 +3204,32 @@
 				45BCCA84226EE36E004A830A /* SwipeCardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		45E4D1CF2282B1600047940C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45E4D1D02282B16D0047940C /* TimerTask.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45E4D1D22282B19D0047940C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */,
+				45E4D1D42282B1B50047940C /* TaskTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45E4D1D72282C30A0047940C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				45E4D1DD2282C85F0047940C /* 109662_945474-lq.mp3 */,
+				45E4D1DC2282C85F0047940C /* success-animation.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		CE930C0AC3A3715B8BA78B66 /* Pods */ = {
@@ -3403,6 +3456,7 @@
 				3C4099922237D68400E5FB05 /* RootContentTableViewCell.xib in Resources */,
 				3CE138F22227A5BD00E0B7CD /* SwinjectViewController.xib in Resources */,
 				3C1E6AC3221C0C9600997F31 /* im-thirsty.json in Resources */,
+				45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */,
 				3C1E6AC4221C0C9600997F31 /* motorcycle.json in Resources */,
 				3C3253B7221D7C6600A7E3F0 /* taxi-app-loading.json in Resources */,
 				3C3A1B0C221D18E4005DDFA7 /* success.json in Resources */,
@@ -3416,6 +3470,7 @@
 				3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */,
 				3CE80B44225F0E2700CA9C02 /* ExpandingCellsController.xib in Resources */,
 				3C3925E9221BDC1F003CD1EE /* pulsing-loading-circles.json in Resources */,
+				45E4D1DE2282C85F0047940C /* success-animation.json in Resources */,
 				3CD6DC2D2227B49F0062D2EC /* AlamofireViewController.xib in Resources */,
 				3CEA09FF2236389300C03FF9 /* CollectionViewCell.xib in Resources */,
 				3C1E6AC9221C19C800997F31 /* PromiseKitViewController.xib in Resources */,
@@ -3433,7 +3488,9 @@
 				3CE80B30225F0A8100CA9C02 /* Inspirations.plist in Resources */,
 				3C6F2D4F224F656E000A194B /* FruitCollectionViewCell.xib in Resources */,
 				3C986986222FAE280065660B /* SummaryViewController.xib in Resources */,
+				45E4D1DF2282C85F0047940C /* 109662_945474-lq.mp3 in Resources */,
 				3C98698E222FAFD00065660B /* DayViewController.xib in Resources */,
+				45E4D1D62282B1B50047940C /* TaskTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3796,8 +3853,10 @@
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
+				45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */,
 				3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */,
 				3C3076CB225B15610006D5FC /* String literals in Swift.swift in Sources */,
+				45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */,
 				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
 				4545FC0622659998004F1C54 /* Абстрактная фабрика.swift in Sources */,
 				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
@@ -3807,6 +3866,7 @@
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
 				456FBF9A22780932005AC721 /* Хранитель.swift in Sources */,
 				3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
+				45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */,
 				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */,

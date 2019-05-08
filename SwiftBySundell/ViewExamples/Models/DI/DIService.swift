@@ -103,11 +103,14 @@ class RepositoryAssembly: Assembly {
         container.register(TinderViewController.self) { _, navigator, title in
             TinderViewController(navigator: navigator, title: title, nibName: String(describing: TinderViewController.self), bundle: nil)
         }.inObjectScope(.container)
-        
+
         container.register(CardGameController.self) { _, navigator, title in
             CardGameController(navigator: navigator, title: title, nibName: String(describing: CardGameController.self), bundle: nil)
-            }.inObjectScope(.container)
-        
+        }.inObjectScope(.container)
+
+        container.register(TimerViewController.self) { _, navigator, title in
+            TimerViewController(navigator: navigator, title: title, nibName: String(describing: TimerViewController.self), bundle: nil)
+        }.inObjectScope(.transient)
     }
 }
 

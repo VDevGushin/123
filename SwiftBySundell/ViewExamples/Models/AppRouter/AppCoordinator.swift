@@ -14,6 +14,7 @@ final class AppCoordinator {
 
     enum Destination: Int, Equatable, CaseIterable {
         case mainView
+        case timer
         case cardGame
         case lottieView
         case promiseKit
@@ -30,6 +31,8 @@ final class AppCoordinator {
 
         var title: String {
             switch self {
+            case .timer:
+                return "TODO with timer"
             case .dynamicCollection:
                 return "Dynamic collection"
             case .lottieView:
@@ -101,7 +104,8 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(TinderViewController.self, arguments: self, destination.title)!
         case .cardGame:
             return DependencyProvider.shared.container.resolve(CardGameController.self, arguments: self, destination.title)!
-
+        case .timer:
+            return DependencyProvider.shared.container.resolve(TimerViewController.self, arguments: self, destination.title)!
         }
     }
 
