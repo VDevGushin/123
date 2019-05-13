@@ -553,6 +553,7 @@
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
 		4572F7F122717C32008772F6 /* Цепочка Обязанностей.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */; };
 		457841A0226D928D0006141F /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578419F226D928D0006141F /* Стратегия.swift */; };
+		458CD1EE2289508E005CAFEB /* Посредник (Mediator).swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CD1ED2289508E005CAFEB /* Посредник (Mediator).swift */; };
 		45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45933C7B2282B00D0069639A /* TimerViewController.swift */; };
 		45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45933C7C2282B00D0069639A /* TimerViewController.xib */; };
 		45B7140822782BE5008B63F2 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140622782BE5008B63F2 /* CardCell.swift */; };
@@ -1215,6 +1216,7 @@
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Цепочка Обязанностей.swift"; sourceTree = "<group>"; };
 		4578419F226D928D0006141F /* Стратегия.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стратегия.swift"; sourceTree = "<group>"; };
+		458CD1ED2289508E005CAFEB /* Посредник (Mediator).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Посредник (Mediator).swift"; sourceTree = "<group>"; };
 		45933C7B2282B00D0069639A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		45933C7C2282B00D0069639A /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		45B7140622782BE5008B63F2 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
@@ -2529,6 +2531,7 @@
 				45D5F5872276BF1B00A438FF /* Итератор.swift */,
 				456FBF9922780932005AC721 /* Хранитель.swift */,
 				45C4B1242280111000661426 /* Посетитель.swift */,
+				458CD1ED2289508E005CAFEB /* Посредник (Mediator).swift */,
 			);
 			path = "Паттерны поведения";
 			sourceTree = "<group>";
@@ -3836,6 +3839,7 @@
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3CD6DC372227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift in Sources */,
 				3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */,
+				458CD1EE2289508E005CAFEB /* Посредник (Mediator).swift in Sources */,
 				3C6F2D4A224F648E000A194B /* FruitsProvider.swift in Sources */,
 				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
