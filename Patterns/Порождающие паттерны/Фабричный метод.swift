@@ -31,18 +31,23 @@ fileprivate class ConcreteCreatorB: Creator {
 //========================================================================================
 //========================================================================================
 //========================================================================================
+protocol House {
+    var name: String { get set }
+}
+struct PanelHouse: House {
+    var name: String
+}
+struct WoodHouse: House {
+    var name: String
+}
 
-fileprivate protocol House { }
-fileprivate class PanelHouse: House { }
-fileprivate class WoodHouse: House { }
-
-fileprivate protocol Developer {
+protocol Developer {
     var name: String { get set }
     init(name: String)
     func create() -> House
 }
 
-fileprivate class PanelDeveloper: Developer {
+class PanelDeveloper: Developer {
     var name: String
 
     required init(name: String) {
@@ -50,11 +55,11 @@ fileprivate class PanelDeveloper: Developer {
     }
 
     func create() -> House {
-        return PanelHouse()
+        return PanelHouse(name: self.name + " построил панельный дом")
     }
 }
 
-fileprivate class WoodDeveloper: Developer {
+class WoodDeveloper: Developer {
     var name: String
 
     required init(name: String) {
@@ -62,16 +67,6 @@ fileprivate class WoodDeveloper: Developer {
     }
 
     func create() -> House {
-        return WoodHouse()
+        return WoodHouse(name: self.name + " построил деревянный дом")
     }
-}
-
-fileprivate func test() {
-    var dev: Developer = PanelDeveloper(name: "ООО КирпичСтрой")
-    let house2 = dev.create()
-
-    dev = WoodDeveloper(name: "Частный застройщик")
-    let house = dev.create()
-    dump(house)
-    dump(house2)
 }

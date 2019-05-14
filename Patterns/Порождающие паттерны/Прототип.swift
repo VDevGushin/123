@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vladislav Gushin. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 /*Паттерн Прототип (Prototype) позволяет создавать объекты на основе уже ранее созданных объектов-прототипов. То есть по сути данный паттерн предлагает технику клонирования объектов.
  
@@ -55,12 +55,12 @@ fileprivate func main() {
 
 //Рассмотрим клонирование на примере фигур - прямоугольников и кругов:
 
-fileprivate protocol Figure {
+protocol Figure {
     func clone() -> Self
     func getInfo()
 }
 
-fileprivate struct Rectangle: Figure {
+struct Rectangle: Figure {
     private let width, height: Int
 
     func clone() -> Rectangle {
@@ -72,10 +72,15 @@ fileprivate struct Rectangle: Figure {
     }
 }
 
-fileprivate struct Circle: Figure {
+struct Circle: Figure {
     private let radius: Int
     private let point: CGPoint
-    
+
+    init(radius: Int, point: CGPoint) {
+        self.radius = radius
+        self.point = point
+    }
+
     func clone() -> Circle {
         return Circle(radius: self.radius, point: self.point)
     }

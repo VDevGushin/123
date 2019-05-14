@@ -62,16 +62,16 @@ fileprivate class Director {
 
 ///Хлеб и его инградиенты================================================
 //Мука
-fileprivate struct Flour {
+struct Flour {
     let sort: String
 }
-fileprivate struct Salt { }
+struct Salt { }
 // пищевые добавки
-fileprivate struct Additives {
+struct Additives {
     let name: String
 }
 
-fileprivate struct Bread {
+struct Bread {
     var flour: Flour?
     var salt: Salt?
     var additives: Additives?
@@ -93,7 +93,7 @@ fileprivate struct Bread {
 //================================================
 //Производство хлеба================================================
 //Пекарь
-fileprivate struct Baker {
+struct Baker {
     func bake(builder: BreadBuilder) -> Bread {
         builder.setFlour()
         builder.setSalt()
@@ -103,7 +103,7 @@ fileprivate struct Baker {
     }
 }
 
-fileprivate protocol BreadBuilder {
+protocol BreadBuilder {
     init(bread: Bread)
     func setFlour()
     func setSalt()
@@ -112,7 +112,7 @@ fileprivate protocol BreadBuilder {
 }
 
 // строитель для ржаного хлеба
-fileprivate class RyeBreadBuilder: BreadBuilder {
+class RyeBreadBuilder: BreadBuilder {
     private var bread: Bread
     required init(bread: Bread) {
         self.bread = bread
@@ -136,7 +136,7 @@ fileprivate class RyeBreadBuilder: BreadBuilder {
 }
 
 //// строитель для пшеничного хлеба
-fileprivate class WheatBreadBuilder: BreadBuilder {
+class WheatBreadBuilder: BreadBuilder {
     private var bread: Bread
     required init(bread: Bread) {
         self.bread = bread
@@ -156,18 +156,5 @@ fileprivate class WheatBreadBuilder: BreadBuilder {
 
     func make() -> Bread {
         return self.bread
-    }
-}
-//================================================
-//Использование================================================
-fileprivate struct Program {
-    func main() {
-        let baker = Baker()
-        var breadBuilder: BreadBuilder = RyeBreadBuilder(bread: Bread())
-        let ryeBread = baker.bake(builder: breadBuilder)
-        print(ryeBread.toString())
-        breadBuilder = WheatBreadBuilder(bread: Bread())
-        let whiteBread = baker.bake(builder: breadBuilder)
-        print(whiteBread.toString())
     }
 }

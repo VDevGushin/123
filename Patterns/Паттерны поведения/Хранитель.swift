@@ -59,7 +59,7 @@ fileprivate struct HeroMemento: Hashable, Equatable {
 }
 
 // Originator
-fileprivate class Hero {
+fileprivate class HeroForMemento {
     private var patrons: Int = 10
     private var lives: Int = 5
 
@@ -93,7 +93,7 @@ fileprivate class GameHistory {
 }
 
 fileprivate func main() {
-    let hero = Hero()
+    let hero = HeroForMemento()
     hero.shoot()// делаем выстрел, осталось 9 патронов
 
     let game = GameHistory()

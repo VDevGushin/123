@@ -80,11 +80,11 @@ fileprivate class ConcreteColleague2: Colleague {
  То есть менеджер проектов выполняет роль посредника.
  В этом случае процесс взаимодействия между объектами мы могли бы описать так:*/
 
-fileprivate protocol MediatorTemplate {
+protocol MediatorTemplate {
     func send(message: String, colleague: ColleagueTemplate)
 }
 
-fileprivate class Manager: MediatorTemplate {
+class Manager: MediatorTemplate {
     private var team: [ColleagueTemplate] = []
 
     func add(team: [ColleagueTemplate]) {
@@ -107,14 +107,14 @@ fileprivate class Manager: MediatorTemplate {
     }
 }
 
-fileprivate protocol ColleagueTemplate {
+protocol ColleagueTemplate {
     init(mediator: MediatorTemplate)
     func send(message: String)
     func notify(message: String)
 }
 
 // класс заказчика
-fileprivate class CustomerColleague: ColleagueTemplate {
+class CustomerColleague: ColleagueTemplate {
     private let mediator: MediatorTemplate
 
     required init(mediator: MediatorTemplate) {
@@ -131,7 +131,7 @@ fileprivate class CustomerColleague: ColleagueTemplate {
 }
 
 // класс программиста
-fileprivate class ProgrammerColleague: ColleagueTemplate {
+class ProgrammerColleague: ColleagueTemplate {
     private let mediator: MediatorTemplate
 
     required init(mediator: MediatorTemplate) {
@@ -148,7 +148,7 @@ fileprivate class ProgrammerColleague: ColleagueTemplate {
 }
 
 // класс тестера
-fileprivate class TesterColleague: ColleagueTemplate {
+class TesterColleague: ColleagueTemplate {
     private let mediator: MediatorTemplate
 
     required init(mediator: MediatorTemplate) {
@@ -162,16 +162,4 @@ fileprivate class TesterColleague: ColleagueTemplate {
     func notify(message: String) {
         print("Сообщение тестеру \(message)")
     }
-}
-
-fileprivate func main() {
-    let manager = Manager()
-    let customer = CustomerColleague(mediator: manager)
-    let programmer = ProgrammerColleague(mediator: manager)
-    let tester = TesterColleague(mediator: manager)
-    manager.add(team: [customer, programmer, tester])
-
-    customer.send(message: "Есть заказ, надо сделать программу")
-    programmer.send(message: "Программа готова, надо протестировать")
-    tester.send(message: "Программа протестированна и готова к продаже")
 }

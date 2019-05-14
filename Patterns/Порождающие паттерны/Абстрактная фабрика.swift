@@ -60,18 +60,8 @@ fileprivate class FabricTestClient {
  И кроме того, наша задача при проектировании игры абстрагировать создание супергероев от самого класса супергероя, чтобы создать более гибкую архитектуру. И для этого применим абстрактную фабрику:
 */
 
-fileprivate func main() {
-    let elf = Hero(factory: ElfFactory())
-    elf.hit()
-    elf.run()
-
-    let voin = Hero(factory: VoinFactory())
-    voin.hit()
-    voin.run()
-}
-
 //// клиент - сам супергерой
-fileprivate class Hero {
+class Hero {
     private let weapon: Weapon
     private let movement: Movement
 
@@ -90,46 +80,46 @@ fileprivate class Hero {
 }
 
 //Weapon
-fileprivate protocol Weapon {
+protocol Weapon {
     func hit()
 }
 
-fileprivate class Arbalet: Weapon {
+class Arbalet: Weapon {
     func hit() {
         print("Стреляем из арбалета")
     }
 }
 
-fileprivate class Sword: Weapon {
+class Sword: Weapon {
     func hit() {
         print("Рубим мечом")
     }
 }
 ////////////////////////////////////////////
 //Movement
-fileprivate protocol Movement {
+protocol Movement {
     func move()
 }
 
-fileprivate class FlyMovement: Movement {
+class FlyMovement: Movement {
     func move() {
         print("Летим")
     }
 }
 
-fileprivate class RunMovement: Movement {
+class RunMovement: Movement {
     func move() {
         print("Бежим")
     }
 }
 ////////////////////////////////////////////
 //HeroFactory - фабрика для создания героев - все компоненты фабрики должны использоваться вметсве и быть взаимосвязанными
-fileprivate protocol HeroFactory {
+protocol HeroFactory {
     func createMovement() -> Movement
     func createWeapon() -> Weapon
 }
 
-fileprivate class ElfFactory: HeroFactory {
+class ElfFactory: HeroFactory {
     func createMovement() -> Movement {
         return FlyMovement()
     }
@@ -139,7 +129,7 @@ fileprivate class ElfFactory: HeroFactory {
     }
 }
 
-fileprivate class VoinFactory: HeroFactory {
+class VoinFactory: HeroFactory {
     func createMovement() -> Movement {
         return RunMovement()
     }

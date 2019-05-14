@@ -10,10 +10,8 @@
 		0ED8786B7DB985A3964893C8 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */; };
 		287EE387051990F02A660DE9 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */; };
 		3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0018B8221290B800CE9D3E /* Trimming long argument lists.swift */; };
-		3C0018BB2212973B00CE9D3E /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0018BA2212973B00CE9D3E /* Facade.swift */; };
 		3C01716B21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */; };
 		3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */; };
-		3C04AE81221689BA0086CE4B /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AE80221689BA0086CE4B /* Proxy.swift */; };
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
 		3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */; };
 		3C09E493217D93C7007ABDD8 /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */; };
@@ -66,7 +64,6 @@
 		3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C276689217DE1D600374E7E /* CalendarViewController.xib */; };
 		3C276690217DEA1400374E7E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C27668F217DEA1400374E7E /* MonthView.swift */; };
 		3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */; };
-		3C2C9C1C221BD238004A2605 /* Flyweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C1B221BD238004A2605 /* Flyweight.swift */; };
 		3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C1F221BD856004A2605 /* AppCoordinator.swift */; };
 		3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C23221BD919004A2605 /* MainViewController.swift */; };
 		3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C9C24221BD919004A2605 /* MainViewController.xib */; };
@@ -106,7 +103,6 @@
 		3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464B2174643E0032BC36 /* DLSViewController.swift */; };
 		3C3B464F21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */; };
 		3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */; };
-		3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BDE6C2213E6C4004B9168 /* Composite.swift */; };
 		3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BED2D2223B3A100502361 /* PatternMatching.swift */; };
 		3C3D0E41216C8654006B7907 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E40216C8654006B7907 /* Strings.swift */; };
 		3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */; };
@@ -180,7 +176,6 @@
 		3C4763D8211AC567006D0C1B /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4763D7211AC567006D0C1B /* CustomOperators.swift */; };
 		3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */; };
 		3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A84FA221136DE0034627F /* BuildingDSLs.swift */; };
-		3C4A84FF2211477A0034627F /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A84FE2211477A0034627F /* Adapter.swift */; };
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
 		3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54E21006423003F484C /* PromiseKit.swift */; };
 		3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B691321E883B1002175CB /* IdentifyingObjects.swift */; };
@@ -230,13 +225,11 @@
 		3C5FDF032191FCC700F0C6DF /* FeedBackStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */; };
 		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
 		3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */; };
-		3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6209C4220BF9E900E2A67A /* Decorator.swift */; };
 		3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */; };
 		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
 		3C69E4AC215FA4870022CA4D /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD253B2112F95400128554 /* UIView+Ex.swift */; };
 		3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */; };
 		3C6BA91E225C6130000A2063 /* Replacing legacy code using Swift protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6BA91D225C6130000A2063 /* Replacing legacy code using Swift protocols.swift */; };
-		3C6BA921225C777F000A2063 /* Фабричный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6BA920225C777F000A2063 /* Фабричный метод.swift */; };
 		3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5A21099BAC000190F3 /* LineControl.swift */; };
 		3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */; };
 		3C6D8F5F21099D3C000190F3 /* LinePercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */; };
@@ -540,20 +533,31 @@
 		3CFD254E21132C9F00128554 /* ETBAddTimeViewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD254D21132C9F00128554 /* ETBAddTimeViewControl.xib */; };
 		3CFD25512113453F00128554 /* ETBAddTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */; };
 		3CFD25522113453F00128554 /* ETBAddTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */; };
-		3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFCEC7221ABA1A00712FFD /* Bridge.swift */; };
 		4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */; };
-		4525FE5C2266F14900E2EC83 /* Прототип.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525FE5B2266F14900E2EC83 /* Прототип.swift */; };
-		4545FC0622659998004F1C54 /* Абстрактная фабрика.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0522659998004F1C54 /* Абстрактная фабрика.swift */; };
+		452FD54D228A95E200DB34FB /* Pure functions in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD54C228A95E200DB34FB /* Pure functions in Swift.swift */; };
+		452FD555228A962A00DB34FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD554228A962A00DB34FB /* main.swift */; };
+		452FD56A228A971500DB34FB /* Посредник (Mediator).swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD562228A971500DB34FB /* Посредник (Mediator).swift */; };
+		452FD56B228A971500DB34FB /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD563228A971500DB34FB /* Стратегия.swift */; };
+		452FD56C228A971500DB34FB /* Цепочка Обязанностей.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD564228A971500DB34FB /* Цепочка Обязанностей.swift */; };
+		452FD56D228A971500DB34FB /* Состояние.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD565228A971500DB34FB /* Состояние.swift */; };
+		452FD56E228A971500DB34FB /* Посетитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD566228A971500DB34FB /* Посетитель.swift */; };
+		452FD56F228A971500DB34FB /* Хранитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD567228A971500DB34FB /* Хранитель.swift */; };
+		452FD570228A971500DB34FB /* Итератор.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD568228A971500DB34FB /* Итератор.swift */; };
+		452FD571228A971500DB34FB /* Шаблонный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD569228A971500DB34FB /* Шаблонный метод.swift */; };
+		452FD57B228A972200DB34FB /* Фабричный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD573228A972200DB34FB /* Фабричный метод.swift */; };
+		452FD57D228A972200DB34FB /* Строитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD575228A972200DB34FB /* Строитель.swift */; };
+		452FD57E228A972200DB34FB /* Прототип.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD576228A972200DB34FB /* Прототип.swift */; };
+		452FD57F228A972200DB34FB /* Абстрактная фабрика.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD577228A972200DB34FB /* Абстрактная фабрика.swift */; };
+		452FD581228A972200DB34FB /* Декоратор (Decorator).swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD57A228A972200DB34FB /* Декоратор (Decorator).swift */; };
+		452FD583228A993000DB34FB /* StructuralPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD582228A993000DB34FB /* StructuralPatterns.swift */; };
+		452FD585228A995D00DB34FB /* BehaviorPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD584228A995D00DB34FB /* BehaviorPatterns.swift */; };
+		452FD587228A998F00DB34FB /* GeneratingPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD586228A998F00DB34FB /* GeneratingPatterns.swift */; };
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
-		456FA8D22272DCE60044FA9A /* Состояние.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FA8D12272DCE60044FA9A /* Состояние.swift */; };
-		456FBF9A22780932005AC721 /* Хранитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9922780932005AC721 /* Хранитель.swift */; };
 		456FBF9E2278155C005AC721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9D2278155C005AC721 /* Card.swift */; };
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
-		4572F7F122717C32008772F6 /* Цепочка Обязанностей.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */; };
-		457841A0226D928D0006141F /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578419F226D928D0006141F /* Стратегия.swift */; };
-		458CD1EE2289508E005CAFEB /* Посредник (Mediator).swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CD1ED2289508E005CAFEB /* Посредник (Mediator).swift */; };
+		458CD1F02289640F005CAFEB /* Structuring model data in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CD1EF2289640F005CAFEB /* Structuring model data in Swift.swift */; };
 		45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45933C7B2282B00D0069639A /* TimerViewController.swift */; };
 		45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45933C7C2282B00D0069639A /* TimerViewController.xib */; };
 		45B7140822782BE5008B63F2 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140622782BE5008B63F2 /* CardCell.swift */; };
@@ -566,10 +570,7 @@
 		45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA82226EE343004A830A /* StackContainterView.swift */; };
 		45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA84226EE36E004A830A /* SwipeCardView.swift */; };
 		45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */; };
-		45BD147C2269958A00CC161D /* Строитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147B2269958A00CC161D /* Строитель.swift */; };
 		45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */; };
-		45C4B1252280111000661426 /* Посетитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C4B1242280111000661426 /* Посетитель.swift */; };
-		45D5F5882276BF1B00A438FF /* Итератор.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D5F5872276BF1B00A438FF /* Итератор.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */; };
 		45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D02282B16D0047940C /* TimerTask.swift */; };
 		45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */; };
@@ -577,7 +578,6 @@
 		45E4D1DE2282C85F0047940C /* success-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1DC2282C85F0047940C /* success-animation.json */; };
 		45E4D1DF2282C85F0047940C /* 109662_945474-lq.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1DD2282C85F0047940C /* 109662_945474-lq.mp3 */; };
 		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
-		45F5E7652270355A00E38983 /* Шаблонный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E7642270355900E38983 /* Шаблонный метод.swift */; };
 		45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76A227041F000E38983 /* TinderViewController.swift */; };
 		45F5E76D227041F000E38983 /* TinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F5E76B227041F000E38983 /* TinderViewController.xib */; };
 		64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */; };
@@ -625,15 +625,22 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		452FD550228A962A00DB34FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
 		3C0018B8221290B800CE9D3E /* Trimming long argument lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trimming long argument lists.swift"; sourceTree = "<group>"; };
-		3C0018BA2212973B00CE9D3E /* Facade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
 		3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentFlavorsOfViewModels.swift; sourceTree = "<group>"; };
 		3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactoryMethods.swift; sourceTree = "<group>"; };
-		3C04AE80221689BA0086CE4B /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 		3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
 		3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDataController.swift; sourceTree = "<group>"; };
 		3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
@@ -685,7 +692,6 @@
 		3C276689217DE1D600374E7E /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		3C27668F217DEA1400374E7E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSelfDocumenting.swift; sourceTree = "<group>"; };
-		3C2C9C1B221BD238004A2605 /* Flyweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flyweight.swift; sourceTree = "<group>"; };
 		3C2C9C1F221BD856004A2605 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3C2C9C23221BD919004A2605 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3C2C9C24221BD919004A2605 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -726,7 +732,6 @@
 		3C3B464B2174643E0032BC36 /* DLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLSViewController.swift; sourceTree = "<group>"; };
 		3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutConstraint+NSLayoutAnchor.swift"; sourceTree = "<group>"; };
 		3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type inference-powered serialization in Swift.swift"; sourceTree = "<group>"; };
-		3C3BDE6C2213E6C4004B9168 /* Composite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Composite.swift; sourceTree = "<group>"; };
 		3C3BED2D2223B3A100502361 /* PatternMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatching.swift; sourceTree = "<group>"; };
 		3C3D0E40216C8654006B7907 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPresenter.swift; sourceTree = "<group>"; };
@@ -819,7 +824,6 @@
 		3C4763D7211AC567006D0C1B /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
 		3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCustomCollections.swift; sourceTree = "<group>"; };
 		3C4A84FA221136DE0034627F /* BuildingDSLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDSLs.swift; sourceTree = "<group>"; };
-		3C4A84FE2211477A0034627F /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
 		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
 		3C4B691321E883B1002175CB /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
@@ -870,12 +874,10 @@
 		3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackStyle.swift; sourceTree = "<group>"; };
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
 		3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
-		3C6209C4220BF9E900E2A67A /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
 		3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InlineTypesAndFunctions .swift"; sourceTree = "<group>"; };
 		3C69E4AA215FA4090022CA4D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
 		3C6BA91D225C6130000A2063 /* Replacing legacy code using Swift protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Replacing legacy code using Swift protocols.swift"; sourceTree = "<group>"; };
-		3C6BA920225C777F000A2063 /* Фабричный метод.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Фабричный метод.swift"; sourceTree = "<group>"; };
 		3C6D8F5A21099BAC000190F3 /* LineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineControl.swift; sourceTree = "<group>"; };
 		3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentagesControl.swift; sourceTree = "<group>"; };
 		3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentagesControl.xib; sourceTree = "<group>"; };
@@ -1201,22 +1203,34 @@
 		3CFD254D21132C9F00128554 /* ETBAddTimeViewControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBAddTimeViewControl.xib; sourceTree = "<group>"; };
 		3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBAddTimeViewController.swift; sourceTree = "<group>"; };
 		3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBAddTimeViewController.xib; sourceTree = "<group>"; };
-		3CFFCEC7221ABA1A00712FFD /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Avoiding singletons in Swift.swift"; sourceTree = "<group>"; };
-		4525FE5B2266F14900E2EC83 /* Прототип.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Прототип.swift"; sourceTree = "<group>"; };
+		452FD54C228A95E200DB34FB /* Pure functions in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pure functions in Swift.swift"; sourceTree = "<group>"; };
+		452FD552228A962A00DB34FB /* Patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Patterns; sourceTree = BUILT_PRODUCTS_DIR; };
+		452FD554228A962A00DB34FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		452FD562228A971500DB34FB /* Посредник (Mediator).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Посредник (Mediator).swift"; sourceTree = "<group>"; };
+		452FD563228A971500DB34FB /* Стратегия.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Стратегия.swift"; sourceTree = "<group>"; };
+		452FD564228A971500DB34FB /* Цепочка Обязанностей.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Цепочка Обязанностей.swift"; sourceTree = "<group>"; };
+		452FD565228A971500DB34FB /* Состояние.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Состояние.swift"; sourceTree = "<group>"; };
+		452FD566228A971500DB34FB /* Посетитель.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Посетитель.swift"; sourceTree = "<group>"; };
+		452FD567228A971500DB34FB /* Хранитель.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Хранитель.swift"; sourceTree = "<group>"; };
+		452FD568228A971500DB34FB /* Итератор.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Итератор.swift"; sourceTree = "<group>"; };
+		452FD569228A971500DB34FB /* Шаблонный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Шаблонный метод.swift"; sourceTree = "<group>"; };
+		452FD573228A972200DB34FB /* Фабричный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Фабричный метод.swift"; sourceTree = "<group>"; };
+		452FD575228A972200DB34FB /* Строитель.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Строитель.swift"; sourceTree = "<group>"; };
+		452FD576228A972200DB34FB /* Прототип.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Прототип.swift"; sourceTree = "<group>"; };
+		452FD577228A972200DB34FB /* Абстрактная фабрика.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Абстрактная фабрика.swift"; sourceTree = "<group>"; };
+		452FD57A228A972200DB34FB /* Декоратор (Decorator).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Декоратор (Decorator).swift"; sourceTree = "<group>"; };
+		452FD582228A993000DB34FB /* StructuralPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralPatterns.swift; sourceTree = "<group>"; };
+		452FD584228A995D00DB34FB /* BehaviorPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorPatterns.swift; sourceTree = "<group>"; };
+		452FD586228A998F00DB34FB /* GeneratingPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratingPatterns.swift; sourceTree = "<group>"; };
 		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4545FC0522659998004F1C54 /* Абстрактная фабрика.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Абстрактная фабрика.swift"; sourceTree = "<group>"; };
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
-		456FA8D12272DCE60044FA9A /* Состояние.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Состояние.swift"; sourceTree = "<group>"; };
-		456FBF9922780932005AC721 /* Хранитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Хранитель.swift"; sourceTree = "<group>"; };
 		456FBF9D2278155C005AC721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
-		4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Цепочка Обязанностей.swift"; sourceTree = "<group>"; };
-		4578419F226D928D0006141F /* Стратегия.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стратегия.swift"; sourceTree = "<group>"; };
-		458CD1ED2289508E005CAFEB /* Посредник (Mediator).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Посредник (Mediator).swift"; sourceTree = "<group>"; };
+		458CD1EF2289640F005CAFEB /* Structuring model data in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Structuring model data in Swift.swift"; sourceTree = "<group>"; };
 		45933C7B2282B00D0069639A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		45933C7C2282B00D0069639A /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		45B7140622782BE5008B63F2 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
@@ -1229,10 +1243,7 @@
 		45BCCA82226EE343004A830A /* StackContainterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainterView.swift; sourceTree = "<group>"; };
 		45BCCA84226EE36E004A830A /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
 		45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using @autoclosure when designing.swift"; sourceTree = "<group>"; };
-		45BD147B2269958A00CC161D /* Строитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Строитель.swift"; sourceTree = "<group>"; };
 		45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asynchronous completion handlers with Result type.swift"; sourceTree = "<group>"; };
-		45C4B1242280111000661426 /* Посетитель.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Посетитель.swift"; sourceTree = "<group>"; };
-		45D5F5872276BF1B00A438FF /* Итератор.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Итератор.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift.swift"; sourceTree = "<group>"; };
 		45E4D1D02282B16D0047940C /* TimerTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTask.swift; sourceTree = "<group>"; };
 		45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
@@ -1240,7 +1251,6 @@
 		45E4D1DC2282C85F0047940C /* success-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "success-animation.json"; sourceTree = "<group>"; };
 		45E4D1DD2282C85F0047940C /* 109662_945474-lq.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "109662_945474-lq.mp3"; sourceTree = "<group>"; };
 		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
-		45F5E7642270355900E38983 /* Шаблонный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Шаблонный метод.swift"; sourceTree = "<group>"; };
 		45F5E76A227041F000E38983 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		45F5E76B227041F000E38983 /* TinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinderViewController.xib; sourceTree = "<group>"; };
 		52E9ACB5FCDB45B1B02FAD02 /* Pods-SwiftBySundell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1293,6 +1303,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3CE41F6A21523AB4002A6600 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		452FD54F228A962A00DB34FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1986,16 +2003,6 @@
 			path = "ViewСontrollers&Navigation!";
 			sourceTree = "<group>";
 		};
-		3C4B691521E8BA24002175CB /* Patterns */ = {
-			isa = PBXGroup;
-			children = (
-				3C6BA91F225C7770000A2063 /* Порождающие паттерны */,
-				3C6209C3220BF9CF00E2A67A /* Структурные паттерны */,
-				3C9F667321EF0CA900800E41 /* Паттерны поведения */,
-			);
-			path = Patterns;
-			sourceTree = "<group>";
-		};
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
@@ -2005,7 +2012,6 @@
 				3C8677A82230DEA300D73419 /* UI & Animations */,
 				3C452755222CF745004E5E19 /* HABR */,
 				3C2C9C1D221BD7E2004A2605 /* ViewExamples */,
-				3C4B691521E8BA24002175CB /* Patterns */,
 				3CA6A26D21C23C49009D0F1F /* ServiceLocator no pods simple */,
 				3C517C5621B9051A009CAEE7 /* AppDelegate.swift */,
 				3C517C5D21B9051B009CAEE7 /* Assets.xcassets */,
@@ -2133,31 +2139,6 @@
 			path = Controls;
 			sourceTree = "<group>";
 		};
-		3C6209C3220BF9CF00E2A67A /* Структурные паттерны */ = {
-			isa = PBXGroup;
-			children = (
-				3C6209C4220BF9E900E2A67A /* Decorator.swift */,
-				3C4A84FE2211477A0034627F /* Adapter.swift */,
-				3C0018BA2212973B00CE9D3E /* Facade.swift */,
-				3C3BDE6C2213E6C4004B9168 /* Composite.swift */,
-				3C04AE80221689BA0086CE4B /* Proxy.swift */,
-				3CFFCEC7221ABA1A00712FFD /* Bridge.swift */,
-				3C2C9C1B221BD238004A2605 /* Flyweight.swift */,
-			);
-			path = "Структурные паттерны";
-			sourceTree = "<group>";
-		};
-		3C6BA91F225C7770000A2063 /* Порождающие паттерны */ = {
-			isa = PBXGroup;
-			children = (
-				3C6BA920225C777F000A2063 /* Фабричный метод.swift */,
-				4545FC0522659998004F1C54 /* Абстрактная фабрика.swift */,
-				4525FE5B2266F14900E2EC83 /* Прототип.swift */,
-				45BD147B2269958A00CC161D /* Строитель.swift */,
-			);
-			path = "Порождающие паттерны";
-			sourceTree = "<group>";
-		};
 		3C6D8F622109C1FC000190F3 /* StatisticControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -2279,6 +2260,8 @@
 			children = (
 				3CF6F9132251DE1E001CA170 /* Bindable values in Swift.swift */,
 				45DAFEDE226D877100B3C18A /* Property observers in Swift.swift */,
+				458CD1EF2289640F005CAFEB /* Structuring model data in Swift.swift */,
+				452FD54C228A95E200DB34FB /* Pure functions in Swift.swift */,
 			);
 			path = "Капашилка";
 			sourceTree = "<group>";
@@ -2521,21 +2504,6 @@
 			path = ColorsGetters;
 			sourceTree = "<group>";
 		};
-		3C9F667321EF0CA900800E41 /* Паттерны поведения */ = {
-			isa = PBXGroup;
-			children = (
-				45F5E7642270355900E38983 /* Шаблонный метод.swift */,
-				4578419F226D928D0006141F /* Стратегия.swift */,
-				4572F7F022717C32008772F6 /* Цепочка Обязанностей.swift */,
-				456FA8D12272DCE60044FA9A /* Состояние.swift */,
-				45D5F5872276BF1B00A438FF /* Итератор.swift */,
-				456FBF9922780932005AC721 /* Хранитель.swift */,
-				45C4B1242280111000661426 /* Посетитель.swift */,
-				458CD1ED2289508E005CAFEB /* Посредник (Mediator).swift */,
-			);
-			path = "Паттерны поведения";
-			sourceTree = "<group>";
-		};
 		3CA420A3210B27EB00C303FC /* Footer */ = {
 			isa = PBXGroup;
 			children = (
@@ -2703,6 +2671,7 @@
 				3C82F46C2164AA0F0024B3E4 /* WorkWithUI */,
 				3C41F90121611883002334DB /* SupportLib */,
 				3C517C5521B9051A009CAEE7 /* SwiftBySundell */,
+				452FD553228A962A00DB34FB /* Patterns */,
 				3CD85A1B20EF482A008D994C /* Products */,
 				CE930C0AC3A3715B8BA78B66 /* Pods */,
 				0A62CB7B25171A6FCD0001F5 /* Frameworks */,
@@ -2718,6 +2687,7 @@
 				3C41F90021611882002334DB /* SupportLib.framework */,
 				3C82F46B2164AA0F0024B3E4 /* WorkWithUI.app */,
 				3C517C5421B9051A009CAEE7 /* SwiftBySundell.app */,
+				452FD552228A962A00DB34FB /* Patterns */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3120,6 +3090,54 @@
 			path = SundellResources;
 			sourceTree = "<group>";
 		};
+		452FD553228A962A00DB34FB /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				452FD572228A972200DB34FB /* Порождающие паттерны */,
+				452FD579228A972200DB34FB /* Структурные паттерны */,
+				452FD561228A971500DB34FB /* Паттерны поведения */,
+				452FD554228A962A00DB34FB /* main.swift */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		452FD561228A971500DB34FB /* Паттерны поведения */ = {
+			isa = PBXGroup;
+			children = (
+				452FD562228A971500DB34FB /* Посредник (Mediator).swift */,
+				452FD563228A971500DB34FB /* Стратегия.swift */,
+				452FD564228A971500DB34FB /* Цепочка Обязанностей.swift */,
+				452FD565228A971500DB34FB /* Состояние.swift */,
+				452FD566228A971500DB34FB /* Посетитель.swift */,
+				452FD567228A971500DB34FB /* Хранитель.swift */,
+				452FD568228A971500DB34FB /* Итератор.swift */,
+				452FD569228A971500DB34FB /* Шаблонный метод.swift */,
+				452FD584228A995D00DB34FB /* BehaviorPatterns.swift */,
+			);
+			path = "Паттерны поведения";
+			sourceTree = "<group>";
+		};
+		452FD572228A972200DB34FB /* Порождающие паттерны */ = {
+			isa = PBXGroup;
+			children = (
+				452FD573228A972200DB34FB /* Фабричный метод.swift */,
+				452FD575228A972200DB34FB /* Строитель.swift */,
+				452FD576228A972200DB34FB /* Прототип.swift */,
+				452FD577228A972200DB34FB /* Абстрактная фабрика.swift */,
+				452FD586228A998F00DB34FB /* GeneratingPatterns.swift */,
+			);
+			path = "Порождающие паттерны";
+			sourceTree = "<group>";
+		};
+		452FD579228A972200DB34FB /* Структурные паттерны */ = {
+			isa = PBXGroup;
+			children = (
+				452FD57A228A972200DB34FB /* Декоратор (Decorator).swift */,
+				452FD582228A993000DB34FB /* StructuralPatterns.swift */,
+			);
+			path = "Структурные паттерны";
+			sourceTree = "<group>";
+		};
 		4545FC092265A513004F1C54 /* Sticky header */ = {
 			isa = PBXGroup;
 			children = (
@@ -3371,13 +3389,30 @@
 			productReference = 3CE41F6D21523AB4002A6600 /* UIPart.app */;
 			productType = "com.apple.product-type.application";
 		};
+		452FD551228A962A00DB34FB /* Patterns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 452FD556228A962A00DB34FB /* Build configuration list for PBXNativeTarget "Patterns" */;
+			buildPhases = (
+				452FD54E228A962A00DB34FB /* Sources */,
+				452FD54F228A962A00DB34FB /* Frameworks */,
+				452FD550228A962A00DB34FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Patterns;
+			productName = Patterns;
+			productReference = 452FD552228A962A00DB34FB /* Patterns */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3CD85A1220EF482A008D994C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Vladislav Gushin";
 				TargetAttributes = {
@@ -3401,6 +3436,9 @@
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
 					};
+					452FD551228A962A00DB34FB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 3CD85A1520EF482A008D994C /* Build configuration list for PBXProject "MyWork" */;
@@ -3422,6 +3460,7 @@
 				3C41F8FF21611882002334DB /* SupportLib */,
 				3C82F46A2164AA0F0024B3E4 /* WorkWithUI */,
 				3C517C5321B9051A009CAEE7 /* SwiftBySundell */,
+				452FD551228A962A00DB34FB /* Patterns */,
 			);
 		};
 /* End PBXProject section */
@@ -3768,19 +3807,15 @@
 				3C6F2D57224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
 				3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */,
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
-				45D5F5882276BF1B00A438FF /* Итератор.swift in Sources */,
 				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3CBDF77E225334D60096528A /* APIRequest.swift in Sources */,
-				45BD147C2269958A00CC161D /* Строитель.swift in Sources */,
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
 				3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */,
 				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
-				3C0018BB2212973B00CE9D3E /* Facade.swift in Sources */,
 				3CE138E722279EC100E0B7CD /* Observers1.swift in Sources */,
-				45C4B1252280111000661426 /* Посетитель.swift in Sources */,
 				3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */,
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
 				3C6BA91E225C6130000A2063 /* Replacing legacy code using Swift protocols.swift in Sources */,
@@ -3797,13 +3832,13 @@
 				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
 				4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */,
 				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
+				458CD1F02289640F005CAFEB /* Structuring model data in Swift.swift in Sources */,
 				3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */,
 				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
 				3CC86607225F022700969E2F /* Inclusive enums with OptionSet.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
-				45F5E7652270355A00E38983 /* Шаблонный метод.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
 				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
@@ -3818,7 +3853,6 @@
 				45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
-				456FA8D22272DCE60044FA9A /* Состояние.swift in Sources */,
 				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
 				3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
@@ -3826,10 +3860,8 @@
 				3C986985222FAE280065660B /* SummaryViewController.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
 				3CD6DC2C2227B49F0062D2EC /* AlamofireViewController.swift in Sources */,
-				4572F7F122717C32008772F6 /* Цепочка Обязанностей.swift in Sources */,
 				3CADC677221536C800E28084 /* Operation.swift in Sources */,
 				3C986989222FAE650065660B /* SleepViewController.swift in Sources */,
-				3C4A84FF2211477A0034627F /* Adapter.swift in Sources */,
 				3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */,
 				3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */,
 				3C80FF382248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift in Sources */,
@@ -3839,7 +3871,6 @@
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				3CD6DC372227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift in Sources */,
 				3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */,
-				458CD1EE2289508E005CAFEB /* Посредник (Mediator).swift in Sources */,
 				3C6F2D4A224F648E000A194B /* FruitsProvider.swift in Sources */,
 				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
@@ -3852,9 +3883,9 @@
 				3C1854702238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
 				3C51A744223B6DCD00D14490 /* CombinedWebRequestBehavior.swift in Sources */,
-				3C2C9C1C221BD238004A2605 /* Flyweight.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
+				452FD54D228A95E200DB34FB /* Pure functions in Swift.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
 				45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */,
@@ -3862,13 +3893,11 @@
 				3C3076CB225B15610006D5FC /* String literals in Swift.swift in Sources */,
 				45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */,
 				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
-				4545FC0622659998004F1C54 /* Абстрактная фабрика.swift in Sources */,
 				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
 				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
-				456FBF9A22780932005AC721 /* Хранитель.swift in Sources */,
 				3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
 				45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */,
 				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
@@ -3878,8 +3907,6 @@
 				3C4099912237D68400E5FB05 /* RootContentTableViewCell.swift in Sources */,
 				3C36EA072237786C00993B6F /* Как использовать HTTP-кеш.swift in Sources */,
 				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
-				3C04AE81221689BA0086CE4B /* Proxy.swift in Sources */,
-				4525FE5C2266F14900E2EC83 /* Прототип.swift in Sources */,
 				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
 				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CE80B46225F132100CA9C02 /* UltravisualLayout.swift in Sources */,
@@ -3891,8 +3918,6 @@
 				3CEA09FE2236389300C03FF9 /* CollectionViewCell.swift in Sources */,
 				3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
-				3CFFCEC8221ABA1A00712FFD /* Bridge.swift in Sources */,
-				3C3BDE6D2213E6C4004B9168 /* Composite.swift in Sources */,
 				3C23664E22571D66003A33C0 /* A detailed explanation of memory leaks.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */,
@@ -3900,7 +3925,6 @@
 				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */,
-				3C6BA921225C777F000A2063 /* Фабричный метод.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
@@ -3932,7 +3956,6 @@
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,
 				45B7140822782BE5008B63F2 /* CardCell.swift in Sources */,
-				3C6209C5220BF9E900E2A67A /* Decorator.swift in Sources */,
 				3CC1334E21F830630009A04B /* Navigation.swift in Sources */,
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
 				3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */,
@@ -3943,7 +3966,6 @@
 				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
 				3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */,
 				45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */,
-				457841A0226D928D0006141F /* Стратегия.swift in Sources */,
 				3CBDF782225335A40096528A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4179,6 +4201,30 @@
 				3CE3E569215BD7C0003A0528 /* Double+Ex.swift in Sources */,
 				3CE3E552215BC1F2003A0528 /* UILabel+Chameleon.m in Sources */,
 				3CE3E553215BC1F2003A0528 /* ChameleonConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		452FD54E228A962A00DB34FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452FD571228A971500DB34FB /* Шаблонный метод.swift in Sources */,
+				452FD587228A998F00DB34FB /* GeneratingPatterns.swift in Sources */,
+				452FD570228A971500DB34FB /* Итератор.swift in Sources */,
+				452FD585228A995D00DB34FB /* BehaviorPatterns.swift in Sources */,
+				452FD56B228A971500DB34FB /* Стратегия.swift in Sources */,
+				452FD56D228A971500DB34FB /* Состояние.swift in Sources */,
+				452FD555228A962A00DB34FB /* main.swift in Sources */,
+				452FD57D228A972200DB34FB /* Строитель.swift in Sources */,
+				452FD57F228A972200DB34FB /* Абстрактная фабрика.swift in Sources */,
+				452FD56C228A971500DB34FB /* Цепочка Обязанностей.swift in Sources */,
+				452FD583228A993000DB34FB /* StructuralPatterns.swift in Sources */,
+				452FD57B228A972200DB34FB /* Фабричный метод.swift in Sources */,
+				452FD581228A972200DB34FB /* Декоратор (Decorator).swift in Sources */,
+				452FD56F228A971500DB34FB /* Хранитель.swift in Sources */,
+				452FD57E228A972200DB34FB /* Прототип.swift in Sources */,
+				452FD56E228A971500DB34FB /* Посетитель.swift in Sources */,
+				452FD56A228A971500DB34FB /* Посредник (Mediator).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4658,6 +4704,33 @@
 			};
 			name = Release;
 		};
+		452FD557228A962A00DB34FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		452FD558228A962A00DB34FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4720,6 +4793,15 @@
 			buildConfigurations = (
 				3CE41F7D21523AB8002A6600 /* Debug */,
 				3CE41F7E21523AB8002A6600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		452FD556228A962A00DB34FB /* Build configuration list for PBXNativeTarget "Patterns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				452FD557228A962A00DB34FB /* Debug */,
+				452FD558228A962A00DB34FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
