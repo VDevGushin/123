@@ -9,6 +9,7 @@
 import Foundation
 
 struct GeneratingPatterns {
+    
     //Фабричный метод
     static func testFactoryMethod() {
         var dev: Developer = PanelDeveloper(name: "ООО КирпичСтрой")
@@ -18,6 +19,7 @@ struct GeneratingPatterns {
         dump(house)
         dump(house2)
     }
+    
     //Абстрактная фабрика
     static func testAbstractFactory() {
         let elf = Hero(factory: ElfFactory())
@@ -27,6 +29,7 @@ struct GeneratingPatterns {
         voin.hit()
         voin.run()
     }
+    
     //Прототип
     static func testPrototype() {
         let circle = Circle(radius: 12, point: CGPoint(x: 2.0, y: 2.0))

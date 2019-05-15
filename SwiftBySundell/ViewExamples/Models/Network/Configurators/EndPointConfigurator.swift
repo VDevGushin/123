@@ -8,6 +8,17 @@
 
 import UIKit
 
+protocol EndPointConfigurator {
+    var scheme: String { get set }
+    var host: String { get set }
+    var path: String { get set }
+    var method: HTTPMethod { get set }
+    var queryItems: [URLQueryItem]? { get set }
+    var headers: [HTTPHeader]? { get set }
+    var body: Data? { get set }
+    var multipartData: [Multipartable]? { get set }
+}
+
 protocol Multipartable {
     var id: ObjectIdentifier { get set }
     var maxSize: Double? { get set }
@@ -26,15 +37,4 @@ extension Multipartable {
         let sizeMB = Double(self.bytes.count) / 1024.0 / 1024.0
         return sizeMB <= maxSize
     }
-}
-
-protocol RequestConfigurator {
-    var scheme: String { get set }
-    var host: String { get set }
-    var path: String { get set }
-    var method: String { get set }
-    var queryItems: [URLQueryItem]? { get set }
-    var header: [String: String]? { get set }
-    var body: Data? { get set }
-    var multipartData: [Multipartable]? { get set }
 }

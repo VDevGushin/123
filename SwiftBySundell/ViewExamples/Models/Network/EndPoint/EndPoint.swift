@@ -10,15 +10,18 @@ import Foundation
 
 protocol EndPoint {
     var timeoutInterval: TimeInterval { get set }
-    var configurator: RequestConfigurator { get }
-    func makeURLRequest() -> URLRequest
+    var configurator: EndPointConfigurator { get }
+    func makeURLRequest() throws -> URLRequest
 }
 
 extension EndPoint {
-    func makeURLRequest() -> URLRequest {
-        var request = URLRequest(url: self.url!)
-        request.allHTTPHeaderFields = self.configurator.header
-        request.httpMethod = self.configurator.method
+    func makeURLRequest() throws -> URLRequest {
+        guard let url = self.url else {
+            throw APIError.invalidURL
+        }
+        var request = URLRequest(url: url)
+        request.allHTTPHeaderFields = self.configurator.headers?.convertToDictionary()
+        request.httpMethod = self.configurator.method.description
         request.timeoutInterval = self.timeoutInterval
         request.httpBody = self.configurator.body
 
@@ -27,7 +30,7 @@ extension EndPoint {
             request.setValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
             request.httpBody = createBody(boundary: boundary, items: multipart)
         }
-        
+
         return request
     }
 }

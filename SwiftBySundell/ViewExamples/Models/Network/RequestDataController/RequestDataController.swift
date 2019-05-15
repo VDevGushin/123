@@ -9,6 +9,5 @@
 import Foundation
 
 protocol RequestDataController {
-    var endPoint: EndPoint { get set }
-    var requestBahavior: WebRequestBehavior { get set }
+    var client: RequestMaker? { get }
 }

@@ -8,7 +8,11 @@
 
 import Foundation
 
-enum HTTPMethod: String {
+enum HTTPMethod: String, CustomStringConvertible {
+    var description: String {
+        return self.rawValue
+    }
+
     case get = "GET"
     case put = "PUT"
     case post = "POST"

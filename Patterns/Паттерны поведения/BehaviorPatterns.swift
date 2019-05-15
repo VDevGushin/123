@@ -9,6 +9,7 @@
 import Foundation
 
 struct BehaviorPatterns {
+    // Посредник
     static func mediator() {
         let manager = Manager()
         let customer = CustomerColleague(mediator: manager)
@@ -19,5 +20,13 @@ struct BehaviorPatterns {
         customer.send(message: "Есть заказ, надо сделать программу")
         programmer.send(message: "Программа готова, надо протестировать")
         tester.send(message: "Программа протестированна и готова к продаже")
+    }
+
+    // Стратегия
+    static func strategy() {
+        let auto = Car(passengers: 4, model: "Volvo", movable: PetrolMove())
+        auto.move()
+        auto.movable = ElectricMove()
+        auto.move()
     }
 }

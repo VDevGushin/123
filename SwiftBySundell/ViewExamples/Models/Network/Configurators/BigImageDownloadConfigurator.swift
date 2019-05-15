@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BigImageDownloadConfigurator: RequestConfigurator {
+struct BigImageDownloadConfigurator: EndPointConfigurator {
     enum BigImageDownloadComponents {
         case max
         case id(Int)
@@ -26,7 +26,7 @@ struct BigImageDownloadConfigurator: RequestConfigurator {
         }
 
         static func createPath(components: BigImageDownloadComponents...) -> String {
-            return components.map{ $0.value }.reduce(""){
+            return components.map { $0.value }.reduce("") {
                 var old = $0
                 old += "/\($1)"
                 return old
@@ -37,27 +37,28 @@ struct BigImageDownloadConfigurator: RequestConfigurator {
     var scheme: String
     var host: String
     var path: String
-    var method: String
+    var method: HTTPMethod
     var queryItems: [URLQueryItem]?
-    var header: [String: String]?
+    var headers: [HTTPHeader]?
     var body: Data?
     var multipartData: [Multipartable]?
 
     static func getBitImage(id: Int, filename: String) -> BigImageDownloadConfigurator {
         let path = BigImageDownloadComponents.createPath(components: .max, .id(id), .fileName(filename))
 
-        let header = [
-            "Accept": "application/json",
-            "Accept-Encoding": " br, gzip, deflate"
+
+        let headers = [
+            HTTPHeader(field: "Accept", value: "application/json"),
+            HTTPHeader(field: "Accept-Encoding", value: "br, gzip, deflate")
         ]
 
         return BigImageDownloadConfigurator(scheme: "https",
-                                            host: "cdn-images-1.medium.com",
-                                            path: path,
-                                            method: "GET",
-                                            queryItems: nil,
-                                            header: header,
-                                            body: nil,
-                                            multipartData: nil)
+            host: "cdn-images-1.medium.com",
+            path: path,
+            method: HTTPMethod.get,
+            queryItems: nil,
+            headers: headers,
+            body: nil,
+            multipartData: nil)
     }
 }

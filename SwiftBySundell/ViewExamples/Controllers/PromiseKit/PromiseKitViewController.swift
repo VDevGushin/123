@@ -10,7 +10,8 @@ import UIKit
 import PromiseKit
 import Lottie
 
-class PromiseKitViewController: CoordinatorViewController {
+class PromiseKitViewController: CoordinatorViewController, DownloadImageDataControllerDelegate {
+
     deinit {
         print("PromiseKitViewController deinit")
     }
@@ -18,43 +19,35 @@ class PromiseKitViewController: CoordinatorViewController {
     @IBOutlet private weak var animationView: AnimationView!
     @IBOutlet private weak var imageView: UIImageView!
 
-    private lazy var fetchImage = DownloadImageDataController.fetchImageWithCancel()
+    private lazy var fetchImageContiller = DownloadImageDataController()
 
     @IBAction func onStartAnimation(_ sender: Any) {
-        if self.fetchImage.promise.isResolved {
-            //Обновление задачи
-            self.fetchImage = DownloadImageDataController.fetchImageWithCancel()
-            //закачка картинки
-            self.downloadImage()
+        if self.fetchImageContiller.isResolved {
+            self.onDownloadStarted()
+            self.imageView.image = nil
+            fetchImageContiller.getImage()
         }
+    }
+
+    func complete(dataController: DownloadImageDataController, image: UIImage?) {
+        self.imageView.image = image
+        self.onDownloadComplete()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupAnimation()
+        self.fetchImageContiller.delegate = self
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
-        self.fetchImage.cancel()
+        self.fetchImageContiller.cancel()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.downloadImage()
-    }
-
-    private func downloadImage() {
-        self.imageView.image = nil
-        //закачка картинки
-        self.onDownloadStarted()
-        self.fetchImage.promise.done { [weak self] newImage in
-            self?.imageView.image = newImage
-        }.ensure { [weak self] in
-            self?.onDownloadComplete()
-        }.catch(policy: .allErrors) { error in
-            dump(error)
-        }
+        self.onStartAnimation(self)
     }
 
     private func setupAnimation() {

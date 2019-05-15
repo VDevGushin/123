@@ -46,26 +46,26 @@ fileprivate class Context {
 }
 
 //=====================================================================================
-fileprivate protocol Movable {
+protocol Movable {
     func move()
 }
 
 //Бензиновый ход
-fileprivate class PetrolMove: Movable {
+class PetrolMove: Movable {
     func move() {
         print("Бензиновый ход")
     }
 }
 
 //Электрический ход
-fileprivate class ElectricMove: Movable {
+class ElectricMove: Movable {
     func move() {
         print("Электрический ход")
     }
 }
 
 //Машина
-fileprivate class Car {
+class Car {
     private let passengers: Int
     private let model: String
     var movable: Movable
@@ -79,12 +79,4 @@ fileprivate class Car {
     func move() {
         self.movable.move()
     }
-}
-
-fileprivate func main() {
-    let auto = Car(passengers: 4, model: "Volvo", movable: PetrolMove())
-    auto.move()
-    auto.movable = ElectricMove()
-    auto.move()
-    print("car")
 }

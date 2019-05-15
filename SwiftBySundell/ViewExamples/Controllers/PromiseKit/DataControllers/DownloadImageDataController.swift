@@ -9,61 +9,43 @@
 import Foundation
 import PromiseKit
 
-final class DownloadImageDataController: RequestDataController {
-    var requestBahavior: WebRequestBehavior
-    var endPoint: EndPoint
-
-    init() {
-        self.requestBahavior = CombinedWebRequestBehavior(behaviors: [LoggerBehavior()])
-        self.endPoint = DefaultEndPoint(configurator: BigImageDownloadConfigurator.getBitImage(id: 2000, filename: "1*d6l1Gt7j47JyxONXn8moYg.png"))
-    }
-
-    func downloadImage() -> Promise<UIImage> {
-        let request = self.endPoint.makeURLRequest()
-        self.requestBahavior.beforeSend(with: request)
-        let fetchImage = URLSession.shared.dataTask(.promise, with: request).compactMap { UIImage(data: $0.data) }
-        return firstly {
-            after(seconds: 5)
-        }.then {
-            fetchImage
-        }
-    }
-
-
-    func downloadImageWithCancel() -> (Promise<UIImage>, cancel: () -> Void) {
-        let fetchImage = self.downloadImage()
-        var cancelMe = false
-
-        let promise = Promise<UIImage> { resolver in
-            fetchImage.done { newImage in
-                guard !cancelMe else {
-                    self.requestBahavior.afterFailure(error: PMKError.cancelled, response: nil)
-                    return resolver.reject(PMKError.cancelled)
-                }
-                self.requestBahavior.afterSuccess(result: newImage, response: nil)
-                resolver.fulfill(newImage)
-            }.catch { error in
-                self.requestBahavior.afterFailure(error: error, response: nil)
-                resolver.reject(error)
-            }
-        }
-
-        let cancel = {
-            cancelMe = true
-        }
-
-        return (promise, cancel)
-    }
+protocol DownloadImageDataControllerDelegate: class {
+    func complete(dataController: DownloadImageDataController, image: UIImage?)
 }
 
-extension DownloadImageDataController {
-    static func fetchImage() -> Promise<UIImage> {
-        let controller = DownloadImageDataController()
-        return controller.downloadImage()
+final class DownloadImageDataController: RequestDataController {
+    let client: RequestMaker?
+    weak var delegate: DownloadImageDataControllerDelegate?
+
+    var reqest: (promise: Promise<APIResponse<Data>>, cancel: () -> Void)?
+
+    init() {
+        let endPoint = DefaultEndPoint(configurator: BigImageDownloadConfigurator.getBitImage(id: 2000, filename: "1*d6l1Gt7j47JyxONXn8moYg.png"))
+        self.client = try? RequestMaker(endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
     }
 
-    static func fetchImageWithCancel() -> (promise: Promise<UIImage>, cancel: () -> Void) {
-        let controller = DownloadImageDataController()
-        return controller.downloadImageWithCancel()
+    var isResolved: Bool {
+        guard let promise = self.reqest?.promise else {
+            return true
+        }
+        return promise.isResolved
+    }
+
+    func getImage() {
+        guard let client = self.client else { return }
+        self.reqest = client.makeRequestWithCancel()
+
+        self.reqest?.promise.done(on: .main) { [weak self] response in
+            guard let self = self else { return }
+            self.delegate?.complete(dataController: self, image: UIImage(data: response.body))
+        }.catch(on: .main) { [weak self] error in
+            guard let self = self else { return }
+            self.delegate?.complete(dataController: self, image: nil)
+        }
+    }
+
+    func cancel() {
+        self.reqest?.cancel()
+        self.reqest = nil
     }
 }

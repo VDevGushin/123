@@ -11,9 +11,9 @@ import Foundation
 struct DefaultEndPoint: EndPoint {
     var timeoutInterval: TimeInterval = 30
 
-    var configurator: RequestConfigurator
+    var configurator: EndPointConfigurator
 
-    init(configurator: RequestConfigurator) {
+    init(configurator: EndPointConfigurator) {
         self.configurator = configurator
     }
 }
