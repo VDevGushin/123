@@ -20,7 +20,7 @@ final class DownloadImageDataController {
 
     init() {
         let endPoint = DefaultEndPoint(configurator: BigImageDownloadConfigurator.getBitImage(id: 2000, filename: "1*d6l1Gt7j47JyxONXn8moYg.png"))
-        self.request = try! HTTPRequest(endPoint: endPoint, requestBahaviors: [LoggerBehavior()], name: nil)
+        self.request = try! HTTPRequest(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
     }
 
     func getImage() {

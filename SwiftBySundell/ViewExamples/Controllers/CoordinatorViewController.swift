@@ -13,9 +13,9 @@ class CoordinatorViewController: UIViewController {
     let navigator: AppCoordinator
 
     init(navigator: AppCoordinator,
-         title: String,
-         nibName: String,
-         bundle: Bundle?) {
+        title: String,
+        nibName: String,
+        bundle: Bundle?) {
 
         self.viewTitle = title
         self.navigator = navigator

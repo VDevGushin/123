@@ -25,7 +25,7 @@ final class HTTPRequest {
 
     private var currentRequest: (Promise<(data: Data, response: URLResponse)>, cancel: () -> Void)?
 
-    init(endPoint: EndPoint, requestBahaviors: [WebRequestBehavior], name: String?) throws {
+    init(name: String?, endPoint: EndPoint, requestBahaviors: [WebRequestBehavior]) throws {
         self.requestBahavior = CombinedWebRequestBehavior(behaviors: requestBahaviors)
         self.endPoint = endPoint
         self.urlRequest = try self.endPoint.makeURLRequest()
@@ -44,11 +44,12 @@ final class HTTPRequest {
             self.currentRequest?.0.done(on: .main) { [weak self] result in
                 guard let self = self else { return }
                 self.status = .normal
+                
                 guard let httpResponse = result.response as? HTTPURLResponse else {
-                    completion(.failure(.requestFailed)); return
+                    completion(.failure(.requestFailed(nil))); return
                 }
-                let apiReponse = APIResponse(statusCode: httpResponse.statusCode, body: result.data)
-                completion(Swift.Result.success(apiReponse))
+                
+                completion(Swift.Result.success(APIResponse(statusCode: httpResponse.statusCode, body: result.data)))
             }.catch(on: .main, policy: .allErrors) { [weak self] error in
                 guard let self = self else { return }
                 self.status = .normal
@@ -56,7 +57,9 @@ final class HTTPRequest {
                 if (error as? PromiseKit.PMKError)?.isCancelled ?? false {
                     return completion(.failure(.canceled))
                 }
-                completion(.failure(.requestFailed))
+                completion(.failure(.requestFailed(error)))
+            }.finally { [weak self] in
+                self?.currentRequest = nil
             }
         }
     }
@@ -73,7 +76,6 @@ private extension HTTPRequest {
                     guard let self = self else { return }
                     guard !cancelMe else {
                         self.requestBahavior.afterFailure(error: PMKError.cancelled, response: nil)
-                        //return resolver.reject(PMKError.cancelled)
                         return resolver.reject(PMKError.cancelled)
                     }
                     self.requestBahavior.afterSuccess(result: result.data, response: result.response)

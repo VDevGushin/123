@@ -48,7 +48,7 @@ class APIClient {
         let task = session.dataTask(with: url) { [weak self](data, response, error) in
             self?.status = .request
             guard let httpResponse = response as? HTTPURLResponse else {
-                completion(.failure(.requestFailed)); return
+                completion(.failure(.requestFailed(nil))); return
             }
             completion(.success(APIResponse<Data?>(statusCode: httpResponse.statusCode, body: data)))
         }

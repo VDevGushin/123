@@ -543,7 +543,7 @@
 		452FD56F228A971500DB34FB /* Хранитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD567228A971500DB34FB /* Хранитель.swift */; };
 		452FD570228A971500DB34FB /* Итератор.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD568228A971500DB34FB /* Итератор.swift */; };
 		452FD571228A971500DB34FB /* Шаблонный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD569228A971500DB34FB /* Шаблонный метод.swift */; };
-		452FD57B228A972200DB34FB /* Фабричный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD573228A972200DB34FB /* Фабричный метод.swift */; };
+		452FD57B228A972200DB34FB /* Фабричный метод.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD573228A972200DB34FB /* Фабричный метод.swift */; };
 		452FD57D228A972200DB34FB /* Строитель.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD575228A972200DB34FB /* Строитель.swift */; };
 		452FD57E228A972200DB34FB /* Прототип.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD576228A972200DB34FB /* Прототип.swift */; };
 		452FD57F228A972200DB34FB /* Абстрактная фабрика.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD577228A972200DB34FB /* Абстрактная фабрика.swift */; };
@@ -1217,7 +1217,7 @@
 		452FD567228A971500DB34FB /* Хранитель.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Хранитель.swift"; sourceTree = "<group>"; };
 		452FD568228A971500DB34FB /* Итератор.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Итератор.swift"; sourceTree = "<group>"; };
 		452FD569228A971500DB34FB /* Шаблонный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Шаблонный метод.swift"; sourceTree = "<group>"; };
-		452FD573228A972200DB34FB /* Фабричный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Фабричный метод.swift"; sourceTree = "<group>"; };
+		452FD573228A972200DB34FB /* Фабричный метод.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Фабричный метод.swift"; sourceTree = "<group>"; };
 		452FD575228A972200DB34FB /* Строитель.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Строитель.swift"; sourceTree = "<group>"; };
 		452FD576228A972200DB34FB /* Прототип.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Прототип.swift"; sourceTree = "<group>"; };
 		452FD577228A972200DB34FB /* Абстрактная фабрика.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Абстрактная фабрика.swift"; sourceTree = "<group>"; };
@@ -3102,7 +3102,7 @@
 		452FD572228A972200DB34FB /* Порождающие паттерны */ = {
 			isa = PBXGroup;
 			children = (
-				452FD573228A972200DB34FB /* Фабричный метод.swift */,
+				452FD573228A972200DB34FB /* Фабричный метод.swift */,
 				452FD575228A972200DB34FB /* Строитель.swift */,
 				452FD576228A972200DB34FB /* Прототип.swift */,
 				452FD577228A972200DB34FB /* Абстрактная фабрика.swift */,
@@ -4227,7 +4227,7 @@
 				452FD57F228A972200DB34FB /* Абстрактная фабрика.swift in Sources */,
 				452FD56C228A971500DB34FB /* Цепочка Обязанностей.swift in Sources */,
 				452FD583228A993000DB34FB /* StructuralPatterns.swift in Sources */,
-				452FD57B228A972200DB34FB /* Фабричный метод.swift in Sources */,
+				452FD57B228A972200DB34FB /* Фабричный метод.swift in Sources */,
 				452FD581228A972200DB34FB /* Декоратор (Decorator).swift in Sources */,
 				452FD56F228A971500DB34FB /* Хранитель.swift in Sources */,
 				452FD57E228A972200DB34FB /* Прототип.swift in Sources */,
