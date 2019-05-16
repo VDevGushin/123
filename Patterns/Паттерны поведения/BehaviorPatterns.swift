@@ -29,4 +29,9 @@ struct BehaviorPatterns {
         auto.movable = ElectricMove()
         auto.move()
     }
+
+    // Цепочка обязанностей
+    static func chainOfResponsibility() {
+        testChainOfResponsibility()
+    }
 }

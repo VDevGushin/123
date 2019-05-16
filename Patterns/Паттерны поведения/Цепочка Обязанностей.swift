@@ -59,7 +59,7 @@ fileprivate class ConcreteHandler2: IHandler {
 
 /*Рассмотрим конкретный пример. Допустим, необходимо послать человеку определенную сумму денег. Однако мы точно не знаем, какой способ отправки может использоваться: банковский перевод, системы перевода типа WesternUnion и Unistream или система онлайн-платежей PayPal. Нам просто надо внести сумму, выбрать человека и нажать на кнопку. Подобная система может использоваться на сайтах фриланса, где все отношения между исполнителями и заказчиками происходят опосредованно через функции системы и где не надо знать точные данные получателя.*/
 
-fileprivate func client() {
+func testChainOfResponsibility() {
     let receiver = Receiver(bankTransfer: false, moneyTransfer: true, payPalTransfer: false)
     let bankPaymentHandler = BankPaymentHandler()
     let moneyPaymentHnadler = MoneyPaymentHandler()
@@ -70,18 +70,18 @@ fileprivate func client() {
     bankPaymentHandler.handle(receiver: receiver)
 }
 
-fileprivate struct Receiver {
+struct Receiver {
     let bankTransfer: Bool
     let moneyTransfer: Bool
     let payPalTransfer: Bool
 }
 
-fileprivate protocol PaymentHandler: class {
+protocol PaymentHandler: class {
     var successor: PaymentHandler? { get set }
     func handle(receiver: Receiver)
 }
 
-fileprivate class BankPaymentHandler: PaymentHandler {
+class BankPaymentHandler: PaymentHandler {
     weak var successor: PaymentHandler?
 
     func handle(receiver: Receiver) {
@@ -95,7 +95,7 @@ fileprivate class BankPaymentHandler: PaymentHandler {
     }
 }
 
-fileprivate class PayPalPaymentHandler: PaymentHandler {
+class PayPalPaymentHandler: PaymentHandler {
     weak var successor: PaymentHandler?
 
     func handle(receiver: Receiver) {
@@ -109,7 +109,7 @@ fileprivate class PayPalPaymentHandler: PaymentHandler {
     }
 }
 
-fileprivate class MoneyPaymentHandler: PaymentHandler {
+class MoneyPaymentHandler: PaymentHandler {
     weak var successor: PaymentHandler?
 
     func handle(receiver: Receiver) {

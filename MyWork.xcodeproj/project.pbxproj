@@ -554,6 +554,7 @@
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
+		455D1350228D369800C0DC32 /* Адаптер (Adapter).swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D134F228D369800C0DC32 /* Адаптер (Adapter).swift */; };
 		456FBF9E2278155C005AC721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9D2278155C005AC721 /* Card.swift */; };
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
 		4583D7C4228BEE1E00630EB4 /* RequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D7C3228BEE1E00630EB4 /* RequestMaker.swift */; };
@@ -1227,6 +1228,7 @@
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		455D134F228D369800C0DC32 /* Адаптер (Adapter).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Адаптер (Adapter).swift"; sourceTree = "<group>"; };
 		456FBF9D2278155C005AC721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		4583D7C3228BEE1E00630EB4 /* RequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMaker.swift; sourceTree = "<group>"; };
@@ -3124,6 +3126,7 @@
 			isa = PBXGroup;
 			children = (
 				452FD57A228A972200DB34FB /* Декоратор (Decorator).swift */,
+				455D134F228D369800C0DC32 /* Адаптер (Adapter).swift */,
 				452FD582228A993000DB34FB /* StructuralPatterns.swift */,
 			);
 			path = "Структурные паттерны";
@@ -4220,6 +4223,7 @@
 				452FD587228A998F00DB34FB /* GeneratingPatterns.swift in Sources */,
 				452FD570228A971500DB34FB /* Итератор.swift in Sources */,
 				452FD585228A995D00DB34FB /* BehaviorPatterns.swift in Sources */,
+				455D1350228D369800C0DC32 /* Адаптер (Adapter).swift in Sources */,
 				452FD56B228A971500DB34FB /* Стратегия.swift in Sources */,
 				452FD56D228A971500DB34FB /* Состояние.swift in Sources */,
 				452FD555228A962A00DB34FB /* main.swift in Sources */,

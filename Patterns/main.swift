@@ -9,24 +9,36 @@
 import Foundation
 // MARK: - Порождающие паттерны
 print("Порождающие паттерны========================================================================")
+// MARK: фабричный метод
 GeneratingPatterns.testFactoryMethod()
 print("====================")
+// MARK: абстрактная фабрика
 GeneratingPatterns.testAbstractFactory()
 print("====================")
+// MARK: прототип
 GeneratingPatterns.testPrototype()
 print("====================")
+// MARK: строитель
 GeneratingPatterns.testBuilder()
 
 // MARK: - Структурные паттерны
 print("Структурные паттерны========================================================================")
+// MARK: декоратор
 StructuralPatterns.testDecorator()
+print("====================")
+// MARK: адаптер
+StructuralPatterns.testAdapter()
 
 // MARK: - Паттерны поведения
 print("Паттерны поведения==========================================================================")
+// MARK: посредник
 BehaviorPatterns.mediator()
 print("====================")
+// MARK: стратегия
 BehaviorPatterns.strategy()
-print("============================================================================================")
+print("====================")
+// MARK: Цепочка обязанностей
+BehaviorPatterns.chainOfResponsibility()
 
 
 
