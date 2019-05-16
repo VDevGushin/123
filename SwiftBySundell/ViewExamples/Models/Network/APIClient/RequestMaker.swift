@@ -9,48 +9,85 @@
 import Foundation
 import PromiseKit
 
-final class RequestMaker {
+final class HTTPRequest {
+    typealias APIClientCompletion = (Swift.Result<APIResponse<Data>, APIError>) -> Void
+
+    enum Status {
+        case normal, request
+    }
+
+    var status: Status = .normal
+    var id: Int = 0
+
     private let requestBahavior: WebRequestBehavior
     private let endPoint: EndPoint
     private let urlRequest: URLRequest
 
-    init(endPoint: EndPoint, requestBahaviors: [WebRequestBehavior]) throws {
+    private var currentRequest: (Promise<(data: Data, response: URLResponse)>, cancel: () -> Void)?
+
+    init(endPoint: EndPoint, requestBahaviors: [WebRequestBehavior], name: String?) throws {
         self.requestBahavior = CombinedWebRequestBehavior(behaviors: requestBahaviors)
         self.endPoint = endPoint
         self.urlRequest = try self.endPoint.makeURLRequest()
+        self.id = name != nil ? name!.hashValue : ObjectIdentifier(self).hashValue
     }
 
-    func makeRequest() -> Promise<APIResponse<Data>> {
-        self.requestBahavior.beforeSend(with: self.urlRequest)
-        let fetch = URLSession.shared.dataTask(.promise, with: self.urlRequest).map {
-            APIResponse(statusCode: ($0.response as? HTTPURLResponse)?.statusCode ?? 500, body: $0.data)
-        }
-        return fetch
-
+    func cancel() {
+        self.currentRequest?.cancel()
+        self.currentRequest = nil
     }
 
-    func makeRequestWithCancel() -> (Promise<APIResponse<Data>>, cancel: () -> Void) {
-        let fetch = self.makeRequest()
-        var cancelMe = false
-
-        let promise = Promise<APIResponse<Data>> { resolver in
-            fetch.done { result in
-                guard !cancelMe else {
-                    self.requestBahavior.afterFailure(error: PMKError.cancelled, response: nil)
-                    return resolver.reject(PMKError.cancelled)
+    func perform(on queue: DispatchQueue = .global(), completion: @escaping APIClientCompletion) {
+        queue.async {
+            self.status = .request
+            self.currentRequest = self.makeRequest()
+            self.currentRequest?.0.done(on: .main) { [weak self] result in
+                guard let self = self else { return }
+                self.status = .normal
+                guard let httpResponse = result.response as? HTTPURLResponse else {
+                    completion(.failure(.requestFailed)); return
                 }
-                self.requestBahavior.afterSuccess(result: result, response: nil)
-                resolver.fulfill(result)
-            }.catch { error in
-                self.requestBahavior.afterFailure(error: error, response: nil)
-                resolver.reject(error)
+                let apiReponse = APIResponse(statusCode: httpResponse.statusCode, body: result.data)
+                completion(Swift.Result.success(apiReponse))
+            }.catch(on: .main, policy: .allErrors) { [weak self] error in
+                guard let self = self else { return }
+                self.status = .normal
+
+                if (error as? PromiseKit.PMKError)?.isCancelled ?? false {
+                    return completion(.failure(.canceled))
+                }
+                completion(.failure(.requestFailed))
             }
         }
+    }
+}
 
+private extension HTTPRequest {
+    func makeRequest() -> (Promise<(data: Data, response: URLResponse)>, cancel: () -> Void) {
+        var cancelMe = false
+        self.requestBahavior.beforeSend(with: self.urlRequest)
+        let fetch = URLSession.shared.dataTask(.promise, with: self.urlRequest)
+        let promise = Promise<(data: Data, response: URLResponse)> { resolver in
+            after(seconds: 10).done {
+                fetch.done { [weak self] result in
+                    guard let self = self else { return }
+                    guard !cancelMe else {
+                        self.requestBahavior.afterFailure(error: PMKError.cancelled, response: nil)
+                        //return resolver.reject(PMKError.cancelled)
+                        return resolver.reject(PMKError.cancelled)
+                    }
+                    self.requestBahavior.afterSuccess(result: result.data, response: result.response)
+                    resolver.fulfill(result)
+                }.catch { [weak self] error in
+                    guard let self = self else { return }
+                    self.requestBahavior.afterFailure(error: error, response: nil)
+                    resolver.reject(error)
+                }
+            }
+        }
         let cancel = {
             cancelMe = true
         }
-
         return (promise, cancel)
     }
 }

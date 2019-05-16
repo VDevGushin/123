@@ -22,11 +22,9 @@ class PromiseKitViewController: CoordinatorViewController, DownloadImageDataCont
     private lazy var fetchImageContiller = DownloadImageDataController()
 
     @IBAction func onStartAnimation(_ sender: Any) {
-        if self.fetchImageContiller.isResolved {
             self.onDownloadStarted()
             self.imageView.image = nil
             fetchImageContiller.getImage()
-        }
     }
 
     func complete(dataController: DownloadImageDataController, image: UIImage?) {

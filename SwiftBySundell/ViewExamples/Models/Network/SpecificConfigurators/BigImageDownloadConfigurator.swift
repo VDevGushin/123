@@ -9,12 +9,12 @@
 import Foundation
 
 struct BigImageDownloadConfigurator: EndPointConfigurator {
-    enum BigImageDownloadComponents {
+    enum BigImageDownloadComponents: URLPathComponentBuilder {
         case max
         case id(Int)
         case fileName(String)
 
-        var value: String {
+        var description: String {
             switch self {
             case .max:
                 return "max"
@@ -22,14 +22,6 @@ struct BigImageDownloadConfigurator: EndPointConfigurator {
                 return name
             case .id(let id):
                 return "\(id)"
-            }
-        }
-
-        static func createPath(components: BigImageDownloadComponents...) -> String {
-            return components.map { $0.value }.reduce("") {
-                var old = $0
-                old += "/\($1)"
-                return old
             }
         }
     }
@@ -45,7 +37,6 @@ struct BigImageDownloadConfigurator: EndPointConfigurator {
 
     static func getBitImage(id: Int, filename: String) -> BigImageDownloadConfigurator {
         let path = BigImageDownloadComponents.createPath(components: .max, .id(id), .fileName(filename))
-
 
         let headers = [
             HTTPHeader(field: "Accept", value: "application/json"),

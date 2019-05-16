@@ -10,7 +10,6 @@ import Foundation
 
 struct DefaultEndPoint: EndPoint {
     var timeoutInterval: TimeInterval = 30
-
     var configurator: EndPointConfigurator
 
     init(configurator: EndPointConfigurator) {

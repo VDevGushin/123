@@ -8,6 +8,3 @@
 
 import Foundation
 
-protocol RequestDataController {
-    var client: RequestMaker? { get }
-}

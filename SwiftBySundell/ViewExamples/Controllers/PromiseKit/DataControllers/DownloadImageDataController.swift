@@ -13,39 +13,33 @@ protocol DownloadImageDataControllerDelegate: class {
     func complete(dataController: DownloadImageDataController, image: UIImage?)
 }
 
-final class DownloadImageDataController: RequestDataController {
-    let client: RequestMaker?
+final class DownloadImageDataController {
     weak var delegate: DownloadImageDataControllerDelegate?
 
-    var reqest: (promise: Promise<APIResponse<Data>>, cancel: () -> Void)?
+    let request: HTTPRequest
 
     init() {
         let endPoint = DefaultEndPoint(configurator: BigImageDownloadConfigurator.getBitImage(id: 2000, filename: "1*d6l1Gt7j47JyxONXn8moYg.png"))
-        self.client = try? RequestMaker(endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
-    }
-
-    var isResolved: Bool {
-        guard let promise = self.reqest?.promise else {
-            return true
-        }
-        return promise.isResolved
+        self.request = try! HTTPRequest(endPoint: endPoint, requestBahaviors: [LoggerBehavior()], name: nil)
     }
 
     func getImage() {
-        guard let client = self.client else { return }
-        self.reqest = client.makeRequestWithCancel()
-
-        self.reqest?.promise.done(on: .main) { [weak self] response in
+        if request.status == .request {
+            request.cancel()
+            return
+        }
+        request.perform { [weak self] result in
             guard let self = self else { return }
-            self.delegate?.complete(dataController: self, image: UIImage(data: response.body))
-        }.catch(on: .main) { [weak self] error in
-            guard let self = self else { return }
-            self.delegate?.complete(dataController: self, image: nil)
+            switch result {
+            case .success(let data):
+                self.delegate?.complete(dataController: self, image: UIImage(data: data.body))
+            case .failure:
+                self.delegate?.complete(dataController: self, image: nil)
+            }
         }
     }
 
     func cancel() {
-        self.reqest?.cancel()
-        self.reqest = nil
+        self.request.cancel()
     }
 }
