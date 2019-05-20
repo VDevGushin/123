@@ -24,10 +24,12 @@ GeneratingPatterns.testBuilder()
 // MARK: - Структурные паттерны
 print("Структурные паттерны========================================================================")
 // MARK: декоратор
-StructuralPatterns.testDecorator()
+StructuralPatterns.decorator()
 print("====================")
 // MARK: адаптер
-StructuralPatterns.testAdapter()
+StructuralPatterns.adapter()
+// MARK: фасад
+StructuralPatterns.facade()
 
 // MARK: - Паттерны поведения
 print("Паттерны поведения==========================================================================")
@@ -39,6 +41,8 @@ BehaviorPatterns.strategy()
 print("====================")
 // MARK: Цепочка обязанностей
 BehaviorPatterns.chainOfResponsibility()
+// MARK: Состояние
+BehaviorPatterns.state()
 
 
 

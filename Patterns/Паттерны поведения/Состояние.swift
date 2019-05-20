@@ -93,7 +93,7 @@ fileprivate class Water {
 
 /*Вода имеет три состояния, и в каждом методе нам надо смотреть на текущее состояние, чтобы произвести действия. В итоге с трех состояний уже получается нагромождение условных конструкций. Да и самим методов в классе Вода может также быть множество, где также надо будет действовать в зависимости от состояния. Поэтому, чтобы сделать программу более гибкой, в данном случае мы можем применить паттерн Состояние:*/
 
-fileprivate class WaterTemplate {
+class WaterTemplate {
     var state: WState
 
     init(state: WState) {
@@ -109,13 +109,13 @@ fileprivate class WaterTemplate {
     }
 }
 
-fileprivate protocol WState {
+protocol WState {
     func heat(_ water: WaterTemplate)
     func frost(_ water: WaterTemplate)
 }
 
 
-fileprivate struct SolidWaterState: WState {
+struct SolidWaterState: WState {
     func heat(_ water: WaterTemplate) {
         print("Превращаем лед в жидкость");
         water.state = LiquidWaterState()
@@ -126,7 +126,7 @@ fileprivate struct SolidWaterState: WState {
     }
 }
 
-fileprivate struct LiquidWaterState: WState {
+struct LiquidWaterState: WState {
     func heat(_ water: WaterTemplate) {
         print("Превращаем жидкость в пар");
         water.state = GasWaterState()
@@ -138,7 +138,7 @@ fileprivate struct LiquidWaterState: WState {
     }
 }
 
-fileprivate struct GasWaterState: WState {
+struct GasWaterState: WState {
     func heat(_ water: WaterTemplate) {
         print("Повышаем температуру водяного пара");
     }
@@ -149,7 +149,7 @@ fileprivate struct GasWaterState: WState {
     }
 }
 
-fileprivate func testTemplate() {
+func testState() {
     let water = WaterTemplate(state: LiquidWaterState())
     water.heat()
     water.frost()

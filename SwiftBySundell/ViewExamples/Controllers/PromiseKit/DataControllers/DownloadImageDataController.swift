@@ -16,14 +16,36 @@ protocol DownloadImageDataControllerDelegate: class {
 final class DownloadImageDataController {
     weak var delegate: DownloadImageDataControllerDelegate?
 
-    let request: HTTPRequest
+    let request: HTTPRequest?
 
     init() {
         let endPoint = DefaultEndPoint(configurator: BigImageDownloadConfigurator.getBitImage(id: 2000, filename: "1*d6l1Gt7j47JyxONXn8moYg.png"))
-        self.request = try! HTTPRequest(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+
+        self.request = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+
+        let db = DispatchWorkItem {
+            let r1 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+            let r2 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+            let r3 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+            let r4 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+            let r5 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+            let r6 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+            let r7 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
+
+            r1?.perform { _ in }
+            r2?.perform { _ in }
+            r3?.perform { _ in }
+            r4?.perform { _ in }
+            r5?.perform { _ in }
+            r6?.perform { _ in }
+            r7?.perform { _ in }
+        }
+        
+        db.perform()
     }
 
     func getImage() {
+        guard let request = self.request else { return }
         if request.status == .request {
             request.cancel()
             return
@@ -40,6 +62,6 @@ final class DownloadImageDataController {
     }
 
     func cancel() {
-        self.request.cancel()
+        self.request?.cancel()
     }
 }

@@ -34,4 +34,9 @@ struct BehaviorPatterns {
     static func chainOfResponsibility() {
         testChainOfResponsibility()
     }
+    
+    // Состояние
+    static func state() {
+        testState()
+    }
 }

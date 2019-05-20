@@ -10,7 +10,7 @@ import Foundation
 
 struct StructuralPatterns {
     //декоратор
-    static func testDecorator() {
+    static func decorator() {
         let bPizza = BulgerianPizza()
         let cPizza = CheesePizza(pizza: bPizza)
         let tPizza = TomatoPizza(pizza: cPizza)
@@ -23,7 +23,12 @@ struct StructuralPatterns {
     }
 
     //адаптер
-    static func testAdapter() {
+    static func adapter() {
         adapterTravelSimulation()
+    }
+
+    //фасад
+    static func facade() {
+        testFacade()
     }
 }
