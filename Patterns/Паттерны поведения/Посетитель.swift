@@ -108,12 +108,12 @@ fileprivate func main() {
  
  Но еще через некоторое время мы захотим добавить сериализацию в формат json. Однако в будущем могут появиться новые форматы, которые мы также захотим поддерживать. Частое внесение изменение в фиксированную структуру классов в данном случае не будет оптимально. И для решения этой задачи воспользуемся паттерном Посетитель:*/
 
-fileprivate protocol Account {
+protocol Account {
     func toHTML()
 }
 
 // физическое лицо
-fileprivate struct Person: Account, VisitorAccount {
+struct Person: Account, VisitorAccount {
     func accept(visitor: AccountVisitor) {
         visitor.visit(person: self)
     }
@@ -130,7 +130,7 @@ fileprivate struct Person: Account, VisitorAccount {
 }
 
 // юридическое лицо
-fileprivate struct Company: Account, VisitorAccount {
+struct Company: Account, VisitorAccount {
     func accept(visitor: AccountVisitor) {
         visitor.visit(company: self)
     }
@@ -152,13 +152,13 @@ fileprivate struct Company: Account, VisitorAccount {
  
  Но еще через некоторое время мы захотим добавить сериализацию в формат json. Однако в будущем могут появиться новые форматы, которые мы также захотим поддерживать. Частое внесение изменение в фиксированную структуру классов в данном случае не будет оптимально. И для решения этой задачи воспользуемся паттерном Посетитель:*/
 
-fileprivate protocol AccountVisitor {
+protocol AccountVisitor {
     func visit(person: Person)
     func visit(company: Company)
 }
 
 // сериализатор в HTML
-fileprivate class HtmlVisitor: AccountVisitor {
+class HtmlVisitor: AccountVisitor {
     func visit(person: Person) {
         var result = "<table><tr><td>Свойство<td><td>Значение</td></tr>"
         result += "<tr><td>Name<td><td>" + person.FIO + "</td></tr>"
@@ -176,7 +176,7 @@ fileprivate class HtmlVisitor: AccountVisitor {
 }
 
 // сериализатор в XML
-fileprivate class XmlVisitor: AccountVisitor {
+class XmlVisitor: AccountVisitor {
     func visit(person: Person) {
         let result = "<Person><Name>" + person.FIO + "</Name>" +
             "<Number>" + person.accNumber + "</Number><Person>"
@@ -191,12 +191,11 @@ fileprivate class XmlVisitor: AccountVisitor {
     }
 }
 
-fileprivate protocol VisitorAccount {
+protocol VisitorAccount {
     func accept(visitor: AccountVisitor)
 }
 
-
-fileprivate class Bank {
+class Bank {
     var accounts = [VisitorAccount]()
     func add(account: VisitorAccount) {
         self.accounts.append(account)
@@ -209,7 +208,7 @@ fileprivate class Bank {
     }
 }
 
-fileprivate func main2() {
+func testVisitor() {
     let bank = Bank()
     bank.add(account: Person(FIO: "Ivan Alekseev", accNumber: "234124"))
     bank.add(account: Company(name: "Microsoft", number: "1231", regNumber: "32412"))

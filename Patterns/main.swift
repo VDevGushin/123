@@ -43,6 +43,5 @@ print("====================")
 BehaviorPatterns.chainOfResponsibility()
 // MARK: Состояние
 BehaviorPatterns.state()
-
-
-
+// MARK: Посетитель
+BehaviorPatterns.visitor()

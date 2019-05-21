@@ -564,6 +564,7 @@
 		45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45933C7C2282B00D0069639A /* TimerViewController.xib */; };
 		45AC5F2522927B9F00F1A26A /* Фасад (Facade).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC5F2422927B9F00F1A26A /* Фасад (Facade).swift */; };
 		45AC5F2722927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */; };
+		45B5102C2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */; };
 		45B7140822782BE5008B63F2 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140622782BE5008B63F2 /* CardCell.swift */; };
 		45B7140922782BE5008B63F2 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140722782BE5008B63F2 /* CardCell.xib */; };
 		45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140B2278316B008B63F2 /* CardGameController.swift */; };
@@ -1241,6 +1242,7 @@
 		45933C7C2282B00D0069639A /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		45AC5F2422927B9F00F1A26A /* Фасад (Facade).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Фасад (Facade).swift"; sourceTree = "<group>"; };
 		45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift"; sourceTree = "<group>"; };
+		45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift- ARC и управление памятью.swift"; sourceTree = "<group>"; };
 		45B7140622782BE5008B63F2 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		45B7140722782BE5008B63F2 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		45B7140B2278316B008B63F2 /* CardGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameController.swift; sourceTree = "<group>"; };
@@ -1955,6 +1957,7 @@
 				3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */,
 				3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */,
 				45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */,
+				45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */,
 			);
 			path = HABR;
 			sourceTree = "<group>";
@@ -3854,6 +3857,7 @@
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
+				45B5102C2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift in Sources */,
 				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
 				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
