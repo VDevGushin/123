@@ -53,13 +53,13 @@ fileprivate class Originator {
 //Теперь рассмотрим реальный пример: нам надо сохранять состояние игрового персонажа в игре:
 
 // Memento
-fileprivate struct HeroMemento: Hashable, Equatable {
+ struct HeroMemento: Hashable, Equatable {
     let patrons: Int
     let lives: Int
 }
 
 // Originator
-fileprivate class HeroForMemento {
+ class HeroForMemento {
     private var patrons: Int = 10
     private var lives: Int = 5
 
@@ -85,14 +85,14 @@ fileprivate class HeroForMemento {
 }
 
 // Caretaker
-fileprivate class GameHistory {
+class GameHistory {
     var history: Set<HeroMemento>
     init() {
         self.history = Set()
     }
 }
 
-fileprivate func main() {
+func testMemento() {
     let hero = HeroForMemento()
     hero.shoot()// делаем выстрел, осталось 9 патронов
 
@@ -104,5 +104,4 @@ fileprivate func main() {
     hero.restoreState(memento: Array(game.history).last!)
 
     hero.shoot()//делаем выстрел, осталось 8 патронов
-
 }

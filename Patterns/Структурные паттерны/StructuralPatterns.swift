@@ -31,4 +31,9 @@ struct StructuralPatterns {
     static func facade() {
         testFacade()
     }
+
+    //Компоновщик
+    static func composite() {
+        testComposite()
+    }
 }

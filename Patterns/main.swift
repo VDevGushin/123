@@ -30,6 +30,8 @@ print("====================")
 StructuralPatterns.adapter()
 // MARK: фасад
 StructuralPatterns.facade()
+// MARK: Компоновщик
+StructuralPatterns.composite()
 
 // MARK: - Паттерны поведения
 print("Паттерны поведения==========================================================================")
@@ -45,3 +47,5 @@ BehaviorPatterns.chainOfResponsibility()
 BehaviorPatterns.state()
 // MARK: Посетитель
 BehaviorPatterns.visitor()
+// MARK: Хранитель
+BehaviorPatterns.memento()

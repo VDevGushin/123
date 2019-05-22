@@ -44,4 +44,9 @@ struct BehaviorPatterns {
     static func visitor() {
         testVisitor()
     }
+
+    //Хранитель
+    static func memento() {
+        testMemento()
+    }
 }
