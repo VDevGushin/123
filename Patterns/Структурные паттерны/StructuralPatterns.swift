@@ -36,4 +36,9 @@ struct StructuralPatterns {
     static func composite() {
         testComposite()
     }
+
+    //Заместитель
+    static func proxy() {
+        testProxy()
+    }
 }

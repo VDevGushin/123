@@ -552,6 +552,8 @@
 		452FD585228A995D00DB34FB /* BehaviorPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD584228A995D00DB34FB /* BehaviorPatterns.swift */; };
 		452FD587228A998F00DB34FB /* GeneratingPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD586228A998F00DB34FB /* GeneratingPatterns.swift */; };
 		453390272295205600B005D7 /* Компоновщик (Composite).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453390262295205600B005D7 /* Компоновщик (Composite).swift */; };
+		453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */; };
+		453EDD5722966CFE00CD1F9D /* Заместитель (Прокси).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */; };
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
@@ -1230,6 +1232,8 @@
 		452FD584228A995D00DB34FB /* BehaviorPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorPatterns.swift; sourceTree = "<group>"; };
 		452FD586228A998F00DB34FB /* GeneratingPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratingPatterns.swift; sourceTree = "<group>"; };
 		453390262295205600B005D7 /* Компоновщик (Composite).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Компоновщик (Composite).swift"; sourceTree = "<group>"; };
+		453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storing Codable structs on the disk.swift"; sourceTree = "<group>"; };
+		453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Заместитель (Прокси).swift"; sourceTree = "<group>"; };
 		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
@@ -1960,6 +1964,7 @@
 				3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */,
 				45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */,
 				45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */,
+				453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */,
 			);
 			path = HABR;
 			sourceTree = "<group>";
@@ -3128,6 +3133,7 @@
 				455D134F228D369800C0DC32 /* Адаптер (Adapter).swift */,
 				45AC5F2422927B9F00F1A26A /* Фасад (Facade).swift */,
 				453390262295205600B005D7 /* Компоновщик (Composite).swift */,
+				453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */,
 				452FD582228A993000DB34FB /* StructuralPatterns.swift */,
 			);
 			path = "Структурные паттерны";
@@ -3866,6 +3872,7 @@
 				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
 				3CED730922251C580058A1B5 /* DIService.swift in Sources */,
 				3C8677A72230D8F300D73419 /* CodeEncapsulation.swift in Sources */,
+				453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */,
 				3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
 				3C7EB0E6223F87EB000BF3A5 /* Освоение MVVM на iOS.swift in Sources */,
@@ -4236,6 +4243,7 @@
 				452FD585228A995D00DB34FB /* BehaviorPatterns.swift in Sources */,
 				455D1350228D369800C0DC32 /* Адаптер (Adapter).swift in Sources */,
 				452FD56B228A971500DB34FB /* Стратегия.swift in Sources */,
+				453EDD5722966CFE00CD1F9D /* Заместитель (Прокси).swift in Sources */,
 				452FD56D228A971500DB34FB /* Состояние.swift in Sources */,
 				452FD555228A962A00DB34FB /* main.swift in Sources */,
 				452FD57D228A972200DB34FB /* Строитель.swift in Sources */,
