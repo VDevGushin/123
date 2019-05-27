@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="PizzaHalfTitleHeader" customModule="SwiftBySundell" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6E-7M-b5q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="48.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB1-PO-JWh">
+                    <rect key="frame" x="0.0" y="48.5" width="320" height="48.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="s6E-7M-b5q" secondAttribute="trailing" id="0Tt-i7-dMx"/>
+                <constraint firstItem="s6E-7M-b5q" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="CdB-P7-iwx"/>
+                <constraint firstAttribute="trailing" secondItem="xB1-PO-JWh" secondAttribute="trailing" id="JmK-Bp-ex6"/>
+                <constraint firstItem="xB1-PO-JWh" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="P0n-TQ-U5o"/>
+                <constraint firstItem="s6E-7M-b5q" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="PcJ-aY-FKu"/>
+                <constraint firstItem="s6E-7M-b5q" firstAttribute="height" secondItem="U6b-Vx-4bR" secondAttribute="height" multiplier="0.5" id="Vkq-dr-IJj"/>
+                <constraint firstAttribute="bottom" secondItem="xB1-PO-JWh" secondAttribute="bottom" id="Zkd-F4-LHU"/>
+                <constraint firstItem="xB1-PO-JWh" firstAttribute="height" secondItem="U6b-Vx-4bR" secondAttribute="height" multiplier="0.5" id="jf2-8o-VJr"/>
+            </constraints>
+            <connections>
+                <outlet property="subtitleLabel" destination="xB1-PO-JWh" id="AKt-E9-vwq"/>
+                <outlet property="titleLabel" destination="s6E-7M-b5q" id="lB4-lQ-ZSd"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-4.3526785714285712"/>
+        </collectionReusableView>
+    </objects>
+</document>

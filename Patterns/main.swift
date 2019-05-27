@@ -34,6 +34,8 @@ StructuralPatterns.facade()
 StructuralPatterns.composite()
 // MARK: Заместитель
 StructuralPatterns.proxy()
+// MARK: Мост
+StructuralPatterns.bridge()
 // MARK: - Паттерны поведения
 print("Паттерны поведения==========================================================================")
 // MARK: посредник

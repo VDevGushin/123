@@ -111,6 +111,10 @@ class RepositoryAssembly: Assembly {
         container.register(TimerViewController.self) { _, navigator, title in
             TimerViewController(navigator: navigator, title: title, nibName: String(describing: TimerViewController.self), bundle: nil)
         }.inObjectScope(.transient)
+
+        container.register(DODOPizzaViewController.self) { _, navigator, title in
+            DODOPizzaViewController(navigator: navigator, title: title, nibName: String(describing: DODOPizzaViewController.self), bundle: nil)
+        }.inObjectScope(.transient)
     }
 }
 

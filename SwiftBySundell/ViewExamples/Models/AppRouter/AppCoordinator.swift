@@ -28,6 +28,7 @@ final class AppCoordinator {
         case expandingCellsController
         case stickyHeader
         case tinder
+        case dodo
 
         var title: String {
             switch self {
@@ -61,6 +62,8 @@ final class AppCoordinator {
                 return "tinder"
             case .cardGame:
                 return "Card game"
+            case .dodo:
+                return "dodo"
             }
         }
 
@@ -106,6 +109,8 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(CardGameController.self, arguments: self, destination.title)!
         case .timer:
             return DependencyProvider.shared.container.resolve(TimerViewController.self, arguments: self, destination.title)!
+        case .dodo:
+            return DependencyProvider.shared.container.resolve(DODOPizzaViewController.self, arguments: self, destination.title)!
         }
     }
 

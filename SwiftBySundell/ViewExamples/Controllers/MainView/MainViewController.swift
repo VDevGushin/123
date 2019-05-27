@@ -22,6 +22,7 @@ final class MainViewController: CoordinatorViewController {
             AppCoordinator.Destination.tinder,
             AppCoordinator.Destination.cardGame,
             AppCoordinator.Destination.timer,
+            AppCoordinator.Destination.dodo,
             //AppCoordinator.Destination.lottieView,
             AppCoordinator.Destination.promiseKit,
             AppCoordinator.Destination.swinject,

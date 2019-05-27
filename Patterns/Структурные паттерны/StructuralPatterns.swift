@@ -41,4 +41,9 @@ struct StructuralPatterns {
     static func proxy() {
         testProxy()
     }
+
+    //Мост
+    static func bridge() {
+        testBridge()
+    }
 }
