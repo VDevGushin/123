@@ -17,11 +17,11 @@ final class PizzaHalfSelectorLayout: TableLayout {
     var currentPizzaIndex: CGFloat = 0
     
     var currentPizzaIndexInt: Int {
-        return Int(currentPizzaIndex)
+        return Int(self.currentPizzaIndex)
     }
     
     private func updateCurrentPizzaIndex() {
-        currentPizzaIndex = pizzaIndex(offset: collectionView!.contentOffset)
+        self.currentPizzaIndex = pizzaIndex(offset: collectionView!.contentOffset)
     }
     
     // MARK: - Private

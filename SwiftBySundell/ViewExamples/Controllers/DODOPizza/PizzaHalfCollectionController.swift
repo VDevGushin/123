@@ -13,7 +13,7 @@ class PizzaHalfCollectionController: UIViewController {
 
     private var side: PizzaHalfOrientation
     var halves: [PizzaHalvesViewModel] = []
-    
+
     private var mainPizzaSize: CGFloat {
         let isBigDevice = UIScreen.main.bounds.width > 320
         if isBigDevice {
@@ -34,10 +34,11 @@ class PizzaHalfCollectionController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if let layout = collectionView?.collectionViewLayout as? PizzaHalfSelectorLayout {
             layout.setupSizeAndInsets(pizzaSize: mainPizzaSize)
         }
+
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.registerCellFromNib(ofType: PizzaHalfCell.self)

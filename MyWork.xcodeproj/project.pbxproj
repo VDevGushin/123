@@ -579,6 +579,10 @@
 		45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45933C7C2282B00D0069639A /* TimerViewController.xib */; };
 		45AC5F2522927B9F00F1A26A /* Фасад (Facade).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC5F2422927B9F00F1A26A /* Фасад (Facade).swift */; };
 		45AC5F2722927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */; };
+		45AD2C76229E6BB2004389A2 /* TestTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */; };
+		45AD2C79229E7F32004389A2 /* Множественное наследование в Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C78229E7F32004389A2 /* Множественное наследование в Swift.swift */; };
+		45AD2C7B229E89B7004389A2 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C7A229E89B7004389A2 /* A.swift */; };
+		45AD2C7D229E89F1004389A2 /* A+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C7C229E89F1004389A2 /* A+Strings.swift */; };
 		45B5102C2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */; };
 		45B7140822782BE5008B63F2 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140622782BE5008B63F2 /* CardCell.swift */; };
 		45B7140922782BE5008B63F2 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140722782BE5008B63F2 /* CardCell.xib */; };
@@ -1280,6 +1284,10 @@
 		45933C7C2282B00D0069639A /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		45AC5F2422927B9F00F1A26A /* Фасад (Facade).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Фасад (Facade).swift"; sourceTree = "<group>"; };
 		45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift"; sourceTree = "<group>"; };
+		45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableLayout.swift; sourceTree = "<group>"; };
+		45AD2C78229E7F32004389A2 /* Множественное наследование в Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Множественное наследование в Swift.swift"; sourceTree = "<group>"; };
+		45AD2C7A229E89B7004389A2 /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
+		45AD2C7C229E89F1004389A2 /* A+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A+Strings.swift"; sourceTree = "<group>"; };
 		45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift- ARC и управление памятью.swift"; sourceTree = "<group>"; };
 		45B7140622782BE5008B63F2 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		45B7140722782BE5008B63F2 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
@@ -2053,6 +2061,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				45AD2C77229E7F1E004389A2 /* Vadim Bulavin */,
 				4525FE582266E8CB00E2EC83 /* SundellResources */,
 				3C452755222CF745004E5E19 /* HABR */,
 				3C2C9C1D221BD7E2004A2605 /* ViewExamples */,
@@ -3138,6 +3147,7 @@
 				45BFA27F229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift */,
 				45BFA282229D1A47007BE474 /* TableLayout.swift */,
 				45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */,
+				45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -3170,6 +3180,8 @@
 				452FD579228A972200DB34FB /* Структурные паттерны */,
 				452FD561228A971500DB34FB /* Паттерны поведения */,
 				452FD554228A962A00DB34FB /* main.swift */,
+				45AD2C7A229E89B7004389A2 /* A.swift */,
+				45AD2C7C229E89F1004389A2 /* A+Strings.swift */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -3312,6 +3324,14 @@
 				45933C7C2282B00D0069639A /* TimerViewController.xib */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		45AD2C77229E7F1E004389A2 /* Vadim Bulavin */ = {
+			isa = PBXGroup;
+			children = (
+				45AD2C78229E7F32004389A2 /* Множественное наследование в Swift.swift */,
+			);
+			path = "Vadim Bulavin";
 			sourceTree = "<group>";
 		};
 		45B7140A22783124008B63F2 /* Cell */ = {
@@ -4079,6 +4099,7 @@
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
 				3CBDF784225336810096528A /* APIClient.swift in Sources */,
 				3CE80B37225F0AFE00CA9C02 /* UIColor+Ex.swift in Sources */,
+				45AD2C76229E6BB2004389A2 /* TestTableLayout.swift in Sources */,
 				3C8677AA2230DEB200D73419 /* Стили для UI элементов.swift in Sources */,
 				3CE80B39225F0B1300CA9C02 /* UIImage+Ex.swift in Sources */,
 				3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */,
@@ -4105,6 +4126,7 @@
 				456FBF9E2278155C005AC721 /* Card.swift in Sources */,
 				4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */,
 				45BFA287229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift in Sources */,
+				45AD2C79229E7F32004389A2 /* Множественное наследование в Swift.swift in Sources */,
 				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,
@@ -4365,6 +4387,7 @@
 				452FD571228A971500DB34FB /* Шаблонный метод.swift in Sources */,
 				4545967C229BC9E400682917 /* Мост (Bridge).swift in Sources */,
 				453390272295205600B005D7 /* Компоновщик (Composite).swift in Sources */,
+				45AD2C7B229E89B7004389A2 /* A.swift in Sources */,
 				452FD587228A998F00DB34FB /* GeneratingPatterns.swift in Sources */,
 				452FD570228A971500DB34FB /* Итератор.swift in Sources */,
 				452FD585228A995D00DB34FB /* BehaviorPatterns.swift in Sources */,
@@ -4384,6 +4407,7 @@
 				452FD57E228A972200DB34FB /* Прототип.swift in Sources */,
 				452FD56E228A971500DB34FB /* Посетитель.swift in Sources */,
 				45AC5F2522927B9F00F1A26A /* Фасад (Facade).swift in Sources */,
+				45AD2C7D229E89F1004389A2 /* A+Strings.swift in Sources */,
 				452FD56A228A971500DB34FB /* Посредник (Mediator).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
