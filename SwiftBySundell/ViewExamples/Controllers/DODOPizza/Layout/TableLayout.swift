@@ -1,52 +1,56 @@
 //
-//  TableLayout.swift
-//  SwiftBySundell
+//  SimpleCellLayout.swift
+//  DodoPizza
 //
-//  Created by Vlad Gushchin on 27/05/2019.
-//  Copyright © 2019 Vladislav Gushin. All rights reserved.
+//  Created by Mikhail Rubanov on 14/11/2018.
+//  Copyright © 2018 Dodo Pizza. All rights reserved.
 //
 
 import UIKit
 
 class TableLayout: UICollectionViewLayout {
-    var itemSize: CGSize = .zero {
-        didSet { invalidateLayout() }
+    var orientation: PizzaHalfOrientation = .left
+    
+    var itemSize: CGSize = .zero  {
+        didSet {
+            invalidateLayout()
+        }
     }
-
+    
     private let section = 0
-    private var cache = TableLayoutCache.zero
-
+    var cache = TableLayoutCache.zero
+    
     override var collectionViewContentSize: CGSize {
-        return self.cache.contentSize
+        return cache.contentSize
     }
-
-    // prepare вызывает расчёт всех фреймов.
+    
     override func prepare() {
         super.prepare()
-
-        let numberOfItems = collectionView!.numberOfItems(inSection: self.section)
-        self.cache = TableLayoutCache(itemSize: itemSize, collectionWidth: collectionView!.bounds.width)
-        self.cache.recalculateDefaultFrames(numberOfItems: numberOfItems)
+        
+        let numberOfItems = collectionView!.numberOfItems(inSection: section)
+            
+        cache = TableLayoutCache(itemSize: itemSize,
+                                 collectionWidth: collectionView!.bounds.width)
+        cache.recalculateDefaultFrames(numberOfItems: numberOfItems)
     }
-
-    //layoutAttributesForElements(in:) отфильтрует фреймы.
-    //Если фрейм пересекается с видимой областью, то значит ячейку нужно отобразить: рассчитать все атрибуты и вернуть её в массиве видимых ячеек.
+    
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let indexes = cache.visibleRows(in: rect)
-
-        let cells: [UICollectionViewLayoutAttributes]? = indexes.compactMap { row in
-            let path = IndexPath(row: row, section: self.section)
+        
+        let cells = indexes.map { (row) -> UICollectionViewLayoutAttributes? in
+            let path = IndexPath(row: row, section: section)
             let attributes = layoutAttributesForItem(at: path)
             return attributes
-        }
-
+        }.compactMap { $0 }
+        
         return cells
     }
-
-    //рассчитывает атрибуты для одной ячейки.
+    
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
+        
         let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
-        attributes.frame = cache.defaultCellFrame(atRow: indexPath.row)
+            attributes.frame = cache.defaultCellFrame(atRow: indexPath.row)
+        
         return attributes
     }
 }

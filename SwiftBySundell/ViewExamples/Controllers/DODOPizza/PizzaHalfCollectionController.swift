@@ -34,7 +34,10 @@ class PizzaHalfCollectionController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let layout = collectionView?.collectionViewLayout as? PizzaHalfSelectorLayout {
+            layout.setupSizeAndInsets(pizzaSize: mainPizzaSize)
+        }
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.registerCellFromNib(ofType: PizzaHalfCell.self)

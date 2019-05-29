@@ -566,8 +566,6 @@
 		453EDD5722966CFE00CD1F9D /* Заместитель (Прокси).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */; };
 		4545967C229BC9E400682917 /* Мост (Bridge).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545967B229BC9E400682917 /* Мост (Bridge).swift */; };
 		4545967F229BD08500682917 /* Порождающие паттерны.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545967E229BD08500682917 /* Порождающие паттерны.swift */; };
-		45459682229BEDA400682917 /* TableLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45459681229BEDA400682917 /* TableLayoutCache.swift */; };
-		45459684229BEE8900682917 /* TableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45459683229BEE8900682917 /* TableLayout.swift */; };
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
@@ -593,6 +591,14 @@
 		45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA84226EE36E004A830A /* SwipeCardView.swift */; };
 		45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */; };
 		45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */; };
+		45BFA285229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA27F229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift */; };
+		45BFA286229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA280229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift */; };
+		45BFA287229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA281229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift */; };
+		45BFA288229D1A47007BE474 /* TableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA282229D1A47007BE474 /* TableLayout.swift */; };
+		45BFA289229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA283229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift */; };
+		45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */; };
+		45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */; };
+		45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */; };
 		45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D02282B16D0047940C /* TimerTask.swift */; };
 		45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */; };
@@ -1261,8 +1267,6 @@
 		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545967B229BC9E400682917 /* Мост (Bridge).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Мост (Bridge).swift"; sourceTree = "<group>"; };
 		4545967E229BD08500682917 /* Порождающие паттерны.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Порождающие паттерны.swift"; sourceTree = "<group>"; };
-		45459681229BEDA400682917 /* TableLayoutCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayoutCache.swift; sourceTree = "<group>"; };
-		45459683229BEE8900682917 /* TableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayout.swift; sourceTree = "<group>"; };
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
@@ -1288,6 +1292,14 @@
 		45BCCA84226EE36E004A830A /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
 		45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using @autoclosure when designing.swift"; sourceTree = "<group>"; };
 		45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asynchronous completion handlers with Result type.swift"; sourceTree = "<group>"; };
+		45BFA27F229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PizzaHalfSelectorLayout+Scale.swift"; sourceTree = "<group>"; };
+		45BFA280229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PizzaHalfSelectorLayout+ContentOffset.swift"; sourceTree = "<group>"; };
+		45BFA281229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PizzaHalfSelectorLayout+Headers.swift"; sourceTree = "<group>"; };
+		45BFA282229D1A47007BE474 /* TableLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableLayout.swift; sourceTree = "<group>"; };
+		45BFA283229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PizzaHalfSelectorLayout+Alignment.swift"; sourceTree = "<group>"; };
+		45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaHalfSelectorLayout.swift; sourceTree = "<group>"; };
+		45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayoutCache.swift; sourceTree = "<group>"; };
+		45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ex.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift(Наблюдатели за свойствами).swift"; sourceTree = "<group>"; };
 		45E4D1D02282B16D0047940C /* TimerTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTask.swift; sourceTree = "<group>"; };
 		45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
@@ -3119,7 +3131,13 @@
 		4527E727229BF80C00C41CB6 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				45459683229BEE8900682917 /* TableLayout.swift */,
+				45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */,
+				45BFA283229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift */,
+				45BFA280229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift */,
+				45BFA281229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift */,
+				45BFA27F229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift */,
+				45BFA282229D1A47007BE474 /* TableLayout.swift */,
+				45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -3127,7 +3145,6 @@
 		4527E728229BF81800C41CB6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				45459681229BEDA400682917 /* TableLayoutCache.swift */,
 				4527E725229BF4B300C41CB6 /* PizzaHalfOrientation.swift */,
 				4527E729229BF87500C41CB6 /* PizzaHalvesViewModel.swift */,
 			);
@@ -3210,6 +3227,7 @@
 		45459680229BED9600682917 /* DODOPizza */ = {
 			isa = PBXGroup;
 			children = (
+				45BFA28D229D1A88007BE474 /* Extensions */,
 				4527E72B229BFD4900C41CB6 /* Views */,
 				4527E728229BF81800C41CB6 /* Models */,
 				4527E727229BF80C00C41CB6 /* Layout */,
@@ -3331,6 +3349,14 @@
 				45BCCA84226EE36E004A830A /* SwipeCardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		45BFA28D229D1A88007BE474 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		45E4D1CF2282B1600047940C /* Models */ = {
@@ -3925,6 +3951,7 @@
 				3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */,
 				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
+				45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */,
 				3CE138E722279EC100E0B7CD /* Observers1.swift in Sources */,
 				3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */,
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
@@ -3940,6 +3967,7 @@
 				3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */,
 				3C51A748223B6F2400D14490 /* EndPointConfigurator.swift in Sources */,
 				3C6F2D54224F672F000A194B /* TabledContentCollectionViewDelegate.swift in Sources */,
+				45BFA286229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift in Sources */,
 				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
 				4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */,
 				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
@@ -3951,9 +3979,11 @@
 				3CC86607225F022700969E2F /* Inclusive enums with OptionSet.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
+				45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */,
 				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
 				45B5102C2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift in Sources */,
 				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
+				45BFA288229D1A47007BE474 /* TableLayout.swift in Sources */,
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
 				4527E723229BF47800C41CB6 /* PizzaHalfCollectionController.swift in Sources */,
 				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
@@ -3961,6 +3991,7 @@
 				3C8677A72230D8F300D73419 /* CodeEncapsulation.swift in Sources */,
 				453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */,
 				3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */,
+				45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
 				3C7EB0E6223F87EB000BF3A5 /* Освоение MVVM на iOS.swift in Sources */,
 				3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */,
@@ -3978,7 +4009,6 @@
 				3CADC677221536C800E28084 /* Operation.swift in Sources */,
 				3C986989222FAE650065660B /* SleepViewController.swift in Sources */,
 				3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */,
-				45459684229BEE8900682917 /* TableLayout.swift in Sources */,
 				3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */,
 				3C80FF382248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift in Sources */,
 				3C6F2D45224F617B000A194B /* CoordinatorCollectionViewController.swift in Sources */,
@@ -4004,13 +4034,13 @@
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
 				452FD54D228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
-				45459682229BEDA400682917 /* TableLayoutCache.swift in Sources */,
 				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
 				45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */,
 				4527E730229BFDD700C41CB6 /* PizzaHalfCell.swift in Sources */,
 				3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */,
 				4527E72A229BF87500C41CB6 /* PizzaHalvesViewModel.swift in Sources */,
 				3C3076CB225B15610006D5FC /* String literals in Swift.swift in Sources */,
+				45BFA285229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift in Sources */,
 				45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */,
 				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
 				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
@@ -4054,6 +4084,7 @@
 				3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */,
 				3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */,
 				3CC308622223D98400E10683 /* Misc.swift in Sources */,
+				45BFA289229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift in Sources */,
 				3CE80B32225F0A9C00CA9C02 /* Inspiration.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
@@ -4073,6 +4104,7 @@
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				456FBF9E2278155C005AC721 /* Card.swift in Sources */,
 				4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */,
+				45BFA287229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift in Sources */,
 				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,
