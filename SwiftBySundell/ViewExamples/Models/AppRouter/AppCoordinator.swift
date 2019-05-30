@@ -29,7 +29,7 @@ final class AppCoordinator {
         case stickyHeader
         case tinder
         case dodo
-
+        case scroll
         var title: String {
             switch self {
             case .timer:
@@ -64,6 +64,8 @@ final class AppCoordinator {
                 return "Card game"
             case .dodo:
                 return "dodo"
+            case .scroll:
+                return "scroll"
             }
         }
 
@@ -111,6 +113,8 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(TimerViewController.self, arguments: self, destination.title)!
         case .dodo:
             return DependencyProvider.shared.container.resolve(DODOPizzaViewController.self, arguments: self, destination.title)!
+        case .scroll:
+            return DependencyProvider.shared.container.resolve(ScrollViewController.self, arguments: self, destination.title)!
         }
     }
 

@@ -115,6 +115,10 @@ class RepositoryAssembly: Assembly {
         container.register(DODOPizzaViewController.self) { _, navigator, title in
             DODOPizzaViewController(navigator: navigator, title: title, nibName: String(describing: DODOPizzaViewController.self), bundle: nil)
         }.inObjectScope(.transient)
+        
+        container.register(ScrollViewController.self) { _, navigator, title in
+            ScrollViewController(navigator: navigator, title: title, nibName: String(describing: ScrollViewController.self), bundle: nil)
+            }.inObjectScope(.transient)
     }
 }
 
