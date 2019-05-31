@@ -196,7 +196,6 @@
 		3C51A748223B6F2400D14490 /* EndPointConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A747223B6F2400D14490 /* EndPointConfigurator.swift */; };
 		3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A74B223B722A00D14490 /* DefaultEndPoint.swift */; };
 		3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A74E223B758800D14490 /* BigImageDownloadConfigurator.swift */; };
-		3C51A752223B7F0300D14490 /* RequestDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A751223B7F0300D14490 /* RequestDataController.swift */; };
 		3C52D3582189A4140027DA4C /* ChatStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D3572189A4140027DA4C /* ChatStyle.swift */; };
 		3C52D35B2189AB470027DA4C /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */; };
 		3C52D35C2189AB470027DA4C /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */; };
@@ -573,7 +572,6 @@
 		455D1353228D410700C0DC32 /* URLPathComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */; };
 		456FBF9E2278155C005AC721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9D2278155C005AC721 /* Card.swift */; };
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
-		4583D7C4228BEE1E00630EB4 /* RequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4583D7C3228BEE1E00630EB4 /* RequestMaker.swift */; };
 		458CD1F02289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */; };
 		4590D21F229FDDF300A82D2B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D21E229FDDF300A82D2B /* BannerView.swift */; };
 		4590D222229FE11600A82D2B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D220229FE11600A82D2B /* ScrollViewController.swift */; };
@@ -614,6 +612,8 @@
 		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
 		45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76A227041F000E38983 /* TinderViewController.swift */; };
 		45F5E76D227041F000E38983 /* TinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F5E76B227041F000E38983 /* TinderViewController.xib */; };
+		45F97C9E22A104B700FC076A /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F97C9D22A104B700FC076A /* HTTPRequest.swift */; };
+		45F97CA022A104E600FC076A /* HTTPRequestPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F97C9F22A104E600FC076A /* HTTPRequestPool.swift */; };
 		64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */; };
 		7D17D1A5DF282C3F768E4102 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3925EA221BDD06003CD1EE /* Pods_MyWork.framework */; };
 		8C3416F734325F5985830330 /* Pods_SwiftBySundell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */; };
@@ -880,7 +880,6 @@
 		3C51A747223B6F2400D14490 /* EndPointConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointConfigurator.swift; sourceTree = "<group>"; };
 		3C51A74B223B722A00D14490 /* DefaultEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultEndPoint.swift; sourceTree = "<group>"; };
 		3C51A74E223B758800D14490 /* BigImageDownloadConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageDownloadConfigurator.swift; sourceTree = "<group>"; };
-		3C51A751223B7F0300D14490 /* RequestDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDataController.swift; sourceTree = "<group>"; };
 		3C52D3572189A4140027DA4C /* ChatStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStyle.swift; sourceTree = "<group>"; };
 		3C52D3592189AB470027DA4C /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		3C52D35A2189AB470027DA4C /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
@@ -1280,7 +1279,6 @@
 		455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPathComponentBuilder.swift; sourceTree = "<group>"; };
 		456FBF9D2278155C005AC721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
-		4583D7C3228BEE1E00630EB4 /* RequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMaker.swift; sourceTree = "<group>"; };
 		458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Structuring model data in Swift(Структурирование данных).swift"; sourceTree = "<group>"; };
 		4590D21E229FDDF300A82D2B /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		4590D220229FE11600A82D2B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -1321,6 +1319,8 @@
 		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
 		45F5E76A227041F000E38983 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		45F5E76B227041F000E38983 /* TinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinderViewController.xib; sourceTree = "<group>"; };
+		45F97C9D22A104B700FC076A /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		45F97C9F22A104E600FC076A /* HTTPRequestPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestPool.swift; sourceTree = "<group>"; };
 		52E9ACB5FCDB45B1B02FAD02 /* Pods-SwiftBySundell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.debug.xcconfig"; sourceTree = "<group>"; };
 		D63A3AC3C3088AF515DBB31C /* Pods-MyWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.debug.xcconfig"; sourceTree = "<group>"; };
 		E74493E2C698AD9E6A939D06 /* Pods-SwiftBySundell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.release.xcconfig"; sourceTree = "<group>"; };
@@ -2107,10 +2107,10 @@
 			isa = PBXGroup;
 			children = (
 				3C49AFC72251F5CF00E740A2 /* Network2(Не юзаем) */,
+				3C51A749223B71EE00D14490 /* EndPointConfigurators */,
+				45F97C9C22A1043F00FC076A /* EndPoint */,
 				455D1351228D40B800C0DC32 /* Common */,
 				4583D7C5228BFB2400630EB4 /* APIClient */,
-				3C51A750223B7EEE00D14490 /* RequestDataController */,
-				3C51A749223B71EE00D14490 /* SpecificConfigurators */,
 				3C51A73E223B6C4B00D14490 /* Behaviors */,
 			);
 			path = Network;
@@ -2126,20 +2126,13 @@
 			path = Behaviors;
 			sourceTree = "<group>";
 		};
-		3C51A749223B71EE00D14490 /* SpecificConfigurators */ = {
+		3C51A749223B71EE00D14490 /* EndPointConfigurators */ = {
 			isa = PBXGroup;
 			children = (
+				3C51A747223B6F2400D14490 /* EndPointConfigurator.swift */,
 				3C51A74E223B758800D14490 /* BigImageDownloadConfigurator.swift */,
 			);
-			path = SpecificConfigurators;
-			sourceTree = "<group>";
-		};
-		3C51A750223B7EEE00D14490 /* RequestDataController */ = {
-			isa = PBXGroup;
-			children = (
-				3C51A751223B7F0300D14490 /* RequestDataController.swift */,
-			);
-			path = RequestDataController;
+			path = EndPointConfigurators;
 			sourceTree = "<group>";
 		};
 		3C55FDFF213FC4AC00ABA745 /* Habr */ = {
@@ -3278,13 +3271,10 @@
 			isa = PBXGroup;
 			children = (
 				3CBDF77F225335760096528A /* APIResponse.swift */,
-				3C51A747223B6F2400D14490 /* EndPointConfigurator.swift */,
+				455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */,
+				3CBDF781225335A40096528A /* APIError.swift */,
 				3CBDF779225334A20096528A /* HTTPMethod.swift */,
 				3CBDF77B225334BD0096528A /* HTTPHeader.swift */,
-				3C51A745223B6EDA00D14490 /* EndPoint.swift */,
-				3C51A74B223B722A00D14490 /* DefaultEndPoint.swift */,
-				3CBDF781225335A40096528A /* APIError.swift */,
-				455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -3314,7 +3304,8 @@
 		4583D7C5228BFB2400630EB4 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
-				4583D7C3228BEE1E00630EB4 /* RequestMaker.swift */,
+				45F97C9D22A104B700FC076A /* HTTPRequest.swift */,
+				45F97C9F22A104E600FC076A /* HTTPRequestPool.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -3418,6 +3409,15 @@
 				45E4D1DC2282C85F0047940C /* success-animation.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		45F97C9C22A1043F00FC076A /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				3C51A745223B6EDA00D14490 /* EndPoint.swift */,
+				3C51A74B223B722A00D14490 /* DefaultEndPoint.swift */,
+			);
+			path = EndPoint;
 			sourceTree = "<group>";
 		};
 		CE930C0AC3A3715B8BA78B66 /* Pods */ = {
@@ -4101,13 +4101,13 @@
 				3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */,
 				45B7141222783869008B63F2 /* GameApiClient.swift in Sources */,
 				3CBDF780225335760096528A /* APIResponse.swift in Sources */,
-				3C51A752223B7F0300D14490 /* RequestDataController.swift in Sources */,
 				3C51A746223B6EDA00D14490 /* EndPoint.swift in Sources */,
 				3CEA09FE2236389300C03FF9 /* CollectionViewCell.swift in Sources */,
 				3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */,
 				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */,
+				45F97C9E22A104B700FC076A /* HTTPRequest.swift in Sources */,
 				3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */,
 				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
@@ -4138,6 +4138,7 @@
 				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,
 				3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */,
 				4527E726229BF4B300C41CB6 /* PizzaHalfOrientation.swift in Sources */,
+				45F97CA022A104E600FC076A /* HTTPRequestPool.swift in Sources */,
 				3CD6DC332227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift in Sources */,
 				45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
@@ -4158,7 +4159,6 @@
 				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
 				3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */,
 				45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */,
-				4583D7C4228BEE1E00630EB4 /* RequestMaker.swift in Sources */,
 				3CBDF782225335A40096528A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

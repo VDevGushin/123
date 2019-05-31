@@ -62,7 +62,7 @@ class RepositoryAssembly: Assembly {
 
         container.register(PromiseKitViewController.self) { _, navigator, title in
             PromiseKitViewController(navigator: navigator, title: title, nibName: String(describing: PromiseKitViewController.self), bundle: nil)
-        }.inObjectScope(.container)
+        }.inObjectScope(.transient)
 
         container.register(SwinjectViewController.self) { r, navigator, title in
             SwinjectViewController(logger: r.resolve(Logger.self)!, navigator: navigator, title: title, nibName: String(describing: SwinjectViewController.self), bundle: nil)

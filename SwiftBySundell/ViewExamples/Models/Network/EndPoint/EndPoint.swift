@@ -12,6 +12,7 @@ protocol EndPoint {
     var timeoutInterval: TimeInterval { get set }
     var configurator: EndPointConfigurator { get }
     func makeURLRequest() throws -> URLRequest
+    init(configurator: EndPointConfigurator)
 }
 
 extension EndPoint {

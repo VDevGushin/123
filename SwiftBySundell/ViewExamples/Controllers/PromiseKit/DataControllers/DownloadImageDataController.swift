@@ -15,15 +15,16 @@ protocol DownloadImageDataControllerDelegate: class {
 
 final class DownloadImageDataController {
     weak var delegate: DownloadImageDataControllerDelegate?
-
+    
     let request: HTTPRequest?
-
+    var db : DispatchWorkItem?
+    
     init() {
         let endPoint = DefaultEndPoint(configurator: BigImageDownloadConfigurator.getBitImage(id: 2000, filename: "1*d6l1Gt7j47JyxONXn8moYg.png"))
 
         self.request = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
 
-        let db = DispatchWorkItem {
+        self.db = DispatchWorkItem {
             let r1 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
             let r2 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
             let r3 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])
@@ -41,7 +42,7 @@ final class DownloadImageDataController {
             r7?.perform { _ in }
         }
         
-        db.perform()
+        db?.perform()
     }
 
     func getImage() {
@@ -62,6 +63,7 @@ final class DownloadImageDataController {
     }
 
     func cancel() {
-        self.request?.cancel()
+         HTTPRequestPool.shared.cancelAll()
+        //self.request?.cancel()
     }
 }

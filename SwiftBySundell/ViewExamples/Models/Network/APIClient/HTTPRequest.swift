@@ -1,94 +1,36 @@
 //
-//  RequestMaker.swift
+//  HTTPRequest.swift
 //  SwiftBySundell
 //
-//  Created by Vlad Gushchin on 15/05/2019.
+//  Created by Vlad Gushchin on 31/05/2019.
 //  Copyright © 2019 Vladislav Gushin. All rights reserved.
 //
 
 import Foundation
 import PromiseKit
 
-final class HTTPRequestPool: HTTPRequestDelegate {
-    private let queue = DispatchQueue(label: "HTTPRequestPool", attributes: .concurrent)
-    static let shared = HTTPRequestPool()
-    var requests: [Int: HTTPRequest]
-
-    private init() {
-        self.requests = [:]
-    }
-
-    var count: Int {
-        return self.requests.count
-    }
-
-    func make(name: String?, endPoint: EndPoint, requestBahaviors: [WebRequestBehavior]) -> HTTPRequest? {
-        guard let request = HTTPRequest(name: name, endPoint: endPoint, requestBahaviors: requestBahaviors) else {
-            return nil
-        }
-        request.delegate = self
-        self.queue.async(flags: .barrier) {
-            self.add(request: request)
-        }
-        return request
-    }
-
-    func statusChanged(_ request: HTTPRequest, with status: HTTPRequest.Status) {
-        switch status {
-        case .done:
-            self.remove(request: request)
-        default: break
-        }
-    }
-
-    private func add(request: HTTPRequest) {
-        defer { self.clearCompletedRequests() }
-        print(self.count)
-        self.requests[request.id] = request
-    }
-
-    private func remove(request: HTTPRequest) {
-        defer { self.clearCompletedRequests() }
-        self.queue.async(flags: .barrier) {
-            self.requests[request.id] = nil
-        }
-    }
-
-    private func remove(by name: String) {
-        defer { self.clearCompletedRequests() }
-        let id = name.hashValue
-        self.queue.async(flags: .barrier) {
-            self.requests[id] = nil
-        }
-    }
-
-    private func clearCompletedRequests() {
-        self.queue.async(flags: .barrier) {
-            let filtered = self.requests.filter {
-                $0.value.status != .done
-            }
-            self.requests = filtered
-        }
-    }
-}
-
+// MARK: - Delegate
 protocol HTTPRequestDelegate: class {
     func statusChanged(_ request: HTTPRequest, with status: HTTPRequest.Status)
 }
-final class HTTPRequest {
+
+// MARK: - Class helpers
+extension HTTPRequest {
     typealias HTTPRequestResult = (Promise<(data: Data, response: URLResponse)>, cancel: () -> Void)
     typealias APIClientCompletion = (Swift.Result<APIResponse<Data>, APIError>) -> Void
+
     enum Status {
         case normal, request, done
     }
+}
 
+// MARK: - HTTPRequest
+final class HTTPRequest {
     weak var delegate: HTTPRequestDelegate?
     var id: Int = 0
 
     var status: Status = .normal {
-        didSet {
-            self.delegate?.statusChanged(self, with: self.status)
-        }
+        didSet { self.delegate?.statusChanged(self, with: self.status) }
     }
 
     private let requestBahavior: WebRequestBehavior
@@ -133,8 +75,9 @@ final class HTTPRequest {
     }
 }
 
-private extension HTTPRequest {
-    func makeRequest() -> HTTPRequestResult {
+// MARK: - Make request
+extension HTTPRequest {
+    fileprivate func makeRequest() -> HTTPRequestResult {
         var cancelMe = false
         self.requestBahavior.beforeSend(with: self.urlRequest)
         let fetch = URLSession.shared.dataTask(.promise, with: self.urlRequest)
