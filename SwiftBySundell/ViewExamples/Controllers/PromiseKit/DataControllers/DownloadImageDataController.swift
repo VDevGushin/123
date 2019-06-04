@@ -66,10 +66,14 @@ final class DownloadImageDataController {
             self?.db?.perform()
             self?.db2?.perform()
         }
-        
+
         db2?.perform()
-        db?.perform()
-        db3?.perform()
+        DispatchQueue.global().async {
+            self.db?.perform()
+        }
+        DispatchQueue.global().async {
+            self.db3?.perform()
+        }
     }
 
     func getImage() {
