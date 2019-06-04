@@ -79,7 +79,9 @@ fileprivate extension RequestBehavior {
 
 fileprivate class LoadFromCacheIfUnreachableBehavior: RequestBehavior {
     typealias Response = (data: Data?, response: URLResponse, error: Error?, request: URLRequest?, date: Date?)
+    
     private let cache: URLCache
+    
     init(cache: URLCache) {
         self.cache = cache
     }

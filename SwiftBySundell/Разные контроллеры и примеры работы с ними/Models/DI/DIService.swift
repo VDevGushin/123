@@ -9,7 +9,7 @@
 import Foundation
 import Swinject
 
-class HelperAssembly: Assembly {
+final class HelperAssembly: Assembly {
     func assemble(container: Container) {
         container.register(UIApplication.self) { _ in
             UIApplication.shared
@@ -29,7 +29,7 @@ class HelperAssembly: Assembly {
     }
 }
 
-class ServiceAssembly: Assembly {
+final class ServiceAssembly: Assembly {
     func assemble(container: Container) {
         container.register(AppCoordinator.self) { r in
             return AppCoordinator(navigationController: r.resolve(UINavigationController.self, name: "rootNavigationController")!)
@@ -115,14 +115,14 @@ class RepositoryAssembly: Assembly {
         container.register(DODOPizzaViewController.self) { _, navigator, title in
             DODOPizzaViewController(navigator: navigator, title: title, nibName: String(describing: DODOPizzaViewController.self), bundle: nil)
         }.inObjectScope(.transient)
-        
+
         container.register(ScrollViewController.self) { _, navigator, title in
             ScrollViewController(navigator: navigator, title: title, nibName: String(describing: ScrollViewController.self), bundle: nil)
-            }.inObjectScope(.transient)
+        }.inObjectScope(.transient)
     }
 }
 
-class DependencyProvider {
+final class DependencyProvider {
     static let shared = DependencyProvider()
 
     let container = Container()

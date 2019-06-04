@@ -18,11 +18,13 @@ import Foundation
 
 typealias StorageHandler<T> = (Result<T, Error>) -> Void
 
+//Чтение из памяти
 protocol ReadableStorage {
     func fetchValue(for key: String) throws -> Data
     func fetchValue(for key: String, handler: @escaping StorageHandler<Data>)
 }
 
+//Запись в память
 protocol WritableStorage {
     func save(value: Data, for key: String) throws
     func save(value: Data, for key: String, handler: @escaping StorageHandler<Data>)
@@ -35,7 +37,7 @@ enum StorageError: Error {
     case cantWrite(Error)
 }
 
-class DiskStorage {
+final class DiskStorage {
     private let queue: DispatchQueue
     private let fileManager: FileManager
     private let path: URL
@@ -48,8 +50,8 @@ class DiskStorage {
 
     private func createFolders(in url: URL) throws {
         let folderUrl = url.deletingLastPathComponent()
-        if !fileManager.fileExists(atPath: folderUrl.path) {
-            try fileManager.createDirectory(
+        if !self.fileManager.fileExists(atPath: folderUrl.path) {
+            try self.fileManager.createDirectory(
                 at: folderUrl,
                 withIntermediateDirectories: true,
                 attributes: nil
@@ -58,7 +60,7 @@ class DiskStorage {
     }
 }
 
-// MARK: - Save
+// MARK: - Save disk storage
 extension DiskStorage: WritableStorage {
     func save(value: Data, for key: String) throws {
         let url = self.path.appendingPathComponent(key)
@@ -82,7 +84,7 @@ extension DiskStorage: WritableStorage {
     }
 }
 
-// MARK: - Read
+// MARK: - Read to storage
 extension DiskStorage: ReadableStorage {
     func fetchValue(for key: String) throws -> Data {
         let url = self.path.appendingPathComponent(key)
@@ -102,6 +104,7 @@ extension DiskStorage: ReadableStorage {
 /*Класс CodableStorage оборачивает наш класс DiskStorage, чтобы добавить логику кодирования-декодирования JSON. Он использует общие ограничения, чтобы понять, как декодировать и кодировать данные. Пришло время использовать наш CodableStorage в реальной жизни.*/
 class CodableStorage {
     private let storage: DiskStorage
+    
     private let decoder: JSONDecoder
     private let encoder: JSONEncoder
 

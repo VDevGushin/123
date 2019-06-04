@@ -266,7 +266,6 @@
 		3C7CD75221103951009871B1 /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CD75121103951009871B1 /* Tuples.swift */; };
 		3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */; };
 		3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */; };
-		3C7EB0E6223F87EB000BF3A5 /* Освоение MVVM на iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */; };
 		3C80FF382248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */; };
 		3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */; };
 		3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */; };
@@ -583,7 +582,6 @@
 		45AD2C76229E6BB2004389A2 /* TestTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */; };
 		45AD2C7B229E89B7004389A2 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C7A229E89B7004389A2 /* A.swift */; };
 		45AD2C7D229E89F1004389A2 /* A+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C7C229E89F1004389A2 /* A+Strings.swift */; };
-		45B5102C2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */; };
 		45B7140822782BE5008B63F2 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140622782BE5008B63F2 /* CardCell.swift */; };
 		45B7140922782BE5008B63F2 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140722782BE5008B63F2 /* CardCell.xib */; };
 		45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140B2278316B008B63F2 /* CardGameController.swift */; };
@@ -948,7 +946,6 @@
 		3C7CD75121103951009871B1 /* Tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuples.swift; sourceTree = "<group>"; };
 		3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type erasure using closures in Swift.swift"; sourceTree = "<group>"; };
 		3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registerable Views.swift"; sourceTree = "<group>"; };
-		3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Освоение MVVM на iOS.swift"; sourceTree = "<group>"; };
 		3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deep dive into Pattern matching with ~= operator.swift"; sourceTree = "<group>"; };
 		3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The power of key paths in Swift.swift"; sourceTree = "<group>"; };
 		3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotBasedUIDevelopment.swift; sourceTree = "<group>"; };
@@ -1290,7 +1287,6 @@
 		45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableLayout.swift; sourceTree = "<group>"; };
 		45AD2C7A229E89B7004389A2 /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
 		45AD2C7C229E89F1004389A2 /* A+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A+Strings.swift"; sourceTree = "<group>"; };
-		45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift- ARC и управление памятью.swift"; sourceTree = "<group>"; };
 		45B7140622782BE5008B63F2 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		45B7140722782BE5008B63F2 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		45B7140B2278316B008B63F2 /* CardGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameController.swift; sourceTree = "<group>"; };
@@ -1576,14 +1572,14 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
-		3C2C9C1D221BD7E2004A2605 /* ViewExamples */ = {
+		3C2C9C1D221BD7E2004A2605 /* Разные контроллеры и примеры работы с ними */ = {
 			isa = PBXGroup;
 			children = (
 				3CED730622251C440058A1B5 /* Models */,
 				3C3925E7221BDB9E003CD1EE /* AnimationSources */,
 				3C2C9C21221BD8F3004A2605 /* Controllers */,
 			);
-			path = ViewExamples;
+			path = "Разные контроллеры и примеры работы с ними";
 			sourceTree = "<group>";
 		};
 		3C2C9C1E221BD7F5004A2605 /* AppRouter */ = {
@@ -2001,7 +1997,7 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
-		3C452755222CF745004E5E19 /* HABR */ = {
+		3C452755222CF745004E5E19 /* Всяко разно  */ = {
 			isa = PBXGroup;
 			children = (
 				3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */,
@@ -2011,16 +2007,14 @@
 				3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */,
 				3C18546F2238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift */,
 				3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */,
-				3C7EB0E5223F87EB000BF3A5 /* Освоение MVVM на iOS.swift */,
 				3CEC6FCF2241FE1800DE844E /* Pattern Matching with case let.swift */,
 				3CE2914D22420B2600831A13 /* A better syntax for configurable initializations.swift */,
 				3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */,
 				3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */,
 				45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */,
-				45B5102B2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift */,
 				453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */,
 			);
-			path = HABR;
+			path = "Всяко разно ";
 			sourceTree = "<group>";
 		};
 		3C457F8D21B79F1800B5EF63 /* MVVM */ = {
@@ -2066,11 +2060,10 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
-				45AD2C77229E7F1E004389A2 /* Vadim Bulavin */,
 				4525FE582266E8CB00E2EC83 /* SundellResources */,
-				3C452755222CF745004E5E19 /* HABR */,
-				3C2C9C1D221BD7E2004A2605 /* ViewExamples */,
-				3CA6A26D21C23C49009D0F1F /* ServiceLocator no pods simple */,
+				3C452755222CF745004E5E19 /* Всяко разно  */,
+				3C2C9C1D221BD7E2004A2605 /* Разные контроллеры и примеры работы с ними */,
+				3CA6A26D21C23C49009D0F1F /* Обычный service locator без использования pods */,
 				3C517C5621B9051A009CAEE7 /* AppDelegate.swift */,
 				3C517C5D21B9051B009CAEE7 /* Assets.xcassets */,
 				3C517C5F21B9051B009CAEE7 /* LaunchScreen.storyboard */,
@@ -2103,7 +2096,7 @@
 			path = "ManagingState&Objects!";
 			sourceTree = "<group>";
 		};
-		3C51A73D223B6BE000D14490 /* Network */ = {
+		3C51A73D223B6BE000D14490 /* Сетевой слой */ = {
 			isa = PBXGroup;
 			children = (
 				3C49AFC72251F5CF00E740A2 /* Network2(Не юзаем) */,
@@ -2113,7 +2106,8 @@
 				4583D7C5228BFB2400630EB4 /* APIClient */,
 				3C51A73E223B6C4B00D14490 /* Behaviors */,
 			);
-			path = Network;
+			name = "Сетевой слой";
+			path = "Сетевой слой";
 			sourceTree = "<group>";
 		};
 		3C51A73E223B6C4B00D14490 /* Behaviors */ = {
@@ -2575,12 +2569,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		3CA6A26D21C23C49009D0F1F /* ServiceLocator no pods simple */ = {
+		3CA6A26D21C23C49009D0F1F /* Обычный service locator без использования pods */ = {
 			isa = PBXGroup;
 			children = (
 				3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */,
 			);
-			path = "ServiceLocator no pods simple";
+			name = "Обычный service locator без использования pods";
+			path = "Обычный service locator без использования pods";
 			sourceTree = "<group>";
 		};
 		3CA910862243546800F54A4C /* Error handling */ = {
@@ -3007,7 +3002,7 @@
 			isa = PBXGroup;
 			children = (
 				3CE138E82227A46300E0B7CD /* Services */,
-				3C51A73D223B6BE000D14490 /* Network */,
+				3C51A73D223B6BE000D14490 /* Сетевой слой */,
 				3CED730722251C4B0058A1B5 /* DI */,
 				3C2C9C1E221BD7F5004A2605 /* AppRouter */,
 			);
@@ -3331,13 +3326,6 @@
 				45933C7C2282B00D0069639A /* TimerViewController.xib */,
 			);
 			path = Timer;
-			sourceTree = "<group>";
-		};
-		45AD2C77229E7F1E004389A2 /* Vadim Bulavin */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Vadim Bulavin";
 			sourceTree = "<group>";
 		};
 		45B7140A22783124008B63F2 /* Cell */ = {
@@ -4018,7 +4006,6 @@
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */,
 				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
-				45B5102C2293C8C900AA9C92 /* Swift- ARC и управление памятью.swift in Sources */,
 				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
 				45BFA288229D1A47007BE474 /* TableLayout.swift in Sources */,
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
@@ -4030,7 +4017,6 @@
 				3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */,
 				45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
-				3C7EB0E6223F87EB000BF3A5 /* Освоение MVVM на iOS.swift in Sources */,
 				3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */,
 				45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
