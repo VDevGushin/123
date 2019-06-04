@@ -560,6 +560,9 @@
 		452FD585228A995D00DB34FB /* BehaviorPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD584228A995D00DB34FB /* BehaviorPatterns.swift */; };
 		452FD587228A998F00DB34FB /* GeneratingPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD586228A998F00DB34FB /* GeneratingPatterns.swift */; };
 		453390272295205600B005D7 /* Компоновщик (Composite).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453390262295205600B005D7 /* Компоновщик (Composite).swift */; };
+		453484B022A687C700D9A6B8 /* CacheBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453484AF22A687C700D9A6B8 /* CacheBehavior.swift */; };
+		453484B322A698EB00D9A6B8 /* URLCache+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453484B222A698EB00D9A6B8 /* URLCache+Ex.swift */; };
+		453484B522A69C2F00D9A6B8 /* URLSession+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453484B422A69C2F00D9A6B8 /* URLSession+Ex.swift */; };
 		453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */; };
 		453EDD5722966CFE00CD1F9D /* Заместитель (Прокси).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */; };
 		4545967C229BC9E400682917 /* Мост (Bridge).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545967B229BC9E400682917 /* Мост (Bridge).swift */; };
@@ -1264,6 +1267,9 @@
 		452FD584228A995D00DB34FB /* BehaviorPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorPatterns.swift; sourceTree = "<group>"; };
 		452FD586228A998F00DB34FB /* GeneratingPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratingPatterns.swift; sourceTree = "<group>"; };
 		453390262295205600B005D7 /* Компоновщик (Composite).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Компоновщик (Composite).swift"; sourceTree = "<group>"; };
+		453484AF22A687C700D9A6B8 /* CacheBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheBehavior.swift; sourceTree = "<group>"; };
+		453484B222A698EB00D9A6B8 /* URLCache+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLCache+Ex.swift"; sourceTree = "<group>"; };
+		453484B422A69C2F00D9A6B8 /* URLSession+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Ex.swift"; sourceTree = "<group>"; };
 		453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storing Codable structs on the disk.swift"; sourceTree = "<group>"; };
 		453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Заместитель (Прокси).swift"; sourceTree = "<group>"; };
 		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2099,6 +2105,7 @@
 		3C51A73D223B6BE000D14490 /* Сетевой слой */ = {
 			isa = PBXGroup;
 			children = (
+				453484B122A698DE00D9A6B8 /* Extensions */,
 				3C49AFC72251F5CF00E740A2 /* Network2(Не юзаем) */,
 				3C51A749223B71EE00D14490 /* EndPointConfigurators */,
 				45F97C9C22A1043F00FC076A /* EndPoint */,
@@ -2116,6 +2123,7 @@
 				3C51A73F223B6C6B00D14490 /* WebRequestBehavior.swift */,
 				3C51A741223B6CB900D14490 /* LoggerBehavior.swift */,
 				3C51A743223B6DCD00D14490 /* CombinedWebRequestBehavior.swift */,
+				453484AF22A687C700D9A6B8 /* CacheBehavior.swift */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -3221,6 +3229,15 @@
 			path = "Структурные паттерны";
 			sourceTree = "<group>";
 		};
+		453484B122A698DE00D9A6B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				453484B222A698EB00D9A6B8 /* URLCache+Ex.swift */,
+				453484B422A69C2F00D9A6B8 /* URLSession+Ex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4545967D229BD06500682917 /* For habr */ = {
 			isa = PBXGroup;
 			children = (
@@ -4078,6 +4095,7 @@
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */,
 				3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */,
+				453484B322A698EB00D9A6B8 /* URLCache+Ex.swift in Sources */,
 				3C4099912237D68400E5FB05 /* RootContentTableViewCell.swift in Sources */,
 				3C36EA072237786C00993B6F /* Как использовать HTTP-кеш.swift in Sources */,
 				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
@@ -4125,11 +4143,13 @@
 				3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */,
 				4527E726229BF4B300C41CB6 /* PizzaHalfOrientation.swift in Sources */,
 				45F97CA022A104E600FC076A /* HTTPRequestPool.swift in Sources */,
+				453484B022A687C700D9A6B8 /* CacheBehavior.swift in Sources */,
 				3CD6DC332227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift in Sources */,
 				45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				456FBF9E2278155C005AC721 /* Card.swift in Sources */,
 				4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */,
+				453484B522A69C2F00D9A6B8 /* URLSession+Ex.swift in Sources */,
 				45BFA287229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift in Sources */,
 				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,

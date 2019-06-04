@@ -19,4 +19,8 @@ extension WebRequestBehavior {
     var additionalHeaders: [String: String] {
         return [:]
     }
+
+    func beforeSend(with: URLRequest) { }
+    func afterSuccess(result: Any, response: URLResponse?) { }
+    func afterFailure(error: Error, response: URLResponse?) { }
 }

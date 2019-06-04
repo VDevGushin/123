@@ -11,7 +11,6 @@ import PromiseKit
 
 final class HTTPRequestPool {
     static let shared = HTTPRequestPool()
-
     private let queue = DispatchQueue(label: "HTTPRequestPool.thread", attributes: .concurrent)
     private var requests: [Int: HTTPRequest] = [:]
 
