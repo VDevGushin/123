@@ -22,7 +22,6 @@ final class DownloadImageDataController {
     var db3: DispatchWorkItem?
 
     init() {
-        return
         let endPoint = DefaultEndPoint(configurator: BigImageDownloadConfigurator.getBitImage(id: 2000, filename: "1*d6l1Gt7j47JyxONXn8moYg.png"))
         self.db = DispatchWorkItem {
             let r1 = HTTPRequestPool.shared.make(name: nil, endPoint: endPoint, requestBahaviors: [LoggerBehavior()])

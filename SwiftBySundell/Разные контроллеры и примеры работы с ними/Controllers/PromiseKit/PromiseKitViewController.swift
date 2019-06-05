@@ -23,7 +23,7 @@ class PromiseKitViewController: CoordinatorViewController, DownloadImageDataCont
     @IBAction func onStartAnimation(_ sender: Any) {
         self.onDownloadStarted()
         self.imageView.image = nil
-        //fetchImageContiller.getImage()
+        fetchImageContiller.getImage()
         fetchImageContiller.getWelcome()
     }
 
