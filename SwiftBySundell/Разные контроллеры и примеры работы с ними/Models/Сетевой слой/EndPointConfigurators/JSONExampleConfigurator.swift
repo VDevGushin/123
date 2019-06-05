@@ -36,8 +36,7 @@ struct JSONExampleConfigurator: EndPointConfigurator {
     var multipartData: [Multipartable]?
 
     static func make() -> JSONExampleConfigurator {
-        let path = ""
-
+        
         let headers = [
             HTTPHeader(field: "Accept", value: "application/json"),
             HTTPHeader(field: "Accept-Encoding", value: "br, gzip, deflate")
@@ -45,7 +44,7 @@ struct JSONExampleConfigurator: EndPointConfigurator {
         
         return JSONExampleConfigurator(scheme: "http",
             host: "ip.jsontest.com",
-            path: path,
+            path: "",
             method: HTTPMethod.get,
             queryItems: nil,
             headers: headers,

@@ -28,7 +28,7 @@ final class HTTPRequest {
     private let requestBahavior: WebRequestBehavior
     private let endPoint: EndPoint
     private let urlRequest: URLRequest
-    private var currentRequest: (Promise<(data: Data, response: URLResponse)>, cancel: () -> Void)?
+    private var currentRequest: (promise: Promise<(data: Data, response: URLResponse)>, cancel: () -> Void)?
 
     init?(name: String?, endPoint: EndPoint, requestBahaviors: [WebRequestBehavior], cacheBehavior: CacheBehavior?) {
         self.requestBahavior = CombinedWebRequestBehavior(behaviors: requestBahaviors)
@@ -54,7 +54,7 @@ final class HTTPRequest {
         queue.async {
             self.status = .request
             self.currentRequest = self.makeRequest()
-            self.currentRequest?.0.done(on: .main) { result in
+            self.currentRequest?.promise.done(on: .main) { result in
                 guard let httpResponse = result.response as? HTTPURLResponse else {
                     return completion(.failure(.requestFailed(nil)));
                 }

@@ -32,6 +32,7 @@ final class HTTPRequestPool {
             cacheBehavior: CacheBehavior(cache: URLCache.makePromiseCache())) else {
             return nil
         }
+
         request.delegate = self
 
         self.queue.async(flags: .barrier) {
@@ -55,6 +56,8 @@ final class HTTPRequestPool {
             return nil
         }
 
+        req.delegate = self
+
         req.perform(on: .global(), completion: completion)
 
         return request
@@ -74,6 +77,8 @@ final class HTTPRequestPool {
             completion(.failure(.makeRequestError))
             return nil
         }
+
+        req.delegate = self
 
         req.perform(decoder: decoder, completion: completion)
 
