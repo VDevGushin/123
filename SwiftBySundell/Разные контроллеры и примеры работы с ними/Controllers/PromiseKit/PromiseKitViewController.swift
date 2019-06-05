@@ -19,11 +19,12 @@ class PromiseKitViewController: CoordinatorViewController, DownloadImageDataCont
     @IBOutlet private weak var imageView: UIImageView!
 
     private lazy var fetchImageContiller = DownloadImageDataController()
-    
+
     @IBAction func onStartAnimation(_ sender: Any) {
         self.onDownloadStarted()
         self.imageView.image = nil
-        fetchImageContiller.getImage()
+        //fetchImageContiller.getImage()
+        fetchImageContiller.getWelcome()
     }
 
     func complete(dataController: DownloadImageDataController, image: UIImage?) {

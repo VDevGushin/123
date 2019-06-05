@@ -15,11 +15,17 @@ struct APIResponse<Body> {
 
 extension APIResponse where Body == Data? {
     func decode<BodyType: Decodable>(to type: BodyType.Type, decoder: JSONDecoder = JSONDecoder()) throws -> APIResponse<BodyType> {
-        guard let data = body else {
-            throw APIError.decodingFailure
-        }
+        guard let data = body else { throw APIError.decodingFailure }
         let decodedJSON = try decoder.decode(BodyType.self, from: data)
         return APIResponse<BodyType>(statusCode: self.statusCode,
-                                     body: decodedJSON)
+            body: decodedJSON)
+    }
+}
+
+extension APIResponse where Body == Data {
+    func decode<BodyType: Decodable>(to type: BodyType.Type, decoder: JSONDecoder = JSONDecoder()) throws -> APIResponse<BodyType> {
+        let decodedJSON = try decoder.decode(BodyType.self, from: body)
+        return APIResponse<BodyType>(statusCode: self.statusCode,
+            body: decodedJSON)
     }
 }

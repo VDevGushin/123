@@ -15,7 +15,7 @@ class CacheBehavior: WebRequestBehavior {
     }
 
     func modify(request: URLRequest,
-        acceptedResponse: HTTPRequest.Response) -> HTTPRequest.Response {
+        acceptedResponse: (data: Data, response: URLResponse)) -> (data: Data, response: URLResponse) {
 
         //Verify that we need to use the cache
         if let httpResponse = acceptedResponse.response as? HTTPURLResponse,
@@ -24,18 +24,13 @@ class CacheBehavior: WebRequestBehavior {
         }
 
         // Get the response
-        guard let cachedResponse = self.cache.cachedResponse(for: request),
-            let httpURLResponse = cachedResponse.response as? HTTPURLResponse else {
-                return acceptedResponse
+        guard let cachedResponse = self.cache.cachedResponse(for: request) else {
+            return acceptedResponse
         }
 
-        var date: Date?
-        if let userInfo = cachedResponse.userInfo,
-            let cacheDate = userInfo["saveDate"] as? TimeInterval {
-            date = Date(timeIntervalSince1970: cacheDate)
-        }
-        
-        return HTTPRequest.Response(data: cachedResponse.data, response: httpURLResponse, date: date)
+        let httpURLResponse = cachedResponse.response
+
+        return (cachedResponse.data, httpURLResponse)
     }
 }
 

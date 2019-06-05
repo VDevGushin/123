@@ -605,6 +605,8 @@
 		45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */; };
 		45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */; };
+		45DB5CF622A78EF80061147F /* Result+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB5CF522A78EF80061147F /* Result+Ex.swift */; };
+		45DB5CF822A7A12A0061147F /* JSONExampleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */; };
 		45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D02282B16D0047940C /* TimerTask.swift */; };
 		45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */; };
 		45E4D1D62282B1B50047940C /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1D42282B1B50047940C /* TaskTableViewCell.xib */; };
@@ -1313,6 +1315,8 @@
 		45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayoutCache.swift; sourceTree = "<group>"; };
 		45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ex.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift(Наблюдатели за свойствами).swift"; sourceTree = "<group>"; };
+		45DB5CF522A78EF80061147F /* Result+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Ex.swift"; sourceTree = "<group>"; };
+		45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExampleConfigurator.swift; sourceTree = "<group>"; };
 		45E4D1D02282B16D0047940C /* TimerTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTask.swift; sourceTree = "<group>"; };
 		45E4D1D32282B1B50047940C /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		45E4D1D42282B1B50047940C /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
@@ -2133,6 +2137,7 @@
 			children = (
 				3C51A747223B6F2400D14490 /* EndPointConfigurator.swift */,
 				3C51A74E223B758800D14490 /* BigImageDownloadConfigurator.swift */,
+				45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */,
 			);
 			path = EndPointConfigurators;
 			sourceTree = "<group>";
@@ -3234,6 +3239,7 @@
 			children = (
 				453484B222A698EB00D9A6B8 /* URLCache+Ex.swift */,
 				453484B422A69C2F00D9A6B8 /* URLSession+Ex.swift */,
+				45DB5CF522A78EF80061147F /* Result+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -3316,8 +3322,8 @@
 		4583D7C5228BFB2400630EB4 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
-				45F97C9D22A104B700FC076A /* HTTPRequest.swift */,
 				45F97C9F22A104E600FC076A /* HTTPRequestPool.swift */,
+				45F97C9D22A104B700FC076A /* HTTPRequest.swift */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -3993,6 +3999,7 @@
 				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */,
+				45DB5CF822A7A12A0061147F /* JSONExampleConfigurator.swift in Sources */,
 				3CE138E722279EC100E0B7CD /* Observers1.swift in Sources */,
 				3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */,
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
@@ -4137,6 +4144,7 @@
 				45DAFEDF226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift in Sources */,
 				45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */,
 				3C5B044E223644210075ADCD /* Инверсия зависимостей через протоколы.swift in Sources */,
+				45DB5CF622A78EF80061147F /* Result+Ex.swift in Sources */,
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3CE80B34225F0ACD00CA9C02 /* Session.swift in Sources */,
 				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,

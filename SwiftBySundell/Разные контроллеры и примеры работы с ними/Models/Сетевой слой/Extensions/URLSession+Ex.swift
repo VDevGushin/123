@@ -16,4 +16,11 @@ extension URLSession {
         configuration.httpMaximumConnectionsPerHost = 1
         return URLSession(configuration: configuration)
     }
+
+    static func makeSession(with cacheBehavior: CacheBehavior?) -> URLSession {
+        guard let cacheBehavior = cacheBehavior else {
+            return URLSession.shared
+        }
+        return .makeDefaultSession(with: .default, cache: cacheBehavior.cache)
+    }
 }

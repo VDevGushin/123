@@ -10,6 +10,7 @@ import Foundation
 
 enum APIError: Error {
     case invalidURL
+    case makeRequestError
     case requestFailed(Error?)
     case decodingFailure
     case canceled

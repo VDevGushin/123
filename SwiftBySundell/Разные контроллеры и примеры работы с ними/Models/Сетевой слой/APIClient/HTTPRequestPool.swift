@@ -14,29 +14,84 @@ final class HTTPRequestPool {
     private let queue = DispatchQueue(label: "HTTPRequestPool.thread", attributes: .concurrent)
     private var requests: [Int: HTTPRequest] = [:]
 
-    var count: Int {
-        return self.requests.count
-    }
+    var count: Int { return self.requests.count }
 
     private init() { }
 
-    func make(name: String?, endPoint: EndPoint, requestBahaviors: [WebRequestBehavior]) -> HTTPRequest? {
-        guard let request = HTTPRequest(name: name, endPoint: endPoint, requestBahaviors: requestBahaviors) else {
+    /**
+ Создание сущности запроса.
+ - Parameter name: Название запроса для его идентификации при удалении
+ - Parameter endPoint: EndPoint сети
+ - Parameter requestBahaviors: Разные прослойки для вызова в разных метсах при выполнении запросов
+ - Returns: Возвращает либо готовый HTTPRequest либо nil, если при создании запроса возникли проблемы с конструирование URL.
+ */
+    func make(name: String?, endPoint: EndPoint, requestBahaviors: [WebRequestBehavior] = [LoggerBehavior()]) -> HTTPRequest? {
+        guard let request = HTTPRequest(name: name,
+            endPoint: endPoint,
+            requestBahaviors: requestBahaviors,
+            cacheBehavior: CacheBehavior(cache: URLCache.makePromiseCache())) else {
             return nil
         }
         request.delegate = self
+
         self.queue.async(flags: .barrier) {
             self.add(request: request)
         }
+
         return request
     }
 
-    func cancelAll(){
-        for (_,request) in self.requests{
+    // make request with perform
+    @discardableResult
+    func makeAndPerform(name: String?,
+        endPoint: EndPoint,
+        requestBahaviors: [WebRequestBehavior] = [LoggerBehavior()],
+        then completion: @escaping (Swift.Result<APIResponse<Data>, APIError>) -> Void) -> HTTPRequest? {
+
+        let request = self.make(name: name, endPoint: endPoint, requestBahaviors: requestBahaviors)
+
+        guard let req = request else {
+            completion(.failure(.makeRequestError))
+            return nil
+        }
+
+        req.perform(on: .global(), completion: completion)
+
+        return request
+    }
+
+    // make request with perform and decode
+    @discardableResult
+    func makeAndPerform<T: Decodable>(name: String?,
+        endPoint: EndPoint,
+        decoder: JSONDecoder,
+        requestBahaviors: [WebRequestBehavior] = [LoggerBehavior()],
+        then completion: @escaping (Swift.Result<APIResponse<T>, APIError>) -> Void) -> HTTPRequest? {
+
+        let request = self.make(name: name, endPoint: endPoint, requestBahaviors: requestBahaviors)
+
+        guard let req = request else {
+            completion(.failure(.makeRequestError))
+            return nil
+        }
+
+        req.perform(decoder: decoder, completion: completion)
+
+        return request
+    }
+
+
+    /**
+     Завершает все запросы в пуле запросов.
+     */
+
+    func cancelAll() {
+        for (_, request) in self.requests {
             request.cancel()
         }
     }
-    
+
+    // private
     private func add(request: HTTPRequest) {
         defer { self.clearCompletedRequests() }
         self.queue.async(flags: .barrier) {
@@ -61,10 +116,7 @@ final class HTTPRequestPool {
 
     private func clearCompletedRequests() {
         self.queue.async(flags: .barrier) {
-            let filtered = self.requests.filter {
-                $0.value.status != .done
-            }
-            self.requests = filtered
+            self.requests = self.requests.filter { $0.value.status != .done }
         }
     }
 }

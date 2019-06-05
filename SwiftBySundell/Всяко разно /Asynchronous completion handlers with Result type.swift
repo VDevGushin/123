@@ -25,7 +25,7 @@ fileprivate extension URLSession {
 
 // Расширение для результата - чтобы сразу декодировать и возвращать себя же
 fileprivate extension Result where Success == Data {
-    func decode<T: Decodable>(with decoder: JSONDecoder = .init()) -> Result<T, Error> {
+    func decodeResult<T: Decodable>(with decoder: JSONDecoder = .init()) -> Result<T, Error> {
         do {
             let data = try get()
             let decoded = try decoder.decode(T.self, from: data)
@@ -48,7 +48,7 @@ fileprivate class HistoryService {
 
     func fetch(handler: @escaping URLHandler<History>) {
         self.session.dataTask(with: URL(string: "adgs")!) { result in
-            handler(result.decode())
+            handler(result.decodeResult())
         }
     }
 }
