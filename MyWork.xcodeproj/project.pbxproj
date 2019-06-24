@@ -530,6 +530,7 @@
 		3CFD254E21132C9F00128554 /* ETBAddTimeViewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD254D21132C9F00128554 /* ETBAddTimeViewControl.xib */; };
 		3CFD25512113453F00128554 /* ETBAddTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */; };
 		3CFD25522113453F00128554 /* ETBAddTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */; };
+		451F823622C0A29B00A672D0 /* VisitorForMyProj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F823522C0A29B00A672D0 /* VisitorForMyProj.swift */; };
 		4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */; };
 		4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4527E71D229BF30500C41CB6 /* DODOPizzaViewController.swift */; };
 		4527E720229BF30500C41CB6 /* DODOPizzaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4527E71E229BF30500C41CB6 /* DODOPizzaViewController.xib */; };
@@ -566,7 +567,6 @@
 		453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */; };
 		453EDD5722966CFE00CD1F9D /* Заместитель (Прокси).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */; };
 		4545967C229BC9E400682917 /* Мост (Bridge).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545967B229BC9E400682917 /* Мост (Bridge).swift */; };
-		4545967F229BD08500682917 /* Порождающие паттерны.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545967E229BD08500682917 /* Порождающие паттерны.swift */; };
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
@@ -1239,6 +1239,7 @@
 		3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBAddTimeViewController.swift; sourceTree = "<group>"; };
 		3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBAddTimeViewController.xib; sourceTree = "<group>"; };
 		44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451F823522C0A29B00A672D0 /* VisitorForMyProj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorForMyProj.swift; sourceTree = "<group>"; };
 		4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Avoiding singletons in Swift.swift"; sourceTree = "<group>"; };
 		4527E71D229BF30500C41CB6 /* DODOPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DODOPizzaViewController.swift; sourceTree = "<group>"; };
 		4527E71E229BF30500C41CB6 /* DODOPizzaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DODOPizzaViewController.xib; sourceTree = "<group>"; };
@@ -1277,7 +1278,6 @@
 		453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Заместитель (Прокси).swift"; sourceTree = "<group>"; };
 		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545967B229BC9E400682917 /* Мост (Bridge).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Мост (Bridge).swift"; sourceTree = "<group>"; };
-		4545967E229BD08500682917 /* Порождающие паттерны.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Порождающие паттерны.swift"; sourceTree = "<group>"; };
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
@@ -3129,6 +3129,14 @@
 			path = TimerControl;
 			sourceTree = "<group>";
 		};
+		451F823422C0A28A00A672D0 /* VisitorForMe */ = {
+			isa = PBXGroup;
+			children = (
+				451F823522C0A29B00A672D0 /* VisitorForMyProj.swift */,
+			);
+			path = VisitorForMe;
+			sourceTree = "<group>";
+		};
 		4525FE582266E8CB00E2EC83 /* SundellResources */ = {
 			isa = PBXGroup;
 			children = (
@@ -3184,7 +3192,7 @@
 		452FD553228A962A00DB34FB /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
-				4545967D229BD06500682917 /* For habr */,
+				451F823422C0A28A00A672D0 /* VisitorForMe */,
 				452FD572228A972200DB34FB /* Порождающие паттерны */,
 				452FD579228A972200DB34FB /* Структурные паттерны */,
 				452FD561228A971500DB34FB /* Паттерны поведения */,
@@ -3245,14 +3253,6 @@
 				45DB5CF522A78EF80061147F /* Result+Ex.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		4545967D229BD06500682917 /* For habr */ = {
-			isa = PBXGroup;
-			children = (
-				4545967E229BD08500682917 /* Порождающие паттерны.swift */,
-			);
-			path = "For habr";
 			sourceTree = "<group>";
 		};
 		45459680229BED9600682917 /* DODOPizza */ = {
@@ -4455,6 +4455,7 @@
 				452FD571228A971500DB34FB /* Шаблонный метод.swift in Sources */,
 				4545967C229BC9E400682917 /* Мост (Bridge).swift in Sources */,
 				453390272295205600B005D7 /* Компоновщик (Composite).swift in Sources */,
+				451F823622C0A29B00A672D0 /* VisitorForMyProj.swift in Sources */,
 				45AD2C7B229E89B7004389A2 /* A.swift in Sources */,
 				452FD587228A998F00DB34FB /* GeneratingPatterns.swift in Sources */,
 				452FD570228A971500DB34FB /* Итератор.swift in Sources */,
@@ -4467,7 +4468,6 @@
 				452FD57D228A972200DB34FB /* Строитель.swift in Sources */,
 				452FD57F228A972200DB34FB /* Абстрактная фабрика.swift in Sources */,
 				452FD56C228A971500DB34FB /* Цепочка Обязанностей.swift in Sources */,
-				4545967F229BD08500682917 /* Порождающие паттерны.swift in Sources */,
 				452FD583228A993000DB34FB /* StructuralPatterns.swift in Sources */,
 				452FD57B228A972200DB34FB /* Фабричный метод.swift in Sources */,
 				452FD581228A972200DB34FB /* Декоратор (Decorator).swift in Sources */,
