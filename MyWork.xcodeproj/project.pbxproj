@@ -574,6 +574,7 @@
 		455D1353228D410700C0DC32 /* URLPathComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */; };
 		456FBF9E2278155C005AC721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9D2278155C005AC721 /* Card.swift */; };
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
+		4573D78322C092DC006FD84F /* Configurable types in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573D78222C092DC006FD84F /* Configurable types in Swift.swift */; };
 		458CD1F02289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */; };
 		4590D21F229FDDF300A82D2B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D21E229FDDF300A82D2B /* BannerView.swift */; };
 		4590D222229FE11600A82D2B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D220229FE11600A82D2B /* ScrollViewController.swift */; };
@@ -1284,6 +1285,7 @@
 		455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPathComponentBuilder.swift; sourceTree = "<group>"; };
 		456FBF9D2278155C005AC721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		4573D78222C092DC006FD84F /* Configurable types in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configurable types in Swift.swift"; sourceTree = "<group>"; };
 		458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Structuring model data in Swift(Структурирование данных).swift"; sourceTree = "<group>"; };
 		4590D21E229FDDF300A82D2B /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		4590D220229FE11600A82D2B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -1603,6 +1605,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4577906722A8EA72002666C3 /* MyPlaces */,
 				4590D21D229FDD9300A82D2B /* Бесконечный UIScrollView */,
 				45459680229BED9600682917 /* DODOPizza */,
 				45933C7A2282AFF80069639A /* Timer */,
@@ -2011,10 +2014,7 @@
 			isa = PBXGroup;
 			children = (
 				3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */,
-				3C452756222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift */,
 				3C5B044D223644210075ADCD /* Инверсия зависимостей через протоколы.swift */,
-				3C36EA062237786C00993B6F /* Как использовать HTTP-кеш.swift */,
-				3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */,
 				3C18546F2238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift */,
 				3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */,
 				3CEC6FCF2241FE1800DE844E /* Pattern Matching with case let.swift */,
@@ -2070,6 +2070,8 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				4586FAA222B8AE5E00FE83D1 /* HTTP  наброски */,
+				4586FAA122B8AE4C00FE83D1 /* Композитный дата сурс */,
 				4525FE582266E8CB00E2EC83 /* SundellResources */,
 				3C452755222CF745004E5E19 /* Всяко разно  */,
 				3C2C9C1D221BD7E2004A2605 /* Разные контроллеры и примеры работы с ними */,
@@ -2312,6 +2314,7 @@
 				458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */,
 				452FD54C228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift */,
 				45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */,
+				4573D78222C092DC006FD84F /* Configurable types in Swift.swift */,
 			);
 			path = "Капашилка";
 			sourceTree = "<group>";
@@ -3319,6 +3322,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4577906722A8EA72002666C3 /* MyPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				4577906822A8EAA3002666C3 /* Controllers */,
+			);
+			path = MyPlaces;
+			sourceTree = "<group>";
+		};
+		4577906822A8EAA3002666C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		4583D7C5228BFB2400630EB4 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -3326,6 +3344,24 @@
 				45F97C9D22A104B700FC076A /* HTTPRequest.swift */,
 			);
 			path = APIClient;
+			sourceTree = "<group>";
+		};
+		4586FAA122B8AE4C00FE83D1 /* Композитный дата сурс */ = {
+			isa = PBXGroup;
+			children = (
+				3C452756222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift */,
+			);
+			name = "Композитный дата сурс";
+			path = "Композитный дата сурс";
+			sourceTree = "<group>";
+		};
+		4586FAA222B8AE5E00FE83D1 /* HTTP  наброски */ = {
+			isa = PBXGroup;
+			children = (
+				3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */,
+				3C36EA062237786C00993B6F /* Как использовать HTTP-кеш.swift */,
+			);
+			path = "HTTP  наброски";
 			sourceTree = "<group>";
 		};
 		4590D21D229FDD9300A82D2B /* Бесконечный UIScrollView */ = {
@@ -4068,6 +4104,7 @@
 				3C6F2D4A224F648E000A194B /* FruitsProvider.swift in Sources */,
 				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
+				4573D78322C092DC006FD84F /* Configurable types in Swift.swift in Sources */,
 				3CD6DC352227CC210062D2EC /* RealAlamofireDataController+Auth.swift in Sources */,
 				45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */,
 				456FBFA022782711005AC721 /* MemoryGame.swift in Sources */,
