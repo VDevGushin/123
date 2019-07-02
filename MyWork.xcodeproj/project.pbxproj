@@ -530,6 +530,8 @@
 		3CFD254E21132C9F00128554 /* ETBAddTimeViewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD254D21132C9F00128554 /* ETBAddTimeViewControl.xib */; };
 		3CFD25512113453F00128554 /* ETBAddTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */; };
 		3CFD25522113453F00128554 /* ETBAddTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */; };
+		450425EF22C345F1004A7FEC /* View Controller States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450425EE22C345F1004A7FEC /* View Controller States.swift */; };
+		450425F122C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */; };
 		451F823622C0A29B00A672D0 /* VisitorForMyProj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F823522C0A29B00A672D0 /* VisitorForMyProj.swift */; };
 		4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */; };
 		4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4527E71D229BF30500C41CB6 /* DODOPizzaViewController.swift */; };
@@ -575,6 +577,10 @@
 		456FBF9E2278155C005AC721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9D2278155C005AC721 /* Card.swift */; };
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
 		4573D78322C092DC006FD84F /* Configurable types in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573D78222C092DC006FD84F /* Configurable types in Swift.swift */; };
+		4584866122CB22190021CCE2 /* CollectionViewSelfSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4584865F22CB22190021CCE2 /* CollectionViewSelfSize.swift */; };
+		4584866222CB22190021CCE2 /* CollectionViewSelfSize.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4584866022CB22190021CCE2 /* CollectionViewSelfSize.xib */; };
+		4584866622CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4584866422CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift */; };
+		4584866722CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4584866522CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib */; };
 		458CD1F02289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */; };
 		4590D21F229FDDF300A82D2B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D21E229FDDF300A82D2B /* BannerView.swift */; };
 		4590D222229FE11600A82D2B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D220229FE11600A82D2B /* ScrollViewController.swift */; };
@@ -1239,6 +1245,8 @@
 		3CFD254F2113453F00128554 /* ETBAddTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBAddTimeViewController.swift; sourceTree = "<group>"; };
 		3CFD25502113453F00128554 /* ETBAddTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBAddTimeViewController.xib; sourceTree = "<group>"; };
 		44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450425EE22C345F1004A7FEC /* View Controller States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Controller States.swift"; sourceTree = "<group>"; };
+		450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Композиция UIViewController-ов и навигация между ними.swift"; sourceTree = "<group>"; };
 		451F823522C0A29B00A672D0 /* VisitorForMyProj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorForMyProj.swift; sourceTree = "<group>"; };
 		4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Avoiding singletons in Swift.swift"; sourceTree = "<group>"; };
 		4527E71D229BF30500C41CB6 /* DODOPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DODOPizzaViewController.swift; sourceTree = "<group>"; };
@@ -1286,6 +1294,10 @@
 		456FBF9D2278155C005AC721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		4573D78222C092DC006FD84F /* Configurable types in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configurable types in Swift.swift"; sourceTree = "<group>"; };
+		4584865F22CB22190021CCE2 /* CollectionViewSelfSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSelfSize.swift; sourceTree = "<group>"; };
+		4584866022CB22190021CCE2 /* CollectionViewSelfSize.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewSelfSize.xib; sourceTree = "<group>"; };
+		4584866422CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizeCollectionViewCell.swift; sourceTree = "<group>"; };
+		4584866522CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfSizeCollectionViewCell.xib; sourceTree = "<group>"; };
 		458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Structuring model data in Swift(Структурирование данных).swift"; sourceTree = "<group>"; };
 		4590D21E229FDDF300A82D2B /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		4590D220229FE11600A82D2B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -1605,7 +1617,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4577906722A8EA72002666C3 /* MyPlaces */,
+				4584865E22CB21F40021CCE2 /* Collection View Cells Self-Sizing */,
 				4590D21D229FDD9300A82D2B /* Бесконечный UIScrollView */,
 				45459680229BED9600682917 /* DODOPizza */,
 				45933C7A2282AFF80069639A /* Timer */,
@@ -2023,6 +2035,7 @@
 				3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */,
 				45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */,
 				453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */,
+				450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */,
 			);
 			path = "Всяко разно ";
 			sourceTree = "<group>";
@@ -2070,6 +2083,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				450425ED22C345D7004A7FEC /* Vadimbulavin */,
 				4586FAA222B8AE5E00FE83D1 /* HTTP  наброски */,
 				4586FAA122B8AE4C00FE83D1 /* Композитный дата сурс */,
 				4525FE582266E8CB00E2EC83 /* SundellResources */,
@@ -3129,6 +3143,14 @@
 			path = TimerControl;
 			sourceTree = "<group>";
 		};
+		450425ED22C345D7004A7FEC /* Vadimbulavin */ = {
+			isa = PBXGroup;
+			children = (
+				450425EE22C345F1004A7FEC /* View Controller States.swift */,
+			);
+			path = Vadimbulavin;
+			sourceTree = "<group>";
+		};
 		451F823422C0A28A00A672D0 /* VisitorForMe */ = {
 			isa = PBXGroup;
 			children = (
@@ -3322,21 +3344,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		4577906722A8EA72002666C3 /* MyPlaces */ = {
-			isa = PBXGroup;
-			children = (
-				4577906822A8EAA3002666C3 /* Controllers */,
-			);
-			path = MyPlaces;
-			sourceTree = "<group>";
-		};
-		4577906822A8EAA3002666C3 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		4583D7C5228BFB2400630EB4 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -3344,6 +3351,25 @@
 				45F97C9D22A104B700FC076A /* HTTPRequest.swift */,
 			);
 			path = APIClient;
+			sourceTree = "<group>";
+		};
+		4584865E22CB21F40021CCE2 /* Collection View Cells Self-Sizing */ = {
+			isa = PBXGroup;
+			children = (
+				4584866322CB22BF0021CCE2 /* Cell */,
+				4584865F22CB22190021CCE2 /* CollectionViewSelfSize.swift */,
+				4584866022CB22190021CCE2 /* CollectionViewSelfSize.xib */,
+			);
+			path = "Collection View Cells Self-Sizing";
+			sourceTree = "<group>";
+		};
+		4584866322CB22BF0021CCE2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4584866422CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift */,
+				4584866522CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		4586FAA122B8AE4C00FE83D1 /* Композитный дата сурс */ = {
@@ -3723,6 +3749,7 @@
 				3CEA09F62236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib in Resources */,
 				45B7140922782BE5008B63F2 /* CardCell.xib in Resources */,
 				3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */,
+				4584866722CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib in Resources */,
 				3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */,
 				4527E735229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib in Resources */,
 				3CE80B44225F0E2700CA9C02 /* ExpandingCellsController.xib in Resources */,
@@ -3736,6 +3763,7 @@
 				3C4099852237CD3100E5FB05 /* RootContentViewController.xib in Resources */,
 				3CEA09FB2236362500C03FF9 /* ContentTableViewCell.xib in Resources */,
 				3C176F08221C338A009CC12F /* switch.json in Resources */,
+				4584866222CB22190021CCE2 /* CollectionViewSelfSize.xib in Resources */,
 				3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */,
 				3C1E6ABE221C073000997F31 /* LottieAnimationViewController.xib in Resources */,
 				3C40999A2237D86400E5FB05 /* DemoContentTableViewCell.xib in Resources */,
@@ -4025,6 +4053,7 @@
 				3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */,
 				3C6F2D57224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
 				3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */,
+				4584866122CB22190021CCE2 /* CollectionViewSelfSize.swift in Sources */,
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
 				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
@@ -4122,6 +4151,7 @@
 				45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */,
 				4527E730229BFDD700C41CB6 /* PizzaHalfCell.swift in Sources */,
 				3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */,
+				4584866622CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift in Sources */,
 				4527E72A229BF87500C41CB6 /* PizzaHalvesViewModel.swift in Sources */,
 				3C3076CB225B15610006D5FC /* String literals in Swift.swift in Sources */,
 				45BFA285229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift in Sources */,
@@ -4159,6 +4189,7 @@
 				3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */,
 				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
+				450425F122C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift in Sources */,
 				45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */,
 				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */,
@@ -4196,6 +4227,7 @@
 				4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */,
 				453484B522A69C2F00D9A6B8 /* URLSession+Ex.swift in Sources */,
 				45BFA287229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift in Sources */,
+				450425EF22C345F1004A7FEC /* View Controller States.swift in Sources */,
 				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,

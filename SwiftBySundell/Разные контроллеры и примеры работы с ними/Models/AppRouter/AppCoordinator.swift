@@ -30,6 +30,7 @@ final class AppCoordinator {
         case tinder
         case dodo
         case scroll
+        case selfSizeCell
         var title: String {
             switch self {
             case .timer:
@@ -66,6 +67,8 @@ final class AppCoordinator {
                 return "dodo"
             case .scroll:
                 return "scroll"
+            case .selfSizeCell:
+                return "selfSizeCell"
             }
         }
 
@@ -115,6 +118,8 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(DODOPizzaViewController.self, arguments: self, destination.title)!
         case .scroll:
             return DependencyProvider.shared.container.resolve(ScrollViewController.self, arguments: self, destination.title)!
+        case .selfSizeCell:
+            return DependencyProvider.shared.container.resolve(CollectionViewSelfSize.self, arguments: self, destination.title)!
         }
     }
 

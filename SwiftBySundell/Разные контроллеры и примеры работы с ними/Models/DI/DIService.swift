@@ -119,6 +119,10 @@ class RepositoryAssembly: Assembly {
         container.register(ScrollViewController.self) { _, navigator, title in
             ScrollViewController(navigator: navigator, title: title, nibName: String(describing: ScrollViewController.self), bundle: nil)
         }.inObjectScope(.transient)
+
+        container.register(CollectionViewSelfSize.self) { _, navigator, title in
+            CollectionViewSelfSize(navigator: navigator, title: title, nibName: String(describing: CollectionViewSelfSize.self), bundle: nil)
+        }.inObjectScope(.transient)
     }
 }
 
