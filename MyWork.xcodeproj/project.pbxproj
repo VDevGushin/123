@@ -568,6 +568,8 @@
 		453484B522A69C2F00D9A6B8 /* URLSession+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453484B422A69C2F00D9A6B8 /* URLSession+Ex.swift */; };
 		453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */; };
 		453EDD5722966CFE00CD1F9D /* Заместитель (Прокси).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */; };
+		4541566222CC7076000D87DA /* Разворот односвязного списка.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541566122CC7076000D87DA /* Разворот односвязного списка.swift */; };
+		4541566422CC76D6000D87DA /* Data-Driven Table Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541566322CC76D6000D87DA /* Data-Driven Table Views.swift */; };
 		4545967C229BC9E400682917 /* Мост (Bridge).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545967B229BC9E400682917 /* Мост (Bridge).swift */; };
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
@@ -611,6 +613,12 @@
 		45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */; };
 		45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */; };
 		45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */; };
+		45C54C3422CDED1100E09E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C54C3322CDED1100E09E25 /* AppDelegate.swift */; };
+		45C54C3622CDED1100E09E25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C54C3522CDED1100E09E25 /* ViewController.swift */; };
+		45C54C3922CDED1100E09E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C54C3722CDED1100E09E25 /* Main.storyboard */; };
+		45C54C3B22CDED1200E09E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C54C3A22CDED1200E09E25 /* Assets.xcassets */; };
+		45C54C3E22CDED1200E09E25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C54C3C22CDED1200E09E25 /* LaunchScreen.storyboard */; };
+		45C54C4722CDED4900E09E25 /* Single Responsibility Principle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C54C4622CDED4900E09E25 /* Single Responsibility Principle.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */; };
 		45DB5CF622A78EF80061147F /* Result+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB5CF522A78EF80061147F /* Result+Ex.swift */; };
 		45DB5CF822A7A12A0061147F /* JSONExampleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */; };
@@ -1284,6 +1292,8 @@
 		453484B422A69C2F00D9A6B8 /* URLSession+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Ex.swift"; sourceTree = "<group>"; };
 		453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storing Codable structs on the disk.swift"; sourceTree = "<group>"; };
 		453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Заместитель (Прокси).swift"; sourceTree = "<group>"; };
+		4541566122CC7076000D87DA /* Разворот односвязного списка.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Разворот односвязного списка.swift"; sourceTree = "<group>"; };
+		4541566322CC76D6000D87DA /* Data-Driven Table Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data-Driven Table Views.swift"; sourceTree = "<group>"; };
 		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545967B229BC9E400682917 /* Мост (Bridge).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Мост (Bridge).swift"; sourceTree = "<group>"; };
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
@@ -1328,6 +1338,14 @@
 		45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaHalfSelectorLayout.swift; sourceTree = "<group>"; };
 		45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayoutCache.swift; sourceTree = "<group>"; };
 		45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ex.swift"; sourceTree = "<group>"; };
+		45C54C3122CDED1000E09E25 /* SwiftBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45C54C3322CDED1100E09E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45C54C3522CDED1100E09E25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45C54C3822CDED1100E09E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45C54C3A22CDED1200E09E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45C54C3D22CDED1200E09E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45C54C3F22CDED1200E09E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45C54C4622CDED4900E09E25 /* Single Responsibility Principle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single Responsibility Principle.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift(Наблюдатели за свойствами).swift"; sourceTree = "<group>"; };
 		45DB5CF522A78EF80061147F /* Result+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Ex.swift"; sourceTree = "<group>"; };
 		45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExampleConfigurator.swift; sourceTree = "<group>"; };
@@ -1398,6 +1416,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		452FD54F228A962A00DB34FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45C54C2E22CDED1000E09E25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2036,6 +2061,8 @@
 				45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */,
 				453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */,
 				450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */,
+				4541566122CC7076000D87DA /* Разворот односвязного списка.swift */,
+				4541566322CC76D6000D87DA /* Data-Driven Table Views.swift */,
 			);
 			path = "Всяко разно ";
 			sourceTree = "<group>";
@@ -2740,6 +2767,7 @@
 				3C41F90121611883002334DB /* SupportLib */,
 				3C517C5521B9051A009CAEE7 /* SwiftBySundell */,
 				452FD553228A962A00DB34FB /* Patterns */,
+				45C54C3222CDED1100E09E25 /* SwiftBook */,
 				3CD85A1B20EF482A008D994C /* Products */,
 				CE930C0AC3A3715B8BA78B66 /* Pods */,
 				0A62CB7B25171A6FCD0001F5 /* Frameworks */,
@@ -2756,6 +2784,7 @@
 				3C82F46B2164AA0F0024B3E4 /* WorkWithUI.app */,
 				3C517C5421B9051A009CAEE7 /* SwiftBySundell.app */,
 				452FD552228A962A00DB34FB /* Patterns */,
+				45C54C3122CDED1000E09E25 /* SwiftBook.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3458,6 +3487,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		45C54C3222CDED1100E09E25 /* SwiftBook */ = {
+			isa = PBXGroup;
+			children = (
+				45C54C4322CDED3000E09E25 /* SOLID */,
+				45C54C3322CDED1100E09E25 /* AppDelegate.swift */,
+				45C54C3522CDED1100E09E25 /* ViewController.swift */,
+				45C54C3722CDED1100E09E25 /* Main.storyboard */,
+				45C54C3A22CDED1200E09E25 /* Assets.xcassets */,
+				45C54C3C22CDED1200E09E25 /* LaunchScreen.storyboard */,
+				45C54C3F22CDED1200E09E25 /* Info.plist */,
+			);
+			path = SwiftBook;
+			sourceTree = "<group>";
+		};
+		45C54C4322CDED3000E09E25 /* SOLID */ = {
+			isa = PBXGroup;
+			children = (
+				45C54C4622CDED4900E09E25 /* Single Responsibility Principle.swift */,
+			);
+			path = SOLID;
+			sourceTree = "<group>";
+		};
 		45E4D1CF2282B1600047940C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -3646,6 +3697,23 @@
 			productReference = 452FD552228A962A00DB34FB /* Patterns */;
 			productType = "com.apple.product-type.tool";
 		};
+		45C54C3022CDED1000E09E25 /* SwiftBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45C54C4222CDED1200E09E25 /* Build configuration list for PBXNativeTarget "SwiftBook" */;
+			buildPhases = (
+				45C54C2D22CDED1000E09E25 /* Sources */,
+				45C54C2E22CDED1000E09E25 /* Frameworks */,
+				45C54C2F22CDED1000E09E25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftBook;
+			productName = SwiftBook;
+			productReference = 45C54C3122CDED1000E09E25 /* SwiftBook.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -3679,6 +3747,9 @@
 					452FD551228A962A00DB34FB = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					45C54C3022CDED1000E09E25 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 3CD85A1520EF482A008D994C /* Build configuration list for PBXProject "MyWork" */;
@@ -3701,6 +3772,7 @@
 				3C82F46A2164AA0F0024B3E4 /* WorkWithUI */,
 				3C517C5321B9051A009CAEE7 /* SwiftBySundell */,
 				452FD551228A962A00DB34FB /* Patterns */,
+				45C54C3022CDED1000E09E25 /* SwiftBook */,
 			);
 		};
 /* End PBXProject section */
@@ -3852,6 +3924,16 @@
 				3C988071215B807100994BA8 /* ColorView.xib in Resources */,
 				3CE41F7A21523AB8002A6600 /* LaunchScreen.storyboard in Resources */,
 				3CE41F7521523AB5002A6600 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45C54C2F22CDED1000E09E25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C54C3E22CDED1200E09E25 /* LaunchScreen.storyboard in Resources */,
+				45C54C3B22CDED1200E09E25 /* Assets.xcassets in Resources */,
+				45C54C3922CDED1100E09E25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4061,6 +4143,7 @@
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
 				3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */,
+				4541566422CC76D6000D87DA /* Data-Driven Table Views.swift in Sources */,
 				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */,
@@ -4205,6 +4288,7 @@
 				45BFA289229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift in Sources */,
 				3CE80B32225F0A9C00CA9C02 /* Inspiration.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
+				4541566222CC7076000D87DA /* Разворот односвязного списка.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */,
 				3CD6DC2F2227BF8D0062D2EC /* RealAlamofireDataController.swift in Sources */,
@@ -4512,6 +4596,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45C54C2D22CDED1000E09E25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C54C3622CDED1100E09E25 /* ViewController.swift in Sources */,
+				45C54C4722CDED4900E09E25 /* Single Responsibility Principle.swift in Sources */,
+				45C54C3422CDED1100E09E25 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -4588,6 +4682,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				3CE41F7921523AB8002A6600 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		45C54C3722CDED1100E09E25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45C54C3822CDED1100E09E25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45C54C3C22CDED1200E09E25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45C54C3D22CDED1200E09E25 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -5015,6 +5125,47 @@
 			};
 			name = Release;
 		};
+		45C54C4022CDED1200E09E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED5577XBKG;
+				INFOPLIST_FILE = SwiftBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vdev.apple.com.SwiftBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45C54C4122CDED1200E09E25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ED5577XBKG;
+				INFOPLIST_FILE = SwiftBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vdev.apple.com.SwiftBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5086,6 +5237,15 @@
 			buildConfigurations = (
 				452FD557228A962A00DB34FB /* Debug */,
 				452FD558228A962A00DB34FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45C54C4222CDED1200E09E25 /* Build configuration list for PBXNativeTarget "SwiftBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45C54C4022CDED1200E09E25 /* Debug */,
+				45C54C4122CDED1200E09E25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
