@@ -613,12 +613,10 @@
 		45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */; };
 		45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */; };
 		45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */; };
-		45C54C3422CDED1100E09E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C54C3322CDED1100E09E25 /* AppDelegate.swift */; };
-		45C54C3622CDED1100E09E25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C54C3522CDED1100E09E25 /* ViewController.swift */; };
-		45C54C3922CDED1100E09E25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C54C3722CDED1100E09E25 /* Main.storyboard */; };
-		45C54C3B22CDED1200E09E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C54C3A22CDED1200E09E25 /* Assets.xcassets */; };
-		45C54C3E22CDED1200E09E25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C54C3C22CDED1200E09E25 /* LaunchScreen.storyboard */; };
-		45C54C4722CDED4900E09E25 /* Single Responsibility Principle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C54C4622CDED4900E09E25 /* Single Responsibility Principle.swift */; };
+		45D6CB2422DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */; };
+		45D6CB2622DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2522DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift */; };
+		45D6CB2922DC5D9400C4D0B6 /* AnyCodingKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2822DC5D9400C4D0B6 /* AnyCodingKeyTests.swift */; };
+		45D6CB2B22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2A22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift */; };
 		45DAFEDF226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */; };
 		45DB5CF622A78EF80061147F /* Result+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB5CF522A78EF80061147F /* Result+Ex.swift */; };
 		45DB5CF822A7A12A0061147F /* JSONExampleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */; };
@@ -1338,14 +1336,10 @@
 		45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaHalfSelectorLayout.swift; sourceTree = "<group>"; };
 		45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayoutCache.swift; sourceTree = "<group>"; };
 		45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ex.swift"; sourceTree = "<group>"; };
-		45C54C3122CDED1000E09E25 /* SwiftBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		45C54C3322CDED1100E09E25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45C54C3522CDED1100E09E25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		45C54C3822CDED1100E09E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		45C54C3A22CDED1200E09E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		45C54C3D22CDED1200E09E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		45C54C3F22CDED1200E09E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45C54C4622CDED4900E09E25 /* Single Responsibility Principle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single Responsibility Principle.swift"; sourceTree = "<group>"; };
+		45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Интеграционное тестирование для проверки на наличие утечки памяти.swift"; sourceTree = "<group>"; };
+		45D6CB2522DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Универсальный JSONDecoder.swift"; sourceTree = "<group>"; };
+		45D6CB2822DC5D9400C4D0B6 /* AnyCodingKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodingKeyTests.swift; sourceTree = "<group>"; };
+		45D6CB2A22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customizing Codable types in Swift.swift"; sourceTree = "<group>"; };
 		45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift(Наблюдатели за свойствами).swift"; sourceTree = "<group>"; };
 		45DB5CF522A78EF80061147F /* Result+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Ex.swift"; sourceTree = "<group>"; };
 		45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExampleConfigurator.swift; sourceTree = "<group>"; };
@@ -1416,13 +1410,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		452FD54F228A962A00DB34FB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45C54C2E22CDED1000E09E25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2063,6 +2050,7 @@
 				450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */,
 				4541566122CC7076000D87DA /* Разворот односвязного списка.swift */,
 				4541566322CC76D6000D87DA /* Data-Driven Table Views.swift */,
+				45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */,
 			);
 			path = "Всяко разно ";
 			sourceTree = "<group>";
@@ -2110,6 +2098,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				45D6CB2722DC5D7F00C4D0B6 /* Универсальный JSONDecoder */,
 				450425ED22C345D7004A7FEC /* Vadimbulavin */,
 				4586FAA222B8AE5E00FE83D1 /* HTTP  наброски */,
 				4586FAA122B8AE4C00FE83D1 /* Композитный дата сурс */,
@@ -2356,6 +2345,7 @@
 				452FD54C228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift */,
 				45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */,
 				4573D78222C092DC006FD84F /* Configurable types in Swift.swift */,
+				45D6CB2A22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift */,
 			);
 			path = "Капашилка";
 			sourceTree = "<group>";
@@ -2767,7 +2757,6 @@
 				3C41F90121611883002334DB /* SupportLib */,
 				3C517C5521B9051A009CAEE7 /* SwiftBySundell */,
 				452FD553228A962A00DB34FB /* Patterns */,
-				45C54C3222CDED1100E09E25 /* SwiftBook */,
 				3CD85A1B20EF482A008D994C /* Products */,
 				CE930C0AC3A3715B8BA78B66 /* Pods */,
 				0A62CB7B25171A6FCD0001F5 /* Frameworks */,
@@ -2784,7 +2773,6 @@
 				3C82F46B2164AA0F0024B3E4 /* WorkWithUI.app */,
 				3C517C5421B9051A009CAEE7 /* SwiftBySundell.app */,
 				452FD552228A962A00DB34FB /* Patterns */,
-				45C54C3122CDED1000E09E25 /* SwiftBook.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3487,26 +3475,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		45C54C3222CDED1100E09E25 /* SwiftBook */ = {
+		45D6CB2722DC5D7F00C4D0B6 /* Универсальный JSONDecoder */ = {
 			isa = PBXGroup;
 			children = (
-				45C54C4322CDED3000E09E25 /* SOLID */,
-				45C54C3322CDED1100E09E25 /* AppDelegate.swift */,
-				45C54C3522CDED1100E09E25 /* ViewController.swift */,
-				45C54C3722CDED1100E09E25 /* Main.storyboard */,
-				45C54C3A22CDED1200E09E25 /* Assets.xcassets */,
-				45C54C3C22CDED1200E09E25 /* LaunchScreen.storyboard */,
-				45C54C3F22CDED1200E09E25 /* Info.plist */,
+				45D6CB2522DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift */,
+				45D6CB2822DC5D9400C4D0B6 /* AnyCodingKeyTests.swift */,
 			);
-			path = SwiftBook;
-			sourceTree = "<group>";
-		};
-		45C54C4322CDED3000E09E25 /* SOLID */ = {
-			isa = PBXGroup;
-			children = (
-				45C54C4622CDED4900E09E25 /* Single Responsibility Principle.swift */,
-			);
-			path = SOLID;
+			path = "Универсальный JSONDecoder";
 			sourceTree = "<group>";
 		};
 		45E4D1CF2282B1600047940C /* Models */ = {
@@ -3697,23 +3672,6 @@
 			productReference = 452FD552228A962A00DB34FB /* Patterns */;
 			productType = "com.apple.product-type.tool";
 		};
-		45C54C3022CDED1000E09E25 /* SwiftBook */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 45C54C4222CDED1200E09E25 /* Build configuration list for PBXNativeTarget "SwiftBook" */;
-			buildPhases = (
-				45C54C2D22CDED1000E09E25 /* Sources */,
-				45C54C2E22CDED1000E09E25 /* Frameworks */,
-				45C54C2F22CDED1000E09E25 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SwiftBook;
-			productName = SwiftBook;
-			productReference = 45C54C3122CDED1000E09E25 /* SwiftBook.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -3747,9 +3705,6 @@
 					452FD551228A962A00DB34FB = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					45C54C3022CDED1000E09E25 = {
-						CreatedOnToolsVersion = 10.2.1;
-					};
 				};
 			};
 			buildConfigurationList = 3CD85A1520EF482A008D994C /* Build configuration list for PBXProject "MyWork" */;
@@ -3772,7 +3727,6 @@
 				3C82F46A2164AA0F0024B3E4 /* WorkWithUI */,
 				3C517C5321B9051A009CAEE7 /* SwiftBySundell */,
 				452FD551228A962A00DB34FB /* Patterns */,
-				45C54C3022CDED1000E09E25 /* SwiftBook */,
 			);
 		};
 /* End PBXProject section */
@@ -3924,16 +3878,6 @@
 				3C988071215B807100994BA8 /* ColorView.xib in Resources */,
 				3CE41F7A21523AB8002A6600 /* LaunchScreen.storyboard in Resources */,
 				3CE41F7521523AB5002A6600 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		45C54C2F22CDED1000E09E25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45C54C3E22CDED1200E09E25 /* LaunchScreen.storyboard in Resources */,
-				45C54C3B22CDED1200E09E25 /* Assets.xcassets in Resources */,
-				45C54C3922CDED1100E09E25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4145,6 +4089,7 @@
 				3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */,
 				4541566422CC76D6000D87DA /* Data-Driven Table Views.swift in Sources */,
 				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
+				45D6CB2622DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */,
 				45DB5CF822A7A12A0061147F /* JSONExampleConfigurator.swift in Sources */,
@@ -4158,6 +4103,7 @@
 				3CBDF78622533A620096528A /* HowToUse.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C6F2D42224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift in Sources */,
+				45D6CB2422DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift in Sources */,
 				3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */,
 				45B71410227837A0008B63F2 /* Constants.swift in Sources */,
 				3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */,
@@ -4248,6 +4194,7 @@
 				3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
 				45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */,
 				4590D222229FE11600A82D2B /* ScrollViewController.swift in Sources */,
+				45D6CB2922DC5D9400C4D0B6 /* AnyCodingKeyTests.swift in Sources */,
 				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
 				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */,
@@ -4312,6 +4259,7 @@
 				453484B522A69C2F00D9A6B8 /* URLSession+Ex.swift in Sources */,
 				45BFA287229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift in Sources */,
 				450425EF22C345F1004A7FEC /* View Controller States.swift in Sources */,
+				45D6CB2B22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift in Sources */,
 				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
 				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
 				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,
@@ -4596,16 +4544,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		45C54C2D22CDED1000E09E25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				45C54C3622CDED1100E09E25 /* ViewController.swift in Sources */,
-				45C54C4722CDED4900E09E25 /* Single Responsibility Principle.swift in Sources */,
-				45C54C3422CDED1100E09E25 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -4682,22 +4620,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				3CE41F7921523AB8002A6600 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		45C54C3722CDED1100E09E25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45C54C3822CDED1100E09E25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		45C54C3C22CDED1200E09E25 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45C54C3D22CDED1200E09E25 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -5125,47 +5047,6 @@
 			};
 			name = Release;
 		};
-		45C54C4022CDED1200E09E25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ED5577XBKG;
-				INFOPLIST_FILE = SwiftBook/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = vdev.apple.com.SwiftBook;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		45C54C4122CDED1200E09E25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ED5577XBKG;
-				INFOPLIST_FILE = SwiftBook/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = vdev.apple.com.SwiftBook;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5237,15 +5118,6 @@
 			buildConfigurations = (
 				452FD557228A962A00DB34FB /* Debug */,
 				452FD558228A962A00DB34FB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		45C54C4222CDED1200E09E25 /* Build configuration list for PBXNativeTarget "SwiftBook" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				45C54C4022CDED1200E09E25 /* Debug */,
-				45C54C4122CDED1200E09E25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
