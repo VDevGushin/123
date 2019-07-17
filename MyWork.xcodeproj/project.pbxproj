@@ -544,6 +544,7 @@
 		4527E731229BFDD700C41CB6 /* PizzaHalfCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4527E72F229BFDD700C41CB6 /* PizzaHalfCell.xib */; };
 		4527E734229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4527E732229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift */; };
 		4527E735229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4527E733229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib */; };
+		452E93E322DDA17400BDEB66 /* Generalizing Swift code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452E93E222DDA17400BDEB66 /* Generalizing Swift code.swift */; };
 		452FD54D228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD54C228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift */; };
 		452FD555228A962A00DB34FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD554228A962A00DB34FB /* main.swift */; };
 		452FD56A228A971500DB34FB /* Посредник (Mediator).swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD562228A971500DB34FB /* Посредник (Mediator).swift */; };
@@ -1265,6 +1266,7 @@
 		4527E72F229BFDD700C41CB6 /* PizzaHalfCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaHalfCell.xib; sourceTree = "<group>"; };
 		4527E732229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHalfTitleHeader.swift; sourceTree = "<group>"; };
 		4527E733229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaHalfTitleHeader.xib; sourceTree = "<group>"; };
+		452E93E222DDA17400BDEB66 /* Generalizing Swift code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Generalizing Swift code.swift"; sourceTree = "<group>"; };
 		452FD54C228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pure functions in Swift(Чистые функции).swift"; sourceTree = "<group>"; };
 		452FD552228A962A00DB34FB /* Patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Patterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		452FD554228A962A00DB34FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -2346,6 +2348,7 @@
 				45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */,
 				4573D78222C092DC006FD84F /* Configurable types in Swift.swift */,
 				45D6CB2A22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift */,
+				452E93E222DDA17400BDEB66 /* Generalizing Swift code.swift */,
 			);
 			path = "Капашилка";
 			sourceTree = "<group>";
@@ -4171,6 +4174,7 @@
 				3C6F2D52224F66DF000A194B /* DefaultCollectionViewDelegate.swift in Sources */,
 				3C1854702238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
+				452E93E322DDA17400BDEB66 /* Generalizing Swift code.swift in Sources */,
 				3C51A744223B6DCD00D14490 /* CombinedWebRequestBehavior.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
