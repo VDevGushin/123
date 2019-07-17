@@ -614,6 +614,15 @@
 		45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */; };
 		45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */; };
 		45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */; };
+		45CD86BF22DEF29300EE560A /* FromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD86BD22DEF29300EE560A /* FromViewController.swift */; };
+		45CD86C022DEF29300EE560A /* FromViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45CD86BE22DEF29300EE560A /* FromViewController.xib */; };
+		45CD86C522DEF2A900EE560A /* ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD86C322DEF2A900EE560A /* ToViewController.swift */; };
+		45CD86C622DEF2A900EE560A /* ToViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45CD86C422DEF2A900EE560A /* ToViewController.xib */; };
+		45CD86C922DEF45400EE560A /* AnimatorPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD86C822DEF45400EE560A /* AnimatorPresent.swift */; };
+		45CD86CB22DEF46600EE560A /* AnimatorDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD86CA22DEF46600EE560A /* AnimatorDismiss.swift */; };
+		45CD86CF22DEF8D700EE560A /* DragableInsideScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD86CD22DEF8D700EE560A /* DragableInsideScrollViewController.swift */; };
+		45CD86D022DEF8D700EE560A /* DragableInsideScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45CD86CE22DEF8D700EE560A /* DragableInsideScrollViewController.xib */; };
+		45CD86D522DEF91D00EE560A /* DragableInsideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD86D422DEF91D00EE560A /* DragableInsideScrollView.swift */; };
 		45D6CB2422DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */; };
 		45D6CB2622DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2522DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift */; };
 		45D6CB2922DC5D9400C4D0B6 /* AnyCodingKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2822DC5D9400C4D0B6 /* AnyCodingKeyTests.swift */; };
@@ -1338,6 +1347,15 @@
 		45BFA284229D1A47007BE474 /* PizzaHalfSelectorLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaHalfSelectorLayout.swift; sourceTree = "<group>"; };
 		45BFA28B229D1A6A007BE474 /* TableLayoutCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableLayoutCache.swift; sourceTree = "<group>"; };
 		45BFA28E229D1A99007BE474 /* UIScrollView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Ex.swift"; sourceTree = "<group>"; };
+		45CD86BD22DEF29300EE560A /* FromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromViewController.swift; sourceTree = "<group>"; };
+		45CD86BE22DEF29300EE560A /* FromViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FromViewController.xib; sourceTree = "<group>"; };
+		45CD86C322DEF2A900EE560A /* ToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToViewController.swift; sourceTree = "<group>"; };
+		45CD86C422DEF2A900EE560A /* ToViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToViewController.xib; sourceTree = "<group>"; };
+		45CD86C822DEF45400EE560A /* AnimatorPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorPresent.swift; sourceTree = "<group>"; };
+		45CD86CA22DEF46600EE560A /* AnimatorDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorDismiss.swift; sourceTree = "<group>"; };
+		45CD86CD22DEF8D700EE560A /* DragableInsideScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableInsideScrollViewController.swift; sourceTree = "<group>"; };
+		45CD86CE22DEF8D700EE560A /* DragableInsideScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DragableInsideScrollViewController.xib; sourceTree = "<group>"; };
+		45CD86D422DEF91D00EE560A /* DragableInsideScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragableInsideScrollView.swift; sourceTree = "<group>"; };
 		45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Интеграционное тестирование для проверки на наличие утечки памяти.swift"; sourceTree = "<group>"; };
 		45D6CB2522DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Универсальный JSONDecoder.swift"; sourceTree = "<group>"; };
 		45D6CB2822DC5D9400C4D0B6 /* AnyCodingKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodingKeyTests.swift; sourceTree = "<group>"; };
@@ -1631,6 +1649,8 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45CD86CC22DEF8C200EE560A /* DragInsideScroll */,
+				45CD86BC22DEF27700EE560A /* Сustom Transition */,
 				4584865E22CB21F40021CCE2 /* Collection View Cells Self-Sizing */,
 				4590D21D229FDD9300A82D2B /* Бесконечный UIScrollView */,
 				45459680229BED9600682917 /* DODOPizza */,
@@ -2100,6 +2120,7 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
+				45CD86D622DEFA4C00EE560A /* Контроллер луковка */,
 				45D6CB2722DC5D7F00C4D0B6 /* Универсальный JSONDecoder */,
 				450425ED22C345D7004A7FEC /* Vadimbulavin */,
 				4586FAA222B8AE5E00FE83D1 /* HTTP  наброски */,
@@ -3478,6 +3499,52 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		45CD86BC22DEF27700EE560A /* Сustom Transition */ = {
+			isa = PBXGroup;
+			children = (
+				45CD86C722DEF2AC00EE560A /* Models */,
+				45CD86BD22DEF29300EE560A /* FromViewController.swift */,
+				45CD86BE22DEF29300EE560A /* FromViewController.xib */,
+				45CD86C322DEF2A900EE560A /* ToViewController.swift */,
+				45CD86C422DEF2A900EE560A /* ToViewController.xib */,
+			);
+			path = "Сustom Transition";
+			sourceTree = "<group>";
+		};
+		45CD86C722DEF2AC00EE560A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45CD86C822DEF45400EE560A /* AnimatorPresent.swift */,
+				45CD86CA22DEF46600EE560A /* AnimatorDismiss.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45CD86CC22DEF8C200EE560A /* DragInsideScroll */ = {
+			isa = PBXGroup;
+			children = (
+				45CD86D122DEF90500EE560A /* Models */,
+				45CD86CD22DEF8D700EE560A /* DragableInsideScrollViewController.swift */,
+				45CD86CE22DEF8D700EE560A /* DragableInsideScrollViewController.xib */,
+			);
+			path = DragInsideScroll;
+			sourceTree = "<group>";
+		};
+		45CD86D122DEF90500EE560A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45CD86D422DEF91D00EE560A /* DragableInsideScrollView.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45CD86D622DEFA4C00EE560A /* Контроллер луковка */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Контроллер луковка";
+			sourceTree = "<group>";
+		};
 		45D6CB2722DC5D7F00C4D0B6 /* Универсальный JSONDecoder */ = {
 			isa = PBXGroup;
 			children = (
@@ -3768,6 +3835,7 @@
 				3CE138F22227A5BD00E0B7CD /* SwinjectViewController.xib in Resources */,
 				3C1E6AC3221C0C9600997F31 /* im-thirsty.json in Resources */,
 				45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */,
+				45CD86D022DEF8D700EE560A /* DragableInsideScrollViewController.xib in Resources */,
 				3C1E6AC4221C0C9600997F31 /* motorcycle.json in Resources */,
 				3C3253B7221D7C6600A7E3F0 /* taxi-app-loading.json in Resources */,
 				3C3A1B0C221D18E4005DDFA7 /* success.json in Resources */,
@@ -3778,6 +3846,7 @@
 				3CEA09F62236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib in Resources */,
 				45B7140922782BE5008B63F2 /* CardCell.xib in Resources */,
 				3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */,
+				45CD86C622DEF2A900EE560A /* ToViewController.xib in Resources */,
 				4584866722CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib in Resources */,
 				3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */,
 				4527E735229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib in Resources */,
@@ -3801,6 +3870,7 @@
 				3C4D62C4223A5CAE00233C43 /* DiffExampleViewController.xib in Resources */,
 				4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */,
 				3CF5A899222D07B4000833A1 /* test1.json in Resources */,
+				45CD86C022DEF29300EE560A /* FromViewController.xib in Resources */,
 				3CE80B30225F0A8100CA9C02 /* Inspirations.plist in Resources */,
 				3C6F2D4F224F656E000A194B /* FruitCollectionViewCell.xib in Resources */,
 				3C986986222FAE280065660B /* SummaryViewController.xib in Resources */,
@@ -4116,6 +4186,7 @@
 				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
 				4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */,
 				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
+				45CD86BF22DEF29300EE560A /* FromViewController.swift in Sources */,
 				458CD1F02289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift in Sources */,
 				3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */,
 				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
@@ -4132,6 +4203,7 @@
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
 				4527E723229BF47800C41CB6 /* PizzaHalfCollectionController.swift in Sources */,
 				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
+				45CD86CF22DEF8D700EE560A /* DragableInsideScrollViewController.swift in Sources */,
 				3CED730922251C580058A1B5 /* DIService.swift in Sources */,
 				3C8677A72230D8F300D73419 /* CodeEncapsulation.swift in Sources */,
 				453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */,
@@ -4162,6 +4234,7 @@
 				3CD6DC372227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift in Sources */,
 				4527E734229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift in Sources */,
 				3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */,
+				45CD86D522DEF91D00EE560A /* DragableInsideScrollView.swift in Sources */,
 				3C6F2D4A224F648E000A194B /* FruitsProvider.swift in Sources */,
 				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
@@ -4172,6 +4245,7 @@
 				3CE80B3F225F0CFA00CA9C02 /* InspirationCell.swift in Sources */,
 				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3C6F2D52224F66DF000A194B /* DefaultCollectionViewDelegate.swift in Sources */,
+				45CD86C922DEF45400EE560A /* AnimatorPresent.swift in Sources */,
 				3C1854702238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift in Sources */,
 				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
 				452E93E322DDA17400BDEB66 /* Generalizing Swift code.swift in Sources */,
@@ -4179,6 +4253,7 @@
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
 				452FD54D228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift in Sources */,
+				45CD86C522DEF2A900EE560A /* ToViewController.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
 				45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */,
@@ -4191,6 +4266,7 @@
 				45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */,
 				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
 				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
+				45CD86CB22DEF46600EE560A /* AnimatorDismiss.swift in Sources */,
 				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */,

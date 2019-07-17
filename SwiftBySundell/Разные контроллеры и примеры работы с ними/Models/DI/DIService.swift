@@ -123,6 +123,14 @@ class RepositoryAssembly: Assembly {
         container.register(CollectionViewSelfSize.self) { _, navigator, title in
             CollectionViewSelfSize(navigator: navigator, title: title, nibName: String(describing: CollectionViewSelfSize.self), bundle: nil)
         }.inObjectScope(.transient)
+
+        container.register(FromViewController.self) { _, navigator, title in
+            FromViewController(navigator: navigator, title: title, nibName: String(describing: FromViewController.self), bundle: nil)
+        }.inObjectScope(.transient)
+
+        container.register(DragableInsideScrollViewController.self) { _, navigator, title in
+            DragableInsideScrollViewController(navigator: navigator, title: title, nibName: String(describing: DragableInsideScrollViewController.self), bundle: nil)
+        }.inObjectScope(.transient)
     }
 }
 

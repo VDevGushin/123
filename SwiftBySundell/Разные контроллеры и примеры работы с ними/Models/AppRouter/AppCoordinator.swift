@@ -14,6 +14,7 @@ final class AppCoordinator {
 
     enum Destination: Int, Equatable, CaseIterable {
         case mainView
+        case customTransition
         case timer
         case cardGame
         case lottieView
@@ -31,8 +32,13 @@ final class AppCoordinator {
         case dodo
         case scroll
         case selfSizeCell
+        case dragableInsideScrollViewController
         var title: String {
             switch self {
+            case .dragableInsideScrollViewController:
+                return "Dragable Inside ScrollViewController"
+            case .customTransition:
+                return "Custom Transition"
             case .timer:
                 return "TODO with timer"
             case .dynamicCollection:
@@ -120,6 +126,10 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(ScrollViewController.self, arguments: self, destination.title)!
         case .selfSizeCell:
             return DependencyProvider.shared.container.resolve(CollectionViewSelfSize.self, arguments: self, destination.title)!
+        case .customTransition:
+            return DependencyProvider.shared.container.resolve(FromViewController.self, arguments: self, destination.title)!
+        case .dragableInsideScrollViewController:
+            return DependencyProvider.shared.container.resolve(DragableInsideScrollViewController.self, arguments: self, destination.title)!
         }
     }
 
