@@ -19,6 +19,7 @@ final class MainViewController: CoordinatorViewController {
     @IBOutlet private weak var menuTable: UITableView!
     private var dataSource =
         [
+            AppCoordinator.Destination.modalContainerViewController,
             AppCoordinator.Destination.dragableInsideScrollViewController,
             AppCoordinator.Destination.customTransition,
             AppCoordinator.Destination.selfSizeCell,

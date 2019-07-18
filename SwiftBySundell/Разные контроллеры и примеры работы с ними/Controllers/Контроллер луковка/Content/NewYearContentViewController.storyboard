@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Year Content View Controller-->
+        <scene sceneID="IjQ-eM-JTI">
+            <objects>
+                <viewController storyboardIdentifier="NewYearContentViewController" id="ciY-lW-gu6" customClass="NewYearContentViewController" customModule="SwiftBySundell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LJj-XM-qZw" customClass="NewYearContentView" customModule="SwiftBySundell" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="HSu-a6-tId">
+                                <rect key="frame" x="22" y="0.0" width="276" height="225"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Короткий день в Новый год" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXJ-BH-pqe">
+                                <rect key="frame" x="45.5" y="245" width="229.5" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 декабря работаем до 18:00. Наши ребята тоже отмечают Новый год!  Продолжим радовать вас пиццей 1 января в 12:00" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILk-Zc-8JF">
+                                <rect key="frame" x="0.0" y="269.5" width="320" height="130.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HSu-a6-tId" firstAttribute="centerX" secondItem="LJj-XM-qZw" secondAttribute="centerXWithinMargins" id="0wN-P6-QJu"/>
+                            <constraint firstItem="ILk-Zc-8JF" firstAttribute="leading" secondItem="LJj-XM-qZw" secondAttribute="leading" id="6ju-Ld-v4g"/>
+                            <constraint firstItem="hXJ-BH-pqe" firstAttribute="top" secondItem="HSu-a6-tId" secondAttribute="bottom" constant="20" id="BmK-xh-fqY"/>
+                            <constraint firstItem="ILk-Zc-8JF" firstAttribute="centerX" secondItem="hXJ-BH-pqe" secondAttribute="centerX" id="MdB-cp-s3g"/>
+                            <constraint firstItem="ILk-Zc-8JF" firstAttribute="top" secondItem="hXJ-BH-pqe" secondAttribute="bottom" constant="4" id="SXD-2s-Wd8"/>
+                            <constraint firstItem="HSu-a6-tId" firstAttribute="top" secondItem="LJj-XM-qZw" secondAttribute="topMargin" id="V1s-jX-H6f"/>
+                            <constraint firstItem="HSu-a6-tId" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LJj-XM-qZw" secondAttribute="leading" id="WlB-Um-8gs"/>
+                            <constraint firstItem="hXJ-BH-pqe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LJj-XM-qZw" secondAttribute="leadingMargin" id="XEo-e6-uby"/>
+                            <constraint firstItem="hXJ-BH-pqe" firstAttribute="centerX" secondItem="HSu-a6-tId" secondAttribute="centerX" id="oEa-JB-sFL"/>
+                            <constraint firstAttribute="bottom" secondItem="ILk-Zc-8JF" secondAttribute="bottom" id="xHP-6Z-HIZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tmh-HF-Rx7"/>
+                        <connections>
+                            <outlet property="bodyLabel" destination="ILk-Zc-8JF" id="RsS-vn-DlH"/>
+                            <outlet property="doneButton" destination="52c-vV-Ua1" id="drv-T9-SbZ"/>
+                            <outlet property="imageView" destination="HSu-a6-tId" id="5io-Wo-Ugr"/>
+                            <outlet property="titleLabel" destination="hXJ-BH-pqe" id="xQU-RM-Y09"/>
+                        </connections>
+                    </view>
+                    <size key="freeformSize" width="320" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5S-B8-RKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52c-vV-Ua1">
+                    <rect key="frame" x="0.0" y="0.0" width="565" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="yL1-ki-X4a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <state key="normal" title="Ага, понятно" backgroundImage="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="doneButtonDidPress:" destination="ciY-lW-gu6" eventType="touchUpInside" id="aBc-1B-tap"/>
+                    </connections>
+                </button>
+            </objects>
+            <point key="canvasLocation" x="873" y="-434"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="37" height="48"/>
+        <image name="image" width="276" height="245"/>
+    </resources>
+</document>

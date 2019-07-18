@@ -33,6 +33,7 @@ final class AppCoordinator {
         case scroll
         case selfSizeCell
         case dragableInsideScrollViewController
+        case modalContainerViewController
         var title: String {
             switch self {
             case .dragableInsideScrollViewController:
@@ -75,6 +76,8 @@ final class AppCoordinator {
                 return "scroll"
             case .selfSizeCell:
                 return "selfSizeCell"
+            case .modalContainerViewController:
+                return "Контроллер луковка"
             }
         }
 
@@ -89,6 +92,10 @@ final class AppCoordinator {
 
     func close() {
         self.navigationController.dismiss(animated: true)
+    }
+    
+    func back(){
+        self.navigationController.popViewController(animated: true)
     }
 
     func navigate(to destination: Destination) {
@@ -130,6 +137,8 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(FromViewController.self, arguments: self, destination.title)!
         case .dragableInsideScrollViewController:
             return DependencyProvider.shared.container.resolve(DragableInsideScrollViewController.self, arguments: self, destination.title)!
+        case .modalContainerViewController:
+            return DependencyProvider.shared.container.resolve(ModalContainerViewController.self, arguments: self, destination.title)!
         }
     }
 

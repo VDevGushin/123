@@ -577,6 +577,16 @@
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
 		455D1350228D369800C0DC32 /* Адаптер (Adapter).swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D134F228D369800C0DC32 /* Адаптер (Adapter).swift */; };
 		455D1353228D410700C0DC32 /* URLPathComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */; };
+		456F506622E045AA0020CE2A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F506522E045AA0020CE2A /* UIViewController+Ext.swift */; };
+		456F506822E045CD0020CE2A /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F506722E045CD0020CE2A /* UIView+Ext.swift */; };
+		456F506A22E046390020CE2A /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F506922E046390020CE2A /* Storyboardable.swift */; };
+		456F506E22E047120020CE2A /* OnboardingViewControllerNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F506D22E047120020CE2A /* OnboardingViewControllerNew.swift */; };
+		456F507022E047AE0020CE2A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F506F22E047AE0020CE2A /* OnboardingView.swift */; };
+		456F507222E048240020CE2A /* ViewSpecificController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F507122E048240020CE2A /* ViewSpecificController.swift */; };
+		456F507422E049530020CE2A /* OnboardingViewControllerNew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F507322E049530020CE2A /* OnboardingViewControllerNew.storyboard */; };
+		456F507722E04B0E0020CE2A /* NewYearContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F507622E04B0E0020CE2A /* NewYearContentViewController.swift */; };
+		456F507922E04B170020CE2A /* NewYearContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F507822E04B170020CE2A /* NewYearContentView.swift */; };
+		456F507B22E04B240020CE2A /* NewYearContentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F507A22E04B240020CE2A /* NewYearContentViewController.storyboard */; };
 		456FBF9E2278155C005AC721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9D2278155C005AC721 /* Card.swift */; };
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
 		4573D78322C092DC006FD84F /* Configurable types in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573D78222C092DC006FD84F /* Configurable types in Swift.swift */; };
@@ -635,6 +645,9 @@
 		45E4D1D62282B1B50047940C /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1D42282B1B50047940C /* TaskTableViewCell.xib */; };
 		45E4D1DE2282C85F0047940C /* success-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1DC2282C85F0047940C /* success-animation.json */; };
 		45E4D1DF2282C85F0047940C /* 109662_945474-lq.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45E4D1DD2282C85F0047940C /* 109662_945474-lq.mp3 */; };
+		45F3CD7722E043590021EB35 /* ModalContainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F3CD7622E043590021EB35 /* ModalContainerViewController.storyboard */; };
+		45F3CD7922E043710021EB35 /* ModalContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3CD7822E043710021EB35 /* ModalContainerViewController.swift */; };
+		45F3CD7B22E044080021EB35 /* ModalContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3CD7A22E044080021EB35 /* ModalContainerView.swift */; };
 		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
 		45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76A227041F000E38983 /* TinderViewController.swift */; };
 		45F5E76D227041F000E38983 /* TinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F5E76B227041F000E38983 /* TinderViewController.xib */; };
@@ -1310,6 +1323,16 @@
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
 		455D134F228D369800C0DC32 /* Адаптер (Adapter).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Адаптер (Adapter).swift"; sourceTree = "<group>"; };
 		455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPathComponentBuilder.swift; sourceTree = "<group>"; };
+		456F506522E045AA0020CE2A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		456F506722E045CD0020CE2A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		456F506922E046390020CE2A /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		456F506D22E047120020CE2A /* OnboardingViewControllerNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewControllerNew.swift; sourceTree = "<group>"; };
+		456F506F22E047AE0020CE2A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		456F507122E048240020CE2A /* ViewSpecificController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSpecificController.swift; sourceTree = "<group>"; };
+		456F507322E049530020CE2A /* OnboardingViewControllerNew.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingViewControllerNew.storyboard; sourceTree = "<group>"; };
+		456F507622E04B0E0020CE2A /* NewYearContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYearContentViewController.swift; sourceTree = "<group>"; };
+		456F507822E04B170020CE2A /* NewYearContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYearContentView.swift; sourceTree = "<group>"; };
+		456F507A22E04B240020CE2A /* NewYearContentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewYearContentViewController.storyboard; sourceTree = "<group>"; };
 		456FBF9D2278155C005AC721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		4573D78222C092DC006FD84F /* Configurable types in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configurable types in Swift.swift"; sourceTree = "<group>"; };
@@ -1368,6 +1391,9 @@
 		45E4D1D42282B1B50047940C /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		45E4D1DC2282C85F0047940C /* success-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "success-animation.json"; sourceTree = "<group>"; };
 		45E4D1DD2282C85F0047940C /* 109662_945474-lq.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "109662_945474-lq.mp3"; sourceTree = "<group>"; };
+		45F3CD7622E043590021EB35 /* ModalContainerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModalContainerViewController.storyboard; sourceTree = "<group>"; };
+		45F3CD7822E043710021EB35 /* ModalContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContainerViewController.swift; sourceTree = "<group>"; };
+		45F3CD7A22E044080021EB35 /* ModalContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContainerView.swift; sourceTree = "<group>"; };
 		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
 		45F5E76A227041F000E38983 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		45F5E76B227041F000E38983 /* TinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinderViewController.xib; sourceTree = "<group>"; };
@@ -1649,6 +1675,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45CD86D622DEFA4C00EE560A /* Контроллер луковка */,
 				45CD86CC22DEF8C200EE560A /* DragInsideScroll */,
 				45CD86BC22DEF27700EE560A /* Сustom Transition */,
 				4584865E22CB21F40021CCE2 /* Collection View Cells Self-Sizing */,
@@ -2120,7 +2147,6 @@
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
-				45CD86D622DEFA4C00EE560A /* Контроллер луковка */,
 				45D6CB2722DC5D7F00C4D0B6 /* Универсальный JSONDecoder */,
 				450425ED22C345D7004A7FEC /* Vadimbulavin */,
 				4586FAA222B8AE5E00FE83D1 /* HTTP  наброски */,
@@ -3363,6 +3389,45 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		456F506422E0458A0020CE2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				456F506522E045AA0020CE2A /* UIViewController+Ext.swift */,
+				456F506722E045CD0020CE2A /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		456F506B22E0468F0020CE2A /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				45F3CD7622E043590021EB35 /* ModalContainerViewController.storyboard */,
+				45F3CD7822E043710021EB35 /* ModalContainerViewController.swift */,
+				45F3CD7A22E044080021EB35 /* ModalContainerView.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		456F506C22E0469A0020CE2A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				456F506D22E047120020CE2A /* OnboardingViewControllerNew.swift */,
+				456F506F22E047AE0020CE2A /* OnboardingView.swift */,
+				456F507322E049530020CE2A /* OnboardingViewControllerNew.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		456F507522E04B040020CE2A /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				456F507622E04B0E0020CE2A /* NewYearContentViewController.swift */,
+				456F507822E04B170020CE2A /* NewYearContentView.swift */,
+				456F507A22E04B240020CE2A /* NewYearContentViewController.storyboard */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		456FBF9B22781542005AC721 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
@@ -3541,6 +3606,10 @@
 		45CD86D622DEFA4C00EE560A /* Контроллер луковка */ = {
 			isa = PBXGroup;
 			children = (
+				456F507522E04B040020CE2A /* Content */,
+				456F506422E0458A0020CE2A /* Extensions */,
+				45F3CD7522E043440021EB35 /* Containers */,
+				45F3CD7222E0427E0021EB35 /* Models */,
 			);
 			path = "Контроллер луковка";
 			sourceTree = "<group>";
@@ -3578,6 +3647,24 @@
 				45E4D1DC2282C85F0047940C /* success-animation.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		45F3CD7222E0427E0021EB35 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				456F506922E046390020CE2A /* Storyboardable.swift */,
+				456F507122E048240020CE2A /* ViewSpecificController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		45F3CD7522E043440021EB35 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				456F506C22E0469A0020CE2A /* Onboarding */,
+				456F506B22E0468F0020CE2A /* Modal */,
+			);
+			path = Containers;
 			sourceTree = "<group>";
 		};
 		45F97C9C22A1043F00FC076A /* EndPoint */ = {
@@ -3869,6 +3956,7 @@
 				3C986982222FAD200065660B /* CalendarDemoViewController.xib in Resources */,
 				3C4D62C4223A5CAE00233C43 /* DiffExampleViewController.xib in Resources */,
 				4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */,
+				456F507B22E04B240020CE2A /* NewYearContentViewController.storyboard in Resources */,
 				3CF5A899222D07B4000833A1 /* test1.json in Resources */,
 				45CD86C022DEF29300EE560A /* FromViewController.xib in Resources */,
 				3CE80B30225F0A8100CA9C02 /* Inspirations.plist in Resources */,
@@ -3876,9 +3964,11 @@
 				3C986986222FAE280065660B /* SummaryViewController.xib in Resources */,
 				45E4D1DF2282C85F0047940C /* 109662_945474-lq.mp3 in Resources */,
 				3C98698E222FAFD00065660B /* DayViewController.xib in Resources */,
+				456F507422E049530020CE2A /* OnboardingViewControllerNew.storyboard in Resources */,
 				45E4D1D62282B1B50047940C /* TaskTableViewCell.xib in Resources */,
 				4527E720229BF30500C41CB6 /* DODOPizzaViewController.xib in Resources */,
 				4527E731229BFDD700C41CB6 /* PizzaHalfCell.xib in Resources */,
+				45F3CD7722E043590021EB35 /* ModalContainerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4181,6 +4271,7 @@
 				45B71410227837A0008B63F2 /* Constants.swift in Sources */,
 				3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */,
 				3C51A748223B6F2400D14490 /* EndPointConfigurator.swift in Sources */,
+				456F506822E045CD0020CE2A /* UIView+Ext.swift in Sources */,
 				3C6F2D54224F672F000A194B /* TabledContentCollectionViewDelegate.swift in Sources */,
 				45BFA286229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift in Sources */,
 				3CC3085A2223BFB800E10683 /* DIContainer.swift in Sources */,
@@ -4211,12 +4302,14 @@
 				45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */,
 				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
 				3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */,
+				45F3CD7B22E044080021EB35 /* ModalContainerView.swift in Sources */,
 				45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
 				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
 				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
 				3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */,
 				455D1353228D410700C0DC32 /* URLPathComponentBuilder.swift in Sources */,
+				456F507222E048240020CE2A /* ViewSpecificController.swift in Sources */,
 				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
 				3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */,
 				3C986985222FAE280065660B /* SummaryViewController.swift in Sources */,
@@ -4256,6 +4349,7 @@
 				45CD86C522DEF2A900EE560A /* ToViewController.swift in Sources */,
 				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
+				456F506A22E046390020CE2A /* Storyboardable.swift in Sources */,
 				45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */,
 				4527E730229BFDD700C41CB6 /* PizzaHalfCell.swift in Sources */,
 				3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */,
@@ -4269,6 +4363,7 @@
 				45CD86CB22DEF46600EE560A /* AnimatorDismiss.swift in Sources */,
 				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
 				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
+				456F507922E04B170020CE2A /* NewYearContentView.swift in Sources */,
 				4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */,
 				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
 				3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
@@ -4297,7 +4392,9 @@
 				3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */,
 				45F97C9E22A104B700FC076A /* HTTPRequest.swift in Sources */,
 				3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */,
+				456F506E22E047120020CE2A /* OnboardingViewControllerNew.swift in Sources */,
 				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
+				456F507022E047AE0020CE2A /* OnboardingView.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				450425F122C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift in Sources */,
 				45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */,
@@ -4314,8 +4411,10 @@
 				3CC308622223D98400E10683 /* Misc.swift in Sources */,
 				45BFA289229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift in Sources */,
 				3CE80B32225F0A9C00CA9C02 /* Inspiration.swift in Sources */,
+				45F3CD7922E043710021EB35 /* ModalContainerViewController.swift in Sources */,
 				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				4541566222CC7076000D87DA /* Разворот односвязного списка.swift in Sources */,
+				456F507722E04B0E0020CE2A /* NewYearContentViewController.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */,
 				3CD6DC2F2227BF8D0062D2EC /* RealAlamofireDataController.swift in Sources */,
@@ -4337,6 +4436,7 @@
 				456FBF9E2278155C005AC721 /* Card.swift in Sources */,
 				4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */,
 				453484B522A69C2F00D9A6B8 /* URLSession+Ex.swift in Sources */,
+				456F506622E045AA0020CE2A /* UIViewController+Ext.swift in Sources */,
 				45BFA287229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift in Sources */,
 				450425EF22C345F1004A7FEC /* View Controller States.swift in Sources */,
 				45D6CB2B22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift in Sources */,

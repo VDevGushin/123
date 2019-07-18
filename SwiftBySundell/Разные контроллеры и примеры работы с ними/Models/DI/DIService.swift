@@ -131,6 +131,10 @@ class RepositoryAssembly: Assembly {
         container.register(DragableInsideScrollViewController.self) { _, navigator, title in
             DragableInsideScrollViewController(navigator: navigator, title: title, nibName: String(describing: DragableInsideScrollViewController.self), bundle: nil)
         }.inObjectScope(.transient)
+
+        container.register(ModalContainerViewController.self) { _, navigator, title in
+            ModalContainerViewController.makeVC(title: title, coordinator: navigator)
+        }.inObjectScope(.transient)
     }
 }
 
