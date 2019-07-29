@@ -611,6 +611,7 @@
 		45B7140E2278316B008B63F2 /* CardGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140C2278316B008B63F2 /* CardGameController.xib */; };
 		45B71410227837A0008B63F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140F227837A0008B63F2 /* Constants.swift */; };
 		45B7141222783869008B63F2 /* GameApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7141122783869008B63F2 /* GameApiClient.swift */; };
+		45BC0AD522EF109800743779 /* Utilizing value semantics in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BC0AD422EF109800743779 /* Utilizing value semantics in Swift.swift */; };
 		45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA7F226EE304004A830A /* CardsDataModel.swift */; };
 		45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA82226EE343004A830A /* StackContainterView.swift */; };
 		45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA84226EE36E004A830A /* SwipeCardView.swift */; };
@@ -1357,6 +1358,7 @@
 		45B7140C2278316B008B63F2 /* CardGameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardGameController.xib; sourceTree = "<group>"; };
 		45B7140F227837A0008B63F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45B7141122783869008B63F2 /* GameApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameApiClient.swift; sourceTree = "<group>"; };
+		45BC0AD422EF109800743779 /* Utilizing value semantics in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utilizing value semantics in Swift.swift"; sourceTree = "<group>"; };
 		45BCCA7F226EE304004A830A /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
 		45BCCA82226EE343004A830A /* StackContainterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainterView.swift; sourceTree = "<group>"; };
 		45BCCA84226EE36E004A830A /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
@@ -2396,6 +2398,7 @@
 				4573D78222C092DC006FD84F /* Configurable types in Swift.swift */,
 				45D6CB2A22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift */,
 				452E93E222DDA17400BDEB66 /* Generalizing Swift code.swift */,
+				45BC0AD422EF109800743779 /* Utilizing value semantics in Swift.swift */,
 			);
 			path = "Капашилка";
 			sourceTree = "<group>";
@@ -4426,6 +4429,7 @@
 				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3CE80B34225F0ACD00CA9C02 /* Session.swift in Sources */,
 				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,
+				45BC0AD522EF109800743779 /* Utilizing value semantics in Swift.swift in Sources */,
 				3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */,
 				4527E726229BF4B300C41CB6 /* PizzaHalfOrientation.swift in Sources */,
 				45F97CA022A104E600FC076A /* HTTPRequestPool.swift in Sources */,
