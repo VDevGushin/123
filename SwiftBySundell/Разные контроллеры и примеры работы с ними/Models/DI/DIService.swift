@@ -135,6 +135,10 @@ class RepositoryAssembly: Assembly {
         container.register(ModalContainerViewController.self) { _, navigator, title in
             ModalContainerViewController.makeVC(title: title, coordinator: navigator)
         }.inObjectScope(.transient)
+
+        container.register(CustomCollectionViewFlowLayoutViewController.self) { _, navigator, title in
+            CustomCollectionViewFlowLayoutViewController(navigator: navigator, title: title, nibName: String(describing: CustomCollectionViewFlowLayoutViewController.self), bundle: nil)
+        }.inObjectScope(.transient)
     }
 }
 

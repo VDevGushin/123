@@ -28,6 +28,7 @@ final class MainViewController: CoordinatorViewController {
             AppCoordinator.Destination.timer,
             AppCoordinator.Destination.dodo,
             AppCoordinator.Destination.scroll,
+            AppCoordinator.Destination.customCollectionViewFlowLayoutViewController,
             //AppCoordinator.Destination.lottieView,
             AppCoordinator.Destination.promiseKit,
             AppCoordinator.Destination.swinject,

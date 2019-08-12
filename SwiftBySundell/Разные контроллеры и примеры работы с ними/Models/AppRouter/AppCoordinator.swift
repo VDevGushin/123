@@ -34,6 +34,7 @@ final class AppCoordinator {
         case selfSizeCell
         case dragableInsideScrollViewController
         case modalContainerViewController
+        case customCollectionViewFlowLayoutViewController
         var title: String {
             switch self {
             case .dragableInsideScrollViewController:
@@ -78,6 +79,8 @@ final class AppCoordinator {
                 return "selfSizeCell"
             case .modalContainerViewController:
                 return "Контроллер луковка"
+            case .customCollectionViewFlowLayoutViewController:
+                return "мой collectionviewFlow"
             }
         }
 
@@ -93,8 +96,8 @@ final class AppCoordinator {
     func close() {
         self.navigationController.dismiss(animated: true)
     }
-    
-    func back(){
+
+    func back() {
         self.navigationController.popViewController(animated: true)
     }
 
@@ -139,6 +142,8 @@ final class AppCoordinator {
             return DependencyProvider.shared.container.resolve(DragableInsideScrollViewController.self, arguments: self, destination.title)!
         case .modalContainerViewController:
             return DependencyProvider.shared.container.resolve(ModalContainerViewController.self, arguments: self, destination.title)!
+        case .customCollectionViewFlowLayoutViewController:
+            return DependencyProvider.shared.container.resolve(CustomCollectionViewFlowLayoutViewController.self, arguments: self, destination.title)!
         }
     }
 

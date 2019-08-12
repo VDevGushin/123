@@ -652,6 +652,11 @@
 		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
 		45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76A227041F000E38983 /* TinderViewController.swift */; };
 		45F5E76D227041F000E38983 /* TinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F5E76B227041F000E38983 /* TinderViewController.xib */; };
+		45F9222722FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F9222522FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift */; };
+		45F9222822FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F9222622FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.xib */; };
+		45F9222B22FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F9222922FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.swift */; };
+		45F9222C22FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F9222A22FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.xib */; };
+		45F9222E22FD88020097E987 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F9222D22FD88020097E987 /* PinterestLayout.swift */; };
 		45F97C9E22A104B700FC076A /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F97C9D22A104B700FC076A /* HTTPRequest.swift */; };
 		45F97CA022A104E600FC076A /* HTTPRequestPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F97C9F22A104E600FC076A /* HTTPRequestPool.swift */; };
 		64449563D528D08F150CA584 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */; };
@@ -1399,6 +1404,11 @@
 		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
 		45F5E76A227041F000E38983 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		45F5E76B227041F000E38983 /* TinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinderViewController.xib; sourceTree = "<group>"; };
+		45F9222522FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayoutViewController.swift; sourceTree = "<group>"; };
+		45F9222622FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewFlowLayoutViewController.xib; sourceTree = "<group>"; };
+		45F9222922FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		45F9222A22FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewFlowLayoutCollectionViewCell.xib; sourceTree = "<group>"; };
+		45F9222D22FD88020097E987 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		45F97C9D22A104B700FC076A /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		45F97C9F22A104E600FC076A /* HTTPRequestPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestPool.swift; sourceTree = "<group>"; };
 		52E9ACB5FCDB45B1B02FAD02 /* Pods-SwiftBySundell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBySundell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1677,6 +1687,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				45F9222422FD816F0097E987 /* Свой flow layout для коллекции */,
 				45CD86D622DEFA4C00EE560A /* Контроллер луковка */,
 				45CD86CC22DEF8C200EE560A /* DragInsideScroll */,
 				45CD86BC22DEF27700EE560A /* Сustom Transition */,
@@ -3670,6 +3681,19 @@
 			path = Containers;
 			sourceTree = "<group>";
 		};
+		45F9222422FD816F0097E987 /* Свой flow layout для коллекции */ = {
+			isa = PBXGroup;
+			children = (
+				45F9222522FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift */,
+				45F9222622FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.xib */,
+				45F9222922FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.swift */,
+				45F9222A22FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.xib */,
+				45F9222D22FD88020097E987 /* PinterestLayout.swift */,
+			);
+			name = "Свой flow layout для коллекции";
+			path = "Свой flow layout для коллекции";
+			sourceTree = "<group>";
+		};
 		45F97C9C22A1043F00FC076A /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
@@ -3930,6 +3954,7 @@
 				3C3253B7221D7C6600A7E3F0 /* taxi-app-loading.json in Resources */,
 				3C3A1B0C221D18E4005DDFA7 /* success.json in Resources */,
 				3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */,
+				45F9222C22FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.xib in Resources */,
 				3C6F2D43224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.xib in Resources */,
 				3C1EA4A9221BE01300B33763 /* not-found.json in Resources */,
 				3CE80B40225F0CFA00CA9C02 /* InspirationCell.xib in Resources */,
@@ -3937,6 +3962,7 @@
 				45B7140922782BE5008B63F2 /* CardCell.xib in Resources */,
 				3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */,
 				45CD86C622DEF2A900EE560A /* ToViewController.xib in Resources */,
+				45F9222822FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.xib in Resources */,
 				4584866722CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib in Resources */,
 				3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */,
 				4527E735229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib in Resources */,
@@ -4282,6 +4308,7 @@
 				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
 				45CD86BF22DEF29300EE560A /* FromViewController.swift in Sources */,
 				458CD1F02289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift in Sources */,
+				45F9222E22FD88020097E987 /* PinterestLayout.swift in Sources */,
 				3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */,
 				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
@@ -4396,6 +4423,7 @@
 				45F97C9E22A104B700FC076A /* HTTPRequest.swift in Sources */,
 				3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */,
 				456F506E22E047120020CE2A /* OnboardingViewControllerNew.swift in Sources */,
+				45F9222B22FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.swift in Sources */,
 				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
 				456F507022E047AE0020CE2A /* OnboardingView.swift in Sources */,
 				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
@@ -4408,6 +4436,7 @@
 				3CE80B37225F0AFE00CA9C02 /* UIColor+Ex.swift in Sources */,
 				45AD2C76229E6BB2004389A2 /* TestTableLayout.swift in Sources */,
 				3C8677AA2230DEB200D73419 /* Стили для UI элементов.swift in Sources */,
+				45F9222722FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift in Sources */,
 				3CE80B39225F0B1300CA9C02 /* UIImage+Ex.swift in Sources */,
 				3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */,
 				3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */,

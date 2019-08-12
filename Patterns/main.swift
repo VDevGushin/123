@@ -60,14 +60,16 @@ let queue = DispatchQueue(label: "Concurrent queue", attributes: .concurrent)
 let sema = DispatchSemaphore(value: concurrentTasks)
 
 var count = 1
-for _ in 0..<999 {
-    queue.async {
-        // Do work
-        count += 1
-        if count > 0 { print(count) }
-        sleep(10)
-        sema.signal()
-        count = 0
-    }
-    sema.wait()
-}
+//for _ in 0..<999 {
+//    queue.async {
+//        // Do work
+//        count += 1
+//        if count > 0 { print(count) }
+//        sleep(10)
+//        sema.signal()
+//        count = 0
+//    }
+//    sema.wait()
+//}
+
+print("i  Swift".utf8.count)
