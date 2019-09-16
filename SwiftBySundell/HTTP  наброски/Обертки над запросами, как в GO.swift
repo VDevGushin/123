@@ -7,13 +7,17 @@
 //
 
 import Foundation
-import Alamofire
 import PromiseKit
 /*При запуске сетевых запросов часто возникает много побочных эффектов.
 Однако побочные эффекты являются ядом для тестируемости и могут варьироваться от приложения к приложению и от запроса к запросу.
 Если мы сможем создать систему, в которой мы сможем создать и объединить эти побочные эффекты вместе, мы сможем повысить тестируемость и другие факторы.
 Представьте себе очень простой сетевой клиент
 */
+
+fileprivate struct Request {
+    var request: URLRequest?
+}
+
 fileprivate final class NetworkClient {
     let session: URLSession
 
@@ -81,10 +85,10 @@ fileprivate struct CombinedRequestBehavior: RequestBehavior {
 
     var additionalHeaders: [String: String] {
         return behaviors.reduce([String: String](), { sum, behavior in
-            var sum = sum
-            sum.merge(with: behavior.additionalHeaders)
-            return sum
-        })
+                var sum = sum
+                sum.merge(with: behavior.additionalHeaders)
+                return sum
+            })
     }
 
     func beforeSend() {
@@ -144,21 +148,21 @@ fileprivate final class NetworkClient1 {
 fileprivate final class BackgroundTaskBehavior: RequestBehavior {
     private let application = UIApplication.shared
     private var identifier: UIBackgroundTaskIdentifier?
-    
+
     func beforeSend() {
         identifier = application.beginBackgroundTask(expirationHandler: {
             self.endBackgroundTask()
         })
     }
-    
+
     func afterSuccess(response: Any) {
         endBackgroundTask()
     }
-    
+
     func afterFailure(error: Error) {
         endBackgroundTask()
     }
-    
+
     private func endBackgroundTask() {
         if let identifier = identifier {
             application.endBackgroundTask(identifier)

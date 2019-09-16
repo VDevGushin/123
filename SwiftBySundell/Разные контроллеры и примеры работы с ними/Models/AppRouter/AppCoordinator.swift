@@ -20,7 +20,6 @@ final class AppCoordinator {
         case lottieView
         case promiseKit
         case swinject
-        case alamofire
         case childVC
         case dynamicCollection
         case rootContent
@@ -53,8 +52,6 @@ final class AppCoordinator {
                 return "Promise Kit"
             case .swinject:
                 return "Swinject Kit"
-            case .alamofire:
-                return "Alamofire"
             case .childVC:
                 return "Child vc"
             case .rootContent:
@@ -114,7 +111,6 @@ final class AppCoordinator {
         case .lottieView: return DependencyProvider.shared.container.resolve(LottieAnimationViewController.self, arguments: self, destination.title)!
         case .promiseKit: return DependencyProvider.shared.container.resolve(PromiseKitViewController.self, arguments: self, destination.title)!
         case .swinject: return DependencyProvider.shared.container.resolve(SwinjectViewController.self, arguments: self, destination.title)!
-        case .alamofire: return DependencyProvider.shared.container.resolve(AlamofireViewController.self, arguments: self, destination.title)!
         case .childVC: return DependencyProvider.shared.container.resolve(DayViewController.self, arguments: self, destination.title)!
         case .dynamicCollection: return DependencyProvider.shared.container.resolve(CollectionViewsDynamicHeightViewController.self, arguments: self, destination.title)!
         case .rootContent: return DependencyProvider.shared.container.resolve(RootContentViewController.self, arguments: self, destination.title)!

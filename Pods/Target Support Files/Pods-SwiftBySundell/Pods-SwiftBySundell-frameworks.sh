@@ -153,7 +153,6 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.0/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Bond-iOS11.0/Bond.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS11.0/Charts.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Differ-iOS11.0/Differ.framework"
@@ -163,7 +162,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.0/Lottie.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.0/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Bond-iOS11.0/Bond.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Charts-iOS11.0/Charts.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Differ-iOS11.0/Differ.framework"

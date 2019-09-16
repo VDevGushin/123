@@ -38,10 +38,6 @@ final class ServiceAssembly: Assembly {
         container.register(Logger.self) { _ in
             FakeLogger()
         }.inObjectScope(.weak)
-
-        container.register(AlamofireDataController.self) { _ in
-            RealAlamofireDataController()
-        }
     }
 }
 
@@ -66,10 +62,6 @@ class RepositoryAssembly: Assembly {
 
         container.register(SwinjectViewController.self) { r, navigator, title in
             SwinjectViewController(logger: r.resolve(Logger.self)!, navigator: navigator, title: title, nibName: String(describing: SwinjectViewController.self), bundle: nil)
-        }.inObjectScope(.container)
-
-        container.register(AlamofireViewController.self) { r, navigator, title in
-            AlamofireViewController(dataController: r.resolve(AlamofireDataController.self)!, navigator: navigator, title: title, nibName: String(describing: AlamofireViewController.self), bundle: nil)
         }.inObjectScope(.container)
 
         container.register(DayViewController.self) { r, navigator, title in

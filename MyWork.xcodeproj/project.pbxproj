@@ -58,7 +58,6 @@
 		3C1EC2682121526500E929E5 /* UsingGenericTypeConstraints .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */; };
 		3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */; };
 		3C204BC02201677800CB49B5 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C204BBF2201677800CB49B5 /* GCD.swift */; };
-		3C2197722227B28F0042D385 /* Usage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2197712227B28F0042D385 /* Usage.swift */; };
 		3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C276688217DE1D600374E7E /* CalendarViewController.swift */; };
 		3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C276689217DE1D600374E7E /* CalendarViewController.xib */; };
 		3C276690217DEA1400374E7E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C27668F217DEA1400374E7E /* MonthView.swift */; };
@@ -352,8 +351,6 @@
 		3CA69B90219322AA009DD38D /* ThemesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8F219322AA009DD38D /* ThemesWorker.swift */; };
 		3CA69B9821933359009DD38D /* FeedbackStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B9721933359009DD38D /* FeedbackStrings.swift */; };
 		3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */; };
-		3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA81FA422281CAD008CC7BE /* ResumingDownload.swift */; };
-		3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA81FA622282097008CC7BE /* RealAlamofireDataController+Upload.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
 		3CA91089224354B600F54A4C /* Using errors as control flow in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */; };
 		3CA9108B224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */; };
@@ -410,14 +407,6 @@
 		3CD3DB202135258A004F0FE7 /* TypeSafeIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */; };
 		3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD4913C21F0527D0097618E /* LightweightPresenters.swift */; };
 		3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5D33121D0B48000682966 /* DependencyInjectionUsingFactories.swift */; };
-		3CD6DC292227B4200062D2EC /* AlamofireDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6DC282227B4200062D2EC /* AlamofireDataController.swift */; };
-		3CD6DC2C2227B49F0062D2EC /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6DC2A2227B49F0062D2EC /* AlamofireViewController.swift */; };
-		3CD6DC2D2227B49F0062D2EC /* AlamofireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD6DC2B2227B49F0062D2EC /* AlamofireViewController.xib */; };
-		3CD6DC2F2227BF8D0062D2EC /* RealAlamofireDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6DC2E2227BF8D0062D2EC /* RealAlamofireDataController.swift */; };
-		3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6DC302227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift */; };
-		3CD6DC332227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6DC322227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift */; };
-		3CD6DC352227CC210062D2EC /* RealAlamofireDataController+Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6DC342227CC210062D2EC /* RealAlamofireDataController+Auth.swift */; };
-		3CD6DC372227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6DC362227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift */; };
 		3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */; };
 		3CD7AF7A215E71250006A4DD /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7AF78215E71250006A4DD /* ColorCollectionViewCell.swift */; };
 		3CD7AF7B215E71250006A4DD /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD7AF79215E71250006A4DD /* ColorCollectionViewCell.xib */; };
@@ -570,7 +559,6 @@
 		453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */; };
 		453EDD5722966CFE00CD1F9D /* Заместитель (Прокси).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */; };
 		4541566222CC7076000D87DA /* Разворот односвязного списка.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541566122CC7076000D87DA /* Разворот односвязного списка.swift */; };
-		4541566422CC76D6000D87DA /* Data-Driven Table Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541566322CC76D6000D87DA /* Data-Driven Table Views.swift */; };
 		4545967C229BC9E400682917 /* Мост (Bridge).swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545967B229BC9E400682917 /* Мост (Bridge).swift */; };
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
@@ -765,7 +753,6 @@
 		3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingGenericTypeConstraints .swift"; sourceTree = "<group>"; };
 		3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPatternToAvoidShared.swift; sourceTree = "<group>"; };
 		3C204BBF2201677800CB49B5 /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
-		3C2197712227B28F0042D385 /* Usage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usage.swift; sourceTree = "<group>"; };
 		3C276688217DE1D600374E7E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3C276689217DE1D600374E7E /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		3C27668F217DEA1400374E7E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
@@ -1079,8 +1066,6 @@
 		3CA69B8F219322AA009DD38D /* ThemesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesWorker.swift; sourceTree = "<group>"; };
 		3CA69B9721933359009DD38D /* FeedbackStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStrings.swift; sourceTree = "<group>"; };
 		3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
-		3CA81FA422281CAD008CC7BE /* ResumingDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumingDownload.swift; sourceTree = "<group>"; };
-		3CA81FA622282097008CC7BE /* RealAlamofireDataController+Upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealAlamofireDataController+Upload.swift"; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using errors as control flow in Swift.swift"; sourceTree = "<group>"; };
 		3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift"; sourceTree = "<group>"; };
@@ -1135,14 +1120,6 @@
 		3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSafeIdentifiers.swift; sourceTree = "<group>"; };
 		3CD4913C21F0527D0097618E /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
 		3CD5D33121D0B48000682966 /* DependencyInjectionUsingFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionUsingFactories.swift; sourceTree = "<group>"; };
-		3CD6DC282227B4200062D2EC /* AlamofireDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDataController.swift; sourceTree = "<group>"; };
-		3CD6DC2A2227B49F0062D2EC /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
-		3CD6DC2B2227B49F0062D2EC /* AlamofireViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireViewController.xib; sourceTree = "<group>"; };
-		3CD6DC2E2227BF8D0062D2EC /* RealAlamofireDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealAlamofireDataController.swift; sourceTree = "<group>"; };
-		3CD6DC302227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealAlamofireDataController+Encoding.swift"; sourceTree = "<group>"; };
-		3CD6DC322227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealAlamofireDataController+HTTPHeaders.swift"; sourceTree = "<group>"; };
-		3CD6DC342227CC210062D2EC /* RealAlamofireDataController+Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealAlamofireDataController+Auth.swift"; sourceTree = "<group>"; };
-		3CD6DC362227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealAlamofireDataController+DownloadDataToFile.swift"; sourceTree = "<group>"; };
 		3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparationOfConcernsUsingProtocols.swift; sourceTree = "<group>"; };
 		3CD7AF78215E71250006A4DD /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CD7AF79215E71250006A4DD /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -1321,7 +1298,6 @@
 		453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storing Codable structs on the disk.swift"; sourceTree = "<group>"; };
 		453EDD5622966CFE00CD1F9D /* Заместитель (Прокси).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Заместитель (Прокси).swift"; sourceTree = "<group>"; };
 		4541566122CC7076000D87DA /* Разворот односвязного списка.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Разворот односвязного списка.swift"; sourceTree = "<group>"; };
-		4541566322CC76D6000D87DA /* Data-Driven Table Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data-Driven Table Views.swift"; sourceTree = "<group>"; };
 		45446A113F9A90158521D0A3 /* Pods_SwiftBySundell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBySundell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4545967B229BC9E400682917 /* Мост (Bridge).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Мост (Bridge).swift"; sourceTree = "<group>"; };
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
@@ -1704,7 +1680,6 @@
 				3C4099812237CD1400E5FB05 /* RootContentController */,
 				3CEA09F2223633FA00C03FF9 /* CollectionViewsDynamicHeight */,
 				3C986975222FA9C60065660B /* ChildControllers */,
-				3CE138F32227AADF00E0B7CD /* Alamofire */,
 				3C3BED2F2223BCBF00502361 /* Swinject */,
 				3C1E6AC5221C199900997F31 /* PromiseKit */,
 				3C1E6ABA221C06FC00997F31 /* AnimationLottie */,
@@ -2111,7 +2086,6 @@
 				453EDD542296679100CD1F9D /* Storing Codable structs on the disk.swift */,
 				450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */,
 				4541566122CC7076000D87DA /* Разворот односвязного списка.swift */,
-				4541566322CC76D6000D87DA /* Data-Driven Table Views.swift */,
 				45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */,
 			);
 			path = "Всяко разно ";
@@ -2786,21 +2760,6 @@
 			path = ImageColorGetter;
 			sourceTree = "<group>";
 		};
-		3CD6DC272227B4040062D2EC /* DataController */ = {
-			isa = PBXGroup;
-			children = (
-				3CD6DC282227B4200062D2EC /* AlamofireDataController.swift */,
-				3CD6DC2E2227BF8D0062D2EC /* RealAlamofireDataController.swift */,
-				3CD6DC302227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift */,
-				3CD6DC322227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift */,
-				3CD6DC342227CC210062D2EC /* RealAlamofireDataController+Auth.swift */,
-				3CD6DC362227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift */,
-				3CA81FA422281CAD008CC7BE /* ResumingDownload.swift */,
-				3CA81FA622282097008CC7BE /* RealAlamofireDataController+Upload.swift */,
-			);
-			path = DataController;
-			sourceTree = "<group>";
-		};
 		3CD7AF77215E70FF0006A4DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -2943,25 +2902,6 @@
 				3CC3085D2223CA0300E10683 /* CircularDependencies.swift */,
 				3CC3085F2223D81300E10683 /* ObjectScopes.swift */,
 				3CC308612223D98400E10683 /* Misc.swift */,
-			);
-			path = Example;
-			sourceTree = "<group>";
-		};
-		3CE138F32227AADF00E0B7CD /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				3CD6DC272227B4040062D2EC /* DataController */,
-				3CE138F42227AAE500E0B7CD /* Example */,
-				3CD6DC2A2227B49F0062D2EC /* AlamofireViewController.swift */,
-				3CD6DC2B2227B49F0062D2EC /* AlamofireViewController.xib */,
-			);
-			path = Alamofire;
-			sourceTree = "<group>";
-		};
-		3CE138F42227AAE500E0B7CD /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				3C2197712227B28F0042D385 /* Usage.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -3971,7 +3911,6 @@
 				4590D223229FE11600A82D2B /* ScrollViewController.xib in Resources */,
 				4527E724229BF47800C41CB6 /* PizzaHalfCollectionController.xib in Resources */,
 				45E4D1DE2282C85F0047940C /* success-animation.json in Resources */,
-				3CD6DC2D2227B49F0062D2EC /* AlamofireViewController.xib in Resources */,
 				3CEA09FF2236389300C03FF9 /* CollectionViewCell.xib in Resources */,
 				3C1E6AC9221C19C800997F31 /* PromiseKitViewController.xib in Resources */,
 				3C4099852237CD3100E5FB05 /* RootContentViewController.xib in Resources */,
@@ -4101,7 +4040,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MyWork/Pods-MyWork-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.4/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bond-iOS11.4/Bond.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts-iOS11.4/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Differ-iOS11.4/Differ.framework",
@@ -4112,7 +4050,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
@@ -4133,7 +4070,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS11.0/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bond-iOS11.0/Bond.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts-iOS11.0/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Differ-iOS11.0/Differ.framework",
@@ -4144,7 +4080,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differ.framework",
@@ -4279,7 +4214,6 @@
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
 				3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */,
-				4541566422CC76D6000D87DA /* Data-Driven Table Views.swift in Sources */,
 				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
 				45D6CB2622DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift in Sources */,
 				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
@@ -4290,7 +4224,6 @@
 				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
 				3C6BA91E225C6130000A2063 /* Replacing legacy code using Swift protocols.swift in Sources */,
 				4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */,
-				3C2197722227B28F0042D385 /* Usage.swift in Sources */,
 				45AC5F2722927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift in Sources */,
 				3CBDF78622533A620096528A /* HowToUse.swift in Sources */,
 				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
@@ -4313,13 +4246,11 @@
 				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
 				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				4590D21F229FDDF300A82D2B /* BannerView.swift in Sources */,
-				3CD6DC312227BFAF0062D2EC /* RealAlamofireDataController+Encoding.swift in Sources */,
 				3CC86607225F022700969E2F /* Inclusive enums with OptionSet.swift in Sources */,
 				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */,
 				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
-				3CA81FA522281CAD008CC7BE /* ResumingDownload.swift in Sources */,
 				45BFA288229D1A47007BE474 /* TableLayout.swift in Sources */,
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
 				4527E723229BF47800C41CB6 /* PizzaHalfCollectionController.swift in Sources */,
@@ -4344,7 +4275,6 @@
 				3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */,
 				3C986985222FAE280065660B /* SummaryViewController.swift in Sources */,
 				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
-				3CD6DC2C2227B49F0062D2EC /* AlamofireViewController.swift in Sources */,
 				3CADC677221536C800E28084 /* Operation.swift in Sources */,
 				3C986989222FAE650065660B /* SleepViewController.swift in Sources */,
 				3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */,
@@ -4354,7 +4284,6 @@
 				3CA9108B224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift in Sources */,
 				3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */,
 				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
-				3CD6DC372227D8060062D2EC /* RealAlamofireDataController+DownloadDataToFile.swift in Sources */,
 				4527E734229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift in Sources */,
 				3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */,
 				45CD86D522DEF91D00EE560A /* DragableInsideScrollView.swift in Sources */,
@@ -4362,7 +4291,6 @@
 				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
 				4573D78322C092DC006FD84F /* Configurable types in Swift.swift in Sources */,
-				3CD6DC352227CC210062D2EC /* RealAlamofireDataController+Auth.swift in Sources */,
 				45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */,
 				456FBFA022782711005AC721 /* MemoryGame.swift in Sources */,
 				3CE80B3F225F0CFA00CA9C02 /* InspirationCell.swift in Sources */,
@@ -4449,7 +4377,6 @@
 				456F507722E04B0E0020CE2A /* NewYearContentViewController.swift in Sources */,
 				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */,
-				3CD6DC2F2227BF8D0062D2EC /* RealAlamofireDataController.swift in Sources */,
 				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
 				45DAFEDF226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift in Sources */,
 				45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */,
@@ -4463,7 +4390,6 @@
 				4527E726229BF4B300C41CB6 /* PizzaHalfOrientation.swift in Sources */,
 				45F97CA022A104E600FC076A /* HTTPRequestPool.swift in Sources */,
 				453484B022A687C700D9A6B8 /* CacheBehavior.swift in Sources */,
-				3CD6DC332227CA700062D2EC /* RealAlamofireDataController+HTTPHeaders.swift in Sources */,
 				45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */,
 				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				456FBF9E2278155C005AC721 /* Card.swift in Sources */,
@@ -4480,11 +4406,9 @@
 				3CC1334E21F830630009A04B /* Navigation.swift in Sources */,
 				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
 				3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */,
-				3CD6DC292227B4200062D2EC /* AlamofireDataController.swift in Sources */,
 				3CA91089224354B600F54A4C /* Using errors as control flow in Swift.swift in Sources */,
 				3CBDF77C225334BD0096528A /* HTTPHeader.swift in Sources */,
 				3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */,
-				3CA81FA722282097008CC7BE /* RealAlamofireDataController+Upload.swift in Sources */,
 				3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */,
 				45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */,
 				3CBDF782225335A40096528A /* APIError.swift in Sources */,
