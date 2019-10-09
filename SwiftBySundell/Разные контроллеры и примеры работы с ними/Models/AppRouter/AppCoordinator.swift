@@ -14,6 +14,7 @@ final class AppCoordinator {
 
     enum Destination: Int, Equatable, CaseIterable {
         case mainView
+        case onboarding
         case customTransition
         case timer
         case cardGame
@@ -36,6 +37,8 @@ final class AppCoordinator {
         case customCollectionViewFlowLayoutViewController
         var title: String {
             switch self {
+            case .onboarding:
+                return "Onboarding"
             case .dragableInsideScrollViewController:
                 return "Dragable Inside ScrollViewController"
             case .customTransition:
@@ -107,6 +110,8 @@ final class AppCoordinator {
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
+        case .onboarding: return
+            DependencyProvider.shared.container.resolve(OnboardingViewController.self, arguments: self, destination.title)!
         case .mainView: return DependencyProvider.shared.container.resolve(MainViewController.self, arguments: self, destination.title)!
         case .lottieView: return DependencyProvider.shared.container.resolve(LottieAnimationViewController.self, arguments: self, destination.title)!
         case .promiseKit: return DependencyProvider.shared.container.resolve(PromiseKitViewController.self, arguments: self, destination.title)!

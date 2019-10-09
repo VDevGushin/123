@@ -128,6 +128,9 @@ class RepositoryAssembly: Assembly {
             ModalContainerViewController.makeVC(title: title, coordinator: navigator)
         }.inObjectScope(.transient)
 
+        container.register(OnboardingViewController.self) { _, navigator, title in
+            OnboardingViewController(navigator: navigator, title: title, nibName: String(describing: OnboardingViewController.self), bundle: nil)
+        }.inObjectScope(.transient)
         container.register(CustomCollectionViewFlowLayoutViewController.self) { _, navigator, title in
             CustomCollectionViewFlowLayoutViewController(navigator: navigator, title: title, nibName: String(describing: CustomCollectionViewFlowLayoutViewController.self), bundle: nil)
         }.inObjectScope(.transient)

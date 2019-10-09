@@ -9,13 +9,10 @@
 /* Begin PBXBuildFile section */
 		0ED8786B7DB985A3964893C8 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AC2E2FE02E3DEB7D5A481B /* Pods_MyWork.framework */; };
 		287EE387051990F02A660DE9 /* Pods_MyWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3E4FB215BBFBA003A0528 /* Pods_MyWork.framework */; };
-		3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0018B8221290B800CE9D3E /* Trimming long argument lists.swift */; };
 		3C01716B21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */; };
-		3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */; };
 		3C05E1FA212D342F003CBAD1 /* ModelControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */; };
 		3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */; };
 		3C09E493217D93C7007ABDD8 /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */; };
-		3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */; };
 		3C0B1764210EDF34003D9314 /* ConditionalConformances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */; };
 		3C0C24EC215CF7CB00472B3E /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */; };
 		3C0C24F3215D00DF00472B3E /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0C24F2215D00DF00472B3E /* SelectedColorView.swift */; };
@@ -27,9 +24,6 @@
 		3C0EA7BD21708A5400C5EB13 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0EA7BC21708A5400C5EB13 /* Style.swift */; };
 		3C0F05BE216135E800F04623 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0F05BD216135E800F04623 /* UIWindow+Extension.swift */; };
 		3C12E33B21086A9B0026F1D5 /* PercentagesControlCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */; };
-		3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387021BE331600BA241D /* HandlingMutableModels.swift */; };
-		3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */; };
-		3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */; };
 		3C15C8A121C8D9B000734E30 /* ScrollRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C39B3CC21C7BA7000323840 /* ScrollRootViewController.swift */; };
 		3C176F08221C338A009CC12F /* switch.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C176F07221C338A009CC12F /* switch.json */; };
 		3C176F0A221C361A009CC12F /* switch-action.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C176F09221C361A009CC12F /* switch-action.json */; };
@@ -56,12 +50,9 @@
 		3C1EA4A9221BE01300B33763 /* not-found.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C1EA4A8221BE01300B33763 /* not-found.json */; };
 		3C1EC266212150BC00E929E5 /* TrimmingLongArgumentLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */; };
 		3C1EC2682121526500E929E5 /* UsingGenericTypeConstraints .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */; };
-		3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */; };
-		3C204BC02201677800CB49B5 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C204BBF2201677800CB49B5 /* GCD.swift */; };
 		3C27668A217DE1D600374E7E /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C276688217DE1D600374E7E /* CalendarViewController.swift */; };
 		3C27668B217DE1D600374E7E /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C276689217DE1D600374E7E /* CalendarViewController.xib */; };
 		3C276690217DEA1400374E7E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C27668F217DEA1400374E7E /* MonthView.swift */; };
-		3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */; };
 		3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C1F221BD856004A2605 /* AppCoordinator.swift */; };
 		3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C9C23221BD919004A2605 /* MainViewController.swift */; };
 		3C2C9C26221BD919004A2605 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C9C24221BD919004A2605 /* MainViewController.xib */; };
@@ -74,11 +65,9 @@
 		3C2FA85D20F8BAB100F54E76 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85C20F8BAB100F54E76 /* Result.swift */; };
 		3C2FA85F20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */; };
 		3C2FA86120F8C88600F54E76 /* AvoidingSingletonsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */; };
-		3C3076CB225B15610006D5FC /* String literals in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3076CA225B15610006D5FC /* String literals in Swift.swift */; };
 		3C30C3D1214B78DF008BBC12 /* ModellingState .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30C3D0214B78DF008BBC12 /* ModellingState .swift */; };
 		3C3253B5221D7B1600A7E3F0 /* loading-image.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3253B4221D7B1600A7E3F0 /* loading-image.json */; };
 		3C3253B7221D7C6600A7E3F0 /* taxi-app-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3253B6221D7C6600A7E3F0 /* taxi-app-loading.json */; };
-		3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */; };
 		3C35CBFB2187830200DDE92E /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFA2187830200DDE92E /* Data+Extension.swift */; };
 		3C35CBFD218784F600DDE92E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFC218784F600DDE92E /* Message.swift */; };
 		3C35CBFF2187869300DDE92E /* ChatMessagesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C35CBFE2187869300DDE92E /* ChatMessagesWorker.swift */; };
@@ -97,11 +86,8 @@
 		3C39B3D521C7BBA600323840 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C39B3D321C7BBA600323840 /* ContentViewController.xib */; };
 		3C3A1B0C221D18E4005DDFA7 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3A1B0B221D18E4005DDFA7 /* success.json */; };
 		3C3A1B0E221D23AB005DDFA7 /* app-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C3A1B0D221D23AB005DDFA7 /* app-loading.json */; };
-		3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */; };
 		3C3B464C2174643E0032BC36 /* DLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464B2174643E0032BC36 /* DLSViewController.swift */; };
 		3C3B464F21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */; };
-		3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */; };
-		3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3BED2D2223B3A100502361 /* PatternMatching.swift */; };
 		3C3D0E41216C8654006B7907 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E40216C8654006B7907 /* Strings.swift */; };
 		3C3D0E43216C8939006B7907 /* ImagePickerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */; };
 		3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4099822237CD3100E5FB05 /* RootContentViewController.swift */; };
@@ -166,17 +152,13 @@
 		3C437F7621997663008B61DC /* FeedBackImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */; };
 		3C437F7B2199D744008B61DC /* FeedbackAttachFileIncome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C437F7A2199D744008B61DC /* FeedbackAttachFileIncome.swift */; };
 		3C441B0D2198A39A001F275E /* CellSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C441B0C2198A39A001F275E /* CellSource.swift */; };
-		3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C452753222CEE7E004E5E19 /* Использование User-Defaults.swift */; };
 		3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C452756222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift */; };
 		3C457F9021B79F3000B5EF63 /* SourceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C457F8F21B79F3000B5EF63 /* SourceViewModel.swift */; };
 		3C457F9221B79FEA00B5EF63 /* SourceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C457F9121B79FEA00B5EF63 /* SourceListViewModel.swift */; };
 		3C457F9421B7A43500B5EF63 /* SourcesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C457F9321B7A43500B5EF63 /* SourcesTableViewController.swift */; };
 		3C4763D8211AC567006D0C1B /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4763D7211AC567006D0C1B /* CustomOperators.swift */; };
-		3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */; };
-		3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A84FA221136DE0034627F /* BuildingDSLs.swift */; };
 		3C4AA54D2100585C003F484C /* FuturesPromises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54C2100585C003F484C /* FuturesPromises.swift */; };
 		3C4AA54F21006423003F484C /* PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4AA54E21006423003F484C /* PromiseKit.swift */; };
-		3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B691321E883B1002175CB /* IdentifyingObjects.swift */; };
 		3C4C676921254370005D05D5 /* LazyProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C676821254370005D05D5 /* LazyProperties.swift */; };
 		3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D62BF223A5BAD00233C43 /* Differ.swift */; };
 		3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4D62C1223A5CAE00233C43 /* DiffExampleViewController.swift */; };
@@ -187,7 +169,6 @@
 		3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C517C5621B9051A009CAEE7 /* AppDelegate.swift */; };
 		3C517C5E21B9051B009CAEE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C517C5D21B9051B009CAEE7 /* Assets.xcassets */; };
 		3C517C6121B9051B009CAEE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C517C5F21B9051B009CAEE7 /* LaunchScreen.storyboard */; };
-		3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */; };
 		3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A73F223B6C6B00D14490 /* WebRequestBehavior.swift */; };
 		3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A741223B6CB900D14490 /* LoggerBehavior.swift */; };
 		3C51A744223B6DCD00D14490 /* CombinedWebRequestBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51A743223B6DCD00D14490 /* CombinedWebRequestBehavior.swift */; };
@@ -209,10 +190,6 @@
 		3C55FE01213FC4C000ABA745 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55FE00213FC4C000ABA745 /* Codable.swift */; };
 		3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B0447223639710075ADCD /* DynamicHeightCollectionView.swift */; };
 		3C5B044E223644210075ADCD /* Инверсия зависимостей через протоколы.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B044D223644210075ADCD /* Инверсия зависимостей через протоколы.swift */; };
-		3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B8466221E6A8C00C959BE /* Delegation.swift */; };
-		3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */; };
-		3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */; };
-		3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */; };
 		3C5FDEF12191EAAC00F0C6DF /* FeedBackWebConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */; };
 		3C5FDEF52191EBCB00F0C6DF /* CaptchaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */; };
 		3C5FDEF72191EC8400F0C6DF /* FeedBackEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */; };
@@ -221,12 +198,9 @@
 		3C5FDF012191F5D600F0C6DF /* CaptchaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FDF002191F5D600F0C6DF /* CaptchaView.xib */; };
 		3C5FDF032191FCC700F0C6DF /* FeedBackStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */; };
 		3C5FF2B22146564F005B41FB /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */; };
-		3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */; };
-		3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */; };
 		3C69E4AB215FA4090022CA4D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69E4AA215FA4090022CA4D /* GradientView.swift */; };
 		3C69E4AC215FA4870022CA4D /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD253B2112F95400128554 /* UIView+Ex.swift */; };
 		3C6A4F24214A29850071AA0C /* IdentifyingObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */; };
-		3C6BA91E225C6130000A2063 /* Replacing legacy code using Swift protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6BA91D225C6130000A2063 /* Replacing legacy code using Swift protocols.swift */; };
 		3C6D8F5B21099BAC000190F3 /* LineControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5A21099BAC000190F3 /* LineControl.swift */; };
 		3C6D8F5D21099D31000190F3 /* LinePercentagesControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */; };
 		3C6D8F5F21099D3C000190F3 /* LinePercentagesControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */; };
@@ -263,11 +237,7 @@
 		3C7A5ADB21934A8200DE016B /* DoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7A5AD921934A8200DE016B /* DoneTableViewCell.swift */; };
 		3C7A5ADC21934A8200DE016B /* DoneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7A5ADA21934A8200DE016B /* DoneTableViewCell.xib */; };
 		3C7CD75221103951009871B1 /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CD75121103951009871B1 /* Tuples.swift */; };
-		3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */; };
-		3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */; };
 		3C80FF382248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */; };
-		3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */; };
-		3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */; };
 		3C82F4642164A9630024B3E4 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */; };
 		3C82F4662164A98A0024B3E4 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4652164A98A0024B3E4 /* Date+Extension.swift */; };
 		3C82F46E2164AA0F0024B3E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F46D2164AA0F0024B3E4 /* AppDelegate.swift */; };
@@ -279,12 +249,9 @@
 		3C82F4822164AD310024B3E4 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4812164AD310024B3E4 /* Animation.swift */; };
 		3C82F4852164B3330024B3E4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4842164B3330024B3E4 /* Request.swift */; };
 		3C82F4872164B3F50024B3E4 /* MethodsPerformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */; };
-		3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8546BA21FEF0920004700D /* AvoidingRaceConditions.swift */; };
 		3C857861216FAC5200445EB8 /* ColorsWheelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */; };
 		3C866ADD216337920044EB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE41F7621523AB8002A6600 /* Assets.xcassets */; };
 		3C866AE6216344850044EB1C /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C866AE5216344850044EB1C /* Identifier.swift */; };
-		3C8677A72230D8F300D73419 /* CodeEncapsulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8677A62230D8F300D73419 /* CodeEncapsulation.swift */; };
-		3C8677AA2230DEB200D73419 /* Стили для UI элементов.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8677A92230DEB200D73419 /* Стили для UI элементов.swift */; };
 		3C8701EA2186EEB40094186B /* KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8701E92186EEB40094186B /* KeyPaths.swift */; };
 		3C892E5B2180772400BDEE55 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */; };
 		3C8E2356216136BC0010F7E6 /* SelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */; };
@@ -335,8 +302,6 @@
 		3C9A83C62133C9C4008A1F17 /* HandlingMutableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */; };
 		3C9AA1252147A3AE00085EEC /* СustomСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AA1242147A3AE00085EEC /* СustomСollections.swift */; };
 		3C9AC62B219176FA00772425 /* AvoidingRaceConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9AC62A219176FA00772425 /* AvoidingRaceConditions.swift */; };
-		3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */; };
-		3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1E6C2222E48CD00921DB7 /* Observers2.swift */; };
 		3CA29A88210B37A80077AB94 /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */; };
 		3CA31444218AD62F00A06369 /* AddChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA31442218AD62E00A06369 /* AddChatViewController.swift */; };
 		3CA31445218AD62F00A06369 /* AddChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31443218AD62F00A06369 /* AddChatViewController.xib */; };
@@ -345,20 +310,14 @@
 		3CA3145B218B149800A06369 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA31459218B149800A06369 /* ProfileTableViewCell.xib */; };
 		3CA420A5210B280200C303FC /* StatisticFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA420A4210B280200C303FC /* StatisticFooter.swift */; };
 		3CA420A7210B281000C303FC /* StatisticFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA420A6210B281000C303FC /* StatisticFooter.xib */; };
-		3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA4259721C2247A00636B47 /* LogicControllers.swift */; };
 		3CA69B8C219308BD009DD38D /* IFeedBackWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */; };
 		3CA69B8E2193226F009DD38D /* FeedbackTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */; };
 		3CA69B90219322AA009DD38D /* ThemesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B8F219322AA009DD38D /* ThemesWorker.swift */; };
 		3CA69B9821933359009DD38D /* FeedbackStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA69B9721933359009DD38D /* FeedbackStrings.swift */; };
 		3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */; };
 		3CA86049216B2AC5001BF023 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA86048216B2AC5001BF023 /* URLs.swift */; };
-		3CA91089224354B600F54A4C /* Using errors as control flow in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */; };
 		3CA9108B224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */; };
 		3CAA089F2122F88000788EB6 /* PowerOfSwitchStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */; };
-		3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */; };
-		3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */; };
-		3CADC677221536C800E28084 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CADC676221536C800E28084 /* Operation.swift */; };
-		3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */; };
 		3CB155B2215C03460034CF0A /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B1215C03460034CF0A /* ColorBuilder.swift */; };
 		3CB155B6215C05330034CF0A /* ImageSchemeUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */; };
 		3CB155B7215C05330034CF0A /* ImageSchemeUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */; };
@@ -374,11 +333,8 @@
 		3CBDF782225335A40096528A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF781225335A40096528A /* APIError.swift */; };
 		3CBDF784225336810096528A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF783225336810096528A /* APIClient.swift */; };
 		3CBDF78622533A620096528A /* HowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBDF78522533A620096528A /* HowToUse.swift */; };
-		3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF54C121BF873C003D4F46 /* PowerOfResultTypes.swift */; };
-		3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */; };
 		3CC042D32154DD57009FB6E3 /* TransformingСollections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */; };
 		3CC042D521550D02009FB6E3 /* Optional+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC042D421550D02009FB6E3 /* Optional+Ex.swift */; };
-		3CC1334E21F830630009A04B /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC1334D21F830630009A04B /* Navigation.swift */; };
 		3CC2F210213D10F200C59AF2 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */; };
 		3CC2F212213D145400C59AF2 /* Dictionary+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */; };
 		3CC2F214213D152600C59AF2 /* EarlyReturningFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */; };
@@ -390,11 +346,8 @@
 		3CC3911C21395741001B42DA /* UsingBuilder .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC3911B21395741001B42DA /* UsingBuilder .swift */; };
 		3CC634002105BF2C002F3B8B /* PickingRightWayOfFailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */; };
 		3CC634022105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */; };
-		3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC689D021EC5D960033F805 /* ModellingState.swift */; };
 		3CC7A3ED2148E56C0057BFEA /* FactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */; };
 		3CC86607225F022700969E2F /* Inclusive enums with OptionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */; };
-		3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC99D3121BA76A500F7623B /* ModelControllers .swift */; };
-		3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCC0A35224B485900F635BB /* Constructing URLs in Swift.swift */; };
 		3CCEA34A21528AD00081A7DB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCEA34921528AD00081A7DB /* RoundButton.swift */; };
 		3CD0B053215A4E68001E7411 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0B052215A4E68001E7411 /* UIViewController+Ex.swift */; };
 		3CD0B059215A4EFF001E7411 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0B058215A4EFF001E7411 /* UIImageColors.swift */; };
@@ -405,9 +358,6 @@
 		3CD0B061215A54A3001E7411 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0B052215A4E68001E7411 /* UIViewController+Ex.swift */; };
 		3CD3DB1E213521EB004F0FE7 /* PowerOfResult .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3DB1D213521EB004F0FE7 /* PowerOfResult .swift */; };
 		3CD3DB202135258A004F0FE7 /* TypeSafeIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */; };
-		3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD4913C21F0527D0097618E /* LightweightPresenters.swift */; };
-		3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD5D33121D0B48000682966 /* DependencyInjectionUsingFactories.swift */; };
-		3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */; };
 		3CD7AF7A215E71250006A4DD /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7AF78215E71250006A4DD /* ColorCollectionViewCell.swift */; };
 		3CD7AF7B215E71250006A4DD /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD7AF79215E71250006A4DD /* ColorCollectionViewCell.xib */; };
 		3CD7AF7D215E71710006A4DD /* UIColllectionView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD7AF7C215E71710006A4DD /* UIColllectionView+Ex.swift */; };
@@ -419,18 +369,15 @@
 		3CD85A2520EF482D008D994C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2420EF482D008D994C /* Assets.xcassets */; };
 		3CD85A2820EF482D008D994C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD85A2620EF482D008D994C /* LaunchScreen.storyboard */; };
 		3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */; };
-		3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD864552237A5300073BAD9 /* Domain Specific Language.swift */; };
 		3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */; };
 		3CDF4F63215E079A0042650D /* ColorsWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4F62215E079A0042650D /* ColorsWheel.swift */; };
 		3CDF4F66215E4AF10042650D /* ColorWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF4F64215E4AF10042650D /* ColorWheelViewController.swift */; };
 		3CDF4F67215E4AF10042650D /* ColorWheelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CDF4F65215E4AF10042650D /* ColorWheelViewController.xib */; };
 		3CE12B54216F694900E0DF20 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE12B53216F694900E0DF20 /* Indicator.swift */; };
-		3CE138E722279EC100E0B7CD /* Observers1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE138E622279EC100E0B7CD /* Observers1.swift */; };
 		3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE138EA2227A4B300E0B7CD /* Logger.swift */; };
 		3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE138EC2227A4DC00E0B7CD /* FakeLogger.swift */; };
 		3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE138EF2227A5BD00E0B7CD /* SwinjectViewController.swift */; };
 		3CE138F22227A5BD00E0B7CD /* SwinjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE138F02227A5BD00E0B7CD /* SwinjectViewController.xib */; };
-		3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE1C25E21D20E65008FC070 /* CapturingObjectsSwift.swift */; };
 		3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE2914D22420B2600831A13 /* A better syntax for configurable initializations.swift */; };
 		3CE3E552215BC1F2003A0528 /* UILabel+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53A215BC1EF003A0528 /* UILabel+Chameleon.m */; };
 		3CE3E553215BC1F2003A0528 /* ChameleonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE3E53C215BC1EF003A0528 /* ChameleonConstants.m */; };
@@ -469,7 +416,6 @@
 		3CE80B44225F0E2700CA9C02 /* ExpandingCellsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CE80B42225F0E2700CA9C02 /* ExpandingCellsController.xib */; };
 		3CE80B46225F132100CA9C02 /* UltravisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE80B45225F132100CA9C02 /* UltravisualLayout.swift */; };
 		3CE8CAF62136AB49003752DC /* LogicControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE8CAF52136AB49003752DC /* LogicControllers.swift */; };
-		3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */; };
 		3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09F32236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift */; };
 		3CEA09F62236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CEA09F42236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib */; };
 		3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA09F82236362500C03FF9 /* ContentTableViewCell.swift */; };
@@ -502,7 +448,6 @@
 		3CF58AF52188884D008FEB6D /* NewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF58AF42188884D008FEB6D /* NewMessage.swift */; };
 		3CF5A899222D07B4000833A1 /* test1.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CF5A898222D07B4000833A1 /* test1.json */; };
 		3CF62BA3214F718A00BD1579 /* ReusableDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */; };
-		3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6F9132251DE1E001CA170 /* Bindable values in Swift.swift */; };
 		3CF720E7211D6B29007B7EC5 /* FirstClassFunctions .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */; };
 		3CFBCC0B21145A7B00A8A458 /* ETBVariantsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */; };
 		3CFBCC0D21145A8300A8A458 /* ETBVariantsControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CFBCC0C21145A8300A8A458 /* ETBVariantsControl.xib */; };
@@ -522,7 +467,6 @@
 		450425EF22C345F1004A7FEC /* View Controller States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450425EE22C345F1004A7FEC /* View Controller States.swift */; };
 		450425F122C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */; };
 		451F823622C0A29B00A672D0 /* VisitorForMyProj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F823522C0A29B00A672D0 /* VisitorForMyProj.swift */; };
-		4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */; };
 		4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4527E71D229BF30500C41CB6 /* DODOPizzaViewController.swift */; };
 		4527E720229BF30500C41CB6 /* DODOPizzaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4527E71E229BF30500C41CB6 /* DODOPizzaViewController.xib */; };
 		4527E723229BF47800C41CB6 /* PizzaHalfCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4527E721229BF47800C41CB6 /* PizzaHalfCollectionController.swift */; };
@@ -533,8 +477,6 @@
 		4527E731229BFDD700C41CB6 /* PizzaHalfCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4527E72F229BFDD700C41CB6 /* PizzaHalfCell.xib */; };
 		4527E734229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4527E732229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift */; };
 		4527E735229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4527E733229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib */; };
-		452E93E322DDA17400BDEB66 /* Generalizing Swift code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452E93E222DDA17400BDEB66 /* Generalizing Swift code.swift */; };
-		452FD54D228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD54C228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift */; };
 		452FD555228A962A00DB34FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD554228A962A00DB34FB /* main.swift */; };
 		452FD56A228A971500DB34FB /* Посредник (Mediator).swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD562228A971500DB34FB /* Посредник (Mediator).swift */; };
 		452FD56B228A971500DB34FB /* Стратегия.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD563228A971500DB34FB /* Стратегия.swift */; };
@@ -552,6 +494,8 @@
 		452FD583228A993000DB34FB /* StructuralPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD582228A993000DB34FB /* StructuralPatterns.swift */; };
 		452FD585228A995D00DB34FB /* BehaviorPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD584228A995D00DB34FB /* BehaviorPatterns.swift */; };
 		452FD587228A998F00DB34FB /* GeneratingPatterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FD586228A998F00DB34FB /* GeneratingPatterns.swift */; };
+		4530C361234DACB9004E6CA6 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4530C35F234DACB9004E6CA6 /* OnboardingViewController.swift */; };
+		4530C362234DACB9004E6CA6 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4530C360234DACB9004E6CA6 /* OnboardingViewController.xib */; };
 		453390272295205600B005D7 /* Компоновщик (Composite).swift in Sources */ = {isa = PBXBuildFile; fileRef = 453390262295205600B005D7 /* Компоновщик (Composite).swift */; };
 		453484B022A687C700D9A6B8 /* CacheBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453484AF22A687C700D9A6B8 /* CacheBehavior.swift */; };
 		453484B322A698EB00D9A6B8 /* URLCache+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453484B222A698EB00D9A6B8 /* URLCache+Ex.swift */; };
@@ -577,20 +521,17 @@
 		456F507B22E04B240020CE2A /* NewYearContentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F507A22E04B240020CE2A /* NewYearContentViewController.storyboard */; };
 		456FBF9E2278155C005AC721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9D2278155C005AC721 /* Card.swift */; };
 		456FBFA022782711005AC721 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FBF9F22782711005AC721 /* MemoryGame.swift */; };
-		4573D78322C092DC006FD84F /* Configurable types in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573D78222C092DC006FD84F /* Configurable types in Swift.swift */; };
 		4584866122CB22190021CCE2 /* CollectionViewSelfSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4584865F22CB22190021CCE2 /* CollectionViewSelfSize.swift */; };
 		4584866222CB22190021CCE2 /* CollectionViewSelfSize.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4584866022CB22190021CCE2 /* CollectionViewSelfSize.xib */; };
 		4584866622CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4584866422CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift */; };
 		4584866722CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4584866522CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib */; };
 		4586ADB7234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586ADB6234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift */; };
-		458CD1F02289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */; };
 		4590D21F229FDDF300A82D2B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D21E229FDDF300A82D2B /* BannerView.swift */; };
 		4590D222229FE11600A82D2B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D220229FE11600A82D2B /* ScrollViewController.swift */; };
 		4590D223229FE11600A82D2B /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4590D221229FE11600A82D2B /* ScrollViewController.xib */; };
 		45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45933C7B2282B00D0069639A /* TimerViewController.swift */; };
 		45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45933C7C2282B00D0069639A /* TimerViewController.xib */; };
 		45AC5F2522927B9F00F1A26A /* Фасад (Facade).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC5F2422927B9F00F1A26A /* Фасад (Facade).swift */; };
-		45AC5F2722927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */; };
 		45AD2C76229E6BB2004389A2 /* TestTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */; };
 		45AD2C7B229E89B7004389A2 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C7A229E89B7004389A2 /* A.swift */; };
 		45AD2C7D229E89F1004389A2 /* A+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C7C229E89F1004389A2 /* A+Strings.swift */; };
@@ -600,11 +541,9 @@
 		45B7140E2278316B008B63F2 /* CardGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140C2278316B008B63F2 /* CardGameController.xib */; };
 		45B71410227837A0008B63F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140F227837A0008B63F2 /* Constants.swift */; };
 		45B7141222783869008B63F2 /* GameApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7141122783869008B63F2 /* GameApiClient.swift */; };
-		45BC0AD522EF109800743779 /* Utilizing value semantics in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BC0AD422EF109800743779 /* Utilizing value semantics in Swift.swift */; };
 		45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA7F226EE304004A830A /* CardsDataModel.swift */; };
 		45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA82226EE343004A830A /* StackContainterView.swift */; };
 		45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BCCA84226EE36E004A830A /* SwipeCardView.swift */; };
-		45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */; };
 		45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */; };
 		45BFA285229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA27F229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift */; };
 		45BFA286229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BFA280229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift */; };
@@ -626,8 +565,6 @@
 		45D6CB2422DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */; };
 		45D6CB2622DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2522DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift */; };
 		45D6CB2922DC5D9400C4D0B6 /* AnyCodingKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2822DC5D9400C4D0B6 /* AnyCodingKeyTests.swift */; };
-		45D6CB2B22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D6CB2A22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift */; };
-		45DAFEDF226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */; };
 		45DB5CF622A78EF80061147F /* Result+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB5CF522A78EF80061147F /* Result+Ex.swift */; };
 		45DB5CF822A7A12A0061147F /* JSONExampleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */; };
 		45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E4D1D02282B16D0047940C /* TimerTask.swift */; };
@@ -638,7 +575,6 @@
 		45F3CD7722E043590021EB35 /* ModalContainerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F3CD7622E043590021EB35 /* ModalContainerViewController.storyboard */; };
 		45F3CD7922E043710021EB35 /* ModalContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3CD7822E043710021EB35 /* ModalContainerViewController.swift */; };
 		45F3CD7B22E044080021EB35 /* ModalContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3CD7A22E044080021EB35 /* ModalContainerView.swift */; };
-		45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */; };
 		45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F5E76A227041F000E38983 /* TinderViewController.swift */; };
 		45F5E76D227041F000E38983 /* TinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F5E76B227041F000E38983 /* TinderViewController.xib */; };
 		45F9222722FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F9222522FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift */; };
@@ -706,13 +642,10 @@
 
 /* Begin PBXFileReference section */
 		20F46FA8AA1874A777E409D9 /* Pods-MyWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyWork/Pods-MyWork.release.xcconfig"; sourceTree = "<group>"; };
-		3C0018B8221290B800CE9D3E /* Trimming long argument lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trimming long argument lists.swift"; sourceTree = "<group>"; };
 		3C01716A21622A99003A1A16 /* DifferentFlavorsOfViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentFlavorsOfViewModels.swift; sourceTree = "<group>"; };
-		3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFactoryMethods.swift; sourceTree = "<group>"; };
 		3C05E1F9212D342F003CBAD1 /* ModelControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelControllers.swift; sourceTree = "<group>"; };
 		3C08C1EB221D737500179B05 /* DownloadImageDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageDataController.swift; sourceTree = "<group>"; };
 		3C09E492217D93C7007ABDD8 /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
-		3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubclassFreeViewControllers.swift; sourceTree = "<group>"; };
 		3C0B1763210EDF34003D9314 /* ConditionalConformances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalConformances.swift; sourceTree = "<group>"; };
 		3C0C24EB215CF7CB00472B3E /* ColorWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		3C0C24F2215D00DF00472B3E /* SelectedColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedColorView.swift; sourceTree = "<group>"; };
@@ -724,9 +657,6 @@
 		3C0EA7BC21708A5400C5EB13 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		3C0F05BD216135E800F04623 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		3C12E33A21086A9B0026F1D5 /* PercentagesControlCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentagesControlCommon.swift; sourceTree = "<group>"; };
-		3C14387021BE331600BA241D /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
-		3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsAsControlFlow.swift; sourceTree = "<group>"; };
-		3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreventingViewsFromBeingModelAware.swift; sourceTree = "<group>"; };
 		3C176F07221C338A009CC12F /* switch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = switch.json; sourceTree = "<group>"; };
 		3C176F09221C361A009CC12F /* switch-action.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "switch-action.json"; sourceTree = "<group>"; };
 		3C18546F2238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Поддержание состояния в ваших ViewControllers.swift"; sourceTree = "<group>"; };
@@ -752,12 +682,9 @@
 		3C1EA4A8221BE01300B33763 /* not-found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "not-found.json"; sourceTree = "<group>"; };
 		3C1EC265212150BC00E929E5 /* TrimmingLongArgumentLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimmingLongArgumentLists.swift; sourceTree = "<group>"; };
 		3C1EC2672121526500E929E5 /* UsingGenericTypeConstraints .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingGenericTypeConstraints .swift"; sourceTree = "<group>"; };
-		3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPatternToAvoidShared.swift; sourceTree = "<group>"; };
-		3C204BBF2201677800CB49B5 /* GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		3C276688217DE1D600374E7E /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3C276689217DE1D600374E7E /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		3C27668F217DEA1400374E7E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
-		3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSelfDocumenting.swift; sourceTree = "<group>"; };
 		3C2C9C1F221BD856004A2605 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3C2C9C23221BD919004A2605 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3C2C9C24221BD919004A2605 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -770,11 +697,9 @@
 		3C2FA85C20F8BAB100F54E76 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3C2FA85E20F8C29D00F54E76 /* EnumBasedAnalyticsSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumBasedAnalyticsSystem.swift; sourceTree = "<group>"; };
 		3C2FA86020F8C88600F54E76 /* AvoidingSingletonsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingSingletonsSwift.swift; sourceTree = "<group>"; };
-		3C3076CA225B15610006D5FC /* String literals in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String literals in Swift.swift"; sourceTree = "<group>"; };
 		3C30C3D0214B78DF008BBC12 /* ModellingState .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModellingState .swift"; sourceTree = "<group>"; };
 		3C3253B4221D7B1600A7E3F0 /* loading-image.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-image.json"; sourceTree = "<group>"; };
 		3C3253B6221D7C6600A7E3F0 /* taxi-app-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "taxi-app-loading.json"; sourceTree = "<group>"; };
-		3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingTokensToHandleAsyncSwiftCode.swift; sourceTree = "<group>"; };
 		3C35CBFA2187830200DDE92E /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		3C35CBFC218784F600DDE92E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3C35CBFE2187869300DDE92E /* ChatMessagesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessagesWorker.swift; sourceTree = "<group>"; };
@@ -794,11 +719,8 @@
 		3C39B3D321C7BBA600323840 /* ContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
 		3C3A1B0B221D18E4005DDFA7 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		3C3A1B0D221D23AB005DDFA7 /* app-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "app-loading.json"; sourceTree = "<group>"; };
-		3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
 		3C3B464B2174643E0032BC36 /* DLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLSViewController.swift; sourceTree = "<group>"; };
 		3C3B464E21746A770032BC36 /* LayoutConstraint+NSLayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LayoutConstraint+NSLayoutAnchor.swift"; sourceTree = "<group>"; };
-		3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type inference-powered serialization in Swift.swift"; sourceTree = "<group>"; };
-		3C3BED2D2223B3A100502361 /* PatternMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternMatching.swift; sourceTree = "<group>"; };
 		3C3D0E40216C8654006B7907 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		3C3D0E42216C8939006B7907 /* ImagePickerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerPresenter.swift; sourceTree = "<group>"; };
 		3C4099822237CD3100E5FB05 /* RootContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentViewController.swift; sourceTree = "<group>"; };
@@ -882,17 +804,13 @@
 		3C437F7421997663008B61DC /* FeedBackImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedBackImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		3C437F7A2199D744008B61DC /* FeedbackAttachFileIncome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackAttachFileIncome.swift; sourceTree = "<group>"; };
 		3C441B0C2198A39A001F275E /* CellSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSource.swift; sourceTree = "<group>"; };
-		3C452753222CEE7E004E5E19 /* Использование User-Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Использование User-Defaults.swift"; sourceTree = "<group>"; };
 		3C452756222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Композитный datasource для таблиц и коллекций.swift"; sourceTree = "<group>"; };
 		3C457F8F21B79F3000B5EF63 /* SourceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewModel.swift; sourceTree = "<group>"; };
 		3C457F9121B79FEA00B5EF63 /* SourceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceListViewModel.swift; sourceTree = "<group>"; };
 		3C457F9321B7A43500B5EF63 /* SourcesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesTableViewController.swift; sourceTree = "<group>"; };
 		3C4763D7211AC567006D0C1B /* CustomOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperators.swift; sourceTree = "<group>"; };
-		3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingCustomCollections.swift; sourceTree = "<group>"; };
-		3C4A84FA221136DE0034627F /* BuildingDSLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingDSLs.swift; sourceTree = "<group>"; };
 		3C4AA54C2100585C003F484C /* FuturesPromises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturesPromises.swift; sourceTree = "<group>"; };
 		3C4AA54E21006423003F484C /* PromiseKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseKit.swift; sourceTree = "<group>"; };
-		3C4B691321E883B1002175CB /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
 		3C4C676821254370005D05D5 /* LazyProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyProperties.swift; sourceTree = "<group>"; };
 		3C4D62BF223A5BAD00233C43 /* Differ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Differ.swift; sourceTree = "<group>"; };
 		3C4D62C1223A5CAE00233C43 /* DiffExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffExampleViewController.swift; sourceTree = "<group>"; };
@@ -905,7 +823,6 @@
 		3C517C5D21B9051B009CAEE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C517C6021B9051B009CAEE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C517C6221B9051B009CAEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelsInSwift.swift; sourceTree = "<group>"; };
 		3C51A73F223B6C6B00D14490 /* WebRequestBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRequestBehavior.swift; sourceTree = "<group>"; };
 		3C51A741223B6CB900D14490 /* LoggerBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerBehavior.swift; sourceTree = "<group>"; };
 		3C51A743223B6DCD00D14490 /* CombinedWebRequestBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedWebRequestBehavior.swift; sourceTree = "<group>"; };
@@ -926,10 +843,6 @@
 		3C57ED97217D984400A12E57 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C5B0447223639710075ADCD /* DynamicHeightCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightCollectionView.swift; sourceTree = "<group>"; };
 		3C5B044D223644210075ADCD /* Инверсия зависимостей через протоколы.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Инверсия зависимостей через протоколы.swift"; sourceTree = "<group>"; };
-		3C5B8466221E6A8C00C959BE /* Delegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegation.swift; sourceTree = "<group>"; };
-		3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaskBasedConcurrency .swift"; sourceTree = "<group>"; };
-		3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerViewControllers.swift; sourceTree = "<group>"; };
-		3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePowerOfTypeAliases.swift; sourceTree = "<group>"; };
 		3C5FDEF02191EAAC00F0C6DF /* FeedBackWebConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackWebConfigurator.swift; sourceTree = "<group>"; };
 		3C5FDEF42191EBCB00F0C6DF /* CaptchaWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptchaWorker.swift; sourceTree = "<group>"; };
 		3C5FDEF62191EC8400F0C6DF /* FeedBackEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackEndpoint.swift; sourceTree = "<group>"; };
@@ -938,11 +851,8 @@
 		3C5FDF002191F5D600F0C6DF /* CaptchaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptchaView.xib; sourceTree = "<group>"; };
 		3C5FDF022191FCC700F0C6DF /* FeedBackStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackStyle.swift; sourceTree = "<group>"; };
 		3C5FF2B12146564F005B41FB /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
-		3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecializingProtocols.swift; sourceTree = "<group>"; };
-		3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InlineTypesAndFunctions .swift"; sourceTree = "<group>"; };
 		3C69E4AA215FA4090022CA4D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3C6A4F23214A29850071AA0C /* IdentifyingObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingObjects.swift; sourceTree = "<group>"; };
-		3C6BA91D225C6130000A2063 /* Replacing legacy code using Swift protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Replacing legacy code using Swift protocols.swift"; sourceTree = "<group>"; };
 		3C6D8F5A21099BAC000190F3 /* LineControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineControl.swift; sourceTree = "<group>"; };
 		3C6D8F5C21099D31000190F3 /* LinePercentagesControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePercentagesControl.swift; sourceTree = "<group>"; };
 		3C6D8F5E21099D3C000190F3 /* LinePercentagesControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinePercentagesControl.xib; sourceTree = "<group>"; };
@@ -979,11 +889,7 @@
 		3C7A5AD921934A8200DE016B /* DoneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTableViewCell.swift; sourceTree = "<group>"; };
 		3C7A5ADA21934A8200DE016B /* DoneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoneTableViewCell.xib; sourceTree = "<group>"; };
 		3C7CD75121103951009871B1 /* Tuples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuples.swift; sourceTree = "<group>"; };
-		3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type erasure using closures in Swift.swift"; sourceTree = "<group>"; };
-		3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registerable Views.swift"; sourceTree = "<group>"; };
 		3C80FF372248A210007B71F4 /* Deep dive into Pattern matching with ~= operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deep dive into Pattern matching with ~= operator.swift"; sourceTree = "<group>"; };
-		3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "The power of key paths in Swift.swift"; sourceTree = "<group>"; };
-		3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotBasedUIDevelopment.swift; sourceTree = "<group>"; };
 		3C82F4632164A9630024B3E4 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		3C82F4652164A98A0024B3E4 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		3C82F46B2164AA0F0024B3E4 /* WorkWithUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkWithUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -997,11 +903,8 @@
 		3C82F4812164AD310024B3E4 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		3C82F4842164B3330024B3E4 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		3C82F4862164B3F50024B3E4 /* MethodsPerformers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodsPerformers.swift; sourceTree = "<group>"; };
-		3C8546BA21FEF0920004700D /* AvoidingRaceConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingRaceConditions.swift; sourceTree = "<group>"; };
 		3C857860216FAC5200445EB8 /* ColorsWheelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWheelConfiguration.swift; sourceTree = "<group>"; };
 		3C866AE5216344850044EB1C /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
-		3C8677A62230D8F300D73419 /* CodeEncapsulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeEncapsulation.swift; sourceTree = "<group>"; };
-		3C8677A92230DEB200D73419 /* Стили для UI элементов.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Стили для UI элементов.swift"; sourceTree = "<group>"; };
 		3C8701E92186EEB40094186B /* KeyPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPaths.swift; sourceTree = "<group>"; };
 		3C892E5A2180772400BDEE55 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		3C8E2355216136BC0010F7E6 /* SelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPresenter.swift; sourceTree = "<group>"; };
@@ -1051,8 +954,6 @@
 		3C9A83C52133C9C4008A1F17 /* HandlingMutableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandlingMutableModels.swift; sourceTree = "<group>"; };
 		3C9AA1242147A3AE00085EEC /* СustomСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СustomСollections.swift"; sourceTree = "<group>"; };
 		3C9AC62A219176FA00772425 /* AvoidingRaceConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidingRaceConditions.swift; sourceTree = "<group>"; };
-		3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HandlingNon-OptionalOptionals .swift"; sourceTree = "<group>"; };
-		3CA1E6C2222E48CD00921DB7 /* Observers2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers2.swift; sourceTree = "<group>"; };
 		3CA29A87210B37A80077AB94 /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
 		3CA31442218AD62E00A06369 /* AddChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChatViewController.swift; sourceTree = "<group>"; };
 		3CA31443218AD62F00A06369 /* AddChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChatViewController.xib; sourceTree = "<group>"; };
@@ -1061,20 +962,14 @@
 		3CA31459218B149800A06369 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		3CA420A4210B280200C303FC /* StatisticFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticFooter.swift; sourceTree = "<group>"; };
 		3CA420A6210B281000C303FC /* StatisticFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticFooter.xib; sourceTree = "<group>"; };
-		3CA4259721C2247A00636B47 /* LogicControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicControllers.swift; sourceTree = "<group>"; };
 		3CA69B8B219308BD009DD38D /* IFeedBackWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFeedBackWorker.swift; sourceTree = "<group>"; };
 		3CA69B8D2193226F009DD38D /* FeedbackTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTheme.swift; sourceTree = "<group>"; };
 		3CA69B8F219322AA009DD38D /* ThemesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemesWorker.swift; sourceTree = "<group>"; };
 		3CA69B9721933359009DD38D /* FeedbackStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackStrings.swift; sourceTree = "<group>"; };
 		3CA6A26E21C23C5C009D0F1F /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		3CA86048216B2AC5001BF023 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using errors as control flow in Swift.swift"; sourceTree = "<group>"; };
 		3CA9108A224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift"; sourceTree = "<group>"; };
 		3CAA089E2122F88000788EB6 /* PowerOfSwitchStatements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfSwitchStatements.swift; sourceTree = "<group>"; };
-		3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
-		3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendingOptionals.swift; sourceTree = "<group>"; };
-		3CADC676221536C800E28084 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
-		3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingChildViewControllers.swift; sourceTree = "<group>"; };
 		3CB155B1215C03460034CF0A /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
 		3CB155B4215C05330034CF0A /* ImageSchemeUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSchemeUViewController.swift; sourceTree = "<group>"; };
 		3CB155B5215C05330034CF0A /* ImageSchemeUViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSchemeUViewController.xib; sourceTree = "<group>"; };
@@ -1090,11 +985,8 @@
 		3CBDF781225335A40096528A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		3CBDF783225336810096528A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		3CBDF78522533A620096528A /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
-		3CBF54C121BF873C003D4F46 /* PowerOfResultTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerOfResultTypes.swift; sourceTree = "<group>"; };
-		3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TypeSafeIdentifiers .swift"; sourceTree = "<group>"; };
 		3CC042D22154DD57009FB6E3 /* TransformingСollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransformingСollections.swift"; sourceTree = "<group>"; };
 		3CC042D421550D02009FB6E3 /* Optional+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Ex.swift"; sourceTree = "<group>"; };
-		3CC1334D21F830630009A04B /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		3CC2F20F213D10F200C59AF2 /* FeatureFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlags.swift; sourceTree = "<group>"; };
 		3CC2F211213D145400C59AF2 /* Dictionary+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ex.swift"; sourceTree = "<group>"; };
 		3CC2F213213D152600C59AF2 /* EarlyReturningFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlyReturningFunctions.swift; sourceTree = "<group>"; };
@@ -1106,11 +998,8 @@
 		3CC3911B21395741001B42DA /* UsingBuilder .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UsingBuilder .swift"; sourceTree = "<group>"; };
 		3CC633FF2105BF2C002F3B8B /* PickingRightWayOfFailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickingRightWayOfFailing.swift; sourceTree = "<group>"; };
 		3CC634012105C0C5002F3B8B /* ProvidingUnifiedErrorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidingUnifiedErrorAPI.swift; sourceTree = "<group>"; };
-		3CC689D021EC5D960033F805 /* ModellingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModellingState.swift; sourceTree = "<group>"; };
 		3CC7A3EC2148E56C0057BFEA /* FactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPattern.swift; sourceTree = "<group>"; };
 		3CC86606225F022700969E2F /* Inclusive enums with OptionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inclusive enums with OptionSet.swift"; sourceTree = "<group>"; };
-		3CC99D3121BA76A500F7623B /* ModelControllers .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelControllers .swift"; sourceTree = "<group>"; };
-		3CCC0A35224B485900F635BB /* Constructing URLs in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constructing URLs in Swift.swift"; sourceTree = "<group>"; };
 		3CCEA34921528AD00081A7DB /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3CD0B052215A4E68001E7411 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		3CD0B058215A4EFF001E7411 /* UIImageColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
@@ -1119,9 +1008,6 @@
 		3CD0B05E215A50F5001E7411 /* UIViewController+Ex2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex2.swift"; sourceTree = "<group>"; };
 		3CD3DB1D213521EB004F0FE7 /* PowerOfResult .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PowerOfResult .swift"; sourceTree = "<group>"; };
 		3CD3DB1F2135258A004F0FE7 /* TypeSafeIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSafeIdentifiers.swift; sourceTree = "<group>"; };
-		3CD4913C21F0527D0097618E /* LightweightPresenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightweightPresenters.swift; sourceTree = "<group>"; };
-		3CD5D33121D0B48000682966 /* DependencyInjectionUsingFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionUsingFactories.swift; sourceTree = "<group>"; };
-		3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparationOfConcernsUsingProtocols.swift; sourceTree = "<group>"; };
 		3CD7AF78215E71250006A4DD /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CD7AF79215E71250006A4DD /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
 		3CD7AF7C215E71710006A4DD /* UIColllectionView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColllectionView+Ex.swift"; sourceTree = "<group>"; };
@@ -1134,18 +1020,15 @@
 		3CD85A2720EF482D008D994C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CD85A2920EF482D008D994C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CD86453223797880073BAD9 /* Обертки над запросами, как в GO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Обертки над запросами, как в GO.swift"; sourceTree = "<group>"; };
-		3CD864552237A5300073BAD9 /* Domain Specific Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain Specific Language.swift"; sourceTree = "<group>"; };
 		3CDF4337223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Использование протоколов в качестве составных расширений.swift"; sourceTree = "<group>"; };
 		3CDF4F62215E079A0042650D /* ColorsWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsWheel.swift; sourceTree = "<group>"; };
 		3CDF4F64215E4AF10042650D /* ColorWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelViewController.swift; sourceTree = "<group>"; };
 		3CDF4F65215E4AF10042650D /* ColorWheelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorWheelViewController.xib; sourceTree = "<group>"; };
 		3CE12B53216F694900E0DF20 /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
-		3CE138E622279EC100E0B7CD /* Observers1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers1.swift; sourceTree = "<group>"; };
 		3CE138EA2227A4B300E0B7CD /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		3CE138EC2227A4DC00E0B7CD /* FakeLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLogger.swift; sourceTree = "<group>"; };
 		3CE138EF2227A5BD00E0B7CD /* SwinjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectViewController.swift; sourceTree = "<group>"; };
 		3CE138F02227A5BD00E0B7CD /* SwinjectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwinjectViewController.xib; sourceTree = "<group>"; };
-		3CE1C25E21D20E65008FC070 /* CapturingObjectsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturingObjectsSwift.swift; sourceTree = "<group>"; };
 		3CE2914D22420B2600831A13 /* A better syntax for configurable initializations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A better syntax for configurable initializations.swift"; sourceTree = "<group>"; };
 		3CE3E4F7215BBEEE003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE3E4F9215BBF23003A0528 /* Pods_MyWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_MyWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1207,7 +1090,6 @@
 		3CE80B42225F0E2700CA9C02 /* ExpandingCellsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingCellsController.xib; sourceTree = "<group>"; };
 		3CE80B45225F132100CA9C02 /* UltravisualLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltravisualLayout.swift; sourceTree = "<group>"; };
 		3CE8CAF52136AB49003752DC /* LogicControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicControllers.swift; sourceTree = "<group>"; };
-		3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingTypes.swift; sourceTree = "<group>"; };
 		3CEA09F32236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewsDynamicHeightViewController.swift; sourceTree = "<group>"; };
 		3CEA09F42236344300C03FF9 /* CollectionViewsDynamicHeightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewsDynamicHeightViewController.xib; sourceTree = "<group>"; };
 		3CEA09F82236362500C03FF9 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
@@ -1240,7 +1122,6 @@
 		3CF58AF42188884D008FEB6D /* NewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessage.swift; sourceTree = "<group>"; };
 		3CF5A898222D07B4000833A1 /* test1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test1.json; sourceTree = "<group>"; };
 		3CF62BA2214F718A00BD1579 /* ReusableDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableDataSources.swift; sourceTree = "<group>"; };
-		3CF6F9132251DE1E001CA170 /* Bindable values in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bindable values in Swift.swift"; sourceTree = "<group>"; };
 		3CF720E6211D6B29007B7EC5 /* FirstClassFunctions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstClassFunctions .swift"; sourceTree = "<group>"; };
 		3CFBCC0A21145A7B00A8A458 /* ETBVariantsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETBVariantsControl.swift; sourceTree = "<group>"; };
 		3CFBCC0C21145A8300A8A458 /* ETBVariantsControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ETBVariantsControl.xib; sourceTree = "<group>"; };
@@ -1261,7 +1142,6 @@
 		450425EE22C345F1004A7FEC /* View Controller States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Controller States.swift"; sourceTree = "<group>"; };
 		450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Композиция UIViewController-ов и навигация между ними.swift"; sourceTree = "<group>"; };
 		451F823522C0A29B00A672D0 /* VisitorForMyProj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorForMyProj.swift; sourceTree = "<group>"; };
-		4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Avoiding singletons in Swift.swift"; sourceTree = "<group>"; };
 		4527E71D229BF30500C41CB6 /* DODOPizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DODOPizzaViewController.swift; sourceTree = "<group>"; };
 		4527E71E229BF30500C41CB6 /* DODOPizzaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DODOPizzaViewController.xib; sourceTree = "<group>"; };
 		4527E721229BF47800C41CB6 /* PizzaHalfCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHalfCollectionController.swift; sourceTree = "<group>"; };
@@ -1272,8 +1152,6 @@
 		4527E72F229BFDD700C41CB6 /* PizzaHalfCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaHalfCell.xib; sourceTree = "<group>"; };
 		4527E732229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHalfTitleHeader.swift; sourceTree = "<group>"; };
 		4527E733229BFEB800C41CB6 /* PizzaHalfTitleHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaHalfTitleHeader.xib; sourceTree = "<group>"; };
-		452E93E222DDA17400BDEB66 /* Generalizing Swift code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Generalizing Swift code.swift"; sourceTree = "<group>"; };
-		452FD54C228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pure functions in Swift(Чистые функции).swift"; sourceTree = "<group>"; };
 		452FD552228A962A00DB34FB /* Patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Patterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		452FD554228A962A00DB34FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		452FD562228A971500DB34FB /* Посредник (Mediator).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Посредник (Mediator).swift"; sourceTree = "<group>"; };
@@ -1292,6 +1170,8 @@
 		452FD582228A993000DB34FB /* StructuralPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructuralPatterns.swift; sourceTree = "<group>"; };
 		452FD584228A995D00DB34FB /* BehaviorPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorPatterns.swift; sourceTree = "<group>"; };
 		452FD586228A998F00DB34FB /* GeneratingPatterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratingPatterns.swift; sourceTree = "<group>"; };
+		4530C35F234DACB9004E6CA6 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		4530C360234DACB9004E6CA6 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		453390262295205600B005D7 /* Компоновщик (Composite).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Компоновщик (Composite).swift"; sourceTree = "<group>"; };
 		453484AF22A687C700D9A6B8 /* CacheBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheBehavior.swift; sourceTree = "<group>"; };
 		453484B222A698EB00D9A6B8 /* URLCache+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLCache+Ex.swift"; sourceTree = "<group>"; };
@@ -1318,20 +1198,17 @@
 		456F507A22E04B240020CE2A /* NewYearContentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewYearContentViewController.storyboard; sourceTree = "<group>"; };
 		456FBF9D2278155C005AC721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		456FBF9F22782711005AC721 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
-		4573D78222C092DC006FD84F /* Configurable types in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Configurable types in Swift.swift"; sourceTree = "<group>"; };
 		4584865F22CB22190021CCE2 /* CollectionViewSelfSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSelfSize.swift; sourceTree = "<group>"; };
 		4584866022CB22190021CCE2 /* CollectionViewSelfSize.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewSelfSize.xib; sourceTree = "<group>"; };
 		4584866422CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizeCollectionViewCell.swift; sourceTree = "<group>"; };
 		4584866522CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfSizeCollectionViewCell.xib; sourceTree = "<group>"; };
 		4586ADB6234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Внедряем Sign in with Apple в свое iOS приложение.swift"; sourceTree = "<group>"; };
-		458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Structuring model data in Swift(Структурирование данных).swift"; sourceTree = "<group>"; };
 		4590D21E229FDDF300A82D2B /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		4590D220229FE11600A82D2B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		4590D221229FE11600A82D2B /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
 		45933C7B2282B00D0069639A /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		45933C7C2282B00D0069639A /* TimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		45AC5F2422927B9F00F1A26A /* Фасад (Facade).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Фасад (Facade).swift"; sourceTree = "<group>"; };
-		45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift"; sourceTree = "<group>"; };
 		45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableLayout.swift; sourceTree = "<group>"; };
 		45AD2C7A229E89B7004389A2 /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
 		45AD2C7C229E89F1004389A2 /* A+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A+Strings.swift"; sourceTree = "<group>"; };
@@ -1341,11 +1218,9 @@
 		45B7140C2278316B008B63F2 /* CardGameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardGameController.xib; sourceTree = "<group>"; };
 		45B7140F227837A0008B63F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		45B7141122783869008B63F2 /* GameApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameApiClient.swift; sourceTree = "<group>"; };
-		45BC0AD422EF109800743779 /* Utilizing value semantics in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Utilizing value semantics in Swift.swift"; sourceTree = "<group>"; };
 		45BCCA7F226EE304004A830A /* CardsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataModel.swift; sourceTree = "<group>"; };
 		45BCCA82226EE343004A830A /* StackContainterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackContainterView.swift; sourceTree = "<group>"; };
 		45BCCA84226EE36E004A830A /* SwipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCardView.swift; sourceTree = "<group>"; };
-		45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Using @autoclosure when designing.swift"; sourceTree = "<group>"; };
 		45BD147D2269A27200CC161D /* Asynchronous completion handlers with Result type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Asynchronous completion handlers with Result type.swift"; sourceTree = "<group>"; };
 		45BFA27F229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PizzaHalfSelectorLayout+Scale.swift"; sourceTree = "<group>"; };
 		45BFA280229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PizzaHalfSelectorLayout+ContentOffset.swift"; sourceTree = "<group>"; };
@@ -1367,8 +1242,6 @@
 		45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Интеграционное тестирование для проверки на наличие утечки памяти.swift"; sourceTree = "<group>"; };
 		45D6CB2522DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Универсальный JSONDecoder.swift"; sourceTree = "<group>"; };
 		45D6CB2822DC5D9400C4D0B6 /* AnyCodingKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodingKeyTests.swift; sourceTree = "<group>"; };
-		45D6CB2A22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customizing Codable types in Swift.swift"; sourceTree = "<group>"; };
-		45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Property observers in Swift(Наблюдатели за свойствами).swift"; sourceTree = "<group>"; };
 		45DB5CF522A78EF80061147F /* Result+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Ex.swift"; sourceTree = "<group>"; };
 		45DB5CF722A7A12A0061147F /* JSONExampleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONExampleConfigurator.swift; sourceTree = "<group>"; };
 		45E4D1D02282B16D0047940C /* TimerTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTask.swift; sourceTree = "<group>"; };
@@ -1379,7 +1252,6 @@
 		45F3CD7622E043590021EB35 /* ModalContainerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModalContainerViewController.storyboard; sourceTree = "<group>"; };
 		45F3CD7822E043710021EB35 /* ModalContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContainerViewController.swift; sourceTree = "<group>"; };
 		45F3CD7A22E044080021EB35 /* ModalContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalContainerView.swift; sourceTree = "<group>"; };
-		45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Swift dependency injection with functions.swift"; sourceTree = "<group>"; };
 		45F5E76A227041F000E38983 /* TinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		45F5E76B227041F000E38983 /* TinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TinderViewController.xib; sourceTree = "<group>"; };
 		45F9222522FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayoutViewController.swift; sourceTree = "<group>"; };
@@ -1665,6 +1537,7 @@
 		3C2C9C21221BD8F3004A2605 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4530C35E234DAC6F004E6CA6 /* Onboarding */,
 				45F9222422FD816F0097E987 /* Свой flow layout для коллекции */,
 				45CD86D622DEFA4C00EE560A /* Контроллер луковка */,
 				45CD86CC22DEF8C200EE560A /* DragInsideScroll */,
@@ -2065,14 +1938,6 @@
 			path = AttachCell;
 			sourceTree = "<group>";
 		};
-		3C452752222CEE64004E5E19 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				3C452753222CEE7E004E5E19 /* Использование User-Defaults.swift */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
 		3C452755222CF745004E5E19 /* Всяко разно  */ = {
 			isa = PBXGroup;
 			children = (
@@ -2122,18 +1987,6 @@
 			path = "Network2(Не юзаем)";
 			sourceTree = "<group>";
 		};
-		3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation! */ = {
-			isa = PBXGroup;
-			children = (
-				3CD4913C21F0527D0097618E /* LightweightPresenters.swift */,
-				3C0A797721F192CC00082B2B /* SubclassFreeViewControllers.swift */,
-				3C5CA4DD21F5A416001D26ED /* CustomContainerViewControllers.swift */,
-				3CC1334D21F830630009A04B /* Navigation.swift */,
-				3CADC72621FAEAD200738B14 /* UsingChildViewControllers.swift */,
-			);
-			path = "ViewСontrollers&Navigation!";
-			sourceTree = "<group>";
-		};
 		3C517C5521B9051A009CAEE7 /* SwiftBySundell */ = {
 			isa = PBXGroup;
 			children = (
@@ -2141,7 +1994,6 @@
 				450425ED22C345D7004A7FEC /* Vadimbulavin */,
 				4586FAA222B8AE5E00FE83D1 /* HTTP  наброски */,
 				4586FAA122B8AE4C00FE83D1 /* Композитный дата сурс */,
-				4525FE582266E8CB00E2EC83 /* SundellResources */,
 				3C452755222CF745004E5E19 /* Всяко разно  */,
 				3C2C9C1D221BD7E2004A2605 /* Разные контроллеры и примеры работы с ними */,
 				3CA6A26D21C23C49009D0F1F /* Обычный service locator без использования pods */,
@@ -2151,30 +2003,6 @@
 				3C517C6221B9051B009CAEE7 /* Info.plist */,
 			);
 			path = SwiftBySundell;
-			sourceTree = "<group>";
-		};
-		3C517C6621B9052A009CAEE7 /* ManagingState&Objects! */ = {
-			isa = PBXGroup;
-			children = (
-				3C517C6721B905E1009CAEE7 /* ViewModelsInSwift.swift */,
-				3CC99D3121BA76A500F7623B /* ModelControllers .swift */,
-				3C14387021BE331600BA241D /* HandlingMutableModels.swift */,
-				3CBF54C121BF873C003D4F46 /* PowerOfResultTypes.swift */,
-				3CBF54C321BF9416003D4F46 /* TypeSafeIdentifiers .swift */,
-				3CA4259721C2247A00636B47 /* LogicControllers.swift */,
-				3C3A6B3721C38AA7009B6472 /* BuilderPattern.swift */,
-				3C15C89F21C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift */,
-				3CD76AAF21CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift */,
-				3CAA12B721CB5D3000D97507 /* DependencyInjection.swift */,
-				3CD5D33121D0B48000682966 /* DependencyInjectionUsingFactories.swift */,
-				3CE1C25E21D20E65008FC070 /* CapturingObjectsSwift.swift */,
-				3C4A1DC221E5C3640096B985 /* CreatingCustomCollections.swift */,
-				3C1F4C0C21E8659F003AE65B /* FactoryPatternToAvoidShared.swift */,
-				3C4B691321E883B1002175CB /* IdentifyingObjects.swift */,
-				3CC689D021EC5D960033F805 /* ModellingState.swift */,
-				3C9F667121EF083F00800E41 /* HandlingNon-OptionalOptionals .swift */,
-			);
-			path = "ManagingState&Objects!";
 			sourceTree = "<group>";
 		};
 		3C51A73D223B6BE000D14490 /* Сетевой слой */ = {
@@ -2364,33 +2192,6 @@
 			path = StaticCells;
 			sourceTree = "<group>";
 		};
-		3C80FF362248A1F4007B71F4 /* Language features */ = {
-			isa = PBXGroup;
-			children = (
-				3C5CA4DF21F5B0AC001D26ED /* ThePowerOfTypeAliases.swift */,
-				3C693C5B221A7DD80038E671 /* InlineTypesAndFunctions .swift */,
-				3C80FF3C2248AC6D007B71F4 /* The power of key paths in Swift.swift */,
-				3C3076CA225B15610006D5FC /* String literals in Swift.swift */,
-			);
-			path = "Language features";
-			sourceTree = "<group>";
-		};
-		3C815EF721C76E6300499AE5 /* Капашилка */ = {
-			isa = PBXGroup;
-			children = (
-				3CF6F9132251DE1E001CA170 /* Bindable values in Swift.swift */,
-				45DAFEDE226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift */,
-				458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */,
-				452FD54C228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift */,
-				45AC5F2622927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift */,
-				4573D78222C092DC006FD84F /* Configurable types in Swift.swift */,
-				45D6CB2A22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift */,
-				452E93E222DDA17400BDEB66 /* Generalizing Swift code.swift */,
-				45BC0AD422EF109800743779 /* Utilizing value semantics in Swift.swift */,
-			);
-			path = "Капашилка";
-			sourceTree = "<group>";
-		};
 		3C82F46C2164AA0F0024B3E4 /* WorkWithUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -2428,18 +2229,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming! */ = {
-			isa = PBXGroup;
-			children = (
-				3C8546BA21FEF0920004700D /* AvoidingRaceConditions.swift */,
-				3C339ADB220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift */,
-				3C204BBF2201677800CB49B5 /* GCD.swift */,
-				3C5B944B220813450027ED70 /* TaskBasedConcurrency .swift */,
-				3CADC676221536C800E28084 /* Operation.swift */,
-			);
-			path = "ConcurrencyAsynchronousProgramming!";
-			sourceTree = "<group>";
-		};
 		3C866AE221633B130044EB1C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -2450,17 +2239,6 @@
 				3C4EAF172180487F00CEB18B /* DelegateCall.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		3C8677A82230DEA300D73419 /* UI & Animations */ = {
-			isa = PBXGroup;
-			children = (
-				3C815EF821C76E7A00499AE5 /* SlotBasedUIDevelopment.swift */,
-				3C8677A92230DEB200D73419 /* Стили для UI элементов.swift */,
-				3CD864552237A5300073BAD9 /* Domain Specific Language.swift */,
-				3C7EB0E3223F8423000BF3A5 /* Registerable Views.swift */,
-			);
-			path = "UI & Animations";
 			sourceTree = "<group>";
 		};
 		3C8E2354216136AB0010F7E6 /* Presenters */ = {
@@ -2666,39 +2444,6 @@
 			path = "Обычный service locator без использования pods";
 			sourceTree = "<group>";
 		};
-		3CA910862243546800F54A4C /* Error handling */ = {
-			isa = PBXGroup;
-			children = (
-				3C14387421BE3A5B00BA241D /* ErrorsAsControlFlow.swift */,
-				3CA91088224354B600F54A4C /* Using errors as control flow in Swift.swift */,
-			);
-			path = "Error handling";
-			sourceTree = "<group>";
-		};
-		3CAB744A22040C7300C8FE01 /* APIDesign */ = {
-			isa = PBXGroup;
-			children = (
-				3C3BED2D2223B3A100502361 /* PatternMatching.swift */,
-				3CAB744B22040C8C00C8FE01 /* ExtendingOptionals.swift */,
-				3C6209C0220BF38A00E2A67A /* SpecializingProtocols.swift */,
-				3C4A84FA221136DE0034627F /* BuildingDSLs.swift */,
-				3C0018B8221290B800CE9D3E /* Trimming long argument lists.swift */,
-				3C3BDE6A2213DD00004B9168 /* Type inference-powered serialization in Swift.swift */,
-				3C04AE7E221683060086CE4B /* StaticFactoryMethods.swift */,
-				3C2C9C19221BCA5A004A2605 /* WritingSelfDocumenting.swift */,
-				3C5B8466221E6A8C00C959BE /* Delegation.swift */,
-				3CE138E622279EC100E0B7CD /* Observers1.swift */,
-				3CA1E6C2222E48CD00921DB7 /* Observers2.swift */,
-				3C8677A62230D8F300D73419 /* CodeEncapsulation.swift */,
-				3CEA09F022362B1400C03FF9 /* ComposingTypes.swift */,
-				3C7EB0DF223F71D1000BF3A5 /* Type erasure using closures in Swift.swift */,
-				4525FE592266EACA00E2EC83 /* Avoiding singletons in Swift.swift */,
-				45BD1479226991A300CC161D /* Using @autoclosure when designing.swift */,
-				45F5E76022702B0500E38983 /* Simple Swift dependency injection with functions.swift */,
-			);
-			path = APIDesign;
-			sourceTree = "<group>";
-		};
 		3CB155B3215C04FA0034CF0A /* ColorSchemeViewer */ = {
 			isa = PBXGroup;
 			children = (
@@ -2729,15 +2474,6 @@
 				3CE80B29225F086700CA9C02 /* Models */,
 			);
 			path = "Expanding Cells";
-			sourceTree = "<group>";
-		};
-		3CCC0A34224B483300F635BB /* Maintenance, structure & code quality */ = {
-			isa = PBXGroup;
-			children = (
-				3CCC0A35224B485900F635BB /* Constructing URLs in Swift.swift */,
-				3C6BA91D225C6130000A2063 /* Replacing legacy code using Swift protocols.swift */,
-			);
-			path = "Maintenance, structure & code quality";
 			sourceTree = "<group>";
 		};
 		3CCEA34821528A8B0081A7DB /* Controls */ = {
@@ -3183,23 +2919,6 @@
 			path = VisitorForMe;
 			sourceTree = "<group>";
 		};
-		4525FE582266E8CB00E2EC83 /* SundellResources */ = {
-			isa = PBXGroup;
-			children = (
-				3C815EF721C76E6300499AE5 /* Капашилка */,
-				3CA910862243546800F54A4C /* Error handling */,
-				3C8677A82230DEA300D73419 /* UI & Animations */,
-				3C517C6621B9052A009CAEE7 /* ManagingState&Objects! */,
-				3C4A1DC621E5D4130096B985 /* ViewСontrollers&Navigation! */,
-				3C8546B921FEEF5B0004700D /* ConcurrencyAsynchronousProgramming! */,
-				3CAB744A22040C7300C8FE01 /* APIDesign */,
-				3C452752222CEE64004E5E19 /* Storage */,
-				3C80FF362248A1F4007B71F4 /* Language features */,
-				3CCC0A34224B483300F635BB /* Maintenance, structure & code quality */,
-			);
-			path = SundellResources;
-			sourceTree = "<group>";
-		};
 		4527E727229BF80C00C41CB6 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
@@ -3289,6 +3008,15 @@
 				452FD582228A993000DB34FB /* StructuralPatterns.swift */,
 			);
 			path = "Структурные паттерны";
+			sourceTree = "<group>";
+		};
+		4530C35E234DAC6F004E6CA6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4530C35F234DACB9004E6CA6 /* OnboardingViewController.swift */,
+				4530C360234DACB9004E6CA6 /* OnboardingViewController.xib */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		453484B122A698DE00D9A6B8 /* Extensions */ = {
@@ -3890,6 +3618,7 @@
 				3C98698A222FAE650065660B /* SleepViewController.xib in Resources */,
 				3C4099922237D68400E5FB05 /* RootContentTableViewCell.xib in Resources */,
 				3CE138F22227A5BD00E0B7CD /* SwinjectViewController.xib in Resources */,
+				4530C362234DACB9004E6CA6 /* OnboardingViewController.xib in Resources */,
 				3C1E6AC3221C0C9600997F31 /* im-thirsty.json in Resources */,
 				45933C7E2282B00D0069639A /* TimerViewController.xib in Resources */,
 				45CD86D022DEF8D700EE560A /* DragableInsideScrollViewController.xib in Resources */,
@@ -4206,36 +3935,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C339ADC220024C7008A85C6 /* UsingTokensToHandleAsyncSwiftCode.swift in Sources */,
 				3C6F2D57224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
-				3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */,
 				4584866122CB22190021CCE2 /* CollectionViewSelfSize.swift in Sources */,
 				4586ADB7234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift in Sources */,
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
 				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
-				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
 				3CBDF77E225334D60096528A /* APIRequest.swift in Sources */,
 				3CE138EB2227A4B300E0B7CD /* Logger.swift in Sources */,
 				3C40998C2237D5A700E5FB05 /* DemoHeaderView.swift in Sources */,
 				3CE80B43225F0E2700CA9C02 /* ExpandingCellsController.swift in Sources */,
 				3CBDF77A225334A20096528A /* HTTPMethod.swift in Sources */,
 				45D6CB2622DC5AF500C4D0B6 /* Универсальный JSONDecoder.swift in Sources */,
-				3C5CA4DE21F5A416001D26ED /* CustomContainerViewControllers.swift in Sources */,
 				45BFA28A229D1A47007BE474 /* PizzaHalfSelectorLayout.swift in Sources */,
 				45DB5CF822A7A12A0061147F /* JSONExampleConfigurator.swift in Sources */,
-				3CE138E722279EC100E0B7CD /* Observers1.swift in Sources */,
 				3CE2914E22420B2600831A13 /* A better syntax for configurable initializations.swift in Sources */,
-				3CADC72721FAEAD200738B14 /* UsingChildViewControllers.swift in Sources */,
-				3C6BA91E225C6130000A2063 /* Replacing legacy code using Swift protocols.swift in Sources */,
 				4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */,
-				45AC5F2722927FD100F1A26A /* Extracting view controller actions in Swift(Извлечение действий контроллера представления в Swift).swift in Sources */,
 				3CBDF78622533A620096528A /* HowToUse.swift in Sources */,
-				3C1F4C0D21E8659F003AE65B /* FactoryPatternToAvoidShared.swift in Sources */,
 				3C6F2D42224F6095000A194B /* DifferentCollectionLayoutCollectionViewController.swift in Sources */,
 				45D6CB2422DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift in Sources */,
 				3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */,
 				45B71410227837A0008B63F2 /* Constants.swift in Sources */,
-				3C452754222CEE7E004E5E19 /* Использование User-Defaults.swift in Sources */,
 				3C51A748223B6F2400D14490 /* EndPointConfigurator.swift in Sources */,
 				456F506822E045CD0020CE2A /* UIView+Ext.swift in Sources */,
 				3C6F2D54224F672F000A194B /* TabledContentCollectionViewDelegate.swift in Sources */,
@@ -4244,42 +3963,29 @@
 				4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */,
 				3C98698D222FAFD00065660B /* DayViewController.swift in Sources */,
 				45CD86BF22DEF29300EE560A /* FromViewController.swift in Sources */,
-				458CD1F02289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift in Sources */,
 				45F9222E22FD88020097E987 /* PinterestLayout.swift in Sources */,
-				3C7EB0E0223F71D1000BF3A5 /* Type erasure using closures in Swift.swift in Sources */,
 				3C986977222FA9EF0065660B /* StackViewController.swift in Sources */,
-				3C8546BB21FEF0920004700D /* AvoidingRaceConditions.swift in Sources */,
 				4590D21F229FDDF300A82D2B /* BannerView.swift in Sources */,
 				3CC86607225F022700969E2F /* Inclusive enums with OptionSet.swift in Sources */,
-				3C5CA4E021F5B0AC001D26ED /* ThePowerOfTypeAliases.swift in Sources */,
 				3C51A740223B6C6B00D14490 /* WebRequestBehavior.swift in Sources */,
 				45BFA28C229D1A6A007BE474 /* TableLayoutCache.swift in Sources */,
-				3CF6F9142251DE1E001CA170 /* Bindable values in Swift.swift in Sources */,
 				45BFA288229D1A47007BE474 /* TableLayout.swift in Sources */,
 				3CE138ED2227A4DC00E0B7CD /* FakeLogger.swift in Sources */,
 				4527E723229BF47800C41CB6 /* PizzaHalfCollectionController.swift in Sources */,
-				3C693C5C221A7DD80038E671 /* InlineTypesAndFunctions .swift in Sources */,
 				45CD86CF22DEF8D700EE560A /* DragableInsideScrollViewController.swift in Sources */,
 				3CED730922251C580058A1B5 /* DIService.swift in Sources */,
-				3C8677A72230D8F300D73419 /* CodeEncapsulation.swift in Sources */,
 				453EDD552296679100CD1F9D /* Storing Codable structs on the disk.swift in Sources */,
 				3CC308602223D81300E10683 /* ObjectScopes.swift in Sources */,
 				45BFA28F229D1A99007BE474 /* UIScrollView+Ex.swift in Sources */,
-				3C5B944C220813450027ED70 /* TaskBasedConcurrency .swift in Sources */,
-				3CEA09F122362B1400C03FF9 /* ComposingTypes.swift in Sources */,
+				4530C361234DACB9004E6CA6 /* OnboardingViewController.swift in Sources */,
 				45F3CD7B22E044080021EB35 /* ModalContainerView.swift in Sources */,
 				45BCCA80226EE304004A830A /* CardsDataModel.swift in Sources */,
 				3C1E6AC8221C19C800997F31 /* PromiseKitViewController.swift in Sources */,
-				3C3BDE6B2213DD00004B9168 /* Type inference-powered serialization in Swift.swift in Sources */,
 				3C1E6ABD221C073000997F31 /* LottieAnimationViewController.swift in Sources */,
 				3C5B0448223639710075ADCD /* DynamicHeightCollectionView.swift in Sources */,
 				455D1353228D410700C0DC32 /* URLPathComponentBuilder.swift in Sources */,
 				456F507222E048240020CE2A /* ViewSpecificController.swift in Sources */,
-				3CAA12B821CB5D3000D97507 /* DependencyInjection.swift in Sources */,
-				3C5B8467221E6A8C00C959BE /* Delegation.swift in Sources */,
 				3C986985222FAE280065660B /* SummaryViewController.swift in Sources */,
-				3C9F667221EF083F00800E41 /* HandlingNon-OptionalOptionals .swift in Sources */,
-				3CADC677221536C800E28084 /* Operation.swift in Sources */,
 				3C986989222FAE650065660B /* SleepViewController.swift in Sources */,
 				3CDF4338223A7CB10045CBC9 /* Использование протоколов в качестве составных расширений.swift in Sources */,
 				3C4099992237D86400E5FB05 /* DemoContentTableViewCell.swift in Sources */,
@@ -4287,87 +3993,64 @@
 				3C6F2D45224F617B000A194B /* CoordinatorCollectionViewController.swift in Sources */,
 				3CA9108B224364E500F54A4C /* Списки захвата в Swift- в чём разница между ссылками weak, strong и unowned.swift in Sources */,
 				3CEA09FA2236362500C03FF9 /* ContentTableViewCell.swift in Sources */,
-				3C815EF921C76E7A00499AE5 /* SlotBasedUIDevelopment.swift in Sources */,
 				4527E734229BFEB800C41CB6 /* PizzaHalfTitleHeader.swift in Sources */,
 				3C08C1EC221D737500179B05 /* DownloadImageDataController.swift in Sources */,
 				45CD86D522DEF91D00EE560A /* DragableInsideScrollView.swift in Sources */,
 				3C6F2D4A224F648E000A194B /* FruitsProvider.swift in Sources */,
 				3C6F2D48224F647C000A194B /* Fruit.swift in Sources */,
 				3C4D62C3223A5CAE00233C43 /* DiffExampleViewController.swift in Sources */,
-				4573D78322C092DC006FD84F /* Configurable types in Swift.swift in Sources */,
 				45F5E76C227041F000E38983 /* TinderViewController.swift in Sources */,
 				456FBFA022782711005AC721 /* MemoryGame.swift in Sources */,
 				3CE80B3F225F0CFA00CA9C02 /* InspirationCell.swift in Sources */,
-				3CBF54C221BF873C003D4F46 /* PowerOfResultTypes.swift in Sources */,
 				3C6F2D52224F66DF000A194B /* DefaultCollectionViewDelegate.swift in Sources */,
 				45CD86C922DEF45400EE560A /* AnimatorPresent.swift in Sources */,
 				3C1854702238CDAB00A9B4D8 /* Поддержание состояния в ваших ViewControllers.swift in Sources */,
-				3CA4259821C2247A00636B47 /* LogicControllers.swift in Sources */,
-				452E93E322DDA17400BDEB66 /* Generalizing Swift code.swift in Sources */,
 				3C51A744223B6DCD00D14490 /* CombinedWebRequestBehavior.swift in Sources */,
 				3C517C5721B9051A009CAEE7 /* AppDelegate.swift in Sources */,
 				3C1E6ACC221C1C8F00997F31 /* PromiseKitDataController.swift in Sources */,
-				452FD54D228A95E200DB34FB /* Pure functions in Swift(Чистые функции).swift in Sources */,
 				45CD86C522DEF2A900EE560A /* ToViewController.swift in Sources */,
-				3C14387521BE3A5C00BA241D /* ErrorsAsControlFlow.swift in Sources */,
 				3C51A74C223B722A00D14490 /* DefaultEndPoint.swift in Sources */,
 				456F506A22E046390020CE2A /* Storyboardable.swift in Sources */,
 				45E4D1D52282B1B50047940C /* TaskTableViewCell.swift in Sources */,
 				4527E730229BFDD700C41CB6 /* PizzaHalfCell.swift in Sources */,
-				3C80FF3D2248AC6D007B71F4 /* The power of key paths in Swift.swift in Sources */,
 				4584866622CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift in Sources */,
 				4527E72A229BF87500C41CB6 /* PizzaHalvesViewModel.swift in Sources */,
-				3C3076CB225B15610006D5FC /* String literals in Swift.swift in Sources */,
 				45BFA285229D1A47007BE474 /* PizzaHalfSelectorLayout+Scale.swift in Sources */,
 				45933C7D2282B00D0069639A /* TimerViewController.swift in Sources */,
 				3C4099842237CD3100E5FB05 /* RootContentViewController.swift in Sources */,
-				3CD864562237A5300073BAD9 /* Domain Specific Language.swift in Sources */,
 				45CD86CB22DEF46600EE560A /* AnimatorDismiss.swift in Sources */,
 				3CC3085E2223CA0300E10683 /* CircularDependencies.swift in Sources */,
-				3CBF54C421BF9416003D4F46 /* TypeSafeIdentifiers .swift in Sources */,
 				456F507922E04B170020CE2A /* NewYearContentView.swift in Sources */,
-				4525FE5A2266EACA00E2EC83 /* Avoiding singletons in Swift.swift in Sources */,
-				3CE1C25F21D20E65008FC070 /* CapturingObjectsSwift.swift in Sources */,
 				3C6F2D59224F67A2000A194B /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
 				45E4D1D12282B16D0047940C /* TimerTask.swift in Sources */,
 				4590D222229FE11600A82D2B /* ScrollViewController.swift in Sources */,
 				45D6CB2922DC5D9400C4D0B6 /* AnyCodingKeyTests.swift in Sources */,
 				3C986981222FAD200065660B /* CalendarDemoViewController.swift in Sources */,
-				3C0A797821F192CC00082B2B /* SubclassFreeViewControllers.swift in Sources */,
 				45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */,
 				3CE138F12227A5BD00E0B7CD /* SwinjectViewController.swift in Sources */,
 				453484B322A698EB00D9A6B8 /* URLCache+Ex.swift in Sources */,
 				3C4099912237D68400E5FB05 /* RootContentTableViewCell.swift in Sources */,
 				3C36EA072237786C00993B6F /* Как использовать HTTP-кеш.swift in Sources */,
-				3C4B691421E883B1002175CB /* IdentifyingObjects.swift in Sources */,
-				3CD76AB021CA0D29003F81B7 /* SeparationOfConcernsUsingProtocols.swift in Sources */,
-				3CAB744C22040C8C00C8FE01 /* ExtendingOptionals.swift in Sources */,
 				3CE80B46225F132100CA9C02 /* UltravisualLayout.swift in Sources */,
-				3CA1E6C3222E48CD00921DB7 /* Observers2.swift in Sources */,
 				45B7141222783869008B63F2 /* GameApiClient.swift in Sources */,
 				3CBDF780225335760096528A /* APIResponse.swift in Sources */,
 				3C51A746223B6EDA00D14490 /* EndPoint.swift in Sources */,
 				3CEA09FE2236389300C03FF9 /* CollectionViewCell.swift in Sources */,
 				3C2C9C25221BD919004A2605 /* MainViewController.swift in Sources */,
-				3CD5D33221D0B48000682966 /* DependencyInjectionUsingFactories.swift in Sources */,
 				3CA6A26F21C23C5C009D0F1F /* ServiceLocator.swift in Sources */,
 				3C4D62C0223A5BAD00233C43 /* Differ.swift in Sources */,
 				45F97C9E22A104B700FC076A /* HTTPRequest.swift in Sources */,
-				3CCC0A36224B485900F635BB /* Constructing URLs in Swift.swift in Sources */,
 				456F506E22E047120020CE2A /* OnboardingViewControllerNew.swift in Sources */,
 				45F9222B22FD833C0097E987 /* CustomCollectionViewFlowLayoutCollectionViewCell.swift in Sources */,
 				3CEC6FD02241FE1800DE844E /* Pattern Matching with case let.swift in Sources */,
 				456F507022E047AE0020CE2A /* OnboardingView.swift in Sources */,
-				3CD4913D21F0527D0097618E /* LightweightPresenters.swift in Sources */,
 				450425F122C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift in Sources */,
 				45BCCA85226EE36E004A830A /* SwipeCardView.swift in Sources */,
-				3C4A1DC321E5C3640096B985 /* CreatingCustomCollections.swift in Sources */,
 				45BCCA83226EE343004A830A /* StackContainterView.swift in Sources */,
 				3C1E6AC0221C09EE00997F31 /* CoordinatorViewController.swift in Sources */,
 				3CBDF784225336810096528A /* APIClient.swift in Sources */,
 				3CE80B37225F0AFE00CA9C02 /* UIColor+Ex.swift in Sources */,
 				45AD2C76229E6BB2004389A2 /* TestTableLayout.swift in Sources */,
-				3C8677AA2230DEB200D73419 /* Стили для UI элементов.swift in Sources */,
 				45F9222722FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift in Sources */,
 				3CE80B39225F0B1300CA9C02 /* UIImage+Ex.swift in Sources */,
 				3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */,
@@ -4376,45 +4059,26 @@
 				45BFA289229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift in Sources */,
 				3CE80B32225F0A9C00CA9C02 /* Inspiration.swift in Sources */,
 				45F3CD7922E043710021EB35 /* ModalContainerViewController.swift in Sources */,
-				3C14387121BE331600BA241D /* HandlingMutableModels.swift in Sources */,
 				4541566222CC7076000D87DA /* Разворот односвязного списка.swift in Sources */,
 				456F507722E04B0E0020CE2A /* NewYearContentViewController.swift in Sources */,
-				3C6209C1220BF38A00E2A67A /* SpecializingProtocols.swift in Sources */,
 				3C6F2D4E224F656E000A194B /* FruitCollectionViewCell.swift in Sources */,
-				3C204BC02201677800CB49B5 /* GCD.swift in Sources */,
-				45DAFEDF226D877100B3C18A /* Property observers in Swift(Наблюдатели за свойствами).swift in Sources */,
 				45BD147E2269A27200CC161D /* Asynchronous completion handlers with Result type.swift in Sources */,
 				3C5B044E223644210075ADCD /* Инверсия зависимостей через протоколы.swift in Sources */,
 				45DB5CF622A78EF80061147F /* Result+Ex.swift in Sources */,
-				3CC689D121EC5D960033F805 /* ModellingState.swift in Sources */,
 				3CE80B34225F0ACD00CA9C02 /* Session.swift in Sources */,
-				3C0018B9221290B800CE9D3E /* Trimming long argument lists.swift in Sources */,
-				45BC0AD522EF109800743779 /* Utilizing value semantics in Swift.swift in Sources */,
 				3CC3085C2223C64A00E10683 /* InjectionPatterns.swift in Sources */,
 				4527E726229BF4B300C41CB6 /* PizzaHalfOrientation.swift in Sources */,
 				45F97CA022A104E600FC076A /* HTTPRequestPool.swift in Sources */,
 				453484B022A687C700D9A6B8 /* CacheBehavior.swift in Sources */,
-				45BD147A226991A300CC161D /* Using @autoclosure when designing.swift in Sources */,
-				3CC99D3221BA76A500F7623B /* ModelControllers .swift in Sources */,
 				456FBF9E2278155C005AC721 /* Card.swift in Sources */,
 				4527E71F229BF30500C41CB6 /* DODOPizzaViewController.swift in Sources */,
 				453484B522A69C2F00D9A6B8 /* URLSession+Ex.swift in Sources */,
 				456F506622E045AA0020CE2A /* UIViewController+Ext.swift in Sources */,
 				45BFA287229D1A47007BE474 /* PizzaHalfSelectorLayout+Headers.swift in Sources */,
 				450425EF22C345F1004A7FEC /* View Controller States.swift in Sources */,
-				45D6CB2B22DC5EF700C4D0B6 /* Customizing Codable types in Swift.swift in Sources */,
-				3C3BED2E2223B3A100502361 /* PatternMatching.swift in Sources */,
-				3C517C6821B905E1009CAEE7 /* ViewModelsInSwift.swift in Sources */,
-				3C2C9C1A221BCA5A004A2605 /* WritingSelfDocumenting.swift in Sources */,
 				45B7140822782BE5008B63F2 /* CardCell.swift in Sources */,
-				3CC1334E21F830630009A04B /* Navigation.swift in Sources */,
-				3C3A6B3821C38AA7009B6472 /* BuilderPattern.swift in Sources */,
-				3C4A84FB221136DE0034627F /* BuildingDSLs.swift in Sources */,
-				3CA91089224354B600F54A4C /* Using errors as control flow in Swift.swift in Sources */,
 				3CBDF77C225334BD0096528A /* HTTPHeader.swift in Sources */,
 				3CD86454223797880073BAD9 /* Обертки над запросами, как в GO.swift in Sources */,
-				3C7EB0E4223F8423000BF3A5 /* Registerable Views.swift in Sources */,
-				45F5E76122702B0500E38983 /* Simple Swift dependency injection with functions.swift in Sources */,
 				3CBDF782225335A40096528A /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,6 +18,7 @@ class FromViewController: CoordinatorViewController {
 
     @IBAction func onGoAction(_ sender: Any) {
         let toVC = ToViewController(nibName: "ToViewController", bundle: nil)
+        toVC.modalPresentationStyle = .fullScreen
         self.present(toVC, animated: true)
     }
 }
