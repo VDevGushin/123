@@ -507,7 +507,7 @@
 		4545FC0C2265A54C004F1C54 /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */; };
 		4545FC0D2265A54C004F1C54 /* StickyHeaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */; };
 		4545FC102265B104004F1C54 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */; };
-		45535C78234DD57A004367E3 /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535C76234DD57A004367E3 /* OnboardingContentViewController.swift */; };
+		45535C78234DD57A004367E3 /* OnboardingRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45535C76234DD57A004367E3 /* OnboardingRootViewController.swift */; };
 		455D1350228D369800C0DC32 /* Адаптер (Adapter).swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D134F228D369800C0DC32 /* Адаптер (Adapter).swift */; };
 		455D1353228D410700C0DC32 /* URLPathComponentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */; };
 		456F506622E045AA0020CE2A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F506522E045AA0020CE2A /* UIViewController+Ext.swift */; };
@@ -536,7 +536,7 @@
 		45AD2C76229E6BB2004389A2 /* TestTableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */; };
 		45AD2C7B229E89B7004389A2 /* A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C7A229E89B7004389A2 /* A.swift */; };
 		45AD2C7D229E89F1004389A2 /* A+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD2C7C229E89F1004389A2 /* A+Strings.swift */; };
-		45AF25CF234DD7C300BE387D /* OnboardingContentViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF25CE234DD7C300BE387D /* OnboardingContentViewViewController.swift */; };
+		45AF25CF234DD7C300BE387D /* OnboardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF25CE234DD7C300BE387D /* OnboardingContentViewController.swift */; };
 		45B7140822782BE5008B63F2 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140622782BE5008B63F2 /* CardCell.swift */; };
 		45B7140922782BE5008B63F2 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45B7140722782BE5008B63F2 /* CardCell.xib */; };
 		45B7140D2278316B008B63F2 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B7140B2278316B008B63F2 /* CardGameController.swift */; };
@@ -1186,7 +1186,7 @@
 		4545FC0A2265A54C004F1C54 /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		4545FC0B2265A54C004F1C54 /* StickyHeaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeaderViewController.xib; sourceTree = "<group>"; };
 		4545FC0F2265B104004F1C54 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
-		45535C76234DD57A004367E3 /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
+		45535C76234DD57A004367E3 /* OnboardingRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRootViewController.swift; sourceTree = "<group>"; };
 		455D134F228D369800C0DC32 /* Адаптер (Adapter).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Адаптер (Adapter).swift"; sourceTree = "<group>"; };
 		455D1352228D410700C0DC32 /* URLPathComponentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPathComponentBuilder.swift; sourceTree = "<group>"; };
 		456F506522E045AA0020CE2A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
@@ -1215,7 +1215,7 @@
 		45AD2C75229E6BB2004389A2 /* TestTableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableLayout.swift; sourceTree = "<group>"; };
 		45AD2C7A229E89B7004389A2 /* A.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A.swift; sourceTree = "<group>"; };
 		45AD2C7C229E89F1004389A2 /* A+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "A+Strings.swift"; sourceTree = "<group>"; };
-		45AF25CE234DD7C300BE387D /* OnboardingContentViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewViewController.swift; sourceTree = "<group>"; };
+		45AF25CE234DD7C300BE387D /* OnboardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewController.swift; sourceTree = "<group>"; };
 		45B7140622782BE5008B63F2 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		45B7140722782BE5008B63F2 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		45B7140B2278316B008B63F2 /* CardGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGameController.swift; sourceTree = "<group>"; };
@@ -3070,8 +3070,8 @@
 		45535C75234DD530004367E3 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				45535C76234DD57A004367E3 /* OnboardingContentViewController.swift */,
-				45AF25CE234DD7C300BE387D /* OnboardingContentViewViewController.swift */,
+				45535C76234DD57A004367E3 /* OnboardingRootViewController.swift */,
+				45AF25CE234DD7C300BE387D /* OnboardingContentViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -3970,7 +3970,7 @@
 				3C51A74F223B758800D14490 /* BigImageDownloadConfigurator.swift in Sources */,
 				45B71410227837A0008B63F2 /* Constants.swift in Sources */,
 				3C51A748223B6F2400D14490 /* EndPointConfigurator.swift in Sources */,
-				45AF25CF234DD7C300BE387D /* OnboardingContentViewViewController.swift in Sources */,
+				45AF25CF234DD7C300BE387D /* OnboardingContentViewController.swift in Sources */,
 				456F506822E045CD0020CE2A /* UIView+Ext.swift in Sources */,
 				3C6F2D54224F672F000A194B /* TabledContentCollectionViewDelegate.swift in Sources */,
 				45BFA286229D1A47007BE474 /* PizzaHalfSelectorLayout+ContentOffset.swift in Sources */,
@@ -4069,7 +4069,7 @@
 				45F9222722FD81A50097E987 /* CustomCollectionViewFlowLayoutViewController.swift in Sources */,
 				3CE80B39225F0B1300CA9C02 /* UIImage+Ex.swift in Sources */,
 				3C452757222CF75E004E5E19 /* Композитный datasource для таблиц и коллекций.swift in Sources */,
-				45535C78234DD57A004367E3 /* OnboardingContentViewController.swift in Sources */,
+				45535C78234DD57A004367E3 /* OnboardingRootViewController.swift in Sources */,
 				3CEA09F52236344300C03FF9 /* CollectionViewsDynamicHeightViewController.swift in Sources */,
 				3CC308622223D98400E10683 /* Misc.swift in Sources */,
 				45BFA289229D1A47007BE474 /* PizzaHalfSelectorLayout+Alignment.swift in Sources */,
