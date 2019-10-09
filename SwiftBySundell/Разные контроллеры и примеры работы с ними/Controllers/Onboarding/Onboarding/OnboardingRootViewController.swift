@@ -10,30 +10,43 @@ import UIKit
 
 class OnboardingContentModel {
     let color: UIColor?
-    let image: UIImage?
+    let imageURL: String?
     let title: String?
     let subTitle: String?
 
-    init(color: UIColor?, image: UIImage?, title: String?, subTitle: String?) {
-        self.image = image
+    init(color: UIColor?, imageURL: String?, title: String?, subTitle: String?) {
+        self.imageURL = imageURL
         self.title = title
         self.subTitle = subTitle
         self.color = color
     }
 }
 
-class OnboardingRootViewController: UIViewController {
-    private let colorPageIndicator = UIColor(red: 171 / 255, green: 177 / 255, blue: 196 / 255, alpha: 1.0)
-    private let colorCurrentPageIndicator = UIColor(red: 118 / 255, green: 125 / 255, blue: 152 / 255, alpha: 1.0)
+protocol OnboardingRootViewControllerDelegate: class {
+    func alertOnboardingSkipped(_ currentStep: Int, maxStep: Int)
+    func alertOnboardingCompleted()
+    func alertOnboardingNext(_ nextStep: Int)
+}
 
+
+class OnboardingRootViewController: UIViewController {
+    private var skipButton: UIButton?
     private var pageControl: UIPageControl?
     private var pageViewController: UIPageViewController?
 
     private var source = [OnboardingContentModel]()
+    weak var delegate: OnboardingRootViewControllerDelegate?
+
+    private var maxStep: Int
+    private var currentStep: Int
+    private var isCompleted = false
 
     init(with source: [OnboardingContentModel]) {
+        self.maxStep = source.count
+        self.currentStep = 0
         super.init(nibName: nil, bundle: nil)
         self.source = source
+        self.modalPresentationStyle = .fullScreen
     }
 
     required init?(coder: NSCoder) {
@@ -43,13 +56,14 @@ class OnboardingRootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        setupPageViewController()
-        configurePageControl()
+        self.setupPageViewController()
+        self.configurePageControl()
+        self.setupSkipButton()
     }
 }
 
 fileprivate extension OnboardingRootViewController {
-    func getVCBy(index: Int) -> OnboardingContentViewController? {
+    func getControllerBy(index: Int) -> OnboardingContentViewController? {
         guard index <= source.count - 1 else { return nil }
         return OnboardingContentViewController(with: source[index], pageIndex: index)
     }
@@ -58,7 +72,7 @@ fileprivate extension OnboardingRootViewController {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
 
         guard let pageViewController = self.pageViewController,
-            let initVC = getVCBy(index: 0) else { return }
+            let initVC = getControllerBy(index: 0) else { return }
 
         pageViewController.view.backgroundColor = UIColor.clear
 
@@ -91,8 +105,8 @@ fileprivate extension OnboardingRootViewController {
             return
         }
         pageControl.backgroundColor = UIColor.clear
-        pageControl.pageIndicatorTintColor = colorPageIndicator
-        pageControl.currentPageIndicatorTintColor = colorCurrentPageIndicator
+        pageControl.pageIndicatorTintColor = Settings.colorPageIndicator
+        pageControl.currentPageIndicatorTintColor = Settings.colorCurrentPageIndicator
         pageControl.numberOfPages = source.count
         pageControl.currentPage = 0
         pageControl.isEnabled = false
@@ -104,26 +118,77 @@ fileprivate extension OnboardingRootViewController {
         pageControl.heightAnchor.constraint(equalToConstant: 40.0).isActive = true
         pageControl.centerXAnchor.constraint(equalTo: margins.centerXAnchor).isActive = true
     }
+
+    func setupSkipButton() {
+        self.skipButton = UIButton()
+        guard let skipButton = self.skipButton else { return }
+        skipButton.setTitle("Skip", for: .normal)
+        skipButton.translatesAutoresizingMaskIntoConstraints = false
+        skipButton.addTarget(self, action: #selector(self.skipAction), for: .touchUpInside)
+        self.view.addSubview(skipButton)
+        let margins = view.safeAreaLayoutGuide
+        skipButton.heightAnchor.constraint(equalToConstant: 55.0).isActive = true
+        skipButton.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+        skipButton.topAnchor.constraint(equalTo: margins.topAnchor, constant: 12).isActive = true
+        skipButton.trailingAnchor.constraint(equalTo: margins.trailingAnchor, constant: 12).isActive = true
+    }
+
+    @objc private func skipAction() {
+        self.dismiss(animated: true)
+        self.delegate?.alertOnboardingSkipped(self.currentStep, maxStep: self.maxStep)
+    }
 }
 
 extension OnboardingRootViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        var index = (viewController as! OnboardingContentViewController).pageIndex
-        if(index == 0) { return getVCBy(index: source.count - 1) }
+        guard var index = (viewController as? OnboardingContentViewController)?.pageIndex else {
+            return nil
+        }
+
+        if(index == 0) { return nil }//getVCBy(index: source.count - 1) }
         index -= 1
-        return getVCBy(index: index)
+        return getControllerBy(index: index)
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        var index = (viewController as! OnboardingContentViewController).pageIndex
+        guard var index = (viewController as? OnboardingContentViewController)?.pageIndex else {
+            return nil
+        }
+
         index += 1
-        if(index == source.count) { return getVCBy(index: 0) }
-        return getVCBy(index: index)
+        if(index == source.count) { return nil }//getVCBy(index: 0) }
+        return getControllerBy(index: index)
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        let pageContentViewController = pageViewController.viewControllers![0] as! OnboardingContentViewController
+        guard let pageContentViewController = pageViewController.viewControllers?.first as? OnboardingContentViewController else {
+            return
+        }
+
         let index = pageContentViewController.pageIndex
+        self.currentStep = index + 1
+        self.delegate?.alertOnboardingNext(self.currentStep)
+
+        if self.currentStep == self.maxStep {
+            self.isCompleted = true
+            self.delegate?.alertOnboardingCompleted()
+            pageContentViewController.setupNextButton(with: "close") { }
+        }
+
+        pageContentViewController.setupNextButton(with: "Next") { }
+
+//        if pageControl.currentPage == source.count - 1 {
+//            self.alertview.buttonBottom.setTitle(alertview.titleGotItButton, for: UIControlState())
+//        } else {
+//            self.alertview.buttonBottom.setTitle(alertview.titleSkipButton, for: UIControlState())
+//        }
         self.pageControl?.currentPage = index
+    }
+}
+
+fileprivate extension OnboardingRootViewController {
+    struct Settings {
+        static let colorPageIndicator = UIColor(red: 171 / 255, green: 177 / 255, blue: 196 / 255, alpha: 1.0)
+        static let colorCurrentPageIndicator = UIColor(red: 118 / 255, green: 125 / 255, blue: 152 / 255, alpha: 1.0)
     }
 }

@@ -9,26 +9,31 @@
 import UIKit
 
 class OnboardingViewController: CoordinatorViewController {
-
-
-    var arrayOfImage = ["image1", "image2", "image3"]
-    var arrayOfTitle = ["CREATE ACCOUNT", "CHOOSE THE PLANET", "DEPARTURE"]
-    var arrayOfDescription = ["In your profile, you can view the statistics of its operations and the recommandations of friends",
-        "Purchase tickets on hot tours to your favorite planet and fly to the most comfortable intergalactic spaceships of best companies",
-        "In the process of flight you will be in cryogenic sleep and supply the body with all the necessary things for life"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
-            let source = [OnboardingContentModel(color: .red, image: nil, title: nil, subTitle: nil),
-                OnboardingContentModel(color: .green, image: nil, title: nil, subTitle: nil),
-                OnboardingContentModel(color: .yellow, image: nil, title: nil, subTitle: nil)]
+            let source = [OnboardingContentModel(color: .red, imageURL: nil, title: nil, subTitle: nil),
+                OnboardingContentModel(color: .green, imageURL: nil, title: nil, subTitle: nil),
+                OnboardingContentModel(color: .yellow, imageURL: nil, title: nil, subTitle: nil)]
 
             let oVC = OnboardingRootViewController(with: source)
-
-            oVC.modalPresentationStyle = .fullScreen
+            oVC.delegate = self
             self.present(oVC, animated: false)
         }
+    }
+}
+
+extension OnboardingViewController: OnboardingRootViewControllerDelegate {
+    func alertOnboardingSkipped(_ currentStep: Int, maxStep: Int) {
+        print("Skip step \(currentStep), maxStep \(maxStep)")
+    }
+
+    func alertOnboardingCompleted() {
+        print("Complete")
+    }
+
+    func alertOnboardingNext(_ nextStep: Int) {
+        print("Next step \(nextStep)")
     }
 }

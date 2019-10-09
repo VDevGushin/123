@@ -22,6 +22,10 @@ class OnboardingContentViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    func setupNextButton(with title: String, action: () -> Void) {
+        print(#function)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = model.color ?? .white
