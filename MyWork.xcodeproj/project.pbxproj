@@ -582,6 +582,7 @@
 		4584866222CB22190021CCE2 /* CollectionViewSelfSize.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4584866022CB22190021CCE2 /* CollectionViewSelfSize.xib */; };
 		4584866622CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4584866422CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift */; };
 		4584866722CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4584866522CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib */; };
+		4586ADB7234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586ADB6234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift */; };
 		458CD1F02289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift in Sources */ = {isa = PBXBuildFile; fileRef = 458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */; };
 		4590D21F229FDDF300A82D2B /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D21E229FDDF300A82D2B /* BannerView.swift */; };
 		4590D222229FE11600A82D2B /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4590D220229FE11600A82D2B /* ScrollViewController.swift */; };
@@ -1322,6 +1323,7 @@
 		4584866022CB22190021CCE2 /* CollectionViewSelfSize.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewSelfSize.xib; sourceTree = "<group>"; };
 		4584866422CB22D80021CCE2 /* SelfSizeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizeCollectionViewCell.swift; sourceTree = "<group>"; };
 		4584866522CB22D80021CCE2 /* SelfSizeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfSizeCollectionViewCell.xib; sourceTree = "<group>"; };
+		4586ADB6234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Внедряем Sign in with Apple в свое iOS приложение.swift"; sourceTree = "<group>"; };
 		458CD1EF2289640F005CAFEB /* Structuring model data in Swift(Структурирование данных).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Structuring model data in Swift(Структурирование данных).swift"; sourceTree = "<group>"; };
 		4590D21E229FDDF300A82D2B /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		4590D220229FE11600A82D2B /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
@@ -2087,6 +2089,7 @@
 				450425F022C34B82004A7FEC /* Композиция UIViewController-ов и навигация между ними.swift */,
 				4541566122CC7076000D87DA /* Разворот односвязного списка.swift */,
 				45D6CB2322DC599500C4D0B6 /* Интеграционное тестирование для проверки на наличие утечки памяти.swift */,
+				4586ADB6234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift */,
 			);
 			path = "Всяко разно ";
 			sourceTree = "<group>";
@@ -4207,6 +4210,7 @@
 				3C6F2D57224F6770000A194B /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
 				3C04AE7F221683060086CE4B /* StaticFactoryMethods.swift in Sources */,
 				4584866122CB22190021CCE2 /* CollectionViewSelfSize.swift in Sources */,
+				4586ADB7234DA3220081D41B /* Внедряем Sign in with Apple в свое iOS приложение.swift in Sources */,
 				3C2C9C20221BD856004A2605 /* AppCoordinator.swift in Sources */,
 				3C51A742223B6CB900D14490 /* LoggerBehavior.swift in Sources */,
 				3C15C8A021C8B71B00734E30 /* PreventingViewsFromBeingModelAware.swift in Sources */,
