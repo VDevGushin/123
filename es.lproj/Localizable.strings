@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MyWork
+
+  Created by Vlad Gushchin on 10.10.2019.
+  Copyright © 2019 Vladislav Gushin. All rights reserved.
+*/
+
+"hello_world" = "Hola Mundo";
+"hello_world1" = "Hola Mundo 1";
+"hello_world2" = "Hola Mundo 2";
+"change" = "Cambiar";
+"reset" = "Reiniciar";

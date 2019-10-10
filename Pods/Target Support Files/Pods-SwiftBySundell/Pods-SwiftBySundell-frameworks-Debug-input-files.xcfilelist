@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-SwiftBySundell/Pods-SwiftBySundell-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Bond-iOS11.0/Bond.framework
+${BUILT_PRODUCTS_DIR}/Charts-iOS11.0/Charts.framework
+${BUILT_PRODUCTS_DIR}/Differ-iOS11.0/Differ.framework
+${BUILT_PRODUCTS_DIR}/Localize-Swift-iOS11.0/Localize_Swift.framework
+${BUILT_PRODUCTS_DIR}/NSVLocalizationKit-iOS11.0/NSVLocalizationKit.framework
+${BUILT_PRODUCTS_DIR}/PromiseKit-iOS11.0/PromiseKit.framework
+${BUILT_PRODUCTS_DIR}/ReactiveKit-iOS11.0/ReactiveKit.framework
+${BUILT_PRODUCTS_DIR}/Swinject-iOS11.0/Swinject.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios-iOS11.0/Lottie.framework
+${BUILT_PRODUCTS_DIR}/paper-onboarding-iOS11.0/paper_onboarding.framework

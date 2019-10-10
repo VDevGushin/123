@@ -9,6 +9,8 @@ def shared_pods
     pod 'lottie-ios'
     pod 'Swinject'
     pod 'Differ'
+    pod 'paper-onboarding'
+    pod 'NSVLocalizationKit'
 end
 
 

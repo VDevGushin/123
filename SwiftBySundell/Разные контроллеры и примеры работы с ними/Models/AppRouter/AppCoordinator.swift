@@ -14,6 +14,7 @@ final class AppCoordinator {
 
     enum Destination: Int, Equatable, CaseIterable {
         case mainView
+        case localization
         case onboarding
         case customTransition
         case timer
@@ -37,6 +38,8 @@ final class AppCoordinator {
         case customCollectionViewFlowLayoutViewController
         var title: String {
             switch self {
+            case .localization:
+                return "Localization"
             case .onboarding:
                 return "Onboarding"
             case .dragableInsideScrollViewController:
@@ -110,6 +113,8 @@ final class AppCoordinator {
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
+        case .localization: return
+            DependencyProvider.shared.container.resolve(LocalizationKitViewController.self, arguments: self, destination.title)!
         case .onboarding: return
             DependencyProvider.shared.container.resolve(OnboardingViewController.self, arguments: self, destination.title)!
         case .mainView: return DependencyProvider.shared.container.resolve(MainViewController.self, arguments: self, destination.title)!
